@@ -12,10 +12,14 @@ dependencies = [
   "yfinance",
   "requests",
   "openai",
-  "google-genai",
   "pandas",
   "numpy",
 ]
+
+[project.optional-dependencies]
+gemini = ["google-genai"]
+vertex = ["google-genai"]
+all = ["google-genai"]
 
 [tool.setuptools.packages.find]
 where = ["src"]

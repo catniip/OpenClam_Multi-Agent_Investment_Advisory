@@ -74,8 +74,24 @@ Option A: Python venv
 python3 -m venv .venv
 source .venv/bin/activate
 pip install --upgrade pip
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 pip install -e .
+```
+
+If you plan to use Gemini API or Vertex AI locally, install the optional Gemini/Vertex dependency from PyPI:
+
+```bash
+python -m pip install --index-url https://pypi.org/simple -r requirements-llm.txt
+# or, after base install:
+pip install -e ".[vertex]"
+```
+
+If `google-genai` cannot be found, check that pip is using PyPI and that Python is 3.10+:
+
+```bash
+python -V
+python -m pip config list
+python -m pip install --index-url https://pypi.org/simple google-genai
 ```
 
 Option B: Conda
@@ -84,6 +100,8 @@ Option B: Conda
 conda env create -f environment.yml
 conda activate openclam
 pip install -e .
+# Optional for Gemini API / Vertex AI:
+python -m pip install --index-url https://pypi.org/simple -r requirements-llm.txt
 ```
 
 Create a local `.env` file from the example:
