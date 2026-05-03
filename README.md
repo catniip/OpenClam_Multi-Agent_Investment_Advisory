@@ -12,7 +12,7 @@ The first implemented slice is the News & Macro Agent, which collects company ne
 
 - Implemented: News & Macro Agent prototype
 - Implemented: Yahoo Finance, NewsAPI, Finnhub company-news integration
-- Implemented: OpenAI, Gemini API, and Vertex AI provider paths
+- Implemented: Vertex AI, OpenAI, and Gemini API provider paths
 - Placeholder folders: Fundamental Agent, Market & Technical Agent, CIO Agent
 - Planned: earnings-window backtesting and multi-agent synthesis
 

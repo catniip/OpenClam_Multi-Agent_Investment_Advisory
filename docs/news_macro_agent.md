@@ -23,7 +23,7 @@ export OPENAI_API_KEY="..."
 export GEMINI_API_KEY="..."
 ```
 
-Provider order is `OPENAI_API_KEY` first, then `GEMINI_API_KEY`, then Vertex AI if `vertex_project` is passed, then a transparent heuristic fallback. With any model provider, the agent asks for a structured English JSON report using the event-driven hedge fund manager prompt.
+Provider order is Vertex AI first when `VERTEX_PROJECT`/`vertex_project` is available, then OpenAI `gpt-5.4-nano`, then Gemini `gemini-2.5-flash`, then a transparent heuristic fallback. With any model provider, the agent asks for a structured English JSON report using the event-driven hedge fund manager prompt.
 
 ## Direct pasted-news workflow
 
