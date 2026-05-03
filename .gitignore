@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local data and outputs
+/data/raw/*
+/data/processed/*
+/data/outputs/*
+!/data/raw/.gitkeep
+!/data/processed/.gitkeep
+!/data/outputs/.gitkeep
+/reports/figures/*
+/reports/case_studies/*
+!/reports/figures/.gitkeep
+!/reports/case_studies/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Test/cache artifacts
+.pytest_cache/

@@ -1,0 +1,17 @@
+name: openclam
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pandas
+  - numpy
+  - jupyter
+  - ipykernel
+  - pip:
+      - yfinance
+      - requests
+      - openai
+      - google-genai
+      - python-dotenv
+      - pytest

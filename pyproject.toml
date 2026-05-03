@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openclam-investment-advisory"
+version = "0.1.0"
+description = "A lightweight multi-agent LLM system for event-driven US equity research."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "yfinance",
+  "requests",
+  "openai",
+  "google-genai",
+  "pandas",
+  "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
