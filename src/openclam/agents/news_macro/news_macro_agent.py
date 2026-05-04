@@ -73,6 +73,8 @@ class NewsMacroReport:
     short_term_stance: str
     long_term_stance: str
     stance_rationale: str
+    confidence_score: float
+    confidence_rationale: str
     mainstream_stocks: list[MainstreamStockRead]
     opportunities: list[InvestmentOpportunity]
     risk_notes: list[str]
@@ -715,6 +717,8 @@ def _build_event_driven_prompt(context: NewsMacroContext) -> str:
         "short_term_stance": "Bullish / Neutral / Bearish for the main ticker over the next 1-10 trading days",
         "long_term_stance": "Bullish / Neutral / Bearish for the main ticker over the next 1-3 quarters",
         "stance_rationale": "brief explanation connecting the news and macro context to the short-term and long-term stance",
+        "confidence_score": "float from 0.0 to 1.0 indicating confidence in the main ticker stances",
+        "confidence_rationale": "brief explanation of what makes the stance high or low confidence",
         "mainstream_stocks": [
             {
                 "ticker": "large-cap US stock ticker",
@@ -765,6 +769,11 @@ Give a short-term stance and a long-term stance for the main ticker in the suppl
 Each stance must be exactly one of: Bullish, Neutral, Bearish.
 Avoid Neutral unless the expected abnormal move is likely to stay within roughly +/-2%. If short-term valuation compression, capex concern, margin pressure, weak guidance, demand slowdown, or investor disappointment dominates, choose Bearish even if long-term fundamentals remain strong. If near-term earnings surprise, raised guidance, accelerating demand, margin expansion, or positive capital-flow surprise dominates, choose Bullish. Short-term stance should reflect expected post-event stock reaction versus QQQ, not the company's long-term business quality.
 
+Step 5: Confidence.
+Provide confidence_score from 0.0 to 1.0 for the main ticker stances.
+Use higher confidence only when there is direct main-ticker evidence, multiple confirming sources, coherent macro context, and clear consensus/positioning implications.
+Use lower confidence when evidence is mostly related-company read-through, stale, contradictory, missing guidance detail, or highly dependent on unknown earnings results.
+
 # Second-Order Framework
 1. Competitor Displacement: If a leader is impaired by bankruptcy, scandal, capacity constraints, or regulation, who can take share?
 2. Substitution Effect: If product A becomes unavailable, expensive, or risky, what product B will customers or enterprises adopt instead?
@@ -783,6 +792,7 @@ Avoid Neutral unless the expected abnormal move is likely to stay within roughly
 - Provide exact company names and tickers.
 - Give an impact score from 1-10 based on likely earnings impact over the next 1-3 quarters if the event continues to develop.
 - Provide short_term_stance and long_term_stance for the main ticker, not just for second-order ideas.
+- Provide confidence_score and confidence_rationale for the main ticker stance package.
 - Do not invent facts beyond the supplied context. If the thesis relies on inference, state that assumption in risk_notes.
 - This is research support, not personalized investment advice.
 
@@ -804,6 +814,8 @@ def _report_from_payload(context: NewsMacroContext, payload: dict[str, Any]) -> 
         short_term_stance=_normalize_stance(payload.get("short_term_stance")),
         long_term_stance=_normalize_stance(payload.get("long_term_stance")),
         stance_rationale=str(payload.get("stance_rationale", "No stance rationale provided.")),
+        confidence_score=_clamp_confidence(payload.get("confidence_score", 0.5)),
+        confidence_rationale=str(payload.get("confidence_rationale", "No confidence rationale provided.")),
         mainstream_stocks=[
             MainstreamStockRead(
                 ticker=str(item["ticker"]).upper(),
@@ -947,6 +959,11 @@ def _generate_heuristic_report(context: NewsMacroContext) -> NewsMacroReport:
             "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. "
             "Use model-backed output for real evaluation."
         ),
+        confidence_score=0.35,
+        confidence_rationale=(
+            "Low confidence because this is the heuristic fallback rather than model-backed reasoning, "
+            "and it uses only simple keyword and macro cues."
+        ),
         mainstream_stocks=mainstream_stocks,
         opportunities=opportunities,
         risk_notes=[
@@ -1010,7 +1027,9 @@ def format_report_markdown(report: NewsMacroReport) -> str:
         "**🧭 Main-Ticker Stance**:",
         f"- Short-term stance: {report.short_term_stance}",
         f"- Long-term stance: {report.long_term_stance}",
+        f"- Confidence: {report.confidence_score:.2f}",
         f"- Rationale: {report.stance_rationale}",
+        f"- Confidence rationale: {report.confidence_rationale}",
         "",
         "**🏦 Mainstream Large-Stock Screen**:",
         "",
@@ -1215,6 +1234,8 @@ def run_agent_event_window_eval(
     agent_eval["agent_short_term_stance"] = None
     agent_eval["agent_long_term_stance"] = None
     agent_eval["agent_stance"] = None
+    agent_eval["agent_confidence"] = None
+    agent_eval["confidence_rationale"] = None
     agent_eval["stance_rationale"] = None
     agent_eval["short_direction_match"] = None
     agent_eval["short_direction_match_reason"] = None
@@ -1275,6 +1296,8 @@ def run_agent_event_window_eval(
         short_term_stance = getattr(event_report, "short_term_stance", "Neutral")
         long_term_stance = getattr(event_report, "long_term_stance", "Neutral")
         stance_rationale = getattr(event_report, "stance_rationale", "No stance rationale available.")
+        confidence_score = getattr(event_report, "confidence_score", 0.5)
+        confidence_rationale = getattr(event_report, "confidence_rationale", "No confidence rationale available.")
         short_predicted = _stance_to_direction(short_term_stance)
         long_predicted = _stance_to_direction(long_term_stance)
         short_realized = row["realized_direction_vs_qqq"]
@@ -1286,6 +1309,8 @@ def run_agent_event_window_eval(
         agent_eval.loc[idx, "agent_short_term_stance"] = short_term_stance
         agent_eval.loc[idx, "agent_long_term_stance"] = long_term_stance
         agent_eval.loc[idx, "agent_stance"] = f"ST: {short_term_stance}; LT: {long_term_stance}"
+        agent_eval.loc[idx, "agent_confidence"] = confidence_score
+        agent_eval.loc[idx, "confidence_rationale"] = confidence_rationale
         agent_eval.loc[idx, "stance_rationale"] = stance_rationale
         short_match = _direction_match(short_predicted, short_realized, short_abnormal, pd, neutral_band)
         long_match = _direction_match(long_predicted, long_realized, long_abnormal, pd, neutral_band)
@@ -1312,6 +1337,82 @@ def run_agent_event_window_eval(
         agent_eval.loc[idx, "direction_match_reason"] = short_reason
 
     return agent_eval, agent_reports
+
+
+def summarize_eval_results(agent_eval):
+    """Summarize short/long stance evaluation into presentation-friendly metrics."""
+    pd = _import_pandas()
+
+    def _metric(prefix: str) -> dict[str, Any]:
+        match_col = f"{prefix}_direction_match"
+        reason_col = f"{prefix}_direction_match_reason"
+        stance_col = f"agent_{prefix}_term_stance" if prefix in {"short", "long"} else None
+        evaluable = agent_eval[agent_eval[match_col].notna()] if match_col in agent_eval else pd.DataFrame()
+        matched = int((evaluable[match_col] == True).sum()) if not evaluable.empty else 0
+        total = int(len(evaluable))
+        neutral_rate = None
+        if stance_col and stance_col in agent_eval:
+            neutral_rate = float((agent_eval[stance_col] == "Neutral").mean())
+        return {
+            f"{prefix}_evaluable_cases": total,
+            f"{prefix}_matched_cases": matched,
+            f"{prefix}_missed_cases": total - matched,
+            f"{prefix}_accuracy": matched / total if total else None,
+            f"{prefix}_neutral_rate": neutral_rate,
+            f"{prefix}_not_evaluable_cases": int(agent_eval[match_col].isna().sum()) if match_col in agent_eval else None,
+            f"{prefix}_reason_counts": agent_eval[reason_col].value_counts(dropna=False).to_dict()
+            if reason_col in agent_eval
+            else {},
+        }
+
+    summary = {
+        "cases": int(len(agent_eval)),
+        **_metric("short"),
+        **_metric("long"),
+    }
+    return summary
+
+
+def to_cio_agent_input(report: NewsMacroReport, agent_name: str = "news_macro") -> dict[str, Any]:
+    """Convert a NewsMacroReport into a CIO-ready standardized agent packet."""
+    key_signals = [
+        {
+            "type": "mainstream_stock",
+            "ticker": item.ticker,
+            "company": item.company_name,
+            "signal": item.preliminary_view,
+            "evidence": item.market_reaction,
+        }
+        for item in report.mainstream_stocks[:5]
+    ]
+    key_signals.extend(
+        {
+            "type": "second_order_opportunity",
+            "ticker": item.ticker,
+            "company": item.company_name,
+            "signal": f"{item.position}: {item.trigger_logic}",
+            "evidence": item.demand_chain_thesis,
+            "impact_score": item.impact_score,
+        }
+        for item in report.opportunities[:5]
+    )
+    return {
+        "ticker": report.ticker,
+        "company": report.company,
+        "agent_name": agent_name,
+        "short_term_stance": report.short_term_stance,
+        "long_term_stance": report.long_term_stance,
+        "confidence": report.confidence_score,
+        "confidence_rationale": report.confidence_rationale,
+        "stance_rationale": report.stance_rationale,
+        "key_signals": key_signals,
+        "risks": report.risk_notes,
+        "citations": report.citations,
+        "summary": {
+            "news_summary": report.news_summary,
+            "core_insight": report.core_insight,
+        },
+    }
 
 
 def format_return_columns(df):
@@ -1729,6 +1830,14 @@ def _normalize_stance(value: Any) -> str:
     if "bear" in stance or "negative" in stance or "不看好" in stance:
         return "Bearish"
     return "Neutral"
+
+
+def _clamp_confidence(value: Any) -> float:
+    try:
+        confidence = float(value)
+    except (TypeError, ValueError):
+        return 0.5
+    return max(0.0, min(1.0, confidence))
 
 
 def _heuristic_stance(score: float, has_ai: bool, has_rates: bool, horizon: str) -> str:
