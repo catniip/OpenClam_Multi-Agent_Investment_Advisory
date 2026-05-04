@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from dataclasses import asdict, dataclass, field
 from textwrap import dedent
 from typing import Any, Sequence
@@ -131,9 +132,7 @@ class FundamentalOutput(JsonModelMixin):
     missing_information: list[str]
 
     def __post_init__(self) -> None:
-        self.confidence = float(self.confidence)
-        if not 0 <= self.confidence <= 1:
-            raise ValueError("confidence must be between 0 and 1")
+        self.confidence = _coerce_confidence(self.confidence)
 
     @classmethod
     def from_dict(cls, payload: dict[str, Any]) -> "FundamentalOutput":
@@ -141,22 +140,22 @@ class FundamentalOutput(JsonModelMixin):
             ticker=str(payload.get("ticker", "")),
             stance=str(payload.get("stance", "Watch")),
             core_judgment=str(payload.get("core_judgment", "")),
-            positive_signals=[str(item) for item in payload.get("positive_signals", [])],
-            negative_signals=[str(item) for item in payload.get("negative_signals", [])],
-            key_evidence=[str(item) for item in payload.get("key_evidence", [])],
+            positive_signals=_coerce_str_list(payload.get("positive_signals")),
+            negative_signals=_coerce_str_list(payload.get("negative_signals")),
+            key_evidence=_coerce_str_list(payload.get("key_evidence")),
             beat_or_miss=str(payload.get("beat_or_miss", "Unclear")),
             guidance_change=str(payload.get("guidance_change", "Unclear")),
             management_tone=str(payload.get("management_tone", "Unclear")),
             thesis_impact=str(payload.get("thesis_impact", "Unclear")),
             thesis_impact_reasoning=str(payload.get("thesis_impact_reasoning", "")),
-            confidence=float(payload.get("confidence", 0.0)),
+            confidence=_coerce_confidence(payload.get("confidence", 0.0)),
             confidence_reasoning=str(payload.get("confidence_reasoning", "")),
-            missing_information=[str(item) for item in payload.get("missing_information", [])],
+            missing_information=_coerce_str_list(payload.get("missing_information")),
         )
 
     @classmethod
     def model_validate_json(cls, raw_text: str) -> "FundamentalOutput":
-        payload = json.loads(raw_text)
+        payload = _extract_json_payload(raw_text)
         if not isinstance(payload, dict):
             raise ValueError("FundamentalOutput expects a JSON object")
         return cls.from_dict(payload)
@@ -193,6 +192,90 @@ def _safe_float(value: Any) -> float | None:
         return float(value)
     except Exception:
         return None
+
+
+def _coerce_confidence(value: Any, default: float = 0.0) -> float:
+    """Parse model confidence robustly and clamp it to [0, 1]."""
+    if value is None:
+        confidence = default
+    elif isinstance(value, str):
+        stripped = value.strip()
+        cleaned = stripped.replace("%", "")
+        try:
+            confidence = float(cleaned)
+            if "%" in stripped or confidence >= 10:
+                confidence = confidence / 100
+        except ValueError:
+            confidence = default
+    else:
+        try:
+            confidence = float(value)
+            if confidence >= 10:
+                confidence = confidence / 100
+        except (TypeError, ValueError):
+            confidence = default
+    return max(0.0, min(1.0, confidence))
+
+
+def _coerce_str_list(value: Any) -> list[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [str(item) for item in value if item is not None]
+    if isinstance(value, tuple):
+        return [str(item) for item in value if item is not None]
+    if isinstance(value, str):
+        stripped = value.strip()
+        if not stripped:
+            return []
+        try:
+            parsed = json.loads(stripped)
+            if isinstance(parsed, list):
+                return [str(item) for item in parsed if item is not None]
+        except Exception:
+            pass
+        return [stripped]
+    return [str(value)]
+
+
+def _extract_json_payload(raw_text: str) -> dict[str, Any]:
+    """Extract a JSON object from raw model output, including fenced/verbose text."""
+    text = (raw_text or "").strip()
+    if not text:
+        return {}
+
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?", "", text, flags=re.IGNORECASE).strip()
+        text = re.sub(r"```$", "", text).strip()
+
+    try:
+        parsed = json.loads(text)
+        if isinstance(parsed, list) and parsed and isinstance(parsed[0], dict):
+            return parsed[0]
+        if isinstance(parsed, dict):
+            return parsed
+    except json.JSONDecodeError:
+        pass
+
+    match = re.search(r"\{.*\}", text, flags=re.DOTALL)
+    if not match:
+        raise ValueError("No JSON object found in Fundamental Agent output.")
+
+    candidate = match.group(0)
+    try:
+        return json.loads(candidate)
+    except json.JSONDecodeError:
+        # Greedy regex can capture too much if text contains multiple objects.
+        decoder = json.JSONDecoder()
+        start = text.find("{")
+        while start != -1:
+            try:
+                parsed, _ = decoder.raw_decode(text[start:])
+                if isinstance(parsed, dict):
+                    return parsed
+            except json.JSONDecodeError:
+                start = text.find("{", start + 1)
+        raise
 
 
 def _format_statement_period(statement: pd.DataFrame | None) -> str:
@@ -581,15 +664,29 @@ class FundamentalAgent:
         self.client = client
 
     def run(self, data: FundamentalInput) -> FundamentalOutput:
-        response = self.client.chat.completions.create(
-            model=self.model_name,
-            temperature=self.temperature,
-            messages=[
-                {"role": "system", "content": FUNDAMENTAL_SYSTEM_PROMPT},
-                {"role": "user", "content": build_fundamental_prompt(data)},
-            ],
-            response_format={"type": "json_object"},
-        )
+        messages = [
+            {"role": "system", "content": FUNDAMENTAL_SYSTEM_PROMPT},
+            {"role": "user", "content": build_fundamental_prompt(data)},
+        ]
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                temperature=self.temperature,
+                messages=messages,
+                response_format={"type": "json_object"},
+            )
+        except Exception:
+            response = self.client.chat.completions.create(
+                model=self.model_name,
+                temperature=self.temperature,
+                messages=[
+                    *messages,
+                    {
+                        "role": "user",
+                        "content": "Return only one valid JSON object. Do not use markdown fences or explanatory text.",
+                    },
+                ],
+            )
 
         raw_text = response.choices[0].message.content or "{}"
 

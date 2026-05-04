@@ -700,11 +700,21 @@ def _generate_vertex_report(
     if not project:
         raise ValueError("vertex_project is required when provider='vertex'.")
 
-    from google import genai  # type: ignore
-
-    client = genai.Client(vertexai=True, project=project, location=location)
     prompt = _build_event_driven_prompt(context)
-    response = client.models.generate_content(model=model, contents=prompt)
+
+    try:
+        from google import genai  # type: ignore
+
+        client = genai.Client(vertexai=True, project=project, location=location)
+        response = client.models.generate_content(model=model, contents=prompt)
+    except Exception:
+        import vertexai  # type: ignore
+        from vertexai.generative_models import GenerativeModel  # type: ignore
+
+        vertexai.init(project=project, location=location)
+        vertex_model = GenerativeModel(model)
+        response = vertex_model.generate_content(prompt)
+
     text = getattr(response, "text", None) or str(response)
     payload = _extract_json(text)
     return _report_from_payload(context, payload)
@@ -1089,11 +1099,19 @@ def build_earnings_price_eval(
     post_trading_days: int = 7,
     long_post_trading_days: int = 30,
     benchmarks: tuple[str, ...] = ("SPY", "QQQ"),
+    price_anchor: str = "event_close",
 ):
-    """Build event-window price paths and return metrics around earnings dates."""
+    """Build event-window price paths and return metrics around earnings dates.
+
+    price_anchor="event_close" is the default for post-earnings trading judgment:
+    agents may read earnings-day news, then returns are measured after that day's
+    close. Use "previous_close" for pre-earnings/no-leakage studies.
+    """
     pd = _import_pandas()
     np = _import_numpy()
     yf = _import_yfinance()
+    if price_anchor not in {"event_close", "previous_close"}:
+        raise ValueError("price_anchor must be 'event_close' or 'previous_close'.")
     earnings_df = earnings_df.copy() if earnings_df is not None else mag7_q4_2025_earnings_df()
     long_return_col = f"post_{long_post_trading_days}d_return"
     long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
@@ -1114,6 +1132,7 @@ def build_earnings_price_eval(
             event_date,
             pre_trading_days,
             long_post_trading_days,
+            price_anchor=price_anchor,
         )
         if ticker_error:
             summary_rows.append(
@@ -1137,6 +1156,7 @@ def build_earnings_price_eval(
             "company": row.company,
             "earnings_date": row.earnings_date,
             **metrics,
+            "price_anchor": price_anchor,
         }
 
         for benchmark in benchmarks:
@@ -1152,6 +1172,7 @@ def build_earnings_price_eval(
                 event_date,
                 pre_trading_days,
                 long_post_trading_days,
+                price_anchor=price_anchor,
             )
             if benchmark_error:
                 summary[f"{benchmark.lower()}_post_7d_return"] = np.nan
@@ -1201,11 +1222,16 @@ def run_agent_event_window_eval(
     model: str = "gpt-5.4-nano",
     gemini_model: str = "gemini-2.5-flash",
     neutral_band: float = 0.02,
-    news_end_offset_days: int = -1,
+    news_end_offset_days: int = 0,
     long_post_trading_days: int | None = None,
     quiet: bool = True,
 ):
-    """Run the News & Macro Agent against no-leakage event windows and score both horizons."""
+    """Run the News & Macro Agent against event windows and score both horizons.
+
+    The default is post-earnings trading judgment: news includes the earnings
+    date itself (`news_end_offset_days=0`). Set `news_end_offset_days=-1` only
+    for strict pre-earnings/no-leakage studies.
+    """
     pd = _import_pandas()
     news_sources = news_sources or ["finnhub", "newsapi", "yfinance"]
     if long_post_trading_days is None:
@@ -1557,17 +1583,31 @@ def _download_close_series(yf, symbol: str, event_date, pre_days: int, post_days
     )
 
 
-def _event_window_from_close(close, event_date, pre_days: int, post_days: int):
+def _event_window_from_close(
+    close,
+    event_date,
+    pre_days: int,
+    post_days: int,
+    price_anchor: str = "event_close",
+):
     pd = _import_pandas()
     if close.empty:
         return pd.DataFrame(), "No close prices available."
 
     dates = pd.Series(close.index, index=range(len(close)))
-    before = dates[dates < event_date]
-    if before.empty:
-        return pd.DataFrame(), "No trading day before earnings date."
+    if price_anchor == "previous_close":
+        anchor_candidates = dates[dates < event_date]
+        if anchor_candidates.empty:
+            return pd.DataFrame(), "No trading day before earnings date."
+        anchor_pos = anchor_candidates.index.max()
+    elif price_anchor == "event_close":
+        anchor_candidates = dates[dates >= event_date]
+        if anchor_candidates.empty:
+            return pd.DataFrame(), "No trading day on or after earnings date."
+        anchor_pos = anchor_candidates.index.min()
+    else:
+        raise ValueError("price_anchor must be 'event_close' or 'previous_close'.")
 
-    anchor_pos = before.index.max()
     start_pos = max(0, anchor_pos - pre_days)
     end_pos = min(len(close) - 1, anchor_pos + post_days)
     window = close.iloc[start_pos : end_pos + 1].copy()
