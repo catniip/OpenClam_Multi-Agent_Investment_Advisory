@@ -661,3 +661,440 @@ Precomputed Key Signals:
 			"core_insight": "Indicator data is available, but LLM response format was invalid.",
 			"raw_response": response.content,
 		}
+
+
+# ==================================================
+# EVALUATION FRAMEWORK FOR MARKET TECHNICAL AGENT
+# ==================================================
+
+
+def _import_pandas():
+	return pd
+
+
+def _import_numpy():
+	return np
+
+
+def _import_yfinance():
+	return yf
+
+
+def _download_close_series(yf_module, ticker: str, event_date, pre_trading_days: int, lookback_days: int):
+	"""Download close prices around event date."""
+	try:
+		start_date = (pd.Timestamp(event_date) - pd.Timedelta(days=pre_trading_days + 30)).strftime("%Y-%m-%d")
+		end_date = (pd.Timestamp(event_date) + pd.Timedelta(days=lookback_days + 30)).strftime("%Y-%m-%d")
+		
+		df = yf_module.download(ticker, start=start_date, end=end_date, progress=False)
+		if isinstance(df.columns, pd.MultiIndex):
+			df.columns = df.columns.get_level_values(0)
+		
+		df = df.reset_index()
+		if df.empty:
+			return None, f"No data returned for {ticker}"
+		
+		df["Date"] = pd.to_datetime(df["Date"]).dt.normalize()
+		df = df.sort_values("Date").reset_index(drop=True)
+		
+		return df, None
+	except Exception as e:
+		return None, str(e)
+
+
+def _event_window_from_close(close_df, event_date, pre_trading_days: int, lookback_days: int):
+	"""Extract event window from close series."""
+	try:
+		if close_df is None or close_df.empty:
+			return None, "No data available"
+		
+		event_ts = pd.Timestamp(event_date).normalize()
+		
+		# Find trading days around event
+		trading_dates = close_df["Date"].values
+		event_idx = None
+		
+		# Find closest date to event
+		for i, date in enumerate(trading_dates):
+			if pd.Timestamp(date).normalize() >= event_ts:
+				event_idx = i
+				break
+		
+		if event_idx is None:
+			event_idx = len(trading_dates) - 1
+		
+		pre_idx = max(0, event_idx - pre_trading_days)
+		post_idx = min(len(trading_dates), event_idx + lookback_days + 1)
+		
+		window = close_df.iloc[pre_idx:post_idx].copy()
+		if window.empty:
+			return None, "Event window is empty"
+		
+		baseline_price = window.iloc[0]["Close"]
+		window["price_return"] = (window["Close"] - baseline_price) / baseline_price * 100
+		window["days_from_event"] = (window["Date"] - event_ts).dt.days
+		
+		return window, None
+	except Exception as e:
+		return None, str(e)
+
+
+def _compute_event_returns(price_window, pre_trading_days: int, post_trading_days: int, np_module, long_lookback_days: int):
+	"""Compute returns at different horizons from price window."""
+	metrics = {}
+	
+	if price_window is None or price_window.empty:
+		return metrics
+	
+	baseline_price = price_window.iloc[0]["Close"]
+	
+	# Short-term (7 days post event)
+	short_window = price_window[price_window["days_from_event"] <= post_trading_days]
+	if not short_window.empty:
+		short_price = short_window.iloc[-1]["Close"]
+		metrics["post_7d_return"] = float((short_price - baseline_price) / baseline_price)
+	else:
+		metrics["post_7d_return"] = np_module.nan
+	
+	# Long-term (user-defined, default 30 days)
+	long_window = price_window[price_window["days_from_event"] <= long_lookback_days]
+	if not long_window.empty:
+		long_price = long_window.iloc[-1]["Close"]
+		long_col = f"post_{long_lookback_days}d_return"
+		metrics[long_col] = float((long_price - baseline_price) / baseline_price)
+	else:
+		long_col = f"post_{long_lookback_days}d_return"
+		metrics[long_col] = np_module.nan
+	
+	return metrics
+
+
+def _stance_to_direction(stance: str):
+	"""Convert stance to direction: bullish->up, bearish->down, neutral->None."""
+	stance_lower = str(stance).lower().strip()
+	if stance_lower == "bullish":
+		return "up"
+	elif stance_lower == "bearish":
+		return "down"
+	else:
+		return None
+
+
+def _direction_match(predicted_direction, realized_direction, abnormal_return, pd_module, neutral_band: float = 0.02):
+	"""Check if predicted direction matches realized direction."""
+	if predicted_direction is None or realized_direction is None:
+		return None
+	
+	if pd_module.isna(abnormal_return):
+		return None
+	
+	# Neutral band: treat small moves as ambiguous
+	if abs(abnormal_return) < neutral_band:
+		return None
+	
+	actual_dir = "up" if abnormal_return > 0 else "down"
+	return predicted_direction == actual_dir
+
+
+def _direction_match_reason(predicted_direction, realized_direction, abnormal_return, pd_module, neutral_band: float = 0.02):
+	"""Generate reason for direction match."""
+	if predicted_direction is None or realized_direction is None:
+		return "prediction or realization missing"
+	
+	if pd_module.isna(abnormal_return):
+		return "abnormal return not available"
+	
+	if abs(abnormal_return) < neutral_band:
+		return f"moved within neutral band ({neutral_band*100:.1f}%)"
+	
+	actual_dir = "up" if abnormal_return > 0 else "down"
+	if predicted_direction == actual_dir:
+		return f"correctly predicted {actual_dir} move ({abnormal_return*100:.2f}%)"
+	else:
+		return f"predicted {predicted_direction} but realized {actual_dir} ({abnormal_return*100:.2f}%)"
+
+
+def build_earnings_price_eval(
+	earnings_df=None,
+	pre_trading_days: int = 7,
+	post_trading_days: int = 7,
+	long_post_trading_days: int = 30,
+	benchmarks: tuple = ("SPY", "QQQ"),
+):
+	"""Build event-window price paths and return metrics around earnings dates."""
+	earnings_df = earnings_df.copy() if earnings_df is not None else pd.DataFrame()
+	
+	long_return_col = f"post_{long_post_trading_days}d_return"
+	long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
+
+	price_paths = []
+	summary_rows = []
+	
+	for row in earnings_df.itertuples(index=False):
+		event_date = pd.Timestamp(row.earnings_date).normalize()
+		ticker_close, ticker_download_error = _download_close_series(
+			yf,
+			row.ticker,
+			event_date,
+			pre_trading_days,
+			long_post_trading_days,
+		)
+		ticker_path, ticker_error = _event_window_from_close(
+			ticker_close,
+			event_date,
+			pre_trading_days,
+			long_post_trading_days,
+		)
+		
+		if ticker_error:
+			summary_rows.append(
+				{
+					"ticker": row.ticker,
+					"company": row.company,
+					"earnings_date": row.earnings_date,
+					"error": ticker_download_error or ticker_error,
+				}
+			)
+			continue
+
+		ticker_path["ticker"] = row.ticker
+		ticker_path["company"] = row.company
+		ticker_path["symbol_type"] = "stock"
+		price_paths.append(ticker_path)
+
+		metrics = _compute_event_returns(ticker_path, pre_trading_days, post_trading_days, np, long_post_trading_days)
+		summary = {
+			"ticker": row.ticker,
+			"company": row.company,
+			"earnings_date": row.earnings_date,
+			**metrics,
+		}
+
+		for benchmark in benchmarks:
+			benchmark_close, benchmark_download_error = _download_close_series(
+				yf,
+				benchmark,
+				event_date,
+				pre_trading_days,
+				long_post_trading_days,
+			)
+			benchmark_path, benchmark_error = _event_window_from_close(
+				benchmark_close,
+				event_date,
+				pre_trading_days,
+				long_post_trading_days,
+			)
+			
+			if benchmark_error:
+				summary[f"{benchmark.lower()}_post_7d_return"] = np.nan
+				summary[f"abnormal_vs_{benchmark.lower()}"] = np.nan
+				summary[f"{benchmark.lower()}_post_{long_post_trading_days}d_return"] = np.nan
+				summary[f"abnormal_{long_post_trading_days}d_vs_{benchmark.lower()}"] = np.nan
+				summary[f"{benchmark.lower()}_error"] = benchmark_download_error or benchmark_error
+				continue
+			
+			benchmark_metrics = _compute_event_returns(
+				benchmark_path,
+				pre_trading_days,
+				post_trading_days,
+				np,
+				long_post_trading_days,
+			)
+			
+			stock_short_return = metrics.get("post_7d_return", np.nan)
+			benchmark_short_return = benchmark_metrics.get("post_7d_return", np.nan)
+			stock_long_return = metrics.get(long_return_col, np.nan)
+			benchmark_long_return = benchmark_metrics.get(long_return_col, np.nan)
+			
+			summary[f"{benchmark.lower()}_post_7d_return"] = benchmark_short_return
+			summary[f"abnormal_vs_{benchmark.lower()}"] = stock_short_return - benchmark_short_return
+			summary[f"{benchmark.lower()}_post_{long_post_trading_days}d_return"] = benchmark_long_return
+			summary[f"abnormal_{long_post_trading_days}d_vs_{benchmark.lower()}"] = (
+				stock_long_return - benchmark_long_return
+			)
+
+		abnormal = summary.get("abnormal_vs_qqq", np.nan)
+		summary["realized_direction_vs_qqq"] = None if pd.isna(abnormal) else ("up" if abnormal > 0 else "down")
+		long_abnormal = summary.get(f"abnormal_{long_post_trading_days}d_vs_qqq", np.nan)
+		summary[long_direction_col] = (
+			None if pd.isna(long_abnormal) else ("up" if long_abnormal > 0 else "down")
+		)
+		summary["long_horizon_trading_days"] = long_post_trading_days
+		summary_rows.append(summary)
+
+	summary_df = pd.DataFrame(summary_rows)
+	paths_df = pd.concat(price_paths, ignore_index=True) if price_paths else pd.DataFrame()
+	
+	return summary_df, paths_df
+
+
+def run_agent_event_window_eval(
+	summary_df,
+	llm: ChatOpenAI,
+	lookback_days: int = 14,
+	neutral_band: float = 0.02,
+	long_post_trading_days: int = None,
+	quiet: bool = True,
+):
+	"""Run market technical agent against event windows and score both horizons."""
+	if summary_df.empty:
+		return pd.DataFrame(), {}
+	
+	if long_post_trading_days is None:
+		if "long_horizon_trading_days" in summary_df.columns and not summary_df["long_horizon_trading_days"].dropna().empty:
+			long_post_trading_days = int(summary_df["long_horizon_trading_days"].dropna().iloc[0])
+		else:
+			long_post_trading_days = 30
+	
+	long_return_col = f"post_{long_post_trading_days}d_return"
+	long_abnormal_col = f"abnormal_{long_post_trading_days}d_vs_qqq"
+	long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
+	
+	required = [
+		"ticker",
+		"company",
+		"earnings_date",
+		"post_7d_return",
+		"abnormal_vs_qqq",
+		"realized_direction_vs_qqq",
+		long_return_col,
+		long_abnormal_col,
+		long_direction_col,
+	]
+	
+	# Filter to only rows with required columns
+	available_cols = [col for col in required if col in summary_df.columns]
+	agent_eval = summary_df[available_cols].copy()
+
+	agent_eval["news_context_ready"] = agent_eval["earnings_date"].notna()
+	agent_eval["report_ready"] = False
+	agent_eval["agent_short_term_stance"] = None
+	agent_eval["agent_long_term_stance"] = None
+	agent_eval["agent_stance"] = None
+	agent_eval["agent_confidence"] = None
+	agent_eval["confidence_rationale"] = None
+	agent_eval["stance_rationale"] = None
+	agent_eval["short_direction_match"] = None
+	agent_eval["short_direction_match_reason"] = None
+	agent_eval["long_direction_match"] = None
+	agent_eval["long_direction_match_reason"] = None
+	agent_eval["direction_match"] = None
+	agent_eval["direction_match_reason"] = None
+	agent_reports = {}
+
+	for idx, row in agent_eval.iterrows():
+		if not row["news_context_ready"]:
+			agent_eval.loc[idx, "report_ready"] = False
+			agent_eval.loc[idx, "agent_short_term_stance"] = None
+			agent_eval.loc[idx, "agent_long_term_stance"] = None
+			agent_eval.loc[idx, "agent_stance"] = None
+			agent_eval.loc[idx, "agent_confidence"] = None
+			agent_eval.loc[idx, "confidence_rationale"] = None
+			agent_eval.loc[idx, "stance_rationale"] = None
+			agent_eval.loc[idx, "short_direction_match"] = None
+			agent_eval.loc[idx, "short_direction_match_reason"] = "missing earnings date"
+			agent_eval.loc[idx, "long_direction_match"] = None
+			agent_eval.loc[idx, "long_direction_match_reason"] = "missing earnings date"
+			agent_eval.loc[idx, "direction_match"] = None
+			agent_eval.loc[idx, "direction_match_reason"] = "missing earnings date"
+			continue
+
+		ticker = row["ticker"]
+		company = row["company"]
+		earnings_date = row["earnings_date"]
+
+		# Build query for agent analyzing as-of the earnings date
+		query = f"{company} ({ticker}) technical analysis as of {earnings_date}"
+		
+		try:
+			agent_report = run_market_analysis(query, llm=llm, ticker=ticker)
+			agent_reports[ticker] = agent_report
+
+			short_term_stance = agent_report.get("short_term_stance", "neutral")
+			long_term_stance = agent_report.get("long_term_stance", "neutral")
+			confidence_score = agent_report.get("confidence", 0.5)
+			
+			short_predicted = _stance_to_direction(short_term_stance)
+			long_predicted = _stance_to_direction(long_term_stance)
+			
+			short_realized = row.get("realized_direction_vs_qqq")
+			long_realized = row.get(long_direction_col)
+			
+			short_abnormal = row.get("abnormal_vs_qqq", np.nan)
+			long_abnormal = row.get(long_abnormal_col, np.nan)
+
+			agent_eval.loc[idx, "report_ready"] = True
+			agent_eval.loc[idx, "agent_short_term_stance"] = short_term_stance
+			agent_eval.loc[idx, "agent_long_term_stance"] = long_term_stance
+			agent_eval.loc[idx, "agent_stance"] = f"ST: {short_term_stance}; LT: {long_term_stance}"
+			agent_eval.loc[idx, "agent_confidence"] = confidence_score
+			agent_eval.loc[idx, "confidence_rationale"] = agent_report.get("confidence_rationale", "")
+			agent_eval.loc[idx, "stance_rationale"] = agent_report.get("summary", "")
+			
+			short_match = _direction_match(short_predicted, short_realized, short_abnormal, pd, neutral_band)
+			long_match = _direction_match(long_predicted, long_realized, long_abnormal, pd, neutral_band)
+			
+			short_reason = _direction_match_reason(short_predicted, short_realized, short_abnormal, pd, neutral_band)
+			long_reason = _direction_match_reason(long_predicted, long_realized, long_abnormal, pd, neutral_band)
+
+			agent_eval.loc[idx, "short_direction_match"] = short_match
+			agent_eval.loc[idx, "short_direction_match_reason"] = short_reason
+			agent_eval.loc[idx, "long_direction_match"] = long_match
+			agent_eval.loc[idx, "long_direction_match_reason"] = long_reason
+			agent_eval.loc[idx, "direction_match"] = short_match
+			agent_eval.loc[idx, "direction_match_reason"] = short_reason
+		except Exception as e:
+			agent_eval.loc[idx, "report_ready"] = False
+			agent_eval.loc[idx, "agent_short_term_stance"] = None
+			agent_eval.loc[idx, "agent_long_term_stance"] = None
+			agent_eval.loc[idx, "agent_stance"] = None
+			agent_eval.loc[idx, "agent_confidence"] = None
+			agent_eval.loc[idx, "confidence_rationale"] = f"agent error: {str(e)}"
+			agent_eval.loc[idx, "stance_rationale"] = None
+			agent_eval.loc[idx, "short_direction_match"] = None
+			agent_eval.loc[idx, "short_direction_match_reason"] = f"agent error: {str(e)}"
+			agent_eval.loc[idx, "long_direction_match"] = None
+			agent_eval.loc[idx, "long_direction_match_reason"] = f"agent error: {str(e)}"
+			agent_eval.loc[idx, "direction_match"] = None
+			agent_eval.loc[idx, "direction_match_reason"] = f"agent error: {str(e)}"
+
+	return agent_eval, agent_reports
+
+
+def summarize_eval_results(agent_eval):
+	"""Summarize short/long stance evaluation into presentation-friendly metrics."""
+	
+	def _metric(prefix: str):
+		match_col = f"{prefix}_direction_match"
+		reason_col = f"{prefix}_direction_match_reason"
+		stance_col = f"agent_{prefix}_term_stance"
+		
+		evaluable = agent_eval[agent_eval[match_col].notna()] if match_col in agent_eval else pd.DataFrame()
+		matched = int((evaluable[match_col] == True).sum()) if not evaluable.empty else 0
+		total = int(len(evaluable))
+		
+		neutral_rate = None
+		if stance_col and stance_col in agent_eval:
+			neutral_rate = float((agent_eval[stance_col] == "neutral").mean())
+		
+		reason_counts = {}
+		if reason_col in agent_eval:
+			reason_counts = agent_eval[reason_col].value_counts(dropna=False).to_dict()
+		
+		return {
+			f"{prefix}_evaluable_cases": total,
+			f"{prefix}_matched_cases": matched,
+			f"{prefix}_missed_cases": total - matched,
+			f"{prefix}_accuracy": matched / total if total > 0 else None,
+			f"{prefix}_neutral_rate": neutral_rate,
+			f"{prefix}_not_evaluable_cases": int(agent_eval[match_col].isna().sum()) if match_col in agent_eval else 0,
+			f"{prefix}_reason_counts": reason_counts,
+		}
+
+	summary = {
+		"cases": int(len(agent_eval)),
+		**_metric("short"),
+		**_metric("long"),
+	}
+	
+	return summary
