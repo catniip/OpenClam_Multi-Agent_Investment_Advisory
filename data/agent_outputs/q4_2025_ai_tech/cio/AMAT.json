@@ -1,0 +1,2793 @@
+{
+  "synthesis": {
+    "ticker": "AMAT",
+    "company": "Applied Materials",
+    "agent_view_summary": [
+      {
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.35,
+        "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+      },
+      {
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
+        "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+      }
+    ],
+    "areas_of_agreement": [
+      "2 agents lean neutral on the short-term horizon.",
+      "2 agents lean bullish on the long-term horizon."
+    ],
+    "areas_of_disagreement": [],
+    "missing_information": [],
+    "short_stance_counts": {
+      "Bullish": 1,
+      "Neutral": 2,
+      "Bearish": 0
+    },
+    "long_stance_counts": {
+      "Bullish": 2,
+      "Neutral": 1,
+      "Bearish": 0
+    },
+    "agent_packets": [
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.35,
+        "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+        "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+        "key_signals": [
+          {
+            "type": "mainstream_stock",
+            "ticker": "MSFT",
+            "company": "Microsoft Corporation",
+            "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+            "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "AMZN",
+            "company": "Amazon.com, Inc.",
+            "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+            "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "GOOGL",
+            "company": "Alphabet Inc.",
+            "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+            "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "NVDA",
+            "company": "NVIDIA Corporation",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+            "impact_score": 8
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "AVGO",
+            "company": "Broadcom Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+            "impact_score": 7
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "DELL",
+            "company": "Dell Technologies Inc.",
+            "signal": "Long: Solution Provider",
+            "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+            "impact_score": 6
+          }
+        ],
+        "risks": [
+          "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+          "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+          "Using event-window news ending +0 calendar day(s) from event_date.",
+          "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+          "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+          "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+          "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+          "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+          "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+          "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+        ],
+        "citations": [
+          {
+            "title": "Applied Materials Q1 Earnings Call Highlights",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+          },
+          {
+            "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+          },
+          {
+            "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+          },
+          {
+            "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+          },
+          {
+            "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+          },
+          {
+            "title": "Applied Materials Announces First Quarter 2026 Results",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+          },
+          {
+            "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+            "source": "ChartMill",
+            "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+          },
+          {
+            "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+          },
+          {
+            "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+          },
+          {
+            "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+            "source": "SeekingAlpha",
+            "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+          }
+        ],
+        "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.35,
+          "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+          "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "MSFT",
+              "company": "Microsoft Corporation",
+              "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+              "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMZN",
+              "company": "Amazon.com, Inc.",
+              "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+              "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "GOOGL",
+              "company": "Alphabet Inc.",
+              "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+              "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "NVDA",
+              "company": "NVIDIA Corporation",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+              "impact_score": 8
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "AVGO",
+              "company": "Broadcom Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+              "impact_score": 7
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "DELL",
+              "company": "Dell Technologies Inc.",
+              "signal": "Long: Solution Provider",
+              "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+              "impact_score": 6
+            }
+          ],
+          "risks": [
+            "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+            "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+            "Using event-window news ending +0 calendar day(s) from event_date.",
+            "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+            "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+            "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+            "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+            "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+          ],
+          "citations": [
+            {
+              "title": "Applied Materials Q1 Earnings Call Highlights",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+            },
+            {
+              "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+            },
+            {
+              "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+            },
+            {
+              "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+            },
+            {
+              "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+            },
+            {
+              "title": "Applied Materials Announces First Quarter 2026 Results",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+            },
+            {
+              "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+              "source": "ChartMill",
+              "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+            },
+            {
+              "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+            },
+            {
+              "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+            },
+            {
+              "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+              "source": "SeekingAlpha",
+              "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+            }
+          ],
+          "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.35,
+            "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+            "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "MSFT",
+                "company": "Microsoft Corporation",
+                "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+                "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMZN",
+                "company": "Amazon.com, Inc.",
+                "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+                "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "GOOGL",
+                "company": "Alphabet Inc.",
+                "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+                "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "NVDA",
+                "company": "NVIDIA Corporation",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+                "impact_score": 8
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "AVGO",
+                "company": "Broadcom Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+                "impact_score": 7
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "DELL",
+                "company": "Dell Technologies Inc.",
+                "signal": "Long: Solution Provider",
+                "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+                "impact_score": 6
+              }
+            ],
+            "risks": [
+              "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+              "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+              "Using event-window news ending +0 calendar day(s) from event_date.",
+              "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+              "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+              "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+              "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+              "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+            ],
+            "citations": [
+              {
+                "title": "Applied Materials Q1 Earnings Call Highlights",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+              },
+              {
+                "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+              },
+              {
+                "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+              },
+              {
+                "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+              },
+              {
+                "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+              },
+              {
+                "title": "Applied Materials Announces First Quarter 2026 Results",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+              },
+              {
+                "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+                "source": "ChartMill",
+                "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+              },
+              {
+                "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+              },
+              {
+                "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+              },
+              {
+                "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+                "source": "SeekingAlpha",
+                "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+              }
+            ],
+            "summary": {
+              "news_summary": "News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite.",
+              "core_insight": "The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+        "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+            "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Shift",
+            "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral-to-Bullish Momentum",
+            "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Consolidating Price Action",
+            "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+          },
+          {
+            "type": "Volume",
+            "signal": "Subdued Participation",
+            "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Minor Pullback from Recent Highs",
+            "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.03%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+          }
+        ],
+        "risks": [
+          "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+          "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+        ],
+        "citations": [],
+        "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Shift",
+              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral-to-Bullish Momentum",
+              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Consolidating Price Action",
+              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+            },
+            {
+              "type": "Volume",
+              "signal": "Subdued Participation",
+              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Minor Pullback from Recent Highs",
+              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.03%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+            }
+          ],
+          "risks": [
+            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+          ],
+          "citations": [],
+          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Shift",
+                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral-to-Bullish Momentum",
+                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Consolidating Price Action",
+                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+              },
+              {
+                "type": "Volume",
+                "signal": "Subdued Participation",
+                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Minor Pullback from Recent Highs",
+                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.03%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+              }
+            ],
+            "risks": [
+              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+            ],
+            "citations": [],
+            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Shift",
+                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral-to-Bullish Momentum",
+                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Consolidating Price Action",
+                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Subdued Participation",
+                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Minor Pullback from Recent Highs",
+                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.03%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+                }
+              ],
+              "risks": [
+                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+              ],
+              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+              "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
+        "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+        "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+        "key_signals": [
+          "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+          "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+          "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+          "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+          "Profit margin is robust at approximately 27.8%.",
+          "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+          "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+          "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+          "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+          "Trailing P/E: 40.06",
+          "Total Debt: $7.19B",
+          "Cash And Cash Equivalents: $7.22B",
+          "yfinance Revenue Growth: -2.1%"
+        ],
+        "risks": [
+          "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+          "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+          "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+          "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+          "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+          "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+          "Forward-looking guidance from the company.",
+          "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+          "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+          "Peer company valuation metrics for comparison.",
+          "Details on the cause of the significant drop in operating and free cash flow."
+        ],
+        "citations": [],
+        "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.3,
+          "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+          "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+          "key_signals": [
+            "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+            "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+            "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+            "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+            "Profit margin is robust at approximately 27.8%.",
+            "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+            "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+            "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+            "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+            "Trailing P/E: 40.06",
+            "Total Debt: $7.19B",
+            "Cash And Cash Equivalents: $7.22B",
+            "yfinance Revenue Growth: -2.1%"
+          ],
+          "risks": [
+            "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+            "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+            "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+            "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+            "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+            "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+            "Forward-looking guidance from the company.",
+            "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+            "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+            "Peer company valuation metrics for comparison.",
+            "Details on the cause of the significant drop in operating and free cash flow."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.3,
+            "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+            "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+            "key_signals": [
+              "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+              "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+              "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+              "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+              "Profit margin is robust at approximately 27.8%.",
+              "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+              "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+              "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+              "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+              "Trailing P/E: 40.06",
+              "Total Debt: $7.19B",
+              "Cash And Cash Equivalents: $7.22B",
+              "yfinance Revenue Growth: -2.1%"
+            ],
+            "risks": [
+              "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+              "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+              "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+              "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+              "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+              "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+              "Forward-looking guidance from the company.",
+              "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+              "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+              "Peer company valuation metrics for comparison.",
+              "Details on the cause of the significant drop in operating and free cash flow."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Watch",
+              "confidence": 0.3,
+              "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+              "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+              "key_signals": [
+                "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+                "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+                "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+                "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+                "Profit margin is robust at approximately 27.8%.",
+                "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+                "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+                "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+                "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+                "Trailing P/E: 40.06",
+                "Total Debt: $7.19B",
+                "Cash And Cash Equivalents: $7.22B",
+                "yfinance Revenue Growth: -2.1%"
+              ],
+              "risks": [
+                "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+                "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+                "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+                "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+                "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+                "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+                "Forward-looking guidance from the company.",
+                "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+                "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+                "Peer company valuation metrics for comparison.",
+                "Details on the cause of the significant drop in operating and free cash flow."
+              ],
+              "summary": {
+                "beat_or_miss": "Unclear",
+                "guidance_change": "Unclear",
+                "management_tone": "Unclear",
+                "thesis_impact": "Unclear",
+                "thesis_impact_reasoning": "The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates."
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "debate": {
+    "triggered": false,
+    "trigger": {
+      "debate_required": false,
+      "conflict_level": "low",
+      "debate_reason": [
+        "No material cross-agent disagreement."
+      ]
+    },
+    "synthesis": {
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "agent_view_summary": [
+        {
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.35,
+          "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+        },
+        {
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.3,
+          "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+        }
+      ],
+      "areas_of_agreement": [
+        "2 agents lean neutral on the short-term horizon.",
+        "2 agents lean bullish on the long-term horizon."
+      ],
+      "areas_of_disagreement": [],
+      "missing_information": [],
+      "short_stance_counts": {
+        "Bullish": 1,
+        "Neutral": 2,
+        "Bearish": 0
+      },
+      "long_stance_counts": {
+        "Bullish": 2,
+        "Neutral": 1,
+        "Bearish": 0
+      },
+      "agent_packets": [
+        {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.35,
+          "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+          "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "MSFT",
+              "company": "Microsoft Corporation",
+              "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+              "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMZN",
+              "company": "Amazon.com, Inc.",
+              "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+              "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "GOOGL",
+              "company": "Alphabet Inc.",
+              "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+              "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "NVDA",
+              "company": "NVIDIA Corporation",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+              "impact_score": 8
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "AVGO",
+              "company": "Broadcom Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+              "impact_score": 7
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "DELL",
+              "company": "Dell Technologies Inc.",
+              "signal": "Long: Solution Provider",
+              "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+              "impact_score": 6
+            }
+          ],
+          "risks": [
+            "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+            "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+            "Using event-window news ending +0 calendar day(s) from event_date.",
+            "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+            "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+            "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+            "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+            "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+          ],
+          "citations": [
+            {
+              "title": "Applied Materials Q1 Earnings Call Highlights",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+            },
+            {
+              "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+            },
+            {
+              "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+            },
+            {
+              "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+            },
+            {
+              "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+            },
+            {
+              "title": "Applied Materials Announces First Quarter 2026 Results",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+            },
+            {
+              "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+              "source": "ChartMill",
+              "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+            },
+            {
+              "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+            },
+            {
+              "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+            },
+            {
+              "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+              "source": "SeekingAlpha",
+              "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+            }
+          ],
+          "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.35,
+            "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+            "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "MSFT",
+                "company": "Microsoft Corporation",
+                "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+                "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMZN",
+                "company": "Amazon.com, Inc.",
+                "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+                "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "GOOGL",
+                "company": "Alphabet Inc.",
+                "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+                "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "NVDA",
+                "company": "NVIDIA Corporation",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+                "impact_score": 8
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "AVGO",
+                "company": "Broadcom Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+                "impact_score": 7
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "DELL",
+                "company": "Dell Technologies Inc.",
+                "signal": "Long: Solution Provider",
+                "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+                "impact_score": 6
+              }
+            ],
+            "risks": [
+              "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+              "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+              "Using event-window news ending +0 calendar day(s) from event_date.",
+              "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+              "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+              "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+              "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+              "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+            ],
+            "citations": [
+              {
+                "title": "Applied Materials Q1 Earnings Call Highlights",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+              },
+              {
+                "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+              },
+              {
+                "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+              },
+              {
+                "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+              },
+              {
+                "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+              },
+              {
+                "title": "Applied Materials Announces First Quarter 2026 Results",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+              },
+              {
+                "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+                "source": "ChartMill",
+                "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+              },
+              {
+                "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+              },
+              {
+                "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+              },
+              {
+                "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+                "source": "SeekingAlpha",
+                "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+              }
+            ],
+            "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "news_macro",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bullish",
+              "confidence": 0.35,
+              "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+              "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+              "key_signals": [
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "MSFT",
+                  "company": "Microsoft Corporation",
+                  "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+                  "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+                },
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "AMZN",
+                  "company": "Amazon.com, Inc.",
+                  "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+                  "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+                },
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "GOOGL",
+                  "company": "Alphabet Inc.",
+                  "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+                  "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "NVDA",
+                  "company": "NVIDIA Corporation",
+                  "signal": "Long: Pick-and-Shovel",
+                  "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+                  "impact_score": 8
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "AVGO",
+                  "company": "Broadcom Inc.",
+                  "signal": "Long: Pick-and-Shovel",
+                  "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+                  "impact_score": 7
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "DELL",
+                  "company": "Dell Technologies Inc.",
+                  "signal": "Long: Solution Provider",
+                  "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+                  "impact_score": 6
+                }
+              ],
+              "risks": [
+                "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+                "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+                "Using event-window news ending +0 calendar day(s) from event_date.",
+                "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+                "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+                "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+                "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+                "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+                "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+                "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+              ],
+              "citations": [
+                {
+                  "title": "Applied Materials Q1 Earnings Call Highlights",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+                },
+                {
+                  "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+                },
+                {
+                  "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+                },
+                {
+                  "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+                },
+                {
+                  "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+                },
+                {
+                  "title": "Applied Materials Announces First Quarter 2026 Results",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+                },
+                {
+                  "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+                  "source": "ChartMill",
+                  "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+                },
+                {
+                  "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+                },
+                {
+                  "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+                  "source": "Yahoo",
+                  "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+                },
+                {
+                  "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+                  "source": "SeekingAlpha",
+                  "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+                }
+              ],
+              "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+              "raw_packet": {
+                "ticker": "AMAT",
+                "company": "Applied Materials",
+                "agent_name": "news_macro",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bullish",
+                "confidence": 0.35,
+                "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+                "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+                "key_signals": [
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "MSFT",
+                    "company": "Microsoft Corporation",
+                    "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+                    "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+                  },
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "AMZN",
+                    "company": "Amazon.com, Inc.",
+                    "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+                    "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+                  },
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "GOOGL",
+                    "company": "Alphabet Inc.",
+                    "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+                    "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "NVDA",
+                    "company": "NVIDIA Corporation",
+                    "signal": "Long: Pick-and-Shovel",
+                    "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+                    "impact_score": 8
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "AVGO",
+                    "company": "Broadcom Inc.",
+                    "signal": "Long: Pick-and-Shovel",
+                    "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+                    "impact_score": 7
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "DELL",
+                    "company": "Dell Technologies Inc.",
+                    "signal": "Long: Solution Provider",
+                    "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+                    "impact_score": 6
+                  }
+                ],
+                "risks": [
+                  "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+                  "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+                  "Using event-window news ending +0 calendar day(s) from event_date.",
+                  "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+                  "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+                  "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+                  "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+                  "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+                  "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+                  "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+                ],
+                "citations": [
+                  {
+                    "title": "Applied Materials Q1 Earnings Call Highlights",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+                  },
+                  {
+                    "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+                  },
+                  {
+                    "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+                  },
+                  {
+                    "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+                  },
+                  {
+                    "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+                  },
+                  {
+                    "title": "Applied Materials Announces First Quarter 2026 Results",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+                  },
+                  {
+                    "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+                    "source": "ChartMill",
+                    "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+                  },
+                  {
+                    "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+                  },
+                  {
+                    "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+                    "source": "Yahoo",
+                    "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+                  },
+                  {
+                    "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+                    "source": "SeekingAlpha",
+                    "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+                  }
+                ],
+                "summary": {
+                  "news_summary": "News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite.",
+                  "core_insight": "The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers."
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Shift",
+              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral-to-Bullish Momentum",
+              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Consolidating Price Action",
+              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+            },
+            {
+              "type": "Volume",
+              "signal": "Subdued Participation",
+              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Minor Pullback from Recent Highs",
+              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.03%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+            }
+          ],
+          "risks": [
+            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+          ],
+          "citations": [],
+          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Shift",
+                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral-to-Bullish Momentum",
+                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Consolidating Price Action",
+                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+              },
+              {
+                "type": "Volume",
+                "signal": "Subdued Participation",
+                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Minor Pullback from Recent Highs",
+                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.03%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+              }
+            ],
+            "risks": [
+              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+            ],
+            "citations": [],
+            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+              "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Shift",
+                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral-to-Bullish Momentum",
+                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Consolidating Price Action",
+                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Subdued Participation",
+                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Minor Pullback from Recent Highs",
+                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.03%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+                }
+              ],
+              "risks": [
+                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+              ],
+              "citations": [],
+              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+              "raw_packet": {
+                "ticker": "AMAT",
+                "company": "Applied Materials",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bullish",
+                "confidence": 0.75,
+                "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+                "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+                "key_signals": [
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                    "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bearish Momentum Shift",
+                    "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Outperformance",
+                    "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Neutral-to-Bullish Momentum",
+                    "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Consolidating Price Action",
+                    "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Subdued Participation",
+                    "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Minor Pullback from Recent Highs",
+                    "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.03%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+                  }
+                ],
+                "risks": [
+                  "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+                  "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+                ],
+                "citations": [],
+                "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+                "raw_packet": {
+                  "ticker": "AMAT",
+                  "company": "Applied Materials",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.75,
+                  "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+                  "key_signals": [
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                      "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bearish Momentum Shift",
+                      "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Outperformance",
+                      "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Neutral-to-Bullish Momentum",
+                      "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Consolidating Price Action",
+                      "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Subdued Participation",
+                      "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Minor Pullback from Recent Highs",
+                      "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.03%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+                    }
+                  ],
+                  "risks": [
+                    "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+                    "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+                  ],
+                  "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+                  "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.3,
+          "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+          "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+          "key_signals": [
+            "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+            "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+            "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+            "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+            "Profit margin is robust at approximately 27.8%.",
+            "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+            "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+            "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+            "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+            "Trailing P/E: 40.06",
+            "Total Debt: $7.19B",
+            "Cash And Cash Equivalents: $7.22B",
+            "yfinance Revenue Growth: -2.1%"
+          ],
+          "risks": [
+            "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+            "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+            "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+            "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+            "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+            "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+            "Forward-looking guidance from the company.",
+            "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+            "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+            "Peer company valuation metrics for comparison.",
+            "Details on the cause of the significant drop in operating and free cash flow."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.3,
+            "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+            "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+            "key_signals": [
+              "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+              "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+              "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+              "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+              "Profit margin is robust at approximately 27.8%.",
+              "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+              "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+              "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+              "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+              "Trailing P/E: 40.06",
+              "Total Debt: $7.19B",
+              "Cash And Cash Equivalents: $7.22B",
+              "yfinance Revenue Growth: -2.1%"
+            ],
+            "risks": [
+              "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+              "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+              "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+              "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+              "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+              "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+              "Forward-looking guidance from the company.",
+              "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+              "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+              "Peer company valuation metrics for comparison.",
+              "Details on the cause of the significant drop in operating and free cash flow."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Neutral",
+              "confidence": 0.3,
+              "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+              "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+              "key_signals": [
+                "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+                "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+                "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+                "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+                "Profit margin is robust at approximately 27.8%.",
+                "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+                "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+                "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+                "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+                "Trailing P/E: 40.06",
+                "Total Debt: $7.19B",
+                "Cash And Cash Equivalents: $7.22B",
+                "yfinance Revenue Growth: -2.1%"
+              ],
+              "risks": [
+                "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+                "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+                "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+                "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+                "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+                "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+                "Forward-looking guidance from the company.",
+                "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+                "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+                "Peer company valuation metrics for comparison.",
+                "Details on the cause of the significant drop in operating and free cash flow."
+              ],
+              "citations": [],
+              "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+              "raw_packet": {
+                "ticker": "AMAT",
+                "company": "Applied Materials",
+                "agent_name": "fundamental",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Neutral",
+                "confidence": 0.3,
+                "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+                "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+                "key_signals": [
+                  "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+                  "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+                  "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+                  "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+                  "Profit margin is robust at approximately 27.8%.",
+                  "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+                  "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+                  "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+                  "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+                  "Trailing P/E: 40.06",
+                  "Total Debt: $7.19B",
+                  "Cash And Cash Equivalents: $7.22B",
+                  "yfinance Revenue Growth: -2.1%"
+                ],
+                "risks": [
+                  "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+                  "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+                  "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+                  "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+                  "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+                  "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+                  "Forward-looking guidance from the company.",
+                  "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+                  "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+                  "Peer company valuation metrics for comparison.",
+                  "Details on the cause of the significant drop in operating and free cash flow."
+                ],
+                "citations": [],
+                "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+                "raw_packet": {
+                  "ticker": "AMAT",
+                  "company": "Applied Materials",
+                  "agent_name": "fundamental",
+                  "short_term_stance": "Neutral",
+                  "long_term_stance": "Watch",
+                  "confidence": 0.3,
+                  "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+                  "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+                  "key_signals": [
+                    "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+                    "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+                    "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+                    "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+                    "Profit margin is robust at approximately 27.8%.",
+                    "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+                    "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+                    "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+                    "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+                    "Trailing P/E: 40.06",
+                    "Total Debt: $7.19B",
+                    "Cash And Cash Equivalents: $7.22B",
+                    "yfinance Revenue Growth: -2.1%"
+                  ],
+                  "risks": [
+                    "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+                    "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+                    "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+                    "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+                    "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+                    "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+                    "Forward-looking guidance from the company.",
+                    "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+                    "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+                    "Peer company valuation metrics for comparison.",
+                    "Details on the cause of the significant drop in operating and free cash flow."
+                  ],
+                  "summary": {
+                    "beat_or_miss": "Unclear",
+                    "guidance_change": "Unclear",
+                    "management_tone": "Unclear",
+                    "thesis_impact": "Unclear",
+                    "thesis_impact_reasoning": "The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates."
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "debate_responses": [],
+    "revised_packets": [
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.35,
+        "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+        "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+        "key_signals": [
+          {
+            "type": "mainstream_stock",
+            "ticker": "MSFT",
+            "company": "Microsoft Corporation",
+            "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+            "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "AMZN",
+            "company": "Amazon.com, Inc.",
+            "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+            "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "GOOGL",
+            "company": "Alphabet Inc.",
+            "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+            "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "NVDA",
+            "company": "NVIDIA Corporation",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+            "impact_score": 8
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "AVGO",
+            "company": "Broadcom Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+            "impact_score": 7
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "DELL",
+            "company": "Dell Technologies Inc.",
+            "signal": "Long: Solution Provider",
+            "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+            "impact_score": 6
+          }
+        ],
+        "risks": [
+          "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+          "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+          "Using event-window news ending +0 calendar day(s) from event_date.",
+          "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+          "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+          "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+          "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+          "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+          "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+          "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+        ],
+        "citations": [
+          {
+            "title": "Applied Materials Q1 Earnings Call Highlights",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+          },
+          {
+            "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+          },
+          {
+            "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+          },
+          {
+            "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+          },
+          {
+            "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+          },
+          {
+            "title": "Applied Materials Announces First Quarter 2026 Results",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+          },
+          {
+            "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+            "source": "ChartMill",
+            "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+          },
+          {
+            "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+          },
+          {
+            "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+            "source": "Yahoo",
+            "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+          },
+          {
+            "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+            "source": "SeekingAlpha",
+            "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+          }
+        ],
+        "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.35,
+          "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+          "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "MSFT",
+              "company": "Microsoft Corporation",
+              "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+              "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMZN",
+              "company": "Amazon.com, Inc.",
+              "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+              "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "GOOGL",
+              "company": "Alphabet Inc.",
+              "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+              "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "NVDA",
+              "company": "NVIDIA Corporation",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+              "impact_score": 8
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "AVGO",
+              "company": "Broadcom Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+              "impact_score": 7
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "DELL",
+              "company": "Dell Technologies Inc.",
+              "signal": "Long: Solution Provider",
+              "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+              "impact_score": 6
+            }
+          ],
+          "risks": [
+            "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+            "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+            "Using event-window news ending +0 calendar day(s) from event_date.",
+            "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+            "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+            "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+            "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+            "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+            "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+          ],
+          "citations": [
+            {
+              "title": "Applied Materials Q1 Earnings Call Highlights",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+            },
+            {
+              "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+            },
+            {
+              "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+            },
+            {
+              "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+            },
+            {
+              "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+            },
+            {
+              "title": "Applied Materials Announces First Quarter 2026 Results",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+            },
+            {
+              "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+              "source": "ChartMill",
+              "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+            },
+            {
+              "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+            },
+            {
+              "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+              "source": "Yahoo",
+              "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+            },
+            {
+              "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+              "source": "SeekingAlpha",
+              "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+            }
+          ],
+          "summary": "news_summary: News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite. | core_insight: The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.35,
+            "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+            "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "MSFT",
+                "company": "Microsoft Corporation",
+                "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+                "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMZN",
+                "company": "Amazon.com, Inc.",
+                "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+                "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "GOOGL",
+                "company": "Alphabet Inc.",
+                "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+                "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "NVDA",
+                "company": "NVIDIA Corporation",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+                "impact_score": 8
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "AVGO",
+                "company": "Broadcom Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+                "impact_score": 7
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "DELL",
+                "company": "Dell Technologies Inc.",
+                "signal": "Long: Solution Provider",
+                "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+                "impact_score": 6
+              }
+            ],
+            "risks": [
+              "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+              "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+              "Using event-window news ending +0 calendar day(s) from event_date.",
+              "Fetched Finnhub company news for AMAT from 2026-01-29 through 2026-02-12.",
+              "NewsAPI queried 2 finance-focused query path(s) from 2026-01-29 through 2026-02-12.",
+              "NewsAPI direct-company query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "NewsAPI industry-chain query failed: 429 Client Error: Too Many Requests for url: https://newsapi.org/v2/everything?q=%28%22Applied+Materials%22+OR+AMAT%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-29&to=2026-02-12&language=en&sortBy=relevancy&pageSize=10",
+              "Filtered Yahoo Finance news to event window 2026-01-29 through 2026-02-12.",
+              "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+              "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2730)"
+            ],
+            "citations": [
+              {
+                "title": "Applied Materials Q1 Earnings Call Highlights",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a79c1956c2161edd99a9879977d3c9dada14a1d3245584135b6f77ac8cf7050"
+              },
+              {
+                "title": "Applied Materials stock jumps on robust AI demand and upbeat outlook",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=2ac5c32eeba4d2cd482f9099241350b241d148934960898bf223ceb89f58314b"
+              },
+              {
+                "title": "Applied Materials’s (NASDAQ:AMAT) Q4 Sales Top Estimates, Stock Soars",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=05762c5d387102dffc76759d69ef3824396224232920211b705039bad9eedb3b"
+              },
+              {
+                "title": "Applied Materials stock surges on Q1 earnings & revenue beat",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=a01cbcf37de3473fa3cbcfcf9749e85e39bc9523fbf0a28996119492a477bb0f"
+              },
+              {
+                "title": "Applied Materials shares pop on upbeat guidance, strong fiscal first quarter report",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=08025c1dba62bba28e74b481061a5fd6c92721edce622bd38fc5be60bf2220c5"
+              },
+              {
+                "title": "Applied Materials Announces First Quarter 2026 Results",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=c6c2930030706720892bd69305fe1f7230a13b8c7145ba35d6a74dbfb1069816"
+              },
+              {
+                "title": "Applied Materials Inc (NASDAQ:AMAT) Surges on Strong Earnings Beat and Robust AI-Driven Outlook",
+                "source": "ChartMill",
+                "url": "https://finnhub.io/api/news?id=94571d79c186c92e746f5085a4898400dd4b10dd1b7880a607700951df9ed9d3"
+              },
+              {
+                "title": "Applied Materials (AMAT) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=516b2248ccbebfc18d38012d5207c5376a738980124d599f438d63981287a707"
+              },
+              {
+                "title": "Applied Materials (AMAT) Beats Q1 Earnings and Revenue Estimates",
+                "source": "Yahoo",
+                "url": "https://finnhub.io/api/news?id=4a56db9b4d4aea6bc3910a3c246338aa12169cf69bfe51695f05d779600d8754"
+              },
+              {
+                "title": "Applied Materials, Inc. (AMAT) Q1 2026 Earnings Call Transcript",
+                "source": "SeekingAlpha",
+                "url": "https://finnhub.io/api/news?id=8ea7fe2c16f35463045a8eab93308a506fdc570e0b43ce854543a97dfb5026e7"
+              }
+            ],
+            "summary": {
+              "news_summary": "News related to Applied Materials suggests the market is reassessing demand, costs, and risk appetite.",
+              "core_insight": "The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+        "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+            "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Shift",
+            "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral-to-Bullish Momentum",
+            "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Consolidating Price Action",
+            "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+          },
+          {
+            "type": "Volume",
+            "signal": "Subdued Participation",
+            "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Minor Pullback from Recent Highs",
+            "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.03%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+          }
+        ],
+        "risks": [
+          "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+          "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+        ],
+        "citations": [],
+        "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Shift",
+              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral-to-Bullish Momentum",
+              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Consolidating Price Action",
+              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+            },
+            {
+              "type": "Volume",
+              "signal": "Subdued Participation",
+              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Minor Pullback from Recent Highs",
+              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.03%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+            }
+          ],
+          "risks": [
+            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+          ],
+          "citations": [],
+          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Shift",
+                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral-to-Bullish Momentum",
+                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Consolidating Price Action",
+                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+              },
+              {
+                "type": "Volume",
+                "signal": "Subdued Participation",
+                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Minor Pullback from Recent Highs",
+                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.03%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+              }
+            ],
+            "risks": [
+              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+            ],
+            "citations": [],
+            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
+                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Shift",
+                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral-to-Bullish Momentum",
+                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Consolidating Price Action",
+                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Subdued Participation",
+                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Minor Pullback from Recent Highs",
+                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.03%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
+                }
+              ],
+              "risks": [
+                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
+                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
+              ],
+              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
+              "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
+        "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+        "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+        "key_signals": [
+          "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+          "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+          "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+          "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+          "Profit margin is robust at approximately 27.8%.",
+          "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+          "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+          "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+          "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+          "Trailing P/E: 40.06",
+          "Total Debt: $7.19B",
+          "Cash And Cash Equivalents: $7.22B",
+          "yfinance Revenue Growth: -2.1%"
+        ],
+        "risks": [
+          "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+          "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+          "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+          "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+          "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+          "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+          "Forward-looking guidance from the company.",
+          "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+          "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+          "Peer company valuation metrics for comparison.",
+          "Details on the cause of the significant drop in operating and free cash flow."
+        ],
+        "citations": [],
+        "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.3,
+          "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+          "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+          "key_signals": [
+            "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+            "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+            "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+            "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+            "Profit margin is robust at approximately 27.8%.",
+            "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+            "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+            "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+            "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+            "Trailing P/E: 40.06",
+            "Total Debt: $7.19B",
+            "Cash And Cash Equivalents: $7.22B",
+            "yfinance Revenue Growth: -2.1%"
+          ],
+          "risks": [
+            "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+            "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+            "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+            "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+            "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+            "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+            "Forward-looking guidance from the company.",
+            "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+            "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+            "Peer company valuation metrics for comparison.",
+            "Details on the cause of the significant drop in operating and free cash flow."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.3,
+            "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+            "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+            "key_signals": [
+              "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+              "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+              "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+              "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+              "Profit margin is robust at approximately 27.8%.",
+              "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+              "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+              "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+              "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+              "Trailing P/E: 40.06",
+              "Total Debt: $7.19B",
+              "Cash And Cash Equivalents: $7.22B",
+              "yfinance Revenue Growth: -2.1%"
+            ],
+            "risks": [
+              "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+              "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+              "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+              "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+              "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+              "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+              "Forward-looking guidance from the company.",
+              "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+              "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+              "Peer company valuation metrics for comparison.",
+              "Details on the cause of the significant drop in operating and free cash flow."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Watch",
+              "confidence": 0.3,
+              "confidence_rationale": "Confidence is low due to the absence of crucial information such as analyst consensus estimates, forward-looking guidance from management, and the earnings call transcript. The conflicting signals between strong P&L growth and weak cash flow further reduce confidence in a definitive stance.",
+              "stance_rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach.",
+              "key_signals": [
+                "Quarter-over-quarter revenue increased from $6.80B to $7.01B.",
+                "Quarter-over-quarter net income grew from $1.90B to $2.03B.",
+                "Gross Profit and Operating Income also increased QoQ, indicating improved profitability on the income statement.",
+                "Strong balance sheet with Cash and Cash Equivalents ($7.22B) slightly exceeding Total Debt ($7.19B).",
+                "Profit margin is robust at approximately 27.8%.",
+                "Revenue QoQ Growth: $7.01B vs $6.80B (prior quarter)",
+                "Net Income QoQ Growth: $2.03B vs $1.90B (prior quarter)",
+                "Operating Cash Flow QoQ Decline: $1.69B vs $2.83B (prior quarter)",
+                "Free Cash Flow QoQ Decline: $1.04B vs $2.04B (prior quarter)",
+                "Trailing P/E: 40.06",
+                "Total Debt: $7.19B",
+                "Cash And Cash Equivalents: $7.22B",
+                "yfinance Revenue Growth: -2.1%"
+              ],
+              "risks": [
+                "Significant quarter-over-quarter decline in Operating Cash Flow from $2.83B to $1.69B.",
+                "Free Cash Flow dropped by nearly 50% QoQ, from $2.04B to $1.04B.",
+                "High valuation indicated by a Trailing P/E ratio of 40.06; valuation requires peer comparison for context.",
+                "yfinance data indicates negative Revenue Growth of -2.1%, which may reflect a negative year-over-year trend.",
+                "Complete lack of consensus estimates, management guidance, and earnings call transcript increases uncertainty.",
+                "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+                "Forward-looking guidance from the company.",
+                "Earnings call transcript to understand management's tone and perspective on the results and outlook.",
+                "Year-over-year (YoY) comparison data to assess long-term trends, as only QoQ data was provided for core financials.",
+                "Peer company valuation metrics for comparison.",
+                "Details on the cause of the significant drop in operating and free cash flow."
+              ],
+              "summary": {
+                "beat_or_miss": "Unclear",
+                "guidance_change": "Unclear",
+                "management_tone": "Unclear",
+                "thesis_impact": "Unclear",
+                "thesis_impact_reasoning": "The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates."
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "final_decision": {
+    "ticker": "AMAT",
+    "company": "Applied Materials",
+    "final_short_term_stance": "Neutral",
+    "final_long_term_stance": "Bullish",
+    "investment_action": "Watch / Accumulate on Weakness",
+    "position_size_hint": "Initiate a small starter position, add on dips.",
+    "confidence": 0.7,
+    "core_thesis": "Applied Materials is a critical 'pick-and-shovel' enabler of the secular AI infrastructure buildout. As a leading semiconductor capital equipment (WFE) provider, the company is poised to benefit from sustained, long-term investment in advanced chip manufacturing capacity required for AI accelerators, high-bandwidth memory, and other leading-edge components.",
+    "why_now": "The company recently reported strong quarterly results and an upbeat outlook, explicitly citing robust AI-related demand. This event confirms the long-term thesis. The technical agent indicates the stock is in a short-term consolidation phase after a strong run-up. This healthy pause presents a potential opportunity to initiate a long-term position at a more favorable entry point rather than chasing the post-earnings momentum.",
+    "key_supporting_evidence": [
+      "The technical picture shows a powerful long-term uptrend, with the price significantly above its 200-day moving average and demonstrating strong relative outperformance against the S&P 500.",
+      "News headlines from the earnings event confirm a beat on revenue and earnings, an upbeat outlook, and attribute the strength to 'robust AI demand', directly addressing the fundamental agent's concerns about a lack of forward guidance.",
+      "The news & macro agent correctly identifies AMAT as a second-order beneficiary of the AI investment cycle, benefiting from capital spending by hyperscalers and foundries.",
+      "Despite a quarterly dip in cash flow, the fundamental agent confirms strong QoQ growth in revenue and net income, alongside a healthy balance sheet where cash nearly equals total debt."
+    ],
+    "key_risks": [
+      "The stock is technically extended, trading approximately 45% above its 200-day moving average, which increases the risk of a sharp pullback or mean reversion.",
+      "The fundamental agent highlighted a significant quarter-over-quarter decline in operating and free cash flow. This needs to be monitored to ensure it was a temporary working capital issue and not the start of a negative trend.",
+      "The semiconductor equipment industry is historically cyclical. A broader economic slowdown or a pause in data center capital expenditures could negatively impact demand.",
+      "Current valuation appears elevated (Trailing P/E of ~40), suggesting high growth expectations are already priced in, making the stock vulnerable to any disappointment in future earnings or guidance."
+    ],
+    "agent_view_summary": [
+      {
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.35,
+        "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
+      },
+      {
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
+        "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+      }
+    ],
+    "debate_summary": {
+      "debate_triggered": false,
+      "conflict_level": "low",
+      "debate_reason": [
+        "No material cross-agent disagreement."
+      ],
+      "debate_responses": []
+    },
+    "reason_for_final_decision": "The committee's final view is a short-term Neutral and long-term Bullish stance. We are overriding the guardrail's passive 'Watch / No Trade' action to a more active 'Watch / Accumulate on Weakness'. The decision is based on the overwhelming alignment between the strong secular AI narrative (News/Macro) and the powerful long-term technical uptrend (Technicals). The fundamental agent's neutral stance is down-weighted due to its low confidence and stated lack of forward-looking data, which was substantively contradicted by the positive news headlines regarding the company's upbeat guidance. We interpret the current technical consolidation not as a warning sign, but as a healthy pause and a potential entry opportunity for a long-term position.",
+    "agent_votes": {
+      "short": [
+        {
+          "agent_name": "news_macro",
+          "stance": "Bullish",
+          "confidence": 0.35,
+          "weight": 0.35,
+          "contribution": 0.1225
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.75,
+          "weight": 0.45,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.2,
+          "contribution": 0.0
+        }
+      ],
+      "long": [
+        {
+          "agent_name": "news_macro",
+          "stance": "Bullish",
+          "confidence": 0.35,
+          "weight": 0.35,
+          "contribution": 0.1225
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.75,
+          "weight": 0.2,
+          "contribution": 0.15
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.45,
+          "contribution": 0.0
+        }
+      ]
+    },
+    "scores": {
+      "short": 0.2356,
+      "long": 0.6687
+    },
+    "llm_decision_used": true
+  }
+}

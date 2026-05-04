@@ -1,0 +1,340 @@
+[
+  {
+    "ticker": "META",
+    "company": "Meta Platforms",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.35,
+    "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
+    "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "MSFT",
+        "company": "Microsoft Corporation",
+        "signal": "Use it as a first-order capital-flow anchor, not the only second-order opportunity.",
+        "evidence": "If the news reinforces the AI investment cycle, investors may first reprice mega-cap cloud growth and margin pressure."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AMZN",
+        "company": "Amazon.com, Inc.",
+        "signal": "Use AWS demand as the starting point, then expand into the infrastructure supply chain.",
+        "evidence": "The market will watch whether AI demand converts into AWS growth and returns on capital spending."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc.",
+        "signal": "Useful for judging whether capital prefers platform stocks or supply-chain beneficiaries.",
+        "evidence": "The market may price both AI growth and free-cash-flow pressure from capital spending."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "NVDA",
+        "company": "NVIDIA Corporation",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because AI and data-center spending keeps rising, demand for accelerated computing chips and software stacks increases, which supports NVIDIA GPU and platform orders.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "AVGO",
+        "company": "Broadcom Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because hyperscalers expand AI clusters, demand for high-speed networking chips and custom ASICs increases, which benefits Broadcom semiconductor orders.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "DELL",
+        "company": "Dell Technologies Inc.",
+        "signal": "Long: Solution Provider",
+        "evidence": "Because enterprises need to deploy AI into servers and private-cloud environments, demand for AI servers and infrastructure rises, which can lift Dell infrastructure orders.",
+        "impact_score": 6
+      }
+    ],
+    "risks": [
+      "This is the heuristic fallback used when no OpenAI or Gemini API call succeeds; ideas are for notebook prototyping only.",
+      "For higher-quality second-order reasoning, set OPENAI_API_KEY or GEMINI_API_KEY and provide the full news text.",
+      "Related-company news enabled for industry-chain context: GOOGL, SNAP, PINS, MSFT, AMZN, NVDA, AVGO.",
+      "Using event-window news ending +0 calendar day(s) from event_date.",
+      "Fetched Finnhub company news for META from 2026-01-14 through 2026-01-28.",
+      "Fetched Finnhub company news for GOOGL from 2026-01-14 through 2026-01-28.",
+      "Fetched Finnhub company news for SNAP from 2026-01-14 through 2026-01-28.",
+      "Fetched Finnhub company news for PINS from 2026-01-14 through 2026-01-28.",
+      "Fetched Finnhub company news for MSFT from 2026-01-14 through 2026-01-28.",
+      "Fetched Finnhub company news for AMZN from 2026-01-14 through 2026-01-28.",
+      "NewsAPI queried 3 finance-focused query path(s) from 2026-01-14 through 2026-01-28.",
+      "NewsAPI direct-company query failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%28%22Meta+Platforms%22+OR+META%29+AND+%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-14&to=2026-01-28&language=en&sortBy=relevancy&pageSize=10",
+      "NewsAPI industry-chain query failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%28%22Meta+Platforms%22+OR+META%29+AND+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-14&to=2026-01-28&language=en&sortBy=relevancy&pageSize=10",
+      "NewsAPI related-company query failed: 426 Client Error: Upgrade Required for url: https://newsapi.org/v2/everything?q=%28GOOGL+OR+%22Alphabet%22+OR+SNAP+OR+%22Snap%22+OR+PINS+OR+%22Pinterest%22+OR+MSFT+OR+%22Microsoft%22+OR+AMZN+OR+%22Amazon%22+OR+NVDA+OR+%22Nvidia%22%29+AND+%28%28stock+OR+shares+OR+earnings+OR+revenue+OR+guidance+OR+analyst+OR+price+target+OR+margin+OR+investors%29+OR+%28AI+chip+OR+semiconductor+OR+data+center+OR+cloud+infrastructure+OR+supply+chain+OR+networking+OR+power+OR+competitor+OR+inference+OR+GPU%29%29+NOT+driver+NOT+download+NOT+pypi+NOT+linux+NOT+gaming+NOT+crypto&from=2026-01-14&to=2026-01-28&language=en&sortBy=relevancy&pageSize=10",
+      "Filtered Yahoo Finance news to event window 2026-01-14 through 2026-01-28.",
+      "Yahoo Finance usually returns current news only; no Yahoo items matched the requested event window.",
+      "Vertex AI report generation failed: Expecting value: line 24 column 1 (char 2753)"
+    ],
+    "citations": [
+      {
+        "title": "Meta is showing real-time evidence of ROI on AI CapEx: Analyst",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=ea0aa79926aff8065b95cf1c02234c4b99af1bf363087816f84381b9b42f973e"
+      },
+      {
+        "title": "Meta Stock Gains As Strong Revenue Growth Powers Earnings Beat",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=93aa1738ee78ecaa2664c62861b7fe5853a2f5ee67b2b17a7e12f4fa18a3360f"
+      },
+      {
+        "title": "Meta (NASDAQ:META) Beats Q4 CY2025 Sales Expectations",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=13b0a6c22ccda92b1e0993fd2c00e7625d8363111350e34d783509c99553e860"
+      },
+      {
+        "title": "Meta beats Q4 revenue estimates, forecasts big 2026 AI spending",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=fc41b7950fdda619db377c9fe6f5e5dc0dca1f0da1fe699099d5933ece3faadd"
+      },
+      {
+        "title": "Zuckerberg Is Doing the Right Thing for Meta, Futurum Group CEO Says",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=e343cb80ba53ec61c0bcb51c5a6964c8e2398ccfea564a8b7d433721db5954a7"
+      },
+      {
+        "title": "1 Massive Number From Meta Platforms' Earnings Report Every Investor Needs to See",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=215ab6aea8aee3f366cdc9b49d9f34a3a65cdb0d6ddd0f890b3594d59c0fffec"
+      },
+      {
+        "title": "Meta Platforms (META) Q4 Earnings: Taking a Look at Key Metrics Versus Estimates",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=b1e9a9b3e75e04394d629a4d035ec2c721e3905024a828de7ddd98a0ea07f428"
+      },
+      {
+        "title": "Meta stock pops as revenue guidance outweighs higher than anticipated 2026 capex",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=f6253c9d5b8b3d27f7947c97d22ae5acad8f22b542417be2046bcac57683a8b2"
+      },
+      {
+        "title": "Stocks to Watch Wednesday Recap: Amazon, Nvidia,  Deutsche Bank",
+        "source": "Yahoo / related:AMZN",
+        "url": "https://finnhub.io/api/news?id=845ae0ffc886b62803740d6985f57e191e44819f775c3bafd3ef13ea410d19e3"
+      },
+      {
+        "title": "Microsoft earnings call: CFO on 'great partnership' with OpenAI",
+        "source": "Yahoo / related:MSFT",
+        "url": "https://finnhub.io/api/news?id=c783778c10285ed74e54520d53943524a29ee60d8c36db8b7c21efec52717c85"
+      }
+    ],
+    "summary": {
+      "news_summary": "News related to Meta Platforms suggests the market is reassessing demand, costs, and risk appetite.",
+      "core_insight": "The heuristic sentiment score is 1.00; start with mainstream large-stock capital-flow anchors, then search the industry chain for second-order beneficiaries, margin victims, and infrastructure suppliers."
+    }
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Bearish",
+    "confidence": 0.85,
+    "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
+    "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Bearish Trend Structure",
+        "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bearish Momentum Confirmation",
+        "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
+      },
+      {
+        "type": "RSI",
+        "signal": "Weakening Momentum",
+        "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
+      },
+      {
+        "type": "Volume",
+        "signal": "High-Conviction Selling",
+        "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Market Underperformance",
+        "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Significant Correction In Progress",
+        "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
+      },
+      {
+        "type": "Volatility",
+        "signal": "Elevated Instability",
+        "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.9%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "range_bound",
+        "evidence": "Regime classification: range_bound"
+      }
+    ],
+    "risks": [
+      "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
+      "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
+    ],
+    "citations": [],
+    "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
+    "raw_packet": {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bearish",
+      "long_term_stance": "bearish",
+      "confidence": 0.85,
+      "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Bearish Trend Structure",
+          "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bearish Momentum Confirmation",
+          "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
+        },
+        {
+          "type": "RSI",
+          "signal": "Weakening Momentum",
+          "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
+        },
+        {
+          "type": "Volume",
+          "signal": "High-Conviction Selling",
+          "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Market Underperformance",
+          "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Significant Correction In Progress",
+          "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
+        },
+        {
+          "type": "Volatility",
+          "signal": "Elevated Instability",
+          "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.9%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "range_bound",
+          "evidence": "Regime classification: range_bound"
+        }
+      ],
+      "risks": [
+        "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
+        "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
+      ],
+      "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
+      "core_insight": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
+    }
+  },
+  {
+    "ticker": "META",
+    "company": "Meta Platforms",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is medium because while the quantitative YoY growth metrics are very strong, the complete absence of qualitative information (management tone, guidance) and analyst consensus estimates makes it difficult to fully assess the quarter's context and future outlook. The QoQ declines and the unexplained net income increase add to the uncertainty.",
+    "stance_rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring.",
+    "key_signals": [
+      "Strong reported revenue growth of 33.1% and earnings growth of 62.4%, indicating robust year-over-year performance.",
+      "Net Income increased quarter-over-quarter to $26.77B from $22.77B, bucking the trend of other declining top-line and operating metrics.",
+      "High profit margin of 32.8% indicates strong profitability.",
+      "Forward P/E of 16.87 is lower than the Trailing P/E of 22.18, suggesting market expectations for future earnings growth.",
+      "Revenue QoQ: $56.31B (current) vs. $59.89B (previous)",
+      "Operating Income QoQ: $22.87B (current) vs. $24.75B (previous)",
+      "Net Income QoQ: $26.77B (current) vs. $22.77B (previous)",
+      "Revenue Growth from yfinance: 0.331",
+      "Earnings Growth from yfinance: 0.624",
+      "Forward P/E: 16.872408",
+      "Total Debt: $86.77B",
+      "Consensus Estimates: Not provided"
+    ],
+    "risks": [
+      "Quarter-over-quarter declines across several key metrics: Revenue (-5.98%), Gross Profit (-5.91%), Operating Income (-7.57%), Operating Cash Flow (-10.98%), and Free Cash Flow (-10.80%).",
+      "Total Debt of $86.77B is substantially higher than Cash and Cash Equivalents of $23.43B.",
+      "Lack of analyst estimates, management guidance, and an earnings call transcript introduces significant uncertainty into the analysis.",
+      "The reason for the divergence between declining QoQ operating income and increasing QoQ net income is unclear from the provided data.",
+      "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+      "Company guidance for the upcoming quarter and full year.",
+      "Earnings call transcript for management commentary, tone, and qualitative details.",
+      "An explanation for the QoQ increase in net income despite a decrease in revenue and operating income.",
+      "Peer valuation data for context on the TTM P/E of 22.18.",
+      "Breakdown of revenue and profit by business segment (e.g., Family of Apps vs. Reality Labs)."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The very strong year-over-year growth in revenue (33.1%) and earnings (62.4%) reinforces the core growth narrative for the company. While the quarter-over-quarter declines are notable, they are likely seasonal and are overshadowed by the powerful annual growth figures, thus strengthening the medium-term thesis.",
+    "raw_packet": {
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Bullish",
+      "confidence": 0.6,
+      "confidence_rationale": "Confidence is medium because while the quantitative YoY growth metrics are very strong, the complete absence of qualitative information (management tone, guidance) and analyst consensus estimates makes it difficult to fully assess the quarter's context and future outlook. The QoQ declines and the unexplained net income increase add to the uncertainty.",
+      "stance_rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring.",
+      "key_signals": [
+        "Strong reported revenue growth of 33.1% and earnings growth of 62.4%, indicating robust year-over-year performance.",
+        "Net Income increased quarter-over-quarter to $26.77B from $22.77B, bucking the trend of other declining top-line and operating metrics.",
+        "High profit margin of 32.8% indicates strong profitability.",
+        "Forward P/E of 16.87 is lower than the Trailing P/E of 22.18, suggesting market expectations for future earnings growth.",
+        "Revenue QoQ: $56.31B (current) vs. $59.89B (previous)",
+        "Operating Income QoQ: $22.87B (current) vs. $24.75B (previous)",
+        "Net Income QoQ: $26.77B (current) vs. $22.77B (previous)",
+        "Revenue Growth from yfinance: 0.331",
+        "Earnings Growth from yfinance: 0.624",
+        "Forward P/E: 16.872408",
+        "Total Debt: $86.77B",
+        "Consensus Estimates: Not provided"
+      ],
+      "risks": [
+        "Quarter-over-quarter declines across several key metrics: Revenue (-5.98%), Gross Profit (-5.91%), Operating Income (-7.57%), Operating Cash Flow (-10.98%), and Free Cash Flow (-10.80%).",
+        "Total Debt of $86.77B is substantially higher than Cash and Cash Equivalents of $23.43B.",
+        "Lack of analyst estimates, management guidance, and an earnings call transcript introduces significant uncertainty into the analysis.",
+        "The reason for the divergence between declining QoQ operating income and increasing QoQ net income is unclear from the provided data.",
+        "Analyst consensus estimates for revenue, EPS, and other key metrics.",
+        "Company guidance for the upcoming quarter and full year.",
+        "Earnings call transcript for management commentary, tone, and qualitative details.",
+        "An explanation for the QoQ increase in net income despite a decrease in revenue and operating income.",
+        "Peer valuation data for context on the TTM P/E of 22.18.",
+        "Breakdown of revenue and profit by business segment (e.g., Family of Apps vs. Reality Labs)."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Strengthened",
+        "thesis_impact_reasoning": "The very strong year-over-year growth in revenue (33.1%) and earnings (62.4%) reinforces the core growth narrative for the company. While the quarter-over-quarter declines are notable, they are likely seasonal and are overshadowed by the powerful annual growth figures, thus strengthening the medium-term thesis."
+      }
+    }
+  }
+]

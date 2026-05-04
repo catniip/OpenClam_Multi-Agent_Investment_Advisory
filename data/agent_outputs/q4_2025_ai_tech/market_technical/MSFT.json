@@ -1,0 +1,63 @@
+{
+  "ticker": "MSFT",
+  "company": "Microsoft",
+  "agent_name": "Market & Technical Analysis Agent",
+  "short_term_stance": "neutral",
+  "long_term_stance": "bearish",
+  "confidence": 0.7,
+  "confidence_rationale": "Confidence is moderate due to conflicting signals. While price is above its short-term moving averages (MA20/MA50), momentum is weakening (MACD bearish crossover) and the long-term context is decidedly bearish (Price < MA200, significant relative underperformance).",
+  "key_signals": [
+    {
+      "type": "Moving Averages",
+      "signal": "Conflicting Trend Structure",
+      "evidence": "Price at $413.62 is above its MA20 ($407.61) and MA50 ($396.44), but is -11.27% below its long-term MA200 ($466.16)."
+    },
+    {
+      "type": "MACD",
+      "signal": "Waning Momentum",
+      "evidence": "A bearish crossover has occurred, with the MACD line (7.74) below its signal line (7.97), resulting in a negative histogram (-0.23)."
+    },
+    {
+      "type": "Relative Strength",
+      "signal": "Significant Market Underperformance",
+      "evidence": "The stock has underperformed the SPY benchmark by -33.32%, indicating strong relative weakness."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Substantial Correction from Peak",
+      "evidence": "The stock is currently in a significant drawdown of -23.38% from its recent high."
+    },
+    {
+      "type": "RSI",
+      "signal": "Neutral Momentum",
+      "evidence": "The RSI is at 54.00, indicating neither overbought nor oversold conditions, but a slight positive momentum bias."
+    },
+    {
+      "type": "Volume",
+      "signal": "Weak Participation",
+      "evidence": "The recent volume spike ratio is 0.75, suggesting below-average trading volume and a lack of strong conviction behind recent price moves."
+    },
+    {
+      "type": "Volatility",
+      "signal": "Elevated Recent Volatility",
+      "evidence": "Recent volatility (34.19%) is higher than the annualized volatility (23.61%), pointing to a period of increased price instability."
+    },
+    {
+      "type": "Returns",
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.08%"
+    },
+    {
+      "type": "Market Regime",
+      "signal": "bullish_trend",
+      "evidence": "Regime classification: bullish_trend"
+    }
+  ],
+  "risks": [
+    "The price remains firmly below its 200-day moving average, confirming a bearish long-term trend.",
+    "Severe underperformance against the SPY benchmark suggests institutional capital is likely rotating out of the stock.",
+    "The bearish MACD crossover signals that the recent upward price action may be losing steam, increasing the risk of a reversal to the downside."
+  ],
+  "summary": "As of the analysis date, MSFT exhibits a neutral short-term and bearish long-term technical profile. The price is holding above its 20 and 50-day moving averages, but momentum indicators like the MACD are weakening. The long-term outlook is negative, dominated by the price's position well below the 200-day average and its dramatic underperformance relative to the broader market.",
+  "core_insight": "The primary technical conflict is between the stock's ability to hold short-term support levels and the overriding bearish long-term trend and relative weakness. This suggests that any rallies may be temporary within a larger corrective or bearish phase."
+}

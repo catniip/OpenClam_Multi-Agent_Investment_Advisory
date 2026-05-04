@@ -1,0 +1,343 @@
+[
+  {
+    "ticker": "TSLA",
+    "company": "Tesla",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Bearish",
+    "confidence": 0.85,
+    "confidence_rationale": "Confidence is high because the primary negative catalyst is a direct, quantitative data point from the main ticker's own earnings report (a YoY revenue decline). This is a fundamental break in the hyper-growth narrative. The thesis is further strengthened by a concurrent, contrasting positive report from a key competitor (GM), providing a clear signal of shifting market dynamics.",
+    "stance_rationale": "Short-term: A year-over-year revenue decline is a major negative for a high-valuation growth stock like Tesla, and the slight EPS beat is unlikely to offset this fundamental disappointment. The stock is vulnerable to significant post-earnings selling pressure. Long-term: The revenue miss, coupled with strong results from competitors like GM, indicates Tesla's competitive moat is eroding and the EV market is maturing. Without a clear catalyst for growth re-acceleration in the next 1-3 quarters, the stock's premium valuation is unsustainable, warranting a bearish stance versus the broader market.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "TSLA",
+        "company": "Tesla, Inc.",
+        "signal": "The stock is the primary expression of the event, likely to see immediate selling pressure and a re-evaluation of its growth premium.",
+        "evidence": "Negative reaction to the revenue miss and YoY decline, with volatility around the vague earnings call commentary."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "GM",
+        "company": "General Motors Company",
+        "signal": "GM acts as a 'safe harbor' within the auto sector, attracting funds exiting TSLA.",
+        "evidence": "Positive reaction, with capital potentially rotating from pure-play EV names to legacy automakers executing a successful transition."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "F",
+        "company": "Ford Motor Company",
+        "signal": "A key data point for sector-wide sentiment, but the direct news is on GM.",
+        "evidence": "Investors will assess if GM's strength is company-specific or a 'Detroit 3' trend, influencing F's stock performance."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "NVDA",
+        "company": "NVIDIA Corporation",
+        "signal": "The consensus AI trade, benefiting from any narrative that requires massive computation, regardless of the end-user's success.",
+        "evidence": "Largely neutral-to-positive, as funds seeking AI exposure might prefer the broader market supplier (NVIDIA) over a vertically integrated player with weakening core sales (Tesla)."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "ALB",
+        "company": "Albemarle Corporation",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because Tesla's sales volumes are declining and EV competition is intensifying, this signals a slowdown in overall battery demand and will force automakers to pressure their suppliers. This causes demand and pricing for lithium to weaken, which directly compresses revenue and margins for a major producer like Albemarle.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "GM",
+        "company": "General Motors Company",
+        "signal": "Long: Competitor Displacement",
+        "evidence": "Because the pure-play EV leader (Tesla) is faltering, investors are seeking profitable and durable automotive electrification stories. GM's strong earnings and shareholder returns position it as a prime beneficiary of capital rotating out of high-valuation growth stocks like Tesla, leading to a potential re-rating of GM's multiple.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "APTV",
+        "company": "Aptiv PLC",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because the entire auto industry, including Tesla, GM, and Ford, is shifting towards more complex software-defined vehicles, the demand for underlying high-voltage electrical architecture, connectors, and advanced safety systems increases. This causes Aptiv's content per vehicle to rise, driving revenue and margin growth irrespective of which OEM wins market share.",
+        "impact_score": 6
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "RIVN",
+        "company": "Rivian Automotive, Inc.",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because the EV market leader (Tesla) is experiencing a sales decline, it validates concerns about a broader EV demand slowdown. This macro headwind is disproportionately negative for cash-burning, high-valuation players like Rivian, which now faces a tougher path to profitability and a higher cost of capital, increasing the risk around its pivotal R2 launch.",
+        "impact_score": 8
+      }
+    ],
+    "risks": [
+      "The analysis assumes Tesla does not announce a surprise, game-changing product or a massive share buyback in the immediate aftermath of the report that could overwrite the negative fundamental news.",
+      "The thesis for shorting ALB assumes the EV slowdown is broad-based and not just a Tesla-specific market share loss issue. A sudden spike in EV demand from China or Europe could reverse lithium price trends.",
+      "The long GM thesis relies on the market rewarding fundamentals over narrative. In the short-term, sentiment can be irrational, and a broader market sell-off could drag GM down regardless of its relative strength."
+    ],
+    "citations": [
+      {
+        "title": "Barclays Says Tesla’s (TSLA) Fundamentals Are Taking a Back Seat",
+        "source": "Yahoo / related:RIVN",
+        "url": "https://finnhub.io/api/news?id=8c3042e3a80aad5d968d5b01145885a75043fdabe87b26ae29e4a6aa73137528"
+      },
+      {
+        "title": "Earnings live: Starbucks stock pops, GE Vernova slips, ASML surges",
+        "source": "Yahoo / related:GM",
+        "url": "https://finnhub.io/api/news?id=ce6bcaeddb482da410a1d958e15346bfacb571bbffe231dca4e3ea021adf4f1c"
+      },
+      {
+        "title": "Tesla Stock: Pie In The Sky Valuations And Falling Sales - But Don't Sell It Short",
+        "source": "SeekingAlpha / related:GM",
+        "url": "https://finnhub.io/api/news?id=aca2710344ebf599fde486939ba8cabd852bae83e7dc2ff698d74bd9f832795e"
+      },
+      {
+        "title": "General Motors Outlook Looks Conservative, Says Analyst",
+        "source": "Benzinga / related:GM",
+        "url": "https://finnhub.io/api/news?id=e37fd2749ba6229de242508b81dd3404be203c4a6f23f3749e378d33e74e71ea"
+      },
+      {
+        "title": "Tesla (NASDAQ:TSLA) Misses Q4 CY2025 Sales Expectations",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=01cc20fd7435600eb09daa6422778e7dda54670afdb40040cb3a36125a1a516a"
+      },
+      {
+        "title": "Rivian: The Clock Starts Now",
+        "source": "SeekingAlpha / related:RIVN",
+        "url": "https://finnhub.io/api/news?id=d1ff20fbb88058aca69efaf0757102d89cfa89148d1f6e4e8ad9f36dd7bbfd69"
+      },
+      {
+        "title": "Tesla earnings call: Musk explains 'amazing abundance' mission",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=ed589d97e3b5061e2fc1fbe6574a4fa2a32b4b9e8be5f6c00c69157b7c764f82"
+      },
+      {
+        "title": "PPG Industries' Earnings Lag Estimates in Q4, Revenues Up Y/Y",
+        "source": "Yahoo / related:ALB",
+        "url": "https://finnhub.io/api/news?id=7c3813389abef6acec883aaed3504520888dfad7ad1e209c2d498d3af14544ca"
+      },
+      {
+        "title": "GM exec explains how it beat tariffs in 2025",
+        "source": "Yahoo / related:GM",
+        "url": "https://finnhub.io/api/news?id=bea8c471b63d9866a244086fe9fb162d1e947fda49aee4ae34bba22c7846c998"
+      },
+      {
+        "title": "3 Reasons to Buy Tesla Before March 2026",
+        "source": "Yahoo / related:RIVN",
+        "url": "https://finnhub.io/api/news?id=75a7a5d188e1913d1ffc581444b67e21c435e03b5a9ae1fc604595872ffe17d2"
+      }
+    ],
+    "summary": {
+      "news_summary": "Tesla (TSLA) reported Q4 2025 earnings, missing revenue expectations with a 3.1% year-over-year decline, while competitor General Motors (GM) posted upbeat results.",
+      "core_insight": "Tesla's revenue decline amidst a strong report from GM signals an intensification of EV competition and potential market saturation, creating a negative ripple effect for upstream suppliers like lithium producers who are dependent on pure-play EV volume growth."
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.65,
+    "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
+    "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Mixed Trend Structure",
+        "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bullish Momentum Shift",
+        "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
+      },
+      {
+        "type": "Volume",
+        "signal": "Lack of Conviction",
+        "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Market Outperformance",
+        "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
+      },
+      {
+        "type": "RSI",
+        "signal": "Healthy Bullish Momentum",
+        "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "Range-Bound Environment",
+        "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Significant Downside Risk",
+        "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 0.01%"
+      },
+      {
+        "type": "Volatility",
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 47.21%, Recent 38.54%"
+      }
+    ],
+    "risks": [
+      "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
+      "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
+      "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
+    ],
+    "citations": [],
+    "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
+    "raw_packet": {
+      "ticker": "TSLA",
+      "company": "Tesla",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bullish",
+      "long_term_stance": "neutral",
+      "confidence": 0.65,
+      "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Mixed Trend Structure",
+          "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bullish Momentum Shift",
+          "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
+        },
+        {
+          "type": "Volume",
+          "signal": "Lack of Conviction",
+          "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Market Outperformance",
+          "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
+        },
+        {
+          "type": "RSI",
+          "signal": "Healthy Bullish Momentum",
+          "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "Range-Bound Environment",
+          "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Significant Downside Risk",
+          "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 0.01%"
+        },
+        {
+          "type": "Volatility",
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 47.21%, Recent 38.54%"
+        }
+      ],
+      "risks": [
+        "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
+        "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
+        "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
+      ],
+      "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
+      "core_insight": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
+    }
+  },
+  {
+    "ticker": "TSLA",
+    "company": "Tesla",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Neutral",
+    "confidence": 0.3,
+    "confidence_rationale": "Confidence is low due to significant missing information, including analyst consensus estimates, management guidance, and the earnings call transcript. The analysis is limited to the provided quantitative data without crucial context.",
+    "stance_rationale": "Tesla's quarterly performance shows significant weakness with declining revenue and profitability on a quarter-over-quarter basis, which is concerning given its extremely high valuation. However, a strong balance sheet with a net cash position and slightly improved quarterly cash flow provide some stability, warranting a 'Watch' stance.",
+    "key_signals": [
+      "Operating Cash Flow increased quarter-over-quarter to $3.94 billion from $3.81 billion.",
+      "Free Cash Flow grew slightly QoQ to $1.44 billion from $1.42 billion.",
+      "The balance sheet is strong, with cash and cash equivalents of $16.60 billion exceeding total debt of $15.89 billion.",
+      "Year-over-year growth remains positive, with revenue growth reported at 15.8% and earnings growth at 8.3% (from yfinance).",
+      "Revenue QoQ: $22.39B (current) vs $24.90B (previous)",
+      "Net Income QoQ: $477M (current) vs $840M (previous)",
+      "Operating Cash Flow QoQ: $3.94B (current) vs $3.81B (previous)",
+      "Trailing P/E: 360.1",
+      "Forward P/E: 154.8",
+      "Cash And Cash Equivalents: $16.60B vs Total Debt: $15.89B",
+      "yfinance Revenue Growth (YoY): 15.8%",
+      "Consensus estimates for revenue and EPS were not provided."
+    ],
+    "risks": [
+      "Revenue declined quarter-over-quarter to $22.39 billion from $24.90 billion.",
+      "Profitability deteriorated significantly on a QoQ basis, with Net Income falling to $477 million from $840 million and Operating Income declining to $941 million from $1.57 billion.",
+      "The company has an extremely high valuation, with a Trailing P/E of 360.1 and a Forward P/E of 154.8, which suggests high risk if growth continues to slow.",
+      "Profit Margin for the quarter was low at 3.95%.",
+      "Analyst consensus estimates for revenue and EPS",
+      "Management guidance for future quarters",
+      "Earnings call transcript to assess management tone and outlook",
+      "Year-over-year comparisons for the specific quarter's metrics",
+      "Segment-level performance (e.g., automotive vs. energy storage)",
+      "Peer valuation comparison"
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Weakened | thesis_impact_reasoning: The reported quarter-over-quarter declines in revenue and profitability challenge the high-growth narrative that justifies the company's premium valuation. While the balance sheet is solid, faltering top-line and bottom-line growth weakens the investment thesis.",
+    "raw_packet": {
+      "ticker": "TSLA",
+      "company": "Tesla",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Watch",
+      "confidence": 0.3,
+      "confidence_rationale": "Confidence is low due to significant missing information, including analyst consensus estimates, management guidance, and the earnings call transcript. The analysis is limited to the provided quantitative data without crucial context.",
+      "stance_rationale": "Tesla's quarterly performance shows significant weakness with declining revenue and profitability on a quarter-over-quarter basis, which is concerning given its extremely high valuation. However, a strong balance sheet with a net cash position and slightly improved quarterly cash flow provide some stability, warranting a 'Watch' stance.",
+      "key_signals": [
+        "Operating Cash Flow increased quarter-over-quarter to $3.94 billion from $3.81 billion.",
+        "Free Cash Flow grew slightly QoQ to $1.44 billion from $1.42 billion.",
+        "The balance sheet is strong, with cash and cash equivalents of $16.60 billion exceeding total debt of $15.89 billion.",
+        "Year-over-year growth remains positive, with revenue growth reported at 15.8% and earnings growth at 8.3% (from yfinance).",
+        "Revenue QoQ: $22.39B (current) vs $24.90B (previous)",
+        "Net Income QoQ: $477M (current) vs $840M (previous)",
+        "Operating Cash Flow QoQ: $3.94B (current) vs $3.81B (previous)",
+        "Trailing P/E: 360.1",
+        "Forward P/E: 154.8",
+        "Cash And Cash Equivalents: $16.60B vs Total Debt: $15.89B",
+        "yfinance Revenue Growth (YoY): 15.8%",
+        "Consensus estimates for revenue and EPS were not provided."
+      ],
+      "risks": [
+        "Revenue declined quarter-over-quarter to $22.39 billion from $24.90 billion.",
+        "Profitability deteriorated significantly on a QoQ basis, with Net Income falling to $477 million from $840 million and Operating Income declining to $941 million from $1.57 billion.",
+        "The company has an extremely high valuation, with a Trailing P/E of 360.1 and a Forward P/E of 154.8, which suggests high risk if growth continues to slow.",
+        "Profit Margin for the quarter was low at 3.95%.",
+        "Analyst consensus estimates for revenue and EPS",
+        "Management guidance for future quarters",
+        "Earnings call transcript to assess management tone and outlook",
+        "Year-over-year comparisons for the specific quarter's metrics",
+        "Segment-level performance (e.g., automotive vs. energy storage)",
+        "Peer valuation comparison"
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Weakened",
+        "thesis_impact_reasoning": "The reported quarter-over-quarter declines in revenue and profitability challenge the high-growth narrative that justifies the company's premium valuation. While the balance sheet is solid, faltering top-line and bottom-line growth weakens the investment thesis."
+      }
+    }
+  }
+]

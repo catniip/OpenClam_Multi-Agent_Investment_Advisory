@@ -1,0 +1,350 @@
+[
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is high because the evidence comes directly from TSM's own earnings report, call transcript, and guidance. The news is unambiguously positive across revenue, margins, and forward demand. The causal link between AI demand and TSM's results is clear, reducing inferential risk.",
+    "stance_rationale": "The short-term stance is Bullish due to a significant earnings beat, raised guidance, and margin expansion, which should trigger analyst upgrades and positive fund flows, causing the stock to drift higher post-earnings. The long-term stance is Bullish as TSM's record capex and technology lead solidify its position as the primary enabler and bottleneck of the multi-year AI hardware buildout, ensuring sustained growth and pricing power.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "NVDA",
+        "company": "NVIDIA Corporation",
+        "signal": "Consensus long. TSM's report validates the NVIDIA bull thesis, but much of this is likely already priced in. It's the most obvious first-order trade.",
+        "evidence": "Strongly positive. The market will see this as confirmation that NVIDIA's orders are robust and its growth trajectory is secure."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AMD",
+        "company": "Advanced Micro Devices, Inc.",
+        "signal": "A consensus beneficiary, similar to NVIDIA. The report helps de-risk AMD's own AI growth narrative.",
+        "evidence": "Positive. Confirmation that the overall market for AI accelerators is large enough to support multiple players."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AAPL",
+        "company": "Apple Inc.",
+        "signal": "A stable demand signal for Apple, but TSM's AI-centric commentary is more relevant for other players.",
+        "evidence": "Mildly positive. Less of an AI-driven reaction and more of a confirmation of supply chain stability for its core products."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "INTC",
+        "company": "Intel Corporation",
+        "signal": "A clear negative read-through. TSM's success reinforces the bear case on Intel's foundry strategy and competitive position.",
+        "evidence": "Negative. TSM's widening technology lead, strong margins, and record capex underscore how far Intel has to go to compete, highlighting INTC's significant investment and execution risk."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "ASML",
+        "company": "ASML Holding N.V.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because TSM is committing to 'record capex' to build out capacity for advanced nodes (3nm and below) to meet AI demand, it must place significant new orders for ASML's unique and monopolistic EUV lithography machines, directly boosting ASML's forward revenue and backlog.",
+        "impact_score": 9
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "SNPS",
+        "company": "Synopsys, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because TSM's report confirms a massive wave of complex AI chips are being designed for its 3nm process, demand for Synopsys's essential Electronic Design Automation (EDA) software and IP cores will accelerate. The technical difficulty of designing at 3nm increases the value and necessity of SNPS tools.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "KLAC",
+        "company": "KLA Corporation",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because TSM is ramping up production of extremely complex 3nm chips with shrinking process windows, the need for advanced process control, wafer inspection, and metrology to ensure high yields becomes critical. TSM's record capex will include a significant portion for KLAC's tools, which dominate this market segment.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "TER",
+        "company": "Teradyne, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because TSM is manufacturing a surge of new, complex AI chips, these chips must all be tested before being packaged and sold. Teradyne provides the automated test equipment (ATE) for these advanced semiconductors. A higher volume and complexity of chips coming out of TSM's fabs directly increases demand for TER's testing solutions.",
+        "impact_score": 7
+      }
+    ],
+    "risks": [
+      "The primary risk to the entire thesis is a significant escalation in geopolitical tensions between China and Taiwan, which could disrupt TSM's operations and create systemic risk for the entire semiconductor supply chain.",
+      "A sharp global economic downturn could temper the AI hardware buildout, reducing end-demand and causing TSM's customers (like NVDA) to slow their orders, though the current news indicates demand is resilient.",
+      "The 'record capex' could be timed further out than expected, delaying the revenue impact for equipment suppliers like ASML and KLAC. The pace of spending needs to be monitored.",
+      "Competition from Intel Foundry Services or Samsung Foundry could potentially accelerate, although TSM's current report suggests their lead is widening, not shrinking."
+    ],
+    "citations": [
+      {
+        "title": "TSMC's Big Q4 Fuels A Global AI Chip Rally, Lifting My Price Target",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=afc5a907f50fd8c98e4cea0d1fad3e14f591609b8b281dbfe81d3f4f76ddb876"
+      },
+      {
+        "title": "Silver Swings Wildly After Trump Holds Back On Critical Mineral Tariffs: Dow Futures In The Green After Strong Tech Rally",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=3c734b7d698c6db0a7734d4c3d3c6d71159260bbf9450039a9ca7ca0cbf7128b"
+      },
+      {
+        "title": "TSMC Knocks It Out Of The Park With Q4 2025 Earnings",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=73b04d4167b61f6ce503c023014e302f7f5652e2bb3e558ff3d715772ac7559c"
+      },
+      {
+        "title": "TSMC Stock Is Crushing Nvidia In 2026 — Here Are 3 ETFs That Cut Magnificent 7 Risk",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=5ec151e5f7f964c54676d9b3832e0ebc0c8c00ece4859f2b31027cf5c783cc1c"
+      },
+      {
+        "title": "Taiwan Semiconductor Manufacturing Company Limited (TSM) Q4 2025 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=6a579117d72f72fb35767f6fba3e914987f4b51168957de40281092163f911f0"
+      },
+      {
+        "title": "Taiwan Semiconductor Manufacturing shares are trading higher after the company reported fourth-quarter earnings and revenue that beat analyst estimates.",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=2695c54bfcdcb18ffccd495584084ab47f00afd5f8b6eb5cd4182846d5c30a78"
+      },
+      {
+        "title": "Taiwan Semiconductor: Soaring To New All-Time Highs",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=fb152d38e43a3da95c16bbb42c97c12f0a61610716e5c4c63d07fa7ee2adfcaa"
+      },
+      {
+        "title": "Taiwan Semiconductor's Q4 Earnings Should Ignite Rally Continuation",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=49ff1c2c9af82889e48fe4938ce32e1d1dbda176b08bfee251f3ff584bec8905"
+      },
+      {
+        "title": "Taiwan Semiconductor Manufacturing Company Limited 2025 Q4 - Results - Earnings Call Presentation",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=265f9997cde7f84a4fe2ed9be69e70e17c52275c45e813d3f7565814e5eb208f"
+      },
+      {
+        "title": "Needham Maintains Buy on Taiwan Semiconductor, Raises Price Target to $410",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=48fde881b7b23d76bcb7aa2c34ea938dffc256a859a627697dc1bafce705a3e2"
+      }
+    ],
+    "summary": {
+      "news_summary": "TSMC reported a major Q4 2025 earnings and revenue beat with raised guidance, driven by soaring AI demand for its advanced 3nm-7nm nodes, and announced record capex plans.",
+      "core_insight": "TSMC's announced 'record capex' to meet unprecedented AI chip demand creates a massive, investable pull-forward in orders for the 'pick-and-shovel' suppliers of semiconductor manufacturing equipment, design software, and specialty materials."
+    }
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.85,
+    "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish signals across trend, momentum, and relative strength. The price is well above all key moving averages, RSI indicates strong momentum, and the MACD confirms a bullish crossover. The primary factor preventing higher confidence is that recent price gains have been on below-average volume, signaling potentially weak conviction.",
+    "stance_rationale": "The stock's technical profile was dominated by a powerful, multi-timeframe bullish trend, confirmed by strong momentum and market leadership. This positioned TSM in a clear uptrend, although a lack of volume confirmation warranted monitoring for signs of trend exhaustion.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "strong bullish trend structure",
+        "evidence": "Price at 401.61 is trading above the MA20 (379.95), MA50 (360.57), and MA200 (305.04), which are stacked in a bullish formation, confirming a healthy uptrend across all timeframes."
+      },
+      {
+        "type": "RSI",
+        "signal": "strong bullish momentum",
+        "evidence": "RSI is at 64.98, indicating strong buying pressure that is approaching but not yet in traditionally overbought territory (>70)."
+      },
+      {
+        "type": "MACD",
+        "signal": "bullish momentum confirmation",
+        "evidence": "A bullish crossover is active with the MACD line (13.09) above its signal line (11.45) and a positive histogram, confirming the strength of the current uptrend."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "significant market outperformance",
+        "evidence": "The stock has been significantly outperforming its benchmark (SPY), identifying it as a market leader as of this date."
+      },
+      {
+        "type": "Volume",
+        "signal": "weak participation",
+        "evidence": "The volume spike ratio of 0.73 indicates recent price appreciation occurred on below-average volume, which can be a sign of weakening conviction."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "confirmed bullish trend",
+        "evidence": "The market regime classification for the stock is 'bullish_trend', providing context that aligns with the price action."
+      },
+      {
+        "type": "Trend Strength",
+        "signal": "long-term strength",
+        "evidence": "The price is 31.66% above its 200-day moving average, signaling a powerful and well-established long-term uptrend."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 0.96%"
+      },
+      {
+        "type": "Volatility",
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 34.96%, Recent 39.38%"
+      },
+      {
+        "type": "Drawdown",
+        "signal": "contained drawdown",
+        "evidence": "Current drawdown -0.83%, Max drawdown -18.14%"
+      }
+    ],
+    "risks": [
+      "Price is significantly extended from its moving averages, particularly the MA200, which increases the potential for a mean-reversion pullback or consolidation.",
+      "The lack of volume confirmation on recent price advances suggests weakening conviction and could make the trend more vulnerable to a reversal."
+    ],
+    "citations": [],
+    "summary": "As of 2026/01/15, TSM exhibited a strong and established bullish technical profile. The stock was in a clear uptrend across short, medium, and long-term horizons, with price trading significantly above its key moving averages. Bullish momentum was confirmed by a strong RSI and a positive MACD crossover. The stock was also a clear market leader, outperforming its benchmark. The primary point of caution was the below-average volume accompanying recent price gains, suggesting a potential lack of broad conviction.",
+    "raw_packet": {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bullish",
+      "long_term_stance": "bullish",
+      "confidence": 0.85,
+      "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish signals across trend, momentum, and relative strength. The price is well above all key moving averages, RSI indicates strong momentum, and the MACD confirms a bullish crossover. The primary factor preventing higher confidence is that recent price gains have been on below-average volume, signaling potentially weak conviction.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "strong bullish trend structure",
+          "evidence": "Price at 401.61 is trading above the MA20 (379.95), MA50 (360.57), and MA200 (305.04), which are stacked in a bullish formation, confirming a healthy uptrend across all timeframes."
+        },
+        {
+          "type": "RSI",
+          "signal": "strong bullish momentum",
+          "evidence": "RSI is at 64.98, indicating strong buying pressure that is approaching but not yet in traditionally overbought territory (>70)."
+        },
+        {
+          "type": "MACD",
+          "signal": "bullish momentum confirmation",
+          "evidence": "A bullish crossover is active with the MACD line (13.09) above its signal line (11.45) and a positive histogram, confirming the strength of the current uptrend."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "significant market outperformance",
+          "evidence": "The stock has been significantly outperforming its benchmark (SPY), identifying it as a market leader as of this date."
+        },
+        {
+          "type": "Volume",
+          "signal": "weak participation",
+          "evidence": "The volume spike ratio of 0.73 indicates recent price appreciation occurred on below-average volume, which can be a sign of weakening conviction."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "confirmed bullish trend",
+          "evidence": "The market regime classification for the stock is 'bullish_trend', providing context that aligns with the price action."
+        },
+        {
+          "type": "Trend Strength",
+          "signal": "long-term strength",
+          "evidence": "The price is 31.66% above its 200-day moving average, signaling a powerful and well-established long-term uptrend."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 0.96%"
+        },
+        {
+          "type": "Volatility",
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 34.96%, Recent 39.38%"
+        },
+        {
+          "type": "Drawdown",
+          "signal": "contained drawdown",
+          "evidence": "Current drawdown -0.83%, Max drawdown -18.14%"
+        }
+      ],
+      "risks": [
+        "Price is significantly extended from its moving averages, particularly the MA200, which increases the potential for a mean-reversion pullback or consolidation.",
+        "The lack of volume confirmation on recent price advances suggests weakening conviction and could make the trend more vulnerable to a reversal."
+      ],
+      "summary": "As of 2026/01/15, TSM exhibited a strong and established bullish technical profile. The stock was in a clear uptrend across short, medium, and long-term horizons, with price trading significantly above its key moving averages. Bullish momentum was confirmed by a strong RSI and a positive MACD crossover. The stock was also a clear market leader, outperforming its benchmark. The primary point of caution was the below-average volume accompanying recent price gains, suggesting a potential lack of broad conviction.",
+      "core_insight": "The stock's technical profile was dominated by a powerful, multi-timeframe bullish trend, confirmed by strong momentum and market leadership. This positioned TSM in a clear uptrend, although a lack of volume confirmation warranted monitoring for signs of trend exhaustion."
+    }
+  },
+  {
+    "ticker": "TSM",
+    "company": "Taiwan Semiconductor Manufacturing",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is moderate. While the reported financial metrics are unambiguously strong, the analysis is limited by the absence of crucial contextual information such as analyst consensus estimates, official company guidance, and management commentary. These missing elements prevent a full assessment of performance relative to expectations and the company's own forward-looking outlook.",
+    "stance_rationale": "TSM reported a strong quarter with significant quarter-over-quarter growth across revenue, profitability, and cash flow. Robust growth metrics from yfinance and a strong net cash position further reinforce the positive operational performance. However, the valuation on a trailing basis appears elevated and requires peer context. A complete lack of analyst estimates, company guidance, and management commentary introduces significant uncertainty and are key missing pieces for a comprehensive analysis.",
+    "key_signals": [
+      "Strong sequential growth, with Revenue up 5.7% QoQ, Operating Income up 12.8% QoQ, and Net Income up 7.3% QoQ.",
+      "Exceptional cash flow generation, evidenced by a 70.0% QoQ increase in Operating Cash Flow and a 163.1% QoQ increase in Free Cash Flow.",
+      "Robust growth metrics reported by yfinance, including 35.1% Revenue Growth and 58.4% Earnings Growth.",
+      "High profitability with a Profit Margin of 46.5%.",
+      "Strong balance sheet with Cash and Cash Equivalents of 2.77 trillion USD significantly exceeding Total Debt of 1.06 trillion USD.",
+      "Revenue increased 5.7% QoQ from 989.9B USD to 1,046.1B USD.",
+      "Net Income increased 7.3% QoQ from 452.3B USD to 485.5B USD.",
+      "Free Cash Flow surged 163.1% QoQ to 364.0B USD.",
+      "yfinance data indicates Revenue Growth of 35.1% and Earnings Growth of 58.4%.",
+      "The company's Trailing P/E is 34.47, while its Forward P/E is 20.82.",
+      "Cash and Cash Equivalents stand at 2.77 trillion USD against Total Debt of 1.06 trillion USD.",
+      "beat_or_miss is 'Unclear' due to missing consensus estimates."
+    ],
+    "risks": [
+      "Valuation requires peer comparison; the Trailing P/E of 34.5 is at a level that suggests high growth expectations are priced in.",
+      "Complete absence of analyst consensus estimates for revenue and earnings, preventing an assessment of performance versus market expectations.",
+      "No company guidance was provided, creating uncertainty about the forward outlook.",
+      "Lack of management commentary from an earnings call transcript, which obscures qualitative insights into business trends, demand, and challenges.",
+      "Analyst consensus EPS and revenue estimates",
+      "Official company guidance",
+      "Earnings call transcript with management commentary",
+      "Peer company valuation and performance benchmarks for comparison",
+      "Revenue breakdown by technology node or end market"
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The fundamental data shows significant quarter-over-quarter improvement in all key financial metrics, particularly revenue, net income, and free cash flow. This strong execution and growth profile strengthens a bullish investment thesis, despite the lack of forward guidance and management commentary.",
+    "raw_packet": {
+      "ticker": "TSM",
+      "company": "Taiwan Semiconductor Manufacturing",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Bullish",
+      "confidence": 0.6,
+      "confidence_rationale": "Confidence is moderate. While the reported financial metrics are unambiguously strong, the analysis is limited by the absence of crucial contextual information such as analyst consensus estimates, official company guidance, and management commentary. These missing elements prevent a full assessment of performance relative to expectations and the company's own forward-looking outlook.",
+      "stance_rationale": "TSM reported a strong quarter with significant quarter-over-quarter growth across revenue, profitability, and cash flow. Robust growth metrics from yfinance and a strong net cash position further reinforce the positive operational performance. However, the valuation on a trailing basis appears elevated and requires peer context. A complete lack of analyst estimates, company guidance, and management commentary introduces significant uncertainty and are key missing pieces for a comprehensive analysis.",
+      "key_signals": [
+        "Strong sequential growth, with Revenue up 5.7% QoQ, Operating Income up 12.8% QoQ, and Net Income up 7.3% QoQ.",
+        "Exceptional cash flow generation, evidenced by a 70.0% QoQ increase in Operating Cash Flow and a 163.1% QoQ increase in Free Cash Flow.",
+        "Robust growth metrics reported by yfinance, including 35.1% Revenue Growth and 58.4% Earnings Growth.",
+        "High profitability with a Profit Margin of 46.5%.",
+        "Strong balance sheet with Cash and Cash Equivalents of 2.77 trillion USD significantly exceeding Total Debt of 1.06 trillion USD.",
+        "Revenue increased 5.7% QoQ from 989.9B USD to 1,046.1B USD.",
+        "Net Income increased 7.3% QoQ from 452.3B USD to 485.5B USD.",
+        "Free Cash Flow surged 163.1% QoQ to 364.0B USD.",
+        "yfinance data indicates Revenue Growth of 35.1% and Earnings Growth of 58.4%.",
+        "The company's Trailing P/E is 34.47, while its Forward P/E is 20.82.",
+        "Cash and Cash Equivalents stand at 2.77 trillion USD against Total Debt of 1.06 trillion USD.",
+        "beat_or_miss is 'Unclear' due to missing consensus estimates."
+      ],
+      "risks": [
+        "Valuation requires peer comparison; the Trailing P/E of 34.5 is at a level that suggests high growth expectations are priced in.",
+        "Complete absence of analyst consensus estimates for revenue and earnings, preventing an assessment of performance versus market expectations.",
+        "No company guidance was provided, creating uncertainty about the forward outlook.",
+        "Lack of management commentary from an earnings call transcript, which obscures qualitative insights into business trends, demand, and challenges.",
+        "Analyst consensus EPS and revenue estimates",
+        "Official company guidance",
+        "Earnings call transcript with management commentary",
+        "Peer company valuation and performance benchmarks for comparison",
+        "Revenue breakdown by technology node or end market"
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Strengthened",
+        "thesis_impact_reasoning": "The fundamental data shows significant quarter-over-quarter improvement in all key financial metrics, particularly revenue, net income, and free cash flow. This strong execution and growth profile strengthens a bullish investment thesis, despite the lack of forward guidance and management commentary."
+      }
+    }
+  }
+]
