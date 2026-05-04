@@ -4,6 +4,9 @@ import json
 import os
 import re
 import statistics
+import contextlib
+import io
+import warnings
 from dataclasses import asdict, dataclass, field
 from datetime import date, datetime, timedelta
 from typing import Any, Iterable
@@ -209,6 +212,7 @@ def fetch_newsapi_news(
     event_date: str | None = None,
     news_mode: str = "latest",
     related_tickers: list[str] | None = None,
+    news_end_offset_days: int = 1,
 ) -> tuple[list[NewsItem], list[str]]:
     """Fetch news from NewsAPI if NEWSAPI_KEY is available."""
     api_key = api_key or os.getenv("NEWSAPI_KEY")
@@ -226,7 +230,7 @@ def fetch_newsapi_news(
     anchor_date = _parse_date(event_date) if news_mode == "event_window" else date.today()
     anchor_date = anchor_date or date.today()
     from_date = (anchor_date - timedelta(days=lookback_days)).isoformat()
-    to_date = (anchor_date + timedelta(days=1)).isoformat()
+    to_date = (anchor_date + timedelta(days=news_end_offset_days)).isoformat()
     queries = _build_newsapi_queries(company, ticker, related_tickers=related_tickers)
     articles: list[tuple[str, dict[str, Any]]] = []
     notes = [f"NewsAPI queried {len(queries)} finance-focused query path(s) from {from_date} through {to_date}."]
@@ -280,6 +284,7 @@ def fetch_finnhub_company_news(
     max_items: int = 10,
     event_date: str | None = None,
     news_mode: str = "latest",
+    news_end_offset_days: int = 1,
 ) -> tuple[list[NewsItem], list[str]]:
     """Fetch company news from Finnhub's ticker-based company-news endpoint."""
     api_key = api_key or os.getenv("FINNHUB_API_KEY")
@@ -297,7 +302,7 @@ def fetch_finnhub_company_news(
     anchor_date = _parse_date(event_date) if news_mode == "event_window" else date.today()
     anchor_date = anchor_date or date.today()
     from_date = (anchor_date - timedelta(days=lookback_days)).isoformat()
-    to_date = (anchor_date + timedelta(days=1)).isoformat()
+    to_date = (anchor_date + timedelta(days=news_end_offset_days)).isoformat()
     url = "https://finnhub.io/api/v1/company-news"
     params = {
         "symbol": ticker.upper(),
@@ -372,12 +377,12 @@ def fetch_macro_proxies(
             else:
                 hist = yf.download(symbol, period="1mo", interval="1d", progress=False, auto_adjust=True)
                 window_label = "1-month move"
-            closes = hist["Close"].dropna()
+            closes = _extract_close(hist)
             if len(closes) < 2:
                 notes.append(f"Not enough data for {symbol}.")
                 continue
-            start = float(closes.iloc[0])
-            end = float(closes.iloc[-1])
+            start = _series_scalar(closes, 0)
+            end = _series_scalar(closes, -1)
             pct = (end / start - 1) * 100
             direction = "supportive" if (symbol == "SPY" and pct >= 0) or (symbol == "^VIX" and pct <= 0) else "headwind"
             if symbol == "^TNX":
@@ -441,6 +446,7 @@ def collect_context(
     use_sample_if_empty: bool = True,
     news_mode: str = "latest",
     news_sources: list[str] | None = None,
+    news_end_offset_days: int = 1,
 ) -> NewsMacroContext:
     if news_mode not in {"latest", "event_window"}:
         raise ValueError("news_mode must be one of: 'latest' or 'event_window'.")
@@ -463,6 +469,10 @@ def collect_context(
 
     if news_mode == "latest":
         notes.append("Using latest-news mode; event_date is kept as metadata but not used to filter news.")
+    else:
+        notes.append(
+            f"Using event-window news ending {news_end_offset_days:+d} calendar day(s) from event_date."
+        )
 
     if "finnhub" in news_sources:
         finnhub_news, finnhub_notes = fetch_finnhub_company_news(
@@ -471,6 +481,7 @@ def collect_context(
             max_items=max_news,
             event_date=event_date,
             news_mode=news_mode,
+            news_end_offset_days=news_end_offset_days,
         )
         news.extend(finnhub_news)
         notes.extend(finnhub_notes)
@@ -482,6 +493,7 @@ def collect_context(
                 max_items=related_item_budget,
                 event_date=event_date,
                 news_mode=news_mode,
+                news_end_offset_days=news_end_offset_days,
             )
             for item in related_news:
                 item.source = f"{item.source} / related:{related_ticker}"
@@ -499,6 +511,7 @@ def collect_context(
             event_date=event_date,
             news_mode=news_mode,
             related_tickers=related_tickers,
+            news_end_offset_days=news_end_offset_days,
         )
         news.extend(api_news)
         notes.extend(api_notes)
@@ -507,7 +520,12 @@ def collect_context(
         yf_news, yf_notes = fetch_yfinance_news(ticker, max_news * 3)
         filter_notes: list[str] = []
         if news_mode == "event_window":
-            yf_news, filter_notes = _filter_news_by_event_window(yf_news, event_date, lookback_days)
+            yf_news, filter_notes = _filter_news_by_event_window(
+                yf_news,
+                event_date,
+                lookback_days,
+                news_end_offset_days=news_end_offset_days,
+            )
         else:
             yf_news = yf_news[:max_news]
         news.extend(yf_news)
@@ -1050,7 +1068,7 @@ def build_earnings_price_eval(
     earnings_df=None,
     pre_trading_days: int = 7,
     post_trading_days: int = 7,
-    long_post_trading_days: int = 63,
+    long_post_trading_days: int = 30,
     benchmarks: tuple[str, ...] = ("SPY", "QQQ"),
 ):
     """Build event-window price paths and return metrics around earnings dates."""
@@ -1058,13 +1076,22 @@ def build_earnings_price_eval(
     np = _import_numpy()
     yf = _import_yfinance()
     earnings_df = earnings_df.copy() if earnings_df is not None else mag7_q4_2025_earnings_df()
+    long_return_col = f"post_{long_post_trading_days}d_return"
+    long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
 
     price_paths = []
     summary_rows = []
     for row in earnings_df.itertuples(index=False):
         event_date = pd.Timestamp(row.earnings_date).normalize()
+        ticker_close, ticker_download_error = _download_close_series(
+            yf,
+            row.ticker,
+            event_date,
+            pre_trading_days,
+            long_post_trading_days,
+        )
         ticker_path, ticker_error = _event_window_from_close(
-            _download_close_series(yf, row.ticker, event_date, pre_trading_days, long_post_trading_days),
+            ticker_close,
             event_date,
             pre_trading_days,
             long_post_trading_days,
@@ -1075,7 +1102,7 @@ def build_earnings_price_eval(
                     "ticker": row.ticker,
                     "company": row.company,
                     "earnings_date": row.earnings_date,
-                    "error": ticker_error,
+                    "error": ticker_download_error or ticker_error,
                 }
             )
             continue
@@ -1094,8 +1121,15 @@ def build_earnings_price_eval(
         }
 
         for benchmark in benchmarks:
+            benchmark_close, benchmark_download_error = _download_close_series(
+                yf,
+                benchmark,
+                event_date,
+                pre_trading_days,
+                long_post_trading_days,
+            )
             benchmark_path, benchmark_error = _event_window_from_close(
-                _download_close_series(yf, benchmark, event_date, pre_trading_days, long_post_trading_days),
+                benchmark_close,
                 event_date,
                 pre_trading_days,
                 long_post_trading_days,
@@ -1103,8 +1137,9 @@ def build_earnings_price_eval(
             if benchmark_error:
                 summary[f"{benchmark.lower()}_post_7d_return"] = np.nan
                 summary[f"abnormal_vs_{benchmark.lower()}"] = np.nan
-                summary[f"{benchmark.lower()}_post_63d_return"] = np.nan
-                summary[f"abnormal_63d_vs_{benchmark.lower()}"] = np.nan
+                summary[f"{benchmark.lower()}_post_{long_post_trading_days}d_return"] = np.nan
+                summary[f"abnormal_{long_post_trading_days}d_vs_{benchmark.lower()}"] = np.nan
+                summary[f"{benchmark.lower()}_error"] = benchmark_download_error or benchmark_error
                 continue
             benchmark_metrics = _compute_event_returns(
                 benchmark_path,
@@ -1115,19 +1150,22 @@ def build_earnings_price_eval(
             )
             stock_short_return = metrics.get("post_7d_return", np.nan)
             benchmark_short_return = benchmark_metrics.get("post_7d_return", np.nan)
-            stock_long_return = metrics.get("post_63d_return", np.nan)
-            benchmark_long_return = benchmark_metrics.get("post_63d_return", np.nan)
+            stock_long_return = metrics.get(long_return_col, np.nan)
+            benchmark_long_return = benchmark_metrics.get(long_return_col, np.nan)
             summary[f"{benchmark.lower()}_post_7d_return"] = benchmark_short_return
             summary[f"abnormal_vs_{benchmark.lower()}"] = stock_short_return - benchmark_short_return
-            summary[f"{benchmark.lower()}_post_63d_return"] = benchmark_long_return
-            summary[f"abnormal_63d_vs_{benchmark.lower()}"] = stock_long_return - benchmark_long_return
+            summary[f"{benchmark.lower()}_post_{long_post_trading_days}d_return"] = benchmark_long_return
+            summary[f"abnormal_{long_post_trading_days}d_vs_{benchmark.lower()}"] = (
+                stock_long_return - benchmark_long_return
+            )
 
         abnormal = summary.get("abnormal_vs_qqq", np.nan)
         summary["realized_direction_vs_qqq"] = None if pd.isna(abnormal) else ("up" if abnormal > 0 else "down")
-        long_abnormal = summary.get("abnormal_63d_vs_qqq", np.nan)
-        summary["realized_63d_direction_vs_qqq"] = (
+        long_abnormal = summary.get(f"abnormal_{long_post_trading_days}d_vs_qqq", np.nan)
+        summary[long_direction_col] = (
             None if pd.isna(long_abnormal) else ("up" if long_abnormal > 0 else "down")
         )
+        summary["long_horizon_trading_days"] = long_post_trading_days
         summary_rows.append(summary)
 
     summary_df = pd.DataFrame(summary_rows)
@@ -1144,10 +1182,21 @@ def run_agent_event_window_eval(
     model: str = "gpt-5.4-nano",
     gemini_model: str = "gemini-2.5-flash",
     neutral_band: float = 0.02,
+    news_end_offset_days: int = -1,
+    long_post_trading_days: int | None = None,
+    quiet: bool = True,
 ):
-    """Run the News & Macro Agent against event windows and score short-term direction."""
+    """Run the News & Macro Agent against no-leakage event windows and score both horizons."""
     pd = _import_pandas()
     news_sources = news_sources or ["finnhub", "newsapi", "yfinance"]
+    if long_post_trading_days is None:
+        if "long_horizon_trading_days" in summary_df.columns and not summary_df["long_horizon_trading_days"].dropna().empty:
+            long_post_trading_days = int(summary_df["long_horizon_trading_days"].dropna().iloc[0])
+        else:
+            long_post_trading_days = 30
+    long_return_col = f"post_{long_post_trading_days}d_return"
+    long_abnormal_col = f"abnormal_{long_post_trading_days}d_vs_qqq"
+    long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
     required = [
         "ticker",
         "company",
@@ -1155,9 +1204,9 @@ def run_agent_event_window_eval(
         "post_7d_return",
         "abnormal_vs_qqq",
         "realized_direction_vs_qqq",
-        "post_63d_return",
-        "abnormal_63d_vs_qqq",
-        "realized_63d_direction_vs_qqq",
+        long_return_col,
+        long_abnormal_col,
+        long_direction_col,
     ]
     agent_eval = summary_df[required].copy()
 
@@ -1182,22 +1231,45 @@ def run_agent_event_window_eval(
             agent_eval.loc[idx, "direction_match_reason"] = "missing earnings date"
             continue
 
-        event_context = collect_context(
-            ticker=row["ticker"],
-            company=row["company"],
-            event_date=row["earnings_date"],
-            news_mode="event_window",
-            lookback_days=lookback_days,
-            max_news=max_news,
-            news_sources=news_sources,
-            use_sample_if_empty=False,
-        )
-        event_report = generate_report(
-            event_context,
-            provider=provider,
-            model=model,
-            gemini_model=gemini_model,
-        )
+        if quiet:
+            with warnings.catch_warnings(), contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+                warnings.simplefilter("ignore", FutureWarning)
+                warnings.simplefilter("ignore", UserWarning)
+                event_context = collect_context(
+                    ticker=row["ticker"],
+                    company=row["company"],
+                    event_date=row["earnings_date"],
+                    news_mode="event_window",
+                    lookback_days=lookback_days,
+                    max_news=max_news,
+                    news_sources=news_sources,
+                    use_sample_if_empty=False,
+                    news_end_offset_days=news_end_offset_days,
+                )
+                event_report = generate_report(
+                    event_context,
+                    provider=provider,
+                    model=model,
+                    gemini_model=gemini_model,
+                )
+        else:
+            event_context = collect_context(
+                ticker=row["ticker"],
+                company=row["company"],
+                event_date=row["earnings_date"],
+                news_mode="event_window",
+                lookback_days=lookback_days,
+                max_news=max_news,
+                news_sources=news_sources,
+                use_sample_if_empty=False,
+                news_end_offset_days=news_end_offset_days,
+            )
+            event_report = generate_report(
+                event_context,
+                provider=provider,
+                model=model,
+                gemini_model=gemini_model,
+            )
         agent_reports[row["ticker"]] = event_report
 
         short_term_stance = getattr(event_report, "short_term_stance", "Neutral")
@@ -1206,9 +1278,9 @@ def run_agent_event_window_eval(
         short_predicted = _stance_to_direction(short_term_stance)
         long_predicted = _stance_to_direction(long_term_stance)
         short_realized = row["realized_direction_vs_qqq"]
-        long_realized = row["realized_63d_direction_vs_qqq"]
+        long_realized = row[long_direction_col]
         short_abnormal = row["abnormal_vs_qqq"]
-        long_abnormal = row["abnormal_63d_vs_qqq"]
+        long_abnormal = row[long_abnormal_col]
 
         agent_eval.loc[idx, "report_ready"] = True
         agent_eval.loc[idx, "agent_short_term_stance"] = short_term_stance
@@ -1333,11 +1405,55 @@ def _extract_close(downloaded):
     return close
 
 
+def _series_scalar(series, position: int) -> float:
+    value = series.iloc[position]
+    if hasattr(value, "iloc"):
+        value = value.iloc[0]
+    return float(value)
+
+
 def _download_close_series(yf, symbol: str, event_date, pre_days: int, post_days: int):
     start = (event_date - _import_pandas().Timedelta(days=max(30, pre_days * 4))).date().isoformat()
     end = (event_date + _import_pandas().Timedelta(days=max(30, post_days * 2))).date().isoformat()
-    data = yf.download(symbol, start=start, end=end, auto_adjust=True, progress=False)
-    return _extract_close(data)
+    attempts: list[str] = []
+
+    try:
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            data = yf.download(
+                symbol,
+                start=start,
+                end=end,
+                auto_adjust=True,
+                progress=False,
+                threads=False,
+            )
+        close = _extract_close(data)
+        if not close.empty:
+            return close, None
+        attempts.append("yf.download returned no rows")
+    except Exception as exc:
+        attempts.append(f"yf.download failed: {exc}")
+
+    try:
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            data = yf.Ticker(symbol).history(
+                start=start,
+                end=end,
+                auto_adjust=True,
+                actions=False,
+            )
+        close = _extract_close(data)
+        if not close.empty:
+            return close, None
+        attempts.append("Ticker.history returned no rows")
+    except Exception as exc:
+        attempts.append(f"Ticker.history failed: {exc}")
+
+    return _import_pandas().Series(dtype=float), (
+        f"No close prices for {symbol} from {start} through {end}. "
+        "This usually means Yahoo/yfinance failed or rate-limited the notebook, not that the ticker is delisted. "
+        + "; ".join(attempts)
+    )
 
 
 def _event_window_from_close(close, event_date, pre_days: int, post_days: int):
@@ -1381,7 +1497,7 @@ def _value_at_or_before(path, relative_day: int, np):
     return float(subset.iloc[-1]["normalized_price"])
 
 
-def _compute_event_returns(path, pre_days: int, post_days: int, np, long_post_days: int = 63) -> dict[str, float]:
+def _compute_event_returns(path, pre_days: int, post_days: int, np, long_post_days: int = 30) -> dict[str, float]:
     if path.empty:
         return {}
     pre_start = _value_at_or_after(path, -pre_days, np)
@@ -1395,9 +1511,9 @@ def _compute_event_returns(path, pre_days: int, post_days: int, np, long_post_da
         "post_1d_return": d1 / anchor - 1 if d1 and anchor else np.nan,
         "post_3d_return": d3 / anchor - 1 if d3 and anchor else np.nan,
         "post_7d_return": d7 / anchor - 1 if d7 and anchor else np.nan,
-        "post_63d_return": d_long / anchor - 1 if d_long and anchor else np.nan,
+        f"post_{long_post_days}d_return": d_long / anchor - 1 if d_long and anchor else np.nan,
         "full_window_return": d7 / pre_start - 1 if d7 and pre_start else np.nan,
-        "full_63d_window_return": d_long / pre_start - 1 if d_long and pre_start else np.nan,
+        f"full_{long_post_days}d_window_return": d_long / pre_start - 1 if d_long and pre_start else np.nan,
     }
 
 
@@ -1627,13 +1743,14 @@ def _filter_news_by_event_window(
     items: list[NewsItem],
     event_date: str | None,
     lookback_days: int,
+    news_end_offset_days: int = 1,
 ) -> tuple[list[NewsItem], list[str]]:
     anchor_date = _parse_date(event_date)
     if not anchor_date:
         return items, []
 
     start = anchor_date - timedelta(days=lookback_days)
-    end = anchor_date + timedelta(days=1)
+    end = anchor_date + timedelta(days=news_end_offset_days)
     filtered = []
     unknown_date_items = []
     for item in items:
