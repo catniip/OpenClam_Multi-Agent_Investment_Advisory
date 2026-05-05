@@ -1,0 +1,328 @@
+[
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.8,
+    "confidence_rationale": "Confidence is high because the evidence comes directly from the company's official earnings release and CEO commentary. The quantitative guidance miss and the specific reason cited ('memory constraints') provide a clear, actionable basis for analysis. The negative after-hours stock reaction validates the short-term bearish thesis. Confidence is not perfect as the exact duration and severity of the memory constraint are still unknown.",
+    "stance_rationale": "The short-term bearish stance is driven by the significant revenue guidance miss, which has reset near-term expectations and will lead to analyst downgrades. The stock will underperform as the market prices in this uncertainty. The long-term neutral stance reflects that the underlying demand for Qualcomm's flagship chips remains strong; the issue is a temporary supply bottleneck. Once memory supply normalizes, deferred sales should materialize, but the timing is uncertain, preventing a bullish call.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "AAPL",
+        "company": "Apple Inc.",
+        "signal": "Apple's supply chain power likely insulates it more than Android OEMs, but the sentiment drag is real. Watch for any similar commentary from Apple's management.",
+        "evidence": "Negative read-through on potential for broader smartphone market weakness or supply chain issues."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "MU",
+        "company": "Micron Technology, Inc.",
+        "signal": "This is a key tell. If MU rallies while QCOM falls, the market is correctly interpreting the supply/pricing dynamic. This is a primary consensus anchor.",
+        "evidence": "Ambiguous at first, but likely bullish. While lower handset volumes are a negative, 'constraints' imply tight supply and rising prices, which is a major positive for memory producers' margins."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AVGO",
+        "company": "Broadcom Inc.",
+        "signal": "A logical read-through is that if fewer phones are built, Broadcom sells fewer chips. This is a straightforward, first-order negative reaction.",
+        "evidence": "Negative, as constrained handset production volumes would directly reduce demand for Broadcom's wireless components."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "MU",
+        "company": "Micron Technology, Inc.",
+        "signal": "Long: Substitution Effect",
+        "evidence": "Because demand for AI server memory (HBM) is consuming a growing share of DRAM production capacity, supply for mobile DRAM is becoming constrained. This supply tightness, confirmed by Qualcomm's CEO, allows memory producers like Micron to raise prices and expand margins, as the handset market is forced to compete for limited supply.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "LRCX",
+        "company": "Lam Research Corporation",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because memory supply is tight and prices are firming (as evidenced by Qualcomm's warning), memory producers like Micron, Samsung, and SK Hynix are heavily incentivized to increase capital expenditures to expand production capacity. This leads to increased orders for wafer fabrication equipment, directly benefiting Lam Research, a leader in the etch and deposition tools essential for manufacturing DRAM and NAND memory.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "SWKS",
+        "company": "Skyworks Solutions, Inc.",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because handset OEMs cannot secure enough memory to meet their production targets, total smartphone build volumes for the next quarter will be lower than planned. This directly reduces the total addressable market for all other smartphone components. As a key supplier of RF modules, Skyworks will see its orders cut by customers who are unable to complete final assembly, leading to a revenue miss.",
+        "impact_score": 6
+      }
+    ],
+    "risks": [
+      "The core thesis assumes the 'memory constraint' is a pricing/supply issue rather than a sign of an impending, sharp downturn in end-demand for smartphones that Qualcomm is trying to obscure.",
+      "The duration of the memory bottleneck is a key variable. If it resolves in a single quarter, the long-term impact on the supply chain will be minimal, muting the theses for both longs and shorts.",
+      "Memory producers could prioritize their largest customers (like Apple), leaving smaller Android OEMs disproportionately affected. This would concentrate the negative impact on component suppliers more exposed to the Android ecosystem."
+    ],
+    "citations": [
+      {
+        "title": "No Surprises In Qualcomm’s (NASDAQ:QCOM) Q4 Sales Numbers But Stock Drops",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=f20ae42cea7868b2fc6316e08585f2cf67439040b6acf43616091973fd156b20"
+      },
+      {
+        "title": "Qualcomm stock dips as CEO flags memory constraints for handset business",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=bb954d0cf0444fa6a88933c374fce023fa1900563f5c8525a2100e6d83cf4f9b"
+      },
+      {
+        "title": "Qualcomm stock falls after revenue outlook disappoints",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=2986a906436d99ed2b6db1ea7a960e7e18a4e6478a4349e86c91b8329371344e"
+      },
+      {
+        "title": "Qualcomm Earnings Release Available on Company’s Investor Relations Website",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=9b5e8b69c39d20711c2a7a37752f07186728ea01b0ea0cf636eb2a25f2379204"
+      },
+      {
+        "title": "Qualcomm (QCOM) Q1 2026 Earnings Call Transcript",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=8f8f8100e8ea33f6af6d484029e196dacfa3c39ba655b75f4e5a1b7edf11eee7"
+      },
+      {
+        "title": "Qualcomm (QCOM) Q1 Earnings: Taking a Look at Key Metrics Versus Estimates",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=5c2c3a91467426e7be5d6133e7f4c41a88d61d14222ab5473180facc92f9f0f4"
+      },
+      {
+        "title": "Qualcomm (QCOM) Q1 Earnings Beat Estimates",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=54e9b647b2faa08bf238541fedd8d1df0191221fe09e98a30986fb5f20b3a80b"
+      },
+      {
+        "title": "QUALCOMM Incorporated (QCOM) Q1 2026 Earnings Call Transcript",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=d75f32ddf6f3039dceaf56802285fc7bc9272a80f2d46d195e817e70debe15a4"
+      },
+      {
+        "title": "QUALCOMM Incorporated (QCOM): A Bull Case Theory",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=cf87b925d67d16bff2385ce71aa39add9166977359378bc1423a2406f3b524ab"
+      },
+      {
+        "title": "Alphabet, Qualcomm, Arm Holdings, Broadcom And Snap: Why These 5 Stocks Are On Investors' Radars Today",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=1e261731bcd9d600e756eff7e56c20b6bb7f5e83bfecbc1b0ae9844988f83fbd"
+      }
+    ],
+    "summary": {
+      "news_summary": "Qualcomm reported strong fiscal Q1 results, beating on earnings, but issued Q2 revenue guidance approximately 5% below consensus, citing memory supply constraints in the handset business, which caused the stock to fall over 6% after hours.",
+      "core_insight": "Qualcomm's guidance miss is a supply-side issue (memory shortage), not a demand-side failure, which means that while handset volumes are capped, memory producers are enjoying significant pricing power, and their equipment suppliers will see increased orders."
+    }
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm",
+    "agent_name": "market_technical",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.75,
+    "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
+    "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
+      },
+      {
+        "type": "MACD",
+        "signal": "Accelerating Bullish Momentum",
+        "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
+      },
+      {
+        "type": "RSI",
+        "signal": "Overbought Condition",
+        "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Recent Pullback From Highs",
+        "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
+      },
+      {
+        "type": "Volatility",
+        "signal": "Elevated Instability",
+        "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
+      },
+      {
+        "type": "Volume",
+        "signal": "Increased Selling Conviction",
+        "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Lagging Market Performance",
+        "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "Bullish Trend Confirmation",
+        "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 2.21%"
+      }
+    ],
+    "risks": [
+      "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
+      "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
+      "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
+    ],
+    "citations": [],
+    "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
+    "raw_packet": {
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "neutral",
+      "long_term_stance": "bullish",
+      "confidence": 0.75,
+      "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
+        },
+        {
+          "type": "MACD",
+          "signal": "Accelerating Bullish Momentum",
+          "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
+        },
+        {
+          "type": "RSI",
+          "signal": "Overbought Condition",
+          "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Recent Pullback From Highs",
+          "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
+        },
+        {
+          "type": "Volatility",
+          "signal": "Elevated Instability",
+          "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
+        },
+        {
+          "type": "Volume",
+          "signal": "Increased Selling Conviction",
+          "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Lagging Market Performance",
+          "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "Bullish Trend Confirmation",
+          "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 2.21%"
+        }
+      ],
+      "risks": [
+        "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
+        "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
+        "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
+      ],
+      "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
+      "core_insight": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
+    }
+  },
+  {
+    "ticker": "QCOM",
+    "company": "Qualcomm",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Neutral",
+    "confidence": 0.3,
+    "confidence_rationale": "Confidence is low due to critical missing information. The cause of the massive discrepancy between the operating income decline and the net income surge is unknown. The lack of analyst consensus estimates, management guidance, and an earnings call transcript prevents a comprehensive analysis of performance versus expectations and future outlook.",
+    "stance_rationale": "The company's core operational performance weakened quarter-over-quarter, with significant declines in revenue, operating income, and cash flow. A substantial increase in net income, likely due to a non-operating event, masks this underlying weakness and requires further investigation.",
+    "key_signals": [
+      "Net Income increased significantly to $7.37B from $3.00B quarter-over-quarter, with yfinance reporting a 173% earnings growth.",
+      "The company maintains a high profit margin of 22.3%.",
+      "Forward P/E of 15.9x is lower than the Trailing P/E of 18.1x, suggesting expectations of future earnings growth.",
+      "Revenue QoQ: $10.6B vs $12.3B (previous quarter)",
+      "Operating Income QoQ: $2.31B vs $3.37B (previous quarter)",
+      "Net Income QoQ: $7.37B vs $3.00B (previous quarter)",
+      "Free Cash Flow QoQ: $1.92B vs $4.42B (previous quarter)",
+      "Revenue Growth (yfinance): -3.5%",
+      "Earnings Growth (yfinance): 173%",
+      "Trailing P/E: 18.12x, Forward P/E: 15.86x",
+      "Consensus estimates for revenue and earnings are not available."
+    ],
+    "risks": [
+      "Revenue declined quarter-over-quarter to $10.6B from $12.3B.",
+      "Operating Income fell sharply to $2.31B from $3.37B QoQ.",
+      "Operating Cash Flow and Free Cash Flow both more than halved QoQ, with FCF declining to $1.92B from $4.42B.",
+      "yfinance data shows a revenue growth rate of -3.5%.",
+      "The company holds notable leverage with Total Debt of $15.27B against Cash and Cash Equivalents of $5.44B.",
+      "Analyst consensus estimates for revenue and EPS, which prevents a beat/miss assessment.",
+      "Company guidance for upcoming quarters.",
+      "Earnings call transcript to understand management's tone and explanation for the results, especially the large net income figure.",
+      "A breakdown of net income to identify the source of the substantial increase (e.g., one-time gains, asset sales, tax benefits).",
+      "Year-over-year financial comparisons to distinguish seasonal effects from underlying business trends.",
+      "Peer company valuation data to properly contextualize the P/E ratios."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Weakened | thesis_impact_reasoning: The thesis for fundamental strength is weakened by the significant quarter-over-quarter declines in core operational metrics like revenue, operating income, and free cash flow. The headline surge in net income appears anomalous and inconsistent with operations, raising questions about earnings quality.",
+    "raw_packet": {
+      "ticker": "QCOM",
+      "company": "Qualcomm",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Watch",
+      "confidence": 0.3,
+      "confidence_rationale": "Confidence is low due to critical missing information. The cause of the massive discrepancy between the operating income decline and the net income surge is unknown. The lack of analyst consensus estimates, management guidance, and an earnings call transcript prevents a comprehensive analysis of performance versus expectations and future outlook.",
+      "stance_rationale": "The company's core operational performance weakened quarter-over-quarter, with significant declines in revenue, operating income, and cash flow. A substantial increase in net income, likely due to a non-operating event, masks this underlying weakness and requires further investigation.",
+      "key_signals": [
+        "Net Income increased significantly to $7.37B from $3.00B quarter-over-quarter, with yfinance reporting a 173% earnings growth.",
+        "The company maintains a high profit margin of 22.3%.",
+        "Forward P/E of 15.9x is lower than the Trailing P/E of 18.1x, suggesting expectations of future earnings growth.",
+        "Revenue QoQ: $10.6B vs $12.3B (previous quarter)",
+        "Operating Income QoQ: $2.31B vs $3.37B (previous quarter)",
+        "Net Income QoQ: $7.37B vs $3.00B (previous quarter)",
+        "Free Cash Flow QoQ: $1.92B vs $4.42B (previous quarter)",
+        "Revenue Growth (yfinance): -3.5%",
+        "Earnings Growth (yfinance): 173%",
+        "Trailing P/E: 18.12x, Forward P/E: 15.86x",
+        "Consensus estimates for revenue and earnings are not available."
+      ],
+      "risks": [
+        "Revenue declined quarter-over-quarter to $10.6B from $12.3B.",
+        "Operating Income fell sharply to $2.31B from $3.37B QoQ.",
+        "Operating Cash Flow and Free Cash Flow both more than halved QoQ, with FCF declining to $1.92B from $4.42B.",
+        "yfinance data shows a revenue growth rate of -3.5%.",
+        "The company holds notable leverage with Total Debt of $15.27B against Cash and Cash Equivalents of $5.44B.",
+        "Analyst consensus estimates for revenue and EPS, which prevents a beat/miss assessment.",
+        "Company guidance for upcoming quarters.",
+        "Earnings call transcript to understand management's tone and explanation for the results, especially the large net income figure.",
+        "A breakdown of net income to identify the source of the substantial increase (e.g., one-time gains, asset sales, tax benefits).",
+        "Year-over-year financial comparisons to distinguish seasonal effects from underlying business trends.",
+        "Peer company valuation data to properly contextualize the P/E ratios."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Weakened",
+        "thesis_impact_reasoning": "The thesis for fundamental strength is weakened by the significant quarter-over-quarter declines in core operational metrics like revenue, operating income, and free cash flow. The headline surge in net income appears anomalous and inconsistent with operations, raising questions about earnings quality."
+      }
+    }
+  }
+]

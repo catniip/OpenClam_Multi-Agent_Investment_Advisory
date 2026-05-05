@@ -1,0 +1,62 @@
+{
+  "ticker": "NOW",
+  "company": "ServiceNow",
+  "agent_name": "Market & Technical Analysis Agent",
+  "short_term_stance": "neutral",
+  "long_term_stance": "bearish",
+  "confidence": 0.85,
+  "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
+  "key_signals": [
+    {
+      "type": "Moving Averages",
+      "signal": "Established Bearish Trend",
+      "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
+    },
+    {
+      "type": "Market Regime",
+      "signal": "Confirmed Bearish Environment",
+      "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Severe Drawdown",
+      "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
+    },
+    {
+      "type": "Relative Strength",
+      "signal": "Significant Underperformance",
+      "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
+    },
+    {
+      "type": "MACD",
+      "signal": "Nascent Bullish Momentum Shift",
+      "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
+    },
+    {
+      "type": "RSI",
+      "signal": "Weak Momentum",
+      "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
+    },
+    {
+      "type": "Volume",
+      "signal": "Low Conviction on Recent Moves",
+      "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
+    },
+    {
+      "type": "Returns",
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.6%"
+    },
+    {
+      "type": "Volatility",
+      "signal": "moderate volatility",
+      "evidence": "Annualized volatility 42.87%, Recent 91.59%"
+    }
+  ],
+  "risks": [
+    "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
+    "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
+  ],
+  "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
+  "core_insight": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
+}

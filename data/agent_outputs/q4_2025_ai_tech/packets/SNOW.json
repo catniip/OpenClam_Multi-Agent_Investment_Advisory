@@ -1,0 +1,335 @@
+[
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.8,
+    "confidence_rationale": "High confidence stems from direct news reports about Snowflake's own cautious guidance, a well-understood negative catalyst for high-valuation stocks. The 'pops then drops' price action described in the news is a strong confirmation of the market's negative interpretation. Confidence is not 1.0 because the full details from the earnings call are not provided.",
+    "stance_rationale": "The short-term bearish stance is driven by the classic 'beat-and-lower' scenario for a high-multiple growth stock, which typically leads to multiple compression and underperformance as analysts reset estimates. The long-term neutral stance reflects the balance between Snowflake's solid market position and the headwinds of decelerating growth and intensifying competition, suggesting its performance will likely normalize towards the market (QQQ) as it transitions to a more mature growth profile.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "MSFT",
+        "company": "Microsoft Corporation",
+        "signal": "Consensus anchor for cloud sentiment. SNOW's weakness is a marginal negative for Azure's data business but unlikely to move a stock of MSFT's size.",
+        "evidence": "Slightly negative, as SNOW's cautious guide might imply broader budget scrutiny for cloud data services."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AMZN",
+        "company": "Amazon.com, Inc.",
+        "signal": "Consensus anchor. Similar to MSFT, the signal is too noisy to be a primary driver for AMZN stock.",
+        "evidence": "Slightly negative, for the same reason as Microsoft; it's a potential indicator of slowing enterprise cloud consumption growth."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc.",
+        "signal": "Represents the third major competitor. Market will watch for any commentary from GOOGL on data warehousing trends.",
+        "evidence": "Mixed. Could be seen as a positive sign of competitive gains for BigQuery or a negative sign of a cooling market overall."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "DDOG",
+        "company": "Datadog, Inc.",
+        "signal": "A key sentiment barometer for the software space. Likely to trade in sympathy with SNOW's post-earnings weakness.",
+        "evidence": "Negative. A cautious outlook from SNOW is a direct warning sign for other consumption-based models."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "DDOG",
+        "company": "Datadog, Inc.",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because Snowflake (SNOW) is seeing a cautious outlook due to enterprise customers optimizing cloud spend, it is highly likely that other high-valuation, consumption-based software vendors like Datadog will face the same budget scrutiny, leading to a surprise deceleration in growth and downward earnings revisions.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "EPAM",
+        "company": "EPAM Systems, Inc.",
+        "signal": "Long: Solution Provider",
+        "evidence": "Because the data platform market is seeing increased competition and disruption (e.g., from private company Databricks), which is contributing to Snowflake's cautious outlook, enterprises will require specialized IT services to migrate and re-architect their complex data stacks. This causes an increase in high-margin project revenue for expert consulting firms like EPAM.",
+        "impact_score": 6
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "MDB",
+        "company": "MongoDB, Inc.",
+        "signal": "Long: Substitution Effect",
+        "evidence": "Because Snowflake's cautious outlook in traditional analytics workloads coincides with strong interest in AI, it suggests a budget rotation towards building new AI-native applications. This causes increased demand for MongoDB's developer-friendly, document-based database, which is better suited for the unstructured data and flexible schemas common in modern AI apps.",
+        "impact_score": 5
+      }
+    ],
+    "risks": [
+      "The core assumption is that Snowflake's cautious guidance is due to budget rotation and competition, not the beginning of a broad-based, cyclical slowdown in all enterprise software spending. A wider slowdown would be negative for all theses, including the longs.",
+      "The competitive pressure from Databricks is a key inference, as it's a private company not explicitly named in the news summaries. The thesis depends on this inferred competitive dynamic being accurate.",
+      "The short DDOG thesis assumes its customer base and consumption drivers are strongly correlated with SNOW's, which is generally true but not perfectly identical."
+    ],
+    "citations": [
+      {
+        "title": "CORRECTION: Snowflake Q4 Adj. EPS $0.32 Beats $0.27 Estimate, Sales $1.284B Beat $1.255B Estimate",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=76d15b79ffc90556aa6cef7ad0c4d88d761b3da576350d6044aa0573887e37c8"
+      },
+      {
+        "title": "What's Going On With Snowflake Stock Monday?",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=4525a9baff06e8b8a97184411ab102505268975af05b3eb1da8ce32b892ec2ed"
+      },
+      {
+        "title": "This Snowflake Analyst Slashes Price Target Ahead Of Q4 Print",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=cd4e49e6b61ffa73a2acb3cca64b342df5b602beaa2debe6ded54ca5f8a28904"
+      },
+      {
+        "title": "Snowflake Inc. (NYSE:SNOW) Q4 Earnings Beat Tempered by Cautious Outlook",
+        "source": "ChartMill",
+        "url": "https://finnhub.io/api/news?id=b4153229b1d62f4d059549bbc0ab4185ffd82e3b81f64e5eda4b9a4d3c8fb0f6"
+      },
+      {
+        "title": "Snowflake Stock Pops Then Drops Following Q4 Earnings: What You Need To Know",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=d0795951be427754ebd4f4307f48285854ea50fb277b48dd1df5101d5bf49791"
+      },
+      {
+        "title": "Snowflake Q4 Preview: Will Earnings Sink The Stock Again Amid 'AI Disruption Fear Trade'?",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=4acaf7a384d2ef3c8351a132eb194357fdb01af090e131511db1373ebff27447"
+      },
+      {
+        "title": "Snowflake: The AI Data Cloud Inflection Point (Q4 Earnings Preview)",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=0d080fc878e31430e926dfd65947045be61303a82b6c6c7bbd6cf78211de69cc"
+      },
+      {
+        "title": "Stifel Maintains Buy on Snowflake, Lowers Price Target to $225",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=a1d8a653f12156f1713691979a5ea96284a1f25614084aa2bfc45e52f6ecde9f"
+      },
+      {
+        "title": "BTIG Maintains Buy on Snowflake, Lowers Price Target to $235",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=b5de0e28a9dc7351fdc8f938d26f894295b10e509f39930595c9bc71536bac80"
+      },
+      {
+        "title": "TD Cowen Maintains Buy on Snowflake, Lowers Price Target to $270",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=dd030ad8db1d21cfd84dc64875ef094a99043eeddb9b674ee1ca216291714dd6"
+      }
+    ],
+    "summary": {
+      "news_summary": "Snowflake beat Q4 2026 revenue and earnings estimates but provided a cautious or in-line forward outlook, causing investor enthusiasm to fade and the stock to reverse initial gains.",
+      "core_insight": "Snowflake's cautious guidance despite 'strong AI adoption' signals a rotation in enterprise IT budgets away from general-purpose data warehousing towards AI-native platforms and cost-optimization tools, creating opportunities in specialized software and migration services."
+    }
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake",
+    "agent_name": "market_technical",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bearish",
+    "confidence": 0.75,
+    "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
+    "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Established Bearish Trend Structure",
+        "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Severe Market Underperformance",
+        "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Substantial Decline From Peak",
+        "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
+      },
+      {
+        "type": "MACD",
+        "signal": "Potential Bullish Momentum Shift",
+        "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
+      },
+      {
+        "type": "RSI",
+        "signal": "Weak Momentum",
+        "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
+      },
+      {
+        "type": "Volatility",
+        "signal": "High Risk & Instability",
+        "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
+      },
+      {
+        "type": "Volume",
+        "signal": "Lack of Conviction",
+        "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.37%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "range_bound",
+        "evidence": "Regime classification: range_bound"
+      }
+    ],
+    "risks": [
+      "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
+      "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
+      "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
+    ],
+    "citations": [],
+    "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
+    "raw_packet": {
+      "ticker": "SNOW",
+      "company": "Snowflake",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "neutral",
+      "long_term_stance": "bearish",
+      "confidence": 0.75,
+      "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Established Bearish Trend Structure",
+          "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Severe Market Underperformance",
+          "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Substantial Decline From Peak",
+          "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
+        },
+        {
+          "type": "MACD",
+          "signal": "Potential Bullish Momentum Shift",
+          "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
+        },
+        {
+          "type": "RSI",
+          "signal": "Weak Momentum",
+          "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
+        },
+        {
+          "type": "Volatility",
+          "signal": "High Risk & Instability",
+          "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
+        },
+        {
+          "type": "Volume",
+          "signal": "Lack of Conviction",
+          "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.37%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "range_bound",
+          "evidence": "Regime classification: range_bound"
+        }
+      ],
+      "risks": [
+        "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
+        "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
+        "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
+      ],
+      "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
+      "core_insight": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
+    }
+  },
+  {
+    "ticker": "SNOW",
+    "company": "Snowflake",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Neutral",
+    "confidence": 0.3,
+    "confidence_rationale": "Confidence is low due to the complete absence of critical contextual information, including analyst consensus estimates, management guidance, and the earnings call transcript. The analysis relies solely on raw financial data without any forward-looking statements or market expectations.",
+    "stance_rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses.",
+    "key_signals": [
+      "Revenue grew 5.9% QoQ (from $1.21B to $1.28B) and the provided revenue growth rate is a strong 30.1%.",
+      "Operating loss narrowed QoQ from -$329.5M to -$318.2M.",
+      "Operating cash flow surged QoQ from $137.5M to $781.2M.",
+      "Free cash flow significantly increased QoQ from $113.6M to $763.3M.",
+      "Balance sheet appears healthy with cash and cash equivalents ($2.83B) slightly exceeding total debt ($2.74B).",
+      "QoQ Revenue: $1.21B to $1.28B",
+      "yfinance Revenue Growth: 30.1%",
+      "QoQ Net Income: -$294.0M to -$309.6M",
+      "QoQ Free Cash Flow: $113.6M to $763.3M",
+      "Forward P/E: 59.28",
+      "Profit Margin: -28.43%",
+      "Missing Consensus Estimates"
+    ],
+    "risks": [
+      "Company remains unprofitable with a net loss of -$309.6M for the quarter and a profit margin of -28.4%.",
+      "Net loss worsened QoQ from -$294.0M in the previous quarter.",
+      "High valuation with a Forward P/E of 59.28 and no Trailing P/E due to lack of profits, which suggests high growth expectations are priced in.",
+      "Analyst consensus estimates, management guidance, and earnings call transcript are all missing, creating significant uncertainty.",
+      "Analyst consensus estimates for revenue and EPS.",
+      "Official company guidance.",
+      "Earnings call transcript for management tone and outlook.",
+      "Year-over-year comparisons for most metrics beyond the single revenue growth figure.",
+      "Customer metrics such as net revenue retention rate and customer count.",
+      "Earnings growth data."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unchanged | thesis_impact_reasoning: The core growth story is reinforced by strong revenue and free cash flow growth. However, widening net losses and a complete lack of management commentary or guidance prevent a definitive shift in the thesis, as the path to profitability remains a key question.",
+    "raw_packet": {
+      "ticker": "SNOW",
+      "company": "Snowflake",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Watch",
+      "confidence": 0.3,
+      "confidence_rationale": "Confidence is low due to the complete absence of critical contextual information, including analyst consensus estimates, management guidance, and the earnings call transcript. The analysis relies solely on raw financial data without any forward-looking statements or market expectations.",
+      "stance_rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses.",
+      "key_signals": [
+        "Revenue grew 5.9% QoQ (from $1.21B to $1.28B) and the provided revenue growth rate is a strong 30.1%.",
+        "Operating loss narrowed QoQ from -$329.5M to -$318.2M.",
+        "Operating cash flow surged QoQ from $137.5M to $781.2M.",
+        "Free cash flow significantly increased QoQ from $113.6M to $763.3M.",
+        "Balance sheet appears healthy with cash and cash equivalents ($2.83B) slightly exceeding total debt ($2.74B).",
+        "QoQ Revenue: $1.21B to $1.28B",
+        "yfinance Revenue Growth: 30.1%",
+        "QoQ Net Income: -$294.0M to -$309.6M",
+        "QoQ Free Cash Flow: $113.6M to $763.3M",
+        "Forward P/E: 59.28",
+        "Profit Margin: -28.43%",
+        "Missing Consensus Estimates"
+      ],
+      "risks": [
+        "Company remains unprofitable with a net loss of -$309.6M for the quarter and a profit margin of -28.4%.",
+        "Net loss worsened QoQ from -$294.0M in the previous quarter.",
+        "High valuation with a Forward P/E of 59.28 and no Trailing P/E due to lack of profits, which suggests high growth expectations are priced in.",
+        "Analyst consensus estimates, management guidance, and earnings call transcript are all missing, creating significant uncertainty.",
+        "Analyst consensus estimates for revenue and EPS.",
+        "Official company guidance.",
+        "Earnings call transcript for management tone and outlook.",
+        "Year-over-year comparisons for most metrics beyond the single revenue growth figure.",
+        "Customer metrics such as net revenue retention rate and customer count.",
+        "Earnings growth data."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Unchanged",
+        "thesis_impact_reasoning": "The core growth story is reinforced by strong revenue and free cash flow growth. However, widening net losses and a complete lack of management commentary or guidance prevent a definitive shift in the thesis, as the path to profitability remains a key question."
+      }
+    }
+  }
+]

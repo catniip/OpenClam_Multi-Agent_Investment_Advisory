@@ -45,6 +45,34 @@ Q4_2025_AI_TECH_UNIVERSE: list[dict[str, str]] = [
     {"ticker": "NET", "company": "Cloudflare", "earnings_date": "2026-02-12", "bucket": "software_cloud"},
 ]
 
+Q4_2025_CIO_ADVANTAGE_EXTENSION: list[dict[str, str]] = [
+    {"ticker": "MRVL", "company": "Marvell Technology", "earnings_date": "2026-03-05", "bucket": "ai_semis"},
+    {"ticker": "WDC", "company": "Western Digital", "earnings_date": "2026-01-29", "bucket": "ai_semis"},
+    {"ticker": "STX", "company": "Seagate Technology", "earnings_date": "2026-01-21", "bucket": "ai_semis"},
+    {"ticker": "COHR", "company": "Coherent", "earnings_date": "2026-02-05", "bucket": "ai_infrastructure"},
+    {"ticker": "ALAB", "company": "Astera Labs", "earnings_date": "2026-02-10", "bucket": "ai_infrastructure"},
+    {"ticker": "ETN", "company": "Eaton", "earnings_date": "2026-01-30", "bucket": "power_infrastructure"},
+    {"ticker": "PWR", "company": "Quanta Services", "earnings_date": "2026-02-19", "bucket": "power_infrastructure"},
+    {"ticker": "CEG", "company": "Constellation Energy", "earnings_date": "2026-02-19", "bucket": "power_infrastructure"},
+    {"ticker": "NRG", "company": "NRG Energy", "earnings_date": "2026-02-27", "bucket": "power_infrastructure"},
+    {"ticker": "GEV", "company": "GE Vernova", "earnings_date": "2026-01-22", "bucket": "power_infrastructure"},
+    {"ticker": "EQIX", "company": "Equinix", "earnings_date": "2026-02-11", "bucket": "data_center_reit"},
+    {"ticker": "DLR", "company": "Digital Realty", "earnings_date": "2026-02-12", "bucket": "data_center_reit"},
+    {"ticker": "IRM", "company": "Iron Mountain", "earnings_date": "2026-02-20", "bucket": "data_center_reit"},
+    {"ticker": "AMT", "company": "American Tower", "earnings_date": "2026-02-25", "bucket": "data_center_reit"},
+    {"ticker": "CORZ", "company": "Core Scientific", "earnings_date": "2026-03-12", "bucket": "data_center_operator"},
+    {"ticker": "IREN", "company": "IREN", "earnings_date": "2026-02-12", "bucket": "data_center_operator"},
+    {"ticker": "CLS", "company": "Celestica", "earnings_date": "2026-01-27", "bucket": "ai_infrastructure"},
+    {"ticker": "FLEX", "company": "Flex", "earnings_date": "2026-01-28", "bucket": "ai_infrastructure"},
+    {"ticker": "TEAM", "company": "Atlassian", "earnings_date": "2026-01-29", "bucket": "software_cloud"},
+    {"ticker": "ZS", "company": "Zscaler", "earnings_date": "2026-03-04", "bucket": "software_cloud"},
+    {"ticker": "CRWD", "company": "CrowdStrike", "earnings_date": "2026-03-04", "bucket": "software_cloud"},
+    {"ticker": "PANW", "company": "Palo Alto Networks", "earnings_date": "2026-02-12", "bucket": "software_cloud"},
+    {"ticker": "OKTA", "company": "Okta", "earnings_date": "2026-03-03", "bucket": "software_cloud"},
+    {"ticker": "APP", "company": "AppLovin", "earnings_date": "2026-02-12", "bucket": "software_cloud"},
+    {"ticker": "SHOP", "company": "Shopify", "earnings_date": "2026-02-11", "bucket": "software_cloud"},
+]
+
 
 class VertexTextGenerator:
     """Tiny Vertex Gemini wrapper used by agents that expect OpenAI/LangChain-style clients."""
@@ -123,6 +151,25 @@ class VertexLangChainCompatibleLLM:
 def q4_2025_ai_tech_earnings_df(tickers: list[str] | None = None) -> pd.DataFrame:
     """Return the expanded Q4 2025 AI/Tech earnings universe."""
     df = pd.DataFrame(Q4_2025_AI_TECH_UNIVERSE)
+    if tickers:
+        wanted = {ticker.upper() for ticker in tickers}
+        df = df[df["ticker"].str.upper().isin(wanted)].copy()
+    return df.reset_index(drop=True)
+
+
+def q4_2025_cio_advantage_extension_df(tickers: list[str] | None = None) -> pd.DataFrame:
+    """Return extra Q4 2025 names where second-order CIO reasoning should matter more."""
+    df = pd.DataFrame(Q4_2025_CIO_ADVANTAGE_EXTENSION)
+    if tickers:
+        wanted = {ticker.upper() for ticker in tickers}
+        df = df[df["ticker"].str.upper().isin(wanted)].copy()
+    return df.reset_index(drop=True)
+
+
+def q4_2025_combined_cio_advantage_df(tickers: list[str] | None = None) -> pd.DataFrame:
+    """Return the original AI/Tech universe plus the CIO-advantage extension."""
+    df = pd.DataFrame([*Q4_2025_AI_TECH_UNIVERSE, *Q4_2025_CIO_ADVANTAGE_EXTENSION])
+    df = df.drop_duplicates(subset=["ticker"], keep="first")
     if tickers:
         wanted = {ticker.upper() for ticker in tickers}
         df = df[df["ticker"].str.upper().isin(wanted)].copy()

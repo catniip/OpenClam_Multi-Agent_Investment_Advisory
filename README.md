@@ -165,7 +165,7 @@ This runs all three agents for one ticker, converts each output into a CIO packe
 notebooks/05_q4_2025_expanded_eval.ipynb
 ```
 
-This notebook runs a starter universe of 20 AI/Tech companies and saves outputs into the cache folder. The default starter universe includes:
+This notebook runs the full combined 55-name AI/Tech + CIO-advantage universe and saves outputs into the cache folder. The original starter universe included:
 
 ```python
 [
@@ -174,6 +174,20 @@ This notebook runs a starter universe of 20 AI/Tech companies and saves outputs 
     "ORCL", "DELL", "ANET", "VRT", "CRM", "PLTR",
 ]
 ```
+
+The full notebook also includes a CIO-advantage extension focused on names where second-order reasoning should matter more than simple mega-cap momentum:
+
+```python
+[
+    "MRVL", "WDC", "STX", "COHR", "ALAB",
+    "ETN", "PWR", "CEG", "NRG", "GEV",
+    "EQIX", "DLR", "IRM", "AMT", "CORZ", "IREN",
+    "CLS", "FLEX", "TEAM", "ZS", "CRWD", "PANW",
+    "OKTA", "APP", "SHOP",
+]
+```
+
+These names emphasize AI networking/optics, memory/storage, data-center operators, power/grid infrastructure, data-center real estate, and cloud/security/application software. `FORCE_RERUN=False` preserves previously cached outputs while only generating missing ticker files.
 
 Set:
 
@@ -303,4 +317,3 @@ data/agent_outputs/q4_2025_ai_tech/
 - Historical earnings dates in the expanded universe are currently hard-coded for stability and should be verified before final reporting.
 - QQQ contains many evaluated names, so abnormal return versus QQQ can be diluted by benchmark overlap.
 - The current eval does not yet control for beta, options-implied move, factor exposure, or intraday earnings-release timing.
-

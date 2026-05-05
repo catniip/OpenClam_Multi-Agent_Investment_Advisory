@@ -1,0 +1,348 @@
+[
+  {
+    "ticker": "CLS",
+    "company": "Celestica",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is moderate. The thesis is based on interpreting pre-earnings analyst sentiment and market psychology, not on direct company disclosures. While the long-term trend is clear, the short-term reaction is highly dependent on the earnings print versus sky-high expectations. The lack of primary sources in the provided context limits confidence.",
+    "stance_rationale": "Short-term: Investor expectations are exceptionally high, with numerous upgrades and talk of a 'double beat,' creating a high bar for the earnings report. Any slight disappointment in results or guidance, or confirmation of customer diversification, could trigger a 'sell the news' reaction against a rich valuation. Long-term: The company is fundamentally well-positioned to benefit from the multi-year AI infrastructure build-out, with a strengthening competitive moat and improving margin profile that should drive earnings power over several quarters.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "NVDA",
+        "company": "NVIDIA Corporation",
+        "signal": "Consensus long. The market will watch for any signs of acceleration or deceleration in AI capital spending.",
+        "evidence": "Any commentary from CLS on AI demand strength or weakness will be read through directly to NVDA."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "ANET",
+        "company": "Arista Networks, Inc.",
+        "signal": "Strongly correlated. Market will look for confirmation of networking cycle strength.",
+        "evidence": "CLS's commentary on the 1.6T Ethernet cycle and hyperscaler switch demand is a direct signal for Arista's market."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "GOOGL",
+        "company": "Alphabet Inc.",
+        "signal": "Liquidity anchor. The focus is on whether capex remains strong and if supplier diversification is a major headwind for incumbents like CLS.",
+        "evidence": "CLS's results could provide clues about the pace of Google's AI infrastructure spending and its supplier strategy."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "SMCI",
+        "company": "Super Micro Computer, Inc.",
+        "signal": "High beta peer. SMCI's stock will likely move in sympathy with CLS's AI-related commentary.",
+        "evidence": "CLS's performance provides a cross-check on overall demand for AI server systems, validating or challenging the growth narrative for SMCI."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "VRT",
+        "company": "Vertiv Holdings Co",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because AI data centers (the end market for CLS's products) consume 5-10x more power and generate more heat per rack than traditional data centers, demand for specialized power distribution and liquid cooling solutions becomes non-negotiable, which causes a surge in orders and pricing power for Vertiv, the market leader.",
+        "impact_score": 9
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "MOD",
+        "company": "Modine Manufacturing Company",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because the high-density servers and switches CLS assembles for AI workloads are increasingly difficult to cool with air, data centers must adopt liquid cooling solutions, which causes a rapid expansion of the total addressable market for Modine's specialized data center cooling products.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "FN",
+        "company": "Fabrinet",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because Celestica is seeing a demand pull for 1.6T Ethernet switches, demand for the high-speed optical transceivers and components that plug into these switches must also accelerate, which causes increased manufacturing orders for Fabrinet, a key outsourced manufacturer for leading optical component companies.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "HPE",
+        "company": "Hewlett Packard Enterprise Company",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because enterprise IT budgets are finite and CIOs are rushing to fund AI initiatives (buying from CLS, SMCI, etc.), spending on traditional, on-premise servers and storage is likely to be cannibalized or deferred, which causes revenue and margin pressure for legacy-focused vendors like HPE.",
+        "impact_score": 5
+      }
+    ],
+    "risks": [
+      "The primary risk to the short-term Bearish stance on CLS is that the company massively exceeds already-high expectations, causing a short squeeze.",
+      "The long-term Bullish thesis on CLS depends on the company successfully defending its 'engineering moat' against competitors and managing its high concentration with hyperscaler customers.",
+      "The pick-and-shovel theses for VRT, MOD, and FN assume that the AI build-out continues at its current pace; any significant slowdown in hyperscaler capex would be a major headwind.",
+      "The short HPE thesis could be undermined if the company's own AI offerings gain more traction than expected or if the decline in legacy enterprise spending is slower than anticipated."
+    ],
+    "citations": [
+      {
+        "title": "Celestica: Upgrading Before Q4 Earnings Despite Rich Valuation",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=5133e3b5daa13300d1f5454ccac513559d6db528efbddba1e37c34d39b4e1a1b"
+      },
+      {
+        "title": "Celestica Q4 Preview: Addressing Google Cloud Rumors (Rating Upgrade)",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=77e37780dde7d7a7403b2df636fc4b81ab29f64cd84bc5338ef575e910154cce"
+      },
+      {
+        "title": "Celestica Q4 Earnings Preview: Expect Another Double Beat (Upgrade)",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=0a48f3343c76f1e9f30cf414091741edc82318449ab583f4bddeefea308fe405"
+      },
+      {
+        "title": "Celestica: I Was Wrong - Buy Ahead Of Q4 Earnings",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=d9ee90e2a77a0ce15713c594bfd6cc58b044cf49f5b5cb92b62c06dbd32e6232"
+      },
+      {
+        "title": "Celestica: Execution Risks Loom As AI Optimism Gets Stress Tested",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=20dff082a964a6124ddb447fff6492474f00952fa3c2936fd1846abd9f53925c"
+      },
+      {
+        "title": "Celestica: How It Escaped The Low-Margin Trap",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=1d513a1d641de1d33f4b2ffd4b9f0df656d31df1cc78b054bd19cd9c30759710"
+      },
+      {
+        "title": "Celestica Stock: Why Alphabet Looking Elsewhere Is Actually A Good Thing",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=9d110d3557e211b433a8db7efa3d7cf3f6d285d64c1ef594e95662f27e0f4a89"
+      },
+      {
+        "title": "Celestica: When Engineering Becomes The Moat",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=371f5e61593da2a7e1b9ce7fc5a6e431c7f05dab2d8aeea18f3d223023d5da09"
+      },
+      {
+        "title": "Earnings Outlook For Celestica",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=c5544d7f1c0dedfcb982277570c159ca3ea3a249da1a26af3c7a50ab41e532f5"
+      },
+      {
+        "title": "Price Over Earnings Overview: Celestica",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=020d9a357d75ad0755fd69daee144b7e02787801d71b60052a8792d0fd97593e"
+      }
+    ],
+    "summary": {
+      "news_summary": "Celestica (CLS) is seeing a surge in bullish analyst sentiment and upgrades ahead of its Q4 earnings, driven by expectations of strong demand from AI infrastructure, hyperscalers, and the 1.6T Ethernet networking cycle, though some notes flag high valuation and potential customer diversification risks.",
+      "core_insight": "While the market focuses on Celestica's role in assembling AI servers and switches, it's overlooking the immense, non-discretionary spending required on the physical 'pick-and-shovel' infrastructure like liquid cooling and power management, which are becoming critical bottlenecks for the same data center build-out driving Celestica's growth."
+    }
+  },
+  {
+    "ticker": "CLS",
+    "company": "Celestica",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.8,
+    "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators across multiple timeframes. The price is well above all key moving averages, RSI is strong, and MACD shows a bullish crossover. Significant market outperformance confirms strength. Confidence is not higher due to high volatility and below-average volume on the latest price increase, which introduces risk.",
+    "stance_rationale": "The stock was in a confirmed, high-momentum uptrend and significantly outperforming the broader market. The primary concern was the divergence between rising price and falling volume, which, combined with high volatility, suggests an increased risk of a sharp pullback despite the strong underlying trend.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "Price at $420.73 is significantly above the MA20 ($381.25), MA50 ($318.97), and MA200 ($282.46), with averages stacked in a bullish formation."
+      },
+      {
+        "type": "RSI",
+        "signal": "Strong Bullish Momentum",
+        "evidence": "RSI is 64.94, indicating strong buying pressure but not yet in technically overbought territory (>70)."
+      },
+      {
+        "type": "MACD",
+        "signal": "Renewed Bullish Momentum",
+        "evidence": "A recent bullish crossover occurred, with the MACD line (27.33) above the signal line (27.24) and a positive histogram (0.085)."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Market Outperformance",
+        "evidence": "CLS demonstrated a relative return of +326.65% against the SPY benchmark, indicating strong market leadership."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Trading Near Peak",
+        "evidence": "The current drawdown is minimal at -0.35%, showing the price is very close to its recent high."
+      },
+      {
+        "type": "Volume",
+        "signal": "Waning Participation",
+        "evidence": "The most recent volume is below its average (volume spike ratio of 0.64), suggesting the latest price move lacked strong conviction."
+      },
+      {
+        "type": "Volatility",
+        "signal": "Elevated Risk Environment",
+        "evidence": "Annualized volatility is high at 68.85%, indicating the potential for large price swings."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "High Volatility Bullish Trend",
+        "evidence": "The current market regime is classified as 'high_volatility_bullish', confirming the analysis of a strong but unstable uptrend."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 0.66%"
+      }
+    ],
+    "risks": [
+      "High annualized volatility (68.85%) increases the potential for sharp price corrections.",
+      "Recent price gains occurred on below-average volume, which can signal weakening conviction among buyers and may precede consolidation or a pullback.",
+      "The price is extended 10.35% above its 20-day moving average, making it susceptible to mean reversion in the short term."
+    ],
+    "citations": [],
+    "summary": "As of the analysis date, CLS displayed a powerful bullish posture, characterized by a strong uptrend across all timeframes and significant market outperformance. Momentum indicators (RSI, MACD) supported the bullish case. However, the trend's strength was tempered by high volatility and a noticeable lack of volume confirmation on the latest price advance, signaling caution is warranted.",
+    "raw_packet": {
+      "ticker": "CLS",
+      "company": "Celestica",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bullish",
+      "long_term_stance": "bullish",
+      "confidence": 0.8,
+      "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators across multiple timeframes. The price is well above all key moving averages, RSI is strong, and MACD shows a bullish crossover. Significant market outperformance confirms strength. Confidence is not higher due to high volatility and below-average volume on the latest price increase, which introduces risk.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "Price at $420.73 is significantly above the MA20 ($381.25), MA50 ($318.97), and MA200 ($282.46), with averages stacked in a bullish formation."
+        },
+        {
+          "type": "RSI",
+          "signal": "Strong Bullish Momentum",
+          "evidence": "RSI is 64.94, indicating strong buying pressure but not yet in technically overbought territory (>70)."
+        },
+        {
+          "type": "MACD",
+          "signal": "Renewed Bullish Momentum",
+          "evidence": "A recent bullish crossover occurred, with the MACD line (27.33) above the signal line (27.24) and a positive histogram (0.085)."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Market Outperformance",
+          "evidence": "CLS demonstrated a relative return of +326.65% against the SPY benchmark, indicating strong market leadership."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Trading Near Peak",
+          "evidence": "The current drawdown is minimal at -0.35%, showing the price is very close to its recent high."
+        },
+        {
+          "type": "Volume",
+          "signal": "Waning Participation",
+          "evidence": "The most recent volume is below its average (volume spike ratio of 0.64), suggesting the latest price move lacked strong conviction."
+        },
+        {
+          "type": "Volatility",
+          "signal": "Elevated Risk Environment",
+          "evidence": "Annualized volatility is high at 68.85%, indicating the potential for large price swings."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "High Volatility Bullish Trend",
+          "evidence": "The current market regime is classified as 'high_volatility_bullish', confirming the analysis of a strong but unstable uptrend."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 0.66%"
+        }
+      ],
+      "risks": [
+        "High annualized volatility (68.85%) increases the potential for sharp price corrections.",
+        "Recent price gains occurred on below-average volume, which can signal weakening conviction among buyers and may precede consolidation or a pullback.",
+        "The price is extended 10.35% above its 20-day moving average, making it susceptible to mean reversion in the short term."
+      ],
+      "summary": "As of the analysis date, CLS displayed a powerful bullish posture, characterized by a strong uptrend across all timeframes and significant market outperformance. Momentum indicators (RSI, MACD) supported the bullish case. However, the trend's strength was tempered by high volatility and a noticeable lack of volume confirmation on the latest price advance, signaling caution is warranted.",
+      "core_insight": "The stock was in a confirmed, high-momentum uptrend and significantly outperforming the broader market. The primary concern was the divergence between rising price and falling volume, which, combined with high volatility, suggests an increased risk of a sharp pullback despite the strong underlying trend."
+    }
+  },
+  {
+    "ticker": "CLS",
+    "company": "Celestica",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Neutral",
+    "confidence": 0.3,
+    "confidence_rationale": "Confidence is low because the analysis is based solely on quantitative financial data without crucial context. Key missing pieces include management's commentary from the earnings call, forward-looking guidance, analyst consensus estimates to gauge market expectations, and peer data for valuation and performance benchmarking.",
+    "stance_rationale": "Celestica Inc. demonstrates strong top-line growth, both quarter-over-quarter and year-over-year, and robust operating cash flow. However, this is contrasted by a quarter-over-quarter decline in key profitability metrics (Operating Income, Net Income) and Free Cash Flow. The stock's high valuation, indicated by a Trailing P/E of ~51, necessitates caution and further analysis, especially in the absence of management commentary or peer comparisons.",
+    "key_signals": [
+      "Revenue increased quarter-over-quarter by 10.7% to $4.05B from $3.65B.",
+      "yfinance data indicates very strong year-over-year Revenue Growth of 52.8% and Earnings Growth of 147.3%.",
+      "Operating Cash Flow grew significantly quarter-over-quarter by 42.2% to $356.3M from $250.6M.",
+      "Gross Profit increased slightly quarter-over-quarter to $437.2M from $433.1M.",
+      "QoQ Revenue: $4.05B (current) vs. $3.65B (previous)",
+      "QoQ Operating Income: $267.7M (current) vs. $320.8M (previous)",
+      "QoQ Net Income: $212.3M (current) vs. $267.5M (previous)",
+      "QoQ Operating Cash Flow: $356.3M (current) vs. $250.6M (previous)",
+      "QoQ Free Cash Flow: $126.8M (current) vs. $155.9M (previous)",
+      "yfinance Revenue Growth (YoY): 52.8%",
+      "yfinance Earnings Growth (YoY): 147.3%",
+      "Trailing P/E: 50.997578"
+    ],
+    "risks": [
+      "Operating Income declined quarter-over-quarter by 16.5% to $267.7M from $320.8M.",
+      "Net Income decreased quarter-over-quarter by 20.6% to $212.3M from $267.5M.",
+      "Free Cash Flow fell quarter-over-quarter to $126.8M from $155.9M, indicating higher capital expenditures or working capital usage.",
+      "The valuation is high with a Trailing P/E ratio of 50.99; this valuation requires peer comparison for full context.",
+      "Consensus estimates for revenue and earnings are not available, which prevents an assessment of performance against market expectations.",
+      "Analyst consensus estimates for revenue and EPS.",
+      "Official company guidance for the upcoming quarter and full year.",
+      "Earnings call transcript containing management's commentary on performance and outlook.",
+      "Details on the cause for the QoQ decline in operating and net income (e.g., increased costs, segment mix).",
+      "Peer company valuation and performance metrics for comparison.",
+      "Balance sheet details beyond debt and cash to assess overall financial health and leverage.",
+      "Information on capital expenditures to explain the divergence between Operating and Free Cash Flow."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Weakened | thesis_impact_reasoning: The investment thesis is weakened due to the divergence between strong revenue growth and declining quarter-over-quarter profitability. The drop in operating income, net income, and free cash flow introduces uncertainty about margin stability and operational efficiency, which could negatively impact future earnings power despite the growing top line.",
+    "raw_packet": {
+      "ticker": "CLS",
+      "company": "Celestica",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Watch",
+      "confidence": 0.3,
+      "confidence_rationale": "Confidence is low because the analysis is based solely on quantitative financial data without crucial context. Key missing pieces include management's commentary from the earnings call, forward-looking guidance, analyst consensus estimates to gauge market expectations, and peer data for valuation and performance benchmarking.",
+      "stance_rationale": "Celestica Inc. demonstrates strong top-line growth, both quarter-over-quarter and year-over-year, and robust operating cash flow. However, this is contrasted by a quarter-over-quarter decline in key profitability metrics (Operating Income, Net Income) and Free Cash Flow. The stock's high valuation, indicated by a Trailing P/E of ~51, necessitates caution and further analysis, especially in the absence of management commentary or peer comparisons.",
+      "key_signals": [
+        "Revenue increased quarter-over-quarter by 10.7% to $4.05B from $3.65B.",
+        "yfinance data indicates very strong year-over-year Revenue Growth of 52.8% and Earnings Growth of 147.3%.",
+        "Operating Cash Flow grew significantly quarter-over-quarter by 42.2% to $356.3M from $250.6M.",
+        "Gross Profit increased slightly quarter-over-quarter to $437.2M from $433.1M.",
+        "QoQ Revenue: $4.05B (current) vs. $3.65B (previous)",
+        "QoQ Operating Income: $267.7M (current) vs. $320.8M (previous)",
+        "QoQ Net Income: $212.3M (current) vs. $267.5M (previous)",
+        "QoQ Operating Cash Flow: $356.3M (current) vs. $250.6M (previous)",
+        "QoQ Free Cash Flow: $126.8M (current) vs. $155.9M (previous)",
+        "yfinance Revenue Growth (YoY): 52.8%",
+        "yfinance Earnings Growth (YoY): 147.3%",
+        "Trailing P/E: 50.997578"
+      ],
+      "risks": [
+        "Operating Income declined quarter-over-quarter by 16.5% to $267.7M from $320.8M.",
+        "Net Income decreased quarter-over-quarter by 20.6% to $212.3M from $267.5M.",
+        "Free Cash Flow fell quarter-over-quarter to $126.8M from $155.9M, indicating higher capital expenditures or working capital usage.",
+        "The valuation is high with a Trailing P/E ratio of 50.99; this valuation requires peer comparison for full context.",
+        "Consensus estimates for revenue and earnings are not available, which prevents an assessment of performance against market expectations.",
+        "Analyst consensus estimates for revenue and EPS.",
+        "Official company guidance for the upcoming quarter and full year.",
+        "Earnings call transcript containing management's commentary on performance and outlook.",
+        "Details on the cause for the QoQ decline in operating and net income (e.g., increased costs, segment mix).",
+        "Peer company valuation and performance metrics for comparison.",
+        "Balance sheet details beyond debt and cash to assess overall financial health and leverage.",
+        "Information on capital expenditures to explain the divergence between Operating and Free Cash Flow."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Weakened",
+        "thesis_impact_reasoning": "The investment thesis is weakened due to the divergence between strong revenue growth and declining quarter-over-quarter profitability. The drop in operating income, net income, and free cash flow introduces uncertainty about margin stability and operational efficiency, which could negatively impact future earnings power despite the growing top line."
+      }
+    }
+  }
+]
