@@ -22,9 +22,9 @@ STANCE_SCORES = {
 }
 
 DEFAULT_SHORT_WEIGHTS = {
-    "market_technical": 0.45,
+    "market_technical": 0.55,
     "news_macro": 0.35,
-    "fundamental": 0.20,
+    "fundamental": 0.10,
 }
 
 DEFAULT_LONG_WEIGHTS = {
@@ -32,6 +32,59 @@ DEFAULT_LONG_WEIGHTS = {
     "news_macro": 0.35,
     "market_technical": 0.20,
 }
+
+
+BUCKET_WEIGHT_PROFILES = {
+    "mega_cap_platform": {
+        "short": {"news_macro": 0.55, "market_technical": 0.35, "fundamental": 0.10},
+        "long": {"news_macro": 0.45, "fundamental": 0.35, "market_technical": 0.20},
+        "rationale": "Mega-cap platform earnings tend to be dominated by headline interpretation, guidance, and capex narrative.",
+    },
+    "ai_semis": {
+        "short": {"market_technical": 0.45, "news_macro": 0.40, "fundamental": 0.15},
+        "long": {"news_macro": 0.40, "fundamental": 0.35, "market_technical": 0.25},
+        "rationale": "AI semiconductor moves depend on technical confirmation plus second-order supply-chain and capex signals.",
+    },
+    "ai_infrastructure": {
+        "short": {"news_macro": 0.45, "market_technical": 0.40, "fundamental": 0.15},
+        "long": {"news_macro": 0.40, "fundamental": 0.35, "market_technical": 0.25},
+        "rationale": "AI infrastructure is driven by second-order demand signals, but price confirmation still matters after earnings.",
+    },
+    "power_infrastructure": {
+        "short": {"market_technical": 0.50, "news_macro": 0.40, "fundamental": 0.10},
+        "long": {"news_macro": 0.40, "fundamental": 0.35, "market_technical": 0.25},
+        "rationale": "Power infrastructure is a thematic second-order trade where technical confirmation helps avoid crowded entries.",
+    },
+    "data_center_reit": {
+        "short": {"market_technical": 0.45, "news_macro": 0.40, "fundamental": 0.15},
+        "long": {"fundamental": 0.40, "news_macro": 0.35, "market_technical": 0.25},
+        "rationale": "Data-center REITs require balancing capital-cost fundamentals with AI demand and price confirmation.",
+    },
+    "data_center_operator": {
+        "short": {"market_technical": 0.50, "news_macro": 0.40, "fundamental": 0.10},
+        "long": {"news_macro": 0.40, "market_technical": 0.35, "fundamental": 0.25},
+        "rationale": "Data-center operators are high-beta event trades where post-earnings price action carries high information value.",
+    },
+    "software_cloud": {
+        "short": {"news_macro": 0.45, "market_technical": 0.40, "fundamental": 0.15},
+        "long": {"news_macro": 0.40, "fundamental": 0.35, "market_technical": 0.25},
+        "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality.",
+    },
+}
+
+
+def resolve_weight_profile(bucket: Any = None) -> dict[str, Any]:
+    """Return bucket-aware CIO routing weights."""
+    key = str(bucket or "").strip().lower()
+    profile = BUCKET_WEIGHT_PROFILES.get(key)
+    if not profile:
+        return {
+            "bucket": key or "default",
+            "short": DEFAULT_SHORT_WEIGHTS,
+            "long": DEFAULT_LONG_WEIGHTS,
+            "rationale": "Default CIO weights are used because no bucket-specific routing rule matched.",
+        }
+    return {"bucket": key, **profile}
 
 
 def normalize_stance(value: Any) -> str:
@@ -512,6 +565,7 @@ def generate_cio_decision(
     api_key: str | None = None,
     vertex_project: str | None = None,
     vertex_location: str | None = None,
+    bucket: Any = None,
 ) -> dict[str, Any]:
     """Produce the CIO final decision from original or debate-revised packets."""
     packets = (
@@ -521,8 +575,9 @@ def generate_cio_decision(
     )
     synthesis = debate_result.get("synthesis") if debate_result else synthesize_agent_views(packets)
     trigger = debate_result.get("trigger") if debate_result else should_trigger_debate(synthesis)
-    short_score = _weighted_stance_score(packets, "short", DEFAULT_SHORT_WEIGHTS)
-    long_score = _weighted_stance_score(packets, "long", DEFAULT_LONG_WEIGHTS)
+    weight_profile = resolve_weight_profile(bucket)
+    short_score = _weighted_stance_score(packets, "short", weight_profile["short"])
+    long_score = _weighted_stance_score(packets, "long", weight_profile["long"])
 
     average_confidence = sum(packet["confidence"] for packet in packets) / len(packets) if packets else 0.0
     conviction = max(abs(short_score["score"]), abs(long_score["score"]))
@@ -574,9 +629,11 @@ def generate_cio_decision(
             "debate_reason": trigger["debate_reason"],
             "debate_responses": debate_result.get("debate_responses", []) if debate_result else [],
         },
+        "routing_profile": weight_profile,
         "reason_for_final_decision": (
             f"Short score {short_score['score']} and long score {long_score['score']} after "
-            f"{'debate-adjusted' if debate_result and debate_result.get('triggered') else 'initial'} confidence weighting."
+            f"{'debate-adjusted' if debate_result and debate_result.get('triggered') else 'initial'} "
+            f"confidence weighting using {weight_profile['bucket']} routing."
         ),
         "agent_votes": {
             "short": short_score["votes"],
@@ -651,6 +708,7 @@ def run_cio_workflow(
     api_key: str | None = None,
     vertex_project: str | None = None,
     vertex_location: str | None = None,
+    bucket: Any = None,
 ) -> dict[str, Any]:
     """Full CIO flow: synthesize agent views, debate if needed, then decide."""
     normalized_packets = [normalize_agent_packet(packet) for packet in agent_packets]
@@ -663,6 +721,7 @@ def run_cio_workflow(
         api_key=api_key,
         vertex_project=vertex_project,
         vertex_location=vertex_location,
+        bucket=bucket,
     )
     final_decision = generate_cio_decision(
         normalized_packets,
@@ -772,6 +831,7 @@ def run_cio_eval(
             api_key=api_key,
             vertex_project=vertex_project,
             vertex_location=vertex_location,
+            bucket=row.get("bucket"),
         )
         decision = workflow["final_decision"]
         results[ticker] = workflow
@@ -799,6 +859,8 @@ def run_cio_eval(
                 "cio_confidence": decision["confidence"],
                 "cio_debate_triggered": workflow["debate"]["triggered"],
                 "cio_debate_conflict_level": workflow["debate"]["trigger"]["conflict_level"],
+                "cio_routing_bucket": decision.get("routing_profile", {}).get("bucket"),
+                "cio_routing_rationale": decision.get("routing_profile", {}).get("rationale"),
                 "cio_reason": decision["reason_for_final_decision"],
                 "cio_short_direction_match": short_match,
                 "cio_short_direction_match_reason": _direction_match_reason(

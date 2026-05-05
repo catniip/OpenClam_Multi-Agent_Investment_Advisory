@@ -3,60 +3,61 @@
   "company": "Oracle",
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "neutral",
-  "long_term_stance": "bearish",
+  "long_term_stance": "bullish",
   "confidence": 0.75,
-  "confidence_rationale": "The long-term bearish structure is clearly defined by the price being well below the MA200 and a significant drawdown. Confidence is not higher because short-term signals are conflicting, showing strong price action but weakening momentum via the MACD, suggesting a potential pause or inflection point.",
+  "confidence_rationale": "Confidence is high but not absolute due to conflicting signals. While the primary trend is strongly bullish (price > MAs, strong relative strength), a recent MACD bearish crossover and lack of volume confirmation suggest a high probability of a short-term pause or pullback.",
   "key_signals": [
     {
       "type": "Moving Averages",
-      "signal": "Bearish Long-Term Trend",
-      "evidence": "The price at 180.29 was significantly below the 200-day moving average of 210.78, indicating a long-term downtrend."
-    },
-    {
-      "type": "MACD",
-      "signal": "Waning Upward Momentum",
-      "evidence": "A bearish MACD crossover occurred, with the MACD line (5.26) crossing below the signal line (5.33), suggesting the recent rally was losing momentum."
-    },
-    {
-      "type": "RSI",
-      "signal": "Strong but Not Overbought Momentum",
-      "evidence": "The RSI of 61.81 indicated strong buying pressure but was still below the 70 level, suggesting room for movement before being considered overbought."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Significant Long-Term Weakness",
-      "evidence": "The stock was in a -44.66% drawdown from its peak, confirming the severity of the long-term downtrend."
+      "signal": "Strong Bullish Trend Structure",
+      "evidence": "Price at $180.29 is well above the MA20 ($165.78) and MA50 ($155.79), with the averages in a bullish alignment."
     },
     {
       "type": "Relative Strength",
-      "signal": "Market Underperformance",
-      "evidence": "The stock's relative return was -6.9% compared to the SPY benchmark, indicating it was a laggard."
+      "signal": "Significant Market Outperformance",
+      "evidence": "ORCL has a relative return of +26.31% against the SPY benchmark, indicating strong leadership."
+    },
+    {
+      "type": "MACD",
+      "signal": "Weakening Momentum / Bearish Crossover",
+      "evidence": "The MACD line (5.65) has crossed below the signal line (5.90), with a negative histogram (-0.255), signaling potential momentum exhaustion."
+    },
+    {
+      "type": "RSI",
+      "signal": "Healthy Bullish Momentum",
+      "evidence": "RSI is 62.86, which is in the bullish zone but not yet in overbought territory (>70)."
     },
     {
       "type": "Volume",
-      "signal": "Lack of Conviction",
-      "evidence": "The recent volume spike ratio was 0.94, below 1.0, suggesting that recent price moves were not supported by a surge in trading activity."
+      "signal": "Lack of Strong Conviction",
+      "evidence": "Recent volume is below average (spike ratio of 0.94), suggesting recent price moves are not supported by a surge in participation."
     },
     {
       "type": "Volatility",
-      "signal": "High Risk Environment",
-      "evidence": "Recent volatility was elevated at 69.26%, indicating a high degree of price instability and risk."
+      "signal": "Elevated Risk Environment",
+      "evidence": "Recent volatility (69.26%) is high and exceeds the annualized volatility (58.79%), indicating increased price instability."
+    },
+    {
+      "type": "Market Regime",
+      "signal": "High Volatility Bullish Trend",
+      "evidence": "The stock is classified in a 'high_volatility_bullish' regime, confirming the overall trend context."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Minor Pullback from Peak",
+      "evidence": "The current drawdown from the recent high is a minimal -3.85%, suggesting the uptrend is largely intact."
     },
     {
       "type": "Returns",
       "signal": "positive short-term momentum",
       "evidence": "Mean of recent returns: 0.22%"
-    },
-    {
-      "type": "Market Regime",
-      "signal": "high_volatility_bullish",
-      "evidence": "Regime classification: high_volatility_bullish"
     }
   ],
   "risks": [
-    "The bearish MACD crossover could be a temporary consolidation before the short-term uptrend resumes, potentially challenging the MA200 resistance.",
-    "Elevated volatility could lead to sharp, unpredictable price movements that invalidate the current technical structure."
+    "A bearish MACD crossover signals weakening upward momentum, which could precede a price correction or a period of consolidation.",
+    "Price is extended 8.7% and 15.7% above its 20-day and 50-day moving averages, respectively, increasing the risk of a reversion-to-the-mean pullback.",
+    "High and recently increasing volatility points to a greater risk of sharp, unpredictable price swings."
   ],
-  "summary": "As of 2026/03/10, Oracle was in a counter-trend rally within a dominant long-term bear market. Short-term signals were bullish, with price above the MA20 and MA50 and a strong RSI. However, momentum was weakening, evidenced by a bearish MACD crossover and unconvincing volume. The bigger picture remained bearish, with the price substantially below the MA200, a significant drawdown, and underperformance relative to the broader market.",
-  "core_insight": "The key technical dynamic was the conflict between a short-term rally and a long-term downtrend. The rally showed signs of exhaustion at this specific point in time, suggesting the path of least resistance remained downwards in alignment with the primary bearish trend."
+  "summary": "ORCL exhibits a strong, long-term bullish trend, evidenced by its price trading well above key moving averages and significant outperformance against the broader market. However, short-term momentum is showing signs of fatigue, with a recent bearish MACD crossover and price action unsupported by high volume. This warrants a neutral short-term outlook, with potential for consolidation or a minor pullback.",
+  "core_insight": "The primary conflict is between the powerful underlying uptrend and new technical signals of momentum exhaustion. The recent bearish MACD crossover is a key warning that the strong upward trajectory may pause or pull back in the near term, shifting the immediate stance from bullish to neutral."
 }

@@ -4,43 +4,43 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.85,
-  "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish signals across trend, momentum, and relative strength. The price is well above all key moving averages, RSI indicates strong momentum, and the MACD confirms a bullish crossover. The primary factor preventing higher confidence is that recent price gains have been on below-average volume, signaling potentially weak conviction.",
+  "confidence": 0.8,
+  "confidence_rationale": "Confidence is high due to the strong alignment across multiple bullish indicators (price action, moving averages, MACD, RSI). It is not higher because recent upward price movement has been on relatively low volume, suggesting a potential lack of conviction that could make the trend fragile.",
   "key_signals": [
     {
       "type": "Moving Averages",
-      "signal": "strong bullish trend structure",
-      "evidence": "Price at 401.61 is trading above the MA20 (379.95), MA50 (360.57), and MA200 (305.04), which are stacked in a bullish formation, confirming a healthy uptrend across all timeframes."
-    },
-    {
-      "type": "RSI",
-      "signal": "strong bullish momentum",
-      "evidence": "RSI is at 64.98, indicating strong buying pressure that is approaching but not yet in traditionally overbought territory (>70)."
+      "signal": "Strong Bullish Trend Structure",
+      "evidence": "Price at $401.61 is trading above both the MA20 ($379.95) and MA50 ($360.57), with the MA20 above the MA50, indicating a healthy, established uptrend."
     },
     {
       "type": "MACD",
-      "signal": "bullish momentum confirmation",
-      "evidence": "A bullish crossover is active with the MACD line (13.09) above its signal line (11.45) and a positive histogram, confirming the strength of the current uptrend."
+      "signal": "Accelerating Bullish Momentum",
+      "evidence": "A bullish crossover is active with the MACD line (13.05) above the signal line (11.39) and a positive histogram (1.66), confirming upward momentum is strengthening."
+    },
+    {
+      "type": "RSI",
+      "signal": "Strong Upward Momentum",
+      "evidence": "RSI is at 66.18, which is in bullish territory but not yet overbought (>70), suggesting there may be more room for price appreciation before exhaustion."
     },
     {
       "type": "Relative Strength",
-      "signal": "significant market outperformance",
-      "evidence": "The stock has been significantly outperforming its benchmark (SPY), identifying it as a market leader as of this date."
+      "signal": "Market Outperformance",
+      "evidence": "TSM has outperformed the SPY benchmark by 15.52% over the measured period, indicating it is a market leader."
     },
     {
       "type": "Volume",
-      "signal": "weak participation",
-      "evidence": "The volume spike ratio of 0.73 indicates recent price appreciation occurred on below-average volume, which can be a sign of weakening conviction."
+      "signal": "Lack of Conviction",
+      "evidence": "The volume spike ratio is 0.73, meaning recent volume is below its recent average. Upward price moves on diminishing volume can be a sign of a weakening trend."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Price Near Recent High",
+      "evidence": "The current drawdown is only -0.83%, indicating the stock is trading very close to its recent peak and showing strong buying support."
     },
     {
       "type": "Market Regime",
-      "signal": "confirmed bullish trend",
-      "evidence": "The market regime classification for the stock is 'bullish_trend', providing context that aligns with the price action."
-    },
-    {
-      "type": "Trend Strength",
-      "signal": "long-term strength",
-      "evidence": "The price is 31.66% above its 200-day moving average, signaling a powerful and well-established long-term uptrend."
+      "signal": "Confirmed Bullish Trend",
+      "evidence": "The market regime is classified as 'bullish_trend', providing context that supports a continuation of the upward price action."
     },
     {
       "type": "Returns",
@@ -50,18 +50,14 @@
     {
       "type": "Volatility",
       "signal": "moderate volatility",
-      "evidence": "Annualized volatility 34.96%, Recent 39.38%"
-    },
-    {
-      "type": "Drawdown",
-      "signal": "contained drawdown",
-      "evidence": "Current drawdown -0.83%, Max drawdown -18.14%"
+      "evidence": "Annualized volatility 42.03%, Recent 39.38%"
     }
   ],
   "risks": [
-    "Price is significantly extended from its moving averages, particularly the MA200, which increases the potential for a mean-reversion pullback or consolidation.",
-    "The lack of volume confirmation on recent price advances suggests weakening conviction and could make the trend more vulnerable to a reversal."
+    "Low volume on recent price gains suggests a lack of broad participation, which could make the rally susceptible to a quick reversal.",
+    "The RSI at 66.18 is approaching the overbought threshold of 70. A move into overbought territory could increase the probability of a short-term price correction or consolidation.",
+    "Annualized volatility remains moderately high at 42.03%, implying the potential for sharp price swings in either direction."
   ],
-  "summary": "As of 2026/01/15, TSM exhibited a strong and established bullish technical profile. The stock was in a clear uptrend across short, medium, and long-term horizons, with price trading significantly above its key moving averages. Bullish momentum was confirmed by a strong RSI and a positive MACD crossover. The stock was also a clear market leader, outperforming its benchmark. The primary point of caution was the below-average volume accompanying recent price gains, suggesting a potential lack of broad conviction.",
-  "core_insight": "The stock's technical profile was dominated by a powerful, multi-timeframe bullish trend, confirmed by strong momentum and market leadership. This positioned TSM in a clear uptrend, although a lack of volume confirmation warranted monitoring for signs of trend exhaustion."
+  "summary": "TSM is exhibiting a strong bullish technical posture, characterized by a clear uptrend with price well above its key 20-day and 50-day moving averages. Momentum indicators like MACD and RSI are robust and confirm the upward trajectory. The stock is a clear market outperformer. The primary point of caution is the lack of volume confirmation on the recent advance, which introduces risk and warrants monitoring.",
+  "core_insight": "The alignment of trend and momentum indicators strongly favors continued upside, but the weak volume participation is a significant divergence that suggests the current rally may lack conviction and could be vulnerable to a pullback."
 }

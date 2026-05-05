@@ -455,6 +455,67 @@ def run_q4_2025_universe_agents(
     return packets_by_ticker, errors_by_ticker
 
 
+def rerun_cached_market_technical_agent(
+    earnings_df: pd.DataFrame | None = None,
+    tickers: list[str] | None = None,
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+    vertex_project: str | None = None,
+    vertex_location: str = "us-central1",
+    vertex_model: str = "gemini-2.5-flash",
+    openai_model: str = "gpt-5-nano",
+) -> dict[str, list[dict[str, Any]]]:
+    """Refresh only the Market/Technical agent and update cached CIO packets."""
+    from openclam.agents.cio import cio_agent
+    from openclam.agents.market_technical import market_technical_agent
+
+    root = ensure_cache_dirs(cache_root)
+    df = earnings_df.copy() if earnings_df is not None else q4_2025_combined_cio_advantage_df(tickers)
+    if tickers:
+        wanted = {ticker.upper() for ticker in tickers}
+        df = df[df["ticker"].str.upper().isin(wanted)].copy()
+
+    vertex_project = vertex_project or os.getenv("VERTEX_PROJECT") or os.getenv("GOOGLE_CLOUD_PROJECT")
+    vertex_generator = None
+    if vertex_project:
+        vertex_generator = VertexTextGenerator(vertex_project, vertex_location, vertex_model)
+
+    if vertex_generator:
+        market_llm = VertexLangChainCompatibleLLM(vertex_generator, temperature=1.0)
+    else:
+        market_llm = market_technical_agent.create_market_llm(
+            api_key=os.getenv("OPENAI_API_KEY"),
+            model=openai_model,
+            temperature=_openai_temperature(openai_model, 0.2),
+        )
+
+    packets_by_ticker = load_cached_packets_by_ticker(root)
+    for row in df.itertuples(index=False):
+        ticker = str(row.ticker).upper()
+        company = str(row.company)
+        earnings_date = str(row.earnings_date)
+        paths = cached_ticker_paths(ticker, root)
+        query = f"{company} ({ticker}) technical analysis as of {earnings_date}"
+        market_report = market_technical_agent.run_market_analysis(query, llm=market_llm, ticker=ticker)
+        save_json(paths["market_technical"], market_report)
+
+        packets = packets_by_ticker.get(ticker)
+        if not packets and paths["packets"].exists():
+            packets = load_json(paths["packets"])
+        packets = packets or []
+        packets = [
+            packet
+            for packet in packets
+            if "technical" not in str(packet.get("agent_name", "")).lower()
+            and "market" not in str(packet.get("agent_name", "")).lower()
+        ]
+        packets.append(cio_agent.to_cio_packet_from_market(market_report))
+        packets_by_ticker[ticker] = packets
+        save_json(paths["packets"], packets)
+
+    save_json(root / "tables" / "packets_by_ticker.json", packets_by_ticker)
+    return packets_by_ticker
+
+
 def run_cached_cio_eval(
     summary_df: pd.DataFrame,
     packets_by_ticker: dict[str, list[dict[str, Any]]],
@@ -535,3 +596,349 @@ def load_cached_packets_by_ticker(cache_root: str | Path = DEFAULT_CACHE_ROOT) -
     for file in packet_dir.glob("*.json"):
         packets[file.stem.upper()] = load_json(file)
     return packets
+
+
+def normalize_eval_stance(value: Any) -> str:
+    """Normalize stance labels for strategy and baseline evaluation."""
+    text = str(value or "").strip().lower()
+    if text in {"bull", "bullish", "long", "positive", "buy", "outperform", "up"}:
+        return "Bullish"
+    if text in {"bear", "bearish", "short", "negative", "sell", "underperform", "down"}:
+        return "Bearish"
+    return "Neutral"
+
+
+def stance_to_direction_label(stance: Any) -> str | None:
+    normalized = normalize_eval_stance(stance)
+    if normalized == "Bullish":
+        return "up"
+    if normalized == "Bearish":
+        return "down"
+    return None
+
+
+def direction_match_label(
+    predicted_direction: str | None,
+    realized_direction: Any,
+    abnormal_return: Any,
+    neutral_band: float = 0.02,
+) -> bool | None:
+    """Score one predicted direction against realized abnormal return versus QQQ."""
+    if pd.isna(abnormal_return) or realized_direction is None:
+        return None
+    abnormal_value = float(abnormal_return)
+    if predicted_direction is None:
+        return abs(abnormal_value) <= neutral_band
+    return predicted_direction == realized_direction
+
+
+def direction_match_reason(
+    predicted_direction: str | None,
+    realized_direction: Any,
+    abnormal_return: Any,
+    neutral_band: float = 0.02,
+) -> str:
+    if pd.isna(abnormal_return) or realized_direction is None:
+        return "missing realized abnormal return"
+    abnormal_value = float(abnormal_return)
+    if predicted_direction is None:
+        if abs(abnormal_value) <= neutral_band:
+            return "neutral matched: abnormal return stayed inside neutral band"
+        return "neutral missed: abnormal return moved outside neutral band"
+    return "matched" if predicted_direction == realized_direction else "missed"
+
+
+def score_stance_columns(
+    df: pd.DataFrame,
+    short_stance_col: str,
+    long_stance_col: str,
+    prefix: str,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+) -> pd.DataFrame:
+    """Add predicted directions and match columns for any stance pair."""
+    out = df.copy()
+    short_pred_col = f"{prefix}_short_predicted_direction"
+    long_pred_col = f"{prefix}_long_predicted_direction"
+    short_match_col = f"{prefix}_short_direction_match"
+    long_match_col = f"{prefix}_long_direction_match"
+    short_reason_col = f"{prefix}_short_direction_match_reason"
+    long_reason_col = f"{prefix}_long_direction_match_reason"
+
+    long_abnormal_col = f"abnormal_{long_post_trading_days}d_vs_qqq"
+    long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
+
+    out[short_pred_col] = out[short_stance_col].apply(stance_to_direction_label)
+    out[long_pred_col] = out[long_stance_col].apply(stance_to_direction_label)
+
+    out[short_match_col] = out.apply(
+        lambda row: direction_match_label(
+            row[short_pred_col],
+            row.get("realized_direction_vs_qqq"),
+            row.get("abnormal_vs_qqq"),
+            neutral_band=neutral_band,
+        ),
+        axis=1,
+    )
+    out[short_reason_col] = out.apply(
+        lambda row: direction_match_reason(
+            row[short_pred_col],
+            row.get("realized_direction_vs_qqq"),
+            row.get("abnormal_vs_qqq"),
+            neutral_band=neutral_band,
+        ),
+        axis=1,
+    )
+
+    out[long_match_col] = out.apply(
+        lambda row: direction_match_label(
+            row[long_pred_col],
+            row.get(long_direction_col),
+            row.get(long_abnormal_col),
+            neutral_band=neutral_band,
+        ),
+        axis=1,
+    )
+    out[long_reason_col] = out.apply(
+        lambda row: direction_match_reason(
+            row[long_pred_col],
+            row.get(long_direction_col),
+            row.get(long_abnormal_col),
+            neutral_band=neutral_band,
+        ),
+        axis=1,
+    )
+    return out
+
+
+def summarize_strategy_accuracy(df: pd.DataFrame, prefix: str) -> dict[str, Any]:
+    """Summarize short/long accuracy for a named strategy prefix."""
+    def _one(horizon: str) -> dict[str, Any]:
+        column = f"{prefix}_{horizon}_direction_match"
+        if column not in df:
+            return {
+                f"{horizon}_evaluable": 0,
+                f"{horizon}_matched": 0,
+                f"{horizon}_accuracy": None,
+            }
+        evaluable = df[df[column].notna()]
+        matched = int((evaluable[column] == True).sum()) if not evaluable.empty else 0
+        total = int(len(evaluable))
+        return {
+            f"{horizon}_evaluable": total,
+            f"{horizon}_matched": matched,
+            f"{horizon}_accuracy": matched / total if total else None,
+        }
+
+    return {"strategy": prefix, **_one("short"), **_one("long")}
+
+
+def build_strategy_comparison_table(df: pd.DataFrame, prefixes: list[str]) -> pd.DataFrame:
+    """Build one clean overall comparison table across CIO, agents, and baselines."""
+    return pd.DataFrame([summarize_strategy_accuracy(df, prefix) for prefix in prefixes])
+
+
+def build_strategy_bucket_comparison(
+    df: pd.DataFrame,
+    prefixes: list[str],
+    bucket_col: str = "bucket",
+) -> pd.DataFrame:
+    """Build a bucket-level comparison table for many strategy prefixes."""
+    if bucket_col not in df:
+        return pd.DataFrame()
+    rows: list[dict[str, Any]] = []
+    for bucket, group in df.groupby(bucket_col, dropna=False):
+        row: dict[str, Any] = {"bucket": bucket, "cases": int(len(group))}
+        for prefix in prefixes:
+            summary = summarize_strategy_accuracy(group, prefix)
+            row[f"{prefix}_short_accuracy"] = summary["short_accuracy"]
+            row[f"{prefix}_long_accuracy"] = summary["long_accuracy"]
+        rows.append(row)
+    return pd.DataFrame(rows)
+
+
+def _momentum_stance(value: Any, deadband: float = 0.0) -> str:
+    if pd.isna(value):
+        return "Neutral"
+    number = float(value)
+    if number > deadband:
+        return "Bullish"
+    if number < -deadband:
+        return "Bearish"
+    return "Neutral"
+
+
+def add_simple_baselines(
+    cio_eval: pd.DataFrame,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+    momentum_return_col: str = "post_1d_return",
+    momentum_deadband: float = 0.0,
+) -> pd.DataFrame:
+    """Add always-bullish and earnings-day momentum baselines."""
+    out = cio_eval.copy()
+    out["always_bullish_short_stance"] = "Bullish"
+    out["always_bullish_long_stance"] = "Bullish"
+    out = score_stance_columns(
+        out,
+        short_stance_col="always_bullish_short_stance",
+        long_stance_col="always_bullish_long_stance",
+        prefix="always_bullish",
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+
+    out["earnings_momentum_short_stance"] = out[momentum_return_col].apply(
+        lambda value: _momentum_stance(value, deadband=momentum_deadband)
+    )
+    out["earnings_momentum_long_stance"] = out["earnings_momentum_short_stance"]
+    out = score_stance_columns(
+        out,
+        short_stance_col="earnings_momentum_short_stance",
+        long_stance_col="earnings_momentum_long_stance",
+        prefix="earnings_momentum",
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+    return out
+
+
+def add_cio_event_momentum_overlay(
+    cio_eval: pd.DataFrame,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+    momentum_return_col: str = "post_1d_return",
+    momentum_deadband: float = 0.0,
+) -> pd.DataFrame:
+    """Add a transparent post-earnings strategy: short-term momentum, long-term CIO thesis."""
+    out = cio_eval.copy()
+    if "earnings_momentum_short_stance" not in out:
+        out["earnings_momentum_short_stance"] = out[momentum_return_col].apply(
+            lambda value: _momentum_stance(value, deadband=momentum_deadband)
+        )
+    out["cio_event_momentum_short_stance"] = out["earnings_momentum_short_stance"]
+    out["cio_event_momentum_long_stance"] = out["cio_long_term_stance"].apply(normalize_eval_stance)
+
+    neutral_long = out["cio_event_momentum_long_stance"] == "Neutral"
+    out.loc[neutral_long, "cio_event_momentum_long_stance"] = out.loc[
+        neutral_long, "earnings_momentum_short_stance"
+    ]
+    return score_stance_columns(
+        out,
+        short_stance_col="cio_event_momentum_short_stance",
+        long_stance_col="cio_event_momentum_long_stance",
+        prefix="cio_event_momentum",
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+
+
+def _packet_agent_name(packet: dict[str, Any]) -> str:
+    text = str(packet.get("agent_name") or "").strip().lower().replace("&", "and")
+    if "technical" in text or "market" in text:
+        return "market_technical"
+    if "fundamental" in text:
+        return "fundamental"
+    if "news" in text or "macro" in text:
+        return "news_macro"
+    return text.replace(" ", "_") or "unknown_agent"
+
+
+def add_single_agent_baselines(
+    cio_eval: pd.DataFrame,
+    packets_by_ticker: dict[str, list[dict[str, Any]]],
+    agent_names: list[str] | None = None,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+) -> pd.DataFrame:
+    """Score each individual agent as its own baseline against the same realized returns."""
+    out = cio_eval.copy()
+    agent_names = agent_names or ["news_macro", "market_technical", "fundamental"]
+
+    lookup: dict[tuple[str, str], dict[str, Any]] = {}
+    for ticker, packets in packets_by_ticker.items():
+        for packet in packets or []:
+            if isinstance(packet, dict):
+                lookup[(str(ticker).upper(), _packet_agent_name(packet))] = packet
+
+    for agent_name in agent_names:
+        short_col = f"{agent_name}_short_stance"
+        long_col = f"{agent_name}_long_stance"
+        confidence_col = f"{agent_name}_confidence"
+        out[short_col] = out["ticker"].apply(
+            lambda ticker: normalize_eval_stance(
+                lookup.get((str(ticker).upper(), agent_name), {}).get("short_term_stance")
+            )
+        )
+        out[long_col] = out["ticker"].apply(
+            lambda ticker: normalize_eval_stance(
+                lookup.get((str(ticker).upper(), agent_name), {}).get("long_term_stance")
+                or lookup.get((str(ticker).upper(), agent_name), {}).get("stance")
+            )
+        )
+        out[confidence_col] = out["ticker"].apply(
+            lambda ticker: lookup.get((str(ticker).upper(), agent_name), {}).get("confidence")
+        )
+        out = score_stance_columns(
+            out,
+            short_stance_col=short_col,
+            long_stance_col=long_col,
+            prefix=agent_name,
+            long_post_trading_days=long_post_trading_days,
+            neutral_band=neutral_band,
+        )
+    return out
+
+
+def add_deepresearch_baseline(
+    cio_eval: pd.DataFrame,
+    deepresearch_df: pd.DataFrame,
+    ticker_col: str = "ticker",
+    short_col: str = "short_term_stance",
+    long_col: str = "long_term_stance",
+    prefix: str = "deepresearch",
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+) -> pd.DataFrame:
+    """Merge externally supplied DeepResearch labels and score them as a baseline."""
+    labels = deepresearch_df.copy()
+    labels["_ticker_upper"] = labels[ticker_col].astype(str).str.upper()
+    label_lookup = labels.set_index("_ticker_upper")
+    out = cio_eval.copy()
+
+    out[f"{prefix}_short_stance"] = out["ticker"].apply(
+        lambda ticker: normalize_eval_stance(
+            label_lookup[short_col].get(str(ticker).upper()) if short_col in label_lookup else None
+        )
+    )
+    out[f"{prefix}_long_stance"] = out["ticker"].apply(
+        lambda ticker: normalize_eval_stance(
+            label_lookup[long_col].get(str(ticker).upper()) if long_col in label_lookup else None
+        )
+    )
+    return score_stance_columns(
+        out,
+        short_stance_col=f"{prefix}_short_stance",
+        long_stance_col=f"{prefix}_long_stance",
+        prefix=prefix,
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+
+
+def write_deepresearch_label_template(
+    cio_eval: pd.DataFrame,
+    path: str | Path | None = None,
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+) -> Path:
+    """Write a CSV template for manually entered DeepResearch stance labels."""
+    output_path = Path(path) if path is not None else Path(cache_root) / "tables" / "deepresearch_labels.csv"
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    columns = ["ticker", "company", "earnings_date"]
+    available_columns = [column for column in columns if column in cio_eval]
+    template = cio_eval[available_columns].copy()
+    template["short_term_stance"] = ""
+    template["long_term_stance"] = ""
+    template["deepresearch_rationale"] = ""
+    template.to_csv(output_path, index=False)
+    return output_path

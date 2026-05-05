@@ -4,43 +4,43 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "neutral",
   "long_term_stance": "bearish",
-  "confidence": 0.75,
-  "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
+  "confidence": 0.7,
+  "confidence_rationale": "Confidence is tempered due to conflicting short-term signals. A bullish MACD crossover suggests a potential momentum shift, but this is contradicted by weak relative strength, an RSI below 50, and a price well below the 50-day moving average, indicating the broader downtrend remains intact.",
   "key_signals": [
     {
-      "type": "Moving Averages",
-      "signal": "Established Bearish Trend Structure",
-      "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-    },
-    {
-      "type": "Relative Strength",
-      "signal": "Severe Market Underperformance",
-      "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Substantial Decline From Peak",
-      "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-    },
-    {
       "type": "MACD",
-      "signal": "Potential Bullish Momentum Shift",
-      "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
+      "signal": "Bullish Momentum Crossover",
+      "evidence": "MACD line (-3.93) has crossed above the Signal line (-4.57), with a positive histogram (0.64). This is a classic short-term bullish signal."
+    },
+    {
+      "type": "Moving Averages",
+      "signal": "Bearish Trend Structure",
+      "evidence": "Price ($144.21) is 8.36% below the 50-day MA ($157.37), indicating a solid medium-term downtrend, despite recently crossing above the 20-day MA ($142.38)."
     },
     {
       "type": "RSI",
-      "signal": "Weak Momentum",
-      "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
+      "signal": "Neutral to Weak Momentum",
+      "evidence": "RSI is at 48.75, below the 50 midline, suggesting a lack of strong bullish momentum to support a new upward leg."
     },
     {
-      "type": "Volatility",
-      "signal": "High Risk & Instability",
-      "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
+      "type": "Relative Strength",
+      "signal": "Significant Market Underperformance",
+      "evidence": "The stock has underperformed the SPY benchmark by -14.23% over the analysis period, highlighting significant relative weakness."
     },
     {
       "type": "Volume",
-      "signal": "Lack of Conviction",
-      "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
+      "signal": "Low Conviction",
+      "evidence": "Recent volume is not significantly elevated (spike ratio 0.73), suggesting the latest price movements lack strong institutional participation or conviction."
+    },
+    {
+      "type": "Volatility",
+      "signal": "High Risk Environment",
+      "evidence": "Recent volatility of 80.93% is very high, indicating price instability and elevated risk for short-term traders."
+    },
+    {
+      "type": "Market Regime",
+      "signal": "Range-Bound Behavior",
+      "evidence": "The stock is classified as 'range_bound', suggesting a lack of a clear, persistent trend in the immediate term."
     },
     {
       "type": "Returns",
@@ -48,16 +48,15 @@
       "evidence": "Mean of recent returns: -0.37%"
     },
     {
-      "type": "Market Regime",
-      "signal": "range_bound",
-      "evidence": "Regime classification: range_bound"
+      "type": "Drawdown",
+      "signal": "elevated drawdown risk",
+      "evidence": "Current drawdown -21.13%, Max drawdown -33.76%"
     }
   ],
   "risks": [
-    "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-    "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-    "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
+    "The bullish MACD crossover could gain traction, forcing a short squeeze and a rally towards the 50-day MA resistance level.",
+    "The persistent underlying weakness, evidenced by poor relative strength and the dominant downtrend, could easily invalidate the nascent bullish signals, leading to a sharp rejection and new lows."
   ],
-  "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-  "core_insight": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
+  "summary": "Snowflake exhibits a classic conflict between a short-term bullish momentum signal (MACD crossover) and a persistent medium-term downtrend. While the price has reclaimed its 20-day average, it remains well below the 50-day average with weak relative strength and unconvincing volume. The high volatility and range-bound classification suggest uncertainty and a lack of a clear directional advantage.",
+  "core_insight": "A weak, low-volume bullish momentum signal is attempting a reversal within a strong, established downtrend. This makes a sustained rally unlikely without stronger confirmation, favoring a neutral stance until either the downtrend reasserts itself or the reversal gains more evidence."
 }

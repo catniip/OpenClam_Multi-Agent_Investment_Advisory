@@ -11,18 +11,18 @@
         "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.85,
+        "rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
       }
     ],
     "areas_of_agreement": [
@@ -437,257 +437,6 @@
       {
         "ticker": "META",
         "company": "Meta Platforms",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-        "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bearish Trend Structure",
-            "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Confirmation",
-            "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weakening Momentum",
-            "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-          },
-          {
-            "type": "Volume",
-            "signal": "High-Conviction Selling",
-            "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Correction In Progress",
-            "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Instability",
-            "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.9%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "range_bound",
-            "evidence": "Regime classification: range_bound"
-          }
-        ],
-        "risks": [
-          "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-          "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-        "raw_packet": {
-          "ticker": "META",
-          "company": "Meta Platforms",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bearish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-          "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bearish Trend Structure",
-              "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Confirmation",
-              "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weakening Momentum",
-              "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-            },
-            {
-              "type": "Volume",
-              "signal": "High-Conviction Selling",
-              "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Correction In Progress",
-              "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.9%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-            "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-          "raw_packet": {
-            "ticker": "META",
-            "company": "Meta Platforms",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bearish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-            "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bearish Trend Structure",
-                "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Confirmation",
-                "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weakening Momentum",
-                "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-              },
-              {
-                "type": "Volume",
-                "signal": "High-Conviction Selling",
-                "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Correction In Progress",
-                "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.9%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-              "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-            "raw_packet": {
-              "ticker": "META",
-              "company": "Meta Platforms",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bearish",
-              "long_term_stance": "bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bearish Trend Structure",
-                  "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Confirmation",
-                  "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weakening Momentum",
-                  "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "High-Conviction Selling",
-                  "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Correction In Progress",
-                  "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.9%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-                "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-              ],
-              "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-              "core_insight": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "META",
-        "company": "Meta Platforms",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -841,6 +590,257 @@
             }
           }
         }
+      },
+      {
+        "ticker": "META",
+        "company": "Meta Platforms",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.85,
+        "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+        "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Bearish Trend Structure",
+            "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Confirmation",
+            "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+          },
+          {
+            "type": "Volume",
+            "signal": "High Conviction Breakdown",
+            "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+          },
+          {
+            "type": "RSI",
+            "signal": "Negative Momentum",
+            "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Established Downtrend",
+            "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+          },
+          {
+            "type": "Volatility",
+            "signal": "Elevated Risk",
+            "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.9%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          }
+        ],
+        "risks": [
+          "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+          "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+        ],
+        "citations": [],
+        "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+        "raw_packet": {
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+          "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Trend Structure",
+              "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Confirmation",
+              "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+            },
+            {
+              "type": "Volume",
+              "signal": "High Conviction Breakdown",
+              "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+            },
+            {
+              "type": "RSI",
+              "signal": "Negative Momentum",
+              "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Established Downtrend",
+              "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Elevated Risk",
+              "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.9%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+            "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+          ],
+          "citations": [],
+          "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+          "raw_packet": {
+            "ticker": "META",
+            "company": "Meta Platforms",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+            "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Trend Structure",
+                "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Confirmation",
+                "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+              },
+              {
+                "type": "Volume",
+                "signal": "High Conviction Breakdown",
+                "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+              },
+              {
+                "type": "RSI",
+                "signal": "Negative Momentum",
+                "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Established Downtrend",
+                "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Elevated Risk",
+                "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.9%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
+            ],
+            "risks": [
+              "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+              "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+            ],
+            "citations": [],
+            "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+            "raw_packet": {
+              "ticker": "META",
+              "company": "Meta Platforms",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Trend Structure",
+                  "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Confirmation",
+                  "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High Conviction Breakdown",
+                  "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Negative Momentum",
+                  "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Established Downtrend",
+                  "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Elevated Risk",
+                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.9%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+                "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+              ],
+              "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+              "core_insight": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
+            }
+          }
+        }
       }
     ]
   },
@@ -866,18 +866,18 @@
           "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bearish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.6,
           "rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.85,
+          "rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
         }
       ],
       "areas_of_agreement": [
@@ -1421,320 +1421,6 @@
         {
           "ticker": "META",
           "company": "Meta Platforms",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bearish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-          "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bearish Trend Structure",
-              "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Confirmation",
-              "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weakening Momentum",
-              "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-            },
-            {
-              "type": "Volume",
-              "signal": "High-Conviction Selling",
-              "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Correction In Progress",
-              "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.9%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-            "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-          "raw_packet": {
-            "ticker": "META",
-            "company": "Meta Platforms",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bearish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-            "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bearish Trend Structure",
-                "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Confirmation",
-                "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weakening Momentum",
-                "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-              },
-              {
-                "type": "Volume",
-                "signal": "High-Conviction Selling",
-                "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Correction In Progress",
-                "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.9%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-              "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-            "raw_packet": {
-              "ticker": "META",
-              "company": "Meta Platforms",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bearish",
-              "long_term_stance": "Bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-              "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bearish Trend Structure",
-                  "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Confirmation",
-                  "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weakening Momentum",
-                  "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "High-Conviction Selling",
-                  "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Correction In Progress",
-                  "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.9%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-                "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-              ],
-              "citations": [],
-              "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-              "raw_packet": {
-                "ticker": "META",
-                "company": "Meta Platforms",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bearish",
-                "long_term_stance": "Bearish",
-                "confidence": 0.85,
-                "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-                "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Bearish Trend Structure",
-                    "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bearish Momentum Confirmation",
-                    "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Weakening Momentum",
-                    "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "High-Conviction Selling",
-                    "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Correction In Progress",
-                    "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Instability",
-                    "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.9%"
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "range_bound",
-                    "evidence": "Regime classification: range_bound"
-                  }
-                ],
-                "risks": [
-                  "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-                  "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-                ],
-                "citations": [],
-                "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-                "raw_packet": {
-                  "ticker": "META",
-                  "company": "Meta Platforms",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bearish",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.85,
-                  "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Bearish Trend Structure",
-                      "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bearish Momentum Confirmation",
-                      "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Weakening Momentum",
-                      "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "High-Conviction Selling",
-                      "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Correction In Progress",
-                      "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Instability",
-                      "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.9%"
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "range_bound",
-                      "evidence": "Regime classification: range_bound"
-                    }
-                  ],
-                  "risks": [
-                    "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-                    "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-                  ],
-                  "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-                  "core_insight": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "META",
-          "company": "Meta Platforms",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1926,90 +1612,376 @@
               }
             }
           }
+        },
+        {
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+          "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Trend Structure",
+              "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Confirmation",
+              "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+            },
+            {
+              "type": "Volume",
+              "signal": "High Conviction Breakdown",
+              "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+            },
+            {
+              "type": "RSI",
+              "signal": "Negative Momentum",
+              "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Established Downtrend",
+              "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Elevated Risk",
+              "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.9%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+            "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+          ],
+          "citations": [],
+          "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+          "raw_packet": {
+            "ticker": "META",
+            "company": "Meta Platforms",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+            "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Trend Structure",
+                "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Confirmation",
+                "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+              },
+              {
+                "type": "Volume",
+                "signal": "High Conviction Breakdown",
+                "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+              },
+              {
+                "type": "RSI",
+                "signal": "Negative Momentum",
+                "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Established Downtrend",
+                "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Elevated Risk",
+                "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.9%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
+            ],
+            "risks": [
+              "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+              "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+            ],
+            "citations": [],
+            "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+            "raw_packet": {
+              "ticker": "META",
+              "company": "Meta Platforms",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+              "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Trend Structure",
+                  "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Confirmation",
+                  "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High Conviction Breakdown",
+                  "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Negative Momentum",
+                  "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Established Downtrend",
+                  "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Elevated Risk",
+                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.9%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+                "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+              ],
+              "citations": [],
+              "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+              "raw_packet": {
+                "ticker": "META",
+                "company": "Meta Platforms",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.85,
+                "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+                "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+                "key_signals": [
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Bearish Trend Structure",
+                    "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bearish Momentum Confirmation",
+                    "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "High Conviction Breakdown",
+                    "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Negative Momentum",
+                    "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Established Downtrend",
+                    "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "Elevated Risk",
+                    "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.9%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "range_bound",
+                    "evidence": "Regime classification: range_bound"
+                  }
+                ],
+                "risks": [
+                  "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+                  "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+                ],
+                "citations": [],
+                "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+                "raw_packet": {
+                  "ticker": "META",
+                  "company": "Meta Platforms",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.85,
+                  "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+                  "key_signals": [
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Bearish Trend Structure",
+                      "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bearish Momentum Confirmation",
+                      "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "High Conviction Breakdown",
+                      "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Negative Momentum",
+                      "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Established Downtrend",
+                      "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "Elevated Risk",
+                      "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.9%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "range_bound",
+                      "evidence": "Regime classification: range_bound"
+                    }
+                  ],
+                  "risks": [
+                    "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+                    "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+                  ],
+                  "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+                  "core_insight": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "CIO Committee Revision",
-        "agreement": {
-          "short_term_view": "I agree with the market_technical agent's 'Bearish' short-term stance. The evidence of the price breaking below all key moving averages (MA20, MA50, MA200) on high volume is a powerful, data-driven signal that the market is reacting negatively, despite the positive headlines I initially found.",
-          "long_term_view": "I agree with the fundamental agent's 'Bullish' long-term stance. The strong year-over-year growth in revenue (33.1%) and earnings (62.4%) provides a solid fundamental basis for a positive long-term outlook, which is consistent with the news headlines I cited regarding 'ROI on AI CapEx' and 'Strong Revenue Growth'.",
-          "uncertainty": "I agree with the fundamental agent's observation that the lack of management guidance and analyst consensus in the provided data creates significant uncertainty and helps explain the disconnect between positive backward-looking news and negative forward-looking price action."
-        },
-        "disagreement": {
-          "short_term_stance": "I disagree with my original 'Bullish' short-term stance. It was based on a simple reading of positive news headlines and failed to account for the severe negative price action detailed by the market_technical agent. The technical evidence of a breakdown is more compelling for the short-term outlook than the backward-looking news.",
-          "weighting": "I now believe my initial evidence, based on simple news sentiment, should be given lower weight than the quantitative data presented by the other agents. The market_technical agent's price action data is a more direct reflection of the market's current state."
-        },
+        "response_type": "revision",
+        "agreement": [
+          "I agree with the market_technical agent's assessment of a high-conviction bearish breakdown. The price action below the MA50 on high volume is a critical short-term signal that my original heuristic-based analysis missed.",
+          "I agree with the fundamental agent's long-term bullish case, which is supported by very strong year-over-year revenue (+33.1%) and earnings (+62.4%) growth. This provides a fundamental anchor that justifies a positive long-term outlook despite short-term volatility.",
+          "I agree with the fundamental agent that the quarter-over-quarter declines and high debt-to-cash ratio are notable risks that warrant monitoring."
+        ],
+        "disagreement": [
+          "I disagree with the market_technical agent's 'Bearish' long-term stance. A single, albeit severe, post-earnings technical breakdown does not automatically invalidate a multi-year growth story supported by strong fundamentals. The technicals are better suited for assessing the short-to-medium term trend.",
+          "I disagree with the fundamental agent's 'Neutral' short-term stance. The technical evidence of a high-volume price collapse below key moving averages is decisively bearish for the short term, making a neutral position untenable.",
+          "I now assign low weight to my original analysis, which was based on a flawed heuristic that over-indexed on positive headline keywords ('beat', 'strong growth') and failed to correctly interpret the market's negative reaction to news of increased capital expenditures."
+        ],
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.75,
+        "revised_confidence": 0.7,
         "evidence_needed": [
-          "Management guidance for the upcoming quarter and full year, which was noted as missing by the fundamental agent, is critical to understand the market's negative reaction.",
-          "The earnings call transcript is needed to assess management tone and qualitative details that are not present in news headlines.",
-          "An explanation for the divergence between declining QoQ operating income and increasing QoQ net income, as flagged by the fundamental agent, is required to resolve ambiguity in the financial results."
+          "The earnings call transcript is critical to understand management's tone and qualitative commentary regarding future spending and growth.",
+          "Detailed forward guidance on revenue and, most importantly, the magnitude and expected ROI of the 2026 AI capital expenditures, which appears to be the primary driver of the negative stock reaction.",
+          "Post-earnings analyst consensus estimates and price target revisions to quantify how the professional analyst community has updated its models in light of the new information."
         ]
       },
       {
-        "response_type": "revision",
-        "agreement": {
-          "fundamental_agent": "I agree with the fundamental agent's assessment of very strong year-over-year growth (Revenue +33.1%, Earnings +62.4%), which provides a powerful counter-narrative to my bearish technical view. I also concur with their observation of quarter-over-quarter declines, which aligns with the short-term price weakness I identified.",
-          "news_macro_agent": "I agree with the news & macro agent that the recent earnings report, framed around beating revenue estimates and positive AI spending forecasts, represents a significant positive fundamental catalyst. This new information is critical context for the price action."
-        },
-        "disagreement": {
-          "self_revision": "I must lower the weight of my purely technical signals. A significant positive fundamental event like a strong earnings report can invalidate a technical setup. The breakdown below the 200-day MA, while technically bearish, may prove to be a 'bear trap' if the fundamental story drives a reversal. My original long-term bearish stance is no longer tenable given the new evidence of strong YoY growth and a positive AI investment narrative.",
-          "news_macro_agent": "While I acknowledge the positive news, I disagree with the news & macro agent's outright 'Bullish' short-term stance. My technical indicators show significant chart damage (price below all key moving averages) that will not be repaired instantly. The market is now in a 'battleground' state, making a 'Neutral' short-term stance more appropriate until price action confirms a reversal."
-        },
-        "revised_short_term_stance": "Neutral",
+        "response_type": "agent_revision",
+        "agreement": "I agree with the evidence presented by the news_macro agent, specifically the news headlines indicating a Q4 revenue beat, strong growth, and a forecast for significant AI spending in 2026. This information fills the qualitative gaps (beat/miss, guidance) identified in my original analysis. I also agree with the market_technical agent's objective data points: the stock has decisively broken below its 20 and 50-day moving averages on high volume, confirming a strong short-term downtrend and market underperformance.",
+        "disagreement": "I disagree with the long-term bearish conclusion of the market_technical agent. While the technical breakdown is severe, it appears to be a short-term market reaction to the news of increased future capital expenditures ('forecasts big 2026 AI spending'). I interpret this spending as a long-term positive for the fundamental thesis, whereas the market is pricing in short-term margin pressure. The technicals are reflecting the 'what' (price drop), while the fundamentals and news explain the 'why' (fear of CapEx), which I view as a long-term strength.",
+        "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.5,
+        "revised_confidence": 0.8,
         "evidence_needed": [
-          "Price action confirmation: Does the stock price reclaim key moving averages, particularly the 200-day MA, on convincing volume? This would validate the fundamental strength and invalidate the technical breakdown.",
-          "Qualitative earnings context: The fundamental agent noted the absence of management guidance and tone. Access to the earnings call transcript and analyst consensus revisions post-earnings is crucial to determine if the market fully buys into the long-term growth story.",
-          "Confirmation of seasonality: Verifying if the observed quarter-over-quarter declines are typical seasonal patterns for Meta would help contextualize the fundamental agent's data."
+          "The core missing piece of evidence remains a breakdown of revenue and, more importantly, profit/loss by business segment (e.g., Family of Apps vs. Reality Labs). This would allow for a more precise analysis of where the increased AI CapEx is being allocated and what the expected ROI is for each segment.",
+          "An updated balance sheet to understand the financing plan for the increased debt and capital expenditures.",
+          "Specifics from the earnings call transcript regarding the 'real-time evidence of ROI on AI CapEx' mentioned in news headlines."
         ]
       },
       {
-        "response_type": "revision",
+        "response_type": "CIO Committee Revision",
         "agreement": {
-          "agent_name": [
-            "market_technical",
-            "news_macro"
-          ],
-          "rationale": "I agree with the factual evidence presented by both agents. The market_technical agent correctly identifies a severe technical breakdown, with price falling below all key moving averages on high volume, which is an objective observation of the market's negative reaction. I also agree with the substance of the news headlines provided by the news_macro agent, which indicate a revenue beat but also a forecast for significantly higher capital expenditures ('big 2026 AI spending'). These headlines fill in the qualitative gaps from my original analysis."
+          "agent_name": "fundamental",
+          "rationale": "I agree with the fundamental agent's assessment of strong long-term fundamentals. The evidence of robust year-over-year growth in revenue (+33.1%) and earnings (+62.4%) provides a compelling counter-narrative to a long-term bearish stance. I also agree that the quarter-over-quarter declines in revenue and operating income are a significant data point, as they provide a potential fundamental justification for the negative price action my technical indicators have flagged."
         },
         "disagreement": {
-          "agent_name": [
-            "market_technical"
-          ],
-          "rationale": "I disagree with the long-term conclusion of the market_technical agent. While the bearish technicals are valid, they represent the market's immediate, negative reaction to the high capex guidance. My fundamental interpretation is that this spending is a necessary and ultimately bullish investment in future growth (e.g., AI). Therefore, I see the technical breakdown not as a signal of long-term fundamental decay, but as a short-term, fear-driven sell-off that creates a potential long-term opportunity. The market is punishing the stock for what I believe is the correct long-term strategy."
+          "agent_name": "news_macro",
+          "rationale": "I disagree with the bullish conclusion from the news_macro agent. The agent itself notes its low confidence (0.35) and heuristic nature. While the cited headlines about earnings beats are factually correct, my technical indicators show the market's ultimate reaction to the totality of the earnings event (including any guidance) was a high-volume sell-off. Price action trumps stale news headlines. The market has digested that 'good news' and has subsequently voted to sell, making the current technical reality more relevant than the news agent's stance."
         },
-        "revised_view": {
-          "ticker": "META",
-          "company": "Meta Platforms",
-          "agent_name": "fundamental",
-          "short_term_stance": "Bearish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.7,
-          "confidence_rationale": "Confidence has increased because the news_macro agent's evidence filled critical gaps in my original analysis regarding guidance and analyst sentiment. The picture is now clearer, albeit more contentious. The thesis is now a contrarian one: betting that the market is misinterpreting necessary long-term AI investment as a short-term negative. The clarity of this conflict between strong fundamentals/strategy and poor technicals increases conviction in the revised stance.",
-          "stance_rationale": "The short-term stance is revised to Bearish to reflect the overwhelming negative technical picture presented by the market_technical agent; a high-volume break below the 200-day MA cannot be ignored. However, the long-term stance remains Bullish and is, in fact, reinforced. Evidence from the news_macro agent confirms strong results and highlights a strategic increase in AI capex. While the market has sold off on this news, I view this as a positive long-term investment, creating a disconnect between current price and long-term fundamental value.",
-          "key_signals": [
-            "Confirmation of strong YoY growth and a revenue beat for Q4 (per news_macro agent).",
-            "Guidance for 'big 2026 AI spending' which, while spooking the market, underpins the long-term AI growth thesis (per news_macro agent).",
-            "A severe technical breakdown below the 200-day MA on high volume, confirming a strong negative market sentiment in the short term (per market_technical agent).",
-            "The significant divergence between strong reported fundamentals and a deeply negative market price reaction."
-          ],
-          "risks": [
-            "The primary risk is that the market's bearish view is correct, and the increased capex will lead to prolonged margin compression and value destruction without a clear return on investment.",
-            "The decisively bearish technical picture could signal a longer-term downtrend that overwhelms the fundamental story for an extended period.",
-            "Without the full context of the earnings call, the interpretation of the 'big 2026 AI spending' is based on headlines alone and may lack critical nuance regarding its impact on profitability."
-          ]
-        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.75,
+        "revision_rationale": "I am maintaining my short-term Bearish stance, as the technical breakdown on high volume remains the most dominant, recent signal. However, I am revising my long-term stance from Bearish to Neutral. The fundamental agent presented compelling evidence of strong YoY growth that undermines a long-term bearish thesis. The current price action is now viewed as a significant short/medium-term correction rather than the start of a definitive long-term downtrend. Confidence is slightly reduced from 0.85 to 0.75 to reflect the new conflict between the bearish short-term technicals and the strong long-term fundamentals.",
         "evidence_needed": [
-          "The full earnings call transcript to understand management's detailed commentary on the scale, timeline, and expected ROI of the increased 2026 capital expenditures.",
-          "A segment breakdown of the capex to differentiate between core infrastructure maintenance and strategic AI investments.",
-          "Updated analyst reports and price targets post-earnings to quantify the shift in consensus estimates and sentiment.",
-          "Data on whether the technical breakdown has found any support at subsequent levels or if momentum is continuing to accelerate downwards."
+          "Management guidance for the upcoming quarter and full year, which was not provided in the fundamental analysis.",
+          "The earnings call transcript to understand management's qualitative tone and commentary, which could explain the divergence between strong YoY results and the negative market reaction.",
+          "Post-earnings analyst consensus revisions to see if the street is lowering future expectations, which would validate the technical sell-off."
         ]
       }
     ],
@@ -2020,7 +1992,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
-        "confidence": 0.75,
+        "confidence": 0.7,
         "confidence_rationale": "Low confidence because this is the heuristic fallback rather than model-backed reasoning, and it uses only simple keyword and macro cues.",
         "stance_rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation.",
         "key_signals": [
@@ -2404,293 +2376,24 @@
           }
         },
         "debate_response": {
-          "response_type": "CIO Committee Revision",
-          "agreement": {
-            "short_term_view": "I agree with the market_technical agent's 'Bearish' short-term stance. The evidence of the price breaking below all key moving averages (MA20, MA50, MA200) on high volume is a powerful, data-driven signal that the market is reacting negatively, despite the positive headlines I initially found.",
-            "long_term_view": "I agree with the fundamental agent's 'Bullish' long-term stance. The strong year-over-year growth in revenue (33.1%) and earnings (62.4%) provides a solid fundamental basis for a positive long-term outlook, which is consistent with the news headlines I cited regarding 'ROI on AI CapEx' and 'Strong Revenue Growth'.",
-            "uncertainty": "I agree with the fundamental agent's observation that the lack of management guidance and analyst consensus in the provided data creates significant uncertainty and helps explain the disconnect between positive backward-looking news and negative forward-looking price action."
-          },
-          "disagreement": {
-            "short_term_stance": "I disagree with my original 'Bullish' short-term stance. It was based on a simple reading of positive news headlines and failed to account for the severe negative price action detailed by the market_technical agent. The technical evidence of a breakdown is more compelling for the short-term outlook than the backward-looking news.",
-            "weighting": "I now believe my initial evidence, based on simple news sentiment, should be given lower weight than the quantitative data presented by the other agents. The market_technical agent's price action data is a more direct reflection of the market's current state."
-          },
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the market_technical agent's assessment of a high-conviction bearish breakdown. The price action below the MA50 on high volume is a critical short-term signal that my original heuristic-based analysis missed.",
+            "I agree with the fundamental agent's long-term bullish case, which is supported by very strong year-over-year revenue (+33.1%) and earnings (+62.4%) growth. This provides a fundamental anchor that justifies a positive long-term outlook despite short-term volatility.",
+            "I agree with the fundamental agent that the quarter-over-quarter declines and high debt-to-cash ratio are notable risks that warrant monitoring."
+          ],
+          "disagreement": [
+            "I disagree with the market_technical agent's 'Bearish' long-term stance. A single, albeit severe, post-earnings technical breakdown does not automatically invalidate a multi-year growth story supported by strong fundamentals. The technicals are better suited for assessing the short-to-medium term trend.",
+            "I disagree with the fundamental agent's 'Neutral' short-term stance. The technical evidence of a high-volume price collapse below key moving averages is decisively bearish for the short term, making a neutral position untenable.",
+            "I now assign low weight to my original analysis, which was based on a flawed heuristic that over-indexed on positive headline keywords ('beat', 'strong growth') and failed to correctly interpret the market's negative reaction to news of increased capital expenditures."
+          ],
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.75,
+          "revised_confidence": 0.7,
           "evidence_needed": [
-            "Management guidance for the upcoming quarter and full year, which was noted as missing by the fundamental agent, is critical to understand the market's negative reaction.",
-            "The earnings call transcript is needed to assess management tone and qualitative details that are not present in news headlines.",
-            "An explanation for the divergence between declining QoQ operating income and increasing QoQ net income, as flagged by the fundamental agent, is required to resolve ambiguity in the financial results."
-          ]
-        }
-      },
-      {
-        "ticker": "META",
-        "company": "Meta Platforms",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.5,
-        "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-        "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bearish Trend Structure",
-            "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Confirmation",
-            "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weakening Momentum",
-            "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-          },
-          {
-            "type": "Volume",
-            "signal": "High-Conviction Selling",
-            "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Correction In Progress",
-            "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Instability",
-            "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.9%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "range_bound",
-            "evidence": "Regime classification: range_bound"
-          }
-        ],
-        "risks": [
-          "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-          "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-        "raw_packet": {
-          "ticker": "META",
-          "company": "Meta Platforms",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bearish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-          "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bearish Trend Structure",
-              "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Confirmation",
-              "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weakening Momentum",
-              "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-            },
-            {
-              "type": "Volume",
-              "signal": "High-Conviction Selling",
-              "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Correction In Progress",
-              "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.9%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-            "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-          "raw_packet": {
-            "ticker": "META",
-            "company": "Meta Platforms",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bearish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-            "stance_rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bearish Trend Structure",
-                "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Confirmation",
-                "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weakening Momentum",
-                "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-              },
-              {
-                "type": "Volume",
-                "signal": "High-Conviction Selling",
-                "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Correction In Progress",
-                "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.9%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-              "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-            "raw_packet": {
-              "ticker": "META",
-              "company": "Meta Platforms",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bearish",
-              "long_term_stance": "bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as multiple indicators across trend (price vs MAs), momentum (RSI, MACD), and relative strength are all aligned, pointing to a bearish outlook. The breakdown below the 200-day MA is a particularly strong signal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bearish Trend Structure",
-                  "evidence": "Price at $610.41 is below the MA20 ($648.93), MA50 ($629.24), and MA200 ($676.92), indicating a breakdown of short and long-term trends."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Confirmation",
-                  "evidence": "The MACD line (3.32) is below its signal line (10.38), resulting in a negative histogram (-7.06), which confirms downward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weakening Momentum",
-                  "evidence": "RSI is 41.27, below the neutral 50 level, indicating that sellers are in control. It is not yet oversold (<30), suggesting potential for further downside."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "High-Conviction Selling",
-                  "evidence": "A recent major price drop (-8.55%) was accompanied by a significant volume spike to 52.7M shares, confirming strong seller participation."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -26.7%, highlighting its pronounced weakness compared to the broader market."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Correction In Progress",
-                  "evidence": "The stock is in a -22.55% drawdown from its recent peak, which is a characteristic of a bearish correction phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (35.8%), reflecting the current unstable and downward-trending price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.9%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The RSI is approaching oversold territory, which could lead to a short-term price bounce if selling pressure exhausts.",
-                "The market regime is classified as 'range_bound', which may imply that strong support could be found at the lower end of the range, challenging a sustained downtrend."
-              ],
-              "summary": "As of 2026/01/28, META's technical profile was decisively bearish. The price had broken below all key moving averages (20, 50, 200-day), signaling a shift to a long-term downtrend. This move was supported by strong bearish momentum indicators (MACD, RSI) and confirmed by a high-volume sell-off. The stock was also significantly underperforming the broader market, reinforcing the weak technical picture.",
-              "core_insight": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "fundamental_agent": "I agree with the fundamental agent's assessment of very strong year-over-year growth (Revenue +33.1%, Earnings +62.4%), which provides a powerful counter-narrative to my bearish technical view. I also concur with their observation of quarter-over-quarter declines, which aligns with the short-term price weakness I identified.",
-            "news_macro_agent": "I agree with the news & macro agent that the recent earnings report, framed around beating revenue estimates and positive AI spending forecasts, represents a significant positive fundamental catalyst. This new information is critical context for the price action."
-          },
-          "disagreement": {
-            "self_revision": "I must lower the weight of my purely technical signals. A significant positive fundamental event like a strong earnings report can invalidate a technical setup. The breakdown below the 200-day MA, while technically bearish, may prove to be a 'bear trap' if the fundamental story drives a reversal. My original long-term bearish stance is no longer tenable given the new evidence of strong YoY growth and a positive AI investment narrative.",
-            "news_macro_agent": "While I acknowledge the positive news, I disagree with the news & macro agent's outright 'Bullish' short-term stance. My technical indicators show significant chart damage (price below all key moving averages) that will not be repaired instantly. The market is now in a 'battleground' state, making a 'Neutral' short-term stance more appropriate until price action confirms a reversal."
-          },
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.5,
-          "evidence_needed": [
-            "Price action confirmation: Does the stock price reclaim key moving averages, particularly the 200-day MA, on convincing volume? This would validate the fundamental strength and invalidate the technical breakdown.",
-            "Qualitative earnings context: The fundamental agent noted the absence of management guidance and tone. Access to the earnings call transcript and analyst consensus revisions post-earnings is crucial to determine if the market fully buys into the long-term growth story.",
-            "Confirmation of seasonality: Verifying if the observed quarter-over-quarter declines are typical seasonal patterns for Meta would help contextualize the fundamental agent's data."
+            "The earnings call transcript is critical to understand management's tone and qualitative commentary regarding future spending and growth.",
+            "Detailed forward guidance on revenue and, most importantly, the magnitude and expected ROI of the 2026 AI capital expenditures, which appears to be the primary driver of the negative stock reaction.",
+            "Post-earnings analyst consensus estimates and price target revisions to quantify how the professional analyst community has updated its models in light of the new information."
           ]
         }
       },
@@ -2698,9 +2401,9 @@
         "ticker": "META",
         "company": "Meta Platforms",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Neutral",
-        "confidence": 0.6,
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is medium because while the quantitative YoY growth metrics are very strong, the complete absence of qualitative information (management tone, guidance) and analyst consensus estimates makes it difficult to fully assess the quarter's context and future outlook. The QoQ declines and the unexplained net income increase add to the uncertainty.",
         "stance_rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring.",
         "key_signals": [
@@ -2851,46 +2554,287 @@
           }
         },
         "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "agent_name": [
-              "market_technical",
-              "news_macro"
-            ],
-            "rationale": "I agree with the factual evidence presented by both agents. The market_technical agent correctly identifies a severe technical breakdown, with price falling below all key moving averages on high volume, which is an objective observation of the market's negative reaction. I also agree with the substance of the news headlines provided by the news_macro agent, which indicate a revenue beat but also a forecast for significantly higher capital expenditures ('big 2026 AI spending'). These headlines fill in the qualitative gaps from my original analysis."
+          "response_type": "agent_revision",
+          "agreement": "I agree with the evidence presented by the news_macro agent, specifically the news headlines indicating a Q4 revenue beat, strong growth, and a forecast for significant AI spending in 2026. This information fills the qualitative gaps (beat/miss, guidance) identified in my original analysis. I also agree with the market_technical agent's objective data points: the stock has decisively broken below its 20 and 50-day moving averages on high volume, confirming a strong short-term downtrend and market underperformance.",
+          "disagreement": "I disagree with the long-term bearish conclusion of the market_technical agent. While the technical breakdown is severe, it appears to be a short-term market reaction to the news of increased future capital expenditures ('forecasts big 2026 AI spending'). I interpret this spending as a long-term positive for the fundamental thesis, whereas the market is pricing in short-term margin pressure. The technicals are reflecting the 'what' (price drop), while the fundamentals and news explain the 'why' (fear of CapEx), which I view as a long-term strength.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The core missing piece of evidence remains a breakdown of revenue and, more importantly, profit/loss by business segment (e.g., Family of Apps vs. Reality Labs). This would allow for a more precise analysis of where the increased AI CapEx is being allocated and what the expected ROI is for each segment.",
+            "An updated balance sheet to understand the financing plan for the increased debt and capital expenditures.",
+            "Specifics from the earnings call transcript regarding the 'real-time evidence of ROI on AI CapEx' mentioned in news headlines."
+          ]
+        }
+      },
+      {
+        "ticker": "META",
+        "company": "Meta Platforms",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+        "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Bearish Trend Structure",
+            "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
           },
-          "disagreement": {
-            "agent_name": [
-              "market_technical"
-            ],
-            "rationale": "I disagree with the long-term conclusion of the market_technical agent. While the bearish technicals are valid, they represent the market's immediate, negative reaction to the high capex guidance. My fundamental interpretation is that this spending is a necessary and ultimately bullish investment in future growth (e.g., AI). Therefore, I see the technical breakdown not as a signal of long-term fundamental decay, but as a short-term, fear-driven sell-off that creates a potential long-term opportunity. The market is punishing the stock for what I believe is the correct long-term strategy."
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Confirmation",
+            "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
           },
-          "revised_view": {
+          {
+            "type": "Volume",
+            "signal": "High Conviction Breakdown",
+            "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+          },
+          {
+            "type": "RSI",
+            "signal": "Negative Momentum",
+            "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Established Downtrend",
+            "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+          },
+          {
+            "type": "Volatility",
+            "signal": "Elevated Risk",
+            "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.9%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          }
+        ],
+        "risks": [
+          "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+          "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+        ],
+        "citations": [],
+        "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+        "raw_packet": {
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+          "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Trend Structure",
+              "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Confirmation",
+              "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+            },
+            {
+              "type": "Volume",
+              "signal": "High Conviction Breakdown",
+              "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+            },
+            {
+              "type": "RSI",
+              "signal": "Negative Momentum",
+              "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Established Downtrend",
+              "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Elevated Risk",
+              "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.9%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+            "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+          ],
+          "citations": [],
+          "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+          "raw_packet": {
             "ticker": "META",
             "company": "Meta Platforms",
-            "agent_name": "fundamental",
+            "agent_name": "market_technical",
             "short_term_stance": "Bearish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.7,
-            "confidence_rationale": "Confidence has increased because the news_macro agent's evidence filled critical gaps in my original analysis regarding guidance and analyst sentiment. The picture is now clearer, albeit more contentious. The thesis is now a contrarian one: betting that the market is misinterpreting necessary long-term AI investment as a short-term negative. The clarity of this conflict between strong fundamentals/strategy and poor technicals increases conviction in the revised stance.",
-            "stance_rationale": "The short-term stance is revised to Bearish to reflect the overwhelming negative technical picture presented by the market_technical agent; a high-volume break below the 200-day MA cannot be ignored. However, the long-term stance remains Bullish and is, in fact, reinforced. Evidence from the news_macro agent confirms strong results and highlights a strategic increase in AI capex. While the market has sold off on this news, I view this as a positive long-term investment, creating a disconnect between current price and long-term fundamental value.",
+            "long_term_stance": "Bearish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+            "stance_rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control.",
             "key_signals": [
-              "Confirmation of strong YoY growth and a revenue beat for Q4 (per news_macro agent).",
-              "Guidance for 'big 2026 AI spending' which, while spooking the market, underpins the long-term AI growth thesis (per news_macro agent).",
-              "A severe technical breakdown below the 200-day MA on high volume, confirming a strong negative market sentiment in the short term (per market_technical agent).",
-              "The significant divergence between strong reported fundamentals and a deeply negative market price reaction."
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Trend Structure",
+                "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Confirmation",
+                "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+              },
+              {
+                "type": "Volume",
+                "signal": "High Conviction Breakdown",
+                "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+              },
+              {
+                "type": "RSI",
+                "signal": "Negative Momentum",
+                "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Established Downtrend",
+                "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Elevated Risk",
+                "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.9%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
             ],
             "risks": [
-              "The primary risk is that the market's bearish view is correct, and the increased capex will lead to prolonged margin compression and value destruction without a clear return on investment.",
-              "The decisively bearish technical picture could signal a longer-term downtrend that overwhelms the fundamental story for an extended period.",
-              "Without the full context of the earnings call, the interpretation of the 'big 2026 AI spending' is based on headlines alone and may lack critical nuance regarding its impact on profitability."
-            ]
+              "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+              "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+            ],
+            "citations": [],
+            "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+            "raw_packet": {
+              "ticker": "META",
+              "company": "Meta Platforms",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to strong confluence across multiple key indicators. Price has decisively broken below its 20 and 50-day moving averages on high volume, the MACD confirms bearish momentum, and the stock is significantly underperforming its benchmark. The weight of the evidence points to a continued downtrend.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Trend Structure",
+                  "evidence": "Price at $610.41 is trading below both the MA20 ($648.93) and MA50 ($629.24), indicating a clear short-to-medium term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Confirmation",
+                  "evidence": "The MACD line (3.28) is below the Signal line (10.31), with a negative histogram (-7.04), confirming a recent bearish crossover and accelerating downward momentum."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High Conviction Breakdown",
+                  "evidence": "A recent sharp price drop of -8.55% was accompanied by a massive volume spike (52.7M shares), indicating strong institutional selling pressure and conviction in the downtrend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -15.09% over the recent period, highlighting its relative weakness compared to the broader market."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Negative Momentum",
+                  "evidence": "The RSI is at 40.79, below the neutral 50 level, which signals that bearish momentum is in control. It is not yet in oversold territory, suggesting potential for further downside."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Established Downtrend",
+                  "evidence": "The stock is currently in an -11.35% drawdown from its recent high, confirming that a downtrend is in effect."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Elevated Risk",
+                  "evidence": "Recent volatility (46.87%) is higher than the annualized average (40.75%), reflecting increased price instability and risk associated with the current decline."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.9%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The RSI of 40.79 is approaching oversold territory (<30), which could precipitate a short-term counter-trend bounce or price consolidation.",
+                "The sharp, recent sell-off could be an overreaction, potentially leading to a sharp reversal if price can reclaim the MA50 level at $629.24."
+              ],
+              "summary": "META exhibits a clear bearish profile in the short-to-medium term. A high-volume breakdown below key moving averages, coupled with negative momentum signals from MACD and RSI, establishes a confirmed downtrend. The stock's significant underperformance relative to the S&P 500 further reinforces the bearish stance. While a short-term bounce is possible due to the speed of the recent decline, the primary trend is currently negative.",
+              "core_insight": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "CIO Committee Revision",
+          "agreement": {
+            "agent_name": "fundamental",
+            "rationale": "I agree with the fundamental agent's assessment of strong long-term fundamentals. The evidence of robust year-over-year growth in revenue (+33.1%) and earnings (+62.4%) provides a compelling counter-narrative to a long-term bearish stance. I also agree that the quarter-over-quarter declines in revenue and operating income are a significant data point, as they provide a potential fundamental justification for the negative price action my technical indicators have flagged."
           },
+          "disagreement": {
+            "agent_name": "news_macro",
+            "rationale": "I disagree with the bullish conclusion from the news_macro agent. The agent itself notes its low confidence (0.35) and heuristic nature. While the cited headlines about earnings beats are factually correct, my technical indicators show the market's ultimate reaction to the totality of the earnings event (including any guidance) was a high-volume sell-off. Price action trumps stale news headlines. The market has digested that 'good news' and has subsequently voted to sell, making the current technical reality more relevant than the news agent's stance."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.75,
+          "revision_rationale": "I am maintaining my short-term Bearish stance, as the technical breakdown on high volume remains the most dominant, recent signal. However, I am revising my long-term stance from Bearish to Neutral. The fundamental agent presented compelling evidence of strong YoY growth that undermines a long-term bearish thesis. The current price action is now viewed as a significant short/medium-term correction rather than the start of a definitive long-term downtrend. Confidence is slightly reduced from 0.85 to 0.75 to reflect the new conflict between the bearish short-term technicals and the strong long-term fundamentals.",
           "evidence_needed": [
-            "The full earnings call transcript to understand management's detailed commentary on the scale, timeline, and expected ROI of the increased 2026 capital expenditures.",
-            "A segment breakdown of the capex to differentiate between core infrastructure maintenance and strategic AI investments.",
-            "Updated analyst reports and price targets post-earnings to quantify the shift in consensus estimates and sentiment.",
-            "Data on whether the technical breakdown has found any support at subsequent levels or if momentum is continuing to accelerate downwards."
+            "Management guidance for the upcoming quarter and full year, which was not provided in the fundamental analysis.",
+            "The earnings call transcript to understand management's qualitative tone and commentary, which could explain the divergence between strong YoY results and the negative market reaction.",
+            "Post-earnings analyst consensus revisions to see if the street is lowering future expectations, which would validate the technical sell-off."
           ]
         }
       }
@@ -2902,40 +2846,44 @@
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bullish",
     "investment_action": "Accumulate on weakness",
-    "position_size_hint": "Starter position, scale in on confirmation",
-    "confidence": 0.75,
-    "core_thesis": "The market is misinterpreting necessary long-term strategic investments in AI as a short-term negative, creating a dislocation between price and value. Despite reporting strong YoY growth, the announcement of increased 2026 capex has caused a severe technical breakdown. This presents a contrarian opportunity for long-term investors to accumulate shares at a discount once the near-term selling pressure abates.",
-    "why_now": "The post-earnings sell-off, driven by fears over increased capex, has created a compelling entry point for a long-term, fundamentals-driven thesis. The conflict between the strong fundamental reality (33% YoY revenue growth) and the negative market sentiment (price breakdown below 200-day MA) is the core of the opportunity.",
+    "position_size_hint": "Small",
+    "confidence": 0.8,
+    "core_thesis": "The market is reacting negatively in the short term to increased future AI capital expenditures, creating a technical breakdown. However, this spending is a necessary investment to fuel long-term growth, which is supported by exceptionally strong year-over-year fundamental performance. This creates a dislocation and a potential buying opportunity for long-term investors.",
+    "why_now": "A significant, high-volume, post-earnings technical breakdown has occurred, creating a clear divergence between the negative short-term price action and the strong long-term fundamental growth story. This event provides a potential entry point for a long-term position once the short-term selling pressure shows signs of abating.",
     "key_supporting_evidence": [
       {
-        "evidence": "Strong fundamental performance with year-over-year revenue growth of 33.1% and earnings growth of 62.4%.",
-        "source_agent": "fundamental"
-      },
-      {
-        "evidence": "The announcement of 'big 2026 AI spending', which is viewed as a crucial investment for future growth, despite the market's negative short-term reaction.",
-        "source_agent": "news_macro, fundamental"
-      },
-      {
-        "evidence": "A severe technical breakdown with the price falling below all key moving averages (MA20, MA50, MA200) on high volume, confirming a fearful market and creating a potential 'bear trap' scenario if fundamentals reassert themselves.",
+        "evidence": "A high-conviction technical breakdown below the 20 and 50-day moving averages on massive volume (52.7M shares) confirms a strong short-term downtrend.",
         "source_agent": "market_technical"
       },
       {
-        "evidence": "A reasonable forward P/E of 16.87 suggests that future earnings growth is not excessively priced in, providing a valuation cushion.",
+        "evidence": "News headlines confirm the market's negative reaction was tied to the forecast of 'big 2026 AI spending', despite a Q4 revenue beat.",
+        "source_agent": "news_macro"
+      },
+      {
+        "evidence": "The long-term thesis is supported by very strong year-over-year fundamentals, including revenue growth of +33.1% and earnings growth of +62.4%.",
         "source_agent": "fundamental"
+      },
+      {
+        "evidence": "A forward P/E of 16.87 suggests a reasonable valuation relative to the company's demonstrated growth, providing a margin of safety for a long-term position.",
+        "source_agent": "fundamental"
+      },
+      {
+        "evidence": "During the debate, all agents converged to a 'Bearish' short-term stance, and a strong majority converged to a 'Bullish' or 'Neutral' long-term stance, creating a clear, synthesized view.",
+        "source_agent": "CIO Synthesis"
       }
     ],
     "key_risks": [
       {
-        "risk": "The market's bearish view is correct, and the increased capex leads to prolonged margin compression and value destruction without a clear return on investment.",
-        "mitigation": "Monitor segment results for early signs of ROI from AI investments and engagement metrics."
+        "risk": "The technical downtrend persists, and the stock fails to find support, indicating the market sell-off is more than a short-term reaction.",
+        "mitigation": "Wait for signs of price stabilization or a bullish reversal pattern before committing significant capital. Use stop-losses to manage downside."
       },
       {
-        "risk": "The decisively bearish technical picture signals a longer-term downtrend that could overwhelm the fundamental story for an extended period, creating a value trap.",
-        "mitigation": "Wait for price to stabilize or reclaim a key moving average (e.g., 50-day) before adding significantly to the position."
+        "risk": "The massive AI capital expenditures fail to generate a positive return on investment, leading to permanent margin compression and validating the market's current fears.",
+        "mitigation": "Monitor future earnings reports for commentary on AI ROI and segment profitability, particularly in Reality Labs vs. Family of Apps."
       },
       {
-        "risk": "The analysis is based on news headlines without the full context of the earnings call, which could alter the interpretation of management's strategy and tone regarding the capex spend.",
-        "mitigation": "Review earnings call transcript and subsequent analyst reports for qualitative details."
+        "risk": "The observed quarter-over-quarter declines in revenue and operating income are the beginning of a secular slowdown rather than a seasonal dip.",
+        "mitigation": "Closely watch forward guidance and results from peers (e.g., GOOGL, SNAP) to assess the health of the digital advertising market."
       }
     ],
     "agent_view_summary": [
@@ -2947,18 +2895,18 @@
         "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "rationale": "The definitive breakdown of the price below the 200-day moving average on high volume is the most critical insight. This event marked a potential shift from a simple correction to a longer-term bear trend, invalidating the prior uptrend structure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "Despite quarter-over-quarter declines in revenue and operating income, likely attributable to seasonality, the company exhibits very strong fundamentals with significant year-over-year growth in revenue (33.1%) and earnings (62.4%). A high profit margin and a reasonable forward P/E support a bullish outlook, though the sequential slowdown and lack of guidance warrant monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.85,
+        "rationale": "The most critical signal is the high-conviction breakdown below the 50-day moving average on exceptionally high volume. This event has decisively shifted the intermediate-term trend structure to bearish, suggesting that sellers are in firm control."
       }
     ],
     "debate_summary": {
@@ -2970,141 +2918,113 @@
       ],
       "debate_responses": [
         {
-          "response_type": "CIO Committee Revision",
-          "agreement": {
-            "short_term_view": "I agree with the market_technical agent's 'Bearish' short-term stance. The evidence of the price breaking below all key moving averages (MA20, MA50, MA200) on high volume is a powerful, data-driven signal that the market is reacting negatively, despite the positive headlines I initially found.",
-            "long_term_view": "I agree with the fundamental agent's 'Bullish' long-term stance. The strong year-over-year growth in revenue (33.1%) and earnings (62.4%) provides a solid fundamental basis for a positive long-term outlook, which is consistent with the news headlines I cited regarding 'ROI on AI CapEx' and 'Strong Revenue Growth'.",
-            "uncertainty": "I agree with the fundamental agent's observation that the lack of management guidance and analyst consensus in the provided data creates significant uncertainty and helps explain the disconnect between positive backward-looking news and negative forward-looking price action."
-          },
-          "disagreement": {
-            "short_term_stance": "I disagree with my original 'Bullish' short-term stance. It was based on a simple reading of positive news headlines and failed to account for the severe negative price action detailed by the market_technical agent. The technical evidence of a breakdown is more compelling for the short-term outlook than the backward-looking news.",
-            "weighting": "I now believe my initial evidence, based on simple news sentiment, should be given lower weight than the quantitative data presented by the other agents. The market_technical agent's price action data is a more direct reflection of the market's current state."
-          },
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the market_technical agent's assessment of a high-conviction bearish breakdown. The price action below the MA50 on high volume is a critical short-term signal that my original heuristic-based analysis missed.",
+            "I agree with the fundamental agent's long-term bullish case, which is supported by very strong year-over-year revenue (+33.1%) and earnings (+62.4%) growth. This provides a fundamental anchor that justifies a positive long-term outlook despite short-term volatility.",
+            "I agree with the fundamental agent that the quarter-over-quarter declines and high debt-to-cash ratio are notable risks that warrant monitoring."
+          ],
+          "disagreement": [
+            "I disagree with the market_technical agent's 'Bearish' long-term stance. A single, albeit severe, post-earnings technical breakdown does not automatically invalidate a multi-year growth story supported by strong fundamentals. The technicals are better suited for assessing the short-to-medium term trend.",
+            "I disagree with the fundamental agent's 'Neutral' short-term stance. The technical evidence of a high-volume price collapse below key moving averages is decisively bearish for the short term, making a neutral position untenable.",
+            "I now assign low weight to my original analysis, which was based on a flawed heuristic that over-indexed on positive headline keywords ('beat', 'strong growth') and failed to correctly interpret the market's negative reaction to news of increased capital expenditures."
+          ],
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.75,
+          "revised_confidence": 0.7,
           "evidence_needed": [
-            "Management guidance for the upcoming quarter and full year, which was noted as missing by the fundamental agent, is critical to understand the market's negative reaction.",
-            "The earnings call transcript is needed to assess management tone and qualitative details that are not present in news headlines.",
-            "An explanation for the divergence between declining QoQ operating income and increasing QoQ net income, as flagged by the fundamental agent, is required to resolve ambiguity in the financial results."
+            "The earnings call transcript is critical to understand management's tone and qualitative commentary regarding future spending and growth.",
+            "Detailed forward guidance on revenue and, most importantly, the magnitude and expected ROI of the 2026 AI capital expenditures, which appears to be the primary driver of the negative stock reaction.",
+            "Post-earnings analyst consensus estimates and price target revisions to quantify how the professional analyst community has updated its models in light of the new information."
           ]
         },
         {
-          "response_type": "revision",
-          "agreement": {
-            "fundamental_agent": "I agree with the fundamental agent's assessment of very strong year-over-year growth (Revenue +33.1%, Earnings +62.4%), which provides a powerful counter-narrative to my bearish technical view. I also concur with their observation of quarter-over-quarter declines, which aligns with the short-term price weakness I identified.",
-            "news_macro_agent": "I agree with the news & macro agent that the recent earnings report, framed around beating revenue estimates and positive AI spending forecasts, represents a significant positive fundamental catalyst. This new information is critical context for the price action."
-          },
-          "disagreement": {
-            "self_revision": "I must lower the weight of my purely technical signals. A significant positive fundamental event like a strong earnings report can invalidate a technical setup. The breakdown below the 200-day MA, while technically bearish, may prove to be a 'bear trap' if the fundamental story drives a reversal. My original long-term bearish stance is no longer tenable given the new evidence of strong YoY growth and a positive AI investment narrative.",
-            "news_macro_agent": "While I acknowledge the positive news, I disagree with the news & macro agent's outright 'Bullish' short-term stance. My technical indicators show significant chart damage (price below all key moving averages) that will not be repaired instantly. The market is now in a 'battleground' state, making a 'Neutral' short-term stance more appropriate until price action confirms a reversal."
-          },
-          "revised_short_term_stance": "Neutral",
+          "response_type": "agent_revision",
+          "agreement": "I agree with the evidence presented by the news_macro agent, specifically the news headlines indicating a Q4 revenue beat, strong growth, and a forecast for significant AI spending in 2026. This information fills the qualitative gaps (beat/miss, guidance) identified in my original analysis. I also agree with the market_technical agent's objective data points: the stock has decisively broken below its 20 and 50-day moving averages on high volume, confirming a strong short-term downtrend and market underperformance.",
+          "disagreement": "I disagree with the long-term bearish conclusion of the market_technical agent. While the technical breakdown is severe, it appears to be a short-term market reaction to the news of increased future capital expenditures ('forecasts big 2026 AI spending'). I interpret this spending as a long-term positive for the fundamental thesis, whereas the market is pricing in short-term margin pressure. The technicals are reflecting the 'what' (price drop), while the fundamentals and news explain the 'why' (fear of CapEx), which I view as a long-term strength.",
+          "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.5,
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Price action confirmation: Does the stock price reclaim key moving averages, particularly the 200-day MA, on convincing volume? This would validate the fundamental strength and invalidate the technical breakdown.",
-            "Qualitative earnings context: The fundamental agent noted the absence of management guidance and tone. Access to the earnings call transcript and analyst consensus revisions post-earnings is crucial to determine if the market fully buys into the long-term growth story.",
-            "Confirmation of seasonality: Verifying if the observed quarter-over-quarter declines are typical seasonal patterns for Meta would help contextualize the fundamental agent's data."
+            "The core missing piece of evidence remains a breakdown of revenue and, more importantly, profit/loss by business segment (e.g., Family of Apps vs. Reality Labs). This would allow for a more precise analysis of where the increased AI CapEx is being allocated and what the expected ROI is for each segment.",
+            "An updated balance sheet to understand the financing plan for the increased debt and capital expenditures.",
+            "Specifics from the earnings call transcript regarding the 'real-time evidence of ROI on AI CapEx' mentioned in news headlines."
           ]
         },
         {
-          "response_type": "revision",
+          "response_type": "CIO Committee Revision",
           "agreement": {
-            "agent_name": [
-              "market_technical",
-              "news_macro"
-            ],
-            "rationale": "I agree with the factual evidence presented by both agents. The market_technical agent correctly identifies a severe technical breakdown, with price falling below all key moving averages on high volume, which is an objective observation of the market's negative reaction. I also agree with the substance of the news headlines provided by the news_macro agent, which indicate a revenue beat but also a forecast for significantly higher capital expenditures ('big 2026 AI spending'). These headlines fill in the qualitative gaps from my original analysis."
+            "agent_name": "fundamental",
+            "rationale": "I agree with the fundamental agent's assessment of strong long-term fundamentals. The evidence of robust year-over-year growth in revenue (+33.1%) and earnings (+62.4%) provides a compelling counter-narrative to a long-term bearish stance. I also agree that the quarter-over-quarter declines in revenue and operating income are a significant data point, as they provide a potential fundamental justification for the negative price action my technical indicators have flagged."
           },
           "disagreement": {
-            "agent_name": [
-              "market_technical"
-            ],
-            "rationale": "I disagree with the long-term conclusion of the market_technical agent. While the bearish technicals are valid, they represent the market's immediate, negative reaction to the high capex guidance. My fundamental interpretation is that this spending is a necessary and ultimately bullish investment in future growth (e.g., AI). Therefore, I see the technical breakdown not as a signal of long-term fundamental decay, but as a short-term, fear-driven sell-off that creates a potential long-term opportunity. The market is punishing the stock for what I believe is the correct long-term strategy."
+            "agent_name": "news_macro",
+            "rationale": "I disagree with the bullish conclusion from the news_macro agent. The agent itself notes its low confidence (0.35) and heuristic nature. While the cited headlines about earnings beats are factually correct, my technical indicators show the market's ultimate reaction to the totality of the earnings event (including any guidance) was a high-volume sell-off. Price action trumps stale news headlines. The market has digested that 'good news' and has subsequently voted to sell, making the current technical reality more relevant than the news agent's stance."
           },
-          "revised_view": {
-            "ticker": "META",
-            "company": "Meta Platforms",
-            "agent_name": "fundamental",
-            "short_term_stance": "Bearish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.7,
-            "confidence_rationale": "Confidence has increased because the news_macro agent's evidence filled critical gaps in my original analysis regarding guidance and analyst sentiment. The picture is now clearer, albeit more contentious. The thesis is now a contrarian one: betting that the market is misinterpreting necessary long-term AI investment as a short-term negative. The clarity of this conflict between strong fundamentals/strategy and poor technicals increases conviction in the revised stance.",
-            "stance_rationale": "The short-term stance is revised to Bearish to reflect the overwhelming negative technical picture presented by the market_technical agent; a high-volume break below the 200-day MA cannot be ignored. However, the long-term stance remains Bullish and is, in fact, reinforced. Evidence from the news_macro agent confirms strong results and highlights a strategic increase in AI capex. While the market has sold off on this news, I view this as a positive long-term investment, creating a disconnect between current price and long-term fundamental value.",
-            "key_signals": [
-              "Confirmation of strong YoY growth and a revenue beat for Q4 (per news_macro agent).",
-              "Guidance for 'big 2026 AI spending' which, while spooking the market, underpins the long-term AI growth thesis (per news_macro agent).",
-              "A severe technical breakdown below the 200-day MA on high volume, confirming a strong negative market sentiment in the short term (per market_technical agent).",
-              "The significant divergence between strong reported fundamentals and a deeply negative market price reaction."
-            ],
-            "risks": [
-              "The primary risk is that the market's bearish view is correct, and the increased capex will lead to prolonged margin compression and value destruction without a clear return on investment.",
-              "The decisively bearish technical picture could signal a longer-term downtrend that overwhelms the fundamental story for an extended period.",
-              "Without the full context of the earnings call, the interpretation of the 'big 2026 AI spending' is based on headlines alone and may lack critical nuance regarding its impact on profitability."
-            ]
-          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.75,
+          "revision_rationale": "I am maintaining my short-term Bearish stance, as the technical breakdown on high volume remains the most dominant, recent signal. However, I am revising my long-term stance from Bearish to Neutral. The fundamental agent presented compelling evidence of strong YoY growth that undermines a long-term bearish thesis. The current price action is now viewed as a significant short/medium-term correction rather than the start of a definitive long-term downtrend. Confidence is slightly reduced from 0.85 to 0.75 to reflect the new conflict between the bearish short-term technicals and the strong long-term fundamentals.",
           "evidence_needed": [
-            "The full earnings call transcript to understand management's detailed commentary on the scale, timeline, and expected ROI of the increased 2026 capital expenditures.",
-            "A segment breakdown of the capex to differentiate between core infrastructure maintenance and strategic AI investments.",
-            "Updated analyst reports and price targets post-earnings to quantify the shift in consensus estimates and sentiment.",
-            "Data on whether the technical breakdown has found any support at subsequent levels or if momentum is continuing to accelerate downwards."
+            "Management guidance for the upcoming quarter and full year, which was not provided in the fundamental analysis.",
+            "The earnings call transcript to understand management's qualitative tone and commentary, which could explain the divergence between strong YoY results and the negative market reaction.",
+            "Post-earnings analyst consensus revisions to see if the street is lowering future expectations, which would validate the technical sell-off."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "An override of the initial purely technical or purely news-driven views is justified. The debate successfully synthesized the conflicting data points into a coherent, contrarian thesis. The committee reached a strong post-debate consensus: respect the market's short-term bearish price action, but recognize that it is driven by a fear of long-term investments that we believe are fundamentally bullish. The final decision aligns with the deterministic guardrail's post-debate calculation, confirming the soundness of the converged view.",
+    "reason_for_final_decision": "The final decision is an override of the initial divided agent views, based on the strong consensus that emerged during the debate. The evidence is clear: the market has sold off on fears of future spending, while the company's current growth is exceptionally strong. The technical agent's willingness to upgrade its long-term view from Bearish to Neutral after seeing the fundamental data was a pivotal moment, confirming that the long-term bearish case is weak. Therefore, we are adopting the consensus view: tactically bearish in the short-term, but strategically bullish in the long-term, viewing the current weakness as an opportunity.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.75,
+          "confidence": 0.7,
           "weight": 0.35,
-          "contribution": -0.2625
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.5,
-          "weight": 0.45,
-          "contribution": 0.0
+          "contribution": -0.245
         },
         {
           "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.6,
-          "weight": 0.2,
-          "contribution": 0.0
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.1,
+          "contribution": -0.08
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.75,
+          "weight": 0.55,
+          "contribution": -0.4125
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
-          "confidence": 0.75,
+          "confidence": 0.7,
           "weight": 0.35,
-          "contribution": 0.2625
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
+          "contribution": 0.245
         },
         {
           "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.6,
+          "stance": "Bullish",
+          "confidence": 0.8,
           "weight": 0.45,
+          "contribution": 0.36
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.75,
+          "weight": 0.2,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.4321,
-      "long": 0.5731
+      "short": -1.0,
+      "long": 0.8013
     },
     "llm_decision_used": true
   }

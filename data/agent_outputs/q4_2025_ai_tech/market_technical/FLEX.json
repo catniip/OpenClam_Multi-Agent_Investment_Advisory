@@ -4,60 +4,60 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.8,
-  "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
+  "confidence": 0.75,
+  "confidence_rationale": "Confidence is high due to the alignment of price above key moving averages, positive MACD momentum, and strong relative outperformance. It is tempered by the overbought RSI reading and the lack of a volume surge on the latest price advance, which could signal short-term exhaustion.",
   "key_signals": [
     {
       "type": "Moving Averages",
       "signal": "Strong Bullish Trend Structure",
-      "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
+      "evidence": "Price (91.84) is significantly above its MA20 (83.39) and MA50 (72.03), indicating a robust uptrend."
     },
     {
       "type": "MACD",
       "signal": "Bullish Momentum Confirmation",
-      "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
+      "evidence": "MACD line (6.05) is above the signal line (5.68) with a positive histogram, confirming upward momentum is intact."
     },
     {
       "type": "Relative Strength",
       "signal": "Significant Market Outperformance",
-      "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-    },
-    {
-      "type": "RSI",
-      "signal": "Overbought Condition",
-      "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-    },
-    {
-      "type": "Market Regime",
-      "signal": "Confirmed Bull Trend",
-      "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
+      "evidence": "The stock has outperformed the SPY benchmark by 46.43% over the measured period, indicating strong market leadership."
     },
     {
       "type": "Drawdown",
-      "signal": "Price at New High",
-      "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
+      "signal": "Trading at Recent Highs",
+      "evidence": "Current drawdown is 0.0%, confirming the price is at its peak for the lookback period."
+    },
+    {
+      "type": "RSI",
+      "signal": "Overbought Momentum",
+      "evidence": "RSI is at 73.82, which is above the 70 threshold, suggesting the asset is potentially overbought and could be due for a pause or pullback."
     },
     {
       "type": "Volume",
-      "signal": "Weakening Conviction",
-      "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-    },
-    {
-      "type": "Returns",
-      "signal": "Strong Short-Term Gains",
-      "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
+      "signal": "Lack of Conviction",
+      "evidence": "The latest volume is below the recent average (spike ratio of 0.70), suggesting the recent price push was not supported by strong participation."
     },
     {
       "type": "Volatility",
-      "signal": "moderate volatility",
-      "evidence": "Annualized volatility 43.09%, Recent 38.09%"
+      "signal": "High-Risk Environment",
+      "evidence": "Annualized volatility is high at 52.75%, implying a greater potential for large price swings."
+    },
+    {
+      "type": "Market Regime",
+      "signal": "High Volatility Bullish",
+      "evidence": "The market regime is identified as 'high_volatility_bullish', which contextualizes the uptrend within a risky, volatile environment."
+    },
+    {
+      "type": "Returns",
+      "signal": "positive short-term momentum",
+      "evidence": "Mean of recent returns: 0.89%"
     }
   ],
   "risks": [
-    "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-    "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-    "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
+    "The RSI is in overbought territory (73.82), which heightens the risk of a short-term price correction or consolidation.",
+    "The recent price advance occurred on below-average volume, which can be a sign of weakening conviction in the uptrend.",
+    "High annualized volatility (52.75%) increases the potential for sharp, adverse price movements, raising downside risk."
   ],
-  "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-  "core_insight": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
+  "summary": "FLEX is in a strong bullish trend, evidenced by its position well above the 20-day and 50-day moving averages and significant outperformance relative to the broader market. Momentum is confirmed by a bullish MACD. However, short-term caution is warranted as the RSI indicates overbought conditions and the recent price advance was not supported by high volume, suggesting a potential for consolidation or a pullback in a high-volatility setting.",
+  "core_insight": "The dominant technical picture is a powerful, high-momentum uptrend that is becoming extended. The primary risk is short-term exhaustion, as signaled by the overbought RSI and low-volume advance, creating a conflict between the strong trend and the potential for a near-term reversal."
 }

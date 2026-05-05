@@ -11,23 +11,23 @@
         "rationale": "Short-term: The negative market reaction to a soft revenue guide, despite a huge EPS beat, signals that investor expectations for growth are not being met. The stock will likely underperform as the narrative shifts to 'AI laggard' and growth deceleration. Long-term: While the company is a cash-flow machine with a large buyback for support, it will likely lag the QQQ and AI leaders until it can demonstrate a re-acceleration in top-line growth. The stock is in a 'show-me' phase, and without a clear growth catalyst, it risks multiple compression as capital flows to clearer AI winners."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company presents conflicting signals with strong quarter-over-quarter revenue and cash flow growth, but a concerning decline in operating and net income. This suggests top-line momentum is robust, but profitability and margins were under pressure in the recent quarter, warranting close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
       }
     ],
     "areas_of_agreement": [
       "2 agents lean neutral on the short-term horizon.",
-      "2 agents lean bearish on the long-term horizon."
+      "2 agents lean neutral on the long-term horizon."
     ],
     "areas_of_disagreement": [],
     "missing_information": [],
@@ -38,8 +38,8 @@
     },
     "long_stance_counts": {
       "Bullish": 0,
-      "Neutral": 1,
-      "Bearish": 2
+      "Neutral": 2,
+      "Bearish": 1
     },
     "agent_packets": [
       {
@@ -441,261 +441,6 @@
       {
         "ticker": "CRM",
         "company": "Salesforce",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-        "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Long-Term Bearish Trend",
-            "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction Rally",
-            "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Price Depreciation",
-            "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Consolidation",
-            "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.02%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-          }
-        ],
-        "risks": [
-          "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-          "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-          "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-        ],
-        "citations": [],
-        "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-        "raw_packet": {
-          "ticker": "CRM",
-          "company": "Salesforce",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-          "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Long-Term Bearish Trend",
-              "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Rally",
-              "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Price Depreciation",
-              "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.02%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-            }
-          ],
-          "risks": [
-            "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-            "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-            "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-          ],
-          "citations": [],
-          "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-          "raw_packet": {
-            "ticker": "CRM",
-            "company": "Salesforce",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-            "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Long-Term Bearish Trend",
-                "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Rally",
-                "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Price Depreciation",
-                "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.02%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-              }
-            ],
-            "risks": [
-              "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-              "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-              "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-            ],
-            "citations": [],
-            "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-            "raw_packet": {
-              "ticker": "CRM",
-              "company": "Salesforce",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Long-Term Bearish Trend",
-                  "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Rally",
-                  "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Price Depreciation",
-                  "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.02%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-                }
-              ],
-              "risks": [
-                "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-                "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-                "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-              ],
-              "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-              "core_insight": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "CRM",
-        "company": "Salesforce",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -857,6 +602,261 @@
             }
           }
         }
+      },
+      {
+        "ticker": "CRM",
+        "company": "Salesforce",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+        "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+        "key_signals": [
+          {
+            "type": "MACD",
+            "signal": "bullish crossover",
+            "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "mixed trend alignment",
+            "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+          },
+          {
+            "type": "RSI",
+            "signal": "bullish momentum",
+            "evidence": "RSI at 53.43"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.62x"
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "underperforming benchmark",
+            "evidence": "Relative return vs SPY: -8.37%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.02%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+          }
+        ],
+        "risks": [
+          "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+          "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+          "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+        ],
+        "citations": [],
+        "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+        "raw_packet": {
+          "ticker": "CRM",
+          "company": "Salesforce",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+          "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "bullish crossover",
+              "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "mixed trend alignment",
+              "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 53.43"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.62x"
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "underperforming benchmark",
+              "evidence": "Relative return vs SPY: -8.37%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.02%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+            }
+          ],
+          "risks": [
+            "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+            "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+            "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+          ],
+          "citations": [],
+          "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+          "raw_packet": {
+            "ticker": "CRM",
+            "company": "Salesforce",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+            "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "bullish crossover",
+                "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "mixed trend alignment",
+                "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 53.43"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.62x"
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "underperforming benchmark",
+                "evidence": "Relative return vs SPY: -8.37%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.02%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+              }
+            ],
+            "risks": [
+              "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+              "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+              "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+            ],
+            "citations": [],
+            "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+            "raw_packet": {
+              "ticker": "CRM",
+              "company": "Salesforce",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "bullish crossover",
+                  "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "mixed trend alignment",
+                  "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 53.43"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.62x"
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "underperforming benchmark",
+                  "evidence": "Relative return vs SPY: -8.37%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.02%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+                }
+              ],
+              "risks": [
+                "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+                "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+                "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+              ],
+              "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+              "core_insight": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
+            }
+          }
+        }
       }
     ]
   },
@@ -881,23 +881,23 @@
           "rationale": "Short-term: The negative market reaction to a soft revenue guide, despite a huge EPS beat, signals that investor expectations for growth are not being met. The stock will likely underperform as the narrative shifts to 'AI laggard' and growth deceleration. Long-term: While the company is a cash-flow machine with a large buyback for support, it will likely lag the QQQ and AI leaders until it can demonstrate a re-acceleration in top-line growth. The stock is in a 'show-me' phase, and without a clear growth catalyst, it risks multiple compression as capital flows to clearer AI winners."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "The company presents conflicting signals with strong quarter-over-quarter revenue and cash flow growth, but a concerning decline in operating and net income. This suggests top-line momentum is robust, but profitability and margins were under pressure in the recent quarter, warranting close monitoring."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
         }
       ],
       "areas_of_agreement": [
         "2 agents lean neutral on the short-term horizon.",
-        "2 agents lean bearish on the long-term horizon."
+        "2 agents lean neutral on the long-term horizon."
       ],
       "areas_of_disagreement": [],
       "missing_information": [],
@@ -908,8 +908,8 @@
       },
       "long_stance_counts": {
         "Bullish": 0,
-        "Neutral": 1,
-        "Bearish": 2
+        "Neutral": 2,
+        "Bearish": 1
       },
       "agent_packets": [
         {
@@ -1442,325 +1442,6 @@
         {
           "ticker": "CRM",
           "company": "Salesforce",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-          "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Long-Term Bearish Trend",
-              "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Rally",
-              "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Price Depreciation",
-              "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.02%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-            }
-          ],
-          "risks": [
-            "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-            "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-            "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-          ],
-          "citations": [],
-          "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-          "raw_packet": {
-            "ticker": "CRM",
-            "company": "Salesforce",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-            "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Long-Term Bearish Trend",
-                "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Rally",
-                "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Price Depreciation",
-                "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.02%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-              }
-            ],
-            "risks": [
-              "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-              "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-              "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-            ],
-            "citations": [],
-            "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-            "raw_packet": {
-              "ticker": "CRM",
-              "company": "Salesforce",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-              "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Long-Term Bearish Trend",
-                  "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Rally",
-                  "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Price Depreciation",
-                  "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.02%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-                }
-              ],
-              "risks": [
-                "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-                "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-                "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-              ],
-              "citations": [],
-              "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-              "raw_packet": {
-                "ticker": "CRM",
-                "company": "Salesforce",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-                "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Long-Term Bearish Trend",
-                    "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Low Conviction Rally",
-                    "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Severe Price Depreciation",
-                    "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral Momentum",
-                    "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Consolidation",
-                    "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.02%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-                  }
-                ],
-                "risks": [
-                  "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-                  "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-                  "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-                ],
-                "citations": [],
-                "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-                "raw_packet": {
-                  "ticker": "CRM",
-                  "company": "Salesforce",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Long-Term Bearish Trend",
-                      "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Low Conviction Rally",
-                      "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Severe Price Depreciation",
-                      "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral Momentum",
-                      "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Consolidation",
-                      "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.02%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-                    }
-                  ],
-                  "risks": [
-                    "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-                    "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-                    "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-                  ],
-                  "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-                  "core_insight": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "CRM",
-          "company": "Salesforce",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1958,6 +1639,325 @@
                     "thesis_impact": "Unclear",
                     "thesis_impact_reasoning": "The fundamental picture is mixed. While strong QoQ revenue and free cash flow growth are positive, the decline in QoQ operating and net income introduces concerns about margin compression. Without a pre-existing thesis, it is unclear whether these results would strengthen or weaken the investment case."
                   }
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "CRM",
+          "company": "Salesforce",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+          "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "bullish crossover",
+              "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "mixed trend alignment",
+              "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 53.43"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.62x"
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "underperforming benchmark",
+              "evidence": "Relative return vs SPY: -8.37%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.02%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+            }
+          ],
+          "risks": [
+            "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+            "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+            "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+          ],
+          "citations": [],
+          "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+          "raw_packet": {
+            "ticker": "CRM",
+            "company": "Salesforce",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+            "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "bullish crossover",
+                "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "mixed trend alignment",
+                "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 53.43"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.62x"
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "underperforming benchmark",
+                "evidence": "Relative return vs SPY: -8.37%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.02%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+              }
+            ],
+            "risks": [
+              "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+              "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+              "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+            ],
+            "citations": [],
+            "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+            "raw_packet": {
+              "ticker": "CRM",
+              "company": "Salesforce",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+              "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "bullish crossover",
+                  "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "mixed trend alignment",
+                  "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 53.43"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.62x"
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "underperforming benchmark",
+                  "evidence": "Relative return vs SPY: -8.37%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.02%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+                }
+              ],
+              "risks": [
+                "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+                "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+                "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+              ],
+              "citations": [],
+              "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+              "raw_packet": {
+                "ticker": "CRM",
+                "company": "Salesforce",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Neutral",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+                "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+                "key_signals": [
+                  {
+                    "type": "MACD",
+                    "signal": "bullish crossover",
+                    "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "mixed trend alignment",
+                    "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "bullish momentum",
+                    "evidence": "RSI at 53.43"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "weak participation",
+                    "evidence": "Volume spike ratio 0.62x"
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "underperforming benchmark",
+                    "evidence": "Relative return vs SPY: -8.37%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "range_bound",
+                    "evidence": "Regime classification: range_bound"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.02%"
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "contained drawdown",
+                    "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+                  }
+                ],
+                "risks": [
+                  "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+                  "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+                  "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+                ],
+                "citations": [],
+                "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+                "raw_packet": {
+                  "ticker": "CRM",
+                  "company": "Salesforce",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "neutral",
+                  "confidence": 0.7,
+                  "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+                  "key_signals": [
+                    {
+                      "type": "MACD",
+                      "signal": "bullish crossover",
+                      "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "mixed trend alignment",
+                      "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "bullish momentum",
+                      "evidence": "RSI at 53.43"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "weak participation",
+                      "evidence": "Volume spike ratio 0.62x"
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "underperforming benchmark",
+                      "evidence": "Relative return vs SPY: -8.37%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "range_bound",
+                      "evidence": "Regime classification: range_bound"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.02%"
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "contained drawdown",
+                      "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+                    }
+                  ],
+                  "risks": [
+                    "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+                    "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+                    "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+                  ],
+                  "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+                  "core_insight": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
                 }
               }
             }
@@ -2366,261 +2366,6 @@
       {
         "ticker": "CRM",
         "company": "Salesforce",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-        "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Long-Term Bearish Trend",
-            "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction Rally",
-            "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Price Depreciation",
-            "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Consolidation",
-            "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.02%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-          }
-        ],
-        "risks": [
-          "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-          "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-          "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-        ],
-        "citations": [],
-        "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-        "raw_packet": {
-          "ticker": "CRM",
-          "company": "Salesforce",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-          "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Long-Term Bearish Trend",
-              "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Rally",
-              "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Price Depreciation",
-              "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.02%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-            }
-          ],
-          "risks": [
-            "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-            "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-            "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-          ],
-          "citations": [],
-          "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-          "raw_packet": {
-            "ticker": "CRM",
-            "company": "Salesforce",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-            "stance_rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Long-Term Bearish Trend",
-                "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Rally",
-                "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Price Depreciation",
-                "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.02%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-              }
-            ],
-            "risks": [
-              "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-              "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-              "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-            ],
-            "citations": [],
-            "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-            "raw_packet": {
-              "ticker": "CRM",
-              "company": "Salesforce",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate. The long-term bearish trend is well-established and clear. However, the short-term stance is neutral due to conflicting signals: bullish momentum indicators (MACD crossover) are fighting against overhead resistance (MA50) and are not confirmed by volume, creating ambiguity for the immediate path.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Long-Term Bearish Trend",
-                  "evidence": "Price at $185.48 is 18.4% below the 200-day moving average of $227.37, indicating a significant long-term downtrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-1.10) above the signal line (-2.13), and a positive histogram (1.03) suggests recent upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Rally",
-                  "evidence": "Recent trading volume is below average (spike ratio of 0.62), suggesting a lack of strong participation or conviction behind the recent price bounce."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -60.34% over the period, highlighting profound relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Price Depreciation",
-                  "evidence": "The stock was in a significant drawdown of -35.8% from its peak, indicating substantial downside risk has been realized and the trend is weak."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 52.76 is in neutral territory, not indicating overbought or oversold conditions and aligning with a range-bound market regime."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The stock is classified as being in a 'range_bound' regime, suggesting a period of consolidation after a significant trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.02%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 34.78%, Recent 50.57%"
-                }
-              ],
-              "risks": [
-                "The ongoing bounce could fail at the 50-day moving average, especially given the low volume, leading to a continuation of the long-term downtrend.",
-                "Elevated recent volatility (50.57%) increases price instability and the potential for sharp, unpredictable moves in either direction.",
-                "A sustained push above the MA50 on increasing volume could invalidate the neutral short-term stance and signal a more durable recovery attempt."
-              ],
-              "summary": "As of this date, CRM was in a confirmed long-term downtrend, trading significantly below its 200-day moving average and drastically underperforming the broader market. A short-term counter-trend rally was in progress, confirmed by a bullish MACD crossover. However, this bounce faced immediate resistance at the 50-day MA and was characterized by weak volume, suggesting it was likely a relief rally rather than a major trend reversal.",
-              "core_insight": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "CRM",
-        "company": "Salesforce",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -2782,6 +2527,261 @@
             }
           }
         }
+      },
+      {
+        "ticker": "CRM",
+        "company": "Salesforce",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+        "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+        "key_signals": [
+          {
+            "type": "MACD",
+            "signal": "bullish crossover",
+            "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "mixed trend alignment",
+            "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+          },
+          {
+            "type": "RSI",
+            "signal": "bullish momentum",
+            "evidence": "RSI at 53.43"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.62x"
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "underperforming benchmark",
+            "evidence": "Relative return vs SPY: -8.37%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.02%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+          }
+        ],
+        "risks": [
+          "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+          "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+          "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+        ],
+        "citations": [],
+        "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+        "raw_packet": {
+          "ticker": "CRM",
+          "company": "Salesforce",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+          "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "bullish crossover",
+              "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "mixed trend alignment",
+              "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 53.43"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.62x"
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "underperforming benchmark",
+              "evidence": "Relative return vs SPY: -8.37%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.02%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+            }
+          ],
+          "risks": [
+            "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+            "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+            "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+          ],
+          "citations": [],
+          "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+          "raw_packet": {
+            "ticker": "CRM",
+            "company": "Salesforce",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+            "stance_rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "bullish crossover",
+                "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "mixed trend alignment",
+                "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 53.43"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.62x"
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "underperforming benchmark",
+                "evidence": "Relative return vs SPY: -8.37%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.02%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+              }
+            ],
+            "risks": [
+              "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+              "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+              "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+            ],
+            "citations": [],
+            "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+            "raw_packet": {
+              "ticker": "CRM",
+              "company": "Salesforce",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because while momentum indicators like the MACD crossover and RSI are bullish, they are contradicted by weak volume, relative underperformance against the benchmark, and the price's position below the key 50-day moving average. The 'range_bound' market regime further tempers conviction in a strong directional move.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "bullish crossover",
+                  "evidence": "MACD -0.732, Signal -1.593, Histogram 0.861"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "mixed trend alignment",
+                  "evidence": "Price 185.48, MA20 179.13, MA50 186.34"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 53.43"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.62x"
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "underperforming benchmark",
+                  "evidence": "Relative return vs SPY: -8.37%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 42.6%, Recent 50.57%"
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.02%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.0%, Max drawdown -18.18%"
+                }
+              ],
+              "risks": [
+                "The price is trading below the 50-day moving average ($186.34), which may act as significant resistance and cap upside potential.",
+                "The recent bullish momentum is not confirmed by strong volume, suggesting a lack of conviction and a higher risk of a failed rally.",
+                "Significant underperformance relative to the S&P 500 benchmark indicates the stock is a laggard, which could remain a headwind."
+              ],
+              "summary": "CRM is exhibiting a short-term bullish momentum shift, evidenced by a MACD crossover and an RSI above 50. However, this is contradicted by weak volume and immediate resistance at the 50-day moving average. The stock's significant underperformance against the broader market and its classification within a 'range_bound' regime suggest that a sustained breakout is unlikely, favoring continued consolidation.",
+              "core_insight": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
+            }
+          }
+        }
       }
     ]
   },
@@ -2789,23 +2789,23 @@
     "ticker": "CRM",
     "company": "Salesforce",
     "final_short_term_stance": "Bearish",
-    "final_long_term_stance": "Bearish",
-    "investment_action": "Avoid / Short",
-    "position_size_hint": "Small",
-    "confidence": 0.7,
-    "core_thesis": "The market is punishing Salesforce for its decelerating revenue growth and a perceived weak AI monetization story, overlooking its strong profitability and cash flow. This narrative disconnect will likely lead to continued underperformance relative to AI-centric peers until a clear re-acceleration catalyst emerges.",
-    "why_now": "The recent Q4 earnings report, featuring a soft forward revenue guide, has crystallized the 'growth deceleration' narrative. This acts as a catalyst for the stock to enter a 'show-me' phase with investors, where strong profitability is overshadowed by concerns about its competitive positioning in the AI era, leading to likely multiple compression and underperformance.",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Avoid / Reduce",
+    "position_size_hint": "Underweight",
+    "confidence": 0.557,
+    "core_thesis": "The market is now prioritizing AI-driven growth over profitability for software giants. Salesforce's weak revenue guidance, despite strong EPS, has repositioned it as an 'AI laggard,' leading to a narrative-driven repricing and likely near-term underperformance. The stock is now in 'purgatory' until it can prove a path to re-accelerated growth.",
+    "why_now": "The recent Q4 earnings report crystallized the conflict between Salesforce's strong profitability and its decelerating growth profile. The market's sharp negative reaction to the soft revenue guidance signals that the investment narrative has shifted, making the stock vulnerable to underperformance as capital seeks clearer AI growth stories.",
     "key_supporting_evidence": [
-      "The market's negative price reaction to the Q4 earnings report, where a soft revenue guide overshadowed a strong EPS beat, indicates investor priorities have shifted to top-line growth and AI narrative strength.",
-      "The stock is in a confirmed long-term downtrend, trading 18.4% below its 200-day moving average and showing significant relative underperformance versus the S&P 500.",
-      "Weakness from CRM reinforces the narrative of capital and budget consolidation towards perceived enterprise AI winners, such as Microsoft.",
-      "The technical agent noted that a recent bounce attempt was on low volume, suggesting a 'low conviction rally' that is unlikely to reverse the dominant downtrend."
+      "The post-earnings stock decline despite a significant EPS beat, indicating the market is solely focused on the weak revenue guidance and perceived AI strategy weakness.",
+      "The news_macro agent's high-confidence assessment that the narrative has shifted to 'AI laggard', which will likely cause multiple compression as capital flows to perceived winners like MSFT.",
+      "The market_technical agent's observation of significant relative underperformance against the SPY benchmark (-8.37%) and a 'range_bound' regime, suggesting a lack of catalysts for a near-term breakout.",
+      "The fundamental agent's (albeit low-confidence) report of a quarter-over-quarter decline in Operating and Net Income, hinting at margin pressure that contradicts the strong cash flow story."
     ],
     "key_risks": [
-      "The massive $50B share buyback program could provide a technical floor for the stock price, muting downside potential.",
-      "A broader market rotation from a 'growth/AI' focus to a 'value/GARP' (Growth at a Reasonable Price) focus would benefit CRM due to its strong profitability and free cash flow generation.",
-      "The company successfully re-accelerates growth or announces a new, credible AI product strategy that changes the current market narrative.",
-      "Competitors also show signs of slowing, reframing CRM's performance as a sector-wide issue rather than a company-specific one."
+      "The massive $50B share buyback program could provide a technical floor for the stock, limiting downside and frustrating a bearish thesis.",
+      "A broader market rotation from 'AI growth' to 'Value/GARP' would benefit CRM due to its strong profitability, cash flow, and more reasonable forward P/E.",
+      "Management could successfully re-accelerate growth or demonstrate a clear AI monetization strategy in the coming quarters, quickly reversing the negative narrative.",
+      "The weakness in enterprise software spending could be cyclical, not structural, and a macro improvement could lift all boats, including CRM."
     ],
     "agent_view_summary": [
       {
@@ -2816,18 +2816,18 @@
         "rationale": "Short-term: The negative market reaction to a soft revenue guide, despite a huge EPS beat, signals that investor expectations for growth are not being met. The stock will likely underperform as the narrative shifts to 'AI laggard' and growth deceleration. Long-term: While the company is a cash-flow machine with a large buyback for support, it will likely lag the QQQ and AI leaders until it can demonstrate a re-acceleration in top-line growth. The stock is in a 'show-me' phase, and without a clear growth catalyst, it risks multiple compression as capital flows to clearer AI winners."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The core technical conflict was between a nascent short-term rebound (MACD crossover, price above MA20) and a dominant long-term bear trend. The lack of volume confirmation for the bounce was a critical non-confirmation, suggesting the path of least resistance remained to the downside over the medium to long term."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company presents conflicting signals with strong quarter-over-quarter revenue and cash flow growth, but a concerning decline in operating and net income. This suggests top-line momentum is robust, but profitability and margins were under pressure in the recent quarter, warranting close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "rationale": "A classic bullish momentum signal (MACD crossover) is present but lacks confirmation from volume and faces immediate resistance from the 50-day moving average. This conflict within a range-bound, underperforming context suggests a high probability of a failed rally rather than the start of a new uptrend."
       }
     ],
     "debate_summary": {
@@ -2838,7 +2838,7 @@
       ],
       "debate_responses": []
     },
-    "reason_for_final_decision": "I am confirming the deterministic guardrail's bearish conclusion. The weight of the evidence, particularly from the high-confidence news_macro agent, points to a clear narrative shift against Salesforce following its earnings report. The market is currently focused on growth and AI, and CRM's guidance has positioned it as a laggard. The technical picture confirms this weakness with a long-term downtrend. While the fundamental agent is neutral due to missing data, it does not provide a compelling counter-thesis. The primary risks (buyback, value rotation) warrant a smaller position size, but do not invalidate the core bearish thesis.",
+    "reason_for_final_decision": "The committee's decision is an override of the deterministic guardrail's long-term view. We concur with the guardrail's 'Bearish' short-term stance, driven by the compelling, high-confidence analysis from the news_macro agent following the earnings report. The market's reaction is a clear signal of a negative narrative shift that will pressure the stock. However, we are overriding the long-term 'Bearish' stance to 'Neutral'. Salesforce remains a cash-flow machine with a dominant market position and a massive buyback. While it is a 'show-me story' and likely to underperform, an outright long-term Bearish call is premature. The stock is on the sidelines, not broken. Therefore, the appropriate action is to Avoid or Reduce exposure.",
     "agent_votes": {
       "short": [
         {
@@ -2849,17 +2849,17 @@
           "contribution": -0.28
         },
         {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.0
-        },
-        {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.7,
+          "weight": 0.55,
           "contribution": 0.0
         }
       ],
@@ -2872,24 +2872,24 @@
           "contribution": -0.28
         },
         {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": -0.15
-        },
-        {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
           "weight": 0.45,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.7,
+          "weight": 0.2,
+          "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.4133,
-      "long": -0.7611
+      "short": -0.4029,
+      "long": -0.5045
     },
     "llm_decision_used": true
   }

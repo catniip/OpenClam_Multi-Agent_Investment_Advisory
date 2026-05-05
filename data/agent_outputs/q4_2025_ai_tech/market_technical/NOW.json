@@ -4,43 +4,43 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "neutral",
   "long_term_stance": "bearish",
-  "confidence": 0.85,
-  "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
+  "confidence": 0.75,
+  "confidence_rationale": "Confidence is solid but not absolute. While the dominant trend is clearly bearish (price below key MAs, negative relative strength), a recent MACD bullish crossover introduces a counter-signal, suggesting a potential for a short-term bounce or consolidation, which tempers conviction in an immediate continuation of the downtrend.",
   "key_signals": [
     {
       "type": "Moving Averages",
-      "signal": "Established Bearish Trend",
-      "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-    },
-    {
-      "type": "Market Regime",
-      "signal": "Confirmed Bearish Environment",
-      "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Severe Drawdown",
-      "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-    },
-    {
-      "type": "Relative Strength",
-      "signal": "Significant Underperformance",
-      "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
+      "signal": "Bearish Trend Structure",
+      "evidence": "Price at $91.97 is trading below both its 20-day ($92.71) and 50-day ($102.99) moving averages."
     },
     {
       "type": "MACD",
-      "signal": "Nascent Bullish Momentum Shift",
-      "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
+      "signal": "Potential Bullish Momentum Shift",
+      "evidence": "A bullish crossover has occurred, with the MACD line (-3.38) crossing above its signal line (-3.58). This is an early sign of waning bearish momentum."
     },
     {
       "type": "RSI",
       "signal": "Weak Momentum",
-      "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
+      "evidence": "The RSI is 44.85, which is below the neutral 50 level, indicating that bears still have control, though the stock is not in oversold territory."
+    },
+    {
+      "type": "Relative Strength",
+      "signal": "Significant Underperformance",
+      "evidence": "The stock has underperformed the SPY benchmark by -16.64% over the analysis period, indicating significant relative weakness."
     },
     {
       "type": "Volume",
-      "signal": "Low Conviction on Recent Moves",
-      "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
+      "signal": "Lack of Conviction",
+      "evidence": "Recent volume is below average (volume spike ratio 0.73), suggesting the recent bounce lacks strong participation and conviction."
+    },
+    {
+      "type": "Market Regime",
+      "signal": "High-Risk Bearish Environment",
+      "evidence": "The stock is operating in a 'high_volatility_bearish' regime, characterized by instability and a downward trend."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "In Significant Downtrend",
+      "evidence": "The stock is currently 26.03% below its recent peak, confirming it is in a major drawdown."
     },
     {
       "type": "Returns",
@@ -49,14 +49,15 @@
     },
     {
       "type": "Volatility",
-      "signal": "moderate volatility",
-      "evidence": "Annualized volatility 42.87%, Recent 91.59%"
+      "signal": "high volatility",
+      "evidence": "Annualized volatility 63.74%, Recent 91.59%"
     }
   ],
   "risks": [
-    "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-    "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
+    "A 'bull trap' is a primary risk, where the nascent bounce signaled by the MACD fails at overhead resistance (e.g., the 20-day MA), leading to a swift reversal lower.",
+    "Persistently high volatility (63.7% annualized) increases the risk of large, unpredictable price swings in both directions, making risk management difficult.",
+    "The bullish MACD crossover is happening while the indicator is well below the zero line, which typically signals a weaker, less reliable reversal compared to a crossover occurring above the zero line."
   ],
-  "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-  "core_insight": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
+  "summary": "ServiceNow (NOW) is in a confirmed bearish trend, trading below its key moving averages and significantly underperforming the market. However, there are early signs of waning bearish momentum, evidenced by a bullish MACD crossover. This bounce attempt is viewed with caution as it lacks volume confirmation and faces immediate overhead resistance from the 20-day MA. The overall context remains a high-volatility, bearish environment.",
+  "core_insight": "The primary conflict is between the strongly established bearish trend and a nascent counter-trend signal from the MACD. This suggests that while a short-term bounce is possible, it is likely to be a selling opportunity as it approaches overhead resistance, rather than the start of a sustained new uptrend."
 }

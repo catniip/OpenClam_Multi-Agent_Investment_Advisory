@@ -11,18 +11,18 @@
         "rationale": "Short-term: A year-over-year revenue decline is a major negative for a high-valuation growth stock like Tesla, and the slight EPS beat is unlikely to offset this fundamental disappointment. The stock is vulnerable to significant post-earnings selling pressure. Long-term: The revenue miss, coupled with strong results from competitors like GM, indicates Tesla's competitive moat is eroding and the EV market is maturing. Without a clear catalyst for growth re-acceleration in the next 1-3 quarters, the stock's premium valuation is unsustainable, warranting a bearish stance versus the broader market."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.65,
-        "rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Tesla's quarterly performance shows significant weakness with declining revenue and profitability on a quarter-over-quarter basis, which is concerning given its extremely high valuation. However, a strong balance sheet with a net cash position and slightly improved quarterly cash flow provide some stability, warranting a 'Watch' stance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
       }
     ],
     "areas_of_agreement": [
@@ -439,261 +439,6 @@
       {
         "ticker": "TSLA",
         "company": "Tesla",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.65,
-        "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-        "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Mixed Trend Structure",
-            "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Environment",
-            "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Downside Risk",
-            "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.01%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-          }
-        ],
-        "risks": [
-          "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-          "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-          "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-        ],
-        "citations": [],
-        "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-        "raw_packet": {
-          "ticker": "TSLA",
-          "company": "Tesla",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-          "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Mixed Trend Structure",
-              "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Environment",
-              "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Downside Risk",
-              "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.01%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-            }
-          ],
-          "risks": [
-            "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-            "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-            "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-          ],
-          "citations": [],
-          "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-          "raw_packet": {
-            "ticker": "TSLA",
-            "company": "Tesla",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-            "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Mixed Trend Structure",
-                "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Environment",
-                "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Downside Risk",
-                "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.01%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-              }
-            ],
-            "risks": [
-              "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-              "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-              "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-            ],
-            "citations": [],
-            "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-            "raw_packet": {
-              "ticker": "TSLA",
-              "company": "Tesla",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Mixed Trend Structure",
-                  "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Environment",
-                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Downside Risk",
-                  "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.01%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-                }
-              ],
-              "risks": [
-                "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-                "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-                "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-              ],
-              "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-              "core_insight": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "company": "Tesla",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -847,6 +592,261 @@
             }
           }
         }
+      },
+      {
+        "ticker": "TSLA",
+        "company": "Tesla",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+        "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+        "key_signals": [
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Shift",
+            "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Bullish Price Crossover",
+            "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+          },
+          {
+            "type": "RSI",
+            "signal": "Building Bullish Momentum",
+            "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+          },
+          {
+            "type": "Volume",
+            "signal": "Lack of Conviction",
+            "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Range-Bound Conditions",
+            "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Contained Drawdown from Highs",
+            "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.01%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+          }
+        ],
+        "risks": [
+          "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+          "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+          "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+        ],
+        "citations": [],
+        "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+        "raw_packet": {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+          "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Price Crossover",
+              "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+            },
+            {
+              "type": "RSI",
+              "signal": "Building Bullish Momentum",
+              "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+            },
+            {
+              "type": "Volume",
+              "signal": "Lack of Conviction",
+              "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Drawdown from Highs",
+              "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+            }
+          ],
+          "risks": [
+            "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+            "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+            "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+          ],
+          "citations": [],
+          "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+          "raw_packet": {
+            "ticker": "TSLA",
+            "company": "Tesla",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+            "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Price Crossover",
+                "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+              },
+              {
+                "type": "RSI",
+                "signal": "Building Bullish Momentum",
+                "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+              },
+              {
+                "type": "Volume",
+                "signal": "Lack of Conviction",
+                "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Drawdown from Highs",
+                "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+              }
+            ],
+            "risks": [
+              "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+              "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+              "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+            ],
+            "citations": [],
+            "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+            "raw_packet": {
+              "ticker": "TSLA",
+              "company": "Tesla",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Price Crossover",
+                  "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Lack of Conviction",
+                  "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Drawdown from Highs",
+                  "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+                }
+              ],
+              "risks": [
+                "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+                "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+                "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+              ],
+              "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+              "core_insight": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
+            }
+          }
+        }
       }
     ]
   },
@@ -856,7 +856,8 @@
       "debate_required": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ]
     },
     "synthesis": {
@@ -871,18 +872,18 @@
           "rationale": "Short-term: A year-over-year revenue decline is a major negative for a high-valuation growth stock like Tesla, and the slight EPS beat is unlikely to offset this fundamental disappointment. The stock is vulnerable to significant post-earnings selling pressure. Long-term: The revenue miss, coupled with strong results from competitors like GM, indicates Tesla's competitive moat is eroding and the EV market is maturing. Without a clear catalyst for growth re-acceleration in the next 1-3 quarters, the stock's premium valuation is unsustainable, warranting a bearish stance versus the broader market."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.65,
-          "rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Tesla's quarterly performance shows significant weakness with declining revenue and profitability on a quarter-over-quarter basis, which is concerning given its extremely high valuation. However, a strong balance sheet with a net cash position and slightly improved quarterly cash flow provide some stability, warranting a 'Watch' stance."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
         }
       ],
       "areas_of_agreement": [
@@ -1429,325 +1430,6 @@
         {
           "ticker": "TSLA",
           "company": "Tesla",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-          "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Mixed Trend Structure",
-              "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Environment",
-              "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Downside Risk",
-              "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.01%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-            }
-          ],
-          "risks": [
-            "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-            "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-            "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-          ],
-          "citations": [],
-          "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-          "raw_packet": {
-            "ticker": "TSLA",
-            "company": "Tesla",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-            "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Mixed Trend Structure",
-                "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Environment",
-                "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Downside Risk",
-                "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.01%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-              }
-            ],
-            "risks": [
-              "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-              "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-              "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-            ],
-            "citations": [],
-            "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-            "raw_packet": {
-              "ticker": "TSLA",
-              "company": "Tesla",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Neutral",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-              "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Mixed Trend Structure",
-                  "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Environment",
-                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Downside Risk",
-                  "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.01%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-                }
-              ],
-              "risks": [
-                "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-                "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-                "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-              ],
-              "citations": [],
-              "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-              "raw_packet": {
-                "ticker": "TSLA",
-                "company": "Tesla",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Neutral",
-                "confidence": 0.65,
-                "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-                "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Mixed Trend Structure",
-                    "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Market Outperformance",
-                    "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Healthy Bullish Momentum",
-                    "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Environment",
-                    "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Downside Risk",
-                    "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.01%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-                  }
-                ],
-                "risks": [
-                  "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-                  "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-                  "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-                ],
-                "citations": [],
-                "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-                "raw_packet": {
-                  "ticker": "TSLA",
-                  "company": "Tesla",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "neutral",
-                  "confidence": 0.65,
-                  "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Mixed Trend Structure",
-                      "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Market Outperformance",
-                      "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Healthy Bullish Momentum",
-                      "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Environment",
-                      "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Downside Risk",
-                      "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.01%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-                    }
-                  ],
-                  "risks": [
-                    "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-                    "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-                    "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-                  ],
-                  "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-                  "core_insight": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "TSLA",
-          "company": "Tesla",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1939,71 +1621,372 @@
               }
             }
           }
+        },
+        {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+          "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Price Crossover",
+              "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+            },
+            {
+              "type": "RSI",
+              "signal": "Building Bullish Momentum",
+              "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+            },
+            {
+              "type": "Volume",
+              "signal": "Lack of Conviction",
+              "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Drawdown from Highs",
+              "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+            }
+          ],
+          "risks": [
+            "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+            "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+            "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+          ],
+          "citations": [],
+          "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+          "raw_packet": {
+            "ticker": "TSLA",
+            "company": "Tesla",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+            "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Price Crossover",
+                "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+              },
+              {
+                "type": "RSI",
+                "signal": "Building Bullish Momentum",
+                "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+              },
+              {
+                "type": "Volume",
+                "signal": "Lack of Conviction",
+                "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Drawdown from Highs",
+                "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+              }
+            ],
+            "risks": [
+              "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+              "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+              "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+            ],
+            "citations": [],
+            "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+            "raw_packet": {
+              "ticker": "TSLA",
+              "company": "Tesla",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+              "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Price Crossover",
+                  "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Lack of Conviction",
+                  "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Drawdown from Highs",
+                  "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+                }
+              ],
+              "risks": [
+                "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+                "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+                "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+              ],
+              "citations": [],
+              "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+              "raw_packet": {
+                "ticker": "TSLA",
+                "company": "Tesla",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Neutral",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+                "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+                "key_signals": [
+                  {
+                    "type": "MACD",
+                    "signal": "Bullish Momentum Shift",
+                    "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Bullish Price Crossover",
+                    "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Building Bullish Momentum",
+                    "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Lack of Conviction",
+                    "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Underperformance",
+                    "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Range-Bound Conditions",
+                    "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Contained Drawdown from Highs",
+                    "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.01%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+                  }
+                ],
+                "risks": [
+                  "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+                  "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+                  "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+                ],
+                "citations": [],
+                "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+                "raw_packet": {
+                  "ticker": "TSLA",
+                  "company": "Tesla",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "neutral",
+                  "confidence": 0.7,
+                  "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+                  "key_signals": [
+                    {
+                      "type": "MACD",
+                      "signal": "Bullish Momentum Shift",
+                      "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Bullish Price Crossover",
+                      "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Building Bullish Momentum",
+                      "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Lack of Conviction",
+                      "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Underperformance",
+                      "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Range-Bound Conditions",
+                      "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Contained Drawdown from Highs",
+                      "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.01%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+                    }
+                  ],
+                  "risks": [
+                    "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+                    "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+                    "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+                  ],
+                  "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+                  "core_insight": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "CIO Committee Revision",
-        "agreement": [
-          "I agree with the `fundamental` agent's key data points showing quarter-over-quarter declines in revenue and net income, and their assessment that the company's valuation is 'extremely high'. This data directly supports my core bearish thesis.",
-          "I agree with the `market_technical` agent's observations that the stock is below its long-term 200-day moving average and that the recent rally occurred on 'below-average volume'. This suggests underlying long-term weakness and a lack of conviction in the recent price strength, which aligns with my view that the negative fundamental news will ultimately prevail."
-        ],
-        "disagreement": [
-          "I disagree with the `market_technical` agent's 'Bullish' short-term stance. I interpret the positive technical signals (MACD crossover, RSI) as a temporary relief rally or 'dead cat bounce' following a significant negative fundamental catalyst. I weigh the YoY revenue decline more heavily than these short-term indicators.",
-          "I disagree with the `fundamental` agent's 'Neutral' stance. The evidence they present (QoQ revenue/profit decline, extreme valuation) is bearish. Their neutral conclusion appears to be a function of their low confidence and missing data points, rather than a reflection of the evidence provided.",
-          "I assign lower weight to the `fundamental` agent's positive signals, such as the strong balance sheet and slight increase in cash flow. While a cushion, these factors do not justify a hyper-growth valuation for a company whose top-line growth has now reversed into a year-over-year decline."
-        ],
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.8,
-        "evidence_needed": [
-          "Clarification on the conflicting Year-over-Year revenue data. My thesis is predicated on a YoY decline, whereas the `fundamental` agent cites a positive YoY growth number from an external source. This discrepancy must be resolved.",
-          "The earnings call transcript and official management guidance for the upcoming quarters. This is needed to confirm whether any new narrative-changing catalysts were announced that could offset the negative headline numbers.",
-          "Post-earnings price action on high, sustained volume. A failure of the current rally at a key resistance level (e.g., the 200-day moving average) on increased volume would serve as strong confirmation of the bearish thesis."
-        ]
-      },
-      {
-        "response_type": "CIO Committee Revision",
+        "response_type": "Revised View",
         "agreement": {
-          "news_macro": "I agree with the core thesis that a year-over-year revenue decline is a significant negative catalyst that breaks the hyper-growth narrative, especially for a high-valuation stock. The evidence of competitor (GM) strength concurrently with Tesla's weakness is a powerful signal of an eroding moat and intensifying competition, which supports a fundamentally bearish outlook.",
-          "fundamental": "I agree with the quantitative evidence presented, specifically the quarter-over-quarter declines in revenue and net income. This data validates the concerns raised by the news_macro agent and confirms that the company's performance is deteriorating, making its extremely high P/E ratio a major risk."
+          "fundamental": "I agree with the fundamental agent's quantitative data showing a Quarter-over-Quarter decline in both revenue ($22.39B vs $24.90B) and net income. This provides specific data that reinforces my bearish thesis. I also concur with their assessment that the extremely high valuation (P/E 360.1) presents a major risk in the face of slowing growth.",
+          "market_technical": "I agree with the market_technical agent's cautionary signals, specifically the 'Lack of Conviction' due to low volume and the 'Significant Underperformance' relative to the SPY. These factors suggest the current technical rally is fragile and supports my view that the negative fundamentals are the dominant driver."
         },
         "disagreement": {
-          "market_technical": "I am now assigning a much lower weight to my original short-term bullish signals (MACD crossover, RSI). In light of the new, overriding fundamental evidence of a revenue decline, these technical indicators are likely reflecting a 'bull trap' or a relief rally that has now failed. The fundamental news is a more powerful and forward-looking signal than the recent price history.",
-          "fundamental": "While I acknowledge the fundamental agent's point about a strong balance sheet and positive cash flow, I believe these factors are secondary in the short-to-medium term. For a stock valued on growth, the sharp deceleration and decline in revenue and profit will dominate investor sentiment far more than the stability of the balance sheet."
+          "fundamental": "There is a critical data conflict regarding Year-over-Year revenue growth. My evidence states a 3.1% YoY decline, which is the cornerstone of my thesis. The fundamental agent cites a 15.8% YoY growth from yfinance. I assign higher weight to my event-specific news source over a potentially aggregated data point and strongly question the validity of the +15.8% figure in the context of a revenue miss. I also place lower weight on the stable balance sheet, as narrative and growth deceleration are more critical for a high-valuation stock like Tesla.",
+          "market_technical": "I disagree with the market_technical agent's 'Bullish' short-term stance. While their indicators (MACD, RSI) are factually correct, I interpret this price action as a weak, counter-trend rally or 'bull trap' following a significant negative fundamental catalyst. The technical agent's own evidence of low volume and market underperformance leads me to discount the bullish momentum signals as unsustainable."
         },
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.8,
+        "revised_confidence": 0.65,
         "evidence_needed": [
-          "Post-earnings price action and volume to confirm if the market is validating the bearish thesis by breaking key support levels.",
-          "Official management guidance for future quarters to understand if this revenue decline is a one-off event or the start of a new, lower-growth trend.",
-          "The earnings call transcript to assess management's tone and their explanation for the revenue miss and competitive pressures.",
-          "Pre-earnings analyst consensus estimates to quantify the magnitude of the revenue and EPS miss."
+          "Reconciliation of the conflicting Year-over-Year (YoY) revenue growth figures. My evidence points to a 3.1% YoY decline, while the `fundamental` agent's evidence indicates a 15.8% YoY growth. Clarifying the correct quarterly YoY revenue change is critical.",
+          "The official management guidance and earnings call transcript, as noted by the `fundamental` agent, are needed to understand the context behind the sales figures and the company's path forward.",
+          "Confirmation of whether the technical rally is gaining volume. An increase in volume would challenge my 'low conviction' assessment, while continued low volume would reinforce it."
         ]
       },
       {
         "response_type": "revision",
-        "agreement": [
-          "I agree with the news_macro agent's primary evidence that Tesla reported a year-over-year revenue decline. This is a critical piece of fundamental data that my original analysis was missing and it invalidates my prior, conflicting data point of 15.8% YoY growth.",
-          "I agree with the news_macro agent's assessment that a YoY revenue decline represents a 'fundamental break in the hyper-growth narrative,' which directly confirms my original concern about the stock's extremely high valuation.",
-          "I agree with the news_macro agent's contextual evidence that a key competitor (GM) posted strong results, suggesting Tesla's weakness may be due to market share loss and an eroding competitive moat, not just a general EV market slowdown.",
-          "I agree with the news_macro agent's conclusion that the revenue miss makes the stock's premium valuation unsustainable and vulnerable to selling pressure."
-        ],
-        "disagreement": [
-          "I disagree with the market_technical agent's short-term 'Bullish' stance. This view was based on pre-earnings price action (a low-volume relief rally). The fundamental news of a YoY revenue decline is a significant negative catalyst that is likely to invalidate these weak technical signals.",
-          "I am assigning a lower weight to my original key signal of a 'strong balance sheet'. While still a positive, it is a mitigating factor, not a reason for a neutral stance in the face of a confirmed top-line growth reversal.",
-          "I am discarding my original data point of 'yfinance Revenue Growth (YoY): 15.8%' as it is directly contradicted by the more specific and timely evidence of a YoY decline from the news_macro agent's cited earnings report."
-        ],
+        "agreement": "I agree with the core evidence presented by the news_macro agent. The confirmation of a year-over-year revenue decline, contrasted with strong results from competitor GM, fills the most significant information gaps in my original analysis. This new evidence validates the concern that Tesla's hyper-growth narrative is breaking and its competitive moat is eroding, which is a far more powerful signal than the QoQ decline I initially observed.",
+        "disagreement": "I disagree with the short-term bullish conclusion from the market_technical agent. While I acknowledge its technical observations (MACD crossover, price above moving averages), I assign them a lower weight. The agent itself correctly identifies significant weaknesses, such as low volume and market underperformance. A low-conviction rally in the face of profoundly negative fundamental news, like a YoY revenue decline, is likely a transient 'bull trap' rather than a sustainable trend. The fundamental data from the news_macro agent is a much stronger driver for our investment thesis.",
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bearish",
         "revised_confidence": 0.8,
         "evidence_needed": [
-          "Official management guidance for future quarters to understand the expected duration of this slowdown.",
-          "The full earnings call transcript to assess management's tone and their explanation for the revenue decline.",
-          "Detailed segment-level performance (e.g., automotive vs. energy) to identify the specific sources of weakness.",
-          "Gross and operating margin details to understand the drivers of profitability decline beyond the revenue drop."
+          "Specific management guidance on future volume and margin trends to quantify the expected duration of the slowdown.",
+          "A regional breakdown of sales and market share to determine if the weakness is global or concentrated, and to assess the impact of specific competitors like GM.",
+          "Details on management's strategy to re-accelerate growth, such as timelines for new models, the impact of pricing strategies, or expansion into new markets."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the core evidence presented by the news_macro and fundamental agents. The news_macro agent's identification of a year-over-year revenue decline and intensifying competition from GM provides a fundamental reason for the technical weakness I had already flagged (low volume, market underperformance). The fundamental agent's data on quarter-over-quarter declines in revenue and net income further substantiates this bearish view. This new evidence confirms that the bullish momentum I observed was a fragile, low-conviction rally, likely to fail.",
+        "disagreement": "Given the new, overwhelmingly negative fundamental evidence, I am now assigning a much lower weight to my initial bullish momentum signals (MACD, RSI, Price vs MAs). These indicators are lagging and, in this context, are more likely indicative of a 'bull trap' preceding a significant move down, rather than the start of a sustainable rally. The fundamental break in the growth story overrides these short-term technical signals.",
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bearish",
+        "revised_confidence": 0.9,
+        "evidence_needed": [
+          "Post-earnings price and volume action to confirm a technical breakdown below key moving averages.",
+          "Management guidance from the earnings call to assess their outlook on future growth and competition.",
+          "Analyst consensus estimate revisions following the earnings report."
         ]
       }
     ],
@@ -2014,7 +1997,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bearish",
-        "confidence": 0.8,
+        "confidence": 0.65,
         "confidence_rationale": "Confidence is high because the primary negative catalyst is a direct, quantitative data point from the main ticker's own earnings report (a YoY revenue decline). This is a fundamental break in the hyper-growth narrative. The thesis is further strengthened by a concurrent, contrasting positive report from a key competitor (GM), providing a clear signal of shifting market dynamics.",
         "stance_rationale": "Short-term: A year-over-year revenue decline is a major negative for a high-valuation growth stock like Tesla, and the slight EPS beat is unlikely to offset this fundamental disappointment. The stock is vulnerable to significant post-earnings selling pressure. Long-term: The revenue miss, coupled with strong results from competitors like GM, indicates Tesla's competitive moat is eroding and the EV market is maturing. Without a clear catalyst for growth re-acceleration in the next 1-3 quarters, the stock's premium valuation is unsustainable, warranting a bearish stance versus the broader market.",
         "key_signals": [
@@ -2401,298 +2384,22 @@
           }
         },
         "debate_response": {
-          "response_type": "CIO Committee Revision",
-          "agreement": [
-            "I agree with the `fundamental` agent's key data points showing quarter-over-quarter declines in revenue and net income, and their assessment that the company's valuation is 'extremely high'. This data directly supports my core bearish thesis.",
-            "I agree with the `market_technical` agent's observations that the stock is below its long-term 200-day moving average and that the recent rally occurred on 'below-average volume'. This suggests underlying long-term weakness and a lack of conviction in the recent price strength, which aligns with my view that the negative fundamental news will ultimately prevail."
-          ],
-          "disagreement": [
-            "I disagree with the `market_technical` agent's 'Bullish' short-term stance. I interpret the positive technical signals (MACD crossover, RSI) as a temporary relief rally or 'dead cat bounce' following a significant negative fundamental catalyst. I weigh the YoY revenue decline more heavily than these short-term indicators.",
-            "I disagree with the `fundamental` agent's 'Neutral' stance. The evidence they present (QoQ revenue/profit decline, extreme valuation) is bearish. Their neutral conclusion appears to be a function of their low confidence and missing data points, rather than a reflection of the evidence provided.",
-            "I assign lower weight to the `fundamental` agent's positive signals, such as the strong balance sheet and slight increase in cash flow. While a cushion, these factors do not justify a hyper-growth valuation for a company whose top-line growth has now reversed into a year-over-year decline."
-          ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "evidence_needed": [
-            "Clarification on the conflicting Year-over-Year revenue data. My thesis is predicated on a YoY decline, whereas the `fundamental` agent cites a positive YoY growth number from an external source. This discrepancy must be resolved.",
-            "The earnings call transcript and official management guidance for the upcoming quarters. This is needed to confirm whether any new narrative-changing catalysts were announced that could offset the negative headline numbers.",
-            "Post-earnings price action on high, sustained volume. A failure of the current rally at a key resistance level (e.g., the 200-day moving average) on increased volume would serve as strong confirmation of the bearish thesis."
-          ]
-        }
-      },
-      {
-        "ticker": "TSLA",
-        "company": "Tesla",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-        "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Mixed Trend Structure",
-            "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Environment",
-            "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Downside Risk",
-            "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.01%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-          }
-        ],
-        "risks": [
-          "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-          "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-          "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-        ],
-        "citations": [],
-        "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-        "raw_packet": {
-          "ticker": "TSLA",
-          "company": "Tesla",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-          "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Mixed Trend Structure",
-              "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Environment",
-              "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Downside Risk",
-              "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.01%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-            }
-          ],
-          "risks": [
-            "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-            "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-            "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-          ],
-          "citations": [],
-          "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-          "raw_packet": {
-            "ticker": "TSLA",
-            "company": "Tesla",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-            "stance_rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Mixed Trend Structure",
-                "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Environment",
-                "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Downside Risk",
-                "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.01%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-              }
-            ],
-            "risks": [
-              "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-              "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-              "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-            ],
-            "citations": [],
-            "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-            "raw_packet": {
-              "ticker": "TSLA",
-              "company": "Tesla",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate due to conflicting signals. Strong short-term bullish momentum (MACD crossover, price > MA20/50) is counteracted by a weak long-term trend structure (price < MA200) and a lack of volume confirmation on the recent rally.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Mixed Trend Structure",
-                  "evidence": "Price at 392.51 is above the short-term MA20 (374.57) and medium-term MA50 (383.33), but remains below the long-term MA200 (402.86)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is in effect with the MACD line (1.73) above the signal line (-0.55), and a positive histogram (2.27) indicates accelerating momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price move occurred on below-average volume, with a volume spike ratio of 0.74, questioning the strength and sustainability of the rally."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has shown a relative return of +11.17% against the SPY benchmark, indicating it was a market leader during this period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is 56.91, which is in bullish territory (>50) but not yet overbought (>70), suggesting there is room for further upside."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Environment",
-                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting price action is characterized by oscillations between support and resistance rather than a clear directional trend."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Downside Risk",
-                  "evidence": "The current drawdown from the recent peak is -19.88%, highlighting the stock's inherent volatility and recent downside pressure."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.01%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 47.21%, Recent 38.54%"
-                }
-              ],
-              "risks": [
-                "The price remains below the key 200-day moving average, a classic indicator of a weak or broken long-term uptrend.",
-                "The rally is accompanied by below-average volume, suggesting weak participation and raising doubts about the move's sustainability.",
-                "The 'range_bound' market regime implies that upside could be capped by overhead resistance, with risk of reversal."
-              ],
-              "summary": "As of this date, TSLA displayed a clear divergence between short-term strength and long-term weakness. A bullish momentum shift was underway, evidenced by a MACD crossover and the price reclaiming its 20 and 50-day moving averages. However, this recovery attempt was happening on low volume and below the critical 200-day moving average, within a broader range-bound market regime. Despite underperforming on a long-term trend basis, the stock showed strong relative strength against the broader market.",
-              "core_insight": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "CIO Committee Revision",
+          "response_type": "Revised View",
           "agreement": {
-            "news_macro": "I agree with the core thesis that a year-over-year revenue decline is a significant negative catalyst that breaks the hyper-growth narrative, especially for a high-valuation stock. The evidence of competitor (GM) strength concurrently with Tesla's weakness is a powerful signal of an eroding moat and intensifying competition, which supports a fundamentally bearish outlook.",
-            "fundamental": "I agree with the quantitative evidence presented, specifically the quarter-over-quarter declines in revenue and net income. This data validates the concerns raised by the news_macro agent and confirms that the company's performance is deteriorating, making its extremely high P/E ratio a major risk."
+            "fundamental": "I agree with the fundamental agent's quantitative data showing a Quarter-over-Quarter decline in both revenue ($22.39B vs $24.90B) and net income. This provides specific data that reinforces my bearish thesis. I also concur with their assessment that the extremely high valuation (P/E 360.1) presents a major risk in the face of slowing growth.",
+            "market_technical": "I agree with the market_technical agent's cautionary signals, specifically the 'Lack of Conviction' due to low volume and the 'Significant Underperformance' relative to the SPY. These factors suggest the current technical rally is fragile and supports my view that the negative fundamentals are the dominant driver."
           },
           "disagreement": {
-            "market_technical": "I am now assigning a much lower weight to my original short-term bullish signals (MACD crossover, RSI). In light of the new, overriding fundamental evidence of a revenue decline, these technical indicators are likely reflecting a 'bull trap' or a relief rally that has now failed. The fundamental news is a more powerful and forward-looking signal than the recent price history.",
-            "fundamental": "While I acknowledge the fundamental agent's point about a strong balance sheet and positive cash flow, I believe these factors are secondary in the short-to-medium term. For a stock valued on growth, the sharp deceleration and decline in revenue and profit will dominate investor sentiment far more than the stability of the balance sheet."
+            "fundamental": "There is a critical data conflict regarding Year-over-Year revenue growth. My evidence states a 3.1% YoY decline, which is the cornerstone of my thesis. The fundamental agent cites a 15.8% YoY growth from yfinance. I assign higher weight to my event-specific news source over a potentially aggregated data point and strongly question the validity of the +15.8% figure in the context of a revenue miss. I also place lower weight on the stable balance sheet, as narrative and growth deceleration are more critical for a high-valuation stock like Tesla.",
+            "market_technical": "I disagree with the market_technical agent's 'Bullish' short-term stance. While their indicators (MACD, RSI) are factually correct, I interpret this price action as a weak, counter-trend rally or 'bull trap' following a significant negative fundamental catalyst. The technical agent's own evidence of low volume and market underperformance leads me to discount the bullish momentum signals as unsustainable."
           },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
+          "revised_confidence": 0.65,
           "evidence_needed": [
-            "Post-earnings price action and volume to confirm if the market is validating the bearish thesis by breaking key support levels.",
-            "Official management guidance for future quarters to understand if this revenue decline is a one-off event or the start of a new, lower-growth trend.",
-            "The earnings call transcript to assess management's tone and their explanation for the revenue miss and competitive pressures.",
-            "Pre-earnings analyst consensus estimates to quantify the magnitude of the revenue and EPS miss."
+            "Reconciliation of the conflicting Year-over-Year (YoY) revenue growth figures. My evidence points to a 3.1% YoY decline, while the `fundamental` agent's evidence indicates a 15.8% YoY growth. Clarifying the correct quarterly YoY revenue change is critical.",
+            "The official management guidance and earnings call transcript, as noted by the `fundamental` agent, are needed to understand the context behind the sales figures and the company's path forward.",
+            "Confirmation of whether the technical rally is gaining volume. An increase in volume would challenge my 'low conviction' assessment, while continued low volume would reinforce it."
           ]
         }
       },
@@ -2854,25 +2561,283 @@
         },
         "debate_response": {
           "response_type": "revision",
-          "agreement": [
-            "I agree with the news_macro agent's primary evidence that Tesla reported a year-over-year revenue decline. This is a critical piece of fundamental data that my original analysis was missing and it invalidates my prior, conflicting data point of 15.8% YoY growth.",
-            "I agree with the news_macro agent's assessment that a YoY revenue decline represents a 'fundamental break in the hyper-growth narrative,' which directly confirms my original concern about the stock's extremely high valuation.",
-            "I agree with the news_macro agent's contextual evidence that a key competitor (GM) posted strong results, suggesting Tesla's weakness may be due to market share loss and an eroding competitive moat, not just a general EV market slowdown.",
-            "I agree with the news_macro agent's conclusion that the revenue miss makes the stock's premium valuation unsustainable and vulnerable to selling pressure."
-          ],
-          "disagreement": [
-            "I disagree with the market_technical agent's short-term 'Bullish' stance. This view was based on pre-earnings price action (a low-volume relief rally). The fundamental news of a YoY revenue decline is a significant negative catalyst that is likely to invalidate these weak technical signals.",
-            "I am assigning a lower weight to my original key signal of a 'strong balance sheet'. While still a positive, it is a mitigating factor, not a reason for a neutral stance in the face of a confirmed top-line growth reversal.",
-            "I am discarding my original data point of 'yfinance Revenue Growth (YoY): 15.8%' as it is directly contradicted by the more specific and timely evidence of a YoY decline from the news_macro agent's cited earnings report."
-          ],
+          "agreement": "I agree with the core evidence presented by the news_macro agent. The confirmation of a year-over-year revenue decline, contrasted with strong results from competitor GM, fills the most significant information gaps in my original analysis. This new evidence validates the concern that Tesla's hyper-growth narrative is breaking and its competitive moat is eroding, which is a far more powerful signal than the QoQ decline I initially observed.",
+          "disagreement": "I disagree with the short-term bullish conclusion from the market_technical agent. While I acknowledge its technical observations (MACD crossover, price above moving averages), I assign them a lower weight. The agent itself correctly identifies significant weaknesses, such as low volume and market underperformance. A low-conviction rally in the face of profoundly negative fundamental news, like a YoY revenue decline, is likely a transient 'bull trap' rather than a sustainable trend. The fundamental data from the news_macro agent is a much stronger driver for our investment thesis.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
           "revised_confidence": 0.8,
           "evidence_needed": [
-            "Official management guidance for future quarters to understand the expected duration of this slowdown.",
-            "The full earnings call transcript to assess management's tone and their explanation for the revenue decline.",
-            "Detailed segment-level performance (e.g., automotive vs. energy) to identify the specific sources of weakness.",
-            "Gross and operating margin details to understand the drivers of profitability decline beyond the revenue drop."
+            "Specific management guidance on future volume and margin trends to quantify the expected duration of the slowdown.",
+            "A regional breakdown of sales and market share to determine if the weakness is global or concentrated, and to assess the impact of specific competitors like GM.",
+            "Details on management's strategy to re-accelerate growth, such as timelines for new models, the impact of pricing strategies, or expansion into new markets."
+          ]
+        }
+      },
+      {
+        "ticker": "TSLA",
+        "company": "Tesla",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+        "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+        "key_signals": [
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Shift",
+            "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Bullish Price Crossover",
+            "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+          },
+          {
+            "type": "RSI",
+            "signal": "Building Bullish Momentum",
+            "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+          },
+          {
+            "type": "Volume",
+            "signal": "Lack of Conviction",
+            "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Range-Bound Conditions",
+            "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Contained Drawdown from Highs",
+            "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.01%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+          }
+        ],
+        "risks": [
+          "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+          "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+          "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+        ],
+        "citations": [],
+        "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+        "raw_packet": {
+          "ticker": "TSLA",
+          "company": "Tesla",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+          "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+          "key_signals": [
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Price Crossover",
+              "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+            },
+            {
+              "type": "RSI",
+              "signal": "Building Bullish Momentum",
+              "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+            },
+            {
+              "type": "Volume",
+              "signal": "Lack of Conviction",
+              "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Drawdown from Highs",
+              "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+            }
+          ],
+          "risks": [
+            "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+            "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+            "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+          ],
+          "citations": [],
+          "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+          "raw_packet": {
+            "ticker": "TSLA",
+            "company": "Tesla",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+            "stance_rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable.",
+            "key_signals": [
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Price Crossover",
+                "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+              },
+              {
+                "type": "RSI",
+                "signal": "Building Bullish Momentum",
+                "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+              },
+              {
+                "type": "Volume",
+                "signal": "Lack of Conviction",
+                "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Drawdown from Highs",
+                "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+              }
+            ],
+            "risks": [
+              "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+              "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+              "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+            ],
+            "citations": [],
+            "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+            "raw_packet": {
+              "ticker": "TSLA",
+              "company": "Tesla",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "neutral",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while multiple short-term momentum indicators (MACD, RSI, Price vs MAs) are strongly bullish, the lack of volume confirmation and significant market underperformance introduce material risk that the current move may not be sustainable.",
+              "key_signals": [
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish crossover is confirmed, with the MACD line (2.07) above the signal line (-0.04) and a positive, expanding histogram (2.11)."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Price Crossover",
+                  "evidence": "The price at $392.51 has crossed above both the 20-day ($374.57) and 50-day ($383.33) moving averages, indicating an improvement in trend structure."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "RSI is at 58.25, which is in bullish territory (>50) but not yet overbought (<70), suggesting there is room for further upside price action."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Lack of Conviction",
+                  "evidence": "The volume spike ratio of 0.74 indicates that the recent upward price movement has occurred on below-average volume, questioning the strength of the buying pressure."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock is lagging the SPY benchmark by -7.43% over the analysis period, making it a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified in a 'range_bound' regime, suggesting that a clear, sustained trend has not been established and moves may be contained."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Drawdown from Highs",
+                  "evidence": "The current drawdown of -8.35% is well within the recent maximum drawdown of -19.85%, indicating some recovery but still off its peak."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 37.83%, Recent 38.54%"
+                }
+              ],
+              "risks": [
+                "The bullish price action is not supported by volume, which suggests weak conviction and increases the risk of a reversal or 'bull trap'.",
+                "Significant underperformance relative to the broader market (SPY) may deter new investment and could lead to steeper declines if market sentiment turns negative.",
+                "The current 'range_bound' market regime suggests that the rally could face significant resistance at the upper end of the recent trading range."
+              ],
+              "summary": "Tesla shows strong short-term bullish momentum, driven by a recent MACD crossover and a price break above key moving averages. However, this optimism is tempered by a lack of volume confirmation and significant underperformance against the broader market. The current technical picture is one of a momentum-driven rally within a broader range-bound context, which carries notable risk.",
+              "core_insight": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the core evidence presented by the news_macro and fundamental agents. The news_macro agent's identification of a year-over-year revenue decline and intensifying competition from GM provides a fundamental reason for the technical weakness I had already flagged (low volume, market underperformance). The fundamental agent's data on quarter-over-quarter declines in revenue and net income further substantiates this bearish view. This new evidence confirms that the bullish momentum I observed was a fragile, low-conviction rally, likely to fail.",
+          "disagreement": "Given the new, overwhelmingly negative fundamental evidence, I am now assigning a much lower weight to my initial bullish momentum signals (MACD, RSI, Price vs MAs). These indicators are lagging and, in this context, are more likely indicative of a 'bull trap' preceding a significant move down, rather than the start of a sustainable rally. The fundamental break in the growth story overrides these short-term technical signals.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.9,
+          "evidence_needed": [
+            "Post-earnings price and volume action to confirm a technical breakdown below key moving averages.",
+            "Management guidance from the earnings call to assess their outlook on future growth and competition.",
+            "Analyst consensus estimate revisions following the earnings report."
           ]
         }
       }
@@ -2885,20 +2850,19 @@
     "final_long_term_stance": "Bearish",
     "investment_action": "Short / Avoid",
     "position_size_hint": "Normal",
-    "confidence": 0.8,
-    "core_thesis": "Tesla's first year-over-year revenue decline, coupled with intensifying competition from legacy automakers like GM, has broken the hyper-growth narrative. This makes its premium valuation unsustainable, leading to a fundamental re-rating of the stock.",
-    "why_now": "The recent earnings report provided the first quantitative evidence of a YoY revenue decline, a significant negative catalyst that invalidates the bull case predicated on perpetual high growth. This fundamental shift is happening just as competitors are demonstrating strength, creating a clear inflection point for the stock.",
+    "confidence": 0.85,
+    "core_thesis": "Tesla's hyper-growth narrative has fundamentally broken. A year-over-year revenue decline, occurring while key competitors like GM post strong results, signals an erosion of its competitive moat in a maturing EV market. The company's premium valuation is unsustainable in the face of decelerating growth and deteriorating profitability.",
+    "why_now": "The recent earnings report provided a hard data point of a YoY revenue decline, a major negative catalyst that the market has not fully priced in. The initial post-earnings rally shows weak technical confirmation (low volume, market underperformance), suggesting it is a 'bull trap' that provides a favorable entry point for a short position before the new fundamental reality is fully reflected in the stock price.",
     "key_supporting_evidence": [
-      "A year-over-year revenue decline of 3.1% was reported, representing a fundamental break in the hyper-growth narrative for a stock with a P/E over 150.",
-      "Concurrent strong earnings from competitor General Motors (GM) suggest Tesla's weakness is not just a macro slowdown but also a loss of market share and an eroding competitive moat.",
-      "The stock price remains below its long-term 200-day moving average, a technical indicator of a broken long-term uptrend, which is now reinforced by negative fundamental news.",
-      "Pre-earnings bullish technical signals (MACD crossover, RSI) have been invalidated by the fundamental news, suggesting they represented a 'bull trap' or a failed relief rally.",
-      "Quarter-over-quarter declines in both revenue ($22.39B vs $24.90B) and net income ($477M vs $840M) confirm a deteriorating operational trend."
+      "The first year-over-year revenue decline in years (-3.1% per news_macro agent), which directly contradicts the hyper-growth thesis required to support the stock's valuation.",
+      "Strong concurrent earnings and guidance from competitor General Motors (GM), indicating a tangible shift in market dynamics and capital rotation from pure-play EV names to legacy automakers.",
+      "Extremely high valuation (Trailing P/E of 360.1 per fundamental agent) is highly vulnerable to multiple compression given the new reality of decelerating growth and declining QoQ profitability.",
+      "Technical indicators show a fragile, low-conviction rally (Volume Spike Ratio of 0.74) and significant market underperformance (-7.43% vs SPY), supporting the view that the recent price strength is a 'bull trap' rather than a sustainable trend."
     ],
     "key_risks": [
-      "Management could announce a new, narrative-shifting catalyst (e.g., accelerated timeline for a cheaper model, a major FSD breakthrough, a large share buyback) that causes investors to overlook the current automotive sales weakness.",
-      "The market could choose to value Tesla as an AI/robotics company, ignoring the core auto fundamentals and sustaining the high valuation based on long-term potential.",
-      "A broad, macro-driven market rally could lift all stocks, including TSLA, irrespective of company-specific fundamentals, causing a short squeeze."
+      "A surprise announcement from management regarding a new product (e.g., a lower-cost model), a breakthrough in FSD/robotics, or a large share buyback could abruptly shift the narrative and override the negative fundamentals.",
+      "The bearish thesis relies on the EV slowdown being durable. A sudden re-acceleration in global EV demand (e.g., from China or Europe) could reverse the negative sentiment and pressure on the stock.",
+      "The short-term technical rally, while showing weak confirmation, could gain volume and momentum, forcing a squeeze on short positions before the fundamental thesis plays out."
     ],
     "agent_view_summary": [
       {
@@ -2909,131 +2873,107 @@
         "rationale": "Short-term: A year-over-year revenue decline is a major negative for a high-valuation growth stock like Tesla, and the slight EPS beat is unlikely to offset this fundamental disappointment. The stock is vulnerable to significant post-earnings selling pressure. Long-term: The revenue miss, coupled with strong results from competitors like GM, indicates Tesla's competitive moat is eroding and the EV market is maturing. Without a clear catalyst for growth re-acceleration in the next 1-3 quarters, the stock's premium valuation is unsustainable, warranting a bearish stance versus the broader market."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.65,
-        "rationale": "A short-term bullish recovery was in progress but its legitimacy was questionable. The lack of volume conviction combined with the failure to reclaim the 200-day moving average suggested this was more likely a relief rally within a larger consolidation or range rather than the start of a new sustained uptrend."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Tesla's quarterly performance shows significant weakness with declining revenue and profitability on a quarter-over-quarter basis, which is concerning given its extremely high valuation. However, a strong balance sheet with a net cash position and slightly improved quarterly cash flow provide some stability, warranting a 'Watch' stance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.7,
+        "rationale": "A clear divergence exists between bullish momentum indicators (MACD, RSI) and weak confirmation signals (low volume, negative relative strength). This suggests a fragile rally that requires an increase in volume and a reversal of its underperformance to be considered sustainable."
       }
     ],
     "debate_summary": {
       "debate_triggered": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ],
       "debate_responses": [
         {
-          "response_type": "CIO Committee Revision",
-          "agreement": [
-            "I agree with the `fundamental` agent's key data points showing quarter-over-quarter declines in revenue and net income, and their assessment that the company's valuation is 'extremely high'. This data directly supports my core bearish thesis.",
-            "I agree with the `market_technical` agent's observations that the stock is below its long-term 200-day moving average and that the recent rally occurred on 'below-average volume'. This suggests underlying long-term weakness and a lack of conviction in the recent price strength, which aligns with my view that the negative fundamental news will ultimately prevail."
-          ],
-          "disagreement": [
-            "I disagree with the `market_technical` agent's 'Bullish' short-term stance. I interpret the positive technical signals (MACD crossover, RSI) as a temporary relief rally or 'dead cat bounce' following a significant negative fundamental catalyst. I weigh the YoY revenue decline more heavily than these short-term indicators.",
-            "I disagree with the `fundamental` agent's 'Neutral' stance. The evidence they present (QoQ revenue/profit decline, extreme valuation) is bearish. Their neutral conclusion appears to be a function of their low confidence and missing data points, rather than a reflection of the evidence provided.",
-            "I assign lower weight to the `fundamental` agent's positive signals, such as the strong balance sheet and slight increase in cash flow. While a cushion, these factors do not justify a hyper-growth valuation for a company whose top-line growth has now reversed into a year-over-year decline."
-          ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "evidence_needed": [
-            "Clarification on the conflicting Year-over-Year revenue data. My thesis is predicated on a YoY decline, whereas the `fundamental` agent cites a positive YoY growth number from an external source. This discrepancy must be resolved.",
-            "The earnings call transcript and official management guidance for the upcoming quarters. This is needed to confirm whether any new narrative-changing catalysts were announced that could offset the negative headline numbers.",
-            "Post-earnings price action on high, sustained volume. A failure of the current rally at a key resistance level (e.g., the 200-day moving average) on increased volume would serve as strong confirmation of the bearish thesis."
-          ]
-        },
-        {
-          "response_type": "CIO Committee Revision",
+          "response_type": "Revised View",
           "agreement": {
-            "news_macro": "I agree with the core thesis that a year-over-year revenue decline is a significant negative catalyst that breaks the hyper-growth narrative, especially for a high-valuation stock. The evidence of competitor (GM) strength concurrently with Tesla's weakness is a powerful signal of an eroding moat and intensifying competition, which supports a fundamentally bearish outlook.",
-            "fundamental": "I agree with the quantitative evidence presented, specifically the quarter-over-quarter declines in revenue and net income. This data validates the concerns raised by the news_macro agent and confirms that the company's performance is deteriorating, making its extremely high P/E ratio a major risk."
+            "fundamental": "I agree with the fundamental agent's quantitative data showing a Quarter-over-Quarter decline in both revenue ($22.39B vs $24.90B) and net income. This provides specific data that reinforces my bearish thesis. I also concur with their assessment that the extremely high valuation (P/E 360.1) presents a major risk in the face of slowing growth.",
+            "market_technical": "I agree with the market_technical agent's cautionary signals, specifically the 'Lack of Conviction' due to low volume and the 'Significant Underperformance' relative to the SPY. These factors suggest the current technical rally is fragile and supports my view that the negative fundamentals are the dominant driver."
           },
           "disagreement": {
-            "market_technical": "I am now assigning a much lower weight to my original short-term bullish signals (MACD crossover, RSI). In light of the new, overriding fundamental evidence of a revenue decline, these technical indicators are likely reflecting a 'bull trap' or a relief rally that has now failed. The fundamental news is a more powerful and forward-looking signal than the recent price history.",
-            "fundamental": "While I acknowledge the fundamental agent's point about a strong balance sheet and positive cash flow, I believe these factors are secondary in the short-to-medium term. For a stock valued on growth, the sharp deceleration and decline in revenue and profit will dominate investor sentiment far more than the stability of the balance sheet."
+            "fundamental": "There is a critical data conflict regarding Year-over-Year revenue growth. My evidence states a 3.1% YoY decline, which is the cornerstone of my thesis. The fundamental agent cites a 15.8% YoY growth from yfinance. I assign higher weight to my event-specific news source over a potentially aggregated data point and strongly question the validity of the +15.8% figure in the context of a revenue miss. I also place lower weight on the stable balance sheet, as narrative and growth deceleration are more critical for a high-valuation stock like Tesla.",
+            "market_technical": "I disagree with the market_technical agent's 'Bullish' short-term stance. While their indicators (MACD, RSI) are factually correct, I interpret this price action as a weak, counter-trend rally or 'bull trap' following a significant negative fundamental catalyst. The technical agent's own evidence of low volume and market underperformance leads me to discount the bullish momentum signals as unsustainable."
           },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
+          "revised_confidence": 0.65,
           "evidence_needed": [
-            "Post-earnings price action and volume to confirm if the market is validating the bearish thesis by breaking key support levels.",
-            "Official management guidance for future quarters to understand if this revenue decline is a one-off event or the start of a new, lower-growth trend.",
-            "The earnings call transcript to assess management's tone and their explanation for the revenue miss and competitive pressures.",
-            "Pre-earnings analyst consensus estimates to quantify the magnitude of the revenue and EPS miss."
+            "Reconciliation of the conflicting Year-over-Year (YoY) revenue growth figures. My evidence points to a 3.1% YoY decline, while the `fundamental` agent's evidence indicates a 15.8% YoY growth. Clarifying the correct quarterly YoY revenue change is critical.",
+            "The official management guidance and earnings call transcript, as noted by the `fundamental` agent, are needed to understand the context behind the sales figures and the company's path forward.",
+            "Confirmation of whether the technical rally is gaining volume. An increase in volume would challenge my 'low conviction' assessment, while continued low volume would reinforce it."
           ]
         },
         {
           "response_type": "revision",
-          "agreement": [
-            "I agree with the news_macro agent's primary evidence that Tesla reported a year-over-year revenue decline. This is a critical piece of fundamental data that my original analysis was missing and it invalidates my prior, conflicting data point of 15.8% YoY growth.",
-            "I agree with the news_macro agent's assessment that a YoY revenue decline represents a 'fundamental break in the hyper-growth narrative,' which directly confirms my original concern about the stock's extremely high valuation.",
-            "I agree with the news_macro agent's contextual evidence that a key competitor (GM) posted strong results, suggesting Tesla's weakness may be due to market share loss and an eroding competitive moat, not just a general EV market slowdown.",
-            "I agree with the news_macro agent's conclusion that the revenue miss makes the stock's premium valuation unsustainable and vulnerable to selling pressure."
-          ],
-          "disagreement": [
-            "I disagree with the market_technical agent's short-term 'Bullish' stance. This view was based on pre-earnings price action (a low-volume relief rally). The fundamental news of a YoY revenue decline is a significant negative catalyst that is likely to invalidate these weak technical signals.",
-            "I am assigning a lower weight to my original key signal of a 'strong balance sheet'. While still a positive, it is a mitigating factor, not a reason for a neutral stance in the face of a confirmed top-line growth reversal.",
-            "I am discarding my original data point of 'yfinance Revenue Growth (YoY): 15.8%' as it is directly contradicted by the more specific and timely evidence of a YoY decline from the news_macro agent's cited earnings report."
-          ],
+          "agreement": "I agree with the core evidence presented by the news_macro agent. The confirmation of a year-over-year revenue decline, contrasted with strong results from competitor GM, fills the most significant information gaps in my original analysis. This new evidence validates the concern that Tesla's hyper-growth narrative is breaking and its competitive moat is eroding, which is a far more powerful signal than the QoQ decline I initially observed.",
+          "disagreement": "I disagree with the short-term bullish conclusion from the market_technical agent. While I acknowledge its technical observations (MACD crossover, price above moving averages), I assign them a lower weight. The agent itself correctly identifies significant weaknesses, such as low volume and market underperformance. A low-conviction rally in the face of profoundly negative fundamental news, like a YoY revenue decline, is likely a transient 'bull trap' rather than a sustainable trend. The fundamental data from the news_macro agent is a much stronger driver for our investment thesis.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
           "revised_confidence": 0.8,
           "evidence_needed": [
-            "Official management guidance for future quarters to understand the expected duration of this slowdown.",
-            "The full earnings call transcript to assess management's tone and their explanation for the revenue decline.",
-            "Detailed segment-level performance (e.g., automotive vs. energy) to identify the specific sources of weakness.",
-            "Gross and operating margin details to understand the drivers of profitability decline beyond the revenue drop."
+            "Specific management guidance on future volume and margin trends to quantify the expected duration of the slowdown.",
+            "A regional breakdown of sales and market share to determine if the weakness is global or concentrated, and to assess the impact of specific competitors like GM.",
+            "Details on management's strategy to re-accelerate growth, such as timelines for new models, the impact of pricing strategies, or expansion into new markets."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the core evidence presented by the news_macro and fundamental agents. The news_macro agent's identification of a year-over-year revenue decline and intensifying competition from GM provides a fundamental reason for the technical weakness I had already flagged (low volume, market underperformance). The fundamental agent's data on quarter-over-quarter declines in revenue and net income further substantiates this bearish view. This new evidence confirms that the bullish momentum I observed was a fragile, low-conviction rally, likely to fail.",
+          "disagreement": "Given the new, overwhelmingly negative fundamental evidence, I am now assigning a much lower weight to my initial bullish momentum signals (MACD, RSI, Price vs MAs). These indicators are lagging and, in this context, are more likely indicative of a 'bull trap' preceding a significant move down, rather than the start of a sustainable rally. The fundamental break in the growth story overrides these short-term technical signals.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.9,
+          "evidence_needed": [
+            "Post-earnings price and volume action to confirm a technical breakdown below key moving averages.",
+            "Management guidance from the earnings call to assess their outlook on future growth and competition.",
+            "Analyst consensus estimate revisions following the earnings report."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "The decision is based on a unanimous post-debate consensus among all advisory agents. The initial conflict was resolved by the introduction of a critical new fact: a year-over-year revenue decline. This evidence is a fundamental break in the company's long-standing growth narrative and invalidates weaker, pre-existing bullish technical signals. The combination of slowing growth, intensifying competition, and an extremely high valuation creates a clear and compelling bearish case. The deterministic guardrail aligns with this view, requiring no override.",
+    "reason_for_final_decision": "The decision is driven by the unanimous post-debate consensus across all agents, who converged on a Bearish stance after weighing all evidence. The initial conflict between bullish technical momentum and bearish fundamental data was decisively resolved in favor of the fundamentals. The evidence of a YoY revenue decline is a thesis-breaking event for a high-valuation stock like Tesla. This, combined with eroding market leadership and weak technicals, creates a high-conviction bearish case. The deterministic guardrail's output aligns perfectly with this qualitative judgment, providing a robust, non-overridden final view.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.8,
+          "confidence": 0.65,
           "weight": 0.35,
-          "contribution": -0.28
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": -0.36
+          "contribution": -0.2275
         },
         {
           "agent_name": "fundamental",
           "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
+          "weight": 0.1,
+          "contribution": -0.08
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.9,
+          "weight": 0.55,
+          "contribution": -0.495
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.8,
+          "confidence": 0.65,
           "weight": 0.35,
-          "contribution": -0.28
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
+          "contribution": -0.2275
         },
         {
           "agent_name": "fundamental",
@@ -3041,6 +2981,13 @@
           "confidence": 0.8,
           "weight": 0.45,
           "contribution": -0.36
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.9,
+          "weight": 0.2,
+          "contribution": -0.18
         }
       ]
     },

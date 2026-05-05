@@ -11,18 +11,18 @@
         "rationale": "The short-term Bearish stance reflects the mixed Q4 print (revenue miss) after a 7% run-up in the prior 30 days, creating a 'sell the news' setup for short-term traders. The long-term Bullish stance is based on the company's raised 2026 revenue guidance, dividend increase, and strong positioning within the secular AI infrastructure buildout, which should overwhelm the minor Q4 miss over the next few quarters."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Equinix reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant decline in operating cash flow, worsening negative free cash flow, and a high valuation. The conflicting signals between the income statement and cash flow statement, coupled with high leverage, warrant a cautious stance pending further information."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
       }
     ],
     "areas_of_agreement": [
@@ -420,257 +420,6 @@
       {
         "ticker": "EQIX",
         "company": "Equinix",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-        "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Crossover / Waning Momentum",
-            "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Momentum (Not Overbought)",
-            "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bullish Trend",
-            "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction Pullback",
-            "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Short-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Price Near Recent Highs",
-            "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.19%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-          }
-        ],
-        "risks": [
-          "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-          "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-        ],
-        "citations": [],
-        "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-        "raw_packet": {
-          "ticker": "EQIX",
-          "company": "Equinix",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-          "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Crossover / Waning Momentum",
-              "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Momentum (Not Overbought)",
-              "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bullish Trend",
-              "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Pullback",
-              "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Short-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price Near Recent Highs",
-              "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.19%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-            "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-          ],
-          "citations": [],
-          "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-          "raw_packet": {
-            "ticker": "EQIX",
-            "company": "Equinix",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-            "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Crossover / Waning Momentum",
-                "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Momentum (Not Overbought)",
-                "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bullish Trend",
-                "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Pullback",
-                "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Short-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price Near Recent Highs",
-                "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.19%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-              "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-            ],
-            "citations": [],
-            "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-            "raw_packet": {
-              "ticker": "EQIX",
-              "company": "Equinix",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Crossover / Waning Momentum",
-                  "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Momentum (Not Overbought)",
-                  "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bullish Trend",
-                  "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Pullback",
-                  "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Short-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price Near Recent Highs",
-                  "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.19%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-                "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-              ],
-              "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-              "core_insight": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "EQIX",
-        "company": "Equinix",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -828,6 +577,261 @@
             }
           }
         }
+      },
+      {
+        "ticker": "EQIX",
+        "company": "Equinix",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+        "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Bullish Trend Alignment",
+            "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Crossover",
+            "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+          },
+          {
+            "type": "RSI",
+            "signal": "Strong but not Overbought Momentum",
+            "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+          },
+          {
+            "type": "Volume",
+            "signal": "Low Conviction Pullback",
+            "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Shallow Pullbacks",
+            "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bullish Trend",
+            "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.19%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+          }
+        ],
+        "risks": [
+          "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+          "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+          "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+        ],
+        "citations": [],
+        "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+        "raw_packet": {
+          "ticker": "EQIX",
+          "company": "Equinix",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+          "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Trend Alignment",
+              "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Crossover",
+              "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+            },
+            {
+              "type": "RSI",
+              "signal": "Strong but not Overbought Momentum",
+              "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+            },
+            {
+              "type": "Volume",
+              "signal": "Low Conviction Pullback",
+              "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Shallow Pullbacks",
+              "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.19%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+            }
+          ],
+          "risks": [
+            "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+            "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+            "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+          ],
+          "citations": [],
+          "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+          "raw_packet": {
+            "ticker": "EQIX",
+            "company": "Equinix",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+            "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Trend Alignment",
+                "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Crossover",
+                "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+              },
+              {
+                "type": "RSI",
+                "signal": "Strong but not Overbought Momentum",
+                "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+              },
+              {
+                "type": "Volume",
+                "signal": "Low Conviction Pullback",
+                "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Shallow Pullbacks",
+                "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.19%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+              }
+            ],
+            "risks": [
+              "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+              "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+              "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+            ],
+            "citations": [],
+            "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+            "raw_packet": {
+              "ticker": "EQIX",
+              "company": "Equinix",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Trend Alignment",
+                  "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Crossover",
+                  "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Strong but not Overbought Momentum",
+                  "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Low Conviction Pullback",
+                  "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Shallow Pullbacks",
+                  "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.19%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+                }
+              ],
+              "risks": [
+                "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+                "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+                "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+              ],
+              "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+              "core_insight": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
+            }
+          }
+        }
       }
     ]
   },
@@ -852,18 +856,18 @@
           "rationale": "The short-term Bearish stance reflects the mixed Q4 print (revenue miss) after a 7% run-up in the prior 30 days, creating a 'sell the news' setup for short-term traders. The long-term Bullish stance is based on the company's raised 2026 revenue guidance, dividend increase, and strong positioning within the secular AI infrastructure buildout, which should overwhelm the minor Q4 miss over the next few quarters."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Equinix reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant decline in operating cash flow, worsening negative free cash flow, and a high valuation. The conflicting signals between the income statement and cash flow statement, coupled with high leverage, warrant a cautious stance pending further information."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
         }
       ],
       "areas_of_agreement": [
@@ -1385,320 +1389,6 @@
         {
           "ticker": "EQIX",
           "company": "Equinix",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-          "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Crossover / Waning Momentum",
-              "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Momentum (Not Overbought)",
-              "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bullish Trend",
-              "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Pullback",
-              "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Short-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price Near Recent Highs",
-              "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.19%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-            "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-          ],
-          "citations": [],
-          "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-          "raw_packet": {
-            "ticker": "EQIX",
-            "company": "Equinix",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-            "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Crossover / Waning Momentum",
-                "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Momentum (Not Overbought)",
-                "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bullish Trend",
-                "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Pullback",
-                "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Short-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price Near Recent Highs",
-                "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.19%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-              "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-            ],
-            "citations": [],
-            "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-            "raw_packet": {
-              "ticker": "EQIX",
-              "company": "Equinix",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-              "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Crossover / Waning Momentum",
-                  "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Momentum (Not Overbought)",
-                  "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bullish Trend",
-                  "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Pullback",
-                  "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Short-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price Near Recent Highs",
-                  "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.19%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-                "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-              ],
-              "citations": [],
-              "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-              "raw_packet": {
-                "ticker": "EQIX",
-                "company": "Equinix",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bullish",
-                "confidence": 0.8,
-                "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-                "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bearish Crossover / Waning Momentum",
-                    "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Healthy Momentum (Not Overbought)",
-                    "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Confirmed Bullish Trend",
-                    "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Low Conviction Pullback",
-                    "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Short-Term Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Price Near Recent Highs",
-                    "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.19%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-                  }
-                ],
-                "risks": [
-                  "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-                  "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-                ],
-                "citations": [],
-                "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-                "raw_packet": {
-                  "ticker": "EQIX",
-                  "company": "Equinix",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.8,
-                  "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bearish Crossover / Waning Momentum",
-                      "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Healthy Momentum (Not Overbought)",
-                      "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Confirmed Bullish Trend",
-                      "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Low Conviction Pullback",
-                      "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Short-Term Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Price Near Recent Highs",
-                      "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.19%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-                    }
-                  ],
-                  "risks": [
-                    "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-                    "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-                  ],
-                  "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-                  "core_insight": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "EQIX",
-          "company": "Equinix",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1891,6 +1581,325 @@
                     "thesis_impact": "Unchanged",
                     "thesis_impact_reasoning": "While strong P&L growth supports a positive growth thesis, the deterioration in cash flow and high leverage are significant counterpoints. Without management commentary or guidance, the net impact on the medium-term thesis is uncertain."
                   }
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "EQIX",
+          "company": "Equinix",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+          "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Trend Alignment",
+              "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Crossover",
+              "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+            },
+            {
+              "type": "RSI",
+              "signal": "Strong but not Overbought Momentum",
+              "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+            },
+            {
+              "type": "Volume",
+              "signal": "Low Conviction Pullback",
+              "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Shallow Pullbacks",
+              "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.19%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+            }
+          ],
+          "risks": [
+            "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+            "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+            "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+          ],
+          "citations": [],
+          "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+          "raw_packet": {
+            "ticker": "EQIX",
+            "company": "Equinix",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+            "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Trend Alignment",
+                "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Crossover",
+                "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+              },
+              {
+                "type": "RSI",
+                "signal": "Strong but not Overbought Momentum",
+                "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+              },
+              {
+                "type": "Volume",
+                "signal": "Low Conviction Pullback",
+                "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Shallow Pullbacks",
+                "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.19%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+              }
+            ],
+            "risks": [
+              "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+              "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+              "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+            ],
+            "citations": [],
+            "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+            "raw_packet": {
+              "ticker": "EQIX",
+              "company": "Equinix",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+              "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Trend Alignment",
+                  "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Crossover",
+                  "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Strong but not Overbought Momentum",
+                  "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Low Conviction Pullback",
+                  "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Shallow Pullbacks",
+                  "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.19%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+                }
+              ],
+              "risks": [
+                "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+                "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+                "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+              ],
+              "citations": [],
+              "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+              "raw_packet": {
+                "ticker": "EQIX",
+                "company": "Equinix",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bullish",
+                "confidence": 0.75,
+                "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+                "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+                "key_signals": [
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Bullish Trend Alignment",
+                    "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bearish Momentum Crossover",
+                    "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Outperformance",
+                    "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Strong but not Overbought Momentum",
+                    "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Low Conviction Pullback",
+                    "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Shallow Pullbacks",
+                    "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Confirmed Bullish Trend",
+                    "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.19%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+                  }
+                ],
+                "risks": [
+                  "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+                  "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+                  "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+                ],
+                "citations": [],
+                "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+                "raw_packet": {
+                  "ticker": "EQIX",
+                  "company": "Equinix",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.75,
+                  "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+                  "key_signals": [
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Bullish Trend Alignment",
+                      "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bearish Momentum Crossover",
+                      "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Outperformance",
+                      "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Strong but not Overbought Momentum",
+                      "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Low Conviction Pullback",
+                      "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Shallow Pullbacks",
+                      "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Confirmed Bullish Trend",
+                      "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.19%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+                    }
+                  ],
+                  "risks": [
+                    "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+                    "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+                    "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+                  ],
+                  "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+                  "core_insight": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
                 }
               }
             }
@@ -2278,257 +2287,6 @@
       {
         "ticker": "EQIX",
         "company": "Equinix",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-        "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Crossover / Waning Momentum",
-            "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Momentum (Not Overbought)",
-            "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bullish Trend",
-            "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction Pullback",
-            "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Short-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Price Near Recent Highs",
-            "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.19%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-          }
-        ],
-        "risks": [
-          "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-          "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-        ],
-        "citations": [],
-        "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-        "raw_packet": {
-          "ticker": "EQIX",
-          "company": "Equinix",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-          "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Crossover / Waning Momentum",
-              "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Momentum (Not Overbought)",
-              "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bullish Trend",
-              "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction Pullback",
-              "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Short-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price Near Recent Highs",
-              "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.19%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-            "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-          ],
-          "citations": [],
-          "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-          "raw_packet": {
-            "ticker": "EQIX",
-            "company": "Equinix",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-            "stance_rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Crossover / Waning Momentum",
-                "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Momentum (Not Overbought)",
-                "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bullish Trend",
-                "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction Pullback",
-                "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Short-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price Near Recent Highs",
-                "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.19%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-              "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-            ],
-            "citations": [],
-            "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-            "raw_packet": {
-              "ticker": "EQIX",
-              "company": "Equinix",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "High confidence is based on the clear alignment of long-term trend indicators (MA structure) and consistent signs of a short-term momentum pause (MACD crossover, recent price action). Conflicting signals between RSI and MACD are typical of a consolidation phase within a larger uptrend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $1083.20 is above MA20 ($1072.22), MA50 ($1009.54), and MA200 ($842.15), with MAs in bullish alignment."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Crossover / Waning Momentum",
-                  "evidence": "The MACD line (26.29) has crossed below the signal line (31.08), resulting in a negative histogram (-4.79), indicating a short-term loss of upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Momentum (Not Overbought)",
-                  "evidence": "RSI is at 61.97, which is in bullish territory but below the overbought threshold of 70, suggesting room for movement."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bullish Trend",
-                  "evidence": "The broader market regime is classified as 'bullish_trend', providing context for the price action."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction Pullback",
-                  "evidence": "Recent trading volume is below its average (0.85x), suggesting the current pullback lacks strong selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Short-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -3.39% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price Near Recent Highs",
-                  "evidence": "The current drawdown is minimal at -2.88%, indicating the price is very close to its recent peak."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.19%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 25.93%, Recent 18.3%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover could signal a deeper pullback towards the 50-day moving average if the price fails to hold above the 20-day average.",
-                "Continued underperformance relative to the benchmark (SPY) could make the stock less attractive to momentum-focused investors."
-              ],
-              "summary": "As of this date, EQIX is in a strong, established long-term uptrend, confirmed by its bullish moving average structure. However, short-term indicators show a clear loss of momentum, with a MACD bearish crossover and a minor pullback from recent highs. This consolidation is occurring on low volume, suggesting it's a pause rather than a reversal. The overall stance is neutral in the short-term within a long-term bullish context.",
-              "core_insight": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "EQIX",
-        "company": "Equinix",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -2686,6 +2444,261 @@
             }
           }
         }
+      },
+      {
+        "ticker": "EQIX",
+        "company": "Equinix",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+        "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+        "key_signals": [
+          {
+            "type": "Moving Averages",
+            "signal": "Bullish Trend Alignment",
+            "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bearish Momentum Crossover",
+            "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+          },
+          {
+            "type": "RSI",
+            "signal": "Strong but not Overbought Momentum",
+            "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+          },
+          {
+            "type": "Volume",
+            "signal": "Low Conviction Pullback",
+            "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Shallow Pullbacks",
+            "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bullish Trend",
+            "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.19%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+          }
+        ],
+        "risks": [
+          "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+          "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+          "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+        ],
+        "citations": [],
+        "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+        "raw_packet": {
+          "ticker": "EQIX",
+          "company": "Equinix",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+          "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+          "key_signals": [
+            {
+              "type": "Moving Averages",
+              "signal": "Bullish Trend Alignment",
+              "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bearish Momentum Crossover",
+              "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+            },
+            {
+              "type": "RSI",
+              "signal": "Strong but not Overbought Momentum",
+              "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+            },
+            {
+              "type": "Volume",
+              "signal": "Low Conviction Pullback",
+              "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Shallow Pullbacks",
+              "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.19%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+            }
+          ],
+          "risks": [
+            "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+            "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+            "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+          ],
+          "citations": [],
+          "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+          "raw_packet": {
+            "ticker": "EQIX",
+            "company": "Equinix",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+            "stance_rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction.",
+            "key_signals": [
+              {
+                "type": "Moving Averages",
+                "signal": "Bullish Trend Alignment",
+                "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bearish Momentum Crossover",
+                "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+              },
+              {
+                "type": "RSI",
+                "signal": "Strong but not Overbought Momentum",
+                "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+              },
+              {
+                "type": "Volume",
+                "signal": "Low Conviction Pullback",
+                "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Shallow Pullbacks",
+                "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.19%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+              }
+            ],
+            "risks": [
+              "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+              "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+              "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+            ],
+            "citations": [],
+            "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+            "raw_packet": {
+              "ticker": "EQIX",
+              "company": "Equinix",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high in the long-term bullish trend due to strong structural indicators (price > MA50, outperformance). However, short-term confidence is moderated by conflicting signals: bullish trend indicators (MAs, RSI) are countered by a bearish momentum signal (MACD crossover), suggesting a consolidation phase rather than a clear directional move.",
+              "key_signals": [
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bullish Trend Alignment",
+                  "evidence": "Price at $1083.20 is above both the MA20 ($1072.22) and the MA50 ($1009.54), indicating a well-established uptrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bearish Momentum Crossover",
+                  "evidence": "The MACD line (26.18) has crossed below the signal line (30.92), with a negative histogram (-4.74), signaling a short-term loss of upward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "EQIX has outperformed the SPY benchmark by 28.61%, confirming its status as a market leader."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Strong but not Overbought Momentum",
+                  "evidence": "RSI at 63.82 indicates strong buying pressure but remains below the 70 overbought threshold, leaving room for potential upside."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Low Conviction Pullback",
+                  "evidence": "Recent volume is below average (0.88x spike ratio), suggesting the recent price decline lacks strong selling pressure and may be a consolidation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Shallow Pullbacks",
+                  "evidence": "The current drawdown is a minor -2.88%, indicating buyers are absorbing selling pressure and preventing significant declines."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The overall market regime is classified as 'bullish_trend', providing a positive backdrop for the stock."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.19%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 29.25%, Recent 18.3%"
+                }
+              ],
+              "risks": [
+                "The bearish MACD crossover could signal the start of a deeper correction if selling volume increases, potentially testing the 50-day moving average.",
+                "A failure to reclaim recent highs (~$1115) could lead to the formation of a lower high, an early warning sign for a potential trend reversal.",
+                "Despite being a leader, the stock's moderate volatility (29.25% annualized) means sharp price swings can still occur."
+              ],
+              "summary": "EQIX maintains a strong long-term bullish structure, trading above key moving averages and significantly outperforming the market. However, a recent bearish MACD crossover and negative price action signal a short-term loss of momentum. This pullback is occurring on low volume, suggesting it is a consolidation phase within the broader uptrend. The stance is neutral for the short term but remains bullish over the long term.",
+              "core_insight": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
+            }
+          }
+        }
       }
     ]
   },
@@ -2694,23 +2707,22 @@
     "company": "Equinix",
     "final_short_term_stance": "Neutral",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Accumulate on Weakness",
+    "investment_action": "Accumulate on weakness",
     "position_size_hint": "Medium",
     "confidence": 0.8,
-    "core_thesis": "Equinix is a prime, long-term beneficiary of the secular AI infrastructure buildout. Despite a rich valuation and heavy capital expenditures depressing near-term free cash flow, the company's strong, raised 2026 revenue guidance confirms that accelerating demand for AI-ready data centers will drive significant long-term growth, justifying the current investment cycle.",
-    "why_now": "The recent mixed Q4 earnings report (slight revenue miss, FFO beat) and the stock's prior run-up have created a short-term consolidation phase, confirmed by technical indicators like the MACD crossover. This presents a potential opportunity to build a long-term position at more attractive entry points as the market digests the near-term noise before fully pricing in the multi-year growth story.",
+    "core_thesis": "Equinix is a prime beneficiary of the secular AI infrastructure buildout. While the stock may experience short-term consolidation due to a mixed Q4 report and high valuation, its strong, raised long-term guidance (to 2026) and market leadership position it for continued outperformance. The heavy capital expenditure, which is pressuring near-term free cash flow, is a necessary investment to capture this multi-year demand.",
+    "why_now": "The recent earnings report has created a point of inflection. The market's potential short-term focus on a minor revenue miss provides an opportunity to look past the noise and build a long-term position based on the company's newly upgraded and very strong multi-year guidance, which confirms the AI growth story is accelerating.",
     "key_supporting_evidence": [
-      "Management provided a robust 2026 outlook and raised annual revenue guidance, signaling strong conviction in accelerating demand driven by AI.",
-      "The long-term technical trend remains strongly bullish, with the price holding above its 20, 50, and 200-day moving averages.",
-      "The Q4 FFO beat estimate, indicating underlying operational strength despite a minor revenue miss.",
-      "The dividend was increased, reflecting management's confidence in future cash flows.",
-      "The narrative is validated by the broader ecosystem, as EQIX's report confirms the capex and infrastructure needs of hyperscalers and AI leaders like Microsoft and NVIDIA."
+      "The company issued a robust 2026 outlook and raised its annual revenue guidance, signaling high management confidence in sustained, long-term growth.",
+      "The secular demand for AI data centers is the primary driver, confirming EQIX's role as a critical infrastructure provider for this multi-year technology cycle.",
+      "Technically, the stock is in a confirmed long-term bullish uptrend, is significantly outperforming the SPY benchmark, and recent pullbacks have been shallow and on low volume, suggesting dip-buyers are active.",
+      "The dividend was increased, reinforcing the company's financial strength and commitment to shareholder returns despite heavy growth investments."
     ],
     "key_risks": [
-      "Valuation is high (Trailing P/E of ~75), making the stock vulnerable to any execution missteps or a broader market de-rating of growth assets.",
-      "The company is in a heavy capex cycle, resulting in negative Free Cash Flow. If this investment does not translate into expected future revenue and FFO growth, the thesis will be impaired.",
-      "Short-term momentum indicators have turned negative (e.g., bearish MACD crossover), which could lead to a deeper-than-expected pullback if selling pressure mounts.",
-      "The entire thesis is dependent on the AI infrastructure buildout continuing at its current pace; a slowdown in hyperscaler or enterprise spending would be a significant headwind."
+      "The high valuation (Trailing P/E ~75) already prices in significant future growth, making the stock vulnerable to any execution missteps or a broader slowdown in the AI narrative.",
+      "A market-wide correction or a focus on the Q4 revenue miss could lead to a deeper-than-expected pullback, potentially testing the 50-day moving average.",
+      "The company carries a substantial debt load ($23.3B), which could become a headwind in a sustained high-interest-rate environment, increasing the cost of capital for future expansion.",
+      "The AI infrastructure buildout is power-constrained. Any inability to secure sufficient power for new data centers could cap growth potential."
     ],
     "agent_view_summary": [
       {
@@ -2721,18 +2733,18 @@
         "rationale": "The short-term Bearish stance reflects the mixed Q4 print (revenue miss) after a 7% run-up in the prior 30 days, creating a 'sell the news' setup for short-term traders. The long-term Bullish stance is based on the company's raised 2026 revenue guidance, dividend increase, and strong positioning within the secular AI infrastructure buildout, which should overwhelm the minor Q4 miss over the next few quarters."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "rationale": "The dominant technical insight is a healthy consolidation within a powerful long-term uptrend. Conflicting signals between the long-term trend (bullish MAs) and short-term momentum (bearish MACD) characterize a typical pause, not a major trend reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Equinix reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant decline in operating cash flow, worsening negative free cash flow, and a high valuation. The conflicting signals between the income statement and cash flow statement, coupled with high leverage, warrant a cautious stance pending further information."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.75,
+        "rationale": "The dominant technical narrative is a conflict between the established bullish trend and weakening short-term momentum. The current price action is best interpreted as a pause or consolidation; a break below the 20-day moving average on higher volume would be the first key sign of a more significant correction."
       }
     ],
     "debate_summary": {
@@ -2743,7 +2755,7 @@
       ],
       "debate_responses": []
     },
-    "reason_for_final_decision": "The committee's final decision is to override the deterministic guardrail's 'Bearish' short-term stance to 'Neutral' and upgrade the position size hint from 'Small' to 'Medium'. The evidence points more towards a healthy consolidation ('Neutral') rather than a definitive downturn ('Bearish'). The most critical piece of evidence is the strong, multi-year forward guidance reported by the news_macro agent, which provides crucial context for the fundamental agent's cash flow concerns—the negative FCF is a result of growth investment, not business deterioration. This high-confidence, forward-looking catalyst underpins a strong long-term bullish view. Therefore, the appropriate action is to use the expected short-term choppiness as an opportunity to build a medium-sized, long-term position.",
+    "reason_for_final_decision": "I am overriding the deterministic guardrail's short-term 'Bearish' stance to 'Neutral'. The evidence presents a classic conflict: a minor backward-looking revenue miss versus a major forward-looking guidance raise. While a 'sell the news' reaction is possible, the strength of the 2026 outlook is compelling enough that the market could ignore the miss entirely, creating upside risk for a bearish stance. A 'Neutral' short-term view, coupled with an 'Accumulate on weakness' action, best reflects this uncertainty and positions us to capitalize on the powerful long-term 'Bullish' thesis, which is well-supported by both the news_macro and market_technical agents. The fundamental agent's concerns about cash flow are adequately explained by the growth-oriented capex highlighted by the news agent.",
     "agent_votes": {
       "short": [
         {
@@ -2754,17 +2766,17 @@
           "contribution": -0.28
         },
         {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": 0.0
-        },
-        {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.75,
+          "weight": 0.55,
           "contribution": 0.0
         }
       ],
@@ -2777,24 +2789,24 @@
           "contribution": 0.28
         },
         {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": 0.16
-        },
-        {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
           "weight": 0.45,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.75,
+          "weight": 0.2,
+          "contribution": 0.15
         }
       ]
     },
     "scores": {
-      "short": -0.4,
-      "long": 0.7652
+      "short": -0.3875,
+      "long": 0.7611
     },
     "llm_decision_used": true
   }

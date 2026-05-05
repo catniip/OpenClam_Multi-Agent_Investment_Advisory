@@ -5,58 +5,59 @@
   "short_term_stance": "bearish",
   "long_term_stance": "neutral",
   "confidence": 0.75,
-  "confidence_rationale": "Confidence is driven by the alignment of multiple key indicators (price vs. MAs, MACD) pointing to a loss of trend support. It is tempered because the weakness is on low volume and occurs within a 'range_bound' market regime, suggesting consolidation rather than a confirmed new downtrend.",
+  "confidence_rationale": "Confidence is set at 0.75 because multiple key indicators like the price action relative to moving averages and the MACD crossover point to a bearish short-term outlook. However, this is tempered by a neutral RSI, a 'range_bound' market regime, and positive relative strength against the benchmark, which prevent a higher confidence rating.",
   "key_signals": [
     {
       "type": "Moving Averages",
-      "signal": "Bearish Price Structure",
-      "evidence": "Price at 154.82 is below the 20-day (158.75), 50-day (158.12), and 200-day (158.87) moving averages, which have formed a resistance cluster."
+      "signal": "Bearish Trend Structure",
+      "evidence": "Price at 154.82 is below both the MA20 (158.75) and MA50 (158.12)."
     },
     {
       "type": "MACD",
-      "signal": "Bearish Momentum Crossover",
-      "evidence": "The MACD line (-0.85) is below its signal line (-0.23), with a negative histogram (-0.63), indicating accelerating downside momentum."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Significant Price Pullback",
-      "evidence": "The stock was in a -15.61% drawdown from its recent peak, quantifying the recent selling pressure."
+      "signal": "Bearish Momentum Confirmed",
+      "evidence": "The MACD line (-0.78) is below the signal line (-0.11) with a negative histogram (-0.66), indicating strengthening downward momentum."
     },
     {
       "type": "RSI",
-      "signal": "Weakening Momentum",
-      "evidence": "The RSI of 48.44 is below the neutral 50 level, confirming a lack of bullish momentum."
+      "signal": "Neutral Momentum",
+      "evidence": "RSI is 49.93, indicating a lack of strong directional conviction and market indecision."
     },
     {
       "type": "Market Regime",
-      "signal": "Range-Bound Conditions",
-      "evidence": "The stock was classified in a 'range_bound' regime, suggesting the price action was part of a larger consolidation pattern."
+      "signal": "Range-Bound Behavior",
+      "evidence": "The stock is classified in a 'range_bound' regime, suggesting price is likely to oscillate rather than trend strongly."
     },
     {
       "type": "Relative Strength",
-      "signal": "Fading Outperformance",
-      "evidence": "Despite outperforming the SPY benchmark over the period (relative return of +5.85%), the immediate price action was weak, suggesting this leadership was waning."
+      "signal": "Outperforming Benchmark",
+      "evidence": "Despite recent price weakness, the stock shows a positive relative return of 1.26% against SPY."
     },
     {
       "type": "Volume",
-      "signal": "Low Conviction",
-      "evidence": "The latest volume was below its recent average (spike ratio of 0.74), indicating a lack of strong participation in the recent price decline."
+      "signal": "Weak Conviction on Price Moves",
+      "evidence": "The volume spike ratio of 0.74 indicates recent price action has occurred on below-average volume."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Significant Price Correction",
+      "evidence": "The stock is currently in a -15.61% drawdown from its recent peak, indicating sustained selling pressure."
+    },
+    {
+      "type": "Volatility",
+      "signal": "High Risk Environment",
+      "evidence": "Annualized volatility is elevated at 50.13%, suggesting the potential for large price swings."
     },
     {
       "type": "Returns",
       "signal": "negative short-term momentum",
       "evidence": "Mean of recent returns: -0.08%"
-    },
-    {
-      "type": "Volatility",
-      "signal": "moderate volatility",
-      "evidence": "Annualized volatility 49.87%, Recent 48.35%"
     }
   ],
   "risks": [
-    "The breakdown below the key 20, 50, and 200-day moving average cluster signals a potential reversal of the prior uptrend.",
-    "The existing -15.61% drawdown indicates significant selling pressure, and a failure to find support could lead to further declines."
+    "High volatility (50.13%) increases the risk of sharp, unpredictable price movements contrary to the current trend.",
+    "The stock's positive relative strength could attract buyers and lead to a short squeeze or trend reversal if the broader market turns positive.",
+    "The 'range_bound' classification implies that a breakdown below recent support may not occur, and price could revert back up toward the moving averages."
   ],
-  "summary": "As of 2026/02/27, NRG's technical profile was short-term bearish. The price had decisively broken below the confluence of its 20, 50, and 200-day moving averages, a structurally weak sign. This was supported by bearish momentum indicators like MACD and an RSI below 50. However, the move lacked high-volume conviction and occurred within a 'range-bound' market context. While prior relative strength was a positive, the recent breakdown shifted the long-term outlook to neutral, pending confirmation of a new downtrend or a reclaim of key MAs.",
-  "core_insight": "The most critical signal was the price's failure to hold support at the confluence of all major moving averages, shifting the technical bias to bearish in the short term and questioning the sustainability of its prior outperformance."
+  "summary": "NRG exhibits a bearish short-term posture, trading below its key moving averages with a confirmed bearish MACD signal. However, this downward pressure is met with conflicting evidence: momentum is neutral (RSI near 50), conviction is low (below-average volume), and the stock maintains positive relative strength against the S&P 500. The market is defined as 'range_bound' and highly volatile, suggesting a continued choppy, sideways-to-downward trajectory is most likely in the immediate future.",
+  "core_insight": "The core technical conflict is between the bearish trend signals (price below MAs, MACD) and signs of underlying resilience or indecision (neutral RSI, positive relative strength). This indicates that while the path of least resistance is currently down, the bearish trend lacks strong conviction, making it vulnerable to a reversal or a prolonged period of range-bound trading."
 }

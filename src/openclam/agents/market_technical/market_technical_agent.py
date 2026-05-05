@@ -7,6 +7,9 @@ import yfinance as yf
 from langchain_openai import ChatOpenAI
 
 
+DATE_PATTERN = r"\d{4}[-/]\d{1,2}[-/]\d{1,2}"
+
+
 MARKET_AGENT_PROMPT = """
 You are a Market & Technical Analysis Agent.
 
@@ -14,6 +17,10 @@ Your job is to analyze stock market behavior using:
 price action, trend, momentum, volatility, volume, and relative strength.
 
 You act like a professional technical analyst.
+
+For post-earnings trading analysis, you also evaluate event reaction momentum:
+the first trading-day price reaction after earnings, abnormal reaction versus QQQ,
+volume confirmation, and whether the initial move is likely continuation or reversal.
 
 ==================================================
 TASK CLASSIFICATION
@@ -57,6 +64,7 @@ INDICATORS (USE JOINTLY)
 - Relative strength -> market leadership
 - Drawdown -> downside risk
 - Market regime -> context tag
+- Earnings reaction -> post-earnings price confirmation, abnormal move versus QQQ, volume conviction
 
 ==================================================
 REASONING RULES
@@ -69,6 +77,7 @@ You MUST:
 
 You SHOULD mention:
 - price + volume confirmation
+- post-earnings price confirmation when earnings reaction data is provided
 - trend strength or weakness
 - volatility context
 - relative strength vs benchmark
@@ -113,6 +122,10 @@ IMPORTANT RULES
 ==================================================
 
 - All indicators are pre-calculated and provided to you
+- If earnings_reaction is provided, short_term_stance should give it high weight:
+  a strong positive abnormal reaction favors bullish continuation, a strong negative abnormal reaction favors bearish continuation,
+  and a weak/flat reaction favors neutral unless other indicators are very consistent.
+- Do not fade a strong post-earnings reaction without clear reversal evidence from volume, RSI/MACD, or trend breakdown.
 - Do NOT say indicators are missing (they are all provided)
 - Do NOT hallucinate data - use only what is provided
 - Keep reasoning structured and consistent
@@ -127,7 +140,7 @@ def create_market_llm(api_key: str, model: str = "gpt-5-nano", temperature: floa
 
 
 def detect_time_type(query: str):
-	if re.search(r"\d{4}/\d{1,2}/\d{1,2}", query):
+	if re.search(DATE_PATTERN, query):
 		return "as_of_date_analysis"
 
 	if any(k in query.lower() for k in ["past", "last", "over the", "weeks", "months"]):
@@ -281,6 +294,79 @@ def compute_relative_strength(
 		"benchmark_return": float(benchmark_return),
 		"relative_return": float(relative_return),
 		"outperforming": relative_return > 0,
+	}
+
+
+def compute_earnings_reaction(
+	ticker: str,
+	event_date: str,
+	benchmark: str = "QQQ",
+	lookback_days: int = 20,
+):
+	"""Compute first-trading-day post-earnings price confirmation versus a benchmark."""
+	event_ts = pd.Timestamp(event_date).normalize()
+	start = (event_ts - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+	end = (event_ts + pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+	stock_df = load_price_data(ticker=ticker, start=start, end=end)
+	benchmark_df = load_price_data(ticker=benchmark, start=start, end=end)
+	if stock_df.empty or benchmark_df.empty:
+		return {}
+
+	stock_df["Date"] = pd.to_datetime(stock_df["Date"]).dt.normalize()
+	benchmark_df["Date"] = pd.to_datetime(benchmark_df["Date"]).dt.normalize()
+	stock_df = stock_df.sort_values("Date").reset_index(drop=True)
+	benchmark_df = benchmark_df.sort_values("Date").reset_index(drop=True)
+
+	event_candidates = stock_df.index[stock_df["Date"] >= event_ts].tolist()
+	if not event_candidates:
+		return {}
+	event_idx = event_candidates[0]
+	reaction_idx = event_idx + 1
+	if reaction_idx >= len(stock_df):
+		return {}
+
+	event_row = stock_df.iloc[event_idx]
+	reaction_row = stock_df.iloc[reaction_idx]
+	event_close = float(event_row["Close"])
+	reaction_close = float(reaction_row["Close"])
+	post_1d_return = reaction_close / event_close - 1
+
+	bench_event_candidates = benchmark_df.index[benchmark_df["Date"] >= event_ts].tolist()
+	if not bench_event_candidates:
+		benchmark_return = None
+	else:
+		bench_event_idx = bench_event_candidates[0]
+		bench_reaction_idx = bench_event_idx + 1
+		if bench_reaction_idx < len(benchmark_df):
+			bench_event_close = float(benchmark_df.iloc[bench_event_idx]["Close"])
+			bench_reaction_close = float(benchmark_df.iloc[bench_reaction_idx]["Close"])
+			benchmark_return = bench_reaction_close / bench_event_close - 1
+		else:
+			benchmark_return = None
+
+	abnormal_return = post_1d_return - benchmark_return if benchmark_return is not None else None
+	volume_start_idx = max(0, event_idx - lookback_days)
+	avg_volume = stock_df.iloc[volume_start_idx:event_idx]["Volume"].mean()
+	volume_ratio = None if pd.isna(avg_volume) or avg_volume == 0 else float(reaction_row["Volume"] / avg_volume)
+
+	return {
+		"ticker": ticker,
+		"benchmark": benchmark,
+		"event_date": event_ts.strftime("%Y-%m-%d"),
+		"event_close_date": pd.Timestamp(event_row["Date"]).strftime("%Y-%m-%d"),
+		"reaction_date": pd.Timestamp(reaction_row["Date"]).strftime("%Y-%m-%d"),
+		"event_close": event_close,
+		"reaction_close": reaction_close,
+		"post_1d_return": float(post_1d_return),
+		"benchmark_post_1d_return": float(benchmark_return) if benchmark_return is not None else None,
+		"abnormal_post_1d_vs_benchmark": float(abnormal_return) if abnormal_return is not None else None,
+		"reaction_direction": "up" if post_1d_return > 0 else "down" if post_1d_return < 0 else "flat",
+		"abnormal_reaction_direction": (
+			"up" if abnormal_return is not None and abnormal_return > 0 else
+			"down" if abnormal_return is not None and abnormal_return < 0 else
+			"flat" if abnormal_return is not None else None
+		),
+		"reaction_volume_ratio": volume_ratio,
 	}
 
 
@@ -534,6 +620,35 @@ def build_key_signals(indicators: dict):
 	return signals
 
 
+def build_earnings_reaction_signal(earnings_reaction: dict):
+	if not earnings_reaction:
+		return None
+
+	abnormal = earnings_reaction.get("abnormal_post_1d_vs_benchmark")
+	post_1d = earnings_reaction.get("post_1d_return")
+	volume_ratio = earnings_reaction.get("reaction_volume_ratio")
+	if abnormal is None and post_1d is None:
+		return None
+
+	if abnormal is not None:
+		if abnormal > 0.02:
+			signal = "bullish post-earnings confirmation"
+		elif abnormal < -0.02:
+			signal = "bearish post-earnings confirmation"
+		else:
+			signal = "muted post-earnings reaction"
+	else:
+		signal = "positive post-earnings reaction" if post_1d > 0 else "negative post-earnings reaction"
+
+	evidence = f"Post-1d return {_fmt_num(post_1d * 100, 2)}%"
+	if abnormal is not None:
+		evidence += f", abnormal vs {earnings_reaction.get('benchmark', 'QQQ')} {_fmt_num(abnormal * 100, 2)}%"
+	if volume_ratio is not None:
+		evidence += f", reaction volume {_fmt_num(volume_ratio, 2)}x trailing average"
+	evidence += f", reaction date {earnings_reaction.get('reaction_date')}"
+	return {"type": "Earnings Reaction", "signal": signal, "evidence": evidence}
+
+
 def _normalize_stance(value: str):
 	valid = {"bullish", "neutral", "bearish"}
 	if isinstance(value, str) and value.lower() in valid:
@@ -584,19 +699,35 @@ def run_market_analysis(user_query: str, llm: ChatOpenAI, ticker: str = None):
 	start = None
 	end = None
 	period = None
+	earnings_reaction = {}
 
 	if time_type == "as_of_date_analysis":
-		date_match = re.search(r"(\d{4})/(\d{1,2})/(\d{1,2})", user_query)
+		date_match = re.search(r"(\d{4})[-/](\d{1,2})[-/](\d{1,2})", user_query)
 		if date_match:
-			period = "1y"
+			event_date = pd.Timestamp(
+				year=int(date_match.group(1)),
+				month=int(date_match.group(2)),
+				day=int(date_match.group(3)),
+			)
+			start = (event_date - pd.Timedelta(days=365)).strftime("%Y-%m-%d")
+			end = (event_date + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
+			earnings_reaction = _safe_compute(
+				lambda: compute_earnings_reaction(ticker, event_date.strftime("%Y-%m-%d")),
+				default={},
+			)
 	elif "past" in user_query.lower() or "last" in user_query.lower():
 		period = "3mo"
 	else:
 		period = "3mo"
 
 	indicators = compute_all_indicators(ticker, start, end, period)
+	if earnings_reaction:
+		indicators["earnings_reaction"] = earnings_reaction
 	company_name = get_company_name(ticker)
 	generated_key_signals = build_key_signals(indicators)
+	reaction_signal = build_earnings_reaction_signal(earnings_reaction)
+	if reaction_signal:
+		generated_key_signals.insert(0, reaction_signal)
 
 	indicators_str = f"""
 Technical Indicators for {ticker}:
