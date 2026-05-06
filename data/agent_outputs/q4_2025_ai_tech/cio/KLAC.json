@@ -11,34 +11,35 @@
         "rationale": "The short-term stance is Bullish due to a clear revenue/EPS beat and, more importantly, revenue guidance that exceeded analyst estimates. This beat-and-raise in the current AI-focused market should attract capital and lead to outperformance. The long-term stance is Bullish because KLAC is a direct, high-margin beneficiary of the secular trend towards more complex semiconductor manufacturing (AI, GAA, advanced packaging), which requires more of its near-monopolistic process control and inspection tools."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "KLA reported sequential growth in revenue and all measures of income, coupled with a strong profit margin. However, these positive developments are overshadowed by a significant quarter-over-quarter drop in both operating and free cash flow. The company's valuation is high, with a Trailing P/E of 48.4, which adds a layer of risk. The lack of guidance and management commentary further clouds the outlook."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.9,
+        "rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
-      "2 agents lean bullish on the long-term horizon."
+      "2 agents lean neutral on the long-term horizon."
     ],
-    "areas_of_disagreement": [],
+    "areas_of_disagreement": [
+      "Short-term views contain both bullish and bearish calls."
+    ],
     "missing_information": [],
     "short_stance_counts": {
       "Bullish": 1,
-      "Neutral": 2,
-      "Bearish": 0
+      "Neutral": 1,
+      "Bearish": 1
     },
     "long_stance_counts": {
-      "Bullish": 2,
-      "Neutral": 1,
+      "Bullish": 1,
+      "Neutral": 2,
       "Bearish": 0
     },
     "agent_packets": [
@@ -437,261 +438,6 @@
       },
       {
         "ticker": "KLAC",
-        "company": "KLA Corporation",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-        "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Signals",
-            "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Shift",
-            "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Sustained Market Outperformance",
-            "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Recent Correction",
-            "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.48%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-          }
-        ],
-        "risks": [
-          "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-          "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-          "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-        ],
-        "citations": [],
-        "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-        "raw_packet": {
-          "ticker": "KLAC",
-          "company": "KLA Corporation",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-          "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Signals",
-              "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Sustained Market Outperformance",
-              "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Recent Correction",
-              "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.48%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-            }
-          ],
-          "risks": [
-            "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-            "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-            "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-          ],
-          "citations": [],
-          "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-          "raw_packet": {
-            "ticker": "KLAC",
-            "company": "KLA Corporation",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-            "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Signals",
-                "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Sustained Market Outperformance",
-                "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Recent Correction",
-                "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.48%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-              }
-            ],
-            "risks": [
-              "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-              "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-              "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-            ],
-            "citations": [],
-            "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-            "raw_packet": {
-              "ticker": "KLAC",
-              "company": "KLA Corporation",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Signals",
-                  "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Sustained Market Outperformance",
-                  "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Recent Correction",
-                  "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.48%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-                }
-              ],
-              "risks": [
-                "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-                "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-                "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-              ],
-              "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-              "core_insight": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "KLAC",
         "company": "KLA",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
@@ -834,16 +580,288 @@
             }
           }
         }
+      },
+      {
+        "ticker": "KLAC",
+        "company": "KLA",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.9,
+        "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+        "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bearish Reversal",
+            "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+          },
+          {
+            "type": "RSI",
+            "signal": "Overbought Condition Pre-Earnings",
+            "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Prior Bullish Trend Under Threat",
+            "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+          },
+          {
+            "type": "MACD",
+            "signal": "Momentum Reversal",
+            "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Leadership Status Challenged",
+            "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Peak Rejection",
+            "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Bullish Trend Halted",
+            "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 1.67%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.3x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+          }
+        ],
+        "risks": [
+          "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+          "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+        "raw_packet": {
+          "ticker": "KLAC",
+          "company": "KLA",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.9,
+          "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+          "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Reversal",
+              "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+            },
+            {
+              "type": "RSI",
+              "signal": "Overbought Condition Pre-Earnings",
+              "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Prior Bullish Trend Under Threat",
+              "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "Momentum Reversal",
+              "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Status Challenged",
+              "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Peak Rejection",
+              "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Halted",
+              "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 1.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.3x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+            }
+          ],
+          "risks": [
+            "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+            "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+          "raw_packet": {
+            "ticker": "KLAC",
+            "company": "KLA",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.9,
+            "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+            "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Reversal",
+                "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+              },
+              {
+                "type": "RSI",
+                "signal": "Overbought Condition Pre-Earnings",
+                "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Prior Bullish Trend Under Threat",
+                "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "Momentum Reversal",
+                "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Status Challenged",
+                "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Peak Rejection",
+                "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Halted",
+                "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 1.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.3x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+              }
+            ],
+            "risks": [
+              "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+              "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+            "raw_packet": {
+              "ticker": "KLAC",
+              "company": "KLA",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "neutral",
+              "confidence": 0.9,
+              "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Reversal",
+                  "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Overbought Condition Pre-Earnings",
+                  "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Prior Bullish Trend Under Threat",
+                  "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Momentum Reversal",
+                  "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Status Challenged",
+                  "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Peak Rejection",
+                  "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Halted",
+                  "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 1.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.3x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+                }
+              ],
+              "risks": [
+                "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+                "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+              ],
+              "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+              "core_insight": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": false,
+    "triggered": true,
     "trigger": {
-      "debate_required": false,
-      "conflict_level": "low",
+      "debate_required": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ]
     },
     "synthesis": {
@@ -858,34 +876,35 @@
           "rationale": "The short-term stance is Bullish due to a clear revenue/EPS beat and, more importantly, revenue guidance that exceeded analyst estimates. This beat-and-raise in the current AI-focused market should attract capital and lead to outperformance. The long-term stance is Bullish because KLAC is a direct, high-margin beneficiary of the secular trend towards more complex semiconductor manufacturing (AI, GAA, advanced packaging), which requires more of its near-monopolistic process control and inspection tools."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "KLA reported sequential growth in revenue and all measures of income, coupled with a strong profit margin. However, these positive developments are overshadowed by a significant quarter-over-quarter drop in both operating and free cash flow. The company's valuation is high, with a Trailing P/E of 48.4, which adds a layer of risk. The lack of guidance and management commentary further clouds the outlook."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.9,
+          "rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
-        "2 agents lean bullish on the long-term horizon."
+        "2 agents lean neutral on the long-term horizon."
       ],
-      "areas_of_disagreement": [],
+      "areas_of_disagreement": [
+        "Short-term views contain both bullish and bearish calls."
+      ],
       "missing_information": [],
       "short_stance_counts": {
         "Bullish": 1,
-        "Neutral": 2,
-        "Bearish": 0
+        "Neutral": 1,
+        "Bearish": 1
       },
       "long_stance_counts": {
-        "Bullish": 2,
-        "Neutral": 1,
+        "Bullish": 1,
+        "Neutral": 2,
         "Bearish": 0
       },
       "agent_packets": [
@@ -1414,325 +1433,6 @@
         },
         {
           "ticker": "KLAC",
-          "company": "KLA Corporation",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-          "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Signals",
-              "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Sustained Market Outperformance",
-              "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Recent Correction",
-              "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.48%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-            }
-          ],
-          "risks": [
-            "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-            "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-            "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-          ],
-          "citations": [],
-          "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-          "raw_packet": {
-            "ticker": "KLAC",
-            "company": "KLA Corporation",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-            "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Signals",
-                "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Sustained Market Outperformance",
-                "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Recent Correction",
-                "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.48%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-              }
-            ],
-            "risks": [
-              "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-              "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-              "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-            ],
-            "citations": [],
-            "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-            "raw_packet": {
-              "ticker": "KLAC",
-              "company": "KLA Corporation",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-              "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Signals",
-                  "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Sustained Market Outperformance",
-                  "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Recent Correction",
-                  "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.48%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-                }
-              ],
-              "risks": [
-                "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-                "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-                "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-              ],
-              "citations": [],
-              "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-              "raw_packet": {
-                "ticker": "KLAC",
-                "company": "KLA Corporation",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bullish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-                "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Conflicting Trend Signals",
-                    "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bearish Momentum Shift",
-                    "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Sustained Market Outperformance",
-                    "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral Momentum",
-                    "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Recent Correction",
-                    "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Conditions",
-                    "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.48%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-                  }
-                ],
-                "risks": [
-                  "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-                  "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-                  "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-                ],
-                "citations": [],
-                "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-                "raw_packet": {
-                  "ticker": "KLAC",
-                  "company": "KLA Corporation",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Conflicting Trend Signals",
-                      "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bearish Momentum Shift",
-                      "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Sustained Market Outperformance",
-                      "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral Momentum",
-                      "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Recent Correction",
-                      "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Conditions",
-                      "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.48%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-                    }
-                  ],
-                  "risks": [
-                    "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-                    "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-                    "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-                  ],
-                  "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-                  "core_insight": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "KLAC",
           "company": "KLA",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
@@ -1910,18 +1610,412 @@
               }
             }
           }
+        },
+        {
+          "ticker": "KLAC",
+          "company": "KLA",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.9,
+          "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+          "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Reversal",
+              "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+            },
+            {
+              "type": "RSI",
+              "signal": "Overbought Condition Pre-Earnings",
+              "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Prior Bullish Trend Under Threat",
+              "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "Momentum Reversal",
+              "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Status Challenged",
+              "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Peak Rejection",
+              "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Halted",
+              "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 1.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.3x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+            }
+          ],
+          "risks": [
+            "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+            "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+          "raw_packet": {
+            "ticker": "KLAC",
+            "company": "KLA",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.9,
+            "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+            "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Reversal",
+                "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+              },
+              {
+                "type": "RSI",
+                "signal": "Overbought Condition Pre-Earnings",
+                "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Prior Bullish Trend Under Threat",
+                "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "Momentum Reversal",
+                "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Status Challenged",
+                "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Peak Rejection",
+                "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Halted",
+                "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 1.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.3x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+              }
+            ],
+            "risks": [
+              "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+              "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+            "raw_packet": {
+              "ticker": "KLAC",
+              "company": "KLA",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Neutral",
+              "confidence": 0.9,
+              "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+              "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Reversal",
+                  "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Overbought Condition Pre-Earnings",
+                  "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Prior Bullish Trend Under Threat",
+                  "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Momentum Reversal",
+                  "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Status Challenged",
+                  "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Peak Rejection",
+                  "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Halted",
+                  "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 1.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.3x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+                }
+              ],
+              "risks": [
+                "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+                "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+              ],
+              "citations": [],
+              "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+              "raw_packet": {
+                "ticker": "KLAC",
+                "company": "KLA",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Neutral",
+                "confidence": 0.9,
+                "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+                "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bearish Reversal",
+                    "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Overbought Condition Pre-Earnings",
+                    "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Prior Bullish Trend Under Threat",
+                    "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Momentum Reversal",
+                    "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Leadership Status Challenged",
+                    "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Peak Rejection",
+                    "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Bullish Trend Halted",
+                    "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 1.67%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "moderate participation",
+                    "evidence": "Volume spike ratio 1.3x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+                  }
+                ],
+                "risks": [
+                  "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+                  "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+                ],
+                "citations": [],
+                "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+                "raw_packet": {
+                  "ticker": "KLAC",
+                  "company": "KLA",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "neutral",
+                  "confidence": 0.9,
+                  "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bearish Reversal",
+                      "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Overbought Condition Pre-Earnings",
+                      "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Prior Bullish Trend Under Threat",
+                      "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Momentum Reversal",
+                      "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Leadership Status Challenged",
+                      "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Peak Rejection",
+                      "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Bullish Trend Halted",
+                      "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 1.67%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "moderate participation",
+                      "evidence": "Volume spike ratio 1.3x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+                    }
+                  ],
+                  "risks": [
+                    "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+                    "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+                  ],
+                  "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+                  "core_insight": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [],
+    "debate_responses": [
+      {
+        "response_type": "revision",
+        "agreement": [
+          "I agree with the market_technical agent's primary and high-confidence assessment. The -15.24% post-earnings drop on 2.22x average volume is an undeniable, strong bearish signal that invalidates my initial short-term bullish stance.",
+          "I agree with the market_technical agent that the stock was in an overbought condition (RSI 75.59) prior to the report, which made it highly vulnerable to a 'sell the news' event, a risk I had noted but underestimated.",
+          "I agree with the fundamental agent's observation of a high valuation (Trailing P/E 48.4). The market's severe negative reaction confirms that the valuation was a critical point of sensitivity, and the positive news was insufficient to justify it.",
+          "I agree with the fundamental agent that the sharp quarter-over-quarter drop in free cash flow is a valid point of concern that the market likely focused on, even if it might be explainable by working capital changes."
+        ],
+        "disagreement": [
+          "I disagree with the fundamental agent's 'Neutral' stance only in that it was derived from incomplete data (lacking guidance and transcripts). My original analysis was based on a clear beat-and-raise, which is a stronger fundamental signal. However, the market's price action proves that even this positive fundamental news was not enough, giving weight to the technical agent's view over my fundamental one in the short term.",
+          "I now disagree with my own original short-term 'Bullish' stance. It was based on the premise that a beat-and-raise would be rewarded, an assumption that was proven definitively wrong by the market's reaction."
+        ],
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.6,
+        "evidence_needed": [
+          "A detailed review of the earnings call transcript Q&A is needed to understand why the market reacted so negatively to a beat-and-raise. Specific focus should be on management's tone, the magnitude of the guidance raise relative to 'whisper numbers', and any commentary regarding the cash flow decline or weakness in segments outside of AI.",
+          "Analysis of price support levels, particularly the 50-day moving average (around 1303.58), is needed to determine if the sell-off is a short-term correction or the start of a longer-term trend break, which will inform the new 'Neutral' long-term stance."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the news_macro agent that the fundamental picture has clarified and improved: KLA delivered a revenue/EPS beat and raised guidance, driven by explicit AI-related demand. This resolves the primary uncertainties from my original view. I also agree with the market_technical agent's core observation: the stock's -15.24% high-volume drop is a factual and powerful signal that the market rejected the news, likely because the valuation was too high and the beat was not strong enough to justify the prior run-up.",
+        "disagreement": "I disagree with the news_macro agent's purely Bullish stance. It underweights the severity of the market's post-earnings reaction. A fundamentally positive report that triggers a -15% sell-off is a strong indicator that valuation risk has superseded the positive operational narrative. The market is signaling that the fundamental story, while good, was not good enough for the price, which is a fundamental concern in itself.",
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.8,
+        "evidence_needed": [
+          "Management's explanation from the earnings call transcript for the significant quarter-over-quarter decline in operating and free cash flow. This was a primary risk in my original analysis and remains unresolved. Understanding if this was a one-time working capital issue or a sign of deteriorating earnings quality is now the most critical missing piece of information.",
+          "Analyst estimate revisions post-earnings to gauge whether the street is upgrading or downgrading targets despite the beat, which would provide context for the negative price reaction.",
+          "Price action around key technical levels, such as the 50-day moving average, to see if dip-buyers support the long-term fundamental story or if the technical breakdown continues."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "source_agent": "news_macro",
+          "evidence": "I agree with the news_macro agent's evidence that KLAC reported a 'beat-and-raise' quarter driven by strong AI-related demand. I also agree with their identified risk that the stock's high valuation and significant prior appreciation (+121.63% relative return vs SPY) made it vulnerable to a 'sell the news' reaction.",
+          "source_agent_2": "fundamental",
+          "evidence_2": "I agree with the fundamental agent's observation that the Trailing P/E of 48.4 is high, which supports the technical view that the stock was overextended and priced for perfection."
+        },
+        "disagreement": {
+          "source_agent": "news_macro",
+          "evidence": "I disagree with the news_macro agent's conclusion that the stock is short-term Bullish. While the fundamental news is positive, my mandate is to interpret the market's reaction. A -15.24% price drop on 2.22x average volume is an unambiguous, high-conviction rejection by the market. This price action signal is more immediate and powerful than the underlying news itself and cannot be ignored.",
+          "source_agent_2": "fundamental",
+          "evidence_2": "I am assigning lower weight to the fundamental agent's analysis. Their stated confidence is very low (0.3) and they admit to lacking critical data (guidance, transcripts) that the news_macro agent possessed. The significant drop in Free Cash Flow they noted is a concern, but without the management commentary that the news_macro agent likely reviewed, it's an incomplete signal."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.8,
+        "evidence_needed": [
+          "The primary conflict is the bullish fundamental news versus the extremely bearish price reaction. I need to see the management commentary from the earnings call transcript, specifically regarding the significant drop in Free Cash Flow noted by the fundamental agent. This would clarify whether the market's sell-off was a purely technical/valuation event or if there is an underlying fundamental concern that justifies the price drop despite the positive headline guidance."
+        ]
+      }
+    ],
     "revised_packets": [
       {
         "ticker": "KLAC",
         "company": "KLA",
         "agent_name": "news_macro",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.6,
         "confidence_rationale": "Confidence is high because the thesis is based on direct evidence from KLAC's own earnings report, management commentary, and forward guidance. The narrative of AI driving demand is explicit, not inferred. The main risk is the stock's high valuation and significant prior appreciation, which could temper the post-earnings reaction, but the strong guidance provides a solid fundamental floor.",
         "stance_rationale": "The short-term stance is Bullish due to a clear revenue/EPS beat and, more importantly, revenue guidance that exceeded analyst estimates. This beat-and-raise in the current AI-focused market should attract capital and lead to outperformance. The long-term stance is Bullish because KLAC is a direct, high-margin beneficiary of the secular trend towards more complex semiconductor manufacturing (AI, GAA, advanced packaging), which requires more of its near-monopolistic process control and inspection tools.",
         "key_signals": [
@@ -2306,270 +2400,35 @@
               "core_insight": "KLAC's strong results, driven by AI-chip complexity, signal that demand for ancillary, highly specialized manufacturing inputs like advanced photomasks and ultra-pure production environments is growing disproportionately, creating opportunities in overlooked suppliers."
             }
           }
-        }
-      },
-      {
-        "ticker": "KLAC",
-        "company": "KLA Corporation",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-        "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Signals",
-            "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Shift",
-            "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Sustained Market Outperformance",
-            "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Recent Correction",
-            "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.48%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-          }
-        ],
-        "risks": [
-          "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-          "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-          "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-        ],
-        "citations": [],
-        "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-        "raw_packet": {
-          "ticker": "KLAC",
-          "company": "KLA Corporation",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-          "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Signals",
-              "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Sustained Market Outperformance",
-              "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Recent Correction",
-              "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.48%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-            }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the market_technical agent's primary and high-confidence assessment. The -15.24% post-earnings drop on 2.22x average volume is an undeniable, strong bearish signal that invalidates my initial short-term bullish stance.",
+            "I agree with the market_technical agent that the stock was in an overbought condition (RSI 75.59) prior to the report, which made it highly vulnerable to a 'sell the news' event, a risk I had noted but underestimated.",
+            "I agree with the fundamental agent's observation of a high valuation (Trailing P/E 48.4). The market's severe negative reaction confirms that the valuation was a critical point of sensitivity, and the positive news was insufficient to justify it.",
+            "I agree with the fundamental agent that the sharp quarter-over-quarter drop in free cash flow is a valid point of concern that the market likely focused on, even if it might be explainable by working capital changes."
           ],
-          "risks": [
-            "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-            "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-            "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
+          "disagreement": [
+            "I disagree with the fundamental agent's 'Neutral' stance only in that it was derived from incomplete data (lacking guidance and transcripts). My original analysis was based on a clear beat-and-raise, which is a stronger fundamental signal. However, the market's price action proves that even this positive fundamental news was not enough, giving weight to the technical agent's view over my fundamental one in the short term.",
+            "I now disagree with my own original short-term 'Bullish' stance. It was based on the premise that a beat-and-raise would be rewarded, an assumption that was proven definitively wrong by the market's reaction."
           ],
-          "citations": [],
-          "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-          "raw_packet": {
-            "ticker": "KLAC",
-            "company": "KLA Corporation",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-            "stance_rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Signals",
-                "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Sustained Market Outperformance",
-                "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Recent Correction",
-                "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.48%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-              }
-            ],
-            "risks": [
-              "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-              "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-              "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-            ],
-            "citations": [],
-            "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-            "raw_packet": {
-              "ticker": "KLAC",
-              "company": "KLA Corporation",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid, reflecting a clear long-term uptrend structure (Price > MA50/200) and market outperformance. It is not higher because short-term signals are conflicting, with a bearish MACD crossover and a price breakdown below the MA20 indicating a significant pullback that warrants caution.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Signals",
-                  "evidence": "Price at 1713.32 is below its MA20 (1769.66) but remains well above its MA50 (1594.88) and MA200 (1262.52), indicating a short-term pullback within a long-term uptrend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "The MACD line (55.01) crossed below the signal line (74.67), resulting in a negative histogram (-19.66), which confirms a loss of upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Sustained Market Outperformance",
-                  "evidence": "The stock strongly outperformed the SPY benchmark, with a relative return of 120.12%, establishing it as a market leader over the period."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "The RSI of 50.12 is neutral, indicating a balance between buying and selling pressure and suggesting the recent sell-off has paused without reaching oversold conditions."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Recent Correction",
-                  "evidence": "The price has corrected -11.46% from its recent peak, indicating substantial profit-taking or a shift in short-term sentiment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.85 suggests that recent trading volume was below average, indicating weak participation and indecision at current price levels."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock was classified in a 'range_bound' regime, reflecting the short-term pullback's counterbalance to the longer-term uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.48%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 44.95%, Recent 49.09%"
-                }
-              ],
-              "risks": [
-                "The break below the 20-day moving average signifies a failure of the immediate uptrend, opening the door for further consolidation or decline.",
-                "A confirmed bearish MACD crossover indicates that short-term momentum has turned negative, which could precede further price weakness.",
-                "The -11.46% drawdown from the peak represents significant selling pressure that could continue if key support levels are not held."
-              ],
-              "summary": "As of January 29, 2026, KLAC was in a robust long-term uptrend, evidenced by its position above key moving averages (50D, 200D) and strong market outperformance. However, the stock was experiencing a clear short-term correction, defined by a price below its 20D MA, a bearish MACD signal, and a drawdown of over 11%. Neutral RSI and low volume suggested a state of indecision within this pullback.",
-              "core_insight": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-            }
-          }
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.6,
+          "evidence_needed": [
+            "A detailed review of the earnings call transcript Q&A is needed to understand why the market reacted so negatively to a beat-and-raise. Specific focus should be on management's tone, the magnitude of the guidance raise relative to 'whisper numbers', and any commentary regarding the cash flow decline or weakness in segments outside of AI.",
+            "Analysis of price support levels, particularly the 50-day moving average (around 1303.58), is needed to determine if the sell-off is a short-term correction or the start of a longer-term trend break, which will inform the new 'Neutral' long-term stance."
+          ]
         }
       },
       {
         "ticker": "KLAC",
         "company": "KLA",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Neutral",
-        "confidence": 0.3,
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is low due to a lack of critical information. The absence of analyst consensus estimates, management guidance, and earnings call transcripts prevents a comprehensive analysis. The significant discrepancy between income growth and cash flow decline is a major uncertainty that cannot be resolved with the provided data.",
         "stance_rationale": "KLA reported sequential growth in revenue and all measures of income, coupled with a strong profit margin. However, these positive developments are overshadowed by a significant quarter-over-quarter drop in both operating and free cash flow. The company's valuation is high, with a Trailing P/E of 48.4, which adds a layer of risk. The lack of guidance and management commentary further clouds the outlook.",
         "key_signals": [
@@ -2706,6 +2565,311 @@
               }
             }
           }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent that the fundamental picture has clarified and improved: KLA delivered a revenue/EPS beat and raised guidance, driven by explicit AI-related demand. This resolves the primary uncertainties from my original view. I also agree with the market_technical agent's core observation: the stock's -15.24% high-volume drop is a factual and powerful signal that the market rejected the news, likely because the valuation was too high and the beat was not strong enough to justify the prior run-up.",
+          "disagreement": "I disagree with the news_macro agent's purely Bullish stance. It underweights the severity of the market's post-earnings reaction. A fundamentally positive report that triggers a -15% sell-off is a strong indicator that valuation risk has superseded the positive operational narrative. The market is signaling that the fundamental story, while good, was not good enough for the price, which is a fundamental concern in itself.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "Management's explanation from the earnings call transcript for the significant quarter-over-quarter decline in operating and free cash flow. This was a primary risk in my original analysis and remains unresolved. Understanding if this was a one-time working capital issue or a sign of deteriorating earnings quality is now the most critical missing piece of information.",
+            "Analyst estimate revisions post-earnings to gauge whether the street is upgrading or downgrading targets despite the beat, which would provide context for the negative price reaction.",
+            "Price action around key technical levels, such as the 50-day moving average, to see if dip-buyers support the long-term fundamental story or if the technical breakdown continues."
+          ]
+        }
+      },
+      {
+        "ticker": "KLAC",
+        "company": "KLA",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.8,
+        "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+        "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bearish Reversal",
+            "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+          },
+          {
+            "type": "RSI",
+            "signal": "Overbought Condition Pre-Earnings",
+            "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Prior Bullish Trend Under Threat",
+            "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+          },
+          {
+            "type": "MACD",
+            "signal": "Momentum Reversal",
+            "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Leadership Status Challenged",
+            "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Peak Rejection",
+            "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Bullish Trend Halted",
+            "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 1.67%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.3x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+          }
+        ],
+        "risks": [
+          "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+          "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+        "raw_packet": {
+          "ticker": "KLAC",
+          "company": "KLA",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.9,
+          "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+          "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Reversal",
+              "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+            },
+            {
+              "type": "RSI",
+              "signal": "Overbought Condition Pre-Earnings",
+              "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Prior Bullish Trend Under Threat",
+              "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "Momentum Reversal",
+              "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Status Challenged",
+              "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Peak Rejection",
+              "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Halted",
+              "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 1.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.3x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+            }
+          ],
+          "risks": [
+            "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+            "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+          "raw_packet": {
+            "ticker": "KLAC",
+            "company": "KLA",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.9,
+            "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+            "stance_rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Reversal",
+                "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+              },
+              {
+                "type": "RSI",
+                "signal": "Overbought Condition Pre-Earnings",
+                "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Prior Bullish Trend Under Threat",
+                "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "Momentum Reversal",
+                "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Status Challenged",
+                "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Peak Rejection",
+                "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Halted",
+                "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 1.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.3x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+              }
+            ],
+            "risks": [
+              "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+              "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+            "raw_packet": {
+              "ticker": "KLAC",
+              "company": "KLA",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "neutral",
+              "confidence": 0.9,
+              "confidence_rationale": "The analysis is driven by an exceptionally strong, high-volume post-earnings negative reaction (-15.24%), which is a classic and high-conviction signal for a short-term trend reversal, overriding the prior bullish trend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Reversal",
+                  "evidence": "The stock dropped -15.24% (-14.04% abnormal vs. QQQ) on the day following earnings, with reaction volume at 2.22x the average, indicating high-conviction selling."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Overbought Condition Pre-Earnings",
+                  "evidence": "The RSI was 75.59 entering the earnings event, indicating the stock was overextended and vulnerable to a pullback or reversal on negative news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Prior Bullish Trend Under Threat",
+                  "evidence": "While the price on 2026-01-29 was well above its 20, 50, and 200-day MAs, the post-earnings drop will likely cause a break below the 20-day MA (1459.54), threatening the short-term trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Momentum Reversal",
+                  "evidence": "The stock had a bullish MACD crossover before the event (Histogram: 15.12), highlighting the abrupt and powerful shift in momentum caused by the earnings reaction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Status Challenged",
+                  "evidence": "The stock showed massive outperformance vs. SPY (121.63% relative return), but the significant post-earnings underperformance puts its market leadership status at immediate risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Peak Rejection",
+                  "evidence": "The stock was trading at a new high (0.0% drawdown) before the earnings event, making the subsequent sharp sell-off a significant peak rejection."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Halted",
+                  "evidence": "The pre-existing 'bullish_trend' market regime has been abruptly challenged by the post-earnings price action, suggesting a potential regime shift."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 1.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.3x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.74%, Recent 53.14%"
+                }
+              ],
+              "risks": [
+                "The strong, long-term underlying trend could attract 'buy-the-dip' activity, potentially causing a partial or full reversal of the initial negative reaction.",
+                "A failure to find price support near the 50-day moving average (1303.58) could confirm a longer-term trend break, leading to further significant downside."
+              ],
+              "summary": "As of 2026-01-29, KLAC was in a powerful but overbought uptrend. The subsequent post-earnings market reaction was a decisive, high-volume bearish reversal, with the stock falling over 15%. This event has established a clear short-term bearish stance, overriding the previous bullish signals. The long-term bullish structure is now under threat, warranting a neutral long-term stance pending observation of where price finds support.",
+              "core_insight": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "source_agent": "news_macro",
+            "evidence": "I agree with the news_macro agent's evidence that KLAC reported a 'beat-and-raise' quarter driven by strong AI-related demand. I also agree with their identified risk that the stock's high valuation and significant prior appreciation (+121.63% relative return vs SPY) made it vulnerable to a 'sell the news' reaction.",
+            "source_agent_2": "fundamental",
+            "evidence_2": "I agree with the fundamental agent's observation that the Trailing P/E of 48.4 is high, which supports the technical view that the stock was overextended and priced for perfection."
+          },
+          "disagreement": {
+            "source_agent": "news_macro",
+            "evidence": "I disagree with the news_macro agent's conclusion that the stock is short-term Bullish. While the fundamental news is positive, my mandate is to interpret the market's reaction. A -15.24% price drop on 2.22x average volume is an unambiguous, high-conviction rejection by the market. This price action signal is more immediate and powerful than the underlying news itself and cannot be ignored.",
+            "source_agent_2": "fundamental",
+            "evidence_2": "I am assigning lower weight to the fundamental agent's analysis. Their stated confidence is very low (0.3) and they admit to lacking critical data (guidance, transcripts) that the news_macro agent possessed. The significant drop in Free Cash Flow they noted is a concern, but without the management commentary that the news_macro agent likely reviewed, it's an incomplete signal."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The primary conflict is the bullish fundamental news versus the extremely bearish price reaction. I need to see the management commentary from the earnings call transcript, specifically regarding the significant drop in Free Cash Flow noted by the fundamental agent. This would clarify whether the market's sell-off was a purely technical/valuation event or if there is an underlying fundamental concern that justifies the price drop despite the positive headline guidance."
+          ]
         }
       }
     ]
@@ -2713,24 +2877,23 @@
   "final_decision": {
     "ticker": "KLAC",
     "company": "KLA",
-    "final_short_term_stance": "Bullish",
-    "final_long_term_stance": "Bullish",
-    "investment_action": "Long",
-    "position_size_hint": "Small to Medium",
-    "confidence": 0.8,
-    "core_thesis": "KLA is a premier, high-margin 'pick-and-shovel' beneficiary of the secular AI trend. Its near-monopolistic position in process control and inspection for increasingly complex semiconductors provides a durable competitive advantage. The latest earnings report confirms robust and accelerating demand, solidifying its long-term growth trajectory.",
-    "why_now": "The company just delivered a strong 'beat and raise' quarter, providing a clear fundamental catalyst that reaffirms the growth narrative. Concurrently, the stock has experienced a healthy ~11% pullback from its recent peak, offering a more attractive entry point. This combination of a positive fundamental event and a technical consolidation presents an opportune moment to initiate a position before the next potential leg up.",
+    "final_short_term_stance": "Bearish",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Watch / No Trade",
+    "position_size_hint": "No new position",
+    "confidence": 0.9,
+    "core_thesis": "While KLA delivered a fundamentally positive 'beat-and-raise' quarter driven by the secular AI trend, the stock was priced for perfection after a massive run-up. The market's violent post-earnings rejection (-15% on high volume) signals that the good news was not good enough to justify the high valuation, creating a short-term bearish outlook and putting the long-term uptrend on hold until a new support level is established.",
+    "why_now": "The post-earnings price action is the primary catalyst. The market has spoken loudly, invalidating the pre-earnings bullish narrative and forcing a re-evaluation of the stock's risk/reward profile. The conflict between the positive fundamental news and the extremely negative price reaction makes this a 'wait and see' situation.",
     "key_supporting_evidence": [
-      "The news_macro agent reported a clear revenue/EPS beat and, critically, revenue guidance that exceeded analyst estimates, driven by explicit management commentary on strong AI demand.",
-      "The market_technical agent confirms a powerful long-term uptrend (price > MA50/200) and massive relative outperformance, establishing KLAC as a market leader.",
-      "The technical pullback is occurring on below-average volume, which suggests a healthy consolidation or profit-taking within a primary uptrend, rather than a major trend reversal.",
-      "Positive read-throughs to the entire semiconductor equipment ecosystem (AMAT, LRCX, ASML) validate the strength of the current capital spending cycle."
+      "The -15.24% post-earnings price drop on 2.22x average volume is an unambiguous bearish signal, indicating a high-conviction rejection of the earnings report by the market (market_technical agent).",
+      "The stock entered the earnings event in an overbought condition (RSI 75.59) and with a high valuation (Trailing P/E 48.4), making it vulnerable to a 'sell the news' reaction (market_technical, fundamental agents).",
+      "The market's rejection occurred despite a clear 'beat-and-raise' quarter driven by strong AI demand, indicating that expectations were unsustainably high (news_macro agent).",
+      "A significant quarter-over-quarter decline in Free Cash Flow (from $1.26B to $0.62B) may have been a hidden concern for investors, undermining the positive headline numbers (fundamental agent)."
     ],
     "key_risks": [
-      "High Valuation: After a significant run-up, the stock's high valuation (Trailing P/E ~48) makes it vulnerable to a 'sell the news' reaction or a broader market sell-off.",
-      "Technical Weakness: The stock is in a short-term downtrend (below MA20, bearish MACD crossover). The current pullback could extend further before finding a durable bottom.",
-      "Macro-Economic Sensitivity: The entire thesis is dependent on the continuation of the AI-driven capex cycle. A slowdown in data center spending or a glut of AI chips would negatively impact the entire sector.",
-      "Information Asymmetry: The fundamental agent's concern about a sharp drop in Free Cash Flow, while likely explainable by working capital changes mentioned on the earnings call, remains a point to monitor."
+      "The primary risk to this view is a 'V-shaped' recovery. The strong, long-term underlying trend could attract aggressive 'buy-the-dip' activity, causing a rapid reversal of the initial negative reaction.",
+      "If the price fails to find support at key technical levels (e.g., the 50-day moving average), the long-term stance could deteriorate from Neutral to Bearish as a new downtrend is confirmed.",
+      "If management provides a compelling explanation for the cash flow drop and reaffirms even stronger future growth, sentiment could reverse, invalidating the bearish short-term thesis."
     ],
     "agent_view_summary": [
       {
@@ -2741,80 +2904,150 @@
         "rationale": "The short-term stance is Bullish due to a clear revenue/EPS beat and, more importantly, revenue guidance that exceeded analyst estimates. This beat-and-raise in the current AI-focused market should attract capital and lead to outperformance. The long-term stance is Bullish because KLAC is a direct, high-margin beneficiary of the secular trend towards more complex semiconductor manufacturing (AI, GAA, advanced packaging), which requires more of its near-monopolistic process control and inspection tools."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the tension between a powerful, established long-term uptrend and a significant short-term correction. The absence of oversold RSI conditions or capitulation volume suggested the pullback was likely a consolidation phase within the primary uptrend, rather than the start of a major reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "KLA reported sequential growth in revenue and all measures of income, coupled with a strong profit margin. However, these positive developments are overshadowed by a significant quarter-over-quarter drop in both operating and free cash flow. The company's valuation is high, with a Trailing P/E of 48.4, which adds a layer of risk. The lack of guidance and management commentary further clouds the outlook."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.9,
+        "rationale": "The extremely negative post-earnings reaction on high volume represents a powerful trend-breaking event. The market has rejected the prior valuation and bullish trajectory, shifting the short-term bias from bullish to bearish despite the strong preceding trend."
       }
     ],
     "debate_summary": {
-      "debate_triggered": false,
-      "conflict_level": "low",
+      "debate_triggered": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ],
-      "debate_responses": []
+      "debate_responses": [
+        {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the market_technical agent's primary and high-confidence assessment. The -15.24% post-earnings drop on 2.22x average volume is an undeniable, strong bearish signal that invalidates my initial short-term bullish stance.",
+            "I agree with the market_technical agent that the stock was in an overbought condition (RSI 75.59) prior to the report, which made it highly vulnerable to a 'sell the news' event, a risk I had noted but underestimated.",
+            "I agree with the fundamental agent's observation of a high valuation (Trailing P/E 48.4). The market's severe negative reaction confirms that the valuation was a critical point of sensitivity, and the positive news was insufficient to justify it.",
+            "I agree with the fundamental agent that the sharp quarter-over-quarter drop in free cash flow is a valid point of concern that the market likely focused on, even if it might be explainable by working capital changes."
+          ],
+          "disagreement": [
+            "I disagree with the fundamental agent's 'Neutral' stance only in that it was derived from incomplete data (lacking guidance and transcripts). My original analysis was based on a clear beat-and-raise, which is a stronger fundamental signal. However, the market's price action proves that even this positive fundamental news was not enough, giving weight to the technical agent's view over my fundamental one in the short term.",
+            "I now disagree with my own original short-term 'Bullish' stance. It was based on the premise that a beat-and-raise would be rewarded, an assumption that was proven definitively wrong by the market's reaction."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.6,
+          "evidence_needed": [
+            "A detailed review of the earnings call transcript Q&A is needed to understand why the market reacted so negatively to a beat-and-raise. Specific focus should be on management's tone, the magnitude of the guidance raise relative to 'whisper numbers', and any commentary regarding the cash flow decline or weakness in segments outside of AI.",
+            "Analysis of price support levels, particularly the 50-day moving average (around 1303.58), is needed to determine if the sell-off is a short-term correction or the start of a longer-term trend break, which will inform the new 'Neutral' long-term stance."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent that the fundamental picture has clarified and improved: KLA delivered a revenue/EPS beat and raised guidance, driven by explicit AI-related demand. This resolves the primary uncertainties from my original view. I also agree with the market_technical agent's core observation: the stock's -15.24% high-volume drop is a factual and powerful signal that the market rejected the news, likely because the valuation was too high and the beat was not strong enough to justify the prior run-up.",
+          "disagreement": "I disagree with the news_macro agent's purely Bullish stance. It underweights the severity of the market's post-earnings reaction. A fundamentally positive report that triggers a -15% sell-off is a strong indicator that valuation risk has superseded the positive operational narrative. The market is signaling that the fundamental story, while good, was not good enough for the price, which is a fundamental concern in itself.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "Management's explanation from the earnings call transcript for the significant quarter-over-quarter decline in operating and free cash flow. This was a primary risk in my original analysis and remains unresolved. Understanding if this was a one-time working capital issue or a sign of deteriorating earnings quality is now the most critical missing piece of information.",
+            "Analyst estimate revisions post-earnings to gauge whether the street is upgrading or downgrading targets despite the beat, which would provide context for the negative price reaction.",
+            "Price action around key technical levels, such as the 50-day moving average, to see if dip-buyers support the long-term fundamental story or if the technical breakdown continues."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "source_agent": "news_macro",
+            "evidence": "I agree with the news_macro agent's evidence that KLAC reported a 'beat-and-raise' quarter driven by strong AI-related demand. I also agree with their identified risk that the stock's high valuation and significant prior appreciation (+121.63% relative return vs SPY) made it vulnerable to a 'sell the news' reaction.",
+            "source_agent_2": "fundamental",
+            "evidence_2": "I agree with the fundamental agent's observation that the Trailing P/E of 48.4 is high, which supports the technical view that the stock was overextended and priced for perfection."
+          },
+          "disagreement": {
+            "source_agent": "news_macro",
+            "evidence": "I disagree with the news_macro agent's conclusion that the stock is short-term Bullish. While the fundamental news is positive, my mandate is to interpret the market's reaction. A -15.24% price drop on 2.22x average volume is an unambiguous, high-conviction rejection by the market. This price action signal is more immediate and powerful than the underlying news itself and cannot be ignored.",
+            "source_agent_2": "fundamental",
+            "evidence_2": "I am assigning lower weight to the fundamental agent's analysis. Their stated confidence is very low (0.3) and they admit to lacking critical data (guidance, transcripts) that the news_macro agent possessed. The significant drop in Free Cash Flow they noted is a concern, but without the management commentary that the news_macro agent likely reviewed, it's an incomplete signal."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The primary conflict is the bullish fundamental news versus the extremely bearish price reaction. I need to see the management commentary from the earnings call transcript, specifically regarding the significant drop in Free Cash Flow noted by the fundamental agent. This would clarify whether the market's sell-off was a purely technical/valuation event or if there is an underlying fundamental concern that justifies the price drop despite the positive headline guidance."
+          ]
+        }
+      ]
     },
-    "reason_for_final_decision": "I am overriding the deterministic guardrail's simple weighted average. The committee's decision is to place a higher weight on the `news_macro` agent's analysis, as it possesses the most critical, event-specific information (the earnings beat and raise) that directly resolves the uncertainties flagged by the low-confidence `fundamental` agent. The `market_technical` agent's neutral short-term stance is not viewed as a deterrent, but rather as confirmation of an attractive entry point ('buy the dip') into a fundamentally accelerating story. The confluence of a powerful fundamental catalyst with a technical pullback provides a compelling, high-conviction setup.",
+    "routing_profile": {
+      "bucket": "ai_semis",
+      "short": {
+        "market_technical": 0.45,
+        "news_macro": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI semiconductor moves depend on technical confirmation plus second-order supply-chain and capex signals."
+    },
+    "reason_for_final_decision": "The final decision aligns with the unanimous post-debate consensus of all three agents and the deterministic guardrail. The initial conflict between the news_macro agent's bullish fundamental view and the market_technical agent's bearish price action view was the central issue. The debate process correctly concluded that in the face of an event like a -15% high-volume post-earnings drop, price action must be given precedence over the narrative. The fact that even the initially bullish news_macro agent revised its stance to Bearish after seeing the market's reaction creates a high-conviction, unified view. There is no compelling evidence to override this consensus; the market's verdict is too strong to ignore.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": 0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.0
+          "stance": "Bearish",
+          "confidence": 0.6,
+          "weight": 0.4,
+          "contribution": -0.24
         },
         {
           "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.2,
-          "contribution": 0.0
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.15,
+          "contribution": -0.12
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.45,
+          "contribution": -0.36
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": 0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": 0.15
+          "stance": "Neutral",
+          "confidence": 0.6,
+          "weight": 0.4,
+          "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.45,
+          "confidence": 0.8,
+          "weight": 0.35,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.8,
+          "weight": 0.25,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": 0.4281,
-      "long": 0.7682
+      "short": -1.0,
+      "long": 0.0
     },
     "llm_decision_used": true
   }

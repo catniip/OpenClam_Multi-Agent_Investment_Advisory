@@ -213,135 +213,145 @@
     "ticker": "TEAM",
     "company": "Atlassian",
     "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
-    "long_term_stance": "Neutral",
-    "confidence": 0.75,
-    "confidence_rationale": "Confidence is high due to the confluence of a strong price breakout, a bullish MACD crossover, and exceptionally high volume confirming the move. However, confidence is not absolute because the RSI is entering overbought territory and the price is significantly extended from its moving averages, increasing the risk of a short-term pullback or consolidation.",
-    "stance_rationale": "The recent, massive volume-confirmed price surge has shattered the prior range-bound market regime, signaling a significant shift in market sentiment. The primary question is whether the stock will consolidate its gains or face a sharp reversion due to its overbought condition.",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Bearish",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is very high due to the overwhelming alignment of bearish signals across all indicator categories. The price is in a clear downtrend below all key moving averages, momentum is strongly negative, volume confirms the sell-off, and the stock is severely underperforming the market. The post-earnings price action confirmed the negative sentiment.",
+    "stance_rationale": "The most critical insight is the high-conviction capitulation-style sell-off (-10.7% on 2.05x volume) on the day of the earnings announcement. This single event solidified the severe bearish trend, with the subsequent muted negative reaction confirming a lack of buyers and the path of least resistance remaining downwards.",
     "key_signals": [
       {
-        "type": "Price Action",
-        "signal": "Explosive Breakout",
-        "evidence": "Price surged from ~$68 to $93.16 in the last three trading sessions, decisively breaking out of its prior trading range."
+        "type": "Moving Averages",
+        "signal": "Severe Bearish Trend Structure",
+        "evidence": "Price at $120.38 is trading 13.3%, 19.5%, and 31.9% below its 20-day, 50-day, and 200-day moving averages, respectively, indicating a strong, established downtrend."
       },
       {
         "type": "Volume",
-        "signal": "Strong Conviction",
-        "evidence": "The breakout was accompanied by a significant volume spike (1.64x average), with recent daily volumes (27.3M, 15.9M) confirming strong market participation."
+        "signal": "High-Conviction Sell-off",
+        "evidence": "Volume on the analysis date spiked to 2.05 times the recent average, coinciding with a -10.7% price drop, which validates the strong bearish conviction."
       },
       {
-        "type": "MACD",
-        "signal": "Strong Bullish Momentum",
-        "evidence": "A strong bullish MACD crossover is in effect, with the MACD line (2.88) well above the signal line (0.07) and a large positive histogram (2.81)."
+        "type": "Momentum",
+        "signal": "Strong Bearish Momentum",
+        "evidence": "The RSI is low at 33.27 and the MACD line (-7.51) is below its signal line (-7.18), confirming persistent and strong negative momentum."
       },
       {
-        "type": "Moving Averages",
-        "signal": "New Short-Term Uptrend",
-        "evidence": "The current price of $93.16 is trading 34.7% above its 20-day MA and 29.9% above its 50-day MA, indicating a powerful, newly established uptrend."
-      },
-      {
-        "type": "RSI",
-        "signal": "Approaching Overbought",
-        "evidence": "The RSI is at 70.39, confirming strong buying pressure but also entering the traditional overbought threshold, which can precede consolidation or a pullback."
-      },
-      {
-        "type": "Volatility",
-        "signal": "Elevated Risk Environment",
-        "evidence": "Recent annualized volatility is extremely high at 131.37%, indicating a high-risk environment with the potential for large price swings."
+        "type": "Earnings Reaction",
+        "signal": "Negative Post-Earnings Confirmation",
+        "evidence": "Following the major sell-off on the event day, the stock had a negative 1-day return of -1.83% (-0.63% abnormal vs. QQQ) on the next trading day, confirming a lack of bullish interest post-earnings."
       },
       {
         "type": "Relative Strength",
-        "signal": "Longer-Term Underperformance",
-        "evidence": "Despite the recent rally, the stock has underperformed the SPY benchmark by -11.58% over the measured period, suggesting it is playing catch-up."
-      },
-      {
-        "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 3.1%"
+        "signal": "Significant Market Underperformance",
+        "evidence": "The stock has underperformed the SPY benchmark by -72.31% over the measured period, highlighting its status as a major laggard."
       },
       {
         "type": "Drawdown",
-        "signal": "contained drawdown",
-        "evidence": "Current drawdown -5.33%, Max drawdown -41.93%"
+        "signal": "Near Maximum Drawdown",
+        "evidence": "The current drawdown of -62.7% is extremely close to its maximum observed drawdown of -63.4%, indicating the stock is in a state of deep distress and near its recent lows."
       },
       {
         "type": "Market Regime",
-        "signal": "range_bound",
-        "evidence": "Regime classification: range_bound"
+        "signal": "High Risk Environment",
+        "evidence": "The stock is classified in a 'high_volatility_bearish' regime, consistent with the observed sharp price declines and elevated risk."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.78%"
+      },
+      {
+        "type": "RSI",
+        "signal": "bearish momentum",
+        "evidence": "RSI at 33.27"
+      },
+      {
+        "type": "MACD",
+        "signal": "bearish crossover",
+        "evidence": "MACD -7.511, Signal -7.181, Histogram -0.33"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 52.77%, Recent 69.29%"
       }
     ],
     "risks": [
-      "The stock is significantly overextended, trading ~35% above its 20-day moving average with an RSI entering overbought territory (70.39), which increases the likelihood of a short-term price correction.",
-      "Extremely high recent volatility (131.37%) implies a high-risk environment where sharp, sudden price reversals can occur."
+      "The primary risk to the bearish stance is a potential for a short-term 'oversold' bounce, as the RSI of 33.27 is approaching oversold territory after a steep decline.",
+      "The muted volume during the post-earnings reaction (0.84x average) could suggest seller exhaustion, potentially leading to a period of consolidation rather than continued sharp declines."
     ],
     "citations": [],
-    "summary": "TEAM has experienced an explosive, high-volume breakout, establishing a strong new short-term uptrend. Bullish momentum is confirmed by a powerful MACD signal and a price far above key moving averages. While the short-term bias is clearly bullish, the move is highly overextended with the RSI entering overbought territory, signaling a high probability of a near-term pause or pullback. The stock remains in a very high volatility regime.",
+    "summary": "As of 2026-01-29, TEAM exhibited an unambiguously bearish technical profile. The stock was in a severe downtrend, confirmed by its position far below all key moving averages and a massive -10.7% price decline on 2.05x average volume. Momentum indicators (RSI, MACD) were firmly negative, and the stock showed extreme underperformance relative to the broader market. The post-earnings reaction on the following day, while muted, was negative, offering no signs of a reversal and reinforcing the prevailing bearish sentiment.",
     "raw_packet": {
       "ticker": "TEAM",
       "company": "Atlassian",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
-      "long_term_stance": "neutral",
-      "confidence": 0.75,
-      "confidence_rationale": "Confidence is high due to the confluence of a strong price breakout, a bullish MACD crossover, and exceptionally high volume confirming the move. However, confidence is not absolute because the RSI is entering overbought territory and the price is significantly extended from its moving averages, increasing the risk of a short-term pullback or consolidation.",
+      "short_term_stance": "bearish",
+      "long_term_stance": "bearish",
+      "confidence": 0.9,
+      "confidence_rationale": "Confidence is very high due to the overwhelming alignment of bearish signals across all indicator categories. The price is in a clear downtrend below all key moving averages, momentum is strongly negative, volume confirms the sell-off, and the stock is severely underperforming the market. The post-earnings price action confirmed the negative sentiment.",
       "key_signals": [
         {
-          "type": "Price Action",
-          "signal": "Explosive Breakout",
-          "evidence": "Price surged from ~$68 to $93.16 in the last three trading sessions, decisively breaking out of its prior trading range."
+          "type": "Moving Averages",
+          "signal": "Severe Bearish Trend Structure",
+          "evidence": "Price at $120.38 is trading 13.3%, 19.5%, and 31.9% below its 20-day, 50-day, and 200-day moving averages, respectively, indicating a strong, established downtrend."
         },
         {
           "type": "Volume",
-          "signal": "Strong Conviction",
-          "evidence": "The breakout was accompanied by a significant volume spike (1.64x average), with recent daily volumes (27.3M, 15.9M) confirming strong market participation."
+          "signal": "High-Conviction Sell-off",
+          "evidence": "Volume on the analysis date spiked to 2.05 times the recent average, coinciding with a -10.7% price drop, which validates the strong bearish conviction."
         },
         {
-          "type": "MACD",
-          "signal": "Strong Bullish Momentum",
-          "evidence": "A strong bullish MACD crossover is in effect, with the MACD line (2.88) well above the signal line (0.07) and a large positive histogram (2.81)."
+          "type": "Momentum",
+          "signal": "Strong Bearish Momentum",
+          "evidence": "The RSI is low at 33.27 and the MACD line (-7.51) is below its signal line (-7.18), confirming persistent and strong negative momentum."
         },
         {
-          "type": "Moving Averages",
-          "signal": "New Short-Term Uptrend",
-          "evidence": "The current price of $93.16 is trading 34.7% above its 20-day MA and 29.9% above its 50-day MA, indicating a powerful, newly established uptrend."
-        },
-        {
-          "type": "RSI",
-          "signal": "Approaching Overbought",
-          "evidence": "The RSI is at 70.39, confirming strong buying pressure but also entering the traditional overbought threshold, which can precede consolidation or a pullback."
-        },
-        {
-          "type": "Volatility",
-          "signal": "Elevated Risk Environment",
-          "evidence": "Recent annualized volatility is extremely high at 131.37%, indicating a high-risk environment with the potential for large price swings."
+          "type": "Earnings Reaction",
+          "signal": "Negative Post-Earnings Confirmation",
+          "evidence": "Following the major sell-off on the event day, the stock had a negative 1-day return of -1.83% (-0.63% abnormal vs. QQQ) on the next trading day, confirming a lack of bullish interest post-earnings."
         },
         {
           "type": "Relative Strength",
-          "signal": "Longer-Term Underperformance",
-          "evidence": "Despite the recent rally, the stock has underperformed the SPY benchmark by -11.58% over the measured period, suggesting it is playing catch-up."
-        },
-        {
-          "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 3.1%"
+          "signal": "Significant Market Underperformance",
+          "evidence": "The stock has underperformed the SPY benchmark by -72.31% over the measured period, highlighting its status as a major laggard."
         },
         {
           "type": "Drawdown",
-          "signal": "contained drawdown",
-          "evidence": "Current drawdown -5.33%, Max drawdown -41.93%"
+          "signal": "Near Maximum Drawdown",
+          "evidence": "The current drawdown of -62.7% is extremely close to its maximum observed drawdown of -63.4%, indicating the stock is in a state of deep distress and near its recent lows."
         },
         {
           "type": "Market Regime",
-          "signal": "range_bound",
-          "evidence": "Regime classification: range_bound"
+          "signal": "High Risk Environment",
+          "evidence": "The stock is classified in a 'high_volatility_bearish' regime, consistent with the observed sharp price declines and elevated risk."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.78%"
+        },
+        {
+          "type": "RSI",
+          "signal": "bearish momentum",
+          "evidence": "RSI at 33.27"
+        },
+        {
+          "type": "MACD",
+          "signal": "bearish crossover",
+          "evidence": "MACD -7.511, Signal -7.181, Histogram -0.33"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 52.77%, Recent 69.29%"
         }
       ],
       "risks": [
-        "The stock is significantly overextended, trading ~35% above its 20-day moving average with an RSI entering overbought territory (70.39), which increases the likelihood of a short-term price correction.",
-        "Extremely high recent volatility (131.37%) implies a high-risk environment where sharp, sudden price reversals can occur."
+        "The primary risk to the bearish stance is a potential for a short-term 'oversold' bounce, as the RSI of 33.27 is approaching oversold territory after a steep decline.",
+        "The muted volume during the post-earnings reaction (0.84x average) could suggest seller exhaustion, potentially leading to a period of consolidation rather than continued sharp declines."
       ],
-      "summary": "TEAM has experienced an explosive, high-volume breakout, establishing a strong new short-term uptrend. Bullish momentum is confirmed by a powerful MACD signal and a price far above key moving averages. While the short-term bias is clearly bullish, the move is highly overextended with the RSI entering overbought territory, signaling a high probability of a near-term pause or pullback. The stock remains in a very high volatility regime.",
-      "core_insight": "The recent, massive volume-confirmed price surge has shattered the prior range-bound market regime, signaling a significant shift in market sentiment. The primary question is whether the stock will consolidate its gains or face a sharp reversion due to its overbought condition."
+      "summary": "As of 2026-01-29, TEAM exhibited an unambiguously bearish technical profile. The stock was in a severe downtrend, confirmed by its position far below all key moving averages and a massive -10.7% price decline on 2.05x average volume. Momentum indicators (RSI, MACD) were firmly negative, and the stock showed extreme underperformance relative to the broader market. The post-earnings reaction on the following day, while muted, was negative, offering no signs of a reversal and reinforcing the prevailing bearish sentiment.",
+      "core_insight": "The most critical insight is the high-conviction capitulation-style sell-off (-10.7% on 2.05x volume) on the day of the earnings announcement. This single event solidified the severe bearish trend, with the subsequent muted negative reaction confirming a lack of buyers and the path of least resistance remaining downwards."
     }
   }
 ]

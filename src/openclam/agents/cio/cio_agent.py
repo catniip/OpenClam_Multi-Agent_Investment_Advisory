@@ -721,7 +721,6 @@ def run_cio_workflow(
         api_key=api_key,
         vertex_project=vertex_project,
         vertex_location=vertex_location,
-        bucket=bucket,
     )
     final_decision = generate_cio_decision(
         normalized_packets,
@@ -732,6 +731,7 @@ def run_cio_workflow(
         api_key=api_key,
         vertex_project=vertex_project,
         vertex_location=vertex_location,
+        bucket=bucket,
     )
     return {
         "synthesis": synthesis,

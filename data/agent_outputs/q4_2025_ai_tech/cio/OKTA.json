@@ -11,30 +11,31 @@
         "rationale": "Short-term: The barrage of pre-earnings price target cuts and a risk-off macro environment create a negative setup. The bar for a positive surprise is high, making a 'sell the news' or a 'miss and drop' reaction more likely than a rally. Long-term: While Okta is a leader in a growing market, the structural competitive threat from Microsoft's bundling strategy will likely cap margin expansion and multiple re-rating, leading to performance that is unlikely to substantially beat the QQQ over the next few quarters. It's a 'show-me' story with significant headwinds."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "The company demonstrates strong fundamental improvement with significant QoQ growth in profitability and cash flow, indicating successful operating leverage. While revenue growth is modest, the balance sheet is healthy, and strong expected earnings growth (implied by the Forward P/E) supports a bullish outlook despite a high trailing valuation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
       }
     ],
-    "areas_of_agreement": [],
+    "areas_of_agreement": [
+      "2 agents lean bearish on the short-term horizon."
+    ],
     "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls.",
       "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
+      "Bullish": 0,
       "Neutral": 1,
-      "Bearish": 1
+      "Bearish": 2
     },
     "long_stance_counts": {
       "Bullish": 1,
@@ -414,261 +415,6 @@
       {
         "ticker": "OKTA",
         "company": "Okta",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-        "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-            "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Building Bullish Momentum",
-            "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Long-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Substantial Risk Profile",
-            "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Recent Instability",
-            "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.21%"
-          }
-        ],
-        "risks": [
-          "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-          "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-          "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-        "raw_packet": {
-          "ticker": "OKTA",
-          "company": "Okta",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-          "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-              "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Building Bullish Momentum",
-              "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Risk Profile",
-              "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Recent Instability",
-              "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-            "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-            "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-          "raw_packet": {
-            "ticker": "OKTA",
-            "company": "Okta",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-            "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Building Bullish Momentum",
-                "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Risk Profile",
-                "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Recent Instability",
-                "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-              "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-              "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-            "raw_packet": {
-              "ticker": "OKTA",
-              "company": "Okta",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                  "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Building Bullish Momentum",
-                  "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Risk Profile",
-                  "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Recent Instability",
-                  "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-                "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-                "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-              ],
-              "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-              "core_insight": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "OKTA",
-        "company": "Okta",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -818,6 +564,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "OKTA",
+        "company": "Okta",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+        "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bearish Post-Earnings Confirmation",
+            "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Confirmed Bearish Trend",
+            "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weak Momentum",
+            "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "High Downside Risk Realized",
+            "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Classified Bearish Trend",
+            "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -1.2%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.19x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+          }
+        ],
+        "risks": [
+          "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+          "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+        ],
+        "citations": [],
+        "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+        "raw_packet": {
+          "ticker": "OKTA",
+          "company": "Okta",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+          "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bearish Post-Earnings Confirmation",
+              "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum",
+              "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "High Downside Risk Realized",
+              "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Classified Bearish Trend",
+              "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.2%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.19x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+            }
+          ],
+          "risks": [
+            "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+            "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+          ],
+          "citations": [],
+          "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+          "raw_packet": {
+            "ticker": "OKTA",
+            "company": "Okta",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+            "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bearish Post-Earnings Confirmation",
+                "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum",
+                "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "High Downside Risk Realized",
+                "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Classified Bearish Trend",
+                "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.2%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.19x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+              }
+            ],
+            "risks": [
+              "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+              "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+            ],
+            "citations": [],
+            "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+            "raw_packet": {
+              "ticker": "OKTA",
+              "company": "Okta",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bearish Post-Earnings Confirmation",
+                  "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum",
+                  "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "High Downside Risk Realized",
+                  "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Classified Bearish Trend",
+                  "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.2%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.19x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+                }
+              ],
+              "risks": [
+                "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+                "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+              ],
+              "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+              "core_insight": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
+            }
+          }
+        }
       }
     ]
   },
@@ -827,7 +844,6 @@
       "debate_required": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ]
     },
@@ -843,30 +859,31 @@
           "rationale": "Short-term: The barrage of pre-earnings price target cuts and a risk-off macro environment create a negative setup. The bar for a positive surprise is high, making a 'sell the news' or a 'miss and drop' reaction more likely than a rally. Long-term: While Okta is a leader in a growing market, the structural competitive threat from Microsoft's bundling strategy will likely cap margin expansion and multiple re-rating, leading to performance that is unlikely to substantially beat the QQQ over the next few quarters. It's a 'show-me' story with significant headwinds."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.6,
           "rationale": "The company demonstrates strong fundamental improvement with significant QoQ growth in profitability and cash flow, indicating successful operating leverage. While revenue growth is modest, the balance sheet is healthy, and strong expected earnings growth (implied by the Forward P/E) supports a bullish outlook despite a high trailing valuation."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
         }
       ],
-      "areas_of_agreement": [],
+      "areas_of_agreement": [
+        "2 agents lean bearish on the short-term horizon."
+      ],
       "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
+        "Bullish": 0,
         "Neutral": 1,
-        "Bearish": 1
+        "Bearish": 2
       },
       "long_stance_counts": {
         "Bullish": 1,
@@ -1368,325 +1385,6 @@
         {
           "ticker": "OKTA",
           "company": "Okta",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-          "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-              "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Building Bullish Momentum",
-              "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Risk Profile",
-              "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Recent Instability",
-              "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-            "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-            "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-          "raw_packet": {
-            "ticker": "OKTA",
-            "company": "Okta",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-            "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Building Bullish Momentum",
-                "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Risk Profile",
-                "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Recent Instability",
-                "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-              "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-              "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-            "raw_packet": {
-              "ticker": "OKTA",
-              "company": "Okta",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-              "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                  "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Building Bullish Momentum",
-                  "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Risk Profile",
-                  "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Recent Instability",
-                  "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-                "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-                "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-              ],
-              "citations": [],
-              "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-              "raw_packet": {
-                "ticker": "OKTA",
-                "company": "Okta",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bearish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-                "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                    "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Building Bullish Momentum",
-                    "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Long-Term Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Substantial Risk Profile",
-                    "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Conditions",
-                    "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Recent Instability",
-                    "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.21%"
-                  }
-                ],
-                "risks": [
-                  "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-                  "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-                  "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-                ],
-                "citations": [],
-                "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-                "raw_packet": {
-                  "ticker": "OKTA",
-                  "company": "Okta",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                      "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Building Bullish Momentum",
-                      "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Long-Term Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Substantial Risk Profile",
-                      "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Conditions",
-                      "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Recent Instability",
-                      "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.21%"
-                    }
-                  ],
-                  "risks": [
-                    "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-                    "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-                    "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-                  ],
-                  "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-                  "core_insight": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "OKTA",
-          "company": "Okta",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1873,76 +1571,394 @@
               }
             }
           }
+        },
+        {
+          "ticker": "OKTA",
+          "company": "Okta",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+          "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bearish Post-Earnings Confirmation",
+              "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum",
+              "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "High Downside Risk Realized",
+              "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Classified Bearish Trend",
+              "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.2%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.19x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+            }
+          ],
+          "risks": [
+            "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+            "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+          ],
+          "citations": [],
+          "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+          "raw_packet": {
+            "ticker": "OKTA",
+            "company": "Okta",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+            "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bearish Post-Earnings Confirmation",
+                "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum",
+                "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "High Downside Risk Realized",
+                "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Classified Bearish Trend",
+                "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.2%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.19x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+              }
+            ],
+            "risks": [
+              "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+              "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+            ],
+            "citations": [],
+            "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+            "raw_packet": {
+              "ticker": "OKTA",
+              "company": "Okta",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+              "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bearish Post-Earnings Confirmation",
+                  "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum",
+                  "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "High Downside Risk Realized",
+                  "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Classified Bearish Trend",
+                  "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.2%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.19x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+                }
+              ],
+              "risks": [
+                "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+                "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+              ],
+              "citations": [],
+              "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+              "raw_packet": {
+                "ticker": "OKTA",
+                "company": "Okta",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.9,
+                "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+                "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Bearish Post-Earnings Confirmation",
+                    "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Confirmed Bearish Trend",
+                    "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Accelerating Bearish Momentum",
+                    "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Weak Momentum",
+                    "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "High Downside Risk Realized",
+                    "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Classified Bearish Trend",
+                    "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -1.2%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "moderate participation",
+                    "evidence": "Volume spike ratio 1.19x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+                  }
+                ],
+                "risks": [
+                  "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+                  "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+                ],
+                "citations": [],
+                "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+                "raw_packet": {
+                  "ticker": "OKTA",
+                  "company": "Okta",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Bearish Post-Earnings Confirmation",
+                      "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Confirmed Bearish Trend",
+                      "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Accelerating Bearish Momentum",
+                      "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Weak Momentum",
+                      "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "High Downside Risk Realized",
+                      "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Classified Bearish Trend",
+                      "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -1.2%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "moderate participation",
+                      "evidence": "Volume spike ratio 1.19x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+                    }
+                  ],
+                  "risks": [
+                    "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+                    "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+                  ],
+                  "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+                  "core_insight": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "revision",
-        "agreement": {
-          "statement": "I agree with the core findings of the other agents. The `fundamental` agent's evidence of a strong earnings print, with significant QoQ growth in profitability and cash flow, directly invalidates my original short-term bearish thesis. The `market_technical` agent's evidence of the price remaining below the long-term MA200 and its history of significant underperformance aligns with my original long-term competitive concerns, suggesting the market is not yet fully convinced.",
-          "evidence": [
-            "Significant QoQ growth in profitability: Operating Income more than doubled (+117.4%) and Net Income grew 46.5%. (fundamental)",
-            "Strong and growing cash flow, with Free Cash Flow increasing 19.4% QoQ to $252 million. (fundamental)",
-            "The stock has underperformed the SPY benchmark by -62.13% over the analysis period. (market_technical)",
-            "Price at $77.24 is... 10.1% below the MA200 ($85.94). (market_technical)"
-          ]
-        },
-        "disagreement": {
-          "statement": "I assign lower weight to the `market_technical` agent's short-term 'Bullish' stance; it is a lagging indicator describing the price reaction to the fundamental news, not a separate predictive signal. I also believe the `fundamental` agent's long-term 'Bullish' stance is too strong given the acknowledged lack of management guidance and commentary. My original thesis about the structural competitive threat from Microsoft is not invalidated by a single strong quarter of execution, it simply proves Okta is managing the pressure better than feared for now.",
-          "evidence": [
-            "The `fundamental` agent's own risks state: 'Lack of company guidance and management commentary from an earnings call transcript introduces significant uncertainty about the forward outlook.'",
-            "The `market_technical` agent's signal of 'Lack of Conviction' due to low volume (0.5x) on the rally suggests the short-term bullish move is fragile and not fully supported by institutional capital, tempering the purely bullish technical interpretation."
-          ]
-        },
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.7,
-        "stance_revision_rationale": "My original pre-earnings bearish thesis was proven incorrect by the strong quarterly results reported by the `fundamental` agent. The significant beat on profitability and cash flow forces a revision of the short-term stance to Bullish. The evidence of strong execution in the face of competition also warrants upgrading the long-term stance from Neutral to Bullish, as the company is demonstrating resilience. Confidence is raised to 0.7, as we now have the actual results, but is capped due to the lack of forward guidance and management commentary, which remains a key uncertainty.",
+        "response_type": "revised_agent_view",
+        "agreement": "I agree with the core evidence presented by the `market_technical` agent. Their analysis that the stock had a 'Bearish Post-Earnings Confirmation' with a price drop on high volume and abnormal underperformance is a critical new fact that validates my initial short-term bearish hypothesis. I also agree with the factual data points from the `fundamental` agent, specifically the strong QoQ growth in profitability and free cash flow, contrasted with modest revenue growth.",
+        "disagreement": "I disagree with the conclusion and weighting of the `fundamental` agent. While their data on profitability is correct, their resulting 'Bullish' long-term stance is contradicted by the market's actual negative reaction. The market is clearly signaling that the modest revenue growth and concerns about future competition (my original thesis) outweigh the backward-looking profitability beat. The market's vote, confirmed by the `market_technical` agent, is more important than the isolated fundamental improvement in one quarter.",
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bearish",
+        "revised_confidence": 0.8,
         "evidence_needed": [
-          "Earnings call transcript to assess management tone, commentary on competition, and the drivers of margin expansion.",
-          "Official company guidance for the next quarter and full year to understand the forward outlook.",
-          "Post-earnings analyst reports to see how estimates and price targets are revised based on the new data and guidance.",
-          "Peer results (especially ZS, CRWD) to contextualize Okta's performance within the broader software and security sectors."
+          "The earnings call transcript is the most critical missing piece of evidence. Management's commentary on guidance, the demand environment, and the competitive landscape (especially regarding Microsoft) would explain *why* the market reacted negatively to strong profitability.",
+          "Detailed breakdown of key SaaS metrics like Net Revenue Retention (NRR) and large customer additions would clarify whether the modest top-line growth is a sign of underlying business model deterioration.",
+          "Updated analyst reports post-earnings to see if the consensus rating shifts from the pre-earnings 'Buy' ratings, which would confirm a broader change in sentiment."
         ]
       },
       {
         "response_type": "revision",
-        "agreement": {
-          "with_news_macro": "I agree with the news_macro agent's assessment of the short-term risk. The evidence of multiple pre-earnings analyst price target cuts provides a crucial negative context to my technical signals. This suggests the weak volume I observed is not just a lack of conviction, but an active avoidance of risk ahead of a catalyst.",
-          "with_fundamental": "I strongly agree with the fundamental agent's long-term bullish case. The hard data showing a 117% QoQ increase in operating income and a 19.4% increase in free cash flow provides a compelling reason for a long-term trend reversal. This fundamental strength is a powerful leading indicator that outweighs my previous reliance on lagging technical indicators like the MA200 and historical underperformance."
-        },
-        "disagreement": {
-          "with_original_view": "I disagree with my original short-term Bullish stance. The news_macro agent's evidence of a negative pre-earnings setup makes a technical rally highly suspect and prone to failure. I also now disagree with my original long-term Bearish stance; it was based on historical price action, which the fundamental agent's data suggests is no longer representative of the company's improving profitability and forward outlook.",
-          "with_news_macro_long_term": "I place lower weight on the news_macro agent's long-term Neutral stance. While competition from Microsoft is a valid concern, the fundamental agent's data shows Okta is currently demonstrating significant operating leverage and profitability growth *despite* this competition. The hard financial results are more compelling than the competitive narrative for the long-term view."
-        },
-        "revised_short_term_stance": "Neutral",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.7,
-        "evidence_needed": [
-          "The actual earnings results versus analyst consensus estimates to determine if it was a beat or miss.",
-          "The company's official forward guidance, which is the most critical piece of information to validate the fundamental strength.",
-          "Management's commentary from the earnings call, especially regarding the competitive landscape and the drivers of margin expansion.",
-          "Post-earnings price and volume action to see how the market digests the fundamental data versus the forward-looking narrative."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": {
-          "news_macro": "I agree with the news agent's assessment that the structural competitive threat from Microsoft is a significant long-term headwind. This provides a crucial narrative for the high valuation risk I had identified, explaining why the market may not reward Okta's improving profitability. The pre-earnings price target cuts are factual evidence of market caution that tempers my quantitative optimism.",
-          "market_technical": "I agree with the technical agent's evidence of a dominant long-term bearish trend. The data showing significant underperformance versus the SPY (-62.13%) and the price remaining well below the 200-day moving average serves as a powerful market-based reality check, directly challenging my previous long-term bullish stance."
-        },
-        "disagreement": {
-          "news_macro": "I disagree with the short-term 'Bearish' stance. While I acknowledge the negative pre-earnings sentiment, my fundamental data shows very strong *actual* QoQ profitability and cash flow growth. This disconnect suggests the market may be overly pessimistic, creating potential for a positive surprise. I weigh the reported results more heavily than the pre-report sentiment.",
-          "market_technical": "I disagree with the short-term 'Bullish' stance. The technical agent themselves correctly identifies that the recent rally is on weak volume and is moving against a powerful long-term downtrend. My own data shows only modest revenue growth (2.56% QoQ), which is insufficient fuel for a sustained breakout. The technical signals are more likely indicative of a fragile, range-bound move, which aligns with my 'Neutral' view rather than a 'Bullish' one."
-        },
-        "revised_short_term_stance": "Neutral",
+        "agreement": "I agree with the `news_macro` agent's assessment that stiff competition, particularly from Microsoft, is a critical headwind that explains the modest revenue growth I observed. This context was missing from my initial analysis. I also strongly agree with the `market_technical` agent's evidence; the market's decisively negative post-earnings reaction (price decline on high volume, underperformance vs. benchmark) is a powerful signal that invalidates my initial positive interpretation. The market has voted, and it was not impressed.",
+        "disagreement": "I now disagree with the weight I placed on my own initial findings. The QoQ improvements in profitability and cash flow, while factually correct, were clearly insufficient to offset market concerns about competition and future growth. The negative price action post-earnings demonstrates that the market is prioritizing the competitive threats highlighted by the `news_macro` agent over the margin improvements I found. My initial conclusion that the results 'strengthened' a bullish thesis was incorrect in the face of the market's verdict.",
+        "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Neutral",
-        "revised_confidence": 0.75,
+        "revised_confidence": 0.8,
         "evidence_needed": [
-          "Management's forward guidance and commentary on the competitive environment, specifically their strategy to defend market share against Microsoft's bundling.",
-          "Confirmation of whether the strong QoQ profitability improvements are sustainable in the face of competitive pressure.",
-          "Evidence of an acceleration in revenue growth beyond the modest 2.56% QoQ rate to justify a more bullish outlook."
+          "My analysis is now much more robust. However, to fully validate the long-term Neutral stance, I need to see the company's specific guidance for the next quarter and full year, and management's commentary from the earnings call regarding the competitive environment with Microsoft and their strategy to defend market share and margins. This would clarify whether the current profitability is sustainable under pressure."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "news_macro": "I agree with the news_macro agent's short-term Bearish stance and their rationale. The pre-earnings analyst caution and concerns about 'stiff competition' provide a fundamental narrative that explains the negative post-earnings price action I observed. Their long-term view on the structural competitive threat from Microsoft also aligns with and provides a causal explanation for the long-term technical underperformance and downtrend seen in my own analysis.",
+          "fundamental": "I agree with the fundamental agent's data point showing modest Quarter-over-Quarter revenue growth of 2.56%. For a stock with a historically high valuation, this modest top-line growth is a significant factor that likely contributed to the market's negative post-earnings reaction, despite the profitability improvements."
+        },
+        "disagreement": {
+          "fundamental": "I disagree with the fundamental agent's Bullish long-term stance and Neutral short-term stance. The market's verdict, which is the ultimate arbiter of short-term sentiment, was decisively negative, as shown by the -2.6% abnormal underperformance on high volume after the results were released. The strong profitability metrics were clearly overshadowed by other concerns, rendering a bullish interpretation incorrect in the context of the market's reaction.",
+          "news_macro": "I believe the news_macro agent's long-term Neutral stance is too optimistic. The technical evidence of a -43.03% drawdown and -34.71% underperformance against the SPY, combined with their own narrative of a 'structural competitive threat', supports my long-term Bearish view more strongly than a Neutral one. The price is reflecting a fundamental problem, not just market-level performance."
+        },
+        "revised_view": {
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.95,
+          "confidence_rationale": "Confidence is revised higher because the fundamental narrative from the news_macro agent (Microsoft competition) and the modest revenue growth from the fundamental agent provide a clear 'why' for the powerful bearish technical signals I observed. The market's negative reaction to the earnings report serves as a final, high-volume confirmation that these fundamental concerns outweigh the reported profitability improvements, creating a highly convergent bearish thesis.",
+          "stance_rationale": "The primary insight remains the market's decisive negative reaction to earnings, which validated the pre-existing bearish technical trend. The new evidence from other agents strengthens this view by suggesting the negative reaction was driven by concerns over modest revenue growth and the long-term structural threat of competition from Microsoft. The market is pricing in a future of slower growth and margin pressure, which is consistent with the established downtrend across all technical indicators."
+        },
+        "evidence_needed": [
+          "Analyst consensus estimates for revenue and EPS to quantify the exact beat or miss.",
+          "Official company-issued financial guidance for the next quarter and full year, which was the most likely driver of the stock's negative reaction.",
+          "The earnings call transcript to hear management's tone and commentary regarding competition, demand, and the drivers of future growth."
         ]
       }
     ],
@@ -1951,9 +1967,9 @@
         "ticker": "OKTA",
         "company": "Okta",
         "agent_name": "news_macro",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.7,
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is moderate because the analysis is based on pre-earnings analyst sentiment and macro context, not on the actual earnings results or company guidance, which are unknown. The directional analyst consensus provides a clear signal on near-term expectations, but the actual company print could surprise in either direction.",
         "stance_rationale": "Short-term: The barrage of pre-earnings price target cuts and a risk-off macro environment create a negative setup. The bar for a positive surprise is high, making a 'sell the news' or a 'miss and drop' reaction more likely than a rally. Long-term: While Okta is a leader in a growing market, the structural competitive threat from Microsoft's bundling strategy will likely cap margin expansion and multiple re-rating, leading to performance that is unlikely to substantially beat the QQQ over the next few quarters. It's a 'show-me' story with significant headwinds.",
         "key_signals": [
@@ -2316,307 +2332,16 @@
           }
         },
         "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "statement": "I agree with the core findings of the other agents. The `fundamental` agent's evidence of a strong earnings print, with significant QoQ growth in profitability and cash flow, directly invalidates my original short-term bearish thesis. The `market_technical` agent's evidence of the price remaining below the long-term MA200 and its history of significant underperformance aligns with my original long-term competitive concerns, suggesting the market is not yet fully convinced.",
-            "evidence": [
-              "Significant QoQ growth in profitability: Operating Income more than doubled (+117.4%) and Net Income grew 46.5%. (fundamental)",
-              "Strong and growing cash flow, with Free Cash Flow increasing 19.4% QoQ to $252 million. (fundamental)",
-              "The stock has underperformed the SPY benchmark by -62.13% over the analysis period. (market_technical)",
-              "Price at $77.24 is... 10.1% below the MA200 ($85.94). (market_technical)"
-            ]
-          },
-          "disagreement": {
-            "statement": "I assign lower weight to the `market_technical` agent's short-term 'Bullish' stance; it is a lagging indicator describing the price reaction to the fundamental news, not a separate predictive signal. I also believe the `fundamental` agent's long-term 'Bullish' stance is too strong given the acknowledged lack of management guidance and commentary. My original thesis about the structural competitive threat from Microsoft is not invalidated by a single strong quarter of execution, it simply proves Okta is managing the pressure better than feared for now.",
-            "evidence": [
-              "The `fundamental` agent's own risks state: 'Lack of company guidance and management commentary from an earnings call transcript introduces significant uncertainty about the forward outlook.'",
-              "The `market_technical` agent's signal of 'Lack of Conviction' due to low volume (0.5x) on the rally suggests the short-term bullish move is fragile and not fully supported by institutional capital, tempering the purely bullish technical interpretation."
-            ]
-          },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "stance_revision_rationale": "My original pre-earnings bearish thesis was proven incorrect by the strong quarterly results reported by the `fundamental` agent. The significant beat on profitability and cash flow forces a revision of the short-term stance to Bullish. The evidence of strong execution in the face of competition also warrants upgrading the long-term stance from Neutral to Bullish, as the company is demonstrating resilience. Confidence is raised to 0.7, as we now have the actual results, but is capped due to the lack of forward guidance and management commentary, which remains a key uncertainty.",
+          "response_type": "revised_agent_view",
+          "agreement": "I agree with the core evidence presented by the `market_technical` agent. Their analysis that the stock had a 'Bearish Post-Earnings Confirmation' with a price drop on high volume and abnormal underperformance is a critical new fact that validates my initial short-term bearish hypothesis. I also agree with the factual data points from the `fundamental` agent, specifically the strong QoQ growth in profitability and free cash flow, contrasted with modest revenue growth.",
+          "disagreement": "I disagree with the conclusion and weighting of the `fundamental` agent. While their data on profitability is correct, their resulting 'Bullish' long-term stance is contradicted by the market's actual negative reaction. The market is clearly signaling that the modest revenue growth and concerns about future competition (my original thesis) outweigh the backward-looking profitability beat. The market's vote, confirmed by the `market_technical` agent, is more important than the isolated fundamental improvement in one quarter.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Earnings call transcript to assess management tone, commentary on competition, and the drivers of margin expansion.",
-            "Official company guidance for the next quarter and full year to understand the forward outlook.",
-            "Post-earnings analyst reports to see how estimates and price targets are revised based on the new data and guidance.",
-            "Peer results (especially ZS, CRWD) to contextualize Okta's performance within the broader software and security sectors."
-          ]
-        }
-      },
-      {
-        "ticker": "OKTA",
-        "company": "Okta",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.7,
-        "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-        "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-            "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Building Bullish Momentum",
-            "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Long-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Substantial Risk Profile",
-            "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Recent Instability",
-            "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.21%"
-          }
-        ],
-        "risks": [
-          "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-          "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-          "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-        "raw_packet": {
-          "ticker": "OKTA",
-          "company": "Okta",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-          "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-              "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Building Bullish Momentum",
-              "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Risk Profile",
-              "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Recent Instability",
-              "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-            "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-            "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-          "raw_packet": {
-            "ticker": "OKTA",
-            "company": "Okta",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-            "stance_rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Building Bullish Momentum",
-                "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Risk Profile",
-                "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Recent Instability",
-                "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-              "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-              "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-            "raw_packet": {
-              "ticker": "OKTA",
-              "company": "Okta",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is set at 0.75, reflecting clear short-term bullish signals (price above MA20/MA50, MACD crossover) that are tempered by weak volume confirmation and a strong, conflicting long-term bearish trend (price below MA200, significant underperformance).",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Trend, Long-Term Bearish",
-                  "evidence": "Price at $77.24 is above the MA20 ($73.33) and MA50 ($75.62), but remains 10.1% below the MA200 ($85.94)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed, with the MACD line (0.049) above the signal line (-0.485) and a positive histogram (0.533)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Building Bullish Momentum",
-                  "evidence": "RSI is at 53.8, having crossed above the neutral 50 level, indicating growing momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent price gains occurred on low participation, with a volume spike ratio of only 0.5x, suggesting the move lacks strong institutional support."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -62.13% over the analysis period, indicating it is a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Risk Profile",
-                  "evidence": "The stock is currently in a 39.32% drawdown from its peak, highlighting significant downside risk and capital depreciation."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The stock is classified as being in a 'range_bound' market regime, suggesting a lack of a clear, sustained directional trend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Recent Instability",
-                  "evidence": "Recent volatility (68.05%) is notably higher than the annualized figure (44.11%), indicating a period of increased price swings and risk."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend (price below MA200) suggests the current rally could be a short-lived 'bear market rally'.",
-                "The lack of significant volume confirmation on the recent price increase questions the sustainability and strength of the move.",
-                "High recent volatility increases the risk of sharp price reversals and makes the asset less stable."
-              ],
-              "summary": "As of 2026/03/03, OKTA exhibited a short-term bullish posture within a firmly established long-term bearish context. The price recently surmounted its 20- and 50-day moving averages, backed by a bullish MACD crossover and an RSI above 50. However, these positive signals are undermined by weak volume, significant long-term underperformance against the benchmark, and a price well below the 200-day moving average. The overall environment was one of range-bound trading with elevated volatility.",
-              "core_insight": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "with_news_macro": "I agree with the news_macro agent's assessment of the short-term risk. The evidence of multiple pre-earnings analyst price target cuts provides a crucial negative context to my technical signals. This suggests the weak volume I observed is not just a lack of conviction, but an active avoidance of risk ahead of a catalyst.",
-            "with_fundamental": "I strongly agree with the fundamental agent's long-term bullish case. The hard data showing a 117% QoQ increase in operating income and a 19.4% increase in free cash flow provides a compelling reason for a long-term trend reversal. This fundamental strength is a powerful leading indicator that outweighs my previous reliance on lagging technical indicators like the MA200 and historical underperformance."
-          },
-          "disagreement": {
-            "with_original_view": "I disagree with my original short-term Bullish stance. The news_macro agent's evidence of a negative pre-earnings setup makes a technical rally highly suspect and prone to failure. I also now disagree with my original long-term Bearish stance; it was based on historical price action, which the fundamental agent's data suggests is no longer representative of the company's improving profitability and forward outlook.",
-            "with_news_macro_long_term": "I place lower weight on the news_macro agent's long-term Neutral stance. While competition from Microsoft is a valid concern, the fundamental agent's data shows Okta is currently demonstrating significant operating leverage and profitability growth *despite* this competition. The hard financial results are more compelling than the competitive narrative for the long-term view."
-          },
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "The actual earnings results versus analyst consensus estimates to determine if it was a beat or miss.",
-            "The company's official forward guidance, which is the most critical piece of information to validate the fundamental strength.",
-            "Management's commentary from the earnings call, especially regarding the competitive landscape and the drivers of margin expansion.",
-            "Post-earnings price and volume action to see how the market digests the fundamental data versus the forward-looking narrative."
+            "The earnings call transcript is the most critical missing piece of evidence. Management's commentary on guidance, the demand environment, and the competitive landscape (especially regarding Microsoft) would explain *why* the market reacted negatively to strong profitability.",
+            "Detailed breakdown of key SaaS metrics like Net Revenue Retention (NRR) and large customer additions would clarify whether the modest top-line growth is a sign of underlying business model deterioration.",
+            "Updated analyst reports post-earnings to see if the consensus rating shifts from the pre-earnings 'Buy' ratings, which would confirm a broader change in sentiment."
           ]
         }
       },
@@ -2624,9 +2349,9 @@
         "ticker": "OKTA",
         "company": "Okta",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Neutral",
-        "confidence": 0.75,
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is moderate because the analysis is based solely on quantitative financial data for one quarter without the crucial context of management's commentary, forward guidance, or a comparison to analyst expectations. The lack of YoY data also limits the ability to assess long-term trends and seasonality.",
         "stance_rationale": "The company demonstrates strong fundamental improvement with significant QoQ growth in profitability and cash flow, indicating successful operating leverage. While revenue growth is modest, the balance sheet is healthy, and strong expected earnings growth (implied by the Forward P/E) supports a bullish outlook despite a high trailing valuation.",
         "key_signals": [
@@ -2774,21 +2499,307 @@
         },
         "debate_response": {
           "response_type": "revision",
+          "agreement": "I agree with the `news_macro` agent's assessment that stiff competition, particularly from Microsoft, is a critical headwind that explains the modest revenue growth I observed. This context was missing from my initial analysis. I also strongly agree with the `market_technical` agent's evidence; the market's decisively negative post-earnings reaction (price decline on high volume, underperformance vs. benchmark) is a powerful signal that invalidates my initial positive interpretation. The market has voted, and it was not impressed.",
+          "disagreement": "I now disagree with the weight I placed on my own initial findings. The QoQ improvements in profitability and cash flow, while factually correct, were clearly insufficient to offset market concerns about competition and future growth. The negative price action post-earnings demonstrates that the market is prioritizing the competitive threats highlighted by the `news_macro` agent over the margin improvements I found. My initial conclusion that the results 'strengthened' a bullish thesis was incorrect in the face of the market's verdict.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "My analysis is now much more robust. However, to fully validate the long-term Neutral stance, I need to see the company's specific guidance for the next quarter and full year, and management's commentary from the earnings call regarding the competitive environment with Microsoft and their strategy to defend market share and margins. This would clarify whether the current profitability is sustainable under pressure."
+          ]
+        }
+      },
+      {
+        "ticker": "OKTA",
+        "company": "Okta",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+        "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bearish Post-Earnings Confirmation",
+            "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Confirmed Bearish Trend",
+            "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weak Momentum",
+            "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "High Downside Risk Realized",
+            "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Classified Bearish Trend",
+            "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -1.2%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.19x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+          }
+        ],
+        "risks": [
+          "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+          "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+        ],
+        "citations": [],
+        "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+        "raw_packet": {
+          "ticker": "OKTA",
+          "company": "Okta",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+          "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bearish Post-Earnings Confirmation",
+              "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum",
+              "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "High Downside Risk Realized",
+              "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Classified Bearish Trend",
+              "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.2%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.19x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+            }
+          ],
+          "risks": [
+            "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+            "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+          ],
+          "citations": [],
+          "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+          "raw_packet": {
+            "ticker": "OKTA",
+            "company": "Okta",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+            "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bearish Post-Earnings Confirmation",
+                "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum",
+                "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "High Downside Risk Realized",
+                "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Classified Bearish Trend",
+                "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.2%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.19x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+              }
+            ],
+            "risks": [
+              "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+              "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+            ],
+            "citations": [],
+            "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+            "raw_packet": {
+              "ticker": "OKTA",
+              "company": "Okta",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bearish Post-Earnings Confirmation",
+                  "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum",
+                  "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "High Downside Risk Realized",
+                  "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Classified Bearish Trend",
+                  "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.2%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.19x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 49.51%, Recent 61.86%"
+                }
+              ],
+              "risks": [
+                "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+                "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
+              ],
+              "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+              "core_insight": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
           "agreement": {
-            "news_macro": "I agree with the news agent's assessment that the structural competitive threat from Microsoft is a significant long-term headwind. This provides a crucial narrative for the high valuation risk I had identified, explaining why the market may not reward Okta's improving profitability. The pre-earnings price target cuts are factual evidence of market caution that tempers my quantitative optimism.",
-            "market_technical": "I agree with the technical agent's evidence of a dominant long-term bearish trend. The data showing significant underperformance versus the SPY (-62.13%) and the price remaining well below the 200-day moving average serves as a powerful market-based reality check, directly challenging my previous long-term bullish stance."
+            "news_macro": "I agree with the news_macro agent's short-term Bearish stance and their rationale. The pre-earnings analyst caution and concerns about 'stiff competition' provide a fundamental narrative that explains the negative post-earnings price action I observed. Their long-term view on the structural competitive threat from Microsoft also aligns with and provides a causal explanation for the long-term technical underperformance and downtrend seen in my own analysis.",
+            "fundamental": "I agree with the fundamental agent's data point showing modest Quarter-over-Quarter revenue growth of 2.56%. For a stock with a historically high valuation, this modest top-line growth is a significant factor that likely contributed to the market's negative post-earnings reaction, despite the profitability improvements."
           },
           "disagreement": {
-            "news_macro": "I disagree with the short-term 'Bearish' stance. While I acknowledge the negative pre-earnings sentiment, my fundamental data shows very strong *actual* QoQ profitability and cash flow growth. This disconnect suggests the market may be overly pessimistic, creating potential for a positive surprise. I weigh the reported results more heavily than the pre-report sentiment.",
-            "market_technical": "I disagree with the short-term 'Bullish' stance. The technical agent themselves correctly identifies that the recent rally is on weak volume and is moving against a powerful long-term downtrend. My own data shows only modest revenue growth (2.56% QoQ), which is insufficient fuel for a sustained breakout. The technical signals are more likely indicative of a fragile, range-bound move, which aligns with my 'Neutral' view rather than a 'Bullish' one."
+            "fundamental": "I disagree with the fundamental agent's Bullish long-term stance and Neutral short-term stance. The market's verdict, which is the ultimate arbiter of short-term sentiment, was decisively negative, as shown by the -2.6% abnormal underperformance on high volume after the results were released. The strong profitability metrics were clearly overshadowed by other concerns, rendering a bullish interpretation incorrect in the context of the market's reaction.",
+            "news_macro": "I believe the news_macro agent's long-term Neutral stance is too optimistic. The technical evidence of a -43.03% drawdown and -34.71% underperformance against the SPY, combined with their own narrative of a 'structural competitive threat', supports my long-term Bearish view more strongly than a Neutral one. The price is reflecting a fundamental problem, not just market-level performance."
           },
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.75,
+          "revised_view": {
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.95,
+            "confidence_rationale": "Confidence is revised higher because the fundamental narrative from the news_macro agent (Microsoft competition) and the modest revenue growth from the fundamental agent provide a clear 'why' for the powerful bearish technical signals I observed. The market's negative reaction to the earnings report serves as a final, high-volume confirmation that these fundamental concerns outweigh the reported profitability improvements, creating a highly convergent bearish thesis.",
+            "stance_rationale": "The primary insight remains the market's decisive negative reaction to earnings, which validated the pre-existing bearish technical trend. The new evidence from other agents strengthens this view by suggesting the negative reaction was driven by concerns over modest revenue growth and the long-term structural threat of competition from Microsoft. The market is pricing in a future of slower growth and margin pressure, which is consistent with the established downtrend across all technical indicators."
+          },
           "evidence_needed": [
-            "Management's forward guidance and commentary on the competitive environment, specifically their strategy to defend market share against Microsoft's bundling.",
-            "Confirmation of whether the strong QoQ profitability improvements are sustainable in the face of competitive pressure.",
-            "Evidence of an acceleration in revenue growth beyond the modest 2.56% QoQ rate to justify a more bullish outlook."
+            "Analyst consensus estimates for revenue and EPS to quantify the exact beat or miss.",
+            "Official company-issued financial guidance for the next quarter and full year, which was the most likely driver of the stock's negative reaction.",
+            "The earnings call transcript to hear management's tone and commentary regarding competition, demand, and the drivers of future growth."
           ]
         }
       }
@@ -2797,24 +2808,23 @@
   "final_decision": {
     "ticker": "OKTA",
     "company": "Okta",
-    "final_short_term_stance": "Bullish",
-    "final_long_term_stance": "Bullish",
-    "investment_action": "Long",
-    "position_size_hint": "Small",
-    "confidence": 0.7,
-    "core_thesis": "The investment thesis has inflected. Okta is demonstrating significant and surprising operating leverage, generating strong profits and cash flow. This proves resilience against the well-known competitive threat from Microsoft and suggests the company is turning a corner towards sustainable profitability, which the market has not yet fully priced in.",
-    "why_now": "The company just reported a quarter with a 117% QoQ increase in operating income, directly refuting the market's pre-earnings fears of competitive pressure and margin compression. This fundamental surprise creates an opportunity before the narrative fully shifts and the stock potentially re-rates.",
+    "final_short_term_stance": "Bearish",
+    "final_long_term_stance": "Bearish",
+    "investment_action": "Avoid / Short",
+    "position_size_hint": "Medium",
+    "confidence": 0.9,
+    "core_thesis": "The market has decisively voted against Okta's quarterly results, signaling that concerns over slowing growth and the structural competitive threat from Microsoft now outweigh any improvements in profitability. The negative post-earnings price action on high volume confirmed the pre-existing bearish technical trend, transforming Okta into a 'show-me' story facing significant headwinds and a challenged valuation.",
+    "why_now": "The recent earnings report served as a catalyst, crystallizing market fears. The stock's negative reaction, despite strong backward-looking profitability, provides a clear signal that the narrative has shifted. The market is no longer rewarding past performance and is instead pricing in a future of slower growth and margin pressure, a view confirmed by the stock's technical breakdown.",
     "key_supporting_evidence": [
-      "Fundamental strength: Operating Income more than doubled QoQ (+117.4%) and Free Cash Flow grew 19.4% to $252M (from fundamental agent).",
-      "Thesis Invalidation: The strong earnings print invalidated the pre-earnings bearish narrative which was based on analyst caution and competitive fears (news_macro agent revision).",
-      "Leading vs. Lagging Indicators: The demonstrated fundamental strength is a powerful leading indicator that outweighs lagging technicals like the price being below the MA200 and historical underperformance (market_technical agent revision).",
-      "Forward Valuation: A Forward P/E of 18.3 suggests strong anticipated earnings growth, making the valuation appear more reasonable than the trailing P/E of 57.6 (from fundamental agent)."
+      "1. Post-Earnings Rejection: The stock's -2.6% abnormal underperformance versus the QQQ on 1.61x average volume post-earnings is a powerful, direct signal of negative market reception, as identified by the market_technical agent.",
+      "2. Decelerating Growth Narrative: Modest QoQ revenue growth of 2.56% (from the fundamental agent) provides a quantitative basis for the market's growth fears, explaining why strong profitability was ignored.",
+      "3. Structural Competitive Threat: The pre-earnings narrative of 'stiff competition' from Microsoft's bundling strategy (from the news_macro agent) provides the fundamental 'why' behind the market's forward-looking concerns.",
+      "4. Confirmed Bearish Trend: All agents converged on the fact that the price is below all key moving averages (20, 50, 200), MACD momentum is negative, and the stock is a significant market laggard, confirming a technically weak position."
     ],
     "key_risks": [
-      "Lack of Forward Guidance: The strong results are historical; without management guidance and commentary, the forward outlook remains a significant uncertainty (risk cited by all agents).",
-      "Structural Competition: The long-term competitive threat from Microsoft's bundling strategy remains and could still cap future margin expansion and growth (risk cited by news_macro and fundamental agents).",
-      "Weak Market Confirmation: The recent price rally occurred on low volume (0.5x average), suggesting a lack of strong institutional conviction and potentially a fragile move (from market_technical agent).",
-      "High Trailing Valuation: The Trailing P/E of 57.6 remains high, creating vulnerability if future growth disappoints or does not meet expectations (from fundamental agent)."
+      "1. Oversold Bounce: The RSI is at 36.65, approaching oversold territory (<30), which could trigger a sharp, short-term counter-trend rally.",
+      "2. Profitability as a Floor: The strong QoQ growth in operating income (+117%) and free cash flow (+19%) could establish a valuation floor sooner than anticipated if the market's growth fears prove to be overblown.",
+      "3. Information Gap: The negative thesis is largely inferred from price action, as official guidance and management commentary from the earnings call were not available for analysis. A surprisingly confident tone or better-than-feared guidance would invalidate the thesis."
     ],
     "agent_view_summary": [
       {
@@ -2825,150 +2835,142 @@
         "rationale": "Short-term: The barrage of pre-earnings price target cuts and a risk-off macro environment create a negative setup. The bar for a positive surprise is high, making a 'sell the news' or a 'miss and drop' reaction more likely than a rally. Long-term: While Okta is a leader in a growing market, the structural competitive threat from Microsoft's bundling strategy will likely cap margin expansion and multiple re-rating, leading to performance that is unlikely to substantially beat the QQQ over the next few quarters. It's a 'show-me' story with significant headwinds."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The primary tension is between a nascent short-term uptrend and an overpowering long-term downtrend. The lack of volume confirmation in the recent rally suggests it is likely a fragile, counter-trend move with a high probability of failure unless participation increases significantly."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "The company demonstrates strong fundamental improvement with significant QoQ growth in profitability and cash flow, indicating successful operating leverage. While revenue growth is modest, the balance sheet is healthy, and strong expected earnings growth (implied by the Forward P/E) supports a bullish outlook despite a high trailing valuation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
       }
     ],
     "debate_summary": {
       "debate_triggered": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ],
       "debate_responses": [
         {
-          "response_type": "revision",
-          "agreement": {
-            "statement": "I agree with the core findings of the other agents. The `fundamental` agent's evidence of a strong earnings print, with significant QoQ growth in profitability and cash flow, directly invalidates my original short-term bearish thesis. The `market_technical` agent's evidence of the price remaining below the long-term MA200 and its history of significant underperformance aligns with my original long-term competitive concerns, suggesting the market is not yet fully convinced.",
-            "evidence": [
-              "Significant QoQ growth in profitability: Operating Income more than doubled (+117.4%) and Net Income grew 46.5%. (fundamental)",
-              "Strong and growing cash flow, with Free Cash Flow increasing 19.4% QoQ to $252 million. (fundamental)",
-              "The stock has underperformed the SPY benchmark by -62.13% over the analysis period. (market_technical)",
-              "Price at $77.24 is... 10.1% below the MA200 ($85.94). (market_technical)"
-            ]
-          },
-          "disagreement": {
-            "statement": "I assign lower weight to the `market_technical` agent's short-term 'Bullish' stance; it is a lagging indicator describing the price reaction to the fundamental news, not a separate predictive signal. I also believe the `fundamental` agent's long-term 'Bullish' stance is too strong given the acknowledged lack of management guidance and commentary. My original thesis about the structural competitive threat from Microsoft is not invalidated by a single strong quarter of execution, it simply proves Okta is managing the pressure better than feared for now.",
-            "evidence": [
-              "The `fundamental` agent's own risks state: 'Lack of company guidance and management commentary from an earnings call transcript introduces significant uncertainty about the forward outlook.'",
-              "The `market_technical` agent's signal of 'Lack of Conviction' due to low volume (0.5x) on the rally suggests the short-term bullish move is fragile and not fully supported by institutional capital, tempering the purely bullish technical interpretation."
-            ]
-          },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "stance_revision_rationale": "My original pre-earnings bearish thesis was proven incorrect by the strong quarterly results reported by the `fundamental` agent. The significant beat on profitability and cash flow forces a revision of the short-term stance to Bullish. The evidence of strong execution in the face of competition also warrants upgrading the long-term stance from Neutral to Bullish, as the company is demonstrating resilience. Confidence is raised to 0.7, as we now have the actual results, but is capped due to the lack of forward guidance and management commentary, which remains a key uncertainty.",
+          "response_type": "revised_agent_view",
+          "agreement": "I agree with the core evidence presented by the `market_technical` agent. Their analysis that the stock had a 'Bearish Post-Earnings Confirmation' with a price drop on high volume and abnormal underperformance is a critical new fact that validates my initial short-term bearish hypothesis. I also agree with the factual data points from the `fundamental` agent, specifically the strong QoQ growth in profitability and free cash flow, contrasted with modest revenue growth.",
+          "disagreement": "I disagree with the conclusion and weighting of the `fundamental` agent. While their data on profitability is correct, their resulting 'Bullish' long-term stance is contradicted by the market's actual negative reaction. The market is clearly signaling that the modest revenue growth and concerns about future competition (my original thesis) outweigh the backward-looking profitability beat. The market's vote, confirmed by the `market_technical` agent, is more important than the isolated fundamental improvement in one quarter.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Earnings call transcript to assess management tone, commentary on competition, and the drivers of margin expansion.",
-            "Official company guidance for the next quarter and full year to understand the forward outlook.",
-            "Post-earnings analyst reports to see how estimates and price targets are revised based on the new data and guidance.",
-            "Peer results (especially ZS, CRWD) to contextualize Okta's performance within the broader software and security sectors."
+            "The earnings call transcript is the most critical missing piece of evidence. Management's commentary on guidance, the demand environment, and the competitive landscape (especially regarding Microsoft) would explain *why* the market reacted negatively to strong profitability.",
+            "Detailed breakdown of key SaaS metrics like Net Revenue Retention (NRR) and large customer additions would clarify whether the modest top-line growth is a sign of underlying business model deterioration.",
+            "Updated analyst reports post-earnings to see if the consensus rating shifts from the pre-earnings 'Buy' ratings, which would confirm a broader change in sentiment."
           ]
         },
         {
           "response_type": "revision",
-          "agreement": {
-            "with_news_macro": "I agree with the news_macro agent's assessment of the short-term risk. The evidence of multiple pre-earnings analyst price target cuts provides a crucial negative context to my technical signals. This suggests the weak volume I observed is not just a lack of conviction, but an active avoidance of risk ahead of a catalyst.",
-            "with_fundamental": "I strongly agree with the fundamental agent's long-term bullish case. The hard data showing a 117% QoQ increase in operating income and a 19.4% increase in free cash flow provides a compelling reason for a long-term trend reversal. This fundamental strength is a powerful leading indicator that outweighs my previous reliance on lagging technical indicators like the MA200 and historical underperformance."
-          },
-          "disagreement": {
-            "with_original_view": "I disagree with my original short-term Bullish stance. The news_macro agent's evidence of a negative pre-earnings setup makes a technical rally highly suspect and prone to failure. I also now disagree with my original long-term Bearish stance; it was based on historical price action, which the fundamental agent's data suggests is no longer representative of the company's improving profitability and forward outlook.",
-            "with_news_macro_long_term": "I place lower weight on the news_macro agent's long-term Neutral stance. While competition from Microsoft is a valid concern, the fundamental agent's data shows Okta is currently demonstrating significant operating leverage and profitability growth *despite* this competition. The hard financial results are more compelling than the competitive narrative for the long-term view."
-          },
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "The actual earnings results versus analyst consensus estimates to determine if it was a beat or miss.",
-            "The company's official forward guidance, which is the most critical piece of information to validate the fundamental strength.",
-            "Management's commentary from the earnings call, especially regarding the competitive landscape and the drivers of margin expansion.",
-            "Post-earnings price and volume action to see how the market digests the fundamental data versus the forward-looking narrative."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "I agree with the news agent's assessment that the structural competitive threat from Microsoft is a significant long-term headwind. This provides a crucial narrative for the high valuation risk I had identified, explaining why the market may not reward Okta's improving profitability. The pre-earnings price target cuts are factual evidence of market caution that tempers my quantitative optimism.",
-            "market_technical": "I agree with the technical agent's evidence of a dominant long-term bearish trend. The data showing significant underperformance versus the SPY (-62.13%) and the price remaining well below the 200-day moving average serves as a powerful market-based reality check, directly challenging my previous long-term bullish stance."
-          },
-          "disagreement": {
-            "news_macro": "I disagree with the short-term 'Bearish' stance. While I acknowledge the negative pre-earnings sentiment, my fundamental data shows very strong *actual* QoQ profitability and cash flow growth. This disconnect suggests the market may be overly pessimistic, creating potential for a positive surprise. I weigh the reported results more heavily than the pre-report sentiment.",
-            "market_technical": "I disagree with the short-term 'Bullish' stance. The technical agent themselves correctly identifies that the recent rally is on weak volume and is moving against a powerful long-term downtrend. My own data shows only modest revenue growth (2.56% QoQ), which is insufficient fuel for a sustained breakout. The technical signals are more likely indicative of a fragile, range-bound move, which aligns with my 'Neutral' view rather than a 'Bullish' one."
-          },
-          "revised_short_term_stance": "Neutral",
+          "agreement": "I agree with the `news_macro` agent's assessment that stiff competition, particularly from Microsoft, is a critical headwind that explains the modest revenue growth I observed. This context was missing from my initial analysis. I also strongly agree with the `market_technical` agent's evidence; the market's decisively negative post-earnings reaction (price decline on high volume, underperformance vs. benchmark) is a powerful signal that invalidates my initial positive interpretation. The market has voted, and it was not impressed.",
+          "disagreement": "I now disagree with the weight I placed on my own initial findings. The QoQ improvements in profitability and cash flow, while factually correct, were clearly insufficient to offset market concerns about competition and future growth. The negative price action post-earnings demonstrates that the market is prioritizing the competitive threats highlighted by the `news_macro` agent over the margin improvements I found. My initial conclusion that the results 'strengthened' a bullish thesis was incorrect in the face of the market's verdict.",
+          "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.75,
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Management's forward guidance and commentary on the competitive environment, specifically their strategy to defend market share against Microsoft's bundling.",
-            "Confirmation of whether the strong QoQ profitability improvements are sustainable in the face of competitive pressure.",
-            "Evidence of an acceleration in revenue growth beyond the modest 2.56% QoQ rate to justify a more bullish outlook."
+            "My analysis is now much more robust. However, to fully validate the long-term Neutral stance, I need to see the company's specific guidance for the next quarter and full year, and management's commentary from the earnings call regarding the competitive environment with Microsoft and their strategy to defend market share and margins. This would clarify whether the current profitability is sustainable under pressure."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's short-term Bearish stance and their rationale. The pre-earnings analyst caution and concerns about 'stiff competition' provide a fundamental narrative that explains the negative post-earnings price action I observed. Their long-term view on the structural competitive threat from Microsoft also aligns with and provides a causal explanation for the long-term technical underperformance and downtrend seen in my own analysis.",
+            "fundamental": "I agree with the fundamental agent's data point showing modest Quarter-over-Quarter revenue growth of 2.56%. For a stock with a historically high valuation, this modest top-line growth is a significant factor that likely contributed to the market's negative post-earnings reaction, despite the profitability improvements."
+          },
+          "disagreement": {
+            "fundamental": "I disagree with the fundamental agent's Bullish long-term stance and Neutral short-term stance. The market's verdict, which is the ultimate arbiter of short-term sentiment, was decisively negative, as shown by the -2.6% abnormal underperformance on high volume after the results were released. The strong profitability metrics were clearly overshadowed by other concerns, rendering a bullish interpretation incorrect in the context of the market's reaction.",
+            "news_macro": "I believe the news_macro agent's long-term Neutral stance is too optimistic. The technical evidence of a -43.03% drawdown and -34.71% underperformance against the SPY, combined with their own narrative of a 'structural competitive threat', supports my long-term Bearish view more strongly than a Neutral one. The price is reflecting a fundamental problem, not just market-level performance."
+          },
+          "revised_view": {
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.95,
+            "confidence_rationale": "Confidence is revised higher because the fundamental narrative from the news_macro agent (Microsoft competition) and the modest revenue growth from the fundamental agent provide a clear 'why' for the powerful bearish technical signals I observed. The market's negative reaction to the earnings report serves as a final, high-volume confirmation that these fundamental concerns outweigh the reported profitability improvements, creating a highly convergent bearish thesis.",
+            "stance_rationale": "The primary insight remains the market's decisive negative reaction to earnings, which validated the pre-existing bearish technical trend. The new evidence from other agents strengthens this view by suggesting the negative reaction was driven by concerns over modest revenue growth and the long-term structural threat of competition from Microsoft. The market is pricing in a future of slower growth and margin pressure, which is consistent with the established downtrend across all technical indicators."
+          },
+          "evidence_needed": [
+            "Analyst consensus estimates for revenue and EPS to quantify the exact beat or miss.",
+            "Official company-issued financial guidance for the next quarter and full year, which was the most likely driver of the stock's negative reaction.",
+            "The earnings call transcript to hear management's tone and commentary regarding competition, demand, and the drivers of future growth."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "The final decision is to adopt a Bullish stance on both short and long-term horizons, aligning with the deterministic guardrail's direction but upgrading confidence. The primary driver is the overwhelming evidence from the `fundamental` agent of a significant beat on profitability (Operating Income +117.4% QoQ) and cash flow. This new data invalidates the pre-earnings bearish narrative. As the `market_technical` agent correctly identified in its revision, this fundamental strength is a powerful *leading* indicator that should be weighted more heavily than *lagging* technicals. While risks around competition and lack of forward guidance are material and cap confidence, the demonstrated operating leverage marks a clear inflection point for the company, justifying a bullish view.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "This decision overrides the guardrail's 'Small' position size hint to 'Medium' due to the high degree of post-debate consensus. The initial conflict between the fundamental agent's bullishness (based on profitability) and the other agents' bearishness was decisively resolved by the market's price action. All agents revised their views, acknowledging that the negative market reaction was the most critical signal, validating the theses of competitive pressure (news_macro) and technical weakness (market_technical). The modest revenue growth (fundamental) provided the missing link, explaining why the market ignored the profitability beat. The resulting synthesis is a high-confidence, convergent bearish view across all three analytical pillars, justifying a more convicted position.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": 0.245
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.45,
+          "contribution": -0.36
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.15,
+          "contribution": -0.12
         },
         {
           "agent_name": "market_technical",
           "stance": "Neutral",
-          "confidence": 0.7,
-          "weight": 0.45,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.2,
+          "confidence": 0.9,
+          "weight": 0.4,
           "contribution": 0.0
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": 0.245
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.7,
-          "weight": 0.2,
-          "contribution": 0.14
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": -0.32
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
+          "confidence": 0.8,
+          "weight": 0.35,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.9,
+          "weight": 0.25,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": 0.3451,
-      "long": 0.5329
+      "short": -0.5714,
+      "long": -0.3879
     },
     "llm_decision_used": true
   }

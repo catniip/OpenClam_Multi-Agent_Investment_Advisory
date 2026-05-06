@@ -11,22 +11,22 @@
         "rationale": "Short-term: The stock fell despite a beat-and-raise, signaling a classic 'sell the news' reaction where extremely high expectations were not surpassed enough. The CEO's attempt to re-brand the company from 'SaaS' to an 'AI control tower' introduces narrative uncertainty that the market is using to de-risk, especially with rising rates pressuring high-multiple stocks. Long-term: The fundamentals are undeniably strong, with >20% growth, raised guidance, a new $5B buyback, and a clear, well-partnered AI strategy. The current weakness is likely a positioning shakeout, creating a more attractive entry point for a long-term compounder successfully navigating the AI transition."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.1,
         "rationale": "ServiceNow demonstrated strong quarter-over-quarter growth in revenue and profitability, coupled with a healthy balance sheet where cash exceeds debt. However, this is contrasted by a significant sequential decline in both operating and free cash flow. The stock's valuation is high based on its trailing P/E. A lack of analyst estimates, management guidance, and an earnings transcript introduces considerable uncertainty, warranting a cautious 'Watch' stance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon."
+      "2 agents lean bearish on the short-term horizon."
     ],
     "areas_of_disagreement": [
       "Long-term views contain both bullish and bearish calls."
@@ -34,8 +34,8 @@
     "missing_information": [],
     "short_stance_counts": {
       "Bullish": 0,
-      "Neutral": 2,
-      "Bearish": 1
+      "Neutral": 1,
+      "Bearish": 2
     },
     "long_stance_counts": {
       "Bullish": 1,
@@ -442,257 +442,6 @@
       {
         "ticker": "NOW",
         "company": "ServiceNow",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-        "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Established Bearish Trend",
-            "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bearish Environment",
-            "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Drawdown",
-            "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Underperformance",
-            "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-          },
-          {
-            "type": "MACD",
-            "signal": "Nascent Bullish Momentum Shift",
-            "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weak Momentum",
-            "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction on Recent Moves",
-            "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.6%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-          }
-        ],
-        "risks": [
-          "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-          "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-        ],
-        "citations": [],
-        "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-        "raw_packet": {
-          "ticker": "NOW",
-          "company": "ServiceNow",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-          "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend",
-              "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bearish Environment",
-              "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Drawdown",
-              "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Underperformance",
-              "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-            },
-            {
-              "type": "MACD",
-              "signal": "Nascent Bullish Momentum Shift",
-              "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction on Recent Moves",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-            }
-          ],
-          "risks": [
-            "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-            "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-          "raw_packet": {
-            "ticker": "NOW",
-            "company": "ServiceNow",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-            "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend",
-                "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bearish Environment",
-                "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Drawdown",
-                "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Underperformance",
-                "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-              },
-              {
-                "type": "MACD",
-                "signal": "Nascent Bullish Momentum Shift",
-                "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction on Recent Moves",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-              }
-            ],
-            "risks": [
-              "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-              "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-            "raw_packet": {
-              "ticker": "NOW",
-              "company": "ServiceNow",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend",
-                  "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bearish Environment",
-                  "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Drawdown",
-                  "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Underperformance",
-                  "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Nascent Bullish Momentum Shift",
-                  "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction on Recent Moves",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-                }
-              ],
-              "risks": [
-                "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-                "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-              ],
-              "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-              "core_insight": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "NOW",
-        "company": "ServiceNow",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -862,6 +611,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "NOW",
+        "company": "ServiceNow",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+        "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Extremely Bearish Post-Earnings Breakdown",
+            "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bearish Trend",
+            "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Severe Market Underperformance",
+            "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Realized Downside Risk",
+            "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+          },
+          {
+            "type": "RSI",
+            "signal": "Bearish Momentum, Nearing Oversold",
+            "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+          },
+          {
+            "type": "MACD",
+            "signal": "Weak Bullish Crossover (Likely Insignificant)",
+            "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.61%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.69x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+          }
+        ],
+        "risks": [
+          "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+          "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+        ],
+        "citations": [],
+        "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+        "raw_packet": {
+          "ticker": "NOW",
+          "company": "ServiceNow",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+          "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Extremely Bearish Post-Earnings Breakdown",
+              "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Severe Market Underperformance",
+              "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Realized Downside Risk",
+              "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish Momentum, Nearing Oversold",
+              "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+            },
+            {
+              "type": "MACD",
+              "signal": "Weak Bullish Crossover (Likely Insignificant)",
+              "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.61%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.69x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+            }
+          ],
+          "risks": [
+            "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+            "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+          ],
+          "citations": [],
+          "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+          "raw_packet": {
+            "ticker": "NOW",
+            "company": "ServiceNow",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+            "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Extremely Bearish Post-Earnings Breakdown",
+                "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Severe Market Underperformance",
+                "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Realized Downside Risk",
+                "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish Momentum, Nearing Oversold",
+                "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+              },
+              {
+                "type": "MACD",
+                "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.61%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.69x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+              }
+            ],
+            "risks": [
+              "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+              "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+            ],
+            "citations": [],
+            "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+            "raw_packet": {
+              "ticker": "NOW",
+              "company": "ServiceNow",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Extremely Bearish Post-Earnings Breakdown",
+                  "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Severe Market Underperformance",
+                  "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Realized Downside Risk",
+                  "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish Momentum, Nearing Oversold",
+                  "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                  "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.61%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.69x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+                }
+              ],
+              "risks": [
+                "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+                "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+              ],
+              "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+              "core_insight": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
+            }
+          }
+        }
       }
     ]
   },
@@ -887,22 +907,22 @@
           "rationale": "Short-term: The stock fell despite a beat-and-raise, signaling a classic 'sell the news' reaction where extremely high expectations were not surpassed enough. The CEO's attempt to re-brand the company from 'SaaS' to an 'AI control tower' introduces narrative uncertainty that the market is using to de-risk, especially with rising rates pressuring high-multiple stocks. Long-term: The fundamentals are undeniably strong, with >20% growth, raised guidance, a new $5B buyback, and a clear, well-partnered AI strategy. The current weakness is likely a positioning shakeout, creating a more attractive entry point for a long-term compounder successfully navigating the AI transition."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.1,
           "rationale": "ServiceNow demonstrated strong quarter-over-quarter growth in revenue and profitability, coupled with a healthy balance sheet where cash exceeds debt. However, this is contrasted by a significant sequential decline in both operating and free cash flow. The stock's valuation is high based on its trailing P/E. A lack of analyst estimates, management guidance, and an earnings transcript introduces considerable uncertainty, warranting a cautious 'Watch' stance."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon."
+        "2 agents lean bearish on the short-term horizon."
       ],
       "areas_of_disagreement": [
         "Long-term views contain both bullish and bearish calls."
@@ -910,8 +930,8 @@
       "missing_information": [],
       "short_stance_counts": {
         "Bullish": 0,
-        "Neutral": 2,
-        "Bearish": 1
+        "Neutral": 1,
+        "Bearish": 2
       },
       "long_stance_counts": {
         "Bullish": 1,
@@ -1449,320 +1469,6 @@
         {
           "ticker": "NOW",
           "company": "ServiceNow",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-          "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend",
-              "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bearish Environment",
-              "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Drawdown",
-              "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Underperformance",
-              "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-            },
-            {
-              "type": "MACD",
-              "signal": "Nascent Bullish Momentum Shift",
-              "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction on Recent Moves",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-            }
-          ],
-          "risks": [
-            "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-            "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-          "raw_packet": {
-            "ticker": "NOW",
-            "company": "ServiceNow",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-            "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend",
-                "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bearish Environment",
-                "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Drawdown",
-                "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Underperformance",
-                "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-              },
-              {
-                "type": "MACD",
-                "signal": "Nascent Bullish Momentum Shift",
-                "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction on Recent Moves",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-              }
-            ],
-            "risks": [
-              "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-              "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-            "raw_packet": {
-              "ticker": "NOW",
-              "company": "ServiceNow",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-              "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend",
-                  "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bearish Environment",
-                  "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Drawdown",
-                  "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Underperformance",
-                  "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Nascent Bullish Momentum Shift",
-                  "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction on Recent Moves",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-                }
-              ],
-              "risks": [
-                "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-                "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-              ],
-              "citations": [],
-              "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-              "raw_packet": {
-                "ticker": "NOW",
-                "company": "ServiceNow",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.85,
-                "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-                "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Established Bearish Trend",
-                    "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Confirmed Bearish Environment",
-                    "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Severe Drawdown",
-                    "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Underperformance",
-                    "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Nascent Bullish Momentum Shift",
-                    "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Weak Momentum",
-                    "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Low Conviction on Recent Moves",
-                    "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.6%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-                  }
-                ],
-                "risks": [
-                  "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-                  "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-                ],
-                "citations": [],
-                "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-                "raw_packet": {
-                  "ticker": "NOW",
-                  "company": "ServiceNow",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.85,
-                  "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Established Bearish Trend",
-                      "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Confirmed Bearish Environment",
-                      "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Severe Drawdown",
-                      "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Underperformance",
-                      "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Nascent Bullish Momentum Shift",
-                      "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Weak Momentum",
-                      "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Low Conviction on Recent Moves",
-                      "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.6%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-                    }
-                  ],
-                  "risks": [
-                    "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-                    "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-                  ],
-                  "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-                  "core_insight": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "NOW",
-          "company": "ServiceNow",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1974,50 +1680,381 @@
               }
             }
           }
+        },
+        {
+          "ticker": "NOW",
+          "company": "ServiceNow",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+          "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Extremely Bearish Post-Earnings Breakdown",
+              "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Severe Market Underperformance",
+              "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Realized Downside Risk",
+              "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish Momentum, Nearing Oversold",
+              "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+            },
+            {
+              "type": "MACD",
+              "signal": "Weak Bullish Crossover (Likely Insignificant)",
+              "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.61%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.69x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+            }
+          ],
+          "risks": [
+            "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+            "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+          ],
+          "citations": [],
+          "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+          "raw_packet": {
+            "ticker": "NOW",
+            "company": "ServiceNow",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+            "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Extremely Bearish Post-Earnings Breakdown",
+                "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Severe Market Underperformance",
+                "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Realized Downside Risk",
+                "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish Momentum, Nearing Oversold",
+                "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+              },
+              {
+                "type": "MACD",
+                "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.61%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.69x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+              }
+            ],
+            "risks": [
+              "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+              "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+            ],
+            "citations": [],
+            "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+            "raw_packet": {
+              "ticker": "NOW",
+              "company": "ServiceNow",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+              "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Extremely Bearish Post-Earnings Breakdown",
+                  "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Severe Market Underperformance",
+                  "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Realized Downside Risk",
+                  "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish Momentum, Nearing Oversold",
+                  "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                  "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.61%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.69x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+                }
+              ],
+              "risks": [
+                "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+                "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+              ],
+              "citations": [],
+              "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+              "raw_packet": {
+                "ticker": "NOW",
+                "company": "ServiceNow",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.9,
+                "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+                "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Extremely Bearish Post-Earnings Breakdown",
+                    "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Strong Bearish Trend Structure",
+                    "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Confirmed Bearish Trend",
+                    "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Severe Market Underperformance",
+                    "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Significant Realized Downside Risk",
+                    "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Bearish Momentum, Nearing Oversold",
+                    "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                    "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.61%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "strong participation",
+                    "evidence": "Volume spike ratio 1.69x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+                  }
+                ],
+                "risks": [
+                  "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+                  "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+                ],
+                "citations": [],
+                "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+                "raw_packet": {
+                  "ticker": "NOW",
+                  "company": "ServiceNow",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Extremely Bearish Post-Earnings Breakdown",
+                      "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Strong Bearish Trend Structure",
+                      "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Confirmed Bearish Trend",
+                      "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Severe Market Underperformance",
+                      "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Significant Realized Downside Risk",
+                      "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Bearish Momentum, Nearing Oversold",
+                      "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                      "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.61%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "strong participation",
+                      "evidence": "Volume spike ratio 1.69x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+                    }
+                  ],
+                  "risks": [
+                    "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+                    "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+                  ],
+                  "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+                  "core_insight": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "CIO Committee Revision",
-        "agreement": {
-          "market_technical": "The market_technical agent provides strong, quantitative evidence (price vs. MA50/MA200, -55.98% drawdown, -81.86% relative underperformance) that validates the severity of the short-term negative price action I identified. This data reinforces my short-term bearish stance.",
-          "fundamental": "The fundamental agent's data confirms the strong top-line and bottom-line growth I observed in the news (5.7% QoQ revenue growth, 17.0% QoQ net income growth). It also highlights the high valuation (54.7 Trailing P/E), which supports my rationale that high-multiple stocks are under pressure."
-        },
-        "disagreement": {
-          "market_technical": "I disagree with the market_technical agent's long-term 'Bearish' stance. Their analysis is, by its nature, backward-looking based on past price action. My forward-looking analysis, based on strong guidance, a new $5B buyback, and a clear AI strategy, suggests the fundamental drivers are changing. The severe drawdown they identify is the 'air pocket' I mentioned, which creates the long-term opportunity.",
-          "fundamental": "I assign a lower weight to the fundamental agent's concern regarding the QoQ decline in operating and free cash flow. While the numbers are correct, they lack context. My evidence shows the company issued strong forward guidance and a massive buyback authorization, actions inconsistent with a management team concerned about a structural cash flow problem. The decline is more likely due to timing or working capital adjustments, which is a risk the fundamental agent itself noted due to its lack of an earnings transcript."
-        },
+        "response_type": "cio_committee_revision",
+        "agreement": "I agree with the `market_technical` agent's quantitative evidence of a severe negative post-earnings reaction (-9.9% abnormal return on 3.5x volume), which strongly validates my short-term Bearish stance. I also agree with the `fundamental` agent's observation of strong YoY revenue growth (>22%) and a low forward P/E, which supports the core of my long-term Bullish thesis.",
+        "disagreement": "I disagree with the `market_technical` agent's long-term Bearish stance. It inappropriately extrapolates short-term price momentum into a long-term fundamental forecast, ignoring the strong growth, guidance, and strategic positioning evident in the news data. However, I assign significant weight to the `fundamental` agent's new evidence of a sharp quarter-over-quarter decline in operating and free cash flow. This is a material risk not captured in my initial analysis and tempers my long-term bullishness, as it contradicts the 'undeniably strong' fundamentals narrative.",
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.85,
-        "evidence_needed": [
-          "Management commentary from the earnings call or 10-Q filing explaining the drivers of the quarter-over-quarter change in operating and free cash flow, to confirm it is not a structural issue.",
-          "Confirmation of a technical trend change, such as price reclaiming the 50-day moving average on high volume, which would signal that the fundamental story is starting to override the prior bearish sentiment."
-        ]
+        "revised_confidence": 0.7,
+        "evidence_needed": "The primary missing evidence, as correctly identified by the `fundamental` agent, is the management's explanation for the significant QoQ decline in operating and free cash flow. This would ideally be found in the earnings call transcript or investor presentation. Understanding if this is due to one-time effects, working capital changes, or a structural issue is critical to validating the long-term Bullish thesis."
       },
       {
         "response_type": "revision",
-        "agreement": "I agree with the `news_macro` agent that the stock's negative price reaction to a 'beat-and-raise' earnings report is a powerful, real-world bearish signal. This price action, where good news is sold, confirms that sellers are in control and overrides weaker technical indicators. I also agree with the `fundamental` agent's signal of a high trailing P/E, which provides context for why a stock with high expectations would be punished for any narrative uncertainty, reinforcing the bearish technical setup.",
-        "disagreement": "I disagree with the `news_macro` agent's 'Bullish' long-term stance. While their fundamental reasoning (AI strategy, growth) is noted, my mandate is to follow the technical evidence. The price remains in a severe, confirmed long-term downtrend, trading significantly below its 200-day moving average. A bullish fundamental story is a hypothesis until the price action validates it with a trend reversal. Therefore, I must maintain a 'Bearish' long-term view. I am also discounting my own initial 'nascent bullish' MACD signal, as the overwhelmingly bearish price action following the earnings report is a much stronger and more relevant signal.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.9,
-        "evidence_needed": [
-          "To invalidate the bearish thesis, the price must first reclaim the 50-day moving average.",
-          "A definitive long-term trend change would require the price to break above and hold the 200-day moving average on sustained, above-average volume.",
-          "The post-earnings low must hold as a support level. A break below this level would strongly reinforce the bearish case."
-        ]
-      },
-      {
-        "response_type": "revised_view",
-        "agreement": "I agree with the evidence from the `news_macro` agent. My original analysis was severely hampered by a lack of context regarding analyst estimates, guidance, and management narrative. The `news_macro` agent's evidence directly fills these gaps, confirming ServiceNow delivered a 'beat-and-raise' quarter, provided strong forward guidance driven by AI demand, and authorized a significant $5B share buyback. This information is crucial and validates the underlying business strength I observed, while also providing the forward-looking picture I was missing.",
-        "disagreement": "I disagree with and assign zero weight to the evidence from the `market_technical` agent. The data presented appears to be non-contemporaneous and therefore irrelevant to the current earnings event. Key data points such as a price of '$91.97' and a drawdown of '-55.98%' describe a historical market condition, not the stock's technical posture following this earnings release. This data is out of sync with the event being analyzed.",
+        "agreement": "I agree with the news_macro agent that ServiceNow delivered a strong 'beat-and-raise' quarter, supported by a compelling long-term AI narrative and shareholder-friendly buybacks. The explanation that the negative stock reaction was due to a narrative shift and sky-high expectations is a crucial piece of context I was missing. I also agree with the market_technical agent's objective data showing a severe, high-volume post-earnings drop, which confirms the powerful short-term bearish sentiment.",
+        "disagreement": "I now place a lower weight on my initial concern regarding the quarter-over-quarter cash flow decline. In the context of a beat-and-raise and strong guidance, it's less alarming, though still worth monitoring. I also disagree with the market_technical agent's long-term 'Bearish' stance. While the technicals are currently poor, my long-term view is driven by fundamentals, which, according to the news agent's evidence, are very strong (20%+ growth, raised guidance, AI leadership).",
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
         "revised_confidence": 0.8,
         "evidence_needed": [
-          "While the new evidence is overwhelmingly positive for the long-term, my original concern about the significant quarter-over-quarter decline in operating and free cash flow remains unaddressed. An explanation from management regarding the drivers of this decline (e.g., seasonality, working capital changes, one-time items) is still needed to fully reconcile the financial statements."
+          "Earnings call transcript to understand management's qualitative commentary on the cash flow decline and AI strategy.",
+          "Detailed financial filings to analyze Remaining Performance Obligation (RPO) and billings growth, which the news agent noted could be a hidden cause for the stock drop.",
+          "Year-over-year cash flow data to determine if the QoQ decline is a pattern of seasonality."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the news_macro agent's evidence that ServiceNow reported a fundamentally strong quarter (beat-and-raise, new buyback) and that the market's negative reaction creates a short-term bearish outlook. I also agree with the fundamental agent's specific data point that operating and free cash flow declined significantly quarter-over-quarter, which is a valid counterpoint to the positive news.",
+        "disagreement": "I am revising my initial long-term 'Bearish' stance. The news_macro agent provides compelling evidence that the company's fundamentals are strong and its long-term AI strategy is intact. This suggests my purely technical interpretation of the post-earnings price drop as a signal of long-term business failure was incorrect. I now believe the technical breakdown is a short-term reaction to a narrative shift and valuation reset, rather than a leading indicator of sustained fundamental decline. My backward-looking technical signals are outweighed by the forward-looking fundamental evidence for the long-term view.",
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.7,
+        "evidence_needed": [
+          "Management's explanation for the significant quarter-over-quarter decline in operating and free cash flow, as highlighted by the fundamental agent.",
+          "Deeper analysis of sub-headline metrics from the earnings report (e.g., billings, remaining performance obligation (RPO)) to confirm whether the negative stock reaction was due to a narrative shift, as the news_macro agent suggests, or a miss on a key performance indicator not captured in the headline numbers."
         ]
       }
     ],
@@ -2028,7 +2065,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
-        "confidence": 0.85,
+        "confidence": 0.7,
         "confidence_rationale": "Confidence is high because the core data (earnings beat, strong guidance, buyback) is direct from the company's press release. The paradoxical negative stock reaction is also a verifiable event. The thesis explains this paradox by referencing a common market dynamic for high-growth stocks: narrative ambiguity leading to short-term valuation contraction, even with strong fundamentals. The stances are a direct interpretation of this dynamic.",
         "stance_rationale": "Short-term: The stock fell despite a beat-and-raise, signaling a classic 'sell the news' reaction where extremely high expectations were not surpassed enough. The CEO's attempt to re-brand the company from 'SaaS' to an 'AI control tower' introduces narrative uncertainty that the market is using to de-risk, especially with rising rates pressuring high-multiple stocks. Long-term: The fundamentals are undeniably strong, with >20% growth, raised guidance, a new $5B buyback, and a clear, well-partnered AI strategy. The current weakness is likely a positioning shakeout, creating a more attractive entry point for a long-term compounder successfully navigating the AI transition.",
         "key_signals": [
@@ -2418,286 +2455,13 @@
           }
         },
         "debate_response": {
-          "response_type": "CIO Committee Revision",
-          "agreement": {
-            "market_technical": "The market_technical agent provides strong, quantitative evidence (price vs. MA50/MA200, -55.98% drawdown, -81.86% relative underperformance) that validates the severity of the short-term negative price action I identified. This data reinforces my short-term bearish stance.",
-            "fundamental": "The fundamental agent's data confirms the strong top-line and bottom-line growth I observed in the news (5.7% QoQ revenue growth, 17.0% QoQ net income growth). It also highlights the high valuation (54.7 Trailing P/E), which supports my rationale that high-multiple stocks are under pressure."
-          },
-          "disagreement": {
-            "market_technical": "I disagree with the market_technical agent's long-term 'Bearish' stance. Their analysis is, by its nature, backward-looking based on past price action. My forward-looking analysis, based on strong guidance, a new $5B buyback, and a clear AI strategy, suggests the fundamental drivers are changing. The severe drawdown they identify is the 'air pocket' I mentioned, which creates the long-term opportunity.",
-            "fundamental": "I assign a lower weight to the fundamental agent's concern regarding the QoQ decline in operating and free cash flow. While the numbers are correct, they lack context. My evidence shows the company issued strong forward guidance and a massive buyback authorization, actions inconsistent with a management team concerned about a structural cash flow problem. The decline is more likely due to timing or working capital adjustments, which is a risk the fundamental agent itself noted due to its lack of an earnings transcript."
-          },
+          "response_type": "cio_committee_revision",
+          "agreement": "I agree with the `market_technical` agent's quantitative evidence of a severe negative post-earnings reaction (-9.9% abnormal return on 3.5x volume), which strongly validates my short-term Bearish stance. I also agree with the `fundamental` agent's observation of strong YoY revenue growth (>22%) and a low forward P/E, which supports the core of my long-term Bullish thesis.",
+          "disagreement": "I disagree with the `market_technical` agent's long-term Bearish stance. It inappropriately extrapolates short-term price momentum into a long-term fundamental forecast, ignoring the strong growth, guidance, and strategic positioning evident in the news data. However, I assign significant weight to the `fundamental` agent's new evidence of a sharp quarter-over-quarter decline in operating and free cash flow. This is a material risk not captured in my initial analysis and tempers my long-term bullishness, as it contradicts the 'undeniably strong' fundamentals narrative.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "Management commentary from the earnings call or 10-Q filing explaining the drivers of the quarter-over-quarter change in operating and free cash flow, to confirm it is not a structural issue.",
-            "Confirmation of a technical trend change, such as price reclaiming the 50-day moving average on high volume, which would signal that the fundamental story is starting to override the prior bearish sentiment."
-          ]
-        }
-      },
-      {
-        "ticker": "NOW",
-        "company": "ServiceNow",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.9,
-        "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-        "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Established Bearish Trend",
-            "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bearish Environment",
-            "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Drawdown",
-            "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Underperformance",
-            "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-          },
-          {
-            "type": "MACD",
-            "signal": "Nascent Bullish Momentum Shift",
-            "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weak Momentum",
-            "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-          },
-          {
-            "type": "Volume",
-            "signal": "Low Conviction on Recent Moves",
-            "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.6%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-          }
-        ],
-        "risks": [
-          "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-          "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-        ],
-        "citations": [],
-        "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-        "raw_packet": {
-          "ticker": "NOW",
-          "company": "ServiceNow",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-          "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend",
-              "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bearish Environment",
-              "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Drawdown",
-              "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Underperformance",
-              "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-            },
-            {
-              "type": "MACD",
-              "signal": "Nascent Bullish Momentum Shift",
-              "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-            },
-            {
-              "type": "Volume",
-              "signal": "Low Conviction on Recent Moves",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-            }
-          ],
-          "risks": [
-            "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-            "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-          "raw_packet": {
-            "ticker": "NOW",
-            "company": "ServiceNow",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-            "stance_rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend",
-                "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bearish Environment",
-                "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Drawdown",
-                "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Underperformance",
-                "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-              },
-              {
-                "type": "MACD",
-                "signal": "Nascent Bullish Momentum Shift",
-                "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-              },
-              {
-                "type": "Volume",
-                "signal": "Low Conviction on Recent Moves",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-              }
-            ],
-            "risks": [
-              "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-              "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-            "raw_packet": {
-              "ticker": "NOW",
-              "company": "ServiceNow",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high as the long-term downtrend is confirmed by multiple, strongly aligned indicators (price vs MAs, relative strength, drawdown). The short-term neutral stance acknowledges a counter-trend MACD signal but appropriately weights it against the dominant bearish trend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend",
-                  "evidence": "Price at $91.97 is significantly below its MA50 ($102.99) and MA200 ($149.47), with the price being 38.5% below the MA200."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bearish Environment",
-                  "evidence": "The market regime is explicitly classified as 'bearish_trend', providing context for all other indicators."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Drawdown",
-                  "evidence": "The stock was in a significant drawdown of -55.98% from its peak, indicating strong, persistent selling pressure."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Underperformance",
-                  "evidence": "The stock has underperformed its benchmark (SPY) by -81.86%, showing profound market weakness."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Nascent Bullish Momentum Shift",
-                  "evidence": "A bullish crossover occurred with the MACD line (-3.65) crossing above its signal line (-3.98), suggesting a potential short-term pause or bounce in the downtrend."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "RSI at 44.83 is below the 50 neutral line, confirming that bearish momentum was still in place despite the MACD signal."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Low Conviction on Recent Moves",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.67), indicating a lack of strong participation in the recent price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 42.87%, Recent 91.59%"
-                }
-              ],
-              "risks": [
-                "A 'bear market rally' could occur. The bullish MACD crossover could fuel a short-term counter-trend bounce that is sharper than expected.",
-                "The bullish MACD signal could fail, leading to a swift resumption of the primary downtrend, as it is a single counter-trend signal in an overwhelmingly bearish environment."
-              ],
-              "summary": "As of the analysis date, NOW was in a severe and well-defined long-term downtrend. This was evidenced by the price trading far below all key moving averages, a deep drawdown of over 55%, and dramatic underperformance versus the broader market. While the primary trend was unequivocally bearish, a recent bullish MACD crossover suggested a potential for a short-term pause or counter-trend rally. However, this signal was not confirmed by RSI or volume, warranting a neutral short-term stance within the dominant bearish context.",
-              "core_insight": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the `news_macro` agent that the stock's negative price reaction to a 'beat-and-raise' earnings report is a powerful, real-world bearish signal. This price action, where good news is sold, confirms that sellers are in control and overrides weaker technical indicators. I also agree with the `fundamental` agent's signal of a high trailing P/E, which provides context for why a stock with high expectations would be punished for any narrative uncertainty, reinforcing the bearish technical setup.",
-          "disagreement": "I disagree with the `news_macro` agent's 'Bullish' long-term stance. While their fundamental reasoning (AI strategy, growth) is noted, my mandate is to follow the technical evidence. The price remains in a severe, confirmed long-term downtrend, trading significantly below its 200-day moving average. A bullish fundamental story is a hypothesis until the price action validates it with a trend reversal. Therefore, I must maintain a 'Bearish' long-term view. I am also discounting my own initial 'nascent bullish' MACD signal, as the overwhelmingly bearish price action following the earnings report is a much stronger and more relevant signal.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "To invalidate the bearish thesis, the price must first reclaim the 50-day moving average.",
-            "A definitive long-term trend change would require the price to break above and hold the 200-day moving average on sustained, above-average volume.",
-            "The post-earnings low must hold as a support level. A break below this level would strongly reinforce the bearish case."
-          ]
+          "revised_confidence": 0.7,
+          "evidence_needed": "The primary missing evidence, as correctly identified by the `fundamental` agent, is the management's explanation for the significant QoQ decline in operating and free cash flow. This would ideally be found in the earnings call transcript or investor presentation. Understanding if this is due to one-time effects, working capital changes, or a structural issue is critical to validating the long-term Bullish thesis."
         }
       },
       {
@@ -2873,14 +2637,299 @@
           }
         },
         "debate_response": {
-          "response_type": "revised_view",
-          "agreement": "I agree with the evidence from the `news_macro` agent. My original analysis was severely hampered by a lack of context regarding analyst estimates, guidance, and management narrative. The `news_macro` agent's evidence directly fills these gaps, confirming ServiceNow delivered a 'beat-and-raise' quarter, provided strong forward guidance driven by AI demand, and authorized a significant $5B share buyback. This information is crucial and validates the underlying business strength I observed, while also providing the forward-looking picture I was missing.",
-          "disagreement": "I disagree with and assign zero weight to the evidence from the `market_technical` agent. The data presented appears to be non-contemporaneous and therefore irrelevant to the current earnings event. Key data points such as a price of '$91.97' and a drawdown of '-55.98%' describe a historical market condition, not the stock's technical posture following this earnings release. This data is out of sync with the event being analyzed.",
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent that ServiceNow delivered a strong 'beat-and-raise' quarter, supported by a compelling long-term AI narrative and shareholder-friendly buybacks. The explanation that the negative stock reaction was due to a narrative shift and sky-high expectations is a crucial piece of context I was missing. I also agree with the market_technical agent's objective data showing a severe, high-volume post-earnings drop, which confirms the powerful short-term bearish sentiment.",
+          "disagreement": "I now place a lower weight on my initial concern regarding the quarter-over-quarter cash flow decline. In the context of a beat-and-raise and strong guidance, it's less alarming, though still worth monitoring. I also disagree with the market_technical agent's long-term 'Bearish' stance. While the technicals are currently poor, my long-term view is driven by fundamentals, which, according to the news agent's evidence, are very strong (20%+ growth, raised guidance, AI leadership).",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.8,
           "evidence_needed": [
-            "While the new evidence is overwhelmingly positive for the long-term, my original concern about the significant quarter-over-quarter decline in operating and free cash flow remains unaddressed. An explanation from management regarding the drivers of this decline (e.g., seasonality, working capital changes, one-time items) is still needed to fully reconcile the financial statements."
+            "Earnings call transcript to understand management's qualitative commentary on the cash flow decline and AI strategy.",
+            "Detailed financial filings to analyze Remaining Performance Obligation (RPO) and billings growth, which the news agent noted could be a hidden cause for the stock drop.",
+            "Year-over-year cash flow data to determine if the QoQ decline is a pattern of seasonality."
+          ]
+        }
+      },
+      {
+        "ticker": "NOW",
+        "company": "ServiceNow",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+        "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Extremely Bearish Post-Earnings Breakdown",
+            "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bearish Trend",
+            "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Severe Market Underperformance",
+            "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Realized Downside Risk",
+            "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+          },
+          {
+            "type": "RSI",
+            "signal": "Bearish Momentum, Nearing Oversold",
+            "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+          },
+          {
+            "type": "MACD",
+            "signal": "Weak Bullish Crossover (Likely Insignificant)",
+            "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.61%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.69x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+          }
+        ],
+        "risks": [
+          "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+          "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+        ],
+        "citations": [],
+        "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+        "raw_packet": {
+          "ticker": "NOW",
+          "company": "ServiceNow",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+          "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Extremely Bearish Post-Earnings Breakdown",
+              "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bearish Trend",
+              "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Severe Market Underperformance",
+              "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Realized Downside Risk",
+              "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish Momentum, Nearing Oversold",
+              "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+            },
+            {
+              "type": "MACD",
+              "signal": "Weak Bullish Crossover (Likely Insignificant)",
+              "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.61%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.69x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+            }
+          ],
+          "risks": [
+            "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+            "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+          ],
+          "citations": [],
+          "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+          "raw_packet": {
+            "ticker": "NOW",
+            "company": "ServiceNow",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+            "stance_rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Extremely Bearish Post-Earnings Breakdown",
+                "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bearish Trend",
+                "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Severe Market Underperformance",
+                "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Realized Downside Risk",
+                "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish Momentum, Nearing Oversold",
+                "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+              },
+              {
+                "type": "MACD",
+                "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.61%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.69x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+              }
+            ],
+            "risks": [
+              "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+              "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+            ],
+            "citations": [],
+            "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+            "raw_packet": {
+              "ticker": "NOW",
+              "company": "ServiceNow",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the overwhelming alignment of bearish signals. A strong, pre-existing downtrend, evidenced by the price being far below all key moving averages and significant relative underperformance, was dramatically confirmed by an exceptionally negative post-earnings reaction (-9.9% abnormal return) on extremely high volume (3.5x average). This indicates strong conviction from market participants.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Extremely Bearish Post-Earnings Breakdown",
+                  "evidence": "The stock reacted to earnings with a -9.94% drop, an abnormal negative return of -9.35% vs. QQQ, on volume 3.49 times the average. This is a high-conviction bearish signal."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $129.62 is significantly below the MA20 ($138.71), MA50 ($153.05), and MA200 ($179.28), confirming a well-established downtrend across all timeframes."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bearish Trend",
+                  "evidence": "The market regime is officially classified as 'bearish_trend', reinforcing the directional analysis."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Severe Market Underperformance",
+                  "evidence": "The stock's relative return versus SPY is -61.01%, highlighting significant weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Realized Downside Risk",
+                  "evidence": "The stock is in a deep drawdown of -44.63% from its recent peak, indicating sustained selling pressure and investor aversion."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish Momentum, Nearing Oversold",
+                  "evidence": "RSI is at 33.65, indicating strong bearish momentum, though it is approaching the oversold threshold of 30."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Weak Bullish Crossover (Likely Insignificant)",
+                  "evidence": "A bullish MACD crossover occurred, but with the indicator deep in negative territory (MACD at -7.28), it likely represents a minor pause in the downtrend rather than a reversal."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.61%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.69x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 40.9%, Recent 35.43%"
+                }
+              ],
+              "risks": [
+                "The stock is approaching oversold levels (RSI at 33.65), which could lead to a short-term technical bounce, though the primary trend remains strongly bearish.",
+                "The weak bullish MACD crossover could attract some short-term counter-trend buying, but it is unlikely to overcome the powerful bearish momentum from the earnings event."
+              ],
+              "summary": "The stock is in a severe and confirmed downtrend, trading far below all key moving averages with significant relative underperformance. This long-standing weakness was catastrophically reinforced by a highly negative post-earnings reaction, with the price gapping down almost 10% on massive volume. While minor indicators like a weak MACD crossover and proximity to oversold RSI levels exist, they are completely overshadowed by the powerful, high-conviction selling that defines the current market state for this stock.",
+              "core_insight": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's evidence that ServiceNow reported a fundamentally strong quarter (beat-and-raise, new buyback) and that the market's negative reaction creates a short-term bearish outlook. I also agree with the fundamental agent's specific data point that operating and free cash flow declined significantly quarter-over-quarter, which is a valid counterpoint to the positive news.",
+          "disagreement": "I am revising my initial long-term 'Bearish' stance. The news_macro agent provides compelling evidence that the company's fundamentals are strong and its long-term AI strategy is intact. This suggests my purely technical interpretation of the post-earnings price drop as a signal of long-term business failure was incorrect. I now believe the technical breakdown is a short-term reaction to a narrative shift and valuation reset, rather than a leading indicator of sustained fundamental decline. My backward-looking technical signals are outweighed by the forward-looking fundamental evidence for the long-term view.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.7,
+          "evidence_needed": [
+            "Management's explanation for the significant quarter-over-quarter decline in operating and free cash flow, as highlighted by the fundamental agent.",
+            "Deeper analysis of sub-headline metrics from the earnings report (e.g., billings, remaining performance obligation (RPO)) to confirm whether the negative stock reaction was due to a narrative shift, as the news_macro agent suggests, or a miss on a key performance indicator not captured in the headline numbers."
           ]
         }
       }
@@ -2891,23 +2940,21 @@
     "company": "ServiceNow",
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Accumulate on weakness",
-    "position_size_hint": "Normal",
-    "confidence": 0.85,
-    "core_thesis": "The market is experiencing a short-term, narrative-driven dislocation in ServiceNow's stock. It is punishing the shares for sky-high expectations and a strategic pivot to an 'AI control tower', despite a classic beat-and-raise quarter, strong forward guidance, and a new $5B buyback. This creates a compelling long-term opportunity to own a premier enterprise AI platform at a more attractive valuation.",
-    "why_now": "The paradoxical post-earnings stock decline offers a window to accumulate shares in a high-quality compounder before the market fully digests and prices in the long-term positive implications of its AI-centric strategy. The current price action reflects short-term sentiment and positioning, not a degradation of the company's strong fundamental trajectory.",
+    "investment_action": "Wait for Pullback",
+    "position_size_hint": "Starter Position",
+    "confidence": 0.8,
+    "core_thesis": "ServiceNow is a high-quality, long-term compounder whose fundamental strength is currently being overshadowed by a severe, short-term market sell-off. The negative reaction to a strong 'beat-and-raise' quarter is driven by a narrative shift towards an 'AI control tower' and sky-high expectations, not fundamental deterioration. This dislocation between excellent long-term prospects and poor short-term sentiment presents a compelling opportunity to acquire a market leader at a more attractive valuation once the technical selling pressure subsides.",
+    "why_now": "The catalyst is the extreme post-earnings price action. A nearly 10% drop on massive volume, despite strong results and guidance, has created a valuation reset. This event confirms the short-term pain but provides a clear window for long-term investors to prepare for entry into a premier enterprise AI story that remains fundamentally intact.",
     "key_supporting_evidence": [
-      "ServiceNow reported revenue and EPS that beat analyst estimates and raised forward guidance for subscription revenue, citing AI-driven demand.",
-      "The company is successfully repositioning itself from a SaaS provider to the central 'AI control tower for business reinvention,' expanding its total addressable market.",
-      "The Board authorized a new $5 billion share repurchase program, signaling strong management confidence in the business outlook and valuation.",
-      "The negative stock reaction ('sell the news') is characteristic of a shakeout in a high-multiple stock where expectations were extremely high, creating the entry point.",
-      "The fundamental agent confirmed strong QoQ revenue (+5.7%) and net income (+17.0%) growth, underpinning the positive business momentum."
+      "Strong 'beat-and-raise' quarter with revenue growth over 22% YoY, strong forward guidance, and a new $5B share repurchase authorization, signaling management's confidence.",
+      "The severe post-earnings stock decline (-9.9% abnormal return on 3.5x volume) provides objective evidence of a sentiment-driven sell-off, creating a more attractive entry point.",
+      "Successful strategic pivot to an 'AI control tower' for enterprise, a large and durable growth vector, validated by strong demand signals in the earnings report.",
+      "The Forward P/E of ~18 is significantly below the Trailing P/E of ~55, indicating that the market expects strong earnings growth, which appears attractively priced after the sell-off."
     ],
     "key_risks": [
-      "The market's negative reaction may reflect a genuine, underlying concern about the timeline or profitability of AI monetization, rather than just a temporary narrative confusion.",
-      "The CEO's 'AI control tower' narrative could fail to gain traction with investors, leaving the stock in a 'show-me' state and capping valuation multiples for an extended period.",
-      "The significant quarter-over-quarter decline in operating and free cash flow, while likely due to timing, remains an unaddressed data point that could indicate a more serious issue if not explained.",
-      "As a high-valuation stock (Trailing P/E of 54.7), ServiceNow remains highly sensitive to changes in interest rates and broader market sentiment towards growth equities."
+      "The market's negative reaction may reflect genuine, underlying concerns about the timing and profitability of AI monetization, rather than just a temporary narrative confusion.",
+      "The sharp quarter-over-quarter decline in operating and free cash flow (-25% and -24% respectively), while likely due to timing, could be an early sign of business deceleration if the trend is not reversed.",
+      "The severe technical breakdown has created a significant price overhang; further downside is probable as the stock is in a confirmed bearish trend across all major moving averages."
     ],
     "agent_view_summary": [
       {
@@ -2918,18 +2965,18 @@
         "rationale": "Short-term: The stock fell despite a beat-and-raise, signaling a classic 'sell the news' reaction where extremely high expectations were not surpassed enough. The CEO's attempt to re-brand the company from 'SaaS' to an 'AI control tower' introduces narrative uncertainty that the market is using to de-risk, especially with rising rates pressuring high-multiple stocks. Long-term: The fundamentals are undeniably strong, with >20% growth, raised guidance, a new $5B buyback, and a clear, well-partnered AI strategy. The current weakness is likely a positioning shakeout, creating a more attractive entry point for a long-term compounder successfully navigating the AI transition."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "rationale": "The stock was in a powerful, long-term bearish trend. A nascent bullish MACD crossover presented a potential for a short-term bounce, but it was an isolated counter-trend signal within a context of overwhelming weakness across trend, relative strength, and momentum indicators."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.1,
         "rationale": "ServiceNow demonstrated strong quarter-over-quarter growth in revenue and profitability, coupled with a healthy balance sheet where cash exceeds debt. However, this is contrasted by a significant sequential decline in both operating and free cash flow. The stock's valuation is high based on its trailing P/E. A lack of analyst estimates, management guidance, and an earnings transcript introduces considerable uncertainty, warranting a cautious 'Watch' stance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The exceptionally bearish post-earnings event is the defining signal. A nearly 10% abnormal drop on 3.5x average volume confirms and accelerates the pre-existing downtrend, signaling strong institutional selling and a breakdown in investor confidence. This event validates the bearish thesis and suggests further downside is highly probable in the near term."
       }
     ],
     "debate_summary": {
@@ -2941,101 +2988,107 @@
       ],
       "debate_responses": [
         {
-          "response_type": "CIO Committee Revision",
-          "agreement": {
-            "market_technical": "The market_technical agent provides strong, quantitative evidence (price vs. MA50/MA200, -55.98% drawdown, -81.86% relative underperformance) that validates the severity of the short-term negative price action I identified. This data reinforces my short-term bearish stance.",
-            "fundamental": "The fundamental agent's data confirms the strong top-line and bottom-line growth I observed in the news (5.7% QoQ revenue growth, 17.0% QoQ net income growth). It also highlights the high valuation (54.7 Trailing P/E), which supports my rationale that high-multiple stocks are under pressure."
-          },
-          "disagreement": {
-            "market_technical": "I disagree with the market_technical agent's long-term 'Bearish' stance. Their analysis is, by its nature, backward-looking based on past price action. My forward-looking analysis, based on strong guidance, a new $5B buyback, and a clear AI strategy, suggests the fundamental drivers are changing. The severe drawdown they identify is the 'air pocket' I mentioned, which creates the long-term opportunity.",
-            "fundamental": "I assign a lower weight to the fundamental agent's concern regarding the QoQ decline in operating and free cash flow. While the numbers are correct, they lack context. My evidence shows the company issued strong forward guidance and a massive buyback authorization, actions inconsistent with a management team concerned about a structural cash flow problem. The decline is more likely due to timing or working capital adjustments, which is a risk the fundamental agent itself noted due to its lack of an earnings transcript."
-          },
+          "response_type": "cio_committee_revision",
+          "agreement": "I agree with the `market_technical` agent's quantitative evidence of a severe negative post-earnings reaction (-9.9% abnormal return on 3.5x volume), which strongly validates my short-term Bearish stance. I also agree with the `fundamental` agent's observation of strong YoY revenue growth (>22%) and a low forward P/E, which supports the core of my long-term Bullish thesis.",
+          "disagreement": "I disagree with the `market_technical` agent's long-term Bearish stance. It inappropriately extrapolates short-term price momentum into a long-term fundamental forecast, ignoring the strong growth, guidance, and strategic positioning evident in the news data. However, I assign significant weight to the `fundamental` agent's new evidence of a sharp quarter-over-quarter decline in operating and free cash flow. This is a material risk not captured in my initial analysis and tempers my long-term bullishness, as it contradicts the 'undeniably strong' fundamentals narrative.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "Management commentary from the earnings call or 10-Q filing explaining the drivers of the quarter-over-quarter change in operating and free cash flow, to confirm it is not a structural issue.",
-            "Confirmation of a technical trend change, such as price reclaiming the 50-day moving average on high volume, which would signal that the fundamental story is starting to override the prior bearish sentiment."
-          ]
+          "revised_confidence": 0.7,
+          "evidence_needed": "The primary missing evidence, as correctly identified by the `fundamental` agent, is the management's explanation for the significant QoQ decline in operating and free cash flow. This would ideally be found in the earnings call transcript or investor presentation. Understanding if this is due to one-time effects, working capital changes, or a structural issue is critical to validating the long-term Bullish thesis."
         },
         {
           "response_type": "revision",
-          "agreement": "I agree with the `news_macro` agent that the stock's negative price reaction to a 'beat-and-raise' earnings report is a powerful, real-world bearish signal. This price action, where good news is sold, confirms that sellers are in control and overrides weaker technical indicators. I also agree with the `fundamental` agent's signal of a high trailing P/E, which provides context for why a stock with high expectations would be punished for any narrative uncertainty, reinforcing the bearish technical setup.",
-          "disagreement": "I disagree with the `news_macro` agent's 'Bullish' long-term stance. While their fundamental reasoning (AI strategy, growth) is noted, my mandate is to follow the technical evidence. The price remains in a severe, confirmed long-term downtrend, trading significantly below its 200-day moving average. A bullish fundamental story is a hypothesis until the price action validates it with a trend reversal. Therefore, I must maintain a 'Bearish' long-term view. I am also discounting my own initial 'nascent bullish' MACD signal, as the overwhelmingly bearish price action following the earnings report is a much stronger and more relevant signal.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "To invalidate the bearish thesis, the price must first reclaim the 50-day moving average.",
-            "A definitive long-term trend change would require the price to break above and hold the 200-day moving average on sustained, above-average volume.",
-            "The post-earnings low must hold as a support level. A break below this level would strongly reinforce the bearish case."
-          ]
-        },
-        {
-          "response_type": "revised_view",
-          "agreement": "I agree with the evidence from the `news_macro` agent. My original analysis was severely hampered by a lack of context regarding analyst estimates, guidance, and management narrative. The `news_macro` agent's evidence directly fills these gaps, confirming ServiceNow delivered a 'beat-and-raise' quarter, provided strong forward guidance driven by AI demand, and authorized a significant $5B share buyback. This information is crucial and validates the underlying business strength I observed, while also providing the forward-looking picture I was missing.",
-          "disagreement": "I disagree with and assign zero weight to the evidence from the `market_technical` agent. The data presented appears to be non-contemporaneous and therefore irrelevant to the current earnings event. Key data points such as a price of '$91.97' and a drawdown of '-55.98%' describe a historical market condition, not the stock's technical posture following this earnings release. This data is out of sync with the event being analyzed.",
+          "agreement": "I agree with the news_macro agent that ServiceNow delivered a strong 'beat-and-raise' quarter, supported by a compelling long-term AI narrative and shareholder-friendly buybacks. The explanation that the negative stock reaction was due to a narrative shift and sky-high expectations is a crucial piece of context I was missing. I also agree with the market_technical agent's objective data showing a severe, high-volume post-earnings drop, which confirms the powerful short-term bearish sentiment.",
+          "disagreement": "I now place a lower weight on my initial concern regarding the quarter-over-quarter cash flow decline. In the context of a beat-and-raise and strong guidance, it's less alarming, though still worth monitoring. I also disagree with the market_technical agent's long-term 'Bearish' stance. While the technicals are currently poor, my long-term view is driven by fundamentals, which, according to the news agent's evidence, are very strong (20%+ growth, raised guidance, AI leadership).",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.8,
           "evidence_needed": [
-            "While the new evidence is overwhelmingly positive for the long-term, my original concern about the significant quarter-over-quarter decline in operating and free cash flow remains unaddressed. An explanation from management regarding the drivers of this decline (e.g., seasonality, working capital changes, one-time items) is still needed to fully reconcile the financial statements."
+            "Earnings call transcript to understand management's qualitative commentary on the cash flow decline and AI strategy.",
+            "Detailed financial filings to analyze Remaining Performance Obligation (RPO) and billings growth, which the news agent noted could be a hidden cause for the stock drop.",
+            "Year-over-year cash flow data to determine if the QoQ decline is a pattern of seasonality."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's evidence that ServiceNow reported a fundamentally strong quarter (beat-and-raise, new buyback) and that the market's negative reaction creates a short-term bearish outlook. I also agree with the fundamental agent's specific data point that operating and free cash flow declined significantly quarter-over-quarter, which is a valid counterpoint to the positive news.",
+          "disagreement": "I am revising my initial long-term 'Bearish' stance. The news_macro agent provides compelling evidence that the company's fundamentals are strong and its long-term AI strategy is intact. This suggests my purely technical interpretation of the post-earnings price drop as a signal of long-term business failure was incorrect. I now believe the technical breakdown is a short-term reaction to a narrative shift and valuation reset, rather than a leading indicator of sustained fundamental decline. My backward-looking technical signals are outweighed by the forward-looking fundamental evidence for the long-term view.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.7,
+          "evidence_needed": [
+            "Management's explanation for the significant quarter-over-quarter decline in operating and free cash flow, as highlighted by the fundamental agent.",
+            "Deeper analysis of sub-headline metrics from the earnings report (e.g., billings, remaining performance obligation (RPO)) to confirm whether the negative stock reaction was due to a narrative shift, as the news_macro agent suggests, or a miss on a key performance indicator not captured in the headline numbers."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "The final decision aligns with the deterministic guardrail and is an override of the initial divided committee view. The debate process was critical, revealing that the market_technical agent's analysis was based on non-contemporaneous, irrelevant data, as correctly identified by the fundamental agent. Once the fundamental agent incorporated the crucial context (guidance, buybacks) from the news_macro agent, a strong consensus formed. The committee is therefore discounting the flawed technical view and siding with the compelling, forward-looking fundamental evidence which points to short-term weakness creating a long-term opportunity.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "The committee reached a strong post-debate consensus. Initially, views diverged, with the technical agent seeing a long-term breakdown while the news agent saw a long-term opportunity. The debate reconciled these views: the technical breakdown is real and dictates a short-term bearish stance, but the fundamental and news evidence of a beat-and-raise, strong guidance, and a compelling AI strategy is overwhelming, justifying a long-term bullish stance. The final decision is to respect the technical damage by waiting for the selling to abate, but to treat this sentiment-driven pullback as a buying opportunity in a high-quality asset. The deterministic guardrail's conclusion aligns perfectly with this synthesis, so no override is necessary.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": -0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.9,
+          "confidence": 0.7,
           "weight": 0.45,
-          "contribution": -0.405
+          "contribution": -0.315
         },
         {
           "agent_name": "fundamental",
           "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
+          "weight": 0.15,
+          "contribution": -0.12
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": -0.28
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": 0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.9,
-          "weight": 0.2,
-          "contribution": -0.18
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": 0.28
         },
         {
           "agent_name": "fundamental",
           "stance": "Bullish",
           "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": 0.36
+          "weight": 0.35,
+          "contribution": 0.28
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.7,
+          "weight": 0.25,
+          "contribution": 0.175
         }
       ]
     },
     "scores": {
       "short": -1.0,
-      "long": 0.5701
+      "long": 1.0
     },
     "llm_decision_used": true
   }

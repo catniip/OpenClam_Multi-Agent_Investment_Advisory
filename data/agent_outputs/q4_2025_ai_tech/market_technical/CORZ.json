@@ -2,62 +2,67 @@
   "ticker": "CORZ",
   "company": "Core Scientific",
   "agent_name": "Market & Technical Analysis Agent",
-  "short_term_stance": "bullish",
+  "short_term_stance": "neutral",
   "long_term_stance": "bullish",
-  "confidence": 0.75,
-  "confidence_rationale": "Confidence is strong but not maximum due to a conflicting momentum signal from the MACD (bearish crossover), which suggests potential for a short-term pullback despite the overwhelmingly bullish trend structure.",
+  "confidence": 0.65,
+  "confidence_rationale": "Confidence is moderate due to conflicting signals. Bearish short-term momentum indicators (MACD, price below MA20/50) are at odds with a positive post-earnings price reaction. However, the reaction's low volume (0.66x average) weakens the bullish case, suggesting uncertainty and warranting a neutral stance.",
   "key_signals": [
     {
+      "type": "Earnings Reaction",
+      "signal": "Positive Price Reaction, Weak Conviction",
+      "evidence": "The stock posted an abnormal return of +2.13% vs. QQQ on 2026-03-13, but the move occurred on low volume (0.66x trailing average), questioning the conviction behind the bounce."
+    },
+    {
       "type": "Moving Averages",
-      "signal": "Strong Bullish Trend Structure",
-      "evidence": "Price ($21.10) is trading 7.6% above the MA20 ($19.61) and 20.1% above the MA50 ($17.57), indicating a robust uptrend."
-    },
-    {
-      "type": "Relative Strength",
-      "signal": "Significant Market Outperformance",
-      "evidence": "The stock has outperformed the SPY benchmark by 36.17% over the measured period, demonstrating strong leadership."
-    },
-    {
-      "type": "RSI",
-      "signal": "Strong Bullish Momentum",
-      "evidence": "RSI is elevated at 67.75, confirming strong buying pressure, although it is approaching the overbought threshold of 70."
+      "signal": "Bearish Short-Term, Bullish Long-Term Structure",
+      "evidence": "Price ($16.24) is below its short-term MA20 ($16.74) and MA50 ($17.22) but remains above the long-term MA200 ($15.92), indicating a short-term pullback within a larger uptrend."
     },
     {
       "type": "MACD",
-      "signal": "Waning Momentum Signal",
-      "evidence": "A bearish crossover has occurred (Histogram: -0.024), suggesting a potential short-term loss of upward momentum."
+      "signal": "Bearish Momentum",
+      "evidence": "The MACD line (-0.46) is below the signal line (-0.39), with a negative histogram (-0.073), indicating that downside momentum was in place leading into the earnings event."
+    },
+    {
+      "type": "Relative Strength",
+      "signal": "Sustained Long-Term Outperformance",
+      "evidence": "The stock has outperformed the SPY benchmark by a significant 60.87% over the measured period, highlighting strong long-term market leadership."
+    },
+    {
+      "type": "RSI",
+      "signal": "Neutral to Weak Momentum",
+      "evidence": "The RSI is at 47.13, below the neutral 50 level, reflecting a lack of strong upward momentum."
     },
     {
       "type": "Volatility",
-      "signal": "High Risk Environment",
-      "evidence": "The stock exhibits high annualized volatility of 66.12%, suggesting the potential for large price swings in either direction."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Trading Near Peak",
-      "evidence": "Current drawdown is minimal at -0.42%, indicating the price is very close to its recent high."
+      "signal": "High Volatility and Risk",
+      "evidence": "High annualized volatility of 78.07% and a current drawdown of -29.08% from recent highs indicate a high-risk trading environment."
     },
     {
       "type": "Market Regime",
-      "signal": "High Volatility Bullish",
-      "evidence": "The current market regime is characterized as a high-volatility uptrend, reinforcing both the positive trend and the associated risk."
+      "signal": "High Volatility Bearish",
+      "evidence": "The stock is operating in a regime characterized as 'high_volatility_bearish', suggesting price instability and a challenging backdrop."
     },
     {
       "type": "Returns",
-      "signal": "positive short-term momentum",
-      "evidence": "Mean of recent returns: 0.64%"
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.91%"
     },
     {
       "type": "Volume",
       "signal": "moderate participation",
-      "evidence": "Volume spike ratio 1.14x"
+      "evidence": "Volume spike ratio 1.36x"
+    },
+    {
+      "type": "Drawdown",
+      "signal": "elevated drawdown risk",
+      "evidence": "Current drawdown -29.08%, Max drawdown -40.74%"
     }
   ],
   "risks": [
-    "A bearish MACD crossover signals weakening upward momentum, increasing the probability of a short-term price correction or consolidation.",
-    "The RSI at 67.75 is approaching overbought levels, which could attract profit-taking and cap near-term upside.",
-    "The high annualized volatility of 66.12% means the stock is susceptible to sharp price reversals."
+    "The low volume on the post-earnings bounce suggests it may be a 'bull trap' and the prior downtrend could resume.",
+    "Extremely high annualized volatility (78%) creates a wide range of potential outcomes and increases risk.",
+    "The stock is in a significant drawdown (-29.08%), and a failure to find support could lead to further downside."
   ],
-  "summary": "CORZ is in a strong, high-volatility uptrend, evidenced by its price position above key moving averages and significant market outperformance. While bullish momentum is strong (high RSI), a recent bearish MACD crossover introduces a notable caution flag, signaling a potential short-term exhaustion of the upward thrust. The overall technical posture remains bullish but is subject to pullback risk.",
-  "core_insight": "The dominant technical narrative is the conflict between a powerful, established uptrend and a fresh MACD signal of weakening momentum. While the primary trend is strong, the momentum divergence suggests that the risk of a short-term pullback has increased, and continued sharp advances should not be taken for granted."
+  "summary": "As of 2026-03-12, CORZ exhibits a conflicting technical profile. The long-term trend is bullish, evidenced by the price holding above its 200-day moving average and strong relative outperformance. However, the short-term picture is weak, with bearish momentum indicators and price action below key short-term averages. The post-earnings price reaction was positive against a weak market but lacked volume confirmation, suggesting a potential relief bounce rather than a confirmed trend reversal. This warrants a neutral short-term stance.",
+  "core_insight": "The primary conflict is between the bearish pre-earnings momentum and the positive, but low-conviction, post-earnings price reaction. The lack of volume confirmation on the earnings bounce fails to invalidate the existing bearish short-term trend, creating a state of uncertainty."
 }

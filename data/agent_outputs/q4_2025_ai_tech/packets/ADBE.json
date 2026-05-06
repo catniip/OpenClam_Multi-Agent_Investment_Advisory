@@ -220,127 +220,135 @@
     "ticker": "ADBE",
     "company": "Adobe",
     "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
-    "long_term_stance": "Neutral",
-    "confidence": 0.65,
-    "confidence_rationale": "Confidence is moderate. Strong short-term bullish momentum signals (MACD crossover, RSI > 50) are present, but they are not confirmed by volume and are directly contradicted by significant underperformance versus the broader market (SPY).",
-    "stance_rationale": "A classic conflict is present: strong tactical momentum indicators are signaling a 'buy', but strategic indicators like relative strength and volume show significant weakness. This suggests the current upward move is more likely a rally within a consolidation range rather than the beginning of a new market-leading trend.",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bearish",
+    "confidence": 0.75,
+    "confidence_rationale": "Confidence in the long-term bearish stance is high due to significant price decay below the MA50/MA200 and severe market underperformance. The neutral short-term stance has moderate confidence, reflecting conflicting signals such as a bullish MACD crossover against a weak trend and an ambiguous post-earnings reaction.",
+    "stance_rationale": "The core insight is the conflict between a deeply bearish long-term trend and emerging short-term neutral-to-positive signals. While the primary trend is down, the post-earnings reaction was not a bearish catalyst, and the MACD crossover suggests downward momentum has stalled, favoring a range-bound or consolidative state in the near term.",
     "key_signals": [
       {
-        "type": "MACD",
-        "signal": "bullish crossover",
-        "evidence": "The MACD line (0.275) has crossed above its signal line (-1.295), with a positive histogram (1.57), indicating a shift to bullish momentum."
-      },
-      {
-        "type": "RSI",
-        "signal": "bullish momentum",
-        "evidence": "The RSI at 55.96 is above 50, suggesting momentum is currently in bullish territory but not yet overbought."
+        "type": "Earnings Reaction",
+        "signal": "Ambiguous Post-Earnings Reaction",
+        "evidence": "Stock fell -1.44%, but outperformed the QQQ benchmark by +0.28% on high volume (2.25x average). This shows relative resilience despite the negative absolute return."
       },
       {
         "type": "Moving Averages",
-        "signal": "improving trend structure",
-        "evidence": "Price at $253.96 is above both the 20-day MA ($243.04) and the 50-day MA ($250.42), which is a short to medium-term bullish signal."
+        "signal": "Conflicting Trend Structure",
+        "evidence": "Price at $273.71 is above its 20-day MA ($265.39) but remains below its 50-day ($290.08) and 200-day ($340.98) MAs, indicating short-term support within a broader downtrend."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bullish Momentum Crossover",
+        "evidence": "The MACD line (-2.27) has crossed above its signal line (-6.13), and the histogram (3.86) is positive, signaling a potential build in upward momentum."
       },
       {
         "type": "Relative Strength",
-        "signal": "significant market underperformance",
-        "evidence": "ADBE has underperformed the SPY benchmark by -11.98% over the period, indicating it is a market laggard."
+        "signal": "Severe Long-Term Underperformance",
+        "evidence": "The stock has underperformed the SPY benchmark by -59.97% over the analysis period, indicating significant long-term weakness."
       },
       {
-        "type": "Volume",
-        "signal": "lack of conviction",
-        "evidence": "Recent volume is not showing a significant spike (ratio ~1.0), suggesting the recent price rally lacks strong participation and conviction."
+        "type": "Drawdown",
+        "signal": "Significant Bear Market",
+        "evidence": "The stock is in a major drawdown of -37.59% from its peak, confirming the long-term bearish trend."
+      },
+      {
+        "type": "RSI",
+        "signal": "Neutral Momentum",
+        "evidence": "RSI of 48.78 is in neutral territory, indicating a lack of strong directional momentum."
       },
       {
         "type": "Market Regime",
-        "signal": "range-bound conditions",
-        "evidence": "The stock is classified in a 'range_bound' regime, implying it has not established a clear directional trend and is trading within a consolidation pattern."
-      },
-      {
-        "type": "Volatility",
-        "signal": "elevated recent volatility",
-        "evidence": "Recent volatility (47.26%) is higher than the annualized measure (39.28%), indicating increased price instability during this potential trend shift."
+        "signal": "Range-Bound Conditions",
+        "evidence": "The stock is currently classified as 'range_bound', consistent with price being caught between key moving averages."
       },
       {
         "type": "Returns",
         "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 0.25%"
+        "evidence": "Mean of recent returns: 0.62%"
       },
       {
-        "type": "Drawdown",
-        "signal": "elevated drawdown risk",
-        "evidence": "Current drawdown -10.46%, Max drawdown -20.55%"
+        "type": "Volume",
+        "signal": "weak participation",
+        "evidence": "Volume spike ratio 0.86x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 33.18%, Recent 33.93%"
       }
     ],
     "risks": [
-      "The primary risk is the significant relative underperformance versus the S&P 500, suggesting the stock is a market laggard that could be sold into strength.",
-      "The bullish momentum is not supported by a significant increase in volume, indicating weak conviction and a higher risk of the rally failing.",
-      "The 'range_bound' classification implies overhead resistance may be strong, potentially capping the current advance."
+      "The dominant long-term downtrend could reassert itself, causing a failure at the 50-day moving average and a continuation of the decline.",
+      "The combination of a bullish MACD crossover and a resilient post-earnings reaction could fuel a short-term relief rally, posing a risk to bearish positions."
     ],
     "citations": [],
-    "summary": "ADBE exhibits a short-term bullish momentum shift, evidenced by a MACD crossover and price action above key short-term moving averages. However, this positive momentum is tempered by weak volume, significant underperformance against the benchmark SPY, and a broader range-bound market context. This suggests the rally may lack the conviction for a sustained uptrend.",
+    "summary": "As of 2026-03-11, Adobe is in a confirmed long-term downtrend, trading significantly below its key 50-day and 200-day moving averages with severe underperformance against the broader market. The short-term outlook is neutral and conflicted. A recent bullish MACD crossover points to waning downward momentum, but the price remains capped by resistance. The post-earnings reaction was indecisive, showing a small price drop but relative outperformance versus the QQQ, suggesting a lack of strong bearish conviction after the event.",
     "raw_packet": {
       "ticker": "ADBE",
       "company": "Adobe",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
-      "long_term_stance": "neutral",
-      "confidence": 0.65,
-      "confidence_rationale": "Confidence is moderate. Strong short-term bullish momentum signals (MACD crossover, RSI > 50) are present, but they are not confirmed by volume and are directly contradicted by significant underperformance versus the broader market (SPY).",
+      "short_term_stance": "neutral",
+      "long_term_stance": "bearish",
+      "confidence": 0.75,
+      "confidence_rationale": "Confidence in the long-term bearish stance is high due to significant price decay below the MA50/MA200 and severe market underperformance. The neutral short-term stance has moderate confidence, reflecting conflicting signals such as a bullish MACD crossover against a weak trend and an ambiguous post-earnings reaction.",
       "key_signals": [
         {
-          "type": "MACD",
-          "signal": "bullish crossover",
-          "evidence": "The MACD line (0.275) has crossed above its signal line (-1.295), with a positive histogram (1.57), indicating a shift to bullish momentum."
-        },
-        {
-          "type": "RSI",
-          "signal": "bullish momentum",
-          "evidence": "The RSI at 55.96 is above 50, suggesting momentum is currently in bullish territory but not yet overbought."
+          "type": "Earnings Reaction",
+          "signal": "Ambiguous Post-Earnings Reaction",
+          "evidence": "Stock fell -1.44%, but outperformed the QQQ benchmark by +0.28% on high volume (2.25x average). This shows relative resilience despite the negative absolute return."
         },
         {
           "type": "Moving Averages",
-          "signal": "improving trend structure",
-          "evidence": "Price at $253.96 is above both the 20-day MA ($243.04) and the 50-day MA ($250.42), which is a short to medium-term bullish signal."
+          "signal": "Conflicting Trend Structure",
+          "evidence": "Price at $273.71 is above its 20-day MA ($265.39) but remains below its 50-day ($290.08) and 200-day ($340.98) MAs, indicating short-term support within a broader downtrend."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bullish Momentum Crossover",
+          "evidence": "The MACD line (-2.27) has crossed above its signal line (-6.13), and the histogram (3.86) is positive, signaling a potential build in upward momentum."
         },
         {
           "type": "Relative Strength",
-          "signal": "significant market underperformance",
-          "evidence": "ADBE has underperformed the SPY benchmark by -11.98% over the period, indicating it is a market laggard."
+          "signal": "Severe Long-Term Underperformance",
+          "evidence": "The stock has underperformed the SPY benchmark by -59.97% over the analysis period, indicating significant long-term weakness."
         },
         {
-          "type": "Volume",
-          "signal": "lack of conviction",
-          "evidence": "Recent volume is not showing a significant spike (ratio ~1.0), suggesting the recent price rally lacks strong participation and conviction."
+          "type": "Drawdown",
+          "signal": "Significant Bear Market",
+          "evidence": "The stock is in a major drawdown of -37.59% from its peak, confirming the long-term bearish trend."
+        },
+        {
+          "type": "RSI",
+          "signal": "Neutral Momentum",
+          "evidence": "RSI of 48.78 is in neutral territory, indicating a lack of strong directional momentum."
         },
         {
           "type": "Market Regime",
-          "signal": "range-bound conditions",
-          "evidence": "The stock is classified in a 'range_bound' regime, implying it has not established a clear directional trend and is trading within a consolidation pattern."
-        },
-        {
-          "type": "Volatility",
-          "signal": "elevated recent volatility",
-          "evidence": "Recent volatility (47.26%) is higher than the annualized measure (39.28%), indicating increased price instability during this potential trend shift."
+          "signal": "Range-Bound Conditions",
+          "evidence": "The stock is currently classified as 'range_bound', consistent with price being caught between key moving averages."
         },
         {
           "type": "Returns",
           "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 0.25%"
+          "evidence": "Mean of recent returns: 0.62%"
         },
         {
-          "type": "Drawdown",
-          "signal": "elevated drawdown risk",
-          "evidence": "Current drawdown -10.46%, Max drawdown -20.55%"
+          "type": "Volume",
+          "signal": "weak participation",
+          "evidence": "Volume spike ratio 0.86x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 33.18%, Recent 33.93%"
         }
       ],
       "risks": [
-        "The primary risk is the significant relative underperformance versus the S&P 500, suggesting the stock is a market laggard that could be sold into strength.",
-        "The bullish momentum is not supported by a significant increase in volume, indicating weak conviction and a higher risk of the rally failing.",
-        "The 'range_bound' classification implies overhead resistance may be strong, potentially capping the current advance."
+        "The dominant long-term downtrend could reassert itself, causing a failure at the 50-day moving average and a continuation of the decline.",
+        "The combination of a bullish MACD crossover and a resilient post-earnings reaction could fuel a short-term relief rally, posing a risk to bearish positions."
       ],
-      "summary": "ADBE exhibits a short-term bullish momentum shift, evidenced by a MACD crossover and price action above key short-term moving averages. However, this positive momentum is tempered by weak volume, significant underperformance against the benchmark SPY, and a broader range-bound market context. This suggests the rally may lack the conviction for a sustained uptrend.",
-      "core_insight": "A classic conflict is present: strong tactical momentum indicators are signaling a 'buy', but strategic indicators like relative strength and volume show significant weakness. This suggests the current upward move is more likely a rally within a consolidation range rather than the beginning of a new market-leading trend."
+      "summary": "As of 2026-03-11, Adobe is in a confirmed long-term downtrend, trading significantly below its key 50-day and 200-day moving averages with severe underperformance against the broader market. The short-term outlook is neutral and conflicted. A recent bullish MACD crossover points to waning downward momentum, but the price remains capped by resistance. The post-earnings reaction was indecisive, showing a small price drop but relative outperformance versus the QQQ, suggesting a lack of strong bearish conviction after the event.",
+      "core_insight": "The core insight is the conflict between a deeply bearish long-term trend and emerging short-term neutral-to-positive signals. While the primary trend is down, the post-earnings reaction was not a bearish catalyst, and the MACD crossover suggests downward momentum has stalled, favoring a range-bound or consolidative state in the near term."
     }
   }
 ]

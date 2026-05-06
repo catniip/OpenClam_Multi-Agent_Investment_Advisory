@@ -217,61 +217,66 @@
     "short_term_stance": "Neutral",
     "long_term_stance": "Bullish",
     "confidence": 0.75,
-    "confidence_rationale": "Strong underlying trend provides a clear long-term picture, but conflicting short-term momentum signals (MACD crossover vs. strong RSI and Relative Strength) temper confidence in the immediate directional bias.",
-    "stance_rationale": "The dominant bullish trend is facing a short-term momentum test. While the bearish MACD crossover signals a pause, the lack of volume confirmation on the downside suggests the path of least resistance remains upward once this consolidation completes.",
+    "confidence_rationale": "Confidence is high due to the clear conflict between the strong underlying trend and the signs of short-term exhaustion, making a neutral stance the most logical synthesis. The overbought RSI and muted post-earnings reaction strongly suggest a pause, while the bullish trend structure prevents a bearish call.",
+    "stance_rationale": "The primary insight is the exhaustion of immediate upside momentum. Despite a powerful uptrend, the muted post-earnings reaction following a sharp run-up indicates that buyers are hesitant at these levels, making a neutral short-term stance most appropriate as the stock digests its recent gains.",
     "key_signals": [
       {
-        "type": "Moving Averages",
-        "signal": "bullish trend structure",
-        "evidence": "Price at 198.51 is above both the MA20 (196.14) and MA50 (185.22), indicating a healthy uptrend."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "significant market outperformance",
-        "evidence": "Outperformed the SPY benchmark by 15.14%, showing market leadership."
-      },
-      {
-        "type": "MACD",
-        "signal": "waning short-term momentum",
-        "evidence": "A bearish crossover is in effect, with the MACD line (4.41) below the signal line (4.99)."
+        "type": "Earnings Reaction",
+        "signal": "muted post-earnings reaction",
+        "evidence": "Post-1d return 0.37%, abnormal vs QQQ 0.15%, reaction volume 1.08x trailing average, reaction date 2026-02-13"
       },
       {
         "type": "RSI",
-        "signal": "strong but not overbought",
-        "evidence": "RSI at 62.81 indicates solid underlying momentum without being in overbought territory."
+        "signal": "overbought",
+        "evidence": "RSI at 76.71"
       },
       {
         "type": "Volume",
-        "signal": "lack of conviction on recent dip",
-        "evidence": "Recent trading volume is below average (0.78x spike ratio), suggesting the recent pullback lacks strong selling pressure."
+        "signal": "strong participation on run-up",
+        "evidence": "Volume on the final day before the earnings reaction was 2.09x the average, confirming the sharp price increase."
       },
       {
-        "type": "Drawdown",
-        "signal": "shallow pullback",
-        "evidence": "Current drawdown from recent highs is a minor -2.65%, suggesting the uptrend is resilient."
+        "type": "Moving Averages",
+        "signal": "bullish trend alignment",
+        "evidence": "Price at $179.09 is trading significantly above its MA20 ($164.59), MA50 ($158.69), and MA200 ($164.68)."
+      },
+      {
+        "type": "MACD",
+        "signal": "strong bullish momentum",
+        "evidence": "MACD (4.42) is well above its signal line (3.06), with a positive histogram, indicating strong upward momentum leading into the event."
       },
       {
         "type": "Market Regime",
-        "signal": "confirmed bullish trend",
-        "evidence": "The broader market context is classified as 'bullish_trend'."
+        "signal": "bullish_trend",
+        "evidence": "The stock is in a formally classified bullish trend environment."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "underperforming benchmark",
+        "evidence": "Relative return vs SPY: -0.36% over the measured period."
       },
       {
         "type": "Returns",
-        "signal": "negative short-term momentum",
-        "evidence": "Mean of recent returns: -0.26%"
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 0.76%"
       },
       {
         "type": "Volatility",
-        "signal": "low volatility",
-        "evidence": "Annualized volatility 22.77%, Recent 21.29%"
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 25.96%, Recent 25.1%"
+      },
+      {
+        "type": "Drawdown",
+        "signal": "contained drawdown",
+        "evidence": "Current drawdown 0.0%, Max drawdown -20.2%"
       }
     ],
     "risks": [
-      "The bearish MACD crossover could intensify, signaling the start of a deeper correction towards the 50-day moving average.",
-      "A failure to hold support at the 20-day moving average could attract more sellers and lead to further downside."
+      "The overbought conditions (RSI 76.71) and muted earnings reaction could trigger profit-taking, leading to a pullback towards the 20-day MA.",
+      "If the market disregards the exhaustion signals, the strong underlying bullish trend could resume immediately, making the neutral stance too cautious."
     ],
     "citations": [],
-    "summary": "Digital Realty is in a confirmed long-term bullish trend, evidenced by its position above key moving averages and significant market outperformance. However, short-term momentum has weakened, highlighted by a bearish MACD crossover. This pullback is occurring on low volume, which suggests it is more likely a consolidation phase within a strong uptrend rather than a full-fledged reversal.",
+    "summary": "DLR exhibits a strong long-term bullish trend, with price trading well above all key moving averages. However, analysis as of 2026-02-12 shows signs of short-term exhaustion. The stock surged into its earnings event on high volume, pushing the RSI to overbought levels. The subsequent post-earnings reaction was flat and lacked conviction, suggesting the positive news was priced in. This 'buy the rumor, stall on the news' price action points towards a period of consolidation or a minor pullback.",
     "raw_packet": {
       "ticker": "DLR",
       "company": "Digital Realty",
@@ -279,60 +284,65 @@
       "short_term_stance": "neutral",
       "long_term_stance": "bullish",
       "confidence": 0.75,
-      "confidence_rationale": "Strong underlying trend provides a clear long-term picture, but conflicting short-term momentum signals (MACD crossover vs. strong RSI and Relative Strength) temper confidence in the immediate directional bias.",
+      "confidence_rationale": "Confidence is high due to the clear conflict between the strong underlying trend and the signs of short-term exhaustion, making a neutral stance the most logical synthesis. The overbought RSI and muted post-earnings reaction strongly suggest a pause, while the bullish trend structure prevents a bearish call.",
       "key_signals": [
         {
-          "type": "Moving Averages",
-          "signal": "bullish trend structure",
-          "evidence": "Price at 198.51 is above both the MA20 (196.14) and MA50 (185.22), indicating a healthy uptrend."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "significant market outperformance",
-          "evidence": "Outperformed the SPY benchmark by 15.14%, showing market leadership."
-        },
-        {
-          "type": "MACD",
-          "signal": "waning short-term momentum",
-          "evidence": "A bearish crossover is in effect, with the MACD line (4.41) below the signal line (4.99)."
+          "type": "Earnings Reaction",
+          "signal": "muted post-earnings reaction",
+          "evidence": "Post-1d return 0.37%, abnormal vs QQQ 0.15%, reaction volume 1.08x trailing average, reaction date 2026-02-13"
         },
         {
           "type": "RSI",
-          "signal": "strong but not overbought",
-          "evidence": "RSI at 62.81 indicates solid underlying momentum without being in overbought territory."
+          "signal": "overbought",
+          "evidence": "RSI at 76.71"
         },
         {
           "type": "Volume",
-          "signal": "lack of conviction on recent dip",
-          "evidence": "Recent trading volume is below average (0.78x spike ratio), suggesting the recent pullback lacks strong selling pressure."
+          "signal": "strong participation on run-up",
+          "evidence": "Volume on the final day before the earnings reaction was 2.09x the average, confirming the sharp price increase."
         },
         {
-          "type": "Drawdown",
-          "signal": "shallow pullback",
-          "evidence": "Current drawdown from recent highs is a minor -2.65%, suggesting the uptrend is resilient."
+          "type": "Moving Averages",
+          "signal": "bullish trend alignment",
+          "evidence": "Price at $179.09 is trading significantly above its MA20 ($164.59), MA50 ($158.69), and MA200 ($164.68)."
+        },
+        {
+          "type": "MACD",
+          "signal": "strong bullish momentum",
+          "evidence": "MACD (4.42) is well above its signal line (3.06), with a positive histogram, indicating strong upward momentum leading into the event."
         },
         {
           "type": "Market Regime",
-          "signal": "confirmed bullish trend",
-          "evidence": "The broader market context is classified as 'bullish_trend'."
+          "signal": "bullish_trend",
+          "evidence": "The stock is in a formally classified bullish trend environment."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "underperforming benchmark",
+          "evidence": "Relative return vs SPY: -0.36% over the measured period."
         },
         {
           "type": "Returns",
-          "signal": "negative short-term momentum",
-          "evidence": "Mean of recent returns: -0.26%"
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 0.76%"
         },
         {
           "type": "Volatility",
-          "signal": "low volatility",
-          "evidence": "Annualized volatility 22.77%, Recent 21.29%"
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 25.96%, Recent 25.1%"
+        },
+        {
+          "type": "Drawdown",
+          "signal": "contained drawdown",
+          "evidence": "Current drawdown 0.0%, Max drawdown -20.2%"
         }
       ],
       "risks": [
-        "The bearish MACD crossover could intensify, signaling the start of a deeper correction towards the 50-day moving average.",
-        "A failure to hold support at the 20-day moving average could attract more sellers and lead to further downside."
+        "The overbought conditions (RSI 76.71) and muted earnings reaction could trigger profit-taking, leading to a pullback towards the 20-day MA.",
+        "If the market disregards the exhaustion signals, the strong underlying bullish trend could resume immediately, making the neutral stance too cautious."
       ],
-      "summary": "Digital Realty is in a confirmed long-term bullish trend, evidenced by its position above key moving averages and significant market outperformance. However, short-term momentum has weakened, highlighted by a bearish MACD crossover. This pullback is occurring on low volume, which suggests it is more likely a consolidation phase within a strong uptrend rather than a full-fledged reversal.",
-      "core_insight": "The dominant bullish trend is facing a short-term momentum test. While the bearish MACD crossover signals a pause, the lack of volume confirmation on the downside suggests the path of least resistance remains upward once this consolidation completes."
+      "summary": "DLR exhibits a strong long-term bullish trend, with price trading well above all key moving averages. However, analysis as of 2026-02-12 shows signs of short-term exhaustion. The stock surged into its earnings event on high volume, pushing the RSI to overbought levels. The subsequent post-earnings reaction was flat and lacked conviction, suggesting the positive news was priced in. This 'buy the rumor, stall on the news' price action points towards a period of consolidation or a minor pullback.",
+      "core_insight": "The primary insight is the exhaustion of immediate upside momentum. Despite a powerful uptrend, the muted post-earnings reaction following a sharp run-up indicates that buyers are hesitant at these levels, making a neutral short-term stance most appropriate as the stock digests its recent gains."
     }
   }
 ]

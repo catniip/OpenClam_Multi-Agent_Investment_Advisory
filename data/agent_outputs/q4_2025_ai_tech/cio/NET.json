@@ -11,26 +11,25 @@
         "rationale": "Short-term: The combination of a significant revenue beat, strong forward guidance, and a powerful AI narrative creates a strong catalyst for immediate outperformance, attracting momentum capital despite a weak macro backdrop. Long-term: The stock's post-earnings surge likely prices in perfection, leading to an extreme valuation that makes it vulnerable to any execution stumbles or shifts in macro sentiment. The asymmetry over the next 1-3 quarters is skewed towards underperformance as these high expectations are difficult to consistently exceed."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Cloudflare is exhibiting strong top-line revenue growth and impressive free cash flow generation, which are key positives for a growth-oriented company. However, it remains unprofitable on a GAAP basis, with widening operating and net losses in the recent quarter. Furthermore, its valuation is extremely high with a forward P/E over 155, indicating that significant future growth is already priced into the stock, posing a considerable risk."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean bullish on the short-term horizon."
+      "2 agents lean bullish on the short-term horizon.",
+      "2 agents lean neutral on the long-term horizon."
     ],
-    "areas_of_disagreement": [
-      "Long-term views contain both bullish and bearish calls."
-    ],
+    "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
       "Bullish": 2,
@@ -38,8 +37,8 @@
       "Bearish": 0
     },
     "long_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 1,
+      "Bullish": 0,
+      "Neutral": 2,
       "Bearish": 1
     },
     "agent_packets": [
@@ -439,261 +438,6 @@
       {
         "ticker": "NET",
         "company": "Cloudflare",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-        "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Trend Alignment",
-            "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong Buying Momentum",
-            "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Trend",
-            "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk",
-            "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.94%"
-          },
-          {
-            "type": "Drawdown",
-            "signal": "elevated drawdown risk",
-            "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-          }
-        ],
-        "risks": [
-          "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-          "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-          "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-        "raw_packet": {
-          "ticker": "NET",
-          "company": "Cloudflare",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-          "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Buying Momentum",
-              "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk",
-              "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.94%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-            }
-          ],
-          "risks": [
-            "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-            "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-            "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-          "raw_packet": {
-            "ticker": "NET",
-            "company": "Cloudflare",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-            "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Buying Momentum",
-                "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk",
-                "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.94%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-              }
-            ],
-            "risks": [
-              "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-              "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-              "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-            "raw_packet": {
-              "ticker": "NET",
-              "company": "Cloudflare",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Buying Momentum",
-                  "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk",
-                  "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.94%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-                }
-              ],
-              "risks": [
-                "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-                "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-                "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-              ],
-              "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-              "core_insight": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "NET",
-        "company": "Cloudflare",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -843,17 +587,295 @@
             }
           }
         }
+      },
+      {
+        "ticker": "NET",
+        "company": "Cloudflare",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+        "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Post-Earnings Confirmation",
+            "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Long-Term Bearish Trend Structure",
+            "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum with Bullish Potential",
+            "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Long-Term Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Drawdown from Peak",
+            "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+          },
+          {
+            "type": "Volume",
+            "signal": "Sub-Par Conviction on Earnings Move",
+            "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.34%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          }
+        ],
+        "risks": [
+          "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+          "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+          "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+          "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+        ],
+        "citations": [],
+        "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+        "raw_packet": {
+          "ticker": "NET",
+          "company": "Cloudflare",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+          "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Long-Term Bearish Trend Structure",
+              "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum with Bullish Potential",
+              "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Long-Term Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Drawdown from Peak",
+              "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+            },
+            {
+              "type": "Volume",
+              "signal": "Sub-Par Conviction on Earnings Move",
+              "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.34%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+            "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+            "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+            "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+          ],
+          "citations": [],
+          "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+          "raw_packet": {
+            "ticker": "NET",
+            "company": "Cloudflare",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+            "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Long-Term Bearish Trend Structure",
+                "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum with Bullish Potential",
+                "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Long-Term Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Drawdown from Peak",
+                "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+              },
+              {
+                "type": "Volume",
+                "signal": "Sub-Par Conviction on Earnings Move",
+                "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.34%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
+            ],
+            "risks": [
+              "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+              "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+              "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+              "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+            ],
+            "citations": [],
+            "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+            "raw_packet": {
+              "ticker": "NET",
+              "company": "Cloudflare",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "neutral",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Long-Term Bearish Trend Structure",
+                  "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum with Bullish Potential",
+                  "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Long-Term Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Drawdown from Peak",
+                  "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Sub-Par Conviction on Earnings Move",
+                  "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.34%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+                "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+                "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+                "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+              ],
+              "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+              "core_insight": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": true,
+    "triggered": false,
     "trigger": {
-      "debate_required": true,
-      "conflict_level": "high",
+      "debate_required": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Long-term views contain both bullish and bearish calls.",
-        "High-confidence long-term agents disagree."
+        "No material cross-agent disagreement."
       ]
     },
     "synthesis": {
@@ -868,26 +890,25 @@
           "rationale": "Short-term: The combination of a significant revenue beat, strong forward guidance, and a powerful AI narrative creates a strong catalyst for immediate outperformance, attracting momentum capital despite a weak macro backdrop. Long-term: The stock's post-earnings surge likely prices in perfection, leading to an extreme valuation that makes it vulnerable to any execution stumbles or shifts in macro sentiment. The asymmetry over the next 1-3 quarters is skewed towards underperformance as these high expectations are difficult to consistently exceed."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Cloudflare is exhibiting strong top-line revenue growth and impressive free cash flow generation, which are key positives for a growth-oriented company. However, it remains unprofitable on a GAAP basis, with widening operating and net losses in the recent quarter. Furthermore, its valuation is extremely high with a forward P/E over 155, indicating that significant future growth is already priced into the stock, posing a considerable risk."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.75,
+          "rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean bullish on the short-term horizon."
+        "2 agents lean bullish on the short-term horizon.",
+        "2 agents lean neutral on the long-term horizon."
       ],
-      "areas_of_disagreement": [
-        "Long-term views contain both bullish and bearish calls."
-      ],
+      "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
         "Bullish": 2,
@@ -895,8 +916,8 @@
         "Bearish": 0
       },
       "long_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 1,
+        "Bullish": 0,
+        "Neutral": 2,
         "Bearish": 1
       },
       "agent_packets": [
@@ -1426,325 +1447,6 @@
         {
           "ticker": "NET",
           "company": "Cloudflare",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-          "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Buying Momentum",
-              "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk",
-              "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.94%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-            }
-          ],
-          "risks": [
-            "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-            "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-            "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-          "raw_packet": {
-            "ticker": "NET",
-            "company": "Cloudflare",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-            "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Buying Momentum",
-                "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk",
-                "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.94%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-              }
-            ],
-            "risks": [
-              "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-              "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-              "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-            "raw_packet": {
-              "ticker": "NET",
-              "company": "Cloudflare",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-              "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Buying Momentum",
-                  "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk",
-                  "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.94%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-                }
-              ],
-              "risks": [
-                "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-                "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-                "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-              "raw_packet": {
-                "ticker": "NET",
-                "company": "Cloudflare",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bullish",
-                "confidence": 0.85,
-                "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-                "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Bullish Trend Alignment",
-                    "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Accelerating Bullish Momentum",
-                    "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Strong Buying Momentum",
-                    "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "High Volatility Bullish Trend",
-                    "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Risk",
-                    "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.94%"
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "elevated drawdown risk",
-                    "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-                  }
-                ],
-                "risks": [
-                  "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-                  "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-                  "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-                "raw_packet": {
-                  "ticker": "NET",
-                  "company": "Cloudflare",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.85,
-                  "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Bullish Trend Alignment",
-                      "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Accelerating Bullish Momentum",
-                      "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Strong Buying Momentum",
-                      "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "High Volatility Bullish Trend",
-                      "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Risk",
-                      "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.94%"
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "elevated drawdown risk",
-                      "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-                    }
-                  ],
-                  "risks": [
-                    "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-                    "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-                    "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-                  ],
-                  "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-                  "core_insight": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "NET",
-          "company": "Cloudflare",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1931,69 +1633,359 @@
               }
             }
           }
+        },
+        {
+          "ticker": "NET",
+          "company": "Cloudflare",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+          "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Long-Term Bearish Trend Structure",
+              "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum with Bullish Potential",
+              "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Long-Term Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Drawdown from Peak",
+              "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+            },
+            {
+              "type": "Volume",
+              "signal": "Sub-Par Conviction on Earnings Move",
+              "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.34%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+            "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+            "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+            "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+          ],
+          "citations": [],
+          "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+          "raw_packet": {
+            "ticker": "NET",
+            "company": "Cloudflare",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+            "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Long-Term Bearish Trend Structure",
+                "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum with Bullish Potential",
+                "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Long-Term Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Drawdown from Peak",
+                "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+              },
+              {
+                "type": "Volume",
+                "signal": "Sub-Par Conviction on Earnings Move",
+                "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.34%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
+            ],
+            "risks": [
+              "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+              "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+              "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+              "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+            ],
+            "citations": [],
+            "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+            "raw_packet": {
+              "ticker": "NET",
+              "company": "Cloudflare",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Neutral",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+              "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Long-Term Bearish Trend Structure",
+                  "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum with Bullish Potential",
+                  "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Long-Term Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Drawdown from Peak",
+                  "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Sub-Par Conviction on Earnings Move",
+                  "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.34%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+                "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+                "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+                "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+              ],
+              "citations": [],
+              "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+              "raw_packet": {
+                "ticker": "NET",
+                "company": "Cloudflare",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Neutral",
+                "confidence": 0.75,
+                "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+                "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bullish Post-Earnings Confirmation",
+                    "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bullish Momentum Shift",
+                    "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Long-Term Bearish Trend Structure",
+                    "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Neutral Momentum with Bullish Potential",
+                    "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Long-Term Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Significant Drawdown from Peak",
+                    "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Sub-Par Conviction on Earnings Move",
+                    "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.34%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "range_bound",
+                    "evidence": "Regime classification: range_bound"
+                  }
+                ],
+                "risks": [
+                  "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+                  "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+                  "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+                  "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+                ],
+                "citations": [],
+                "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+                "raw_packet": {
+                  "ticker": "NET",
+                  "company": "Cloudflare",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "neutral",
+                  "confidence": 0.75,
+                  "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bullish Post-Earnings Confirmation",
+                      "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bullish Momentum Shift",
+                      "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Long-Term Bearish Trend Structure",
+                      "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Neutral Momentum with Bullish Potential",
+                      "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Long-Term Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Significant Drawdown from Peak",
+                      "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Sub-Par Conviction on Earnings Move",
+                      "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.34%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "range_bound",
+                      "evidence": "Regime classification: range_bound"
+                    }
+                  ],
+                  "risks": [
+                    "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+                    "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+                    "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+                    "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+                  ],
+                  "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+                  "core_insight": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [
-      {
-        "response_type": "Revised Agent View",
-        "agreement": {
-          "market_technical": "I agree with the market_technical agent's assessment of a strong, short-term bullish trend. The evidence of price trading above all key moving averages, a bullish MACD crossover, and a strong RSI quantitatively confirms my initial view that the earnings news created a powerful momentum catalyst.",
-          "fundamental": "I agree with the fundamental agent's key data points, which provide critical support for my split stance. The strong revenue growth (33.6%) and robust free cash flow align with my short-term bullish narrative. Crucially, the extremely high Forward P/E of 155.5x and widening GAAP net loss provide concrete, quantitative evidence for my long-term bearish thesis based on valuation risk."
-        },
-        "disagreement": {
-          "market_technical": "I assign a lower weight to the technical agent's concern about 'Lack of Conviction' due to below-average volume. Following a significant earnings-driven gap-up, a period of consolidation on lower volume is not unusual and does not necessarily negate the strength of the initial move. The primary catalyst is news-driven, not volume-driven at this stage.",
-          "fundamental": "I disagree with the fundamental agent's 'Neutral' stance. This stance is a direct result of its stated low confidence due to missing qualitative data (guidance context, management tone). My agent's purpose is to process that exact qualitative information from news reports. By integrating the fundamental agent's hard data with my news-based context, the 'Neutral' position becomes untenable; the data strongly supports a bifurcated Bullish/Bearish view, not a neutral one."
-        },
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.8,
-        "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The market_technical agent's analysis provides strong quantitative validation for the short-term bullish momentum. The fundamental agent provides specific, stark metrics (155.5x Forward P/E, widening GAAP loss) that substantiate the long-term valuation risk, which was a core part of my original thesis. The alignment of these disparate sources strengthens my conviction in the split short-term/long-term view.",
-        "evidence_needed": [
-          "A full earnings call transcript is needed to analyze management's detailed commentary on the AI contribution, customer adoption trends, and the path to GAAP profitability.",
-          "A peer group valuation analysis comparing NET's key metrics (e.g., EV/Sales, FCF yield) against other high-growth software and infrastructure companies is required to contextualize its current valuation.",
-          "Consensus analyst estimate revisions (pre- and post-earnings) for revenue and EPS would help quantify the magnitude of the earnings surprise and the subsequent shift in sell-side expectations."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": [
-          "I agree with the news_macro agent's short-term Bullish stance. The evidence of a 'strong Q4 earnings beat' and 'upbeat 2026 outlook' driven by an 'AI narrative' provides the fundamental catalyst that explains the powerful technical breakout I observed. This resolves my original concern about the rally's lack of volume.",
-          "I agree with the fundamental agent's key signal of 'Strong revenue growth' (33.6%) and robust 'Free cash flow' growth. This provides a fundamental underpinning that supports the current bullish price momentum."
-        ],
-        "disagreement": [
-          "I now disagree with my original long-term Bullish stance and assign higher weight to the evidence from the other agents regarding long-term risk. The news_macro agent's view that the stock is priced for 'perfection' and the fundamental agent's data point of a 'Forward P/E of 155.49' present a compelling case that the long-term risk from valuation is much higher than my technical indicators alone would suggest.",
-          "While my technical indicators like the price being above the 200-day moving average are long-term bullish, the extreme valuation highlighted by the other agents suggests this trend is fragile and highly susceptible to reversal on any execution misstep. The fundamental risk now outweighs the simple technical signal for the long-term view."
-        ],
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Neutral",
-        "revised_confidence": 0.75,
-        "evidence_needed": [
-          "Future quarterly earnings reports to validate if the AI-driven growth narrative can be sustained at a rate that allows the company to 'grow into' its extremely high valuation.",
-          "A clear path towards GAAP profitability to mitigate concerns about the widening net losses, which currently conflict with the positive free cash flow story.",
-          "Sustained trading volume on subsequent up-legs to confirm institutional participation and conviction behind the trend, following the initial post-earnings surge."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": {
-          "news_macro": "I agree with the news_macro agent's core findings which fill the primary gaps in my original analysis. Specifically, I accept the evidence that Cloudflare delivered a significant Q4 earnings and revenue beat and provided strong forward guidance. The identification of the AI-driven demand surge as the primary catalyst is a crucial piece of qualitative evidence that explains the strong performance and outlook. This agent's analysis confirms the market has received a clear, positive fundamental catalyst.",
-          "market_technical": "I agree with the market_technical agent's assessment that the short-term trend and momentum are strongly bullish. The evidence of the price trading decisively above key moving averages (MA20, MA50, MA200) and the bullish MACD and RSI signals provide objective confirmation of the market's positive reaction to the fundamental news. This aligns with the bullish short-term stance I am now adopting."
-        },
-        "disagreement": {
-          "news_macro": "While I agree with the concern over valuation, I disagree with the agent's 'Bearish' long-term stance. The evidence of a powerful, AI-driven growth story, now confirmed by management's upbeat outlook, provides a credible path for the company to potentially grow into its high valuation. A 'Bearish' stance underweights this significant growth factor. A 'Neutral' long-term stance better reflects the high-risk, high-reward balance between extreme valuation and exceptional growth.",
-          "market_technical": "I disagree with the market_technical agent's 'Bullish' long-term stance. Technical indicators are measures of trend and momentum, not long-term intrinsic value. While the current trend is positive, it does not negate the fundamental risks of extreme valuation and sustained GAAP unprofitability. From a fundamental perspective, the long-term outlook is a contentious debate, not a clear bullish case."
-        },
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Neutral",
-        "revised_confidence": 0.8,
-        "stance_change_rationale": "My original 'Neutral' short-term stance and low confidence were explicitly due to missing information on earnings performance and guidance. The news_macro agent has provided clear evidence of a strong beat-and-raise quarter driven by the AI narrative. This is a significant positive fundamental catalyst that warrants a change to a 'Bullish' short-term stance. My long-term stance remains 'Neutral' because the new evidence strengthens both the bull case (AI-driven growth) and the bear case (even more extreme valuation), reinforcing the view that the stock is a battleground rather than a clear long-term buy or sell. Confidence is increased from 0.3 to 0.8 as the primary informational gaps have been filled, allowing for a much more informed, albeit still balanced, assessment.",
-        "evidence_needed": [
-          "A detailed financial statement (10-Q/10-K) to analyze the bridge between the GAAP net loss and strong free cash flow. Specifically, the magnitude of stock-based compensation and other non-cash charges is needed to fully assess the quality of earnings and the sustainability of cash flow.",
-          "Full earnings call transcript to analyze management's specific commentary on customer cohorts, large customer growth, competitive dynamics, and the precise contribution of AI-related services to the revenue beat and future guidance."
-        ]
-      }
-    ],
+    "debate_responses": [],
     "revised_packets": [
       {
         "ticker": "NET",
@@ -2001,7 +1993,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bullish",
         "long_term_stance": "Bearish",
-        "confidence": 0.8,
+        "confidence": 0.7,
         "confidence_rationale": "Confidence is high for the short-term bullish stance due to direct, unambiguous evidence from the company's earnings report and guidance. Confidence is lower for the long-term bearish stance as it is based on an inference about valuation risk and investor positioning, which could be overcome if the AI growth narrative continues to accelerate beyond even the currently heightened expectations.",
         "stance_rationale": "Short-term: The combination of a significant revenue beat, strong forward guidance, and a powerful AI narrative creates a strong catalyst for immediate outperformance, attracting momentum capital despite a weak macro backdrop. Long-term: The stock's post-earnings surge likely prices in perfection, leading to an extreme valuation that makes it vulnerable to any execution stumbles or shifts in macro sentiment. The asymmetry over the next 1-3 quarters is skewed towards underperformance as these high expectations are difficult to consistently exceed.",
         "key_signals": [
@@ -2386,309 +2378,15 @@
               "core_insight": "While mainstream investors focus on Cloudflare's software-driven growth from AI, they are overlooking the second-order effect: the massive physical 'pick-and-shovel' buildout of networking hardware, power systems, and edge data center infrastructure required to support this new wave of distributed AI inference."
             }
           }
-        },
-        "debate_response": {
-          "response_type": "Revised Agent View",
-          "agreement": {
-            "market_technical": "I agree with the market_technical agent's assessment of a strong, short-term bullish trend. The evidence of price trading above all key moving averages, a bullish MACD crossover, and a strong RSI quantitatively confirms my initial view that the earnings news created a powerful momentum catalyst.",
-            "fundamental": "I agree with the fundamental agent's key data points, which provide critical support for my split stance. The strong revenue growth (33.6%) and robust free cash flow align with my short-term bullish narrative. Crucially, the extremely high Forward P/E of 155.5x and widening GAAP net loss provide concrete, quantitative evidence for my long-term bearish thesis based on valuation risk."
-          },
-          "disagreement": {
-            "market_technical": "I assign a lower weight to the technical agent's concern about 'Lack of Conviction' due to below-average volume. Following a significant earnings-driven gap-up, a period of consolidation on lower volume is not unusual and does not necessarily negate the strength of the initial move. The primary catalyst is news-driven, not volume-driven at this stage.",
-            "fundamental": "I disagree with the fundamental agent's 'Neutral' stance. This stance is a direct result of its stated low confidence due to missing qualitative data (guidance context, management tone). My agent's purpose is to process that exact qualitative information from news reports. By integrating the fundamental agent's hard data with my news-based context, the 'Neutral' position becomes untenable; the data strongly supports a bifurcated Bullish/Bearish view, not a neutral one."
-          },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The market_technical agent's analysis provides strong quantitative validation for the short-term bullish momentum. The fundamental agent provides specific, stark metrics (155.5x Forward P/E, widening GAAP loss) that substantiate the long-term valuation risk, which was a core part of my original thesis. The alignment of these disparate sources strengthens my conviction in the split short-term/long-term view.",
-          "evidence_needed": [
-            "A full earnings call transcript is needed to analyze management's detailed commentary on the AI contribution, customer adoption trends, and the path to GAAP profitability.",
-            "A peer group valuation analysis comparing NET's key metrics (e.g., EV/Sales, FCF yield) against other high-growth software and infrastructure companies is required to contextualize its current valuation.",
-            "Consensus analyst estimate revisions (pre- and post-earnings) for revenue and EPS would help quantify the magnitude of the earnings surprise and the subsequent shift in sell-side expectations."
-          ]
-        }
-      },
-      {
-        "ticker": "NET",
-        "company": "Cloudflare",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-        "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Trend Alignment",
-            "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong Buying Momentum",
-            "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Trend",
-            "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk",
-            "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.94%"
-          },
-          {
-            "type": "Drawdown",
-            "signal": "elevated drawdown risk",
-            "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-          }
-        ],
-        "risks": [
-          "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-          "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-          "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-        "raw_packet": {
-          "ticker": "NET",
-          "company": "Cloudflare",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-          "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Buying Momentum",
-              "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk",
-              "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.94%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-            }
-          ],
-          "risks": [
-            "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-            "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-            "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-          "raw_packet": {
-            "ticker": "NET",
-            "company": "Cloudflare",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-            "stance_rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Buying Momentum",
-                "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk",
-                "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.94%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-              }
-            ],
-            "risks": [
-              "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-              "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-              "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-            "raw_packet": {
-              "ticker": "NET",
-              "company": "Cloudflare",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to the strong alignment of trend and momentum indicators (Price vs. MAs, MACD, RSI, Relative Strength) all pointing to a bullish structure. It is slightly tempered by below-average volume on the recent advance and a high-volatility regime, which introduces a degree of uncertainty.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at $224.17 is trading more than 10% above its MA20 ($202.52), MA50 ($200.98), and MA200 ($203.30)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is confirmed, with the MACD (4.11) well above the signal line (2.03), resulting in a strong positive histogram (2.08)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Buying Momentum",
-                  "evidence": "RSI at 61.14 indicates strong buying pressure but is not yet in overbought territory (typically >70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock demonstrated a relative return of 50.98% against the SPY benchmark over the period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The regime is classified as 'high_volatility_bullish', confirming the upward trend but highlighting the presence of significant price swings."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The recent price advance occurred on below-average volume (Volume Spike ratio of 0.63), which can indicate weaker participation."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk",
-                  "evidence": "High annualized volatility (51.85%) suggests an unstable and high-risk trading environment."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.94%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -11.5%, Max drawdown -36.76%"
-                }
-              ],
-              "risks": [
-                "High volatility (51.85% annualized) increases the potential for sharp price reversals.",
-                "The recent price advance was not supported by high volume (0.63x ratio), suggesting a potential lack of conviction behind the move.",
-                "The stock is still 11.5% below its prior peak, as indicated by the current drawdown."
-              ],
-              "summary": "As of 2026/02/12, NET exhibited a strong bullish technical profile, with its price trading decisively above all key moving averages. This uptrend was supported by strong momentum signals from both MACD and RSI, and significant outperformance versus the broader market. However, the bullish case was tempered by notable risks, including a high-volatility environment and a lack of volume confirmation on the recent rally, suggesting potential instability.",
-              "core_insight": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": [
-            "I agree with the news_macro agent's short-term Bullish stance. The evidence of a 'strong Q4 earnings beat' and 'upbeat 2026 outlook' driven by an 'AI narrative' provides the fundamental catalyst that explains the powerful technical breakout I observed. This resolves my original concern about the rally's lack of volume.",
-            "I agree with the fundamental agent's key signal of 'Strong revenue growth' (33.6%) and robust 'Free cash flow' growth. This provides a fundamental underpinning that supports the current bullish price momentum."
-          ],
-          "disagreement": [
-            "I now disagree with my original long-term Bullish stance and assign higher weight to the evidence from the other agents regarding long-term risk. The news_macro agent's view that the stock is priced for 'perfection' and the fundamental agent's data point of a 'Forward P/E of 155.49' present a compelling case that the long-term risk from valuation is much higher than my technical indicators alone would suggest.",
-            "While my technical indicators like the price being above the 200-day moving average are long-term bullish, the extreme valuation highlighted by the other agents suggests this trend is fragile and highly susceptible to reversal on any execution misstep. The fundamental risk now outweighs the simple technical signal for the long-term view."
-          ],
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.75,
-          "evidence_needed": [
-            "Future quarterly earnings reports to validate if the AI-driven growth narrative can be sustained at a rate that allows the company to 'grow into' its extremely high valuation.",
-            "A clear path towards GAAP profitability to mitigate concerns about the widening net losses, which currently conflict with the positive free cash flow story.",
-            "Sustained trading volume on subsequent up-legs to confirm institutional participation and conviction behind the trend, following the initial post-earnings surge."
-          ]
         }
       },
       {
         "ticker": "NET",
         "company": "Cloudflare",
         "agent_name": "fundamental",
-        "short_term_stance": "Bullish",
+        "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
-        "confidence": 0.8,
+        "confidence": 0.3,
         "confidence_rationale": "Confidence is low because of significant missing information. The lack of analyst consensus estimates prevents determining an earnings beat or miss. The absence of management guidance and commentary from the earnings call transcript makes it impossible to gauge the company's outlook, the context behind the numbers, or management sentiment.",
         "stance_rationale": "Cloudflare is exhibiting strong top-line revenue growth and impressive free cash flow generation, which are key positives for a growth-oriented company. However, it remains unprofitable on a GAAP basis, with widening operating and net losses in the recent quarter. Furthermore, its valuation is extremely high with a forward P/E over 155, indicating that significant future growth is already priced into the stock, posing a considerable risk.",
         "key_signals": [
@@ -2833,25 +2531,285 @@
               }
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "I agree with the news_macro agent's core findings which fill the primary gaps in my original analysis. Specifically, I accept the evidence that Cloudflare delivered a significant Q4 earnings and revenue beat and provided strong forward guidance. The identification of the AI-driven demand surge as the primary catalyst is a crucial piece of qualitative evidence that explains the strong performance and outlook. This agent's analysis confirms the market has received a clear, positive fundamental catalyst.",
-            "market_technical": "I agree with the market_technical agent's assessment that the short-term trend and momentum are strongly bullish. The evidence of the price trading decisively above key moving averages (MA20, MA50, MA200) and the bullish MACD and RSI signals provide objective confirmation of the market's positive reaction to the fundamental news. This aligns with the bullish short-term stance I am now adopting."
+        }
+      },
+      {
+        "ticker": "NET",
+        "company": "Cloudflare",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+        "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Post-Earnings Confirmation",
+            "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
           },
-          "disagreement": {
-            "news_macro": "While I agree with the concern over valuation, I disagree with the agent's 'Bearish' long-term stance. The evidence of a powerful, AI-driven growth story, now confirmed by management's upbeat outlook, provides a credible path for the company to potentially grow into its high valuation. A 'Bearish' stance underweights this significant growth factor. A 'Neutral' long-term stance better reflects the high-risk, high-reward balance between extreme valuation and exceptional growth.",
-            "market_technical": "I disagree with the market_technical agent's 'Bullish' long-term stance. Technical indicators are measures of trend and momentum, not long-term intrinsic value. While the current trend is positive, it does not negate the fundamental risks of extreme valuation and sustained GAAP unprofitability. From a fundamental perspective, the long-term outlook is a contentious debate, not a clear bullish case."
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
           },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.8,
-          "stance_change_rationale": "My original 'Neutral' short-term stance and low confidence were explicitly due to missing information on earnings performance and guidance. The news_macro agent has provided clear evidence of a strong beat-and-raise quarter driven by the AI narrative. This is a significant positive fundamental catalyst that warrants a change to a 'Bullish' short-term stance. My long-term stance remains 'Neutral' because the new evidence strengthens both the bull case (AI-driven growth) and the bear case (even more extreme valuation), reinforcing the view that the stock is a battleground rather than a clear long-term buy or sell. Confidence is increased from 0.3 to 0.8 as the primary informational gaps have been filled, allowing for a much more informed, albeit still balanced, assessment.",
-          "evidence_needed": [
-            "A detailed financial statement (10-Q/10-K) to analyze the bridge between the GAAP net loss and strong free cash flow. Specifically, the magnitude of stock-based compensation and other non-cash charges is needed to fully assess the quality of earnings and the sustainability of cash flow.",
-            "Full earnings call transcript to analyze management's specific commentary on customer cohorts, large customer growth, competitive dynamics, and the precise contribution of AI-related services to the revenue beat and future guidance."
-          ]
+          {
+            "type": "Moving Averages",
+            "signal": "Long-Term Bearish Trend Structure",
+            "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum with Bullish Potential",
+            "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Long-Term Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Drawdown from Peak",
+            "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+          },
+          {
+            "type": "Volume",
+            "signal": "Sub-Par Conviction on Earnings Move",
+            "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.34%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "range_bound",
+            "evidence": "Regime classification: range_bound"
+          }
+        ],
+        "risks": [
+          "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+          "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+          "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+          "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+        ],
+        "citations": [],
+        "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+        "raw_packet": {
+          "ticker": "NET",
+          "company": "Cloudflare",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+          "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Long-Term Bearish Trend Structure",
+              "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum with Bullish Potential",
+              "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Long-Term Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Drawdown from Peak",
+              "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+            },
+            {
+              "type": "Volume",
+              "signal": "Sub-Par Conviction on Earnings Move",
+              "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.34%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "range_bound",
+              "evidence": "Regime classification: range_bound"
+            }
+          ],
+          "risks": [
+            "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+            "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+            "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+            "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+          ],
+          "citations": [],
+          "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+          "raw_packet": {
+            "ticker": "NET",
+            "company": "Cloudflare",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+            "stance_rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Long-Term Bearish Trend Structure",
+                "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum with Bullish Potential",
+                "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Long-Term Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Drawdown from Peak",
+                "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+              },
+              {
+                "type": "Volume",
+                "signal": "Sub-Par Conviction on Earnings Move",
+                "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.34%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "range_bound",
+                "evidence": "Regime classification: range_bound"
+              }
+            ],
+            "risks": [
+              "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+              "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+              "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+              "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+            ],
+            "citations": [],
+            "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+            "raw_packet": {
+              "ticker": "NET",
+              "company": "Cloudflare",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "neutral",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high for the short-term bullish stance due to the strong, positive, and abnormal post-earnings reaction, confirmed by a MACD bullish crossover. However, confidence is not higher because the stock remains below its long-term moving averages (50-day and 200-day), indicating a broken long-term trend that needs to be repaired.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 5.77% the day after earnings, representing a 5.55% abnormal outperformance vs. QQQ, signaling strong positive event reaction momentum."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover is present (MACD line -3.14 above Signal line -4.82), with a positive and growing histogram (1.67), indicating a potential bottom and shift to positive momentum."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Long-Term Bearish Trend Structure",
+                  "evidence": "The price of 185.17 is below both the 50-day MA (190.87) and 200-day MA (194.20), defining a technically bearish long-term trend that will act as overhead resistance."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum with Bullish Potential",
+                  "evidence": "RSI is at 51.37, indicating neutral momentum with ample room to move higher without becoming overbought, which supports the potential for a continued post-earnings rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Long-Term Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -7.1% over the analysis window, highlighting a persistent lag against the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Drawdown from Peak",
+                  "evidence": "The stock is currently 26.9% below its recent high, indicating it is in a significant drawdown which highlights both risk and potential for recovery."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Sub-Par Conviction on Earnings Move",
+                  "evidence": "The post-earnings rally occurred on volume that was 0.86x the trailing average, which is not a strong conviction signal and suggests a lack of broad participation in the move."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.34%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 51.8%, Recent 78.13%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "range_bound",
+                  "evidence": "Regime classification: range_bound"
+                }
+              ],
+              "risks": [
+                "The stock is trading below its 50-day and 200-day moving averages, which are likely to act as significant technical resistance levels.",
+                "The post-earnings price surge was not confirmed by exceptionally high volume (0.86x ratio), suggesting the move could be vulnerable to fading.",
+                "High recent volatility (78.1%) implies large price swings and increased risk of sharp reversals.",
+                "Persistent relative weakness compared to the S&P 500 indicates the stock has been out of favor with the market, a trend that may continue."
+              ],
+              "summary": "As of Feb 12, 2026, NET displayed a compelling short-term bullish case driven by a strong positive earnings reaction that significantly outpaced the market. This move was supported by a fresh bullish MACD crossover. However, this short-term strength is set against a challenging long-term backdrop, with the price remaining below key 50-day and 200-day moving averages. The analysis is therefore bullish in the short-term, but neutral on a longer-term basis until the price can reclaim those key trend-defining levels.",
+              "core_insight": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
+            }
+          }
         }
       }
     ]
@@ -2861,22 +2819,21 @@
     "company": "Cloudflare",
     "final_short_term_stance": "Bullish",
     "final_long_term_stance": "Neutral",
-    "investment_action": "Hold / Tactical Buy",
-    "position_size_hint": "Normal",
-    "confidence": 0.8,
-    "core_thesis": "Cloudflare is capitalizing on a powerful AI-driven demand surge, confirmed by a strong Q4 earnings beat and upbeat guidance, which creates a compelling short-term bullish case supported by strong technical momentum. However, its extreme valuation (Forward P/E > 150x) and lack of GAAP profitability create a precarious long-term balance. The stock is priced for perfection, making the long-term outlook a battleground between a phenomenal growth story and a significant valuation risk.",
-    "why_now": "The recent Q4 earnings report acted as a major catalyst, providing clear evidence of an AI-driven acceleration in growth and delivering strong forward guidance. This event ignited powerful price momentum and crystallized the debate between the growth narrative and valuation concerns, making a decision timely.",
+    "investment_action": "Hold / Tactical Long",
+    "position_size_hint": "Small",
+    "confidence": 0.6,
+    "core_thesis": "Cloudflare is a prime beneficiary of the AI-at-the-edge trend, driving strong revenue growth and creating powerful near-term stock momentum. However, its extreme valuation and lack of GAAP profitability create a significant long-term headwind, making the stock a tactical opportunity rather than a core long-term holding at current prices.",
+    "why_now": "The company just delivered a strong Q4 earnings beat and upbeat guidance, explicitly citing surging AI-driven demand. This has created a powerful positive narrative and technical momentum, validated by a bullish MACD crossover and significant outperformance following the earnings announcement, making it attractive for a short-term trade.",
     "key_supporting_evidence": [
-      "Unanimous post-debate agent consensus on a Bullish short-term stance.",
-      "Strong fundamental catalyst: A significant Q4 revenue beat (33.6% growth) and upbeat forward guidance, explicitly linked to AI demand (news_macro agent).",
-      "Robust technical confirmation: Price broke out above all key moving averages (20, 50, 200-day) with bullish MACD and RSI signals, indicating strong momentum (market_technical agent).",
-      "Strong cash generation: Despite GAAP losses, the company shows robust growth in Free Cash Flow (up to $99.4M from $75.0M QoQ), providing operational funding for growth initiatives (fundamental agent)."
+      "Strong Q4 earnings and revenue beat with an upbeat outlook, attributed to surging demand for services supporting AI applications (news_macro).",
+      "Strong revenue growth (+33.6% YoY) and robust free cash flow generation of $99.4M in the quarter (fundamental).",
+      "Powerful post-earnings price reaction, with a 5.55% abnormal outperformance vs. QQQ, supported by a fresh bullish MACD crossover (market_technical)."
     ],
     "key_risks": [
-      "Extreme Valuation: The primary risk is the stock's Forward P/E of ~155x, which prices in years of flawless execution and leaves no room for error. Any stumble in growth could trigger a severe price correction.",
-      "Narrative Failure: The AI tailwind may prove less durable or impactful than currently priced in. If growth decelerates from the high 30% range, the valuation cannot be justified.",
-      "Profitability Concerns: Widening GAAP net losses (-$12.1M vs -$1.3M QoQ) remain a concern. While FCF is strong, a failure to show a clear path to GAAP profitability could eventually weigh on the stock.",
-      "High Volatility: The stock exhibits high annualized volatility (~52%), making it susceptible to sharp swings on market sentiment shifts or company-specific news."
+      "Extreme valuation with a Forward P/E over 155x prices in perfection and makes the stock highly vulnerable to any execution missteps or shifts in market sentiment (fundamental, news_macro).",
+      "The stock price remains below its key 200-day moving average, which will act as technical resistance and indicates the long-term trend has not yet turned definitively bullish (market_technical).",
+      "The company remains unprofitable on a GAAP basis, with widening operating and net losses in the most recent quarter (fundamental).",
+      "The primary risk to a cautious long-term stance is that the AI tailwind is so powerful it allows the company to sustain 30%+ growth for many quarters, justifying the high valuation (news_macro)."
     ],
     "agent_view_summary": [
       {
@@ -2887,140 +2844,94 @@
         "rationale": "Short-term: The combination of a significant revenue beat, strong forward guidance, and a powerful AI narrative creates a strong catalyst for immediate outperformance, attracting momentum capital despite a weak macro backdrop. Long-term: The stock's post-earnings surge likely prices in perfection, leading to an extreme valuation that makes it vulnerable to any execution stumbles or shifts in macro sentiment. The asymmetry over the next 1-3 quarters is skewed towards underperformance as these high expectations are difficult to consistently exceed."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "rationale": "The dominant technical picture was a powerful breakout above the 20, 50, and 200-day moving averages, establishing a clear bullish trend structure. While momentum indicators confirmed this move, the combination of high volatility and weak volume suggests the trend was aggressive but potentially fragile as of this date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Cloudflare is exhibiting strong top-line revenue growth and impressive free cash flow generation, which are key positives for a growth-oriented company. However, it remains unprofitable on a GAAP basis, with widening operating and net losses in the recent quarter. Furthermore, its valuation is extremely high with a forward P/E over 155, indicating that significant future growth is already priced into the stock, posing a considerable risk."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "rationale": "A powerful positive earnings reaction has created a significant short-term bullish catalyst, but it must now overcome a well-defined long-term bearish trend structure. The immediate battle at the 50-day and 200-day moving averages will determine if this is the start of a major trend reversal or just a short-lived rally."
       }
     ],
     "debate_summary": {
-      "debate_triggered": true,
-      "conflict_level": "high",
+      "debate_triggered": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Long-term views contain both bullish and bearish calls.",
-        "High-confidence long-term agents disagree."
+        "No material cross-agent disagreement."
       ],
-      "debate_responses": [
-        {
-          "response_type": "Revised Agent View",
-          "agreement": {
-            "market_technical": "I agree with the market_technical agent's assessment of a strong, short-term bullish trend. The evidence of price trading above all key moving averages, a bullish MACD crossover, and a strong RSI quantitatively confirms my initial view that the earnings news created a powerful momentum catalyst.",
-            "fundamental": "I agree with the fundamental agent's key data points, which provide critical support for my split stance. The strong revenue growth (33.6%) and robust free cash flow align with my short-term bullish narrative. Crucially, the extremely high Forward P/E of 155.5x and widening GAAP net loss provide concrete, quantitative evidence for my long-term bearish thesis based on valuation risk."
-          },
-          "disagreement": {
-            "market_technical": "I assign a lower weight to the technical agent's concern about 'Lack of Conviction' due to below-average volume. Following a significant earnings-driven gap-up, a period of consolidation on lower volume is not unusual and does not necessarily negate the strength of the initial move. The primary catalyst is news-driven, not volume-driven at this stage.",
-            "fundamental": "I disagree with the fundamental agent's 'Neutral' stance. This stance is a direct result of its stated low confidence due to missing qualitative data (guidance context, management tone). My agent's purpose is to process that exact qualitative information from news reports. By integrating the fundamental agent's hard data with my news-based context, the 'Neutral' position becomes untenable; the data strongly supports a bifurcated Bullish/Bearish view, not a neutral one."
-          },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The market_technical agent's analysis provides strong quantitative validation for the short-term bullish momentum. The fundamental agent provides specific, stark metrics (155.5x Forward P/E, widening GAAP loss) that substantiate the long-term valuation risk, which was a core part of my original thesis. The alignment of these disparate sources strengthens my conviction in the split short-term/long-term view.",
-          "evidence_needed": [
-            "A full earnings call transcript is needed to analyze management's detailed commentary on the AI contribution, customer adoption trends, and the path to GAAP profitability.",
-            "A peer group valuation analysis comparing NET's key metrics (e.g., EV/Sales, FCF yield) against other high-growth software and infrastructure companies is required to contextualize its current valuation.",
-            "Consensus analyst estimate revisions (pre- and post-earnings) for revenue and EPS would help quantify the magnitude of the earnings surprise and the subsequent shift in sell-side expectations."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": [
-            "I agree with the news_macro agent's short-term Bullish stance. The evidence of a 'strong Q4 earnings beat' and 'upbeat 2026 outlook' driven by an 'AI narrative' provides the fundamental catalyst that explains the powerful technical breakout I observed. This resolves my original concern about the rally's lack of volume.",
-            "I agree with the fundamental agent's key signal of 'Strong revenue growth' (33.6%) and robust 'Free cash flow' growth. This provides a fundamental underpinning that supports the current bullish price momentum."
-          ],
-          "disagreement": [
-            "I now disagree with my original long-term Bullish stance and assign higher weight to the evidence from the other agents regarding long-term risk. The news_macro agent's view that the stock is priced for 'perfection' and the fundamental agent's data point of a 'Forward P/E of 155.49' present a compelling case that the long-term risk from valuation is much higher than my technical indicators alone would suggest.",
-            "While my technical indicators like the price being above the 200-day moving average are long-term bullish, the extreme valuation highlighted by the other agents suggests this trend is fragile and highly susceptible to reversal on any execution misstep. The fundamental risk now outweighs the simple technical signal for the long-term view."
-          ],
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.75,
-          "evidence_needed": [
-            "Future quarterly earnings reports to validate if the AI-driven growth narrative can be sustained at a rate that allows the company to 'grow into' its extremely high valuation.",
-            "A clear path towards GAAP profitability to mitigate concerns about the widening net losses, which currently conflict with the positive free cash flow story.",
-            "Sustained trading volume on subsequent up-legs to confirm institutional participation and conviction behind the trend, following the initial post-earnings surge."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "I agree with the news_macro agent's core findings which fill the primary gaps in my original analysis. Specifically, I accept the evidence that Cloudflare delivered a significant Q4 earnings and revenue beat and provided strong forward guidance. The identification of the AI-driven demand surge as the primary catalyst is a crucial piece of qualitative evidence that explains the strong performance and outlook. This agent's analysis confirms the market has received a clear, positive fundamental catalyst.",
-            "market_technical": "I agree with the market_technical agent's assessment that the short-term trend and momentum are strongly bullish. The evidence of the price trading decisively above key moving averages (MA20, MA50, MA200) and the bullish MACD and RSI signals provide objective confirmation of the market's positive reaction to the fundamental news. This aligns with the bullish short-term stance I am now adopting."
-          },
-          "disagreement": {
-            "news_macro": "While I agree with the concern over valuation, I disagree with the agent's 'Bearish' long-term stance. The evidence of a powerful, AI-driven growth story, now confirmed by management's upbeat outlook, provides a credible path for the company to potentially grow into its high valuation. A 'Bearish' stance underweights this significant growth factor. A 'Neutral' long-term stance better reflects the high-risk, high-reward balance between extreme valuation and exceptional growth.",
-            "market_technical": "I disagree with the market_technical agent's 'Bullish' long-term stance. Technical indicators are measures of trend and momentum, not long-term intrinsic value. While the current trend is positive, it does not negate the fundamental risks of extreme valuation and sustained GAAP unprofitability. From a fundamental perspective, the long-term outlook is a contentious debate, not a clear bullish case."
-          },
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Neutral",
-          "revised_confidence": 0.8,
-          "stance_change_rationale": "My original 'Neutral' short-term stance and low confidence were explicitly due to missing information on earnings performance and guidance. The news_macro agent has provided clear evidence of a strong beat-and-raise quarter driven by the AI narrative. This is a significant positive fundamental catalyst that warrants a change to a 'Bullish' short-term stance. My long-term stance remains 'Neutral' because the new evidence strengthens both the bull case (AI-driven growth) and the bear case (even more extreme valuation), reinforcing the view that the stock is a battleground rather than a clear long-term buy or sell. Confidence is increased from 0.3 to 0.8 as the primary informational gaps have been filled, allowing for a much more informed, albeit still balanced, assessment.",
-          "evidence_needed": [
-            "A detailed financial statement (10-Q/10-K) to analyze the bridge between the GAAP net loss and strong free cash flow. Specifically, the magnitude of stock-based compensation and other non-cash charges is needed to fully assess the quality of earnings and the sustainability of cash flow.",
-            "Full earnings call transcript to analyze management's specific commentary on customer cohorts, large customer growth, competitive dynamics, and the precise contribution of AI-related services to the revenue beat and future guidance."
-          ]
-        }
-      ]
+      "debate_responses": []
     },
-    "reason_for_final_decision": "As CIO, I concur with the committee's unanimous 'Bullish' short-term stance, driven by a clear, news-driven fundamental catalyst and confirmed by strong technical momentum. However, I am overriding the deterministic guardrail's 'Bearish' long-term stance to 'Neutral'. The debate revealed that while the valuation risk is extreme (news_macro), it is counter-balanced by a credible, powerful AI-driven growth story that could allow the company to 'grow into' its multiple (fundamental, market_technical). The guardrail's calculation under-weights the two 'Neutral' votes which explicitly acknowledge this balance. The final 'Neutral' long-term view better reflects the committee's consensus that the stock is a high-risk, high-reward battleground rather than a clear long-term sell.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "The committee is in consensus on a short-term Bullish stance due to the powerful earnings catalyst, strong AI narrative, and confirming technical momentum. However, I am overriding the deterministic guardrail's 'Bearish' long-term stance to 'Neutral'. While all agents correctly flag the extreme valuation as a major risk, the strength of the underlying AI growth story is too powerful to be outright bearish against. A 'Neutral' long-term stance better reflects the tension between this secular growth and the valuation risk. Consequently, the action is to 'Hold' existing positions or initiate a 'Tactical Long' to capture near-term momentum, but the 'position_size_hint' is reduced to 'Small' (overriding the guardrail's 'Normal') to reflect the high valuation risk and elevated volatility.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
-          "confidence": 0.8,
-          "weight": 0.35,
-          "contribution": 0.28
+          "confidence": 0.7,
+          "weight": 0.45,
+          "contribution": 0.315
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.15,
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Bullish",
           "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.3375
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bullish",
-          "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": 0.16
+          "weight": 0.4,
+          "contribution": 0.3
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.35,
+          "confidence": 0.7,
+          "weight": 0.4,
           "contribution": -0.28
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.35,
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Neutral",
           "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.8,
-          "weight": 0.45,
+          "weight": 0.25,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": 1.0,
-      "long": -0.3544
+      "short": 0.9318,
+      "long": -0.4891
     },
     "llm_decision_used": true
   }

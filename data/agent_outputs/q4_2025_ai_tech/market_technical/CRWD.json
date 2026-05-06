@@ -3,61 +3,71 @@
   "company": "CrowdStrike",
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
-  "long_term_stance": "bullish",
-  "confidence": 0.85,
-  "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish indicators (price action, MAs, MACD, RSI, relative strength). It is not higher because the recent upward price move was not confirmed by strong volume, suggesting potential for short-term exhaustion.",
+  "long_term_stance": "neutral",
+  "confidence": 0.75,
+  "confidence_rationale": "Confidence is relatively high, driven by the very strong and clear abnormal price reaction post-earnings. However, it's not higher because this new bullish momentum is running into an established long-term downtrend with significant overhead resistance.",
   "key_signals": [
     {
-      "type": "Moving Averages",
-      "signal": "Strong Bullish Trend Structure",
-      "evidence": "Price at $469.24 is trading 8.46% above the 20-day MA ($432.65) and 13.07% above the 50-day MA ($415.02), indicating a robust uptrend."
+      "type": "Earnings Reaction",
+      "signal": "Strong Bullish Catalyst",
+      "evidence": "Stock rose 4.53% the day after earnings, representing a +4.83% abnormal return compared to a declining QQQ benchmark."
     },
     {
       "type": "MACD",
-      "signal": "Accelerating Bullish Momentum",
-      "evidence": "The MACD line (14.35) is above the signal line (11.63) with a positive and expanding histogram (2.719), confirming a bullish crossover and strengthening momentum."
+      "signal": "Bullish Momentum Shift",
+      "evidence": "A bullish crossover event occurred with the MACD line (-15.426) crossing above the signal line (-18.495), suggesting a bottoming in negative momentum."
+    },
+    {
+      "type": "Moving Averages",
+      "signal": "Bearish Long-Term Trend Structure",
+      "evidence": "Price at $407.68 is significantly below the 50-day ($435.44) and 200-day ($469.13) moving averages, indicating an established downtrend."
     },
     {
       "type": "Relative Strength",
-      "signal": "Significant Market Outperformance",
-      "evidence": "CRWD has outperformed the SPY benchmark by 18.16% over the analysis period, demonstrating market leadership."
-    },
-    {
-      "type": "RSI",
-      "signal": "Strong but not Overbought Momentum",
-      "evidence": "RSI is at 65.08, indicating strong buying pressure with potential room to trend higher before reaching overbought conditions (typically >70)."
+      "signal": "Sustained Underperformance",
+      "evidence": "The stock has underperformed the SPY benchmark by -15.67% over the measured period, highlighting long-term weakness."
     },
     {
       "type": "Drawdown",
-      "signal": "Trading at New Highs",
-      "evidence": "A current drawdown of 0.0% shows the stock is at its peak for the recent period, a classic sign of strength."
+      "signal": "Significant Price Depreciation",
+      "evidence": "The stock is currently in a -26.88% drawdown from its recent peak, contextualizing the severity of the prior downtrend."
     },
     {
-      "type": "Volume",
-      "signal": "Weak Conviction Signal",
-      "evidence": "The recent price move occurred on below-average volume (volume spike ratio of 0.65), which may indicate a lack of strong institutional participation in the move."
-    },
-    {
-      "type": "Market Regime",
-      "signal": "High Volatility Bullish",
-      "evidence": "The stock is classified in a 'high_volatility_bullish' regime, confirming the uptrend is accompanied by significant price swings."
+      "type": "Earnings Reaction Volume",
+      "signal": "Moderate Volume Confirmation",
+      "evidence": "The post-earnings rally occurred on volume that was 0.82x the recent average, which does not represent overwhelming conviction but is not weak enough to invalidate the strong price move."
     },
     {
       "type": "Returns",
-      "signal": "positive short-term momentum",
-      "evidence": "Mean of recent returns: 0.83%"
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.07%"
+    },
+    {
+      "type": "RSI",
+      "signal": "bullish momentum",
+      "evidence": "RSI at 50.13"
+    },
+    {
+      "type": "Volume",
+      "signal": "strong participation",
+      "evidence": "Volume spike ratio 1.55x"
     },
     {
       "type": "Volatility",
-      "signal": "high volatility",
-      "evidence": "Annualized volatility 54.16%, Recent 54.19%"
+      "signal": "moderate volatility",
+      "evidence": "Annualized volatility 47.46%, Recent 72.29%"
+    },
+    {
+      "type": "Market Regime",
+      "signal": "range_bound",
+      "evidence": "Regime classification: range_bound"
     }
   ],
   "risks": [
-    "The recent price surge was not accompanied by high volume, suggesting a lack of conviction that could lead to a short-term pullback or consolidation.",
-    "High annualized volatility of 54.16% increases the risk of sharp price fluctuations, making the stock susceptible to rapid reversals.",
-    "The RSI at 65.08 is approaching the overbought level of 70, which could signal a near-term pause or minor correction."
+    "The post-earnings rally could be short-lived ('gap and fade') especially since reaction volume was not exceptionally strong (0.82x average).",
+    "Significant overhead resistance exists at the declining 50-day (~$435) and 200-day (~$469) moving averages, which could cap the current rally.",
+    "The dominant long-term trend remains bearish, and this could simply be a bear market rally before resuming the downtrend."
   ],
-  "summary": "CRWD exhibits a strong, high-momentum uptrend, characterized by its price trading significantly above key moving averages and demonstrating strong outperformance against the market. Momentum indicators like RSI and MACD are firmly bullish. However, this bullishness is accompanied by high volatility and a recent price move on relatively low volume, which poses a risk of short-term instability.",
-  "core_insight": "The stock is in a clear bullish trend with accelerating momentum, making it a market leader. The primary concern for the immediate future is the lack of volume confirmation on the latest breakout, suggesting the move might be susceptible to a pullback if buying pressure does not increase."
+  "summary": "As of 2026-03-04, CRWD was in a confirmed long-term downtrend. However, this analysis incorporates the immediate post-earnings reaction, which was decisively bullish with a +4.8% abnormal return vs. the market. This event, supported by a MACD bullish crossover, creates a strong bullish short-term bias. This new momentum is now testing the established bearish trend structure, making the long-term outlook neutral pending further confirmation.",
+  "core_insight": "The powerful positive post-earnings reaction serves as a major bullish catalyst, creating a critical inflection point. The short-term momentum is now bullish, but it must overcome significant overhead resistance from the long-term downtrend to prove a lasting reversal is underway."
 }

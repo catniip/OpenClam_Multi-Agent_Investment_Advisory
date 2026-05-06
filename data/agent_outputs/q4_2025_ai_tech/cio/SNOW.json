@@ -11,29 +11,30 @@
         "rationale": "The short-term bearish stance is driven by the classic 'beat-and-lower' scenario for a high-multiple growth stock, which typically leads to multiple compression and underperformance as analysts reset estimates. The long-term neutral stance reflects the balance between Snowflake's solid market position and the headwinds of decelerating growth and intensifying competition, suggesting its performance will likely normalize towards the market (QQQ) as it transitions to a more mature growth profile."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean neutral on the long-term horizon."
     ],
-    "areas_of_disagreement": [],
+    "areas_of_disagreement": [
+      "Short-term views contain both bullish and bearish calls."
+    ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 0,
-      "Neutral": 2,
+      "Bullish": 1,
+      "Neutral": 1,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -414,261 +415,6 @@
       {
         "ticker": "SNOW",
         "company": "Snowflake",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-        "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Established Bearish Trend Structure",
-            "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Severe Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Substantial Decline From Peak",
-            "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-          },
-          {
-            "type": "MACD",
-            "signal": "Potential Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weak Momentum",
-            "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Risk & Instability",
-            "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.37%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "range_bound",
-            "evidence": "Regime classification: range_bound"
-          }
-        ],
-        "risks": [
-          "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-          "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-          "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-        ],
-        "citations": [],
-        "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-        "raw_packet": {
-          "ticker": "SNOW",
-          "company": "Snowflake",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-          "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend Structure",
-              "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Decline From Peak",
-              "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-            },
-            {
-              "type": "MACD",
-              "signal": "Potential Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk & Instability",
-              "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.37%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-            "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-            "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-          ],
-          "citations": [],
-          "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-          "raw_packet": {
-            "ticker": "SNOW",
-            "company": "Snowflake",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-            "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend Structure",
-                "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Decline From Peak",
-                "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-              },
-              {
-                "type": "MACD",
-                "signal": "Potential Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk & Instability",
-                "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.37%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-              "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-              "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-            ],
-            "citations": [],
-            "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-            "raw_packet": {
-              "ticker": "SNOW",
-              "company": "Snowflake",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend Structure",
-                  "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Decline From Peak",
-                  "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Potential Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk & Instability",
-                  "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.37%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-                "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-                "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-              ],
-              "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-              "core_insight": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "SNOW",
-        "company": "Snowflake",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -822,16 +568,288 @@
             }
           }
         }
+      },
+      {
+        "ticker": "SNOW",
+        "company": "Snowflake",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+        "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Confirmation",
+            "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+          },
+          {
+            "type": "MACD",
+            "signal": "Nascent Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Established Bearish Trend",
+            "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish Context",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weak Momentum (Not Oversold)",
+            "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Long-Term Underperformance",
+            "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Elevated Downside Risk",
+            "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.67%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.65x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+          }
+        ],
+        "risks": [
+          "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+          "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+        "raw_packet": {
+          "ticker": "SNOW",
+          "company": "Snowflake",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+          "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Confirmation",
+              "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Established Bearish Trend",
+              "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Context",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum (Not Oversold)",
+              "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Elevated Downside Risk",
+              "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.65x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+            }
+          ],
+          "risks": [
+            "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+            "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SNOW",
+            "company": "Snowflake",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+            "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Confirmation",
+                "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Established Bearish Trend",
+                "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Context",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum (Not Oversold)",
+                "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Elevated Downside Risk",
+                "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.65x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+              }
+            ],
+            "risks": [
+              "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+              "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SNOW",
+              "company": "Snowflake",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Confirmation",
+                  "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Established Bearish Trend",
+                  "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Context",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum (Not Oversold)",
+                  "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Elevated Downside Risk",
+                  "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.65x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+                }
+              ],
+              "risks": [
+                "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+                "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+              ],
+              "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+              "core_insight": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": false,
+    "triggered": true,
     "trigger": {
-      "debate_required": false,
-      "conflict_level": "low",
+      "debate_required": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ]
     },
     "synthesis": {
@@ -846,29 +864,30 @@
           "rationale": "The short-term bearish stance is driven by the classic 'beat-and-lower' scenario for a high-multiple growth stock, which typically leads to multiple compression and underperformance as analysts reset estimates. The long-term neutral stance reflects the balance between Snowflake's solid market position and the headwinds of decelerating growth and intensifying competition, suggesting its performance will likely normalize towards the market (QQQ) as it transitions to a more mature growth profile."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean neutral on the long-term horizon."
       ],
-      "areas_of_disagreement": [],
+      "areas_of_disagreement": [
+        "Short-term views contain both bullish and bearish calls."
+      ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 0,
-        "Neutral": 2,
+        "Bullish": 1,
+        "Neutral": 1,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1371,325 +1390,6 @@
         {
           "ticker": "SNOW",
           "company": "Snowflake",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-          "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend Structure",
-              "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Decline From Peak",
-              "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-            },
-            {
-              "type": "MACD",
-              "signal": "Potential Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk & Instability",
-              "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.37%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-            "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-            "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-          ],
-          "citations": [],
-          "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-          "raw_packet": {
-            "ticker": "SNOW",
-            "company": "Snowflake",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-            "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend Structure",
-                "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Decline From Peak",
-                "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-              },
-              {
-                "type": "MACD",
-                "signal": "Potential Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk & Instability",
-                "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.37%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-              "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-              "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-            ],
-            "citations": [],
-            "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-            "raw_packet": {
-              "ticker": "SNOW",
-              "company": "Snowflake",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-              "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend Structure",
-                  "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Decline From Peak",
-                  "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Potential Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk & Instability",
-                  "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.37%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-                "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-                "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-              ],
-              "citations": [],
-              "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-              "raw_packet": {
-                "ticker": "SNOW",
-                "company": "Snowflake",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.75,
-                "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-                "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Established Bearish Trend Structure",
-                    "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Severe Market Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Substantial Decline From Peak",
-                    "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Potential Bullish Momentum Shift",
-                    "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Weak Momentum",
-                    "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "High Risk & Instability",
-                    "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.37%"
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "range_bound",
-                    "evidence": "Regime classification: range_bound"
-                  }
-                ],
-                "risks": [
-                  "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-                  "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-                  "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-                ],
-                "citations": [],
-                "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-                "raw_packet": {
-                  "ticker": "SNOW",
-                  "company": "Snowflake",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Established Bearish Trend Structure",
-                      "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Severe Market Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Substantial Decline From Peak",
-                      "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Potential Bullish Momentum Shift",
-                      "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Weak Momentum",
-                      "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "High Risk & Instability",
-                      "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.37%"
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "range_bound",
-                      "evidence": "Regime classification: range_bound"
-                    }
-                  ],
-                  "risks": [
-                    "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-                    "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-                    "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-                  ],
-                  "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-                  "core_insight": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "SNOW",
-          "company": "Snowflake",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1881,10 +1581,411 @@
               }
             }
           }
+        },
+        {
+          "ticker": "SNOW",
+          "company": "Snowflake",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+          "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Confirmation",
+              "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Established Bearish Trend",
+              "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Context",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum (Not Oversold)",
+              "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Elevated Downside Risk",
+              "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.65x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+            }
+          ],
+          "risks": [
+            "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+            "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SNOW",
+            "company": "Snowflake",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+            "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Confirmation",
+                "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Established Bearish Trend",
+                "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Context",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum (Not Oversold)",
+                "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Elevated Downside Risk",
+                "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.65x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+              }
+            ],
+            "risks": [
+              "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+              "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SNOW",
+              "company": "Snowflake",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+              "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Confirmation",
+                  "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Established Bearish Trend",
+                  "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Context",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum (Not Oversold)",
+                  "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Elevated Downside Risk",
+                  "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.65x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+                }
+              ],
+              "risks": [
+                "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+                "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+              "raw_packet": {
+                "ticker": "SNOW",
+                "company": "Snowflake",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.75,
+                "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+                "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bullish Confirmation",
+                    "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Nascent Bullish Momentum Shift",
+                    "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Established Bearish Trend",
+                    "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "High Volatility Bearish Context",
+                    "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Weak Momentum (Not Oversold)",
+                    "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Long-Term Underperformance",
+                    "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Elevated Downside Risk",
+                    "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.67%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "strong participation",
+                    "evidence": "Volume spike ratio 1.65x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+                  }
+                ],
+                "risks": [
+                  "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+                  "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+                "raw_packet": {
+                  "ticker": "SNOW",
+                  "company": "Snowflake",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.75,
+                  "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bullish Confirmation",
+                      "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Nascent Bullish Momentum Shift",
+                      "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Established Bearish Trend",
+                      "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "High Volatility Bearish Context",
+                      "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Weak Momentum (Not Oversold)",
+                      "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Long-Term Underperformance",
+                      "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Elevated Downside Risk",
+                      "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.67%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "strong participation",
+                      "evidence": "Volume spike ratio 1.65x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+                    }
+                  ],
+                  "risks": [
+                    "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+                    "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+                  ],
+                  "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+                  "core_insight": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [],
+    "debate_responses": [
+      {
+        "response_type": "revision",
+        "agreement": {
+          "fundamental": "I agree with the fundamental agent's data points showing strong revenue growth and a significant surge in free cash flow. This FCF generation is a key underlying strength that supports my long-term neutral, rather than bearish, stance.",
+          "market_technical": "I agree with the market_technical agent's assessment that the stock is in an 'Established Bearish Trend' based on its price being below all key moving averages. This aligns with my view of long-term headwinds."
+        },
+        "disagreement": {
+          "fundamental": "I place low weight on the fundamental agent's 'Neutral' short-term stance. Their confidence is explicitly low (0.3) because they are missing the most critical piece of evidence which my agent possesses: the company's 'cautious outlook'. This guidance is the primary driver for a high-valuation stock post-earnings.",
+          "market_technical": "I strongly disagree with the market_technical agent's interpretation of the earnings reaction as a 'Strong Bullish Confirmation'. My evidence explicitly cites a 'pops then drops' price action, which indicates a negative reversal after an initial positive reaction. The positive daily return figure they cite likely masks this negative intraday reversal and the high volume could equally represent heavy selling pressure, not just bullish conviction."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.75,
+        "evidence_needed": [
+          "Intraday price chart for the 24 hours following the earnings release to clarify the 'pops then drops' price action and reconcile the conflicting reports.",
+          "The specific forward guidance numbers for revenue and profitability provided by management to quantify the 'cautious outlook'."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": [
+          "I agree with the news_macro agent's core assessment that this was a 'beat-and-lower' quarter, where Snowflake beat Q4 estimates but provided a cautious forward outlook. This context was the critical missing piece in my original analysis.",
+          "I agree with the news_macro agent's rationale for a short-term Bearish stance. A cautious outlook from a high-valuation, high-growth stock typically leads to multiple compression and underperformance, which is a strong fundamental reason for a bearish view.",
+          "I agree with the news_macro agent's long-term Neutral stance, which aligns with my original view. The company has a solid market position and generates strong cash flow, but faces headwinds from decelerating growth, competition, and persistent unprofitability.",
+          "I agree with the market_technical agent's observation that the stock is in an established long-term bearish trend, as evidenced by the price being below key moving averages and in a significant drawdown. This aligns with the fundamental risks."
+        ],
+        "disagreement": [
+          "I disagree with the market_technical agent's short-term Bullish stance and its interpretation of the earnings reaction as a 'Strong Bullish Confirmation'.",
+          "The news_macro agent provides crucial context that the stock 'Pops Then Drops' and that the earnings beat was 'tempered by a cautious outlook'. This narrative suggests the overall market reaction to the new information was negative. The technical agent's signal of a positive daily return is likely capturing a short-term bounce after a much larger negative move (e.g., a pre-market gap down) and is not indicative of a fundamentally bullish reception to the earnings report. The fundamental news of a cautious guide carries more weight than a single day's ambiguous price action."
+        ],
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.8,
+        "evidence_needed": [
+          "The official guidance figures for the next quarter and full year to quantify the 'cautious outlook'.",
+          "The earnings call transcript to understand management's specific commentary on the drivers of the guidance (e.g., macro, competition, consumption patterns, AI budget rotation).",
+          "Updated customer metrics, particularly net revenue retention rate and growth in large customers, to gauge the health of the customer base."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "news_macro": "I agree with the news_macro agent's assessment. The evidence of 'cautious guidance' and the 'pops then drops' price action is critical. This context reframes my initial technical observation: the high-volume price swing was not a bullish confirmation but a volatile re-pricing event driven by the market digesting a 'beat-and-lower' report. This fundamental narrative perfectly explains the technical conflict I was seeing.",
+          "fundamental": "I agree with the fundamental agent's data points regarding the high forward valuation (Forward P/E: 59.28) and persistent unprofitability. This context supports the news_macro agent's view that the market would severely punish a high-growth stock for providing a cautious outlook, justifying the negative price action."
+        },
+        "disagreement": {
+          "self_correction": "I disagree with my original interpretation of the 'Earnings Reaction' signal. I labeled it a 'Strong Bullish Confirmation'. The evidence from the news_macro agent proves this was incorrect. The event was a bull trap, and the high volume represented a battle that the bears ultimately won due to the weak guidance. The 'Nascent Bullish Momentum Shift' from the MACD crossover should now be given a very low weight, as it is highly likely to be a whipsaw/false signal in the face of such a strong negative fundamental catalyst."
+        },
+        "revised_view": {
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is now very high. My initial analysis identified a conflict between a short-term bullish signal and a long-term bearish trend. The evidence from the news_macro agent resolves this conflict decisively in favor of the bears. The 'cautious guidance' is a powerful fundamental catalyst that invalidates the nascent bullish technical signals and strongly reinforces the established long-term bearish trend. The technicals and fundamentals are now aligned.",
+          "stance_rationale": "The short-term stance is revised to Bearish. The market has clearly interpreted the company's cautious forward guidance as a significant negative, overriding the Q4 earnings beat. This 'beat-and-lower' is a classic catalyst for downside in a high-valuation stock. The long-term Bearish stance is maintained and reinforced, as the fundamental narrative of decelerating growth now provides a clear reason for the pre-existing negative technical structure (price below all key moving averages, significant drawdown)."
+        },
+        "evidence_needed": [
+          "Confirmation of price breaking below the post-earnings low to validate the renewed bearish momentum.",
+          "Observation of the MACD indicator to see if it quickly reverses its bullish crossover, confirming a whipsaw or 'bull trap' signal.",
+          "Analysis of subsequent daily volume to see if high volume accompanies down days (confirming institutional distribution) or if volume dries up on bounces (indicating lack of conviction from buyers)."
+        ]
+      }
+    ],
     "revised_packets": [
       {
         "ticker": "SNOW",
@@ -1892,7 +1993,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Neutral",
-        "confidence": 0.8,
+        "confidence": 0.75,
         "confidence_rationale": "High confidence stems from direct news reports about Snowflake's own cautious guidance, a well-understood negative catalyst for high-valuation stocks. The 'pops then drops' price action described in the news is a strong confirmation of the market's negative interpretation. Confidence is not 1.0 because the full details from the earnings call are not provided.",
         "stance_rationale": "The short-term bearish stance is driven by the classic 'beat-and-lower' scenario for a high-multiple growth stock, which typically leads to multiple compression and underperformance as analysts reset estimates. The long-term neutral stance reflects the balance between Snowflake's solid market position and the headwinds of decelerating growth and intensifying competition, suggesting its performance will likely normalize towards the market (QQQ) as it transitions to a more mature growth profile.",
         "key_signals": [
@@ -2253,270 +2354,33 @@
               "core_insight": "Snowflake's cautious guidance despite 'strong AI adoption' signals a rotation in enterprise IT budgets away from general-purpose data warehousing towards AI-native platforms and cost-optimization tools, creating opportunities in specialized software and migration services."
             }
           }
-        }
-      },
-      {
-        "ticker": "SNOW",
-        "company": "Snowflake",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-        "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Established Bearish Trend Structure",
-            "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "fundamental": "I agree with the fundamental agent's data points showing strong revenue growth and a significant surge in free cash flow. This FCF generation is a key underlying strength that supports my long-term neutral, rather than bearish, stance.",
+            "market_technical": "I agree with the market_technical agent's assessment that the stock is in an 'Established Bearish Trend' based on its price being below all key moving averages. This aligns with my view of long-term headwinds."
           },
-          {
-            "type": "Relative Strength",
-            "signal": "Severe Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
+          "disagreement": {
+            "fundamental": "I place low weight on the fundamental agent's 'Neutral' short-term stance. Their confidence is explicitly low (0.3) because they are missing the most critical piece of evidence which my agent possesses: the company's 'cautious outlook'. This guidance is the primary driver for a high-valuation stock post-earnings.",
+            "market_technical": "I strongly disagree with the market_technical agent's interpretation of the earnings reaction as a 'Strong Bullish Confirmation'. My evidence explicitly cites a 'pops then drops' price action, which indicates a negative reversal after an initial positive reaction. The positive daily return figure they cite likely masks this negative intraday reversal and the high volume could equally represent heavy selling pressure, not just bullish conviction."
           },
-          {
-            "type": "Drawdown",
-            "signal": "Substantial Decline From Peak",
-            "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-          },
-          {
-            "type": "MACD",
-            "signal": "Potential Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-          },
-          {
-            "type": "RSI",
-            "signal": "Weak Momentum",
-            "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Risk & Instability",
-            "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.37%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "range_bound",
-            "evidence": "Regime classification: range_bound"
-          }
-        ],
-        "risks": [
-          "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-          "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-          "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-        ],
-        "citations": [],
-        "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-        "raw_packet": {
-          "ticker": "SNOW",
-          "company": "Snowflake",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-          "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Established Bearish Trend Structure",
-              "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Substantial Decline From Peak",
-              "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-            },
-            {
-              "type": "MACD",
-              "signal": "Potential Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-            },
-            {
-              "type": "RSI",
-              "signal": "Weak Momentum",
-              "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk & Instability",
-              "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.37%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "range_bound",
-              "evidence": "Regime classification: range_bound"
-            }
-          ],
-          "risks": [
-            "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-            "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-            "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-          ],
-          "citations": [],
-          "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-          "raw_packet": {
-            "ticker": "SNOW",
-            "company": "Snowflake",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-            "stance_rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Established Bearish Trend Structure",
-                "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Substantial Decline From Peak",
-                "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-              },
-              {
-                "type": "MACD",
-                "signal": "Potential Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-              },
-              {
-                "type": "RSI",
-                "signal": "Weak Momentum",
-                "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk & Instability",
-                "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.37%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "range_bound",
-                "evidence": "Regime classification: range_bound"
-              }
-            ],
-            "risks": [
-              "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-              "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-              "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-            ],
-            "citations": [],
-            "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-            "raw_packet": {
-              "ticker": "SNOW",
-              "company": "Snowflake",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "The long-term bearish trend is well-established and confirmed by multiple indicators. Confidence is not higher because short-term signals are conflicting (e.g., bullish MACD crossover vs. weak RSI), suggesting potential for a counter-trend bounce which introduces short-term directional ambiguity.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Established Bearish Trend Structure",
-                  "evidence": "Price at $144.21 is significantly below its MA50 ($157.37) and MA200 ($206.78), indicating a strong long-term downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -42.97%, indicating significant relative weakness."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Substantial Decline From Peak",
-                  "evidence": "The stock is currently in a -47.96% drawdown from its recent high, highlighting sustained selling pressure."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Potential Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred with the MACD line (-4.39) crossing above the signal line (-5.23). However, the crossover is occurring deep in negative territory, which often signals a weak rally."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Weak Momentum",
-                  "evidence": "The RSI is at 46.70, below the neutral 50 level, indicating that bears still have momentum despite the recent price stabilization."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk & Instability",
-                  "evidence": "Annualized volatility is high at 52.33%, with recent volatility elevated at 80.93%, suggesting a high-risk environment."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "The volume spike ratio of 0.65 indicates that recent price movements have occurred on below-average volume, questioning the strength of the move."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.37%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "range_bound",
-                  "evidence": "Regime classification: range_bound"
-                }
-              ],
-              "risks": [
-                "The dominant long-term downtrend could easily overwhelm any short-term bullish signals, indicating a potential 'bull trap'.",
-                "Extremely high recent volatility (80.93%) points to significant price instability and elevated downside risk.",
-                "The bullish MACD crossover is unconfirmed by price action and other momentum indicators like RSI, suggesting it may be a false signal."
-              ],
-              "summary": "As of this date, SNOW is in a strong, long-term downtrend, evidenced by its position well below the 50-day and 200-day moving averages and its severe underperformance against the market. Short-term signals are conflicting: a bullish MACD crossover suggests a potential for a relief rally, but this is countered by weak momentum (RSI<50), low volume, and a 'range_bound' market regime. The overall technical posture is bearish and high-risk.",
-              "core_insight": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-            }
-          }
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.75,
+          "evidence_needed": [
+            "Intraday price chart for the 24 hours following the earnings release to clarify the 'pops then drops' price action and reconcile the conflicting reports.",
+            "The specific forward guidance numbers for revenue and profitability provided by management to quantify the 'cautious outlook'."
+          ]
         }
       },
       {
         "ticker": "SNOW",
         "company": "Snowflake",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Neutral",
-        "confidence": 0.3,
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is low due to the complete absence of critical contextual information, including analyst consensus estimates, management guidance, and the earnings call transcript. The analysis relies solely on raw financial data without any forward-looking statements or market expectations.",
         "stance_rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses.",
         "key_signals": [
@@ -2665,6 +2529,320 @@
               }
             }
           }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the news_macro agent's core assessment that this was a 'beat-and-lower' quarter, where Snowflake beat Q4 estimates but provided a cautious forward outlook. This context was the critical missing piece in my original analysis.",
+            "I agree with the news_macro agent's rationale for a short-term Bearish stance. A cautious outlook from a high-valuation, high-growth stock typically leads to multiple compression and underperformance, which is a strong fundamental reason for a bearish view.",
+            "I agree with the news_macro agent's long-term Neutral stance, which aligns with my original view. The company has a solid market position and generates strong cash flow, but faces headwinds from decelerating growth, competition, and persistent unprofitability.",
+            "I agree with the market_technical agent's observation that the stock is in an established long-term bearish trend, as evidenced by the price being below key moving averages and in a significant drawdown. This aligns with the fundamental risks."
+          ],
+          "disagreement": [
+            "I disagree with the market_technical agent's short-term Bullish stance and its interpretation of the earnings reaction as a 'Strong Bullish Confirmation'.",
+            "The news_macro agent provides crucial context that the stock 'Pops Then Drops' and that the earnings beat was 'tempered by a cautious outlook'. This narrative suggests the overall market reaction to the new information was negative. The technical agent's signal of a positive daily return is likely capturing a short-term bounce after a much larger negative move (e.g., a pre-market gap down) and is not indicative of a fundamentally bullish reception to the earnings report. The fundamental news of a cautious guide carries more weight than a single day's ambiguous price action."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The official guidance figures for the next quarter and full year to quantify the 'cautious outlook'.",
+            "The earnings call transcript to understand management's specific commentary on the drivers of the guidance (e.g., macro, competition, consumption patterns, AI budget rotation).",
+            "Updated customer metrics, particularly net revenue retention rate and growth in large customers, to gauge the health of the customer base."
+          ]
+        }
+      },
+      {
+        "ticker": "SNOW",
+        "company": "Snowflake",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+        "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Confirmation",
+            "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+          },
+          {
+            "type": "MACD",
+            "signal": "Nascent Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Established Bearish Trend",
+            "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish Context",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weak Momentum (Not Oversold)",
+            "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Long-Term Underperformance",
+            "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Elevated Downside Risk",
+            "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.67%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.65x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+          }
+        ],
+        "risks": [
+          "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+          "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+        "raw_packet": {
+          "ticker": "SNOW",
+          "company": "Snowflake",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+          "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Confirmation",
+              "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Established Bearish Trend",
+              "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Context",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weak Momentum (Not Oversold)",
+              "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Elevated Downside Risk",
+              "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.67%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.65x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+            }
+          ],
+          "risks": [
+            "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+            "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SNOW",
+            "company": "Snowflake",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+            "stance_rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Confirmation",
+                "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Established Bearish Trend",
+                "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Context",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weak Momentum (Not Oversold)",
+                "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Elevated Downside Risk",
+                "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.67%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.65x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+              }
+            ],
+            "risks": [
+              "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+              "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SNOW",
+              "company": "Snowflake",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction, featuring a significant positive abnormal return and very high volume. This is a powerful short-term catalyst. However, confidence is not higher because this signal is directly conflicting with an established, long-term bearish trend structure.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Confirmation",
+                  "evidence": "Post-earnings, the stock had a +2.28% return, which was a +3.48% abnormal return vs. QQQ, on 2.58x the average volume. This indicates strong bullish conviction following the event."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover (Histogram: 0.175) just occurred, suggesting that bearish momentum may be exhausting and a potential shift to positive momentum is beginning."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Established Bearish Trend",
+                  "evidence": "The price at $169.21 is significantly below its 20-day ($177.39), 50-day ($201.74), and 200-day ($218.46) moving averages, confirming a strong long-term bearish trend structure."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Context",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting the challenging and risky environment preceding the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weak Momentum (Not Oversold)",
+                  "evidence": "The RSI of 40.95 indicates weak momentum but suggests the stock was not in a deeply oversold condition prior to the earnings-driven rally."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has underperformed its benchmark (SPY) by -14.96% over the period, indicating it has been a market laggard."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Elevated Downside Risk",
+                  "evidence": "The stock is in a significant drawdown of -38.94% from its peak, reinforcing the severity of the long-term bearish trend."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.67%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.65x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 52.76%, Recent 77.24%"
+                }
+              ],
+              "risks": [
+                "The strong short-term bullish signal is occurring within a long-term bearish trend. Key moving averages (MA20, MA50, MA200) are overhead and may act as significant resistance levels.",
+                "High recent and annualized volatility (77.24% and 52.76% respectively) suggests the potential for sharp price reversals, making the stock a higher-risk holding despite the positive catalyst."
+              ],
+              "summary": "As of 2026-02-25, SNOW was in a confirmed high-volatility bearish trend. However, the subsequent post-earnings reaction showed a powerful bullish reversal signal, with a significant abnormal return versus the benchmark on extremely high volume. This potent event-driven momentum, supported by a new MACD bullish crossover, establishes a short-term bullish stance, creating a clear conflict with the negative long-term technical structure.",
+              "core_insight": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's assessment. The evidence of 'cautious guidance' and the 'pops then drops' price action is critical. This context reframes my initial technical observation: the high-volume price swing was not a bullish confirmation but a volatile re-pricing event driven by the market digesting a 'beat-and-lower' report. This fundamental narrative perfectly explains the technical conflict I was seeing.",
+            "fundamental": "I agree with the fundamental agent's data points regarding the high forward valuation (Forward P/E: 59.28) and persistent unprofitability. This context supports the news_macro agent's view that the market would severely punish a high-growth stock for providing a cautious outlook, justifying the negative price action."
+          },
+          "disagreement": {
+            "self_correction": "I disagree with my original interpretation of the 'Earnings Reaction' signal. I labeled it a 'Strong Bullish Confirmation'. The evidence from the news_macro agent proves this was incorrect. The event was a bull trap, and the high volume represented a battle that the bears ultimately won due to the weak guidance. The 'Nascent Bullish Momentum Shift' from the MACD crossover should now be given a very low weight, as it is highly likely to be a whipsaw/false signal in the face of such a strong negative fundamental catalyst."
+          },
+          "revised_view": {
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is now very high. My initial analysis identified a conflict between a short-term bullish signal and a long-term bearish trend. The evidence from the news_macro agent resolves this conflict decisively in favor of the bears. The 'cautious guidance' is a powerful fundamental catalyst that invalidates the nascent bullish technical signals and strongly reinforces the established long-term bearish trend. The technicals and fundamentals are now aligned.",
+            "stance_rationale": "The short-term stance is revised to Bearish. The market has clearly interpreted the company's cautious forward guidance as a significant negative, overriding the Q4 earnings beat. This 'beat-and-lower' is a classic catalyst for downside in a high-valuation stock. The long-term Bearish stance is maintained and reinforced, as the fundamental narrative of decelerating growth now provides a clear reason for the pre-existing negative technical structure (price below all key moving averages, significant drawdown)."
+          },
+          "evidence_needed": [
+            "Confirmation of price breaking below the post-earnings low to validate the renewed bearish momentum.",
+            "Observation of the MACD indicator to see if it quickly reverses its bullish crossover, confirming a whipsaw or 'bull trap' signal.",
+            "Analysis of subsequent daily volume to see if high volume accompanies down days (confirming institutional distribution) or if volume dries up on bounces (indicating lack of conviction from buyers)."
+          ]
         }
       }
     ]
@@ -2673,23 +2851,22 @@
     "ticker": "SNOW",
     "company": "Snowflake",
     "final_short_term_stance": "Bearish",
-    "final_long_term_stance": "Bearish",
-    "investment_action": "Avoid / Do Not Add",
-    "position_size_hint": "Reduce or avoid exposure",
-    "confidence": 0.8,
-    "core_thesis": "Snowflake is a high-quality company undergoing a painful valuation reset. Cautious forward guidance, signaling decelerating growth and intensifying competition, is forcing a significant multiple compression on a stock that remains unprofitable on a GAAP basis and still trades at a premium valuation. The path of least resistance for the stock is lower until the growth narrative is reset or the valuation becomes compelling.",
-    "why_now": "The primary catalyst is the recent Q4 earnings report. The company's 'beat-and-lower' results (beating Q4 estimates but providing a cautious forward outlook) is a classic negative trigger for high-multiple growth stocks. This event has confirmed the existing technical downtrend and signaled to the market that the period of hyper-growth is maturing, warranting a lower valuation.",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Watch / No Trade",
+    "position_size_hint": "No new position",
+    "confidence": 0.9,
+    "core_thesis": "Snowflake is undergoing a valuation reset. The company delivered a classic 'beat-and-lower' quarter, where strong Q4 results were overshadowed by cautious forward guidance. For a high-multiple growth stock, this guidance deceleration is a powerful negative catalyst, forcing the market to reprice the stock for a new reality of slower growth, intensifying competition, and enterprise budget scrutiny.",
+    "why_now": "The recent earnings report and subsequent cautious guidance is a material event that has broken the stock's prior narrative. The market's negative reaction, characterized by a 'pop and drop' price action, confirms that the forward-looking guidance is the most important piece of information right now, making the short-term path of least resistance likely lower as analysts reset estimates.",
     "key_supporting_evidence": [
-      "The 'beat-and-lower' earnings report is a well-understood negative catalyst, confirmed by the 'pop and drop' price action.",
-      "The stock is in a strong, established technical downtrend, with price trading significantly below its 50-day ($157.37) and 200-day ($206.78) moving averages.",
-      "Severe relative weakness is evident, with the stock underperforming the SPY benchmark by nearly 43%.",
-      "A high Forward P/E of ~59x combined with decelerating growth expectations creates a high-risk valuation profile vulnerable to multiple compression.",
-      "The cautious outlook suggests increased competition (e.g., from Databricks) and a potential rotation of enterprise budgets away from traditional data warehousing towards AI-native platforms."
+      "Direct news reports of a 'cautious outlook' tempering the Q4 earnings beat, a classic negative catalyst for a high-growth stock.",
+      "The 'pops then drops' price action reported by the news_macro agent, which reframes the technical agent's initial 'bullish confirmation' as a bull trap and indicates a fundamentally negative market reception.",
+      "The stock's high forward P/E of 59.28, which makes it highly sensitive to any deceleration in growth, as highlighted by the fundamental agent.",
+      "The alignment of the new bearish fundamental catalyst (weak guidance) with the pre-existing long-term bearish technical trend (price below all key moving averages), reinforcing the negative outlook."
     ],
     "key_risks": [
-      "Management's guidance could prove to be overly conservative, setting a low bar that the company can easily beat in future quarters, which would cause a sharp rebound.",
-      "The stock may be technically oversold in the short term, and a broad market rally could lift the stock irrespective of its fundamentals, creating a 'bull trap' or a short squeeze.",
-      "The market could decide to look past the near-term slowdown and begin pricing in a longer-term AI-driven re-acceleration sooner than expected."
+      "The market has overreacted to the guidance, and consumption re-accelerates faster than expected, leading to a sharp reversal (Risk to Bearish thesis).",
+      "The company's strong free cash flow generation provides a valuation floor sooner than anticipated, limiting further downside.",
+      "Competition from Databricks and others, or a broader 'AI budget rotation', proves more damaging than currently priced in, turning the long-term outlook from Neutral to Bearish."
     ],
     "agent_view_summary": [
       {
@@ -2700,50 +2877,127 @@
         "rationale": "The short-term bearish stance is driven by the classic 'beat-and-lower' scenario for a high-multiple growth stock, which typically leads to multiple compression and underperformance as analysts reset estimates. The long-term neutral stance reflects the balance between Snowflake's solid market position and the headwinds of decelerating growth and intensifying competition, suggesting its performance will likely normalize towards the market (QQQ) as it transitions to a more mature growth profile."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "A recent bullish MACD crossover offers a potential for a short-term bounce, but it is isolated and appears within a powerful, established downtrend. This conflict suggests the signal is more likely a sign of a temporary bear market rally rather than a sustainable trend reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Snowflake shows strong revenue growth and a dramatic improvement in cash flow generation quarter-over-quarter. However, persistent unprofitability, a widening net loss, and a high forward valuation warrant caution. The company is a high-growth story where strong FCF generation is offset by GAAP losses."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "rationale": "A powerful, high-volume positive earnings reaction has created a potential short-term bottom and bullish inflection point. This event-driven catalyst is the most critical factor for the near-term outlook, directly challenging the established long-term bearish trend."
       }
     ],
     "debate_summary": {
-      "debate_triggered": false,
-      "conflict_level": "low",
+      "debate_triggered": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ],
-      "debate_responses": []
+      "debate_responses": [
+        {
+          "response_type": "revision",
+          "agreement": {
+            "fundamental": "I agree with the fundamental agent's data points showing strong revenue growth and a significant surge in free cash flow. This FCF generation is a key underlying strength that supports my long-term neutral, rather than bearish, stance.",
+            "market_technical": "I agree with the market_technical agent's assessment that the stock is in an 'Established Bearish Trend' based on its price being below all key moving averages. This aligns with my view of long-term headwinds."
+          },
+          "disagreement": {
+            "fundamental": "I place low weight on the fundamental agent's 'Neutral' short-term stance. Their confidence is explicitly low (0.3) because they are missing the most critical piece of evidence which my agent possesses: the company's 'cautious outlook'. This guidance is the primary driver for a high-valuation stock post-earnings.",
+            "market_technical": "I strongly disagree with the market_technical agent's interpretation of the earnings reaction as a 'Strong Bullish Confirmation'. My evidence explicitly cites a 'pops then drops' price action, which indicates a negative reversal after an initial positive reaction. The positive daily return figure they cite likely masks this negative intraday reversal and the high volume could equally represent heavy selling pressure, not just bullish conviction."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.75,
+          "evidence_needed": [
+            "Intraday price chart for the 24 hours following the earnings release to clarify the 'pops then drops' price action and reconcile the conflicting reports.",
+            "The specific forward guidance numbers for revenue and profitability provided by management to quantify the 'cautious outlook'."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the news_macro agent's core assessment that this was a 'beat-and-lower' quarter, where Snowflake beat Q4 estimates but provided a cautious forward outlook. This context was the critical missing piece in my original analysis.",
+            "I agree with the news_macro agent's rationale for a short-term Bearish stance. A cautious outlook from a high-valuation, high-growth stock typically leads to multiple compression and underperformance, which is a strong fundamental reason for a bearish view.",
+            "I agree with the news_macro agent's long-term Neutral stance, which aligns with my original view. The company has a solid market position and generates strong cash flow, but faces headwinds from decelerating growth, competition, and persistent unprofitability.",
+            "I agree with the market_technical agent's observation that the stock is in an established long-term bearish trend, as evidenced by the price being below key moving averages and in a significant drawdown. This aligns with the fundamental risks."
+          ],
+          "disagreement": [
+            "I disagree with the market_technical agent's short-term Bullish stance and its interpretation of the earnings reaction as a 'Strong Bullish Confirmation'.",
+            "The news_macro agent provides crucial context that the stock 'Pops Then Drops' and that the earnings beat was 'tempered by a cautious outlook'. This narrative suggests the overall market reaction to the new information was negative. The technical agent's signal of a positive daily return is likely capturing a short-term bounce after a much larger negative move (e.g., a pre-market gap down) and is not indicative of a fundamentally bullish reception to the earnings report. The fundamental news of a cautious guide carries more weight than a single day's ambiguous price action."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The official guidance figures for the next quarter and full year to quantify the 'cautious outlook'.",
+            "The earnings call transcript to understand management's specific commentary on the drivers of the guidance (e.g., macro, competition, consumption patterns, AI budget rotation).",
+            "Updated customer metrics, particularly net revenue retention rate and growth in large customers, to gauge the health of the customer base."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's assessment. The evidence of 'cautious guidance' and the 'pops then drops' price action is critical. This context reframes my initial technical observation: the high-volume price swing was not a bullish confirmation but a volatile re-pricing event driven by the market digesting a 'beat-and-lower' report. This fundamental narrative perfectly explains the technical conflict I was seeing.",
+            "fundamental": "I agree with the fundamental agent's data points regarding the high forward valuation (Forward P/E: 59.28) and persistent unprofitability. This context supports the news_macro agent's view that the market would severely punish a high-growth stock for providing a cautious outlook, justifying the negative price action."
+          },
+          "disagreement": {
+            "self_correction": "I disagree with my original interpretation of the 'Earnings Reaction' signal. I labeled it a 'Strong Bullish Confirmation'. The evidence from the news_macro agent proves this was incorrect. The event was a bull trap, and the high volume represented a battle that the bears ultimately won due to the weak guidance. The 'Nascent Bullish Momentum Shift' from the MACD crossover should now be given a very low weight, as it is highly likely to be a whipsaw/false signal in the face of such a strong negative fundamental catalyst."
+          },
+          "revised_view": {
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is now very high. My initial analysis identified a conflict between a short-term bullish signal and a long-term bearish trend. The evidence from the news_macro agent resolves this conflict decisively in favor of the bears. The 'cautious guidance' is a powerful fundamental catalyst that invalidates the nascent bullish technical signals and strongly reinforces the established long-term bearish trend. The technicals and fundamentals are now aligned.",
+            "stance_rationale": "The short-term stance is revised to Bearish. The market has clearly interpreted the company's cautious forward guidance as a significant negative, overriding the Q4 earnings beat. This 'beat-and-lower' is a classic catalyst for downside in a high-valuation stock. The long-term Bearish stance is maintained and reinforced, as the fundamental narrative of decelerating growth now provides a clear reason for the pre-existing negative technical structure (price below all key moving averages, significant drawdown)."
+          },
+          "evidence_needed": [
+            "Confirmation of price breaking below the post-earnings low to validate the renewed bearish momentum.",
+            "Observation of the MACD indicator to see if it quickly reverses its bullish crossover, confirming a whipsaw or 'bull trap' signal.",
+            "Analysis of subsequent daily volume to see if high volume accompanies down days (confirming institutional distribution) or if volume dries up on bounces (indicating lack of conviction from buyers)."
+          ]
+        }
+      ]
     },
-    "reason_for_final_decision": "The decision is to adopt a Bearish stance on both short and long-term horizons, concurring with the deterministic guardrail. The evidence is clear and consistent across all agents: a powerful negative catalyst (cautious guidance) has impacted a high-valuation stock, confirming and accelerating a pre-existing technical downtrend. The news_macro agent provides the 'why' (the guidance), the market_technical agent shows the 'effect' (the downtrend), and the fundamental agent highlights the 'vulnerability' (high valuation). The risk/reward profile is skewed to the downside.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "The decision is an override of the deterministic guardrail's confidence but an affirmation of its stance. The initial conflict between the agents was decisively resolved during the debate. The news_macro agent's context of a 'beat-and-lower' quarter and a 'pop and drop' price action was critical, causing both the fundamental and market_technical agents to revise their stances to Bearish in the short term. This created a rare and powerful post-debate unanimity on the short-term view. The fundamental news of decelerating growth is the overriding factor, invalidating nascent bullish technical signals. The long-term Neutral stance reflects a consensus that while the growth story has slowed, the company's strong cash flow and market position prevent a more dire long-term outlook for now.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
+          "confidence": 0.75,
+          "weight": 0.45,
+          "contribution": -0.3375
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.35,
-          "contribution": -0.28
+          "weight": 0.15,
+          "contribution": -0.12
         },
         {
           "agent_name": "market_technical",
           "stance": "Neutral",
           "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.4,
           "contribution": 0.0
         }
       ],
@@ -2751,29 +3005,29 @@
         {
           "agent_name": "news_macro",
           "stance": "Neutral",
+          "confidence": 0.75,
+          "weight": 0.4,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
           "confidence": 0.8,
           "weight": 0.35,
           "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": -0.15
-        },
-        {
-          "agent_name": "fundamental",
           "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.45,
+          "confidence": 0.75,
+          "weight": 0.25,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.4133,
-      "long": -0.2655
+      "short": -0.604,
+      "long": 0.0
     },
     "llm_decision_used": true
   }

@@ -11,35 +11,35 @@
         "rationale": "The short-term bearish stance is driven by the significant revenue guidance miss, which has reset near-term expectations and will lead to analyst downgrades. The stock will underperform as the market prices in this uncertainty. The long-term neutral stance reflects that the underlying demand for Qualcomm's flagship chips remains strong; the issue is a temporary supply bottleneck. Once memory supply normalizes, deferred sales should materialize, but the timing is uncertain, preventing a bullish call."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company's core operational performance weakened quarter-over-quarter, with significant declines in revenue, operating income, and cash flow. A substantial increase in net income, likely due to a non-operating event, masks this underlying weakness and requires further investigation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
+      "2 agents lean bearish on the short-term horizon.",
       "2 agents lean neutral on the long-term horizon."
     ],
     "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
       "Bullish": 0,
-      "Neutral": 2,
-      "Bearish": 1
+      "Neutral": 1,
+      "Bearish": 2
     },
     "long_stance_counts": {
-      "Bullish": 1,
+      "Bullish": 0,
       "Neutral": 2,
-      "Bearish": 0
+      "Bearish": 1
     },
     "agent_packets": [
       {
@@ -393,261 +393,6 @@
       {
         "ticker": "QCOM",
         "company": "Qualcomm",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-        "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Recent Pullback From Highs",
-            "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Instability",
-            "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-          },
-          {
-            "type": "Volume",
-            "signal": "Increased Selling Conviction",
-            "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Lagging Market Performance",
-            "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Bullish Trend Confirmation",
-            "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 2.21%"
-          }
-        ],
-        "risks": [
-          "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-          "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-          "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-        "raw_packet": {
-          "ticker": "QCOM",
-          "company": "Qualcomm",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-          "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Recent Pullback From Highs",
-              "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Selling Conviction",
-              "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Lagging Market Performance",
-              "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Bullish Trend Confirmation",
-              "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 2.21%"
-            }
-          ],
-          "risks": [
-            "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-            "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-            "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-          "raw_packet": {
-            "ticker": "QCOM",
-            "company": "Qualcomm",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-            "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Recent Pullback From Highs",
-                "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Selling Conviction",
-                "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Lagging Market Performance",
-                "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Bullish Trend Confirmation",
-                "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 2.21%"
-              }
-            ],
-            "risks": [
-              "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-              "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-              "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-            "raw_packet": {
-              "ticker": "QCOM",
-              "company": "Qualcomm",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Recent Pullback From Highs",
-                  "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Selling Conviction",
-                  "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Lagging Market Performance",
-                  "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Bullish Trend Confirmation",
-                  "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 2.21%"
-                }
-              ],
-              "risks": [
-                "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-                "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-                "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-              ],
-              "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-              "core_insight": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "QCOM",
-        "company": "Qualcomm",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -801,6 +546,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "QCOM",
+        "company": "Qualcomm",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+        "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "bearish post-earnings confirmation",
+            "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "bearish trend alignment",
+            "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+          },
+          {
+            "type": "MACD",
+            "signal": "strong bearish momentum",
+            "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "significant market underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "approaching oversold",
+            "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "significant drawdown",
+            "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.48%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.92x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+          }
+        ],
+        "risks": [
+          "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+          "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+        ],
+        "citations": [],
+        "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+        "raw_packet": {
+          "ticker": "QCOM",
+          "company": "Qualcomm",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+          "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bearish post-earnings confirmation",
+              "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "bearish trend alignment",
+              "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "strong bearish momentum",
+              "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "approaching oversold",
+              "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "significant drawdown",
+              "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.48%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.92x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+            }
+          ],
+          "risks": [
+            "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+            "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+          ],
+          "citations": [],
+          "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+          "raw_packet": {
+            "ticker": "QCOM",
+            "company": "Qualcomm",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+            "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bearish post-earnings confirmation",
+                "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "bearish trend alignment",
+                "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "strong bearish momentum",
+                "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "approaching oversold",
+                "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "significant drawdown",
+                "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.48%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.92x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+              }
+            ],
+            "risks": [
+              "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+              "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+            ],
+            "citations": [],
+            "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+            "raw_packet": {
+              "ticker": "QCOM",
+              "company": "Qualcomm",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bearish post-earnings confirmation",
+                  "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "bearish trend alignment",
+                  "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "strong bearish momentum",
+                  "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "approaching oversold",
+                  "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "significant drawdown",
+                  "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.48%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.92x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+                }
+              ],
+              "risks": [
+                "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+                "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+              ],
+              "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+              "core_insight": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
+            }
+          }
+        }
       }
     ]
   },
@@ -825,35 +841,35 @@
           "rationale": "The short-term bearish stance is driven by the significant revenue guidance miss, which has reset near-term expectations and will lead to analyst downgrades. The stock will underperform as the market prices in this uncertainty. The long-term neutral stance reflects that the underlying demand for Qualcomm's flagship chips remains strong; the issue is a temporary supply bottleneck. Once memory supply normalizes, deferred sales should materialize, but the timing is uncertain, preventing a bullish call."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "The company's core operational performance weakened quarter-over-quarter, with significant declines in revenue, operating income, and cash flow. A substantial increase in net income, likely due to a non-operating event, masks this underlying weakness and requires further investigation."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
+        "2 agents lean bearish on the short-term horizon.",
         "2 agents lean neutral on the long-term horizon."
       ],
       "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
         "Bullish": 0,
-        "Neutral": 2,
-        "Bearish": 1
+        "Neutral": 1,
+        "Bearish": 2
       },
       "long_stance_counts": {
-        "Bullish": 1,
+        "Bullish": 0,
         "Neutral": 2,
-        "Bearish": 0
+        "Bearish": 1
       },
       "agent_packets": [
         {
@@ -1322,325 +1338,6 @@
         {
           "ticker": "QCOM",
           "company": "Qualcomm",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-          "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Recent Pullback From Highs",
-              "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Selling Conviction",
-              "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Lagging Market Performance",
-              "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Bullish Trend Confirmation",
-              "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 2.21%"
-            }
-          ],
-          "risks": [
-            "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-            "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-            "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-          "raw_packet": {
-            "ticker": "QCOM",
-            "company": "Qualcomm",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-            "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Recent Pullback From Highs",
-                "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Selling Conviction",
-                "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Lagging Market Performance",
-                "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Bullish Trend Confirmation",
-                "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 2.21%"
-              }
-            ],
-            "risks": [
-              "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-              "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-              "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-            "raw_packet": {
-              "ticker": "QCOM",
-              "company": "Qualcomm",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-              "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Recent Pullback From Highs",
-                  "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Selling Conviction",
-                  "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Lagging Market Performance",
-                  "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Bullish Trend Confirmation",
-                  "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 2.21%"
-                }
-              ],
-              "risks": [
-                "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-                "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-                "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-              "raw_packet": {
-                "ticker": "QCOM",
-                "company": "Qualcomm",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bullish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-                "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Accelerating Bullish Momentum",
-                    "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Overbought Condition",
-                    "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Recent Pullback From Highs",
-                    "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Instability",
-                    "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Increased Selling Conviction",
-                    "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Lagging Market Performance",
-                    "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Bullish Trend Confirmation",
-                    "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 2.21%"
-                  }
-                ],
-                "risks": [
-                  "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-                  "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-                  "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-                "raw_packet": {
-                  "ticker": "QCOM",
-                  "company": "Qualcomm",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Accelerating Bullish Momentum",
-                      "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Overbought Condition",
-                      "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Recent Pullback From Highs",
-                      "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Instability",
-                      "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Increased Selling Conviction",
-                      "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Lagging Market Performance",
-                      "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Bullish Trend Confirmation",
-                      "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 2.21%"
-                    }
-                  ],
-                  "risks": [
-                    "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-                    "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-                    "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-                  ],
-                  "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-                  "core_insight": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "QCOM",
-          "company": "Qualcomm",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1828,6 +1525,345 @@
                     "thesis_impact": "Weakened",
                     "thesis_impact_reasoning": "The thesis for fundamental strength is weakened by the significant quarter-over-quarter declines in core operational metrics like revenue, operating income, and free cash flow. The headline surge in net income appears anomalous and inconsistent with operations, raising questions about earnings quality."
                   }
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "QCOM",
+          "company": "Qualcomm",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+          "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bearish post-earnings confirmation",
+              "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "bearish trend alignment",
+              "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "strong bearish momentum",
+              "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "approaching oversold",
+              "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "significant drawdown",
+              "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.48%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.92x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+            }
+          ],
+          "risks": [
+            "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+            "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+          ],
+          "citations": [],
+          "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+          "raw_packet": {
+            "ticker": "QCOM",
+            "company": "Qualcomm",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+            "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bearish post-earnings confirmation",
+                "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "bearish trend alignment",
+                "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "strong bearish momentum",
+                "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "approaching oversold",
+                "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "significant drawdown",
+                "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.48%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.92x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+              }
+            ],
+            "risks": [
+              "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+              "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+            ],
+            "citations": [],
+            "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+            "raw_packet": {
+              "ticker": "QCOM",
+              "company": "Qualcomm",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+              "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bearish post-earnings confirmation",
+                  "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "bearish trend alignment",
+                  "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "strong bearish momentum",
+                  "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "approaching oversold",
+                  "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "significant drawdown",
+                  "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.48%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.92x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+                }
+              ],
+              "risks": [
+                "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+                "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+              ],
+              "citations": [],
+              "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+              "raw_packet": {
+                "ticker": "QCOM",
+                "company": "Qualcomm",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.9,
+                "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+                "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "bearish post-earnings confirmation",
+                    "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "bearish trend alignment",
+                    "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "strong bearish momentum",
+                    "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "significant market underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "approaching oversold",
+                    "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "bearish_trend",
+                    "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "significant drawdown",
+                    "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.48%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "strong participation",
+                    "evidence": "Volume spike ratio 1.92x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+                  }
+                ],
+                "risks": [
+                  "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+                  "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+                ],
+                "citations": [],
+                "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+                "raw_packet": {
+                  "ticker": "QCOM",
+                  "company": "Qualcomm",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "bearish post-earnings confirmation",
+                      "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "bearish trend alignment",
+                      "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "strong bearish momentum",
+                      "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "significant market underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "approaching oversold",
+                      "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "bearish_trend",
+                      "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "significant drawdown",
+                      "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.48%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "strong participation",
+                      "evidence": "Volume spike ratio 1.92x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+                    }
+                  ],
+                  "risks": [
+                    "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+                    "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+                  ],
+                  "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+                  "core_insight": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
                 }
               }
             }
@@ -2188,261 +2224,6 @@
       {
         "ticker": "QCOM",
         "company": "Qualcomm",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-        "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Recent Pullback From Highs",
-            "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Instability",
-            "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-          },
-          {
-            "type": "Volume",
-            "signal": "Increased Selling Conviction",
-            "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Lagging Market Performance",
-            "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Bullish Trend Confirmation",
-            "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 2.21%"
-          }
-        ],
-        "risks": [
-          "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-          "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-          "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-        "raw_packet": {
-          "ticker": "QCOM",
-          "company": "Qualcomm",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-          "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Recent Pullback From Highs",
-              "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Instability",
-              "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Selling Conviction",
-              "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Lagging Market Performance",
-              "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Bullish Trend Confirmation",
-              "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 2.21%"
-            }
-          ],
-          "risks": [
-            "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-            "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-            "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-          "raw_packet": {
-            "ticker": "QCOM",
-            "company": "Qualcomm",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-            "stance_rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Recent Pullback From Highs",
-                "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Instability",
-                "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Selling Conviction",
-                "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Lagging Market Performance",
-                "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Bullish Trend Confirmation",
-                "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 2.21%"
-              }
-            ],
-            "risks": [
-              "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-              "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-              "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-            "raw_packet": {
-              "ticker": "QCOM",
-              "company": "Qualcomm",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is strong due to the bullish trend structure (price > all key MAs) and MACD momentum. It is not higher because conflicting signals, such as an overbought RSI, a recent pullback on increased volume, and high short-term volatility, suggest a pause or consolidation is likely.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $168.38 is significantly above the MA20 ($142.42), MA50 ($137.06), and MA200 ($155.44), indicating a strong uptrend across multiple timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A bullish crossover is active with a large positive histogram (4.386), showing that upward momentum was strengthening."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 71.22 is above the 70 threshold, indicating the asset was extended and potentially due for a price correction or consolidation."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Recent Pullback From Highs",
-                  "evidence": "The stock was in a 9.25% drawdown from its recent peak, indicating profit-taking or a loss of short-term momentum."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Instability",
-                  "evidence": "Recent volatility (70.23%) is nearly double the annualized volatility (36.4%), signaling a period of significant price swings and higher risk."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Selling Conviction",
-                  "evidence": "The latest price drop of -4.87% occurred on volume that was 1.27x the recent average, suggesting some conviction behind the pullback."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Lagging Market Performance",
-                  "evidence": "Despite its own uptrend, QCOM underperformed the SPY benchmark with a relative return of -5.29% over the analysis period."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Bullish Trend Confirmation",
-                  "evidence": "The stock was classified in a 'bullish_trend' market regime, providing context for the prevailing upward price action."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 2.21%"
-                }
-              ],
-              "risks": [
-                "The overbought RSI (71.22) suggests a high risk of price reversion or a period of sideways consolidation in the near term.",
-                "The recent pullback of -4.87% on elevated volume indicates that sellers were becoming more active at these price levels.",
-                "Extremely high recent volatility (70.2%) points to price instability and a riskier trading environment."
-              ],
-              "summary": "As of 2026/02/04, QCOM was in a strong, confirmed long-term uptrend, with its price trading well above the 20, 50, and 200-day moving averages and supported by strong MACD momentum. However, the stock was showing clear signs of short-term exhaustion, including an overbought RSI, a recent 9.25% pullback from highs on increased volume, and exceptionally high volatility.",
-              "core_insight": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "QCOM",
-        "company": "Qualcomm",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -2596,6 +2377,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "QCOM",
+        "company": "Qualcomm",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+        "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "bearish post-earnings confirmation",
+            "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "bearish trend alignment",
+            "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+          },
+          {
+            "type": "MACD",
+            "signal": "strong bearish momentum",
+            "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "significant market underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "approaching oversold",
+            "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "significant drawdown",
+            "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.48%"
+          },
+          {
+            "type": "Volume",
+            "signal": "strong participation",
+            "evidence": "Volume spike ratio 1.92x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+          }
+        ],
+        "risks": [
+          "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+          "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+        ],
+        "citations": [],
+        "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+        "raw_packet": {
+          "ticker": "QCOM",
+          "company": "Qualcomm",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+          "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bearish post-earnings confirmation",
+              "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "bearish trend alignment",
+              "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+            },
+            {
+              "type": "MACD",
+              "signal": "strong bearish momentum",
+              "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "approaching oversold",
+              "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "significant drawdown",
+              "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.48%"
+            },
+            {
+              "type": "Volume",
+              "signal": "strong participation",
+              "evidence": "Volume spike ratio 1.92x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+            }
+          ],
+          "risks": [
+            "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+            "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+          ],
+          "citations": [],
+          "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+          "raw_packet": {
+            "ticker": "QCOM",
+            "company": "Qualcomm",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+            "stance_rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bearish post-earnings confirmation",
+                "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "bearish trend alignment",
+                "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+              },
+              {
+                "type": "MACD",
+                "signal": "strong bearish momentum",
+                "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "approaching oversold",
+                "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "significant drawdown",
+                "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.48%"
+              },
+              {
+                "type": "Volume",
+                "signal": "strong participation",
+                "evidence": "Volume spike ratio 1.92x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+              }
+            ],
+            "risks": [
+              "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+              "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+            ],
+            "citations": [],
+            "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+            "raw_packet": {
+              "ticker": "QCOM",
+              "company": "Qualcomm",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is very high due to the powerful confluence of signals: a severe post-earnings negative reaction on exceptional volume, a breakdown below all key moving averages, and deeply bearish momentum indicators.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bearish post-earnings confirmation",
+                  "evidence": "Post-1d return -8.46%, abnormal vs QQQ -7.02%, reaction volume 3.27x trailing average, reaction date 2026-02-05"
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "bearish trend alignment",
+                  "evidence": "The price at $147.94 is trading significantly below its MA20 ($158.81), MA50 ($166.85), and MA200 ($158.71), confirming a strong bearish trend structure."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "strong bearish momentum",
+                  "evidence": "The MACD line (-5.99) is well below the signal line (-5.19) with a negative histogram, indicating accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -27.4%, highlighting profound relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "approaching oversold",
+                  "evidence": "RSI at 30.17 reflects strong selling pressure, though it is nearing levels that could precipitate a short-term bounce."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "The stock is in a formally classified 'bearish_trend' market regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "significant drawdown",
+                  "evidence": "The stock is currently 20.26% off its recent highs, indicating substantial downside has been realized."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.48%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "strong participation",
+                  "evidence": "Volume spike ratio 1.92x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 38.8%, Recent 26.69%"
+                }
+              ],
+              "risks": [
+                "The RSI at 30.17 is approaching oversold territory, which could lead to a short-term counter-trend rally or 'dead cat bounce'.",
+                "The extreme negative price move post-earnings could be followed by a period of consolidation as sellers take profits."
+              ],
+              "summary": "As of Feb 4, 2026, QCOM exhibits a strongly bearish technical profile. The analysis is dominated by a severe negative post-earnings reaction on massive volume, which confirms and accelerates an existing downtrend. The price is below all key moving averages, momentum is deeply negative, and the stock is drastically underperforming the broader market. All major technical factors are aligned to the downside.",
+              "core_insight": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
+            }
+          }
+        }
       }
     ]
   },
@@ -2603,22 +2655,22 @@
     "ticker": "QCOM",
     "company": "Qualcomm",
     "final_short_term_stance": "Bearish",
-    "final_long_term_stance": "Bullish",
-    "investment_action": "Wait for Pullback / Scale In",
-    "position_size_hint": "Small starter, add on stabilization",
-    "confidence": 0.75,
-    "core_thesis": "Qualcomm is facing a temporary, supply-driven setback due to memory constraints, which has negatively impacted near-term guidance and will pressure the stock. However, this is not a demand issue. The powerful, established long-term uptrend and strong underlying product demand suggest this pullback represents a buying opportunity for long-term investors once the near-term selling pressure abates.",
-    "why_now": "The post-earnings guidance miss has created a clear catalyst for a short-term pullback within a strong long-term uptrend. This dislocation between near-term sentiment and long-term fundamentals provides a window to potentially enter a quality name at a more attractive price.",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Short / Avoid",
+    "position_size_hint": "Normal",
+    "confidence": 0.8,
+    "core_thesis": "Qualcomm's weak forward guidance, explicitly attributed to a temporary memory supply constraint, has created a clear short-term negative catalyst. The market is aggressively pricing in this near-term uncertainty, leading to underperformance. However, because the issue is supply-related and not a structural collapse in end-demand for Qualcomm's products, the long-term outlook is considered neutral, pending the resolution of the bottleneck.",
+    "why_now": "The stock has just experienced a severe post-earnings breakdown on massive volume in direct response to the company's disappointing Q2 revenue guidance. This confluence of a fundamental catalyst and a technical confirmation provides a high-probability window for continued near-term underperformance.",
     "key_supporting_evidence": [
-      "Qualcomm issued Q2 revenue guidance approximately 5% below consensus, explicitly citing 'memory supply constraints' as the cause (news_macro agent).",
-      "The stock is in a confirmed long-term 'bullish_trend' market regime, with price trading significantly above its 50-day and 200-day moving averages (market_technical agent).",
-      "The negative news serves as a catalyst for a necessary consolidation, as the stock was technically overbought with an RSI of 71.22 prior to the report (market_technical agent).",
-      "The issue is identified as a supply-side problem (memory shortage), not a demand-side failure, implying revenue is likely deferred, not lost permanently (news_macro agent)."
+      "Qualcomm issued Q2 revenue guidance approximately 5% below consensus, citing 'memory supply constraints' in the handset business.",
+      "The stock experienced a severe post-earnings sell-off, with a -8.46% return on reaction volume 3.27x the trailing average, confirming the market's negative interpretation.",
+      "Technically, the price has broken down below all key moving averages (MA20, MA50, MA200), and momentum indicators like MACD are strongly bearish.",
+      "The news_macro agent's core insight that this is a supply-side issue, not a demand-side failure, which frames the problem as temporary rather than structural."
     ],
     "key_risks": [
-      "The 'memory constraint' could be masking a true and unanticipated slowdown in smartphone end-demand.",
-      "The supply bottleneck may persist for longer than the market expects, leading to a protracted period of stock underperformance and further estimate cuts.",
-      "The technical pullback could be more severe than expected, breaking key long-term support levels (e.g., the 200-day moving average) and invalidating the bullish trend structure."
+      "The 'memory constraint' narrative provided by management could be a smokescreen for a more serious, underlying deterioration in end-market demand for smartphones.",
+      "The stock is approaching technically oversold levels (RSI ~30), which could trigger a sharp, short-term counter-trend rally or 'dead cat bounce'.",
+      "The memory supply bottleneck could resolve much faster than the market anticipates, removing the overhang on the stock and causing a rapid reversal."
     ],
     "agent_view_summary": [
       {
@@ -2629,18 +2681,18 @@
         "rationale": "The short-term bearish stance is driven by the significant revenue guidance miss, which has reset near-term expectations and will lead to analyst downgrades. The stock will underperform as the market prices in this uncertainty. The long-term neutral stance reflects that the underlying demand for Qualcomm's flagship chips remains strong; the issue is a temporary supply bottleneck. Once memory supply normalizes, deferred sales should materialize, but the timing is uncertain, preventing a bullish call."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical picture was a conflict between a powerful, established uptrend and significant short-term overbought conditions. This suggests that while the long-term outlook was bullish, a period of consolidation or a deeper pullback was highly probable."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company's core operational performance weakened quarter-over-quarter, with significant declines in revenue, operating income, and cash flow. A substantial increase in net income, likely due to a non-operating event, masks this underlying weakness and requires further investigation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The core insight is the powerful, high-conviction bearish continuation signal from the post-earnings sell-off. The abnormal drop of -7.02% versus the QQQ on 3.27x average volume confirms the market's strong rejection of the company's results and/or outlook, solidifying the pre-existing downtrend and suggesting further downside potential."
       }
     ],
     "debate_summary": {
@@ -2651,29 +2703,43 @@
       ],
       "debate_responses": []
     },
-    "reason_for_final_decision": "The committee's decision is an override of the deterministic guardrail's simple stance to provide a more nuanced, actionable view. We have high confidence from the news_macro agent that the guidance miss is due to a temporary supply issue, not a structural demand problem. The market_technical agent confirms the stock was already overbought and due for a pullback. The confluence of these two high-confidence views creates a clear picture: short-term pain for long-term gain. We are therefore adopting a Bearish short-term stance to avoid buying into weakness, but a Bullish long-term stance to prepare for an entry at a better price. The low-confidence fundamental agent's report was discounted due to acknowledged data inconsistencies, which were clarified by the news agent's analysis.",
+    "routing_profile": {
+      "bucket": "ai_semis",
+      "short": {
+        "market_technical": 0.45,
+        "news_macro": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI semiconductor moves depend on technical confirmation plus second-order supply-chain and capex signals."
+    },
+    "reason_for_final_decision": "The committee is in strong agreement on a short-term Bearish stance. A clear negative catalyst (guidance miss) has been confirmed by a powerful, high-volume technical breakdown. While the deterministic guardrail suggested a long-term Bearish view, I am overriding this to Neutral. The primary evidence from the news_macro agent indicates the core problem is a temporary supply bottleneck, not a structural demand failure. This justifies near-term caution and a 'Short/Avoid' action, but does not support a long-term structural bearish thesis. The appropriate action is to position for near-term weakness while acknowledging the potential for recovery once the supply issue is resolved.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.35,
-          "contribution": -0.28
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.0
+          "weight": 0.4,
+          "contribution": -0.32
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.15,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.9,
+          "weight": 0.45,
+          "contribution": -0.405
         }
       ],
       "long": [
@@ -2681,28 +2747,28 @@
           "agent_name": "news_macro",
           "stance": "Neutral",
           "confidence": 0.8,
-          "weight": 0.35,
+          "weight": 0.4,
           "contribution": 0.0
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": 0.15
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.45,
+          "weight": 0.35,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.9,
+          "weight": 0.25,
+          "contribution": -0.225
         }
       ]
     },
     "scores": {
-      "short": -0.4133,
-      "long": 0.2655
+      "short": -0.9416,
+      "long": -0.3462
     },
     "llm_decision_used": true
   }

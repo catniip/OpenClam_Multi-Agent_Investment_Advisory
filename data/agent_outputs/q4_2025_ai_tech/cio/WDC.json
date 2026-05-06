@@ -11,31 +11,30 @@
         "rationale": "Short-term: The stock showed a muted after-hours reaction (+2%) to a strong beat-and-raise, suggesting high expectations were already priced in and profit-taking is likely. On a relative basis against QQQ, it may lag as the market digests the news. Long-term: The blowout guidance confirms WDC is a primary beneficiary of the AI infrastructure buildout, a powerful multi-quarter tailwind that should drive significant earnings growth and multiple re-rating."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.9,
-        "rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.5,
         "rationale": "Western Digital Corporation reported an exceptionally strong quarter characterized by significant quarter-over-quarter growth in revenue, profitability, and cash flow. Gross and operating margins expanded, and the company maintains a healthy balance sheet with a net cash position. While the provided growth metrics are impressive, the valuation requires peer context, and a lack of consensus estimates, guidance, or management commentary introduces significant uncertainty."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
       }
     ],
     "areas_of_agreement": [
+      "2 agents lean bearish on the short-term horizon.",
       "3 agents lean bullish on the long-term horizon."
     ],
-    "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
-    ],
+    "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
+      "Bullish": 0,
       "Neutral": 1,
-      "Bearish": 1
+      "Bearish": 2
     },
     "long_stance_counts": {
       "Bullish": 3,
@@ -418,261 +417,6 @@
       {
         "ticker": "WDC",
         "company": "Western Digital",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.9,
-        "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-        "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-          },
-          {
-            "type": "Returns",
-            "signal": "Powerful Recent Price Action",
-            "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-          },
-          {
-            "type": "Volume",
-            "signal": "Confirmed Buying Interest",
-            "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Volatility Environment",
-            "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Trading at New Highs",
-            "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-          "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-          "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-        "raw_packet": {
-          "ticker": "WDC",
-          "company": "Western Digital",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.9,
-          "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-          "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-            },
-            {
-              "type": "Returns",
-              "signal": "Powerful Recent Price Action",
-              "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirmed Buying Interest",
-              "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Volatility Environment",
-              "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Trading at New Highs",
-              "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-            "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-            "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-          "raw_packet": {
-            "ticker": "WDC",
-            "company": "Western Digital",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.9,
-            "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-            "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-              },
-              {
-                "type": "Returns",
-                "signal": "Powerful Recent Price Action",
-                "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirmed Buying Interest",
-                "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Volatility Environment",
-                "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Trading at New Highs",
-                "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-              "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-              "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-            "raw_packet": {
-              "ticker": "WDC",
-              "company": "Western Digital",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.9,
-              "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Powerful Recent Price Action",
-                  "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirmed Buying Interest",
-                  "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Volatility Environment",
-                  "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Trading at New Highs",
-                  "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-                "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-                "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-              ],
-              "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-              "core_insight": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "WDC",
-        "company": "Western Digital",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -822,17 +566,287 @@
             }
           }
         }
+      },
+      {
+        "ticker": "WDC",
+        "company": "Western Digital",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+        "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "strong bearish reversal confirmation",
+            "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+          },
+          {
+            "type": "RSI",
+            "signal": "overbought pullback trigger",
+            "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+          },
+          {
+            "type": "Volume",
+            "signal": "high conviction selling pressure",
+            "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "intact but challenged long-term uptrend",
+            "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+          },
+          {
+            "type": "MACD",
+            "signal": "abrupt momentum reversal",
+            "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+          },
+          {
+            "type": "Volatility",
+            "signal": "high-risk environment realized",
+            "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "prior leadership now at risk",
+            "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 2.7%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high_volatility_bullish",
+            "evidence": "Regime classification: high_volatility_bullish"
+          }
+        ],
+        "risks": [
+          "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+          "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+        "raw_packet": {
+          "ticker": "WDC",
+          "company": "Western Digital",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+          "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "strong bearish reversal confirmation",
+              "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+            },
+            {
+              "type": "RSI",
+              "signal": "overbought pullback trigger",
+              "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction selling pressure",
+              "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "intact but challenged long-term uptrend",
+              "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+            },
+            {
+              "type": "MACD",
+              "signal": "abrupt momentum reversal",
+              "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+            },
+            {
+              "type": "Volatility",
+              "signal": "high-risk environment realized",
+              "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "prior leadership now at risk",
+              "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 2.7%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+            "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+          "raw_packet": {
+            "ticker": "WDC",
+            "company": "Western Digital",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+            "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "strong bearish reversal confirmation",
+                "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+              },
+              {
+                "type": "RSI",
+                "signal": "overbought pullback trigger",
+                "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction selling pressure",
+                "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "intact but challenged long-term uptrend",
+                "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+              },
+              {
+                "type": "MACD",
+                "signal": "abrupt momentum reversal",
+                "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+              },
+              {
+                "type": "Volatility",
+                "signal": "high-risk environment realized",
+                "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "prior leadership now at risk",
+                "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 2.7%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+              "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+            "raw_packet": {
+              "ticker": "WDC",
+              "company": "Western Digital",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "strong bearish reversal confirmation",
+                  "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "overbought pullback trigger",
+                  "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction selling pressure",
+                  "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "intact but challenged long-term uptrend",
+                  "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "abrupt momentum reversal",
+                  "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high-risk environment realized",
+                  "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "prior leadership now at risk",
+                  "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 2.7%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+                "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+              ],
+              "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+              "core_insight": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": true,
+    "triggered": false,
     "trigger": {
-      "debate_required": true,
-      "conflict_level": "high",
+      "debate_required": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ]
     },
     "synthesis": {
@@ -847,31 +861,30 @@
           "rationale": "Short-term: The stock showed a muted after-hours reaction (+2%) to a strong beat-and-raise, suggesting high expectations were already priced in and profit-taking is likely. On a relative basis against QQQ, it may lag as the market digests the news. Long-term: The blowout guidance confirms WDC is a primary beneficiary of the AI infrastructure buildout, a powerful multi-quarter tailwind that should drive significant earnings growth and multiple re-rating."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.9,
-          "rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.5,
           "rationale": "Western Digital Corporation reported an exceptionally strong quarter characterized by significant quarter-over-quarter growth in revenue, profitability, and cash flow. Gross and operating margins expanded, and the company maintains a healthy balance sheet with a net cash position. While the provided growth metrics are impressive, the valuation requires peer context, and a lack of consensus estimates, guidance, or management commentary introduces significant uncertainty."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
         }
       ],
       "areas_of_agreement": [
+        "2 agents lean bearish on the short-term horizon.",
         "3 agents lean bullish on the long-term horizon."
       ],
-      "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
-      ],
+      "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
+        "Bullish": 0,
         "Neutral": 1,
-        "Bearish": 1
+        "Bearish": 2
       },
       "long_stance_counts": {
         "Bullish": 3,
@@ -1377,325 +1390,6 @@
         {
           "ticker": "WDC",
           "company": "Western Digital",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.9,
-          "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-          "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-            },
-            {
-              "type": "Returns",
-              "signal": "Powerful Recent Price Action",
-              "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirmed Buying Interest",
-              "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Volatility Environment",
-              "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Trading at New Highs",
-              "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-            "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-            "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-          "raw_packet": {
-            "ticker": "WDC",
-            "company": "Western Digital",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.9,
-            "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-            "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-              },
-              {
-                "type": "Returns",
-                "signal": "Powerful Recent Price Action",
-                "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirmed Buying Interest",
-                "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Volatility Environment",
-                "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Trading at New Highs",
-                "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-              "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-              "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-            "raw_packet": {
-              "ticker": "WDC",
-              "company": "Western Digital",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bullish",
-              "confidence": 0.9,
-              "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-              "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Powerful Recent Price Action",
-                  "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirmed Buying Interest",
-                  "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Volatility Environment",
-                  "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Trading at New Highs",
-                  "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-                "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-                "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-              ],
-              "citations": [],
-              "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-              "raw_packet": {
-                "ticker": "WDC",
-                "company": "Western Digital",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bullish",
-                "confidence": 0.9,
-                "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-                "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Accelerating Bullish Momentum",
-                    "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "Powerful Recent Price Action",
-                    "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Overbought Condition",
-                    "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Confirmed Buying Interest",
-                    "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "High Volatility Environment",
-                    "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Trading at New Highs",
-                    "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "high_volatility_bullish",
-                    "evidence": "Regime classification: high_volatility_bullish"
-                  }
-                ],
-                "risks": [
-                  "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-                  "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-                  "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-                ],
-                "citations": [],
-                "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-                "raw_packet": {
-                  "ticker": "WDC",
-                  "company": "Western Digital",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.9,
-                  "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Accelerating Bullish Momentum",
-                      "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "Powerful Recent Price Action",
-                      "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Overbought Condition",
-                      "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Confirmed Buying Interest",
-                      "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "High Volatility Environment",
-                      "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Trading at New Highs",
-                      "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "high_volatility_bullish",
-                      "evidence": "Regime classification: high_volatility_bullish"
-                    }
-                  ],
-                  "risks": [
-                    "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-                    "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-                    "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-                  ],
-                  "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-                  "core_insight": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "WDC",
-          "company": "Western Digital",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1882,61 +1576,357 @@
               }
             }
           }
+        },
+        {
+          "ticker": "WDC",
+          "company": "Western Digital",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+          "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "strong bearish reversal confirmation",
+              "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+            },
+            {
+              "type": "RSI",
+              "signal": "overbought pullback trigger",
+              "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction selling pressure",
+              "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "intact but challenged long-term uptrend",
+              "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+            },
+            {
+              "type": "MACD",
+              "signal": "abrupt momentum reversal",
+              "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+            },
+            {
+              "type": "Volatility",
+              "signal": "high-risk environment realized",
+              "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "prior leadership now at risk",
+              "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 2.7%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+            "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+          "raw_packet": {
+            "ticker": "WDC",
+            "company": "Western Digital",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+            "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "strong bearish reversal confirmation",
+                "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+              },
+              {
+                "type": "RSI",
+                "signal": "overbought pullback trigger",
+                "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction selling pressure",
+                "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "intact but challenged long-term uptrend",
+                "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+              },
+              {
+                "type": "MACD",
+                "signal": "abrupt momentum reversal",
+                "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+              },
+              {
+                "type": "Volatility",
+                "signal": "high-risk environment realized",
+                "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "prior leadership now at risk",
+                "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 2.7%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+              "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+            "raw_packet": {
+              "ticker": "WDC",
+              "company": "Western Digital",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+              "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "strong bearish reversal confirmation",
+                  "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "overbought pullback trigger",
+                  "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction selling pressure",
+                  "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "intact but challenged long-term uptrend",
+                  "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "abrupt momentum reversal",
+                  "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high-risk environment realized",
+                  "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "prior leadership now at risk",
+                  "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 2.7%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+                "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+              ],
+              "citations": [],
+              "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+              "raw_packet": {
+                "ticker": "WDC",
+                "company": "Western Digital",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bullish",
+                "confidence": 0.9,
+                "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+                "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "strong bearish reversal confirmation",
+                    "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "overbought pullback trigger",
+                    "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "high conviction selling pressure",
+                    "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "intact but challenged long-term uptrend",
+                    "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "abrupt momentum reversal",
+                    "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high-risk environment realized",
+                    "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "prior leadership now at risk",
+                    "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 2.7%"
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "contained drawdown",
+                    "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "high_volatility_bullish",
+                    "evidence": "Regime classification: high_volatility_bullish"
+                  }
+                ],
+                "risks": [
+                  "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+                  "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+                ],
+                "citations": [],
+                "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+                "raw_packet": {
+                  "ticker": "WDC",
+                  "company": "Western Digital",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "strong bearish reversal confirmation",
+                      "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "overbought pullback trigger",
+                      "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "high conviction selling pressure",
+                      "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "intact but challenged long-term uptrend",
+                      "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "abrupt momentum reversal",
+                      "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high-risk environment realized",
+                      "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "prior leadership now at risk",
+                      "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 2.7%"
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "contained drawdown",
+                      "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "high_volatility_bullish",
+                      "evidence": "Regime classification: high_volatility_bullish"
+                    }
+                  ],
+                  "risks": [
+                    "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+                    "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+                  ],
+                  "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+                  "core_insight": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [
-      {
-        "response_type": "agent_view_revision",
-        "agreement": [
-          "I agree with the `market_technical` agent that WDC is in a powerful, high-momentum bullish trend, as evidenced by its price action above key moving averages, accelerating MACD, and strong relative performance. This challenges my initial tactical bearish call.",
-          "I agree with the `fundamental` agent's assessment that the reported quarter was exceptionally strong, with significant QoQ growth in revenue (10.6%), impressive margin expansion, and robust cash flow. This strongly reinforces my long-term bullish thesis.",
-          "All agents, including my revised view, are aligned on a 'Bullish' long-term stance, creating a high-conviction consensus on the multi-quarter outlook driven by the AI infrastructure cycle."
-        ],
-        "disagreement": [
-          "I am revising my 'Bearish' short-term stance. My hypothesis of a 'sell the news' event due to a muted after-hours reaction is outweighed by the `market_technical` agent's evidence of a powerful, volume-confirmed uptrend. The technical picture suggests the market is absorbing the good news and continuing to buy, making a short-term bearish position untenable.",
-          "I assign a low weight to the `fundamental` agent's 'Neutral' short-term stance. Its rationale is based on missing consensus and guidance data, which my `news_macro` analysis explicitly provides (e.g., 'WDC Beats Q2...Estimates', 'Western Digital Sees Q3...vs...Est'). My view is more informed on this specific point."
-        ],
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.85,
-        "evidence_needed": [
-          "A detailed breakdown of revenue by segment (Cloud, Client, Consumer) from the earnings call transcript to confirm that AI/Cloud demand is the primary growth driver.",
-          "Management commentary from the earnings call regarding future capital expenditure plans to validate the timeline and magnitude of the second-order effects on equipment suppliers like LRCX and KLAC.",
-          "A comparative valuation analysis against peers (STX, MU) on forward-looking metrics to determine if WDC's valuation is justified relative to its growth and peers."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": "I agree with the fundamental and news agents that the long-term outlook for WDC is strongly bullish. The news of a blowout quarter and guidance, driven by AI infrastructure demand, provides a powerful fundamental underpinning for the technical uptrend I observed. I also strongly agree with the news agent's assessment that high expectations were priced in, which aligns directly with my key technical risk signal of a deeply overbought RSI (78).",
-        "disagreement": "I believe the news agent's 'Bearish' short-term stance is too strong. While I now agree a pullback is likely, this is better characterized as a 'Neutral' stance, reflecting consolidation or a correction within a powerful uptrend, not a trend reversal. The underlying technical and fundamental picture remains too strong to warrant a bearish label. I also assign low weight to the fundamental agent's uncertainty, as the news agent's report provided the missing context (beat and raise) that confirms the exceptional strength of the financial results.",
-        "revised_short_term_stance": "Neutral",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.8,
-        "evidence_needed": "The primary evidence needed is price action following the earnings report. I need to observe the character of the expected pullback or consolidation. Specifically, I will be monitoring if the price can hold above key prior support levels, such as the 20-day moving average, and whether selling volume is light, which would confirm this is a healthy consolidation before the next move higher."
-      },
-      {
-        "response_type": "revision",
-        "agreement": "I agree with the news_macro agent that WDC reported a significant Q2 beat and provided blowout Q3 guidance, driven by AI-related demand. This evidence, particularly the consensus estimates and forward guidance, directly fills the critical information gap in my initial analysis. I also agree with the market_technical agent's assessment that the stock is in a strong technical uptrend, which confirms the market's positive reception of the fundamental story.",
-        "disagreement": "I disagree with the news_macro agent's 'Short-term Bearish' stance. While the 'sell the news' rationale is a valid tactical consideration, from a fundamental perspective, a significant beat and a massive guidance raise is an unequivocally bullish short-term catalyst. The strength of the fundamental data and forward outlook outweighs the risk of short-term profit-taking in my assessment. The technical agent's 'overbought' signal is a risk, but strong fundamental catalysts can sustain such conditions.",
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.9,
-        "evidence_needed": [
-          "A full analysis of the earnings call transcript for management commentary on segment performance (Cloud vs. Client), sustainability of margin expansion, and the durability of the AI demand cycle.",
-          "A comparative valuation analysis against peers like Seagate (STX) and Micron (MU) using forward estimates to contextualize WDC's valuation in the current upcycle.",
-          "A detailed breakdown of net income to confirm the surge is primarily from core operations and not non-recurring items."
-        ]
-      }
-    ],
+    "debate_responses": [],
     "revised_packets": [
       {
         "ticker": "WDC",
         "company": "Western Digital",
         "agent_name": "news_macro",
-        "short_term_stance": "Bullish",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
-        "confidence": 0.85,
+        "confidence": 0.7,
         "confidence_rationale": "Confidence is high because the analysis is based on fresh, direct guidance from the company itself. The long-term fundamental story is unambiguous. The lower confidence component comes from the short-term stance, which is a tactical call on investor positioning and potential 'sell the news' psychology, rather than a fundamental flaw.",
         "stance_rationale": "Short-term: The stock showed a muted after-hours reaction (+2%) to a strong beat-and-raise, suggesting high expectations were already priced in and profit-taking is likely. On a relative basis against QQQ, it may lag as the market digests the news. Long-term: The blowout guidance confirms WDC is a primary beneficiary of the AI infrastructure buildout, a powerful multi-quarter tailwind that should drive significant earnings growth and multiple re-rating.",
         "key_signals": [
@@ -2300,299 +2290,15 @@
               "core_insight": "While the market focuses on the cyclical recovery of storage providers like WDC and Seagate, the more durable, less-crowded trade is in the upstream, non-cyclical leaders providing critical manufacturing equipment and controller components that enable this AI-driven storage buildout."
             }
           }
-        },
-        "debate_response": {
-          "response_type": "agent_view_revision",
-          "agreement": [
-            "I agree with the `market_technical` agent that WDC is in a powerful, high-momentum bullish trend, as evidenced by its price action above key moving averages, accelerating MACD, and strong relative performance. This challenges my initial tactical bearish call.",
-            "I agree with the `fundamental` agent's assessment that the reported quarter was exceptionally strong, with significant QoQ growth in revenue (10.6%), impressive margin expansion, and robust cash flow. This strongly reinforces my long-term bullish thesis.",
-            "All agents, including my revised view, are aligned on a 'Bullish' long-term stance, creating a high-conviction consensus on the multi-quarter outlook driven by the AI infrastructure cycle."
-          ],
-          "disagreement": [
-            "I am revising my 'Bearish' short-term stance. My hypothesis of a 'sell the news' event due to a muted after-hours reaction is outweighed by the `market_technical` agent's evidence of a powerful, volume-confirmed uptrend. The technical picture suggests the market is absorbing the good news and continuing to buy, making a short-term bearish position untenable.",
-            "I assign a low weight to the `fundamental` agent's 'Neutral' short-term stance. Its rationale is based on missing consensus and guidance data, which my `news_macro` analysis explicitly provides (e.g., 'WDC Beats Q2...Estimates', 'Western Digital Sees Q3...vs...Est'). My view is more informed on this specific point."
-          ],
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "A detailed breakdown of revenue by segment (Cloud, Client, Consumer) from the earnings call transcript to confirm that AI/Cloud demand is the primary growth driver.",
-            "Management commentary from the earnings call regarding future capital expenditure plans to validate the timeline and magnitude of the second-order effects on equipment suppliers like LRCX and KLAC.",
-            "A comparative valuation analysis against peers (STX, MU) on forward-looking metrics to determine if WDC's valuation is justified relative to its growth and peers."
-          ]
-        }
-      },
-      {
-        "ticker": "WDC",
-        "company": "Western Digital",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-        "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-          },
-          {
-            "type": "Returns",
-            "signal": "Powerful Recent Price Action",
-            "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-          },
-          {
-            "type": "Volume",
-            "signal": "Confirmed Buying Interest",
-            "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Volatility Environment",
-            "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Trading at New Highs",
-            "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-          "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-          "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-        "raw_packet": {
-          "ticker": "WDC",
-          "company": "Western Digital",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.9,
-          "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-          "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-            },
-            {
-              "type": "Returns",
-              "signal": "Powerful Recent Price Action",
-              "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirmed Buying Interest",
-              "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Volatility Environment",
-              "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Trading at New Highs",
-              "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-            "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-            "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-          "raw_packet": {
-            "ticker": "WDC",
-            "company": "Western Digital",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.9,
-            "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-            "stance_rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-              },
-              {
-                "type": "Returns",
-                "signal": "Powerful Recent Price Action",
-                "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirmed Buying Interest",
-                "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Volatility Environment",
-                "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Trading at New Highs",
-                "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-              "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-              "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-            "raw_packet": {
-              "ticker": "WDC",
-              "company": "Western Digital",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.9,
-              "confidence_rationale": "Confidence is high due to the strong confluence of signals across trend, momentum, and relative strength. The price is in a clear uptrend above all key moving averages, supported by a bullish MACD crossover. The only moderating factor is the overbought RSI, which represents a risk of pullback but does not negate the prevailing trend's strength as of the analysis date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at 442.36 is significantly above the MA20 (380.73), MA50 (320.18), and MA200 (192.79), indicating a robust uptrend across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "The MACD line (33.41) is above the signal line (29.48) with a positive and growing histogram (3.94), confirming strong upward momentum."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Powerful Recent Price Action",
-                  "evidence": "The stock has returned approximately 15.3% over the last 10 trading sessions, culminating in a price at a new high."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "The RSI reading of 78.0 is well above the 70 threshold, indicating the stock is in overbought territory and the recent move has been very aggressive."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has dramatically outperformed the SPY benchmark, showing a relative return of over 800% in the analyzed period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirmed Buying Interest",
-                  "evidence": "Recent price gains occurred on elevated volume, with a volume spike ratio of 1.3x, suggesting strong participation and conviction in the uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Volatility Environment",
-                  "evidence": "The stock exhibits high annualized volatility at 61.85%, which is consistent with the market regime being classified as 'high_volatility_bullish'."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Trading at New Highs",
-                  "evidence": "Current drawdown is 0.0%, indicating the price has reached a new peak for the period and is not in a pullback."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The RSI of 78.0 indicates a deeply overbought condition, which increases the risk of a short-term price correction or consolidation.",
-                "High annualized volatility (61.85%) suggests that while the trend is up, the potential for sharp and swift price pullbacks is elevated.",
-                "The price is extended, trading over 16% above its 20-day moving average, suggesting it is susceptible to mean-reversion."
-              ],
-              "summary": "As of 2026/01/29, Western Digital exhibited a powerful, high-momentum bullish trend. The price was trading at new highs, positioned well above its 20, 50, and 200-day moving averages, which were all aligned in a strong bullish structure. Momentum indicators like MACD and recent returns confirmed the trend's strength, while elevated volume lent conviction to the move. However, the stock was deeply overbought with an RSI of 78, signaling a potential for short-term exhaustion.",
-              "core_insight": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the fundamental and news agents that the long-term outlook for WDC is strongly bullish. The news of a blowout quarter and guidance, driven by AI infrastructure demand, provides a powerful fundamental underpinning for the technical uptrend I observed. I also strongly agree with the news agent's assessment that high expectations were priced in, which aligns directly with my key technical risk signal of a deeply overbought RSI (78).",
-          "disagreement": "I believe the news agent's 'Bearish' short-term stance is too strong. While I now agree a pullback is likely, this is better characterized as a 'Neutral' stance, reflecting consolidation or a correction within a powerful uptrend, not a trend reversal. The underlying technical and fundamental picture remains too strong to warrant a bearish label. I also assign low weight to the fundamental agent's uncertainty, as the news agent's report provided the missing context (beat and raise) that confirms the exceptional strength of the financial results.",
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
-          "evidence_needed": "The primary evidence needed is price action following the earnings report. I need to observe the character of the expected pullback or consolidation. Specifically, I will be monitoring if the price can hold above key prior support levels, such as the 20-day moving average, and whether selling volume is light, which would confirm this is a healthy consolidation before the next move higher."
         }
       },
       {
         "ticker": "WDC",
         "company": "Western Digital",
         "agent_name": "fundamental",
-        "short_term_stance": "Bullish",
+        "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
-        "confidence": 0.9,
+        "confidence": 0.5,
         "confidence_rationale": "Confidence is moderate because while the reported financial data is exceptionally strong, the analysis is severely limited by the absence of analyst consensus estimates, management guidance, and the earnings call transcript. These missing pieces are crucial for understanding market expectations, forward-looking outlook, and the context behind the numbers.",
         "stance_rationale": "Western Digital Corporation reported an exceptionally strong quarter characterized by significant quarter-over-quarter growth in revenue, profitability, and cash flow. Gross and operating margins expanded, and the company maintains a healthy balance sheet with a net cash position. While the provided growth metrics are impressive, the valuation requires peer context, and a lack of consensus estimates, guidance, or management commentary introduces significant uncertainty.",
         "key_signals": [
@@ -2737,19 +2443,277 @@
               }
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the news_macro agent that WDC reported a significant Q2 beat and provided blowout Q3 guidance, driven by AI-related demand. This evidence, particularly the consensus estimates and forward guidance, directly fills the critical information gap in my initial analysis. I also agree with the market_technical agent's assessment that the stock is in a strong technical uptrend, which confirms the market's positive reception of the fundamental story.",
-          "disagreement": "I disagree with the news_macro agent's 'Short-term Bearish' stance. While the 'sell the news' rationale is a valid tactical consideration, from a fundamental perspective, a significant beat and a massive guidance raise is an unequivocally bullish short-term catalyst. The strength of the fundamental data and forward outlook outweighs the risk of short-term profit-taking in my assessment. The technical agent's 'overbought' signal is a risk, but strong fundamental catalysts can sustain such conditions.",
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "A full analysis of the earnings call transcript for management commentary on segment performance (Cloud vs. Client), sustainability of margin expansion, and the durability of the AI demand cycle.",
-            "A comparative valuation analysis against peers like Seagate (STX) and Micron (MU) using forward estimates to contextualize WDC's valuation in the current upcycle.",
-            "A detailed breakdown of net income to confirm the surge is primarily from core operations and not non-recurring items."
-          ]
+        }
+      },
+      {
+        "ticker": "WDC",
+        "company": "Western Digital",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+        "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "strong bearish reversal confirmation",
+            "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+          },
+          {
+            "type": "RSI",
+            "signal": "overbought pullback trigger",
+            "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+          },
+          {
+            "type": "Volume",
+            "signal": "high conviction selling pressure",
+            "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "intact but challenged long-term uptrend",
+            "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+          },
+          {
+            "type": "MACD",
+            "signal": "abrupt momentum reversal",
+            "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+          },
+          {
+            "type": "Volatility",
+            "signal": "high-risk environment realized",
+            "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "prior leadership now at risk",
+            "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 2.7%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high_volatility_bullish",
+            "evidence": "Regime classification: high_volatility_bullish"
+          }
+        ],
+        "risks": [
+          "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+          "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+        "raw_packet": {
+          "ticker": "WDC",
+          "company": "Western Digital",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+          "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "strong bearish reversal confirmation",
+              "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+            },
+            {
+              "type": "RSI",
+              "signal": "overbought pullback trigger",
+              "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction selling pressure",
+              "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "intact but challenged long-term uptrend",
+              "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+            },
+            {
+              "type": "MACD",
+              "signal": "abrupt momentum reversal",
+              "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+            },
+            {
+              "type": "Volatility",
+              "signal": "high-risk environment realized",
+              "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "prior leadership now at risk",
+              "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 2.7%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+            "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+          "raw_packet": {
+            "ticker": "WDC",
+            "company": "Western Digital",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+            "stance_rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "strong bearish reversal confirmation",
+                "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+              },
+              {
+                "type": "RSI",
+                "signal": "overbought pullback trigger",
+                "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction selling pressure",
+                "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "intact but challenged long-term uptrend",
+                "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+              },
+              {
+                "type": "MACD",
+                "signal": "abrupt momentum reversal",
+                "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+              },
+              {
+                "type": "Volatility",
+                "signal": "high-risk environment realized",
+                "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "prior leadership now at risk",
+                "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 2.7%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+              "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+            "raw_packet": {
+              "ticker": "WDC",
+              "company": "Western Digital",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative earnings reaction. The -10.1% price drop on 2.44x average volume is a clear, high-conviction signal that overrides the prior bullish momentum for the short-term outlook.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "strong bearish reversal confirmation",
+                  "evidence": "The post-earnings price reaction was a -10.12% drop, representing a -8.92% abnormal negative return versus the QQQ benchmark, confirmed by reaction volume that was 2.44x the trailing average."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "overbought pullback trigger",
+                  "evidence": "The stock entered its earnings event with an RSI of 78.23, an overbought level that made it vulnerable to a sharp reversal on negative news."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction selling pressure",
+                  "evidence": "The post-earnings sell-off was accompanied by a volume surge of 2.44 times the average, indicating strong participation and conviction behind the bearish move."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "intact but challenged long-term uptrend",
+                  "evidence": "On the day of earnings (2026-01-29), the price at $278.28 was significantly above the MA20 ($221.70), MA50 ($188.82), and MA200 ($109.01), defining a strong long-term bullish structure that now faces a significant short-term shock."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "abrupt momentum reversal",
+                  "evidence": "A strong bullish MACD crossover was in place (Histogram: 5.08) heading into the event, highlighting the abruptness and significance of the bearish price reaction which broke the prevailing momentum."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high-risk environment realized",
+                  "evidence": "The stock's high annualized volatility of 60.21% materialized in a massive price swing, underscoring the inherent risk in the 'high_volatility_bullish' market regime."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "prior leadership now at risk",
+                  "evidence": "Despite a history of strong outperformance vs. the SPY, the severe negative post-earnings reaction puts its status as a market leader at immediate risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 2.7%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -0.46%, Max drawdown -43.91%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "The primary risk to a bearish stance is that this is a one-day overreaction and the powerful long-term uptrend reasserts itself, trapping short-sellers.",
+                "The powerful negative reaction on high volume could signal a major top, indicating the start of a deeper correction that breaks the long-term trend structure."
+              ],
+              "summary": "As of 2026-01-29, WDC exhibited a powerful but overbought uptrend. The market's reaction to its earnings report was a severe, high-volume bearish reversal, with the stock falling over 10% the next day. This event has established a strong bearish short-term bias, despite the long-term trend structure remaining technically intact. The prior bullish momentum has been decisively broken.",
+              "core_insight": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
+            }
+          }
         }
       }
     ]
@@ -2757,24 +2721,23 @@
   "final_decision": {
     "ticker": "WDC",
     "company": "Western Digital",
-    "final_short_term_stance": "Neutral",
+    "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Accumulate on Dips",
+    "investment_action": "Wait for pullback",
     "position_size_hint": "Normal",
     "confidence": 0.8,
-    "core_thesis": "Western Digital is a primary beneficiary of the secular AI infrastructure buildout, which is driving a strong cyclical upswing in demand for its storage products (NAND and HDD). This is translating into significant revenue growth, margin expansion, and earnings power, as evidenced by the latest quarterly results and forward guidance.",
-    "why_now": "The company just delivered a significant earnings beat and a blowout guidance raise, confirming the long-term thesis is playing out. However, the stock is technically overbought after a strong pre-earnings run-up, suggesting a period of consolidation or a pullback is likely in the immediate short-term. This potential weakness presents a more attractive entry point to build a long-term position.",
+    "core_thesis": "Western Digital is a key beneficiary of the secular AI infrastructure buildout, which is driving a strong upcycle in demand for its storage products. While the long-term fundamental story is compelling and intact, the stock was overbought heading into earnings, and the market's violent 'sell the news' reaction, despite a strong beat-and-raise, creates a tactical short-term headwind. The investment opportunity is to accumulate a position on the ensuing pullback.",
+    "why_now": "The post-earnings -10% price drop on high volume has created a dislocation between the negative short-term sentiment and the positive long-term fundamental outlook. This provides a window to plan an entry at a more attractive price, once the short-term selling pressure shows signs of abating.",
     "key_supporting_evidence": [
-      "Blowout Q3 guidance (Sales $3.1B-$3.3B vs $2.957B Est; EPS $2.15-$2.45 vs $1.96 Est) confirms accelerating business momentum.",
-      "Exceptionally strong Q2 results, including 10.6% QoQ revenue growth, gross margin expansion to 50.2%, and 49.8% QoQ Free Cash Flow growth.",
-      "Unanimous post-debate consensus among all agents on the long-term Bullish thesis.",
-      "The stock is in a powerful, volume-confirmed uptrend, trading above all key moving averages, indicating strong institutional buying interest."
+      "Blowout Q3 guidance (Adj EPS $2.15-$2.45 vs $1.96 Est; Sales $3.1B-$3.3B vs $2.96B Est) confirms WDC is a primary beneficiary of the AI infrastructure buildout.",
+      "Exceptionally strong reported fundamentals, including 10.6% QoQ revenue growth, significant gross and operating margin expansion, and 74% QoQ growth in Net Income.",
+      "The violent -10.1% post-earnings drop on 2.44x average volume confirms the 'sell the news' reaction from an overbought level (RSI 78), creating a more attractive entry point for a long-term position.",
+      "Despite the sharp pullback, the long-term technical uptrend remains intact, with the price still significantly above key long-term moving averages (MA50, MA200)."
     ],
     "key_risks": [
-      "The stock is in a deeply overbought condition (RSI of 78), which significantly increases the risk of a short-term price correction or consolidation.",
-      "The entire thesis is highly dependent on the continuation of the AI infrastructure spending boom. Any signal of a slowdown from hyperscalers would invalidate the long-term view.",
-      "As a cyclical company, WDC is subject to future supply/demand imbalances that could pressure pricing and margins.",
-      "Geopolitical risks related to semiconductor supply chains could disrupt operations and the expected growth trajectory."
+      "The primary risk is that the severe post-earnings drop is not a tactical pullback but the beginning of a major trend reversal, signaling a longer-term top has been made.",
+      "The entire long-term thesis hinges on the continuation of the AI infrastructure spending boom. Any signal of a slowdown from hyperscalers would invalidate the growth story.",
+      "The stock was technically overbought and may require a prolonged period of consolidation or a deeper correction before the long-term uptrend can resume."
     ],
     "agent_view_summary": [
       {
@@ -2785,123 +2748,93 @@
         "rationale": "Short-term: The stock showed a muted after-hours reaction (+2%) to a strong beat-and-raise, suggesting high expectations were already priced in and profit-taking is likely. On a relative basis against QQQ, it may lag as the market digests the news. Long-term: The blowout guidance confirms WDC is a primary beneficiary of the AI infrastructure buildout, a powerful multi-quarter tailwind that should drive significant earnings growth and multiple re-rating."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.9,
-        "rationale": "The stock is in a clear and powerful uptrend across all timeframes, confirmed by multiple indicators. The primary tension is between this strong bullish momentum and the deeply overbought condition, making the trend powerful but also prone to a sharp pullback or consolidation."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.5,
         "rationale": "Western Digital Corporation reported an exceptionally strong quarter characterized by significant quarter-over-quarter growth in revenue, profitability, and cash flow. Gross and operating margins expanded, and the company maintains a healthy balance sheet with a net cash position. While the provided growth metrics are impressive, the valuation requires peer context, and a lack of consensus estimates, guidance, or management commentary introduces significant uncertainty."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "rationale": "The violent, high-volume bearish reversal post-earnings is the most critical technical event. It has forcefully shifted the short-term outlook from bullish to bearish, signaling a rejection of the prior uptrend and a probable period of selling or consolidation, at best, consolidation."
       }
     ],
     "debate_summary": {
-      "debate_triggered": true,
-      "conflict_level": "high",
+      "debate_triggered": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ],
-      "debate_responses": [
-        {
-          "response_type": "agent_view_revision",
-          "agreement": [
-            "I agree with the `market_technical` agent that WDC is in a powerful, high-momentum bullish trend, as evidenced by its price action above key moving averages, accelerating MACD, and strong relative performance. This challenges my initial tactical bearish call.",
-            "I agree with the `fundamental` agent's assessment that the reported quarter was exceptionally strong, with significant QoQ growth in revenue (10.6%), impressive margin expansion, and robust cash flow. This strongly reinforces my long-term bullish thesis.",
-            "All agents, including my revised view, are aligned on a 'Bullish' long-term stance, creating a high-conviction consensus on the multi-quarter outlook driven by the AI infrastructure cycle."
-          ],
-          "disagreement": [
-            "I am revising my 'Bearish' short-term stance. My hypothesis of a 'sell the news' event due to a muted after-hours reaction is outweighed by the `market_technical` agent's evidence of a powerful, volume-confirmed uptrend. The technical picture suggests the market is absorbing the good news and continuing to buy, making a short-term bearish position untenable.",
-            "I assign a low weight to the `fundamental` agent's 'Neutral' short-term stance. Its rationale is based on missing consensus and guidance data, which my `news_macro` analysis explicitly provides (e.g., 'WDC Beats Q2...Estimates', 'Western Digital Sees Q3...vs...Est'). My view is more informed on this specific point."
-          ],
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "A detailed breakdown of revenue by segment (Cloud, Client, Consumer) from the earnings call transcript to confirm that AI/Cloud demand is the primary growth driver.",
-            "Management commentary from the earnings call regarding future capital expenditure plans to validate the timeline and magnitude of the second-order effects on equipment suppliers like LRCX and KLAC.",
-            "A comparative valuation analysis against peers (STX, MU) on forward-looking metrics to determine if WDC's valuation is justified relative to its growth and peers."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": "I agree with the fundamental and news agents that the long-term outlook for WDC is strongly bullish. The news of a blowout quarter and guidance, driven by AI infrastructure demand, provides a powerful fundamental underpinning for the technical uptrend I observed. I also strongly agree with the news agent's assessment that high expectations were priced in, which aligns directly with my key technical risk signal of a deeply overbought RSI (78).",
-          "disagreement": "I believe the news agent's 'Bearish' short-term stance is too strong. While I now agree a pullback is likely, this is better characterized as a 'Neutral' stance, reflecting consolidation or a correction within a powerful uptrend, not a trend reversal. The underlying technical and fundamental picture remains too strong to warrant a bearish label. I also assign low weight to the fundamental agent's uncertainty, as the news agent's report provided the missing context (beat and raise) that confirms the exceptional strength of the financial results.",
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
-          "evidence_needed": "The primary evidence needed is price action following the earnings report. I need to observe the character of the expected pullback or consolidation. Specifically, I will be monitoring if the price can hold above key prior support levels, such as the 20-day moving average, and whether selling volume is light, which would confirm this is a healthy consolidation before the next move higher."
-        },
-        {
-          "response_type": "revision",
-          "agreement": "I agree with the news_macro agent that WDC reported a significant Q2 beat and provided blowout Q3 guidance, driven by AI-related demand. This evidence, particularly the consensus estimates and forward guidance, directly fills the critical information gap in my initial analysis. I also agree with the market_technical agent's assessment that the stock is in a strong technical uptrend, which confirms the market's positive reception of the fundamental story.",
-          "disagreement": "I disagree with the news_macro agent's 'Short-term Bearish' stance. While the 'sell the news' rationale is a valid tactical consideration, from a fundamental perspective, a significant beat and a massive guidance raise is an unequivocally bullish short-term catalyst. The strength of the fundamental data and forward outlook outweighs the risk of short-term profit-taking in my assessment. The technical agent's 'overbought' signal is a risk, but strong fundamental catalysts can sustain such conditions.",
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "A full analysis of the earnings call transcript for management commentary on segment performance (Cloud vs. Client), sustainability of margin expansion, and the durability of the AI demand cycle.",
-            "A comparative valuation analysis against peers like Seagate (STX) and Micron (MU) using forward estimates to contextualize WDC's valuation in the current upcycle.",
-            "A detailed breakdown of net income to confirm the surge is primarily from core operations and not non-recurring items."
-          ]
-        }
-      ]
+      "debate_responses": []
     },
-    "reason_for_final_decision": "I am overriding the guardrail's 'Bullish' short-term stance to 'Neutral'. While there is unanimous, high-conviction agreement on the long-term Bullish thesis following a blowout earnings report, the evidence of a deeply overbought technical condition (RSI 78) from the specialized `market_technical` agent cannot be ignored. This presents a clear risk of a near-term pullback. The most prudent action is to avoid chasing the stock at its peak and instead use any potential consolidation or dip to accumulate a normal-sized position for the compelling long-term opportunity.",
+    "routing_profile": {
+      "bucket": "ai_semis",
+      "short": {
+        "market_technical": 0.45,
+        "news_macro": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI semiconductor moves depend on technical confirmation plus second-order supply-chain and capex signals."
+    },
+    "reason_for_final_decision": "The committee reached a strong consensus. All agents are Bullish on the long-term outlook, citing the powerful AI-driven demand cycle confirmed by the company's blowout guidance and exceptional financial results. However, the News and Technical agents correctly identified a short-term Bearish setup due to overbought conditions and 'sell the news' psychology, which was confirmed by the severe -10% post-earnings drop on high volume. The final decision is to adopt a 'Wait for Pullback' strategy, respecting the short-term bearish price action while preparing to enter a long-term position at a more favorable level. The deterministic guardrail's conclusion aligns perfectly with this qualitative synthesis, providing high confidence in the final view.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": 0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": 0.0
+          "stance": "Bearish",
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": -0.28
         },
         {
           "agent_name": "fundamental",
-          "stance": "Bullish",
+          "stance": "Neutral",
+          "confidence": 0.5,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
           "confidence": 0.9,
-          "weight": 0.2,
-          "contribution": 0.18
+          "weight": 0.45,
+          "contribution": -0.405
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": 0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": 0.16
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": 0.28
         },
         {
           "agent_name": "fundamental",
           "stance": "Bullish",
+          "confidence": 0.5,
+          "weight": 0.35,
+          "contribution": 0.175
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
           "confidence": 0.9,
-          "weight": 0.45,
-          "contribution": 0.405
+          "weight": 0.25,
+          "contribution": 0.225
         }
       ]
     },
     "scores": {
-      "short": 0.5701,
+      "short": -0.9013,
       "long": 1.0
     },
     "llm_decision_used": true

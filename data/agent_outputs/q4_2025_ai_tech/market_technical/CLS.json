@@ -4,43 +4,43 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.85,
-  "confidence_rationale": "Confidence is high due to strong alignment across trend, momentum, and relative strength indicators. However, it is tempered by extremely high volatility and a recent decrease in volume, which introduces risk and suggests waning conviction.",
+  "confidence": 0.9,
+  "confidence_rationale": "Confidence is high due to the strong confluence of multiple bullish signals: a long-term uptrend, accelerating short-term momentum (MACD, RSI), and a decisive positive post-earnings reaction on high volume, which acts as a major confirmation event.",
   "key_signals": [
+    {
+      "type": "Earnings Reaction",
+      "signal": "Strong Bullish Post-Earnings Confirmation",
+      "evidence": "Stock reacted positively with a 3.62% gain the day after earnings, representing a 3.29% abnormal return versus QQQ on 1.66x average volume."
+    },
     {
       "type": "Moving Averages",
       "signal": "Strong Bullish Trend Structure",
-      "evidence": "The price at $420.73 is trading significantly above its key short and medium-term moving averages (MA20 at $381.25, MA50 at $318.97), confirming a strong uptrend."
+      "evidence": "Price at $333.17 is trading significantly above its 20-day ($306.60), 50-day ($309.37), and 200-day ($217.49) moving averages, confirming a robust uptrend."
+    },
+    {
+      "type": "MACD",
+      "signal": "Accelerating Bullish Momentum",
+      "evidence": "A bullish MACD crossover is in effect, with the MACD line (1.86) well above the signal line (0.21) and a widening histogram (1.64), indicating strengthening momentum."
     },
     {
       "type": "Relative Strength",
       "signal": "Significant Market Outperformance",
-      "evidence": "The stock has outperformed the SPY benchmark by 36.42%, demonstrating strong market leadership."
+      "evidence": "The stock has outperformed the SPY benchmark by over 263% during the measured period, highlighting its status as a market leader."
     },
     {
       "type": "RSI",
-      "signal": "Strong Bullish Momentum",
-      "evidence": "The RSI of 65.51 indicates strong buying pressure, but remains below the classic overbought threshold of 70, suggesting momentum may still have room to run."
-    },
-    {
-      "type": "MACD",
-      "signal": "Bullish Momentum Confirmation",
-      "evidence": "A recent bullish crossover (MACD over signal line) confirms the positive momentum, although the small histogram (0.047) suggests the acceleration is modest."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Resilient Buying Pressure",
-      "evidence": "The stock has recovered from a significant recent drawdown of -21.83% and is now trading near its peak (current drawdown of -0.35%), indicating buyers have been stepping in on dips."
+      "signal": "Healthy Bullish Momentum",
+      "evidence": "RSI is strong at 59.18, indicating solid buying pressure with additional room to move higher before reaching overbought territory."
     },
     {
       "type": "Volume",
-      "signal": "Waning Participation",
-      "evidence": "The most recent price move occurred on below-average volume (volume spike ratio of 0.68), which can be a leading indicator of weakening conviction in the trend."
+      "signal": "High Conviction on Upward Move",
+      "evidence": "The post-earnings rally was confirmed by reaction volume that was 1.66x the recent average, indicating strong institutional participation and conviction."
     },
     {
-      "type": "Market Regime",
-      "signal": "High Volatility Bullish Trend",
-      "evidence": "The stock is classified in a 'high_volatility_bullish' regime, contextualizing the uptrend as inherently risky and prone to large price swings."
+      "type": "Trend",
+      "signal": "Established Long-Term Uptrend",
+      "evidence": "Price is 53.19% above its 200-day moving average, firmly establishing a long-term bullish trend."
     },
     {
       "type": "Returns",
@@ -50,13 +50,23 @@
     {
       "type": "Volatility",
       "signal": "high volatility",
-      "evidence": "Annualized volatility 72.43%, Recent 76.81%"
+      "evidence": "Annualized volatility 74.74%, Recent 60.43%"
+    },
+    {
+      "type": "Drawdown",
+      "signal": "contained drawdown",
+      "evidence": "Current drawdown -5.51%, Max drawdown -53.96%"
+    },
+    {
+      "type": "Market Regime",
+      "signal": "range_bound",
+      "evidence": "Regime classification: range_bound"
     }
   ],
   "risks": [
-    "Extremely high volatility (recent annualized rate of 76.81%) increases the risk of sharp, sudden price reversals.",
-    "Recent price appreciation has occurred on below-average volume, which may indicate weakening conviction and a potential for momentum to stall."
+    "The stock's high annualized volatility of 74.7% implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+    "While the post-earnings gap is a strong signal, such large moves can be susceptible to partial retracements or 'gap-fill' risk in the subsequent trading sessions."
   ],
-  "summary": "Celestica is in a strong, high-volatility uptrend, significantly outperforming the broader market. Key momentum indicators like RSI and MACD are bullish, and the price is well-supported above its moving averages. The primary concerns are the combination of extreme volatility and a lack of volume confirmation on the latest price advance, which suggests that while the trend is strong, it may be susceptible to a short-term pause or pullback.",
-  "core_insight": "CLS exhibits the characteristics of a high-momentum market leader, with a powerful trend and relative strength. The critical factor for the immediate future is whether buying pressure can increase, as the recent lack of volume confirmation presents a divergence from the otherwise unequivocally bullish technical picture."
+  "summary": "CLS exhibits a strong bullish technical profile, supported by a long-term uptrend, accelerating short-term momentum, and significant market outperformance. The pre-existing bullish setup was powerfully validated by a high-volume, positive reaction to its recent earnings report. The stock is trading decisively above all key moving averages, with momentum indicators like MACD and RSI signaling further upside potential.",
+  "core_insight": "The primary driver of the bullish stance is the powerful post-earnings price and volume surge. This event acts as a strong catalyst, confirming the underlying uptrend and momentum, and suggesting a high probability of continued upside as the stock breaks out."
 }

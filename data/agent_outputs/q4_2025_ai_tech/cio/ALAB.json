@@ -11,36 +11,36 @@
         "rationale": "Short-term: Despite a strong beat-and-raise, the stock's negative reaction to margin/spending guidance and a CFO change signals that sky-high investor expectations were not met. This creates a negative post-earnings drift as momentum money exits. Long-term: The massive revenue acceleration confirms ALAB is a primary beneficiary of the AI buildout. The increased R&D spending is a necessary investment to maintain its technical lead in next-generation interconnects (e.g., CXL, PCIe Gen6), which will drive future growth and eventually allow the market to look past the temporary margin pressure."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Astera Labs demonstrates exceptional top-line growth and strong cash flow generation, consistent with a hyper-growth company in the AI space. However, a significant and unexplained quarter-over-quarter decline in net income, paired with a very high valuation (Trailing P/E of ~165x), introduces considerable risk. The fundamental picture is mixed, with strong operational performance overshadowed by a sharp drop in bottom-line profitability and a lack of management commentary."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean bullish on the long-term horizon."
+      "2 agents lean bearish on the short-term horizon."
     ],
     "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
+      "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
+      "Bullish": 0,
+      "Neutral": 1,
+      "Bearish": 2
+    },
+    "long_stance_counts": {
       "Bullish": 1,
       "Neutral": 1,
       "Bearish": 1
-    },
-    "long_stance_counts": {
-      "Bullish": 2,
-      "Neutral": 1,
-      "Bearish": 0
     },
     "agent_packets": [
       {
@@ -415,261 +415,6 @@
       {
         "ticker": "ALAB",
         "company": "Astera Labs",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-        "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong Momentum",
-            "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weakening Conviction",
-            "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Extremely High Volatility",
-            "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Pullback Within Uptrend",
-            "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Regime",
-            "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 1.51%"
-          }
-        ],
-        "risks": [
-          "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-          "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-          "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-        "raw_packet": {
-          "ticker": "ALAB",
-          "company": "Astera Labs",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-          "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Momentum",
-              "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Volatility",
-              "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Pullback Within Uptrend",
-              "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Regime",
-              "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 1.51%"
-            }
-          ],
-          "risks": [
-            "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-            "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-            "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-          "raw_packet": {
-            "ticker": "ALAB",
-            "company": "Astera Labs",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-            "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Momentum",
-                "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Volatility",
-                "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Pullback Within Uptrend",
-                "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Regime",
-                "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 1.51%"
-              }
-            ],
-            "risks": [
-              "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-              "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-              "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-            "raw_packet": {
-              "ticker": "ALAB",
-              "company": "Astera Labs",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Momentum",
-                  "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Volatility",
-                  "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Pullback Within Uptrend",
-                  "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Regime",
-                  "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 1.51%"
-                }
-              ],
-              "risks": [
-                "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-                "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-                "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-              ],
-              "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-              "core_insight": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "ALAB",
-        "company": "Astera Labs",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -811,6 +556,281 @@
             }
           }
         }
+      },
+      {
+        "ticker": "ALAB",
+        "company": "Astera Labs",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+        "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Severe Negative Event Reaction",
+            "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Major Trend Break",
+            "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+          },
+          {
+            "type": "Volume",
+            "signal": "High-Conviction Bearish Distribution",
+            "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+          },
+          {
+            "type": "MACD",
+            "signal": "Prior Bullish Momentum Invalidated",
+            "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Leadership Failure",
+            "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+          },
+          {
+            "type": "Volatility",
+            "signal": "Extreme Risk Environment",
+            "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "New Leg Down Initiated",
+            "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.97%"
+          },
+          {
+            "type": "RSI",
+            "signal": "bullish momentum",
+            "evidence": "RSI at 57.77"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high_volatility_bullish",
+            "evidence": "Regime classification: high_volatility_bullish"
+          }
+        ],
+        "risks": [
+          "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+          "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+          "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+        ],
+        "citations": [],
+        "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+        "raw_packet": {
+          "ticker": "ALAB",
+          "company": "Astera Labs",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+          "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Severe Negative Event Reaction",
+              "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Major Trend Break",
+              "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Bearish Distribution",
+              "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+            },
+            {
+              "type": "MACD",
+              "signal": "Prior Bullish Momentum Invalidated",
+              "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Failure",
+              "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Extreme Risk Environment",
+              "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "New Leg Down Initiated",
+              "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.97%"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 57.77"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+            "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+            "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+          "raw_packet": {
+            "ticker": "ALAB",
+            "company": "Astera Labs",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+            "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Severe Negative Event Reaction",
+                "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Major Trend Break",
+                "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Bearish Distribution",
+                "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+              },
+              {
+                "type": "MACD",
+                "signal": "Prior Bullish Momentum Invalidated",
+                "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Failure",
+                "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Extreme Risk Environment",
+                "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "New Leg Down Initiated",
+                "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.97%"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 57.77"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+              "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+              "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+            "raw_packet": {
+              "ticker": "ALAB",
+              "company": "Astera Labs",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Severe Negative Event Reaction",
+                  "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Major Trend Break",
+                  "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Bearish Distribution",
+                  "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Prior Bullish Momentum Invalidated",
+                  "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Failure",
+                  "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Extreme Risk Environment",
+                  "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "New Leg Down Initiated",
+                  "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.97%"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 57.77"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+                "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+                "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+              ],
+              "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+              "core_insight": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
+            }
+          }
+        }
       }
     ]
   },
@@ -820,8 +840,8 @@
       "debate_required": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "Long-term views contain both bullish and bearish calls.",
+        "High-confidence long-term agents disagree."
       ]
     },
     "synthesis": {
@@ -836,36 +856,36 @@
           "rationale": "Short-term: Despite a strong beat-and-raise, the stock's negative reaction to margin/spending guidance and a CFO change signals that sky-high investor expectations were not met. This creates a negative post-earnings drift as momentum money exits. Long-term: The massive revenue acceleration confirms ALAB is a primary beneficiary of the AI buildout. The increased R&D spending is a necessary investment to maintain its technical lead in next-generation interconnects (e.g., CXL, PCIe Gen6), which will drive future growth and eventually allow the market to look past the temporary margin pressure."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Astera Labs demonstrates exceptional top-line growth and strong cash flow generation, consistent with a hyper-growth company in the AI space. However, a significant and unexplained quarter-over-quarter decline in net income, paired with a very high valuation (Trailing P/E of ~165x), introduces considerable risk. The fundamental picture is mixed, with strong operational performance overshadowed by a sharp drop in bottom-line profitability and a lack of management commentary."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean bullish on the long-term horizon."
+        "2 agents lean bearish on the short-term horizon."
       ],
       "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
+        "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
+        "Bullish": 0,
+        "Neutral": 1,
+        "Bearish": 2
+      },
+      "long_stance_counts": {
         "Bullish": 1,
         "Neutral": 1,
         "Bearish": 1
-      },
-      "long_stance_counts": {
-        "Bullish": 2,
-        "Neutral": 1,
-        "Bearish": 0
       },
       "agent_packets": [
         {
@@ -1362,325 +1382,6 @@
         {
           "ticker": "ALAB",
           "company": "Astera Labs",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-          "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Momentum",
-              "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Volatility",
-              "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Pullback Within Uptrend",
-              "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Regime",
-              "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 1.51%"
-            }
-          ],
-          "risks": [
-            "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-            "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-            "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-          "raw_packet": {
-            "ticker": "ALAB",
-            "company": "Astera Labs",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-            "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Momentum",
-                "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Volatility",
-                "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Pullback Within Uptrend",
-                "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Regime",
-                "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 1.51%"
-              }
-            ],
-            "risks": [
-              "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-              "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-              "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-            "raw_packet": {
-              "ticker": "ALAB",
-              "company": "Astera Labs",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-              "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Momentum",
-                  "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Volatility",
-                  "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Pullback Within Uptrend",
-                  "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Regime",
-                  "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 1.51%"
-                }
-              ],
-              "risks": [
-                "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-                "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-                "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-              "raw_packet": {
-                "ticker": "ALAB",
-                "company": "Astera Labs",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bullish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-                "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Accelerating Bullish Momentum",
-                    "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Strong Momentum",
-                    "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weakening Conviction",
-                    "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Extremely High Volatility",
-                    "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Pullback Within Uptrend",
-                    "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "High Volatility Bullish Regime",
-                    "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 1.51%"
-                  }
-                ],
-                "risks": [
-                  "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-                  "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-                  "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-                "raw_packet": {
-                  "ticker": "ALAB",
-                  "company": "Astera Labs",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Accelerating Bullish Momentum",
-                      "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Strong Momentum",
-                      "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weakening Conviction",
-                      "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Extremely High Volatility",
-                      "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Pullback Within Uptrend",
-                      "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "High Volatility Bullish Regime",
-                      "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 1.51%"
-                    }
-                  ],
-                  "risks": [
-                    "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-                    "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-                    "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-                  ],
-                  "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-                  "core_insight": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "ALAB",
-          "company": "Astera Labs",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1857,55 +1558,411 @@
               }
             }
           }
+        },
+        {
+          "ticker": "ALAB",
+          "company": "Astera Labs",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+          "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Severe Negative Event Reaction",
+              "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Major Trend Break",
+              "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Bearish Distribution",
+              "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+            },
+            {
+              "type": "MACD",
+              "signal": "Prior Bullish Momentum Invalidated",
+              "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Failure",
+              "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Extreme Risk Environment",
+              "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "New Leg Down Initiated",
+              "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.97%"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 57.77"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+            "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+            "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+          "raw_packet": {
+            "ticker": "ALAB",
+            "company": "Astera Labs",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+            "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Severe Negative Event Reaction",
+                "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Major Trend Break",
+                "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Bearish Distribution",
+                "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+              },
+              {
+                "type": "MACD",
+                "signal": "Prior Bullish Momentum Invalidated",
+                "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Failure",
+                "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Extreme Risk Environment",
+                "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "New Leg Down Initiated",
+                "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.97%"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 57.77"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+              "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+              "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+            "raw_packet": {
+              "ticker": "ALAB",
+              "company": "Astera Labs",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+              "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Severe Negative Event Reaction",
+                  "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Major Trend Break",
+                  "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Bearish Distribution",
+                  "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Prior Bullish Momentum Invalidated",
+                  "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Failure",
+                  "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Extreme Risk Environment",
+                  "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "New Leg Down Initiated",
+                  "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.97%"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 57.77"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+                "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+                "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+              ],
+              "citations": [],
+              "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+              "raw_packet": {
+                "ticker": "ALAB",
+                "company": "Astera Labs",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.9,
+                "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+                "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Severe Negative Event Reaction",
+                    "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Major Trend Break",
+                    "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "High-Conviction Bearish Distribution",
+                    "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Prior Bullish Momentum Invalidated",
+                    "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Leadership Failure",
+                    "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "Extreme Risk Environment",
+                    "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "New Leg Down Initiated",
+                    "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.97%"
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "bullish momentum",
+                    "evidence": "RSI at 57.77"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "high_volatility_bullish",
+                    "evidence": "Regime classification: high_volatility_bullish"
+                  }
+                ],
+                "risks": [
+                  "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+                  "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+                  "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+                ],
+                "citations": [],
+                "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+                "raw_packet": {
+                  "ticker": "ALAB",
+                  "company": "Astera Labs",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Severe Negative Event Reaction",
+                      "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Major Trend Break",
+                      "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "High-Conviction Bearish Distribution",
+                      "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Prior Bullish Momentum Invalidated",
+                      "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Leadership Failure",
+                      "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "Extreme Risk Environment",
+                      "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "New Leg Down Initiated",
+                      "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.97%"
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "bullish momentum",
+                      "evidence": "RSI at 57.77"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "high_volatility_bullish",
+                      "evidence": "Regime classification: high_volatility_bullish"
+                    }
+                  ],
+                  "risks": [
+                    "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+                    "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+                    "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+                  ],
+                  "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+                  "core_insight": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "agent_revision",
+        "response_type": "revision",
         "agreement": {
-          "market_technical": "The technical agent's identification of a 'Significant Pullback Within Uptrend' (-20.1% drawdown) provides quantitative evidence for the negative stock reaction I cited, supporting my short-term bearish view. Furthermore, its observation of a 'Strong Bullish Trend Structure' (Price > MAs) aligns with and strengthens my long-term bullish thesis.",
-          "fundamental": "The fundamental agent's data confirms key parts of my thesis: 'Strong revenue growth' (17.3% QoQ) validates the hyper-growth narrative, and the 'extremely high' valuation (165x Trailing P/E) supports my rationale that the stock was priced for perfection and thus vulnerable to a guidance-driven sell-off."
+          "market_technical": "The agent's evidence provides a crucial quantification of the negative market reaction. The -21.4% price drop on 2.95x average volume, and especially the decisive break below the 200-day moving average, confirms my bearish short-term view and indicates the technical damage is more severe than a simple 'post-earnings drift'.",
+          "fundamental": "The agent's flagging of the extremely high Trailing P/E ratio of ~165x provides essential context for the market's severe negative reaction. It confirms the stock was priced for perfection, making it highly vulnerable to any negative news on margins or spending. The agent also confirms the strong top-line revenue growth, which supports my long-term thesis."
         },
         "disagreement": {
-          "market_technical": "I disagree with the technical agent's overall short-term 'Bullish' stance. It appears to be weighing lagging trend indicators (moving averages) more heavily than the immediate, catalyst-driven price action. My news-based analysis provides the causal explanation for the -20% drop (margin guidance), which I believe will suppress the price short-term, making a purely technical bullish interpretation less likely to be correct.",
-          "fundamental": "I disagree with the fundamental agent's 'Neutral' stance and its conclusion that the thesis impact is 'Unchanged'. This view stems from its stated lack of critical data (consensus, guidance, transcript) which my agent possesses. Its confusion over the sharp QoQ decline in Net Income is directly explained by the news headlines I processed regarding increased spending and margin pressure. My analysis contextualizes this as a strategic investment, whereas the fundamental agent sees it as an unexplained red flag due to its data limitations."
+          "market_technical": "I assign a lower weight to the agent's 'Bearish' long-term stance. While the technical breakdown is severe, it is a reaction to a specific event (earnings/guidance). It does not, by itself, invalidate the multi-year secular growth story of AI interconnectivity that underpins my long-term bullish view. Technicals reflect sentiment, which can change, whereas fundamentals reflect the underlying business.",
+          "fundamental": "I disagree with the agent's assessment that the 50.6% QoQ drop in Net Income is 'unexplained'. My news-based evidence directly attributes the stock's fall to a negative 'margin and spending outlook'. The fundamental agent lacked this context. However, the agent correctly highlights the *magnitude* of this drop as a significant risk that my initial analysis may have underweighted."
         },
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.8,
+        "revised_confidence": 0.6,
         "evidence_needed": [
-          "A specific reconciliation from the earnings report or transcript that explains the large discrepancy between the QoQ growth in Operating Income (+$11.5M) and the QoQ decline in Net Income (-$46.1M). This would confirm my inference that the drop is due to planned investments or non-recurring items rather than a structural flaw in profitability."
+          "A detailed reconciliation from the company's financial statements (e.g., 10-Q) explaining the specific items between Operating Income and Net Income that caused Net Income to fall 50.6% QoQ while Operating Income grew 20.8% QoQ. This is required to validate that the decline is due to strategic growth investments (R&D, opex) rather than unexpected charges, tax issues, or other dilutive items."
         ]
       },
       {
         "response_type": "revision",
         "agreement": [
-          "I agree with the news_macro agent that the short-term price weakness, which I identified as a 'Significant Pullback' and 'Weakening Conviction', is a direct reaction to news about the margin/spending outlook and a CFO transition, despite a strong earnings beat and raise.",
-          "I agree with the news_macro agent's long-term bullish view. Their rationale that increased spending is a strategic investment in future growth (e.g., CXL, PCIe Gen6) provides a fundamental underpinning for the 'Strong Bullish Trend Structure' (Price > MAs) that I observed.",
-          "I agree with the fundamental agent's data points showing strong top-line revenue growth and a high valuation, which are consistent with my 'Significant Market Outperformance' and 'High Volatility' signals."
+          "I agree with the news_macro agent that Astera Labs delivered a strong 'beat-and-raise' quarter, confirming its hyper-growth trajectory within the AI sector. The new evidence shows Q4 revenue and EPS beat estimates, and Q1 guidance was significantly above consensus.",
+          "I agree with the news_macro agent's core insight: the negative stock reaction was due to concerns over a weaker 'margin and spending outlook'. This resolves my original key question about the drop in net income; it is attributable to a conscious increase in investment (opex/R&D) for future growth.",
+          "I agree with the market_technical agent's factual assessment of the price action. The -21.4% post-earnings drop on nearly 3x average volume is a severe technical breakdown that has broken key moving averages and reflects extremely negative short-term sentiment."
         ],
         "disagreement": [
-          "I disagree with the fundamental agent's 'Neutral' stance and low confidence. Their analysis was explicitly hampered by missing data (analyst estimates, guidance, context for net income drop) which the news_macro agent's evidence successfully provided. The 'unexplained' net income decline is now explained by the increased spending outlook.",
-          "I assign lower weight to the news_macro agent's outright 'Bearish' short-term stance. While the news is a clear headwind explaining the recent drawdown, my primary technical trend indicators have not yet broken. The situation is better described as a consolidation or pullback within an uptrend, warranting a 'Neutral' short-term view rather than a full reversal to 'Bearish'."
+          "I disagree with the market_technical agent's 'Bearish' long-term stance. While the technical damage is severe, it reflects a short-term market reaction to margin pressure. It does not invalidate the now-strengthened long-term fundamental thesis of a hyper-growth company successfully investing to capture a large market opportunity.",
+          "I now disagree with my original 'Neutral' stance. It was predicated on missing information (consensus, guidance, context for net income decline). The new evidence has filled these gaps, allowing for a more convicted, albeit split, stance."
         ],
-        "revised_short_term_stance": "Neutral",
+        "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.85,
+        "revised_confidence": 0.8,
         "evidence_needed": [
-          "Confirmation from the earnings call transcript regarding the specific drivers of the margin pressure - is it purely R&D and growth-related opex, or is there any component of pricing pressure?",
-          "Further details on the CFO transition to confirm it is orderly and not a red flag.",
-          "Technical confirmation of the short-term trend: Does the price find support at a key moving average (e.g., MA20 or MA50) and resume its climb, or does it break below, signaling a more significant trend change?"
+          "A full GAAP to non-GAAP reconciliation from the earnings report to precisely quantify the adjustments between the operating income growth and the net income decline I originally flagged.",
+          "Specific management commentary from the earnings call transcript regarding the expected timeline and magnitude of the investment cycle and its impact on margins.",
+          "Further details regarding the CFO transition to confirm it is an orderly succession and not a red flag related to financial reporting or strategy."
         ]
       },
       {
         "response_type": "revision",
-        "agreement": "I agree with the core evidence provided by the news_macro agent, which fills the critical information gaps in my original analysis. Specifically: 1) The company delivered a significant beat on both Q4 EPS ($0.58 vs. $0.51 est.) and revenue ($270.6M vs. $249.5M est.). 2) Guidance for Q1 was a substantial raise, with sales projected at $286M-$297M versus a $259.3M estimate. 3) The news_macro agent provides a credible explanation for the market's negative reaction and my concern over profitability: the stock fell due to a 'margin and spending outlook'. This context reframes the net income pressure not as an unexplained deterioration, but as a strategic investment in R&D to support long-term growth, a view supported by news of R&D center expansion.",
-        "disagreement": "I place lower weight on the market_technical agent's analysis; while it correctly identifies high volatility and the recent drawdown, its trend signals are lagging indicators and less relevant to my fundamental assessment. I disagree with the news_macro agent's 'Bearish' short-term stance. While the stock price reacted negatively, the fundamental news itself (a strong beat-and-raise) is unequivocally positive for the upcoming quarter's outlook. The market's reaction appears to be a sentiment and positioning adjustment to a high-valuation stock, not a reflection of deteriorating near-term fundamentals.",
-        "revised_short_term_stance": "Bullish",
-        "revised_long_term_stance": "Bullish",
+        "agreement": [
+          "I agree with the news_macro agent's short-term bearish stance, as the fundamental reasons cited (margin/spending outlook, CFO transition) provide a clear catalyst for the severe negative technical reaction I observed.",
+          "I agree with the fundamental agent's data point that Net Income fell sharply QoQ (-50.6%) despite revenue growth. This fundamental weakness strongly supports the market's bearish price action.",
+          "I agree with the fundamental agent's observation of a very high valuation (Trailing P/E ~165x), which explains the severity of the stock's decline on disappointing news.",
+          "I agree with the news_macro agent's factual reporting that the company delivered a strong revenue and EPS beat for Q4 and guided Q1 revenue significantly above estimates. This provides crucial context for the price reaction."
+        ],
+        "disagreement": [
+          "I disagree with the news_macro agent's long-term Bullish stance. While the 'investing for growth' narrative is plausible, my primary evidence is the price action. A high-volume break of the 200-day moving average is a powerful long-term bearish signal that suggests the market, for now, rejects that bullish narrative and a period of underperformance is likely.",
+          "I disagree with the fundamental agent's Neutral stance. A 21% price collapse on a 50% drop in net income is a decisively bearish event, not a neutral one, even if top-line growth remains.",
+          "I assign a lower weight to the news_macro agent's interpretation that increased spending is definitively a long-term positive. The market's reaction suggests it could be perceived as a sign of rising competition, inefficient capital allocation, or a longer-than-expected path to profitability, all of which are bearish risks."
+        ],
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
         "revised_confidence": 0.8,
-        "evidence_needed": "My original critical missing information has been supplied. The new key questions are: 1) Confirmation of the nature of the CFO transition to ensure it is orderly and not a red flag. 2) Management's detailed commentary on the expected duration and magnitude of the current investment cycle and the timeline for returning to margin expansion. 3) Future evidence of ROI from the increased R&D spend, such as design wins or market share gains with next-generation products (e.g., CXL, PCIe Gen6)."
+        "evidence_needed": [
+          "An explanation for the significant discrepancy between operating income growth and the 50.6% QoQ decline in net income, as highlighted by the fundamental agent. An earnings call transcript is required to resolve this.",
+          "Specific quantification of the forward-looking 'margin and spending outlook' that news headlines cited as the reason for the stock's decline. This is needed to assess if the market reaction was proportional."
+        ]
       }
     ],
     "revised_packets": [
@@ -1915,7 +1972,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
-        "confidence": 0.8,
+        "confidence": 0.6,
         "confidence_rationale": "Confidence is relatively high because the analysis is based on direct main-ticker earnings data, guidance, and the observed market reaction. However, it's not higher because the negative 'margin and spending outlook' was mentioned in headlines but not quantified in the provided summaries, requiring an inference that this is an investment cycle rather than a structural margin problem. The CFO transition adds a small element of uncertainty.",
         "stance_rationale": "Short-term: Despite a strong beat-and-raise, the stock's negative reaction to margin/spending guidance and a CFO change signals that sky-high investor expectations were not met. This creates a negative post-earnings drift as momentum money exits. Long-term: The massive revenue acceleration confirms ALAB is a primary beneficiary of the AI buildout. The increased R&D spending is a necessary investment to maintain its technical lead in next-generation interconnects (e.g., CXL, PCIe Gen6), which will drive future growth and eventually allow the market to look past the temporary margin pressure.",
         "key_signals": [
@@ -2278,295 +2335,20 @@
           }
         },
         "debate_response": {
-          "response_type": "agent_revision",
+          "response_type": "revision",
           "agreement": {
-            "market_technical": "The technical agent's identification of a 'Significant Pullback Within Uptrend' (-20.1% drawdown) provides quantitative evidence for the negative stock reaction I cited, supporting my short-term bearish view. Furthermore, its observation of a 'Strong Bullish Trend Structure' (Price > MAs) aligns with and strengthens my long-term bullish thesis.",
-            "fundamental": "The fundamental agent's data confirms key parts of my thesis: 'Strong revenue growth' (17.3% QoQ) validates the hyper-growth narrative, and the 'extremely high' valuation (165x Trailing P/E) supports my rationale that the stock was priced for perfection and thus vulnerable to a guidance-driven sell-off."
+            "market_technical": "The agent's evidence provides a crucial quantification of the negative market reaction. The -21.4% price drop on 2.95x average volume, and especially the decisive break below the 200-day moving average, confirms my bearish short-term view and indicates the technical damage is more severe than a simple 'post-earnings drift'.",
+            "fundamental": "The agent's flagging of the extremely high Trailing P/E ratio of ~165x provides essential context for the market's severe negative reaction. It confirms the stock was priced for perfection, making it highly vulnerable to any negative news on margins or spending. The agent also confirms the strong top-line revenue growth, which supports my long-term thesis."
           },
           "disagreement": {
-            "market_technical": "I disagree with the technical agent's overall short-term 'Bullish' stance. It appears to be weighing lagging trend indicators (moving averages) more heavily than the immediate, catalyst-driven price action. My news-based analysis provides the causal explanation for the -20% drop (margin guidance), which I believe will suppress the price short-term, making a purely technical bullish interpretation less likely to be correct.",
-            "fundamental": "I disagree with the fundamental agent's 'Neutral' stance and its conclusion that the thesis impact is 'Unchanged'. This view stems from its stated lack of critical data (consensus, guidance, transcript) which my agent possesses. Its confusion over the sharp QoQ decline in Net Income is directly explained by the news headlines I processed regarding increased spending and margin pressure. My analysis contextualizes this as a strategic investment, whereas the fundamental agent sees it as an unexplained red flag due to its data limitations."
+            "market_technical": "I assign a lower weight to the agent's 'Bearish' long-term stance. While the technical breakdown is severe, it is a reaction to a specific event (earnings/guidance). It does not, by itself, invalidate the multi-year secular growth story of AI interconnectivity that underpins my long-term bullish view. Technicals reflect sentiment, which can change, whereas fundamentals reflect the underlying business.",
+            "fundamental": "I disagree with the agent's assessment that the 50.6% QoQ drop in Net Income is 'unexplained'. My news-based evidence directly attributes the stock's fall to a negative 'margin and spending outlook'. The fundamental agent lacked this context. However, the agent correctly highlights the *magnitude* of this drop as a significant risk that my initial analysis may have underweighted."
           },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
+          "revised_confidence": 0.6,
           "evidence_needed": [
-            "A specific reconciliation from the earnings report or transcript that explains the large discrepancy between the QoQ growth in Operating Income (+$11.5M) and the QoQ decline in Net Income (-$46.1M). This would confirm my inference that the drop is due to planned investments or non-recurring items rather than a structural flaw in profitability."
-          ]
-        }
-      },
-      {
-        "ticker": "ALAB",
-        "company": "Astera Labs",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-        "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong Momentum",
-            "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weakening Conviction",
-            "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Extremely High Volatility",
-            "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Pullback Within Uptrend",
-            "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Regime",
-            "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 1.51%"
-          }
-        ],
-        "risks": [
-          "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-          "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-          "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-        "raw_packet": {
-          "ticker": "ALAB",
-          "company": "Astera Labs",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-          "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong Momentum",
-              "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Volatility",
-              "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Pullback Within Uptrend",
-              "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Regime",
-              "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 1.51%"
-            }
-          ],
-          "risks": [
-            "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-            "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-            "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-          "raw_packet": {
-            "ticker": "ALAB",
-            "company": "Astera Labs",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-            "stance_rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong Momentum",
-                "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Volatility",
-                "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Pullback Within Uptrend",
-                "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Regime",
-                "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 1.51%"
-              }
-            ],
-            "risks": [
-              "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-              "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-              "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-            "raw_packet": {
-              "ticker": "ALAB",
-              "company": "Astera Labs",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the strong alignment across trend and momentum indicators (Price > MAs, MACD crossover, strong RSI). However, it is tempered by significant risk factors, including extremely high volatility, a recent -20% drawdown, and declining volume on recent price moves, which suggests waning conviction.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $201.25 was significantly above its key moving averages: MA20 ($176.25), MA50 ($142.15), and MA200 ($163.35)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "MACD (18.17) was above its signal line (17.23) with a positive histogram (0.94), confirming a recent bullish crossover."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong Momentum",
-                  "evidence": "RSI at 66.43 indicated strong buying pressure, positioned in the upper bullish range but not yet in overbought territory (>70)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock showed exceptional strength, outperforming the SPY benchmark by 150.05% over the analysis period."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume of 4.1M was below the recent average (volume spike ratio of 0.7x), indicating lower participation in the most recent price action."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Volatility",
-                  "evidence": "Annualized volatility stood at 91.2%, indicating a high-risk environment with the potential for very large price swings."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Pullback Within Uptrend",
-                  "evidence": "The stock was trading 20.1% below its recent peak, highlighting the risk of sharp corrections even within a strong uptrend."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Regime",
-                  "evidence": "The stock was classified as being in a 'high_volatility_bullish' regime, confirming the combination of upward trend and price instability."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 1.51%"
-                }
-              ],
-              "risks": [
-                "Extremely high volatility (91.2% annualized) implies large, unpredictable price swings and elevated risk.",
-                "Declining volume during recent price moves suggests weakening conviction behind the uptrend.",
-                "The stock was in a significant drawdown (-20.1%) from its recent peak, indicating a susceptibility to sharp pullbacks."
-              ],
-              "summary": "As of 2026/02/10, ALAB was in a strong, albeit highly volatile, bullish trend. Price was well above all key moving averages, and momentum indicators like RSI and MACD were firmly bullish. The stock demonstrated exceptional relative strength against the market. However, notable risks included extremely high volatility, a recent 20% pullback from the highs, and declining volume, which suggested the upward trend's conviction might be weakening.",
-              "core_insight": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": [
-            "I agree with the news_macro agent that the short-term price weakness, which I identified as a 'Significant Pullback' and 'Weakening Conviction', is a direct reaction to news about the margin/spending outlook and a CFO transition, despite a strong earnings beat and raise.",
-            "I agree with the news_macro agent's long-term bullish view. Their rationale that increased spending is a strategic investment in future growth (e.g., CXL, PCIe Gen6) provides a fundamental underpinning for the 'Strong Bullish Trend Structure' (Price > MAs) that I observed.",
-            "I agree with the fundamental agent's data points showing strong top-line revenue growth and a high valuation, which are consistent with my 'Significant Market Outperformance' and 'High Volatility' signals."
-          ],
-          "disagreement": [
-            "I disagree with the fundamental agent's 'Neutral' stance and low confidence. Their analysis was explicitly hampered by missing data (analyst estimates, guidance, context for net income drop) which the news_macro agent's evidence successfully provided. The 'unexplained' net income decline is now explained by the increased spending outlook.",
-            "I assign lower weight to the news_macro agent's outright 'Bearish' short-term stance. While the news is a clear headwind explaining the recent drawdown, my primary technical trend indicators have not yet broken. The situation is better described as a consolidation or pullback within an uptrend, warranting a 'Neutral' short-term view rather than a full reversal to 'Bearish'."
-          ],
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "Confirmation from the earnings call transcript regarding the specific drivers of the margin pressure - is it purely R&D and growth-related opex, or is there any component of pricing pressure?",
-            "Further details on the CFO transition to confirm it is orderly and not a red flag.",
-            "Technical confirmation of the short-term trend: Does the price find support at a key moving average (e.g., MA20 or MA50) and resume its climb, or does it break below, signaling a more significant trend change?"
+            "A detailed reconciliation from the company's financial statements (e.g., 10-Q) explaining the specific items between Operating Income and Net Income that caused Net Income to fall 50.6% QoQ while Operating Income grew 20.8% QoQ. This is required to validate that the decline is due to strategic growth investments (R&D, opex) rather than unexpected charges, tax issues, or other dilutive items."
           ]
         }
       },
@@ -2574,7 +2356,7 @@
         "ticker": "ALAB",
         "company": "Astera Labs",
         "agent_name": "fundamental",
-        "short_term_stance": "Bullish",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
         "confidence": 0.8,
         "confidence_rationale": "Confidence is low due to critical missing information. The absence of analyst consensus estimates prevents a beat/miss analysis. The lack of an earnings call transcript or management guidance means there is no context for the results, particularly the sharp decline in net income, and no view on the future outlook.",
@@ -2716,12 +2498,319 @@
         },
         "debate_response": {
           "response_type": "revision",
-          "agreement": "I agree with the core evidence provided by the news_macro agent, which fills the critical information gaps in my original analysis. Specifically: 1) The company delivered a significant beat on both Q4 EPS ($0.58 vs. $0.51 est.) and revenue ($270.6M vs. $249.5M est.). 2) Guidance for Q1 was a substantial raise, with sales projected at $286M-$297M versus a $259.3M estimate. 3) The news_macro agent provides a credible explanation for the market's negative reaction and my concern over profitability: the stock fell due to a 'margin and spending outlook'. This context reframes the net income pressure not as an unexplained deterioration, but as a strategic investment in R&D to support long-term growth, a view supported by news of R&D center expansion.",
-          "disagreement": "I place lower weight on the market_technical agent's analysis; while it correctly identifies high volatility and the recent drawdown, its trend signals are lagging indicators and less relevant to my fundamental assessment. I disagree with the news_macro agent's 'Bearish' short-term stance. While the stock price reacted negatively, the fundamental news itself (a strong beat-and-raise) is unequivocally positive for the upcoming quarter's outlook. The market's reaction appears to be a sentiment and positioning adjustment to a high-valuation stock, not a reflection of deteriorating near-term fundamentals.",
-          "revised_short_term_stance": "Bullish",
+          "agreement": [
+            "I agree with the news_macro agent that Astera Labs delivered a strong 'beat-and-raise' quarter, confirming its hyper-growth trajectory within the AI sector. The new evidence shows Q4 revenue and EPS beat estimates, and Q1 guidance was significantly above consensus.",
+            "I agree with the news_macro agent's core insight: the negative stock reaction was due to concerns over a weaker 'margin and spending outlook'. This resolves my original key question about the drop in net income; it is attributable to a conscious increase in investment (opex/R&D) for future growth.",
+            "I agree with the market_technical agent's factual assessment of the price action. The -21.4% post-earnings drop on nearly 3x average volume is a severe technical breakdown that has broken key moving averages and reflects extremely negative short-term sentiment."
+          ],
+          "disagreement": [
+            "I disagree with the market_technical agent's 'Bearish' long-term stance. While the technical damage is severe, it reflects a short-term market reaction to margin pressure. It does not invalidate the now-strengthened long-term fundamental thesis of a hyper-growth company successfully investing to capture a large market opportunity.",
+            "I now disagree with my original 'Neutral' stance. It was predicated on missing information (consensus, guidance, context for net income decline). The new evidence has filled these gaps, allowing for a more convicted, albeit split, stance."
+          ],
+          "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.8,
-          "evidence_needed": "My original critical missing information has been supplied. The new key questions are: 1) Confirmation of the nature of the CFO transition to ensure it is orderly and not a red flag. 2) Management's detailed commentary on the expected duration and magnitude of the current investment cycle and the timeline for returning to margin expansion. 3) Future evidence of ROI from the increased R&D spend, such as design wins or market share gains with next-generation products (e.g., CXL, PCIe Gen6)."
+          "evidence_needed": [
+            "A full GAAP to non-GAAP reconciliation from the earnings report to precisely quantify the adjustments between the operating income growth and the net income decline I originally flagged.",
+            "Specific management commentary from the earnings call transcript regarding the expected timeline and magnitude of the investment cycle and its impact on margins.",
+            "Further details regarding the CFO transition to confirm it is an orderly succession and not a red flag related to financial reporting or strategy."
+          ]
+        }
+      },
+      {
+        "ticker": "ALAB",
+        "company": "Astera Labs",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+        "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Severe Negative Event Reaction",
+            "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Major Trend Break",
+            "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+          },
+          {
+            "type": "Volume",
+            "signal": "High-Conviction Bearish Distribution",
+            "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+          },
+          {
+            "type": "MACD",
+            "signal": "Prior Bullish Momentum Invalidated",
+            "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Leadership Failure",
+            "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+          },
+          {
+            "type": "Volatility",
+            "signal": "Extreme Risk Environment",
+            "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "New Leg Down Initiated",
+            "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.97%"
+          },
+          {
+            "type": "RSI",
+            "signal": "bullish momentum",
+            "evidence": "RSI at 57.77"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high_volatility_bullish",
+            "evidence": "Regime classification: high_volatility_bullish"
+          }
+        ],
+        "risks": [
+          "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+          "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+          "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+        ],
+        "citations": [],
+        "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+        "raw_packet": {
+          "ticker": "ALAB",
+          "company": "Astera Labs",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.9,
+          "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+          "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Severe Negative Event Reaction",
+              "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Major Trend Break",
+              "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Bearish Distribution",
+              "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+            },
+            {
+              "type": "MACD",
+              "signal": "Prior Bullish Momentum Invalidated",
+              "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Leadership Failure",
+              "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+            },
+            {
+              "type": "Volatility",
+              "signal": "Extreme Risk Environment",
+              "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "New Leg Down Initiated",
+              "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.97%"
+            },
+            {
+              "type": "RSI",
+              "signal": "bullish momentum",
+              "evidence": "RSI at 57.77"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high_volatility_bullish",
+              "evidence": "Regime classification: high_volatility_bullish"
+            }
+          ],
+          "risks": [
+            "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+            "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+            "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+          "raw_packet": {
+            "ticker": "ALAB",
+            "company": "Astera Labs",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.9,
+            "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+            "stance_rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Severe Negative Event Reaction",
+                "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Major Trend Break",
+                "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Bearish Distribution",
+                "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+              },
+              {
+                "type": "MACD",
+                "signal": "Prior Bullish Momentum Invalidated",
+                "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Leadership Failure",
+                "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+              },
+              {
+                "type": "Volatility",
+                "signal": "Extreme Risk Environment",
+                "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "New Leg Down Initiated",
+                "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.97%"
+              },
+              {
+                "type": "RSI",
+                "signal": "bullish momentum",
+                "evidence": "RSI at 57.77"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high_volatility_bullish",
+                "evidence": "Regime classification: high_volatility_bullish"
+              }
+            ],
+            "risks": [
+              "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+              "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+              "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+            "raw_packet": {
+              "ticker": "ALAB",
+              "company": "Astera Labs",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.9,
+              "confidence_rationale": "Confidence is high due to the unambiguous and powerful negative signal from the post-earnings event. A price collapse of over 20% on nearly 3x average volume is a high-conviction signal that overrides the previously bullish technical posture, indicating a significant change in market perception.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Severe Negative Event Reaction",
+                  "evidence": "Stock dropped -21.4% on the first day post-earnings (2026-02-11), representing a -21.7% abnormal negative return versus QQQ, confirmed by a massive volume surge of 2.95x the average."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Major Trend Break",
+                  "evidence": "While the price closed at $182.86 above all key MAs on 2026-02-10, the post-earnings reaction price of $143.71 breaks decisively below the MA20 ($168.35), MA50 ($164.38), and the critical MA200 ($148.31)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Bearish Distribution",
+                  "evidence": "The post-earnings sell-off occurred on a volume spike nearly 3 times the trailing average, indicating strong institutional selling and confirming the bearish move."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Prior Bullish Momentum Invalidated",
+                  "evidence": "A bullish MACD crossover was in place before the earnings event (Histogram: 1.716), but this momentum signal has been completely negated by the powerful bearish price action."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Leadership Failure",
+                  "evidence": "The stock was a strong outperformer vs. SPY (61.26% relative return), but the severe post-earnings drop signals a failure of leadership and potential rotation out of the name."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "Extreme Risk Environment",
+                  "evidence": "The stock's inherently high annualized volatility (90.19%) is now skewed to the downside, with the earnings event confirming a high-risk, negative-momentum regime."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "New Leg Down Initiated",
+                  "evidence": "The stock was already in a -27.4% drawdown before earnings; the post-event price collapse significantly worsens this drawdown and initiates a new bearish phase."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.97%"
+                },
+                {
+                  "type": "RSI",
+                  "signal": "bullish momentum",
+                  "evidence": "RSI at 57.77"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high_volatility_bullish",
+                  "evidence": "Regime classification: high_volatility_bullish"
+                }
+              ],
+              "risks": [
+                "Trend Reversal: The break below the 200-day moving average on high volume is a classic sign of a major trend reversal from bullish to bearish.",
+                "Further Downside Momentum: Large, high-volume gaps down after earnings often lead to follow-through selling in the subsequent trading sessions.",
+                "High Volatility: The stock's inherent volatility remains extremely high, suggesting the potential for continued large and sharp price swings, predominantly to the downside in the current context."
+              ],
+              "summary": "As of the close on 2026-02-10, ALAB was in a strong technical uptrend. However, the subsequent post-earnings reaction was a catastrophic -21.4% drop on exceptionally high volume. This event has shattered the bullish structure, pushing the price below all key moving averages, including the 200-day. The analysis is decisively bearish, anticipating a trend reversal and further downside.",
+              "core_insight": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the news_macro agent's short-term bearish stance, as the fundamental reasons cited (margin/spending outlook, CFO transition) provide a clear catalyst for the severe negative technical reaction I observed.",
+            "I agree with the fundamental agent's data point that Net Income fell sharply QoQ (-50.6%) despite revenue growth. This fundamental weakness strongly supports the market's bearish price action.",
+            "I agree with the fundamental agent's observation of a very high valuation (Trailing P/E ~165x), which explains the severity of the stock's decline on disappointing news.",
+            "I agree with the news_macro agent's factual reporting that the company delivered a strong revenue and EPS beat for Q4 and guided Q1 revenue significantly above estimates. This provides crucial context for the price reaction."
+          ],
+          "disagreement": [
+            "I disagree with the news_macro agent's long-term Bullish stance. While the 'investing for growth' narrative is plausible, my primary evidence is the price action. A high-volume break of the 200-day moving average is a powerful long-term bearish signal that suggests the market, for now, rejects that bullish narrative and a period of underperformance is likely.",
+            "I disagree with the fundamental agent's Neutral stance. A 21% price collapse on a 50% drop in net income is a decisively bearish event, not a neutral one, even if top-line growth remains.",
+            "I assign a lower weight to the news_macro agent's interpretation that increased spending is definitively a long-term positive. The market's reaction suggests it could be perceived as a sign of rising competition, inefficient capital allocation, or a longer-than-expected path to profitability, all of which are bearish risks."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "An explanation for the significant discrepancy between operating income growth and the 50.6% QoQ decline in net income, as highlighted by the fundamental agent. An earnings call transcript is required to resolve this.",
+            "Specific quantification of the forward-looking 'margin and spending outlook' that news headlines cited as the reason for the stock's decline. This is needed to assess if the market reaction was proportional."
+          ]
         }
       }
     ]
@@ -2729,24 +2818,23 @@
   "final_decision": {
     "ticker": "ALAB",
     "company": "Astera Labs",
-    "final_short_term_stance": "Neutral",
-    "final_long_term_stance": "Bullish",
-    "investment_action": "Watch / Accumulate on Weakness",
-    "position_size_hint": "Initiate a small starter position, add on confirmation of trend",
-    "confidence": 0.85,
-    "core_thesis": "Astera Labs is a critical enabler of the AI hardware buildout, solving key data connectivity bottlenecks. The current investment cycle (increased R&D/opex), while pressuring near-term margins and causing a negative sentiment shock, is a necessary and strategic move to secure leadership in next-generation technologies like CXL and PCIe Gen6, ensuring a long runway for hyper-growth.",
-    "why_now": "The market has over-reacted to the short-term margin impact of strategic growth investments, creating a dislocation between the negative stock price reaction and the company's exceptionally strong underlying business momentum (a significant beat-and-raise quarter). This post-earnings pullback offers a potential entry point for long-term investors once the near-term volatility subsides.",
+    "final_short_term_stance": "Bearish",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Avoid / Wait for Base Formation",
+    "position_size_hint": "None",
+    "confidence": 0.8,
+    "core_thesis": "Astera Labs is a fundamental leader in the secular AI connectivity trend, evidenced by its strong revenue growth and forward guidance. However, the stock was priced for perfection (165x TTM P/E) and the market has severely punished it for a weaker margin outlook and increased spending, causing catastrophic technical damage. While the long-term growth story is likely intact, the stock will probably underperform or consolidate until the chart repairs and the market regains confidence in the margin trajectory.",
+    "why_now": "The -21% post-earnings collapse on massive volume has created a clear conflict between a strong fundamental growth story and a broken technical picture. This is a 'show-me' story now. The prudent action is to step aside until the negative momentum abates and a new technical base is formed, which could offer a more attractive risk/reward entry point in future quarters.",
     "key_supporting_evidence": [
-      "The company delivered a strong Q4 beat on EPS and revenue and provided a substantial Q1 guidance raise, confirming its hyper-growth trajectory is intact.",
-      "The market's negative reaction was driven by margin/spending guidance, which the committee assesses as a strategic investment in R&D for future growth (e.g., CXL, PCIe Gen6), not a structural flaw in profitability.",
-      "Technically, the stock has experienced a significant pullback (~20%) which has reset sentiment, but the long-term bullish trend structure (price above key moving averages) remains intact, suggesting a consolidation phase rather than a trend reversal.",
-      "The fundamental agent, after receiving full context, became strongly bullish, viewing the underlying business acceleration as the primary signal."
+      "Technical Breakdown: The stock dropped -21.4% post-earnings on ~3x average volume, decisively breaking below its 200-day moving average, signaling a high-conviction trend change by the market.",
+      "Fundamental Growth: The company delivered a strong 'beat-and-raise' quarter, with Q4 revenue/EPS beating estimates and Q1 guidance significantly above consensus, confirming its hyper-growth trajectory.",
+      "Valuation Reset: An extremely high Trailing P/E ratio of ~165x made the stock vulnerable to any disappointment. The market is now repricing the stock for a reality of heavy investment and margin pressure.",
+      "Negative Catalyst: The negative reaction was driven by guidance on margins and spending, compounded by a CFO transition, which created uncertainty despite the strong top-line numbers."
     ],
     "key_risks": [
-      "Valuation risk: Even after the pullback, the stock trades at a high forward P/E (~56x), making it vulnerable to any execution missteps or a broader market de-rating of growth stocks.",
-      "Sentiment and Momentum: Negative post-earnings price action could persist in the short term as momentum investors exit. A break below key technical support could lead to a deeper correction.",
-      "Competition: The lucrative AI interconnect market attracts strong competition from larger, well-funded players like Broadcom and Marvell, and the ROI on increased R&D is not guaranteed.",
-      "CFO Transition: A change in CFO during a critical growth and investment phase introduces a small element of execution uncertainty."
+      "Risk to Neutral Stance (Bullish): The market could be overly pessimistic. If the margin pressure is quickly digested as a wise long-term investment, the stock could rebound sharply, making the current pullback a major buying opportunity.",
+      "Risk to Neutral Stance (Bearish): The technical breakdown could be the start of a prolonged downtrend. The margin pressure may reflect intensifying competition or inefficient capital allocation, not just strategic investment, thus impairing the long-term fundamental thesis.",
+      "CFO Transition: An orderly CFO transition is assumed. Any signs that the departure was acrimonious or related to financial disagreements would be a major red flag."
     ],
     "agent_view_summary": [
       {
@@ -2757,104 +2845,137 @@
         "rationale": "Short-term: Despite a strong beat-and-raise, the stock's negative reaction to margin/spending guidance and a CFO change signals that sky-high investor expectations were not met. This creates a negative post-earnings drift as momentum money exits. Long-term: The massive revenue acceleration confirms ALAB is a primary beneficiary of the AI buildout. The increased R&D spending is a necessary investment to maintain its technical lead in next-generation interconnects (e.g., CXL, PCIe Gen6), which will drive future growth and eventually allow the market to look past the temporary margin pressure."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The core technical picture for ALAB was one of a powerful but high-risk uptrend. While all major trend and momentum signals were bullish, the combination of extreme volatility, a recent sharp drawdown, and weakening volume participation pointed to a fragile and unstable rally as of the analysis date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Astera Labs demonstrates exceptional top-line growth and strong cash flow generation, consistent with a hyper-growth company in the AI space. However, a significant and unexplained quarter-over-quarter decline in net income, paired with a very high valuation (Trailing P/E of ~165x), introduces considerable risk. The fundamental picture is mixed, with strong operational performance overshadowed by a sharp drop in bottom-line profitability and a lack of management commentary."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "rationale": "The market's overwhelming, high-volume rejection of the company's earnings report has completely invalidated the prior bullish trend. This single event acts as a powerful catalyst for a trend reversal, making the short-term and long-term outlook bearish."
       }
     ],
     "debate_summary": {
       "debate_triggered": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "Long-term views contain both bullish and bearish calls.",
+        "High-confidence long-term agents disagree."
       ],
       "debate_responses": [
         {
-          "response_type": "agent_revision",
+          "response_type": "revision",
           "agreement": {
-            "market_technical": "The technical agent's identification of a 'Significant Pullback Within Uptrend' (-20.1% drawdown) provides quantitative evidence for the negative stock reaction I cited, supporting my short-term bearish view. Furthermore, its observation of a 'Strong Bullish Trend Structure' (Price > MAs) aligns with and strengthens my long-term bullish thesis.",
-            "fundamental": "The fundamental agent's data confirms key parts of my thesis: 'Strong revenue growth' (17.3% QoQ) validates the hyper-growth narrative, and the 'extremely high' valuation (165x Trailing P/E) supports my rationale that the stock was priced for perfection and thus vulnerable to a guidance-driven sell-off."
+            "market_technical": "The agent's evidence provides a crucial quantification of the negative market reaction. The -21.4% price drop on 2.95x average volume, and especially the decisive break below the 200-day moving average, confirms my bearish short-term view and indicates the technical damage is more severe than a simple 'post-earnings drift'.",
+            "fundamental": "The agent's flagging of the extremely high Trailing P/E ratio of ~165x provides essential context for the market's severe negative reaction. It confirms the stock was priced for perfection, making it highly vulnerable to any negative news on margins or spending. The agent also confirms the strong top-line revenue growth, which supports my long-term thesis."
           },
           "disagreement": {
-            "market_technical": "I disagree with the technical agent's overall short-term 'Bullish' stance. It appears to be weighing lagging trend indicators (moving averages) more heavily than the immediate, catalyst-driven price action. My news-based analysis provides the causal explanation for the -20% drop (margin guidance), which I believe will suppress the price short-term, making a purely technical bullish interpretation less likely to be correct.",
-            "fundamental": "I disagree with the fundamental agent's 'Neutral' stance and its conclusion that the thesis impact is 'Unchanged'. This view stems from its stated lack of critical data (consensus, guidance, transcript) which my agent possesses. Its confusion over the sharp QoQ decline in Net Income is directly explained by the news headlines I processed regarding increased spending and margin pressure. My analysis contextualizes this as a strategic investment, whereas the fundamental agent sees it as an unexplained red flag due to its data limitations."
+            "market_technical": "I assign a lower weight to the agent's 'Bearish' long-term stance. While the technical breakdown is severe, it is a reaction to a specific event (earnings/guidance). It does not, by itself, invalidate the multi-year secular growth story of AI interconnectivity that underpins my long-term bullish view. Technicals reflect sentiment, which can change, whereas fundamentals reflect the underlying business.",
+            "fundamental": "I disagree with the agent's assessment that the 50.6% QoQ drop in Net Income is 'unexplained'. My news-based evidence directly attributes the stock's fall to a negative 'margin and spending outlook'. The fundamental agent lacked this context. However, the agent correctly highlights the *magnitude* of this drop as a significant risk that my initial analysis may have underweighted."
           },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
+          "revised_confidence": 0.6,
           "evidence_needed": [
-            "A specific reconciliation from the earnings report or transcript that explains the large discrepancy between the QoQ growth in Operating Income (+$11.5M) and the QoQ decline in Net Income (-$46.1M). This would confirm my inference that the drop is due to planned investments or non-recurring items rather than a structural flaw in profitability."
+            "A detailed reconciliation from the company's financial statements (e.g., 10-Q) explaining the specific items between Operating Income and Net Income that caused Net Income to fall 50.6% QoQ while Operating Income grew 20.8% QoQ. This is required to validate that the decline is due to strategic growth investments (R&D, opex) rather than unexpected charges, tax issues, or other dilutive items."
           ]
         },
         {
           "response_type": "revision",
           "agreement": [
-            "I agree with the news_macro agent that the short-term price weakness, which I identified as a 'Significant Pullback' and 'Weakening Conviction', is a direct reaction to news about the margin/spending outlook and a CFO transition, despite a strong earnings beat and raise.",
-            "I agree with the news_macro agent's long-term bullish view. Their rationale that increased spending is a strategic investment in future growth (e.g., CXL, PCIe Gen6) provides a fundamental underpinning for the 'Strong Bullish Trend Structure' (Price > MAs) that I observed.",
-            "I agree with the fundamental agent's data points showing strong top-line revenue growth and a high valuation, which are consistent with my 'Significant Market Outperformance' and 'High Volatility' signals."
+            "I agree with the news_macro agent that Astera Labs delivered a strong 'beat-and-raise' quarter, confirming its hyper-growth trajectory within the AI sector. The new evidence shows Q4 revenue and EPS beat estimates, and Q1 guidance was significantly above consensus.",
+            "I agree with the news_macro agent's core insight: the negative stock reaction was due to concerns over a weaker 'margin and spending outlook'. This resolves my original key question about the drop in net income; it is attributable to a conscious increase in investment (opex/R&D) for future growth.",
+            "I agree with the market_technical agent's factual assessment of the price action. The -21.4% post-earnings drop on nearly 3x average volume is a severe technical breakdown that has broken key moving averages and reflects extremely negative short-term sentiment."
           ],
           "disagreement": [
-            "I disagree with the fundamental agent's 'Neutral' stance and low confidence. Their analysis was explicitly hampered by missing data (analyst estimates, guidance, context for net income drop) which the news_macro agent's evidence successfully provided. The 'unexplained' net income decline is now explained by the increased spending outlook.",
-            "I assign lower weight to the news_macro agent's outright 'Bearish' short-term stance. While the news is a clear headwind explaining the recent drawdown, my primary technical trend indicators have not yet broken. The situation is better described as a consolidation or pullback within an uptrend, warranting a 'Neutral' short-term view rather than a full reversal to 'Bearish'."
+            "I disagree with the market_technical agent's 'Bearish' long-term stance. While the technical damage is severe, it reflects a short-term market reaction to margin pressure. It does not invalidate the now-strengthened long-term fundamental thesis of a hyper-growth company successfully investing to capture a large market opportunity.",
+            "I now disagree with my original 'Neutral' stance. It was predicated on missing information (consensus, guidance, context for net income decline). The new evidence has filled these gaps, allowing for a more convicted, albeit split, stance."
           ],
-          "revised_short_term_stance": "Neutral",
+          "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.85,
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Confirmation from the earnings call transcript regarding the specific drivers of the margin pressure - is it purely R&D and growth-related opex, or is there any component of pricing pressure?",
-            "Further details on the CFO transition to confirm it is orderly and not a red flag.",
-            "Technical confirmation of the short-term trend: Does the price find support at a key moving average (e.g., MA20 or MA50) and resume its climb, or does it break below, signaling a more significant trend change?"
+            "A full GAAP to non-GAAP reconciliation from the earnings report to precisely quantify the adjustments between the operating income growth and the net income decline I originally flagged.",
+            "Specific management commentary from the earnings call transcript regarding the expected timeline and magnitude of the investment cycle and its impact on margins.",
+            "Further details regarding the CFO transition to confirm it is an orderly succession and not a red flag related to financial reporting or strategy."
           ]
         },
         {
           "response_type": "revision",
-          "agreement": "I agree with the core evidence provided by the news_macro agent, which fills the critical information gaps in my original analysis. Specifically: 1) The company delivered a significant beat on both Q4 EPS ($0.58 vs. $0.51 est.) and revenue ($270.6M vs. $249.5M est.). 2) Guidance for Q1 was a substantial raise, with sales projected at $286M-$297M versus a $259.3M estimate. 3) The news_macro agent provides a credible explanation for the market's negative reaction and my concern over profitability: the stock fell due to a 'margin and spending outlook'. This context reframes the net income pressure not as an unexplained deterioration, but as a strategic investment in R&D to support long-term growth, a view supported by news of R&D center expansion.",
-          "disagreement": "I place lower weight on the market_technical agent's analysis; while it correctly identifies high volatility and the recent drawdown, its trend signals are lagging indicators and less relevant to my fundamental assessment. I disagree with the news_macro agent's 'Bearish' short-term stance. While the stock price reacted negatively, the fundamental news itself (a strong beat-and-raise) is unequivocally positive for the upcoming quarter's outlook. The market's reaction appears to be a sentiment and positioning adjustment to a high-valuation stock, not a reflection of deteriorating near-term fundamentals.",
-          "revised_short_term_stance": "Bullish",
-          "revised_long_term_stance": "Bullish",
+          "agreement": [
+            "I agree with the news_macro agent's short-term bearish stance, as the fundamental reasons cited (margin/spending outlook, CFO transition) provide a clear catalyst for the severe negative technical reaction I observed.",
+            "I agree with the fundamental agent's data point that Net Income fell sharply QoQ (-50.6%) despite revenue growth. This fundamental weakness strongly supports the market's bearish price action.",
+            "I agree with the fundamental agent's observation of a very high valuation (Trailing P/E ~165x), which explains the severity of the stock's decline on disappointing news.",
+            "I agree with the news_macro agent's factual reporting that the company delivered a strong revenue and EPS beat for Q4 and guided Q1 revenue significantly above estimates. This provides crucial context for the price reaction."
+          ],
+          "disagreement": [
+            "I disagree with the news_macro agent's long-term Bullish stance. While the 'investing for growth' narrative is plausible, my primary evidence is the price action. A high-volume break of the 200-day moving average is a powerful long-term bearish signal that suggests the market, for now, rejects that bullish narrative and a period of underperformance is likely.",
+            "I disagree with the fundamental agent's Neutral stance. A 21% price collapse on a 50% drop in net income is a decisively bearish event, not a neutral one, even if top-line growth remains.",
+            "I assign a lower weight to the news_macro agent's interpretation that increased spending is definitively a long-term positive. The market's reaction suggests it could be perceived as a sign of rising competition, inefficient capital allocation, or a longer-than-expected path to profitability, all of which are bearish risks."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
           "revised_confidence": 0.8,
-          "evidence_needed": "My original critical missing information has been supplied. The new key questions are: 1) Confirmation of the nature of the CFO transition to ensure it is orderly and not a red flag. 2) Management's detailed commentary on the expected duration and magnitude of the current investment cycle and the timeline for returning to margin expansion. 3) Future evidence of ROI from the increased R&D spend, such as design wins or market share gains with next-generation products (e.g., CXL, PCIe Gen6)."
+          "evidence_needed": [
+            "An explanation for the significant discrepancy between operating income growth and the 50.6% QoQ decline in net income, as highlighted by the fundamental agent. An earnings call transcript is required to resolve this.",
+            "Specific quantification of the forward-looking 'margin and spending outlook' that news headlines cited as the reason for the stock's decline. This is needed to assess if the market reaction was proportional."
+          ]
         }
       ]
     },
-    "reason_for_final_decision": "I am upholding the guardrail's Neutral short-term stance but upgrading the investment action. The committee's analysis provides a clear, unified long-term Bullish view. The short-term is a classic conflict: the market is punishing the stock for the very investments that secure its long-term future. This creates a 'coiled spring' scenario. The Neutral short-term stance is prudent, acknowledging the negative price momentum and high volatility. However, given the strength of the long-term thesis, this period of weakness should be viewed as a buying opportunity. Therefore, the final recommendation is to watch for stabilization and begin accumulating a position on weakness, rather than avoiding the stock entirely.",
+    "routing_profile": {
+      "bucket": "ai_infrastructure",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI infrastructure is driven by second-order demand signals, but price confirmation still matters after earnings."
+    },
+    "reason_for_final_decision": "I am overriding the deterministic guardrail's 'Bullish' long-term stance. While the committee's fundamental and news agents make a compelling case for long-term growth, the severity of the technical damage presented by the market technical agent cannot be understated. A 21% price collapse on high volume that breaks the 200-day moving average is a signal of institutional distribution and a major change in market perception. Price action of this magnitude often requires a multi-quarter 'penalty box' period for the chart to form a new base and for the company to re-earn investor trust. Therefore, a 'Neutral' long-term stance is the most prudent risk-managed decision, acknowledging the fundamental potential while respecting the market's powerful bearish signal.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.35,
-          "contribution": -0.28
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.85,
+          "confidence": 0.6,
           "weight": 0.45,
-          "contribution": 0.0
+          "contribution": -0.27
         },
         {
           "agent_name": "fundamental",
-          "stance": "Bullish",
+          "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": 0.16
+          "weight": 0.15,
+          "contribution": -0.12
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": -0.32
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
+          "stance": "Bullish",
+          "confidence": 0.6,
+          "weight": 0.4,
+          "contribution": 0.24
+        },
+        {
+          "agent_name": "fundamental",
           "stance": "Bullish",
           "confidence": 0.8,
           "weight": 0.35,
@@ -2862,23 +2983,16 @@
         },
         {
           "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.85,
-          "weight": 0.2,
-          "contribution": 0.17
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bullish",
+          "stance": "Neutral",
           "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": 0.36
+          "weight": 0.25,
+          "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.1459,
-      "long": 1.0
+      "short": -1.0,
+      "long": 0.7222
     },
     "llm_decision_used": true
   }

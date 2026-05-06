@@ -11,29 +11,29 @@
         "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.85,
+        "rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
+      "2 agents lean bullish on the short-term horizon.",
       "2 agents lean bullish on the long-term horizon."
     ],
     "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 2,
+      "Bullish": 2,
+      "Neutral": 1,
       "Bearish": 0
     },
     "long_stance_counts": {
@@ -414,257 +414,6 @@
       {
         "ticker": "AMAT",
         "company": "Applied Materials",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-        "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-            "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Shift",
-            "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral-to-Bullish Momentum",
-            "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Consolidating Price Action",
-            "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-          },
-          {
-            "type": "Volume",
-            "signal": "Subdued Participation",
-            "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Minor Pullback from Recent Highs",
-            "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.03%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-          }
-        ],
-        "risks": [
-          "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-          "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-        ],
-        "citations": [],
-        "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-        "raw_packet": {
-          "ticker": "AMAT",
-          "company": "Applied Materials",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Consolidating Price Action",
-              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-            },
-            {
-              "type": "Volume",
-              "signal": "Subdued Participation",
-              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Recent Highs",
-              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-            }
-          ],
-          "risks": [
-            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-          "raw_packet": {
-            "ticker": "AMAT",
-            "company": "Applied Materials",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Consolidating Price Action",
-                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-              },
-              {
-                "type": "Volume",
-                "signal": "Subdued Participation",
-                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Recent Highs",
-                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-              }
-            ],
-            "risks": [
-              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-            "raw_packet": {
-              "ticker": "AMAT",
-              "company": "Applied Materials",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Consolidating Price Action",
-                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Subdued Participation",
-                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Recent Highs",
-                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-                }
-              ],
-              "risks": [
-                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-              ],
-              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-              "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "AMAT",
-        "company": "Applied Materials",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -826,6 +575,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.85,
+        "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+        "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Post-Earnings Confirmation",
+            "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Intact Bullish Trend Structure",
+            "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Bullish Trend Confirmation",
+            "evidence": "The stock is classified in a 'bullish_trend' market regime."
+          },
+          {
+            "type": "RSI",
+            "signal": "Healthy Bullish Momentum",
+            "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+          },
+          {
+            "type": "MACD",
+            "signal": "Waning Pre-Earnings Momentum",
+            "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Contained Pullback from Peak",
+            "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.31%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.14x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+          }
+        ],
+        "risks": [
+          "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+          "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+          "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Intact Bullish Trend Structure",
+              "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Confirmation",
+              "evidence": "The stock is classified in a 'bullish_trend' market regime."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+            },
+            {
+              "type": "MACD",
+              "signal": "Waning Pre-Earnings Momentum",
+              "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Pullback from Peak",
+              "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.31%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.14x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+            }
+          ],
+          "risks": [
+            "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+            "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+            "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Intact Bullish Trend Structure",
+                "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Confirmation",
+                "evidence": "The stock is classified in a 'bullish_trend' market regime."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+              },
+              {
+                "type": "MACD",
+                "signal": "Waning Pre-Earnings Momentum",
+                "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Pullback from Peak",
+                "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.31%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.14x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+              }
+            ],
+            "risks": [
+              "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+              "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bullish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Intact Bullish Trend Structure",
+                  "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Confirmation",
+                  "evidence": "The stock is classified in a 'bullish_trend' market regime."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Waning Pre-Earnings Momentum",
+                  "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Pullback from Peak",
+                  "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.31%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.14x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+                }
+              ],
+              "risks": [
+                "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+                "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+              ],
+              "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+              "core_insight": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
+            }
+          }
+        }
       }
     ]
   },
@@ -850,29 +870,29 @@
           "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.85,
+          "rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
+        "2 agents lean bullish on the short-term horizon.",
         "2 agents lean bullish on the long-term horizon."
       ],
       "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 2,
+        "Bullish": 2,
+        "Neutral": 1,
         "Bearish": 0
       },
       "long_stance_counts": {
@@ -1375,320 +1395,6 @@
         {
           "ticker": "AMAT",
           "company": "Applied Materials",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Consolidating Price Action",
-              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-            },
-            {
-              "type": "Volume",
-              "signal": "Subdued Participation",
-              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Recent Highs",
-              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-            }
-          ],
-          "risks": [
-            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-          "raw_packet": {
-            "ticker": "AMAT",
-            "company": "Applied Materials",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Consolidating Price Action",
-                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-              },
-              {
-                "type": "Volume",
-                "signal": "Subdued Participation",
-                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Recent Highs",
-                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-              }
-            ],
-            "risks": [
-              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-            "raw_packet": {
-              "ticker": "AMAT",
-              "company": "Applied Materials",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-              "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Consolidating Price Action",
-                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Subdued Participation",
-                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Recent Highs",
-                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-                }
-              ],
-              "risks": [
-                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-              ],
-              "citations": [],
-              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-              "raw_packet": {
-                "ticker": "AMAT",
-                "company": "Applied Materials",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bullish",
-                "confidence": 0.75,
-                "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-                "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                    "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bearish Momentum Shift",
-                    "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral-to-Bullish Momentum",
-                    "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Consolidating Price Action",
-                    "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Subdued Participation",
-                    "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Minor Pullback from Recent Highs",
-                    "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.03%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-                  }
-                ],
-                "risks": [
-                  "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-                  "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-                ],
-                "citations": [],
-                "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-                "raw_packet": {
-                  "ticker": "AMAT",
-                  "company": "Applied Materials",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                      "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bearish Momentum Shift",
-                      "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral-to-Bullish Momentum",
-                      "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Consolidating Price Action",
-                      "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Subdued Participation",
-                      "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Minor Pullback from Recent Highs",
-                      "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.03%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-                    }
-                  ],
-                  "risks": [
-                    "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-                    "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-                  ],
-                  "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-                  "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "AMAT",
-          "company": "Applied Materials",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1886,6 +1592,345 @@
                     "thesis_impact": "Unclear",
                     "thesis_impact_reasoning": "The analysis is inconclusive due to mixed signals—strong QoQ profitability growth but a sharp decline in cash flow—and a significant lack of information, including management guidance, earnings call commentary, and analyst consensus estimates."
                   }
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+          "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Intact Bullish Trend Structure",
+              "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Confirmation",
+              "evidence": "The stock is classified in a 'bullish_trend' market regime."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+            },
+            {
+              "type": "MACD",
+              "signal": "Waning Pre-Earnings Momentum",
+              "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Pullback from Peak",
+              "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.31%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.14x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+            }
+          ],
+          "risks": [
+            "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+            "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+            "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Intact Bullish Trend Structure",
+                "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Confirmation",
+                "evidence": "The stock is classified in a 'bullish_trend' market regime."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+              },
+              {
+                "type": "MACD",
+                "signal": "Waning Pre-Earnings Momentum",
+                "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Pullback from Peak",
+                "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.31%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.14x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+              }
+            ],
+            "risks": [
+              "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+              "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bullish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+              "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Intact Bullish Trend Structure",
+                  "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Confirmation",
+                  "evidence": "The stock is classified in a 'bullish_trend' market regime."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Waning Pre-Earnings Momentum",
+                  "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Pullback from Peak",
+                  "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.31%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.14x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+                }
+              ],
+              "risks": [
+                "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+                "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+              "raw_packet": {
+                "ticker": "AMAT",
+                "company": "Applied Materials",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bullish",
+                "confidence": 0.85,
+                "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+                "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bullish Post-Earnings Confirmation",
+                    "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Intact Bullish Trend Structure",
+                    "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Outperformance",
+                    "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Bullish Trend Confirmation",
+                    "evidence": "The stock is classified in a 'bullish_trend' market regime."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Healthy Bullish Momentum",
+                    "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Waning Pre-Earnings Momentum",
+                    "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Contained Pullback from Peak",
+                    "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.31%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "moderate participation",
+                    "evidence": "Volume spike ratio 1.14x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+                  }
+                ],
+                "risks": [
+                  "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+                  "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+                "raw_packet": {
+                  "ticker": "AMAT",
+                  "company": "Applied Materials",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.85,
+                  "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bullish Post-Earnings Confirmation",
+                      "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Intact Bullish Trend Structure",
+                      "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Outperformance",
+                      "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Bullish Trend Confirmation",
+                      "evidence": "The stock is classified in a 'bullish_trend' market regime."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Healthy Bullish Momentum",
+                      "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Waning Pre-Earnings Momentum",
+                      "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Contained Pullback from Peak",
+                      "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.31%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "moderate participation",
+                      "evidence": "Volume spike ratio 1.14x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+                    }
+                  ],
+                  "risks": [
+                    "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+                    "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+                  ],
+                  "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+                  "core_insight": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
                 }
               }
             }
@@ -2267,257 +2312,6 @@
       {
         "ticker": "AMAT",
         "company": "Applied Materials",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-        "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-            "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Shift",
-            "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral-to-Bullish Momentum",
-            "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Consolidating Price Action",
-            "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-          },
-          {
-            "type": "Volume",
-            "signal": "Subdued Participation",
-            "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Minor Pullback from Recent Highs",
-            "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.03%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-          }
-        ],
-        "risks": [
-          "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-          "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-        ],
-        "citations": [],
-        "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-        "raw_packet": {
-          "ticker": "AMAT",
-          "company": "Applied Materials",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-          "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-              "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Shift",
-              "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Consolidating Price Action",
-              "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-            },
-            {
-              "type": "Volume",
-              "signal": "Subdued Participation",
-              "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Recent Highs",
-              "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-            }
-          ],
-          "risks": [
-            "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-            "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-          ],
-          "citations": [],
-          "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-          "raw_packet": {
-            "ticker": "AMAT",
-            "company": "Applied Materials",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-            "stance_rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Shift",
-                "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Consolidating Price Action",
-                "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-              },
-              {
-                "type": "Volume",
-                "signal": "Subdued Participation",
-                "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Recent Highs",
-                "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-              }
-            ],
-            "risks": [
-              "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-              "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-            ],
-            "citations": [],
-            "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-            "raw_packet": {
-              "ticker": "AMAT",
-              "company": "Applied Materials",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "High confidence in the established long-term uptrend confirmed by the price position relative to the MA200. Short-term confidence is moderated by conflicting signals: positive RSI and MA50 support versus a bearish MACD crossover and price below the MA20, suggesting consolidation.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Long-Term Uptrend, Short-Term Pause",
-                  "evidence": "Price ($391.38) is 45.0% above the MA200 ($269.89) but is currently trading just below its MA20 ($393.18)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Shift",
-                  "evidence": "A bearish crossover is in effect, with the MACD line (7.82) below the signal line (10.24), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "AMAT has outperformed its benchmark (SPY) by 126.5%, highlighting strong relative market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "The RSI of 53.8 is above the neutral 50 mark, indicating underlying momentum is still positive despite recent weakness."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Consolidating Price Action",
-                  "evidence": "The current market regime is classified as 'range_bound', consistent with the observed price consolidation and conflicting momentum indicators."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Subdued Participation",
-                  "evidence": "The volume spike ratio of 0.89 indicates that recent price movements have not been accompanied by significant conviction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Recent Highs",
-                  "evidence": "The stock is experiencing a modest 6.15% drawdown, suggesting a controlled pullback within a larger uptrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.1%, Recent 46.24%"
-                }
-              ],
-              "risks": [
-                "Waning Momentum: The bearish MACD crossover and price dip below the MA20 suggest the uptrend is losing steam in the short term, which could lead to further consolidation or a deeper pullback.",
-                "Mean Reversion Risk: The stock is trading significantly (45%) above its long-term 200-day moving average, increasing the potential for a reversion-to-the-mean correction."
-              ],
-              "summary": "As of the analysis date, AMAT was in a robust long-term uptrend, confirmed by its position far above the MA200 and strong relative outperformance. However, short-term indicators pointed to a consolidation phase. A bearish MACD crossover and a price slip below the MA20 signaled weakening momentum, which was contextually supported by a 'range_bound' market regime and low volume. The overall technical posture was that of a healthy pause within a major bull trend.",
-              "core_insight": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "AMAT",
-        "company": "Applied Materials",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -2679,30 +2473,301 @@
             }
           }
         }
+      },
+      {
+        "ticker": "AMAT",
+        "company": "Applied Materials",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.85,
+        "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+        "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Post-Earnings Confirmation",
+            "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Intact Bullish Trend Structure",
+            "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Bullish Trend Confirmation",
+            "evidence": "The stock is classified in a 'bullish_trend' market regime."
+          },
+          {
+            "type": "RSI",
+            "signal": "Healthy Bullish Momentum",
+            "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+          },
+          {
+            "type": "MACD",
+            "signal": "Waning Pre-Earnings Momentum",
+            "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Contained Pullback from Peak",
+            "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.31%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.14x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+          }
+        ],
+        "risks": [
+          "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+          "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+        "raw_packet": {
+          "ticker": "AMAT",
+          "company": "Applied Materials",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.85,
+          "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+          "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Post-Earnings Confirmation",
+              "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Intact Bullish Trend Structure",
+              "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Bullish Trend Confirmation",
+              "evidence": "The stock is classified in a 'bullish_trend' market regime."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+            },
+            {
+              "type": "MACD",
+              "signal": "Waning Pre-Earnings Momentum",
+              "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Contained Pullback from Peak",
+              "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.31%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.14x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+            }
+          ],
+          "risks": [
+            "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+            "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+          "raw_packet": {
+            "ticker": "AMAT",
+            "company": "Applied Materials",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.85,
+            "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+            "stance_rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Post-Earnings Confirmation",
+                "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Intact Bullish Trend Structure",
+                "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Bullish Trend Confirmation",
+                "evidence": "The stock is classified in a 'bullish_trend' market regime."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+              },
+              {
+                "type": "MACD",
+                "signal": "Waning Pre-Earnings Momentum",
+                "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Contained Pullback from Peak",
+                "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.31%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.14x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+              }
+            ],
+            "risks": [
+              "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+              "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+            "raw_packet": {
+              "ticker": "AMAT",
+              "company": "Applied Materials",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bullish",
+              "confidence": 0.85,
+              "confidence_rationale": "Confidence is high due to the powerful post-earnings reaction (+8.08% return on 1.77x volume), which provides strong bullish confirmation and overrides pre-event signs of slowing momentum within a well-established uptrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Post-Earnings Confirmation",
+                  "evidence": "The stock gained 8.08% the day after earnings, an abnormal return of +7.86% vs. QQQ, on volume 1.77 times the average, indicating strong conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Intact Bullish Trend Structure",
+                  "evidence": "Price at $327.98 is above all key moving averages: MA20 ($323.72), MA50 ($292.28), and MA200 ($215.30)."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock outperformed the SPY benchmark by 69.12% over the analysis period."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Bullish Trend Confirmation",
+                  "evidence": "The stock is classified in a 'bullish_trend' market regime."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI at 56.56 indicates positive momentum without being in overbought territory."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Waning Pre-Earnings Momentum",
+                  "evidence": "As of the close on 2026-02-12, a bearish crossover was in effect (Histogram: -1.182), suggesting momentum had been slowing into the event."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Contained Pullback from Peak",
+                  "evidence": "The stock was in a minor drawdown of -3.79% from its recent high."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.31%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.14x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 47.62%, Recent 55.25%"
+                }
+              ],
+              "risks": [
+                "Elevated recent volatility (55.25%) suggests a potential for sharp price swings or profit-taking following the large post-earnings price increase.",
+                "The pre-earnings bearish MACD crossover indicated slowing momentum, which could re-emerge if the initial post-earnings thrust is not sustained."
+              ],
+              "summary": "As of 2026-02-12, AMAT exhibited a strong long-term uptrend, confirmed by its price position above all key moving averages and significant market outperformance. While momentum indicators showed some weakness heading into the earnings announcement (bearish MACD crossover), the market's subsequent reaction was unequivocally bullish. A very strong positive price move on high volume confirmed the uptrend and signals a high probability of short-term continuation.",
+              "core_insight": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
+            }
+          }
+        }
       }
     ]
   },
   "final_decision": {
     "ticker": "AMAT",
     "company": "Applied Materials",
-    "final_short_term_stance": "Neutral",
+    "final_short_term_stance": "Bullish",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Watch / Accumulate on Weakness",
-    "position_size_hint": "Initiate a small starter position, add on dips.",
+    "investment_action": "Long",
+    "position_size_hint": "Small",
     "confidence": 0.7,
-    "core_thesis": "Applied Materials is a critical 'pick-and-shovel' enabler of the secular AI infrastructure buildout. As a leading semiconductor capital equipment (WFE) provider, the company is poised to benefit from sustained, long-term investment in advanced chip manufacturing capacity required for AI accelerators, high-bandwidth memory, and other leading-edge components.",
-    "why_now": "The company recently reported strong quarterly results and an upbeat outlook, explicitly citing robust AI-related demand. This event confirms the long-term thesis. The technical agent indicates the stock is in a short-term consolidation phase after a strong run-up. This healthy pause presents a potential opportunity to initiate a long-term position at a more favorable entry point rather than chasing the post-earnings momentum.",
+    "core_thesis": "Applied Materials is a key 'pick-and-shovel' beneficiary of the ongoing AI infrastructure buildout. The market's strong positive reaction to the latest earnings, despite some fundamental blemishes, confirms this narrative and suggests demand is accelerating, overriding concerns about valuation or temporary cash flow fluctuations.",
+    "why_now": "The powerful post-earnings price action (+8.08% on 1.77x volume) serves as a strong bullish catalyst. The market has digested the company's results and outlook and has voted with conviction, reinforcing the stock's existing uptrend and signaling a high probability of continued positive momentum.",
     "key_supporting_evidence": [
-      "The technical picture shows a powerful long-term uptrend, with the price significantly above its 200-day moving average and demonstrating strong relative outperformance against the S&P 500.",
-      "News headlines from the earnings event confirm a beat on revenue and earnings, an upbeat outlook, and attribute the strength to 'robust AI demand', directly addressing the fundamental agent's concerns about a lack of forward guidance.",
-      "The news & macro agent correctly identifies AMAT as a second-order beneficiary of the AI investment cycle, benefiting from capital spending by hyperscalers and foundries.",
-      "Despite a quarterly dip in cash flow, the fundamental agent confirms strong QoQ growth in revenue and net income, alongside a healthy balance sheet where cash nearly equals total debt."
+      "The market's post-earnings reaction was unequivocally bullish, with the stock gaining 8.08% on 1.77x average volume, indicating strong institutional conviction.",
+      "The stock remains in a well-established bullish trend, trading above its 20, 50, and 200-day moving averages.",
+      "News headlines surrounding the earnings report pointed to 'robust AI demand' and an 'upbeat outlook,' providing a narrative that supports the market's bullish reaction.",
+      "The company reported solid quarter-over-quarter growth in revenue (to $7.01B from $6.80B) and net income (to $2.03B from $1.90B)."
     ],
     "key_risks": [
-      "The stock is technically extended, trading approximately 45% above its 200-day moving average, which increases the risk of a sharp pullback or mean reversion.",
-      "The fundamental agent highlighted a significant quarter-over-quarter decline in operating and free cash flow. This needs to be monitored to ensure it was a temporary working capital issue and not the start of a negative trend.",
-      "The semiconductor equipment industry is historically cyclical. A broader economic slowdown or a pause in data center capital expenditures could negatively impact demand.",
-      "Current valuation appears elevated (Trailing P/E of ~40), suggesting high growth expectations are already priced in, making the stock vulnerable to any disappointment in future earnings or guidance."
+      "A significant quarter-over-quarter decline in operating cash flow (from $2.83B to $1.69B) and free cash flow (from $2.04B to $1.04B) raises concerns about earnings quality and needs to be monitored.",
+      "The stock's valuation is high, with a trailing P/E of 40, making it potentially vulnerable to shifts in market sentiment or a slowdown in growth.",
+      "Elevated recent volatility following the large price move could lead to sharp pullbacks or profit-taking in the short term.",
+      "The thesis is heavily dependent on the continuation of the AI capital spending cycle, which is subject to broader macroeconomic risks."
     ],
     "agent_view_summary": [
       {
@@ -2713,18 +2778,18 @@
         "rationale": "Heuristic fallback stance based on simple news sentiment keywords, AI/cloud context, and rate-related macro terms. Use model-backed output for real evaluation."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature is the contrast between the powerful long-term uptrend and clear signs of short-term momentum exhaustion. This suggests the stock was in a period of consolidation, digesting recent gains, rather than initiating a major reversal."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company reported strong quarter-over-quarter growth in revenue and profitability, but this was contrasted by a significant decline in operating and free cash flow. While the balance sheet appears healthy, the high valuation and lack of forward-looking guidance or management commentary warrant a cautious approach."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.85,
+        "rationale": "The market's overwhelmingly positive reaction to the earnings event, confirmed by a large abnormal return and high volume, acts as a major bullish catalyst that resolves recent momentum ambiguity and strongly reinforces the established uptrend."
       }
     ],
     "debate_summary": {
@@ -2735,29 +2800,43 @@
       ],
       "debate_responses": []
     },
-    "reason_for_final_decision": "The committee's final view is a short-term Neutral and long-term Bullish stance. We are overriding the guardrail's passive 'Watch / No Trade' action to a more active 'Watch / Accumulate on Weakness'. The decision is based on the overwhelming alignment between the strong secular AI narrative (News/Macro) and the powerful long-term technical uptrend (Technicals). The fundamental agent's neutral stance is down-weighted due to its low confidence and stated lack of forward-looking data, which was substantively contradicted by the positive news headlines regarding the company's upbeat guidance. We interpret the current technical consolidation not as a warning sign, but as a healthy pause and a potential entry opportunity for a long-term position.",
+    "routing_profile": {
+      "bucket": "ai_semis",
+      "short": {
+        "market_technical": 0.45,
+        "news_macro": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI semiconductor moves depend on technical confirmation plus second-order supply-chain and capex signals."
+    },
+    "reason_for_final_decision": "The committee's final decision is to adopt a Bullish stance, overriding the Neutral view from the fundamental agent and siding with the high-conviction technical and macro agents. The primary driver for this decision is the overwhelmingly positive post-earnings market reaction, which is the most direct and timely signal of investor sentiment. We interpret this price action as the market having weighed the available information, including the concerning cash flow figures, and decisively betting on an accelerating AI-driven growth story. The fundamental concerns are valid and have been incorporated as key risks to monitor, justifying a smaller initial position size, but they are not sufficient to contradict the powerful, high-volume price confirmation.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
           "confidence": 0.35,
-          "weight": 0.35,
-          "contribution": 0.1225
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
-          "contribution": 0.0
+          "weight": 0.4,
+          "contribution": 0.14
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.15,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.85,
+          "weight": 0.45,
+          "contribution": 0.3825
         }
       ],
       "long": [
@@ -2765,28 +2844,28 @@
           "agent_name": "news_macro",
           "stance": "Bullish",
           "confidence": 0.35,
-          "weight": 0.35,
-          "contribution": 0.1225
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": 0.15
+          "weight": 0.4,
+          "contribution": 0.14
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.45,
+          "weight": 0.35,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.85,
+          "weight": 0.25,
+          "contribution": 0.2125
         }
       ]
     },
     "scores": {
-      "short": 0.2356,
-      "long": 0.6687
+      "short": 0.9207,
+      "long": 0.7705
     },
     "llm_decision_used": true
   }

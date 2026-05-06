@@ -11,25 +11,26 @@
         "rationale": "Short-term bearish due to the violent negative price reaction, indicating a narrative break and momentum-driven selling that will take time to exhaust. Long-term bullish because the fundamental results (66% revenue growth, beat-and-raise) are exceptional, and the 18% sell-off provides a compelling entry point once the panicked narrative subsides and focus returns to stellar execution and profitability."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "AppLovin demonstrated exceptional quarter-over-quarter growth across all key financial metrics, including revenue, profitability, and cash flow. Strong YoY growth metrics from yfinance further support this. While the trailing P/E suggests a premium valuation, the high profit margin and significant drop in the forward P/E indicate strong expected earnings growth. The lack of guidance and management commentary introduces uncertainty, but the reported fundamentals are unequivocally strong."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.65,
+        "rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
       }
     ],
     "areas_of_agreement": [
       "2 agents lean bullish on the long-term horizon."
     ],
     "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
+      "Short-term views contain both bullish and bearish calls.",
+      "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
@@ -39,8 +40,8 @@
     },
     "long_stance_counts": {
       "Bullish": 2,
-      "Neutral": 1,
-      "Bearish": 0
+      "Neutral": 0,
+      "Bearish": 1
     },
     "agent_packets": [
       {
@@ -415,261 +416,6 @@
       {
         "ticker": "APP",
         "company": "AppLovin",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-        "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Short-Term Structure",
-            "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Acceleration",
-            "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Bullish Conviction",
-            "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High-Risk Environment",
-            "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Long-Term Recovery Phase",
-            "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.28%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-          "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-          "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-        "raw_packet": {
-          "ticker": "APP",
-          "company": "AppLovin",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-          "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Short-Term Structure",
-              "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Acceleration",
-              "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Bullish Conviction",
-              "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High-Risk Environment",
-              "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Long-Term Recovery Phase",
-              "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.28%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-            "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-            "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-          "raw_packet": {
-            "ticker": "APP",
-            "company": "AppLovin",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-            "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Short-Term Structure",
-                "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Acceleration",
-                "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Bullish Conviction",
-                "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High-Risk Environment",
-                "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Long-Term Recovery Phase",
-                "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.28%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-              "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-              "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-            "raw_packet": {
-              "ticker": "APP",
-              "company": "AppLovin",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Short-Term Structure",
-                  "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Acceleration",
-                  "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Bullish Conviction",
-                  "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High-Risk Environment",
-                  "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Long-Term Recovery Phase",
-                  "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.28%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-                "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-                "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-              ],
-              "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-              "core_insight": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "APP",
-        "company": "AppLovin",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -835,6 +581,281 @@
             }
           }
         }
+      },
+      {
+        "ticker": "APP",
+        "company": "AppLovin",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.65,
+        "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+        "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Event Reaction",
+            "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Deeply Bearish Trend Structure",
+            "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+          },
+          {
+            "type": "RSI",
+            "signal": "Approaching Oversold Levels",
+            "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+          },
+          {
+            "type": "MACD",
+            "signal": "Strong Bearish Momentum",
+            "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+          },
+          {
+            "type": "Volume",
+            "signal": "Capitulation Volume Spike",
+            "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High-Risk Environment",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Price Depreciation",
+            "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -3.72%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+          }
+        ],
+        "risks": [
+          "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+          "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+          "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+        "raw_packet": {
+          "ticker": "APP",
+          "company": "AppLovin",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.65,
+          "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+          "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Event Reaction",
+              "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Trend Structure",
+              "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Levels",
+              "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Strong Bearish Momentum",
+              "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High-Risk Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Price Depreciation",
+              "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.72%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+            }
+          ],
+          "risks": [
+            "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+            "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+            "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+          "raw_packet": {
+            "ticker": "APP",
+            "company": "AppLovin",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.65,
+            "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+            "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Event Reaction",
+                "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Trend Structure",
+                "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Levels",
+                "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Strong Bearish Momentum",
+                "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High-Risk Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Price Depreciation",
+                "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.72%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+              }
+            ],
+            "risks": [
+              "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+              "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+              "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+            "raw_packet": {
+              "ticker": "APP",
+              "company": "AppLovin",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.65,
+              "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Event Reaction",
+                  "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Trend Structure",
+                  "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Levels",
+                  "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Strong Bearish Momentum",
+                  "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High-Risk Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Price Depreciation",
+                  "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.72%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+                }
+              ],
+              "risks": [
+                "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+                "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+                "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+              ],
+              "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+              "core_insight": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
+            }
+          }
+        }
       }
     ]
   },
@@ -845,7 +866,7 @@
       "conflict_level": "high",
       "debate_reason": [
         "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "Long-term views contain both bullish and bearish calls."
       ]
     },
     "synthesis": {
@@ -860,25 +881,26 @@
           "rationale": "Short-term bearish due to the violent negative price reaction, indicating a narrative break and momentum-driven selling that will take time to exhaust. Long-term bullish because the fundamental results (66% revenue growth, beat-and-raise) are exceptional, and the 18% sell-off provides a compelling entry point once the panicked narrative subsides and focus returns to stellar execution and profitability."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.6,
           "rationale": "AppLovin demonstrated exceptional quarter-over-quarter growth across all key financial metrics, including revenue, profitability, and cash flow. Strong YoY growth metrics from yfinance further support this. While the trailing P/E suggests a premium valuation, the high profit margin and significant drop in the forward P/E indicate strong expected earnings growth. The lack of guidance and management commentary introduces uncertainty, but the reported fundamentals are unequivocally strong."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.65,
+          "rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
         }
       ],
       "areas_of_agreement": [
         "2 agents lean bullish on the long-term horizon."
       ],
       "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
+        "Short-term views contain both bullish and bearish calls.",
+        "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
@@ -888,8 +910,8 @@
       },
       "long_stance_counts": {
         "Bullish": 2,
-        "Neutral": 1,
-        "Bearish": 0
+        "Neutral": 0,
+        "Bearish": 1
       },
       "agent_packets": [
         {
@@ -1386,325 +1408,6 @@
         {
           "ticker": "APP",
           "company": "AppLovin",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-          "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Short-Term Structure",
-              "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Acceleration",
-              "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Bullish Conviction",
-              "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High-Risk Environment",
-              "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Long-Term Recovery Phase",
-              "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.28%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-            "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-            "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-          "raw_packet": {
-            "ticker": "APP",
-            "company": "AppLovin",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-            "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Short-Term Structure",
-                "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Acceleration",
-                "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Bullish Conviction",
-                "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High-Risk Environment",
-                "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Long-Term Recovery Phase",
-                "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.28%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-              "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-              "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-            "raw_packet": {
-              "ticker": "APP",
-              "company": "AppLovin",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-              "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Short-Term Structure",
-                  "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Acceleration",
-                  "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Bullish Conviction",
-                  "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High-Risk Environment",
-                  "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Long-Term Recovery Phase",
-                  "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.28%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-                "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-                "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-              "raw_packet": {
-                "ticker": "APP",
-                "company": "AppLovin",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Neutral",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-                "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Bullish Short-Term Structure",
-                    "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Acceleration",
-                    "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Healthy Bullish Momentum",
-                    "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Bullish Conviction",
-                    "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "High-Risk Environment",
-                    "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Long-Term Recovery Phase",
-                    "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.28%"
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "high_volatility_bullish",
-                    "evidence": "Regime classification: high_volatility_bullish"
-                  }
-                ],
-                "risks": [
-                  "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-                  "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-                  "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-                "raw_packet": {
-                  "ticker": "APP",
-                  "company": "AppLovin",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "neutral",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Bullish Short-Term Structure",
-                      "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Acceleration",
-                      "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Healthy Bullish Momentum",
-                      "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Bullish Conviction",
-                      "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "High-Risk Environment",
-                      "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Long-Term Recovery Phase",
-                      "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.28%"
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "high_volatility_bullish",
-                      "evidence": "Regime classification: high_volatility_bullish"
-                    }
-                  ],
-                  "risks": [
-                    "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-                    "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-                    "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-                  ],
-                  "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-                  "core_insight": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "APP",
-          "company": "AppLovin",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1911,78 +1614,413 @@
               }
             }
           }
+        },
+        {
+          "ticker": "APP",
+          "company": "AppLovin",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.65,
+          "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+          "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Event Reaction",
+              "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Trend Structure",
+              "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Levels",
+              "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Strong Bearish Momentum",
+              "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High-Risk Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Price Depreciation",
+              "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.72%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+            }
+          ],
+          "risks": [
+            "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+            "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+            "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+          "raw_packet": {
+            "ticker": "APP",
+            "company": "AppLovin",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.65,
+            "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+            "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Event Reaction",
+                "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Trend Structure",
+                "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Levels",
+                "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Strong Bearish Momentum",
+                "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High-Risk Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Price Depreciation",
+                "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.72%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+              }
+            ],
+            "risks": [
+              "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+              "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+              "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+            "raw_packet": {
+              "ticker": "APP",
+              "company": "AppLovin",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.65,
+              "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+              "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Event Reaction",
+                  "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Trend Structure",
+                  "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Levels",
+                  "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Strong Bearish Momentum",
+                  "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High-Risk Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Price Depreciation",
+                  "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.72%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+                }
+              ],
+              "risks": [
+                "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+                "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+                "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+              "raw_packet": {
+                "ticker": "APP",
+                "company": "AppLovin",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.65,
+                "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+                "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bullish Event Reaction",
+                    "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Deeply Bearish Trend Structure",
+                    "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Approaching Oversold Levels",
+                    "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Strong Bearish Momentum",
+                    "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Capitulation Volume Spike",
+                    "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "High-Risk Environment",
+                    "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Severe Price Depreciation",
+                    "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Underperformance",
+                    "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -3.72%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+                  }
+                ],
+                "risks": [
+                  "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+                  "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+                  "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+                "raw_packet": {
+                  "ticker": "APP",
+                  "company": "AppLovin",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.65,
+                  "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bullish Event Reaction",
+                      "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Deeply Bearish Trend Structure",
+                      "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Approaching Oversold Levels",
+                      "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Strong Bearish Momentum",
+                      "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Capitulation Volume Spike",
+                      "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "High-Risk Environment",
+                      "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Severe Price Depreciation",
+                      "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Underperformance",
+                      "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -3.72%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+                    }
+                  ],
+                  "risks": [
+                    "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+                    "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+                    "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+                  ],
+                  "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+                  "core_insight": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "CIO_committee_revision",
+        "response_type": "revised_view",
         "agreement": {
-          "agent_name": [
-            "fundamental",
-            "market_technical"
-          ],
-          "rationale": "I agree with the core findings of the `fundamental` agent. Their analysis provides specific, quantitative evidence (18% QoQ revenue growth, 31.9% QoQ net income growth, 60.8% profit margin) that validates my initial assessment of 'exceptional' results, strongly reinforcing my long-term bullish thesis. I also agree with the `market_technical` agent's signals indicating a 'High-Risk Environment' (70.2% volatility) and a 'Lack of Bullish Conviction' (low volume). This evidence supports my view that the stock is in an unstable, narrative-driven period, justifying a cautious short-term stance."
+          "agent_name": "fundamental",
+          "rationale": "The fundamental agent's data provides robust, quantitative validation for my long-term bullish thesis. Specifically, the exceptional QoQ growth in revenue (+18.0%), net income (+31.9%), and free cash flow (+22.0%), along with the extremely high profit margin (60.8%), confirms my qualitative assessment of 'stellar execution and profitability'. Furthermore, the fundamental agent's observation that the Forward P/E (22.34) is significantly lower than the Trailing P/E (45.85) directly supports my view that the stock offers a 'compelling entry point' based on expected earnings growth."
         },
         "disagreement": {
           "agent_name": "market_technical",
-          "rationale": "I disagree with the `market_technical` agent's overall 'Bullish' short-term stance. While their indicators like price crossing short-term moving averages are factually correct, they represent a likely technical bounce following a catastrophic 18% single-day drop. I assign much higher weight to the catalyst of that drop—a complete narrative breakdown where blowout earnings were met with intense selling. The technical agent's own data on extremely high volatility and low-volume recovery strengthens my conviction that this is not a healthy bottom, but rather a period of instability and high risk that is more bearish than bullish in the immediate term."
+          "rationale": "My original short-term bearish stance was based on news reports of an '18% plunge'. The market_technical agent's evidence of a positive '+6.23% abnormal return' post-earnings directly contradicts the narrative of sustained selling. This indicates the initial drop was met with aggressive buying, invalidating my assumption that momentum-driven selling would continue. Therefore, I am revising my short-term view based on this superior, data-driven evidence of a rapid sentiment reversal. I also disagree with the market_technical agent's 'long-term bearish' stance, as it appears to overweight lagging indicators (price vs. moving averages) in the face of a powerful new fundamental catalyst confirmed by the fundamental agent."
         },
-        "revised_view": {
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
-          "revision_rationale": "I am maintaining my short-term Bearish and long-term Bullish stances, but increasing my confidence from 0.7 to 0.8. The `fundamental` agent's data provided powerful quantitative validation for my long-term thesis, removing ambiguity about the strength of the underlying business. The `market_technical` agent, despite a differing conclusion, provided evidence of high volatility and weak volume that supports my rationale for short-term caution. The combination of these new data points makes the fundamental/narrative disconnect even clearer, increasing my confidence in the overall thesis."
-        },
+        "revised_short_term_stance": "Bullish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.8,
+        "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The fundamental agent's data provides concrete proof of the underlying business strength, removing ambiguity. The market_technical agent's data, while contradicting my initial short-term view, shows that the market is already rewarding these strong fundamentals, reducing the uncertainty around the 'timing of the sentiment reversal' which was my primary reason for lower confidence previously. The convergence of strong fundamentals and a positive market reaction to those fundamentals strengthens the overall thesis.",
+        "revised_stance_rationale": "The short-term stance is revised from Bearish to Bullish. The market_technical agent's data shows the initial negative reaction was short-lived and quickly reversed, indicating strong dip-buying interest and a positive sentiment shift. The long-term Bullish stance is maintained and strengthened. The fundamental agent's report confirms exceptional, accelerating growth and profitability, while the market's V-shaped reaction suggests investors are quickly looking past narrative fears to the underlying quality of the results. The disconnect between fundamentals and valuation remains, but the market is already showing signs of closing that gap.",
         "evidence_needed": [
-          "Qualitative commentary from the AppLovin earnings call transcript to understand management's perspective on the 'AI fear' narrative and the market reaction.",
-          "Forward-looking guidance from management to contextualize the growth trajectory and address the uncertainty noted by the `fundamental` agent.",
-          "Volume and price action over the next 5-10 trading days to determine if the technical bounce gains conviction or fails, which will clarify whether the narrative-driven selling has exhausted itself.",
-          "Any specific product announcements or strategic shifts from key competitors like Google (GOOGL) or Meta (META) that would give substance to the market's 'AI fear' and challenge the long-term thesis."
+          "The fundamental agent correctly identified that management guidance and the earnings call transcript are missing. This qualitative information is critical to fully assess the 'AI competition' narrative that triggered the initial sell-off and to understand management's strategic positioning. Obtaining the transcript would likely allow for a further increase in confidence."
+        ]
+      },
+      {
+        "response_type": "revised_view",
+        "agreement": {
+          "news_macro": "I agree with the news_macro agent's core insight that AppLovin delivered a 'blowout' earnings beat and offered strong forward guidance, which fills the primary information gaps in my original analysis. I also concur with their assessment that the severe negative price reaction was driven by a narrative fear of AI competition, not the reported fundamentals.",
+          "market_technical": "I agree with the market_technical agent's assessment of the pre-earnings technical environment, which was characterized by a deeply bearish trend, high volatility, and significant underperformance."
+        },
+        "disagreement": {
+          "market_technical": "I strongly disagree with the market_technical agent's primary conclusion of a 'Strong Bullish Event Reaction' showing a +6.44% return. This is factually contradicted by the news_macro agent's evidence and multiple news citations reporting an ~18% price plunge. The technical agent's post-earnings data appears incorrect, and the news agent's description of the event is the valid one to use for analysis."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.8,
+        "stance_revision_rationale": "My original 'Neutral' short-term stance was due to a lack of information. The news_macro agent's evidence of an 18% price plunge driven by a negative narrative confirms that short-term momentum and sentiment are decidedly bearish, warranting a shift. However, this same evidence strengthens my long-term 'Bullish' stance. The company's fundamental performance was a 'beat-and-raise,' proving excellent execution. The narrative-driven sell-off creates a more attractive entry point for a long-term, fundamentals-based position. My confidence is increased from 0.6 to 0.8 because the other agents provided the critical missing context (beat/miss, guidance, and the reason for the market reaction), allowing for a much clearer, albeit more complex, picture of the situation.",
+        "evidence_needed": [
+          "Transcript of the earnings call to understand management's specific commentary on the AI competitive threat from Google and Meta.",
+          "Post-earnings sell-side analyst reports to determine if analysts are downgrading based on the AI fear or reiterating 'buy' ratings, viewing the sell-off as an opportunity.",
+          "Data on changes in institutional ownership following the earnings report to see if long-term holders sold or if funds initiated positions on the dip."
         ]
       },
       {
         "response_type": "revision",
         "agreement": {
-          "rationale": "The new evidence from the news and fundamental agents provides a clear, unified narrative that was previously unavailable. The technical view must be updated to reflect the reality of the post-earnings price action.",
-          "statements": [
-            "I agree with the news_macro agent that a significant, news-driven event has occurred: a ~18% price plunge despite a blowout earnings report (66% YoY revenue growth). This event invalidates my previous short-term bullish technical signals.",
-            "I agree with the fundamental agent's data showing exceptional QoQ and YoY growth in revenue, net income, and cash flow. This provides a strong fundamental underpinning that was missing from my purely technical analysis.",
-            "I agree with the news_macro agent's core insight: there is a major disconnect between the company's reported fundamental performance and the market's narrative-driven price reaction. This supports their short-term bearish, long-term bullish stance, which I will now adopt.",
-            "The combination of evidence suggests my previous 'Lack of Bullish Conviction' signal due to low volume was correct in its caution, but the reason for the subsequent price move was an external news catalyst, not just a continuation of weak momentum."
-          ]
+          "agent_name": [
+            "news_macro",
+            "fundamental"
+          ],
+          "rationale": "I agree with the core evidence presented by both agents, which resolves a major contradiction in my initial analysis. The `news_macro` agent correctly identifies that the stock plunged ~18% post-earnings due to 'AI fears,' directly refuting my initial data of a positive market reaction. This narrative-driven sell-off explains the price action. Concurrently, I agree with the `fundamental` agent's evidence of exceptional underlying business performance (66% YoY revenue growth, strong QoQ growth in profit and cash flow). The combination of these two views paints a clear picture: a fundamentally strong company being punished by a negative market narrative."
         },
         "disagreement": {
-          "rationale": "The new evidence is overwhelming and directly contradicts the previous technical picture, making my original short-term stance untenable.",
-          "statements": [
-            "I disagree with my own original 'Bullish' short-term stance. It is now factually incorrect, as the 18% price drop has certainly caused a breakdown below the 20-day and 50-day moving averages and reversed short-term momentum indicators.",
-            "I place a lower weight on the fundamental agent's 'Neutral' short-term stance. From a technical perspective, a violent 18% sell-off is not a neutral event; it is decisively bearish in the immediate term, indicating a break in market structure.",
-            "I now disagree with my original 'Neutral' long-term stance. The fundamental data is so compelling that it provides a strong reason to believe the long-term technical structure will eventually resolve to the upside, making the post-selloff price an attractive entry point."
-          ]
+          "agent_name": "market_technical",
+          "rationale": "I disagree with my own original key signal: 'Strong Bullish Event Reaction'. The evidence from the `news_macro` agent, citing multiple news sources about an ~18% plunge, proves my initial assessment of a '+6.44% post-1d return' was incorrect or misinterpreted the event's true impact. The market's reaction was violently bearish, not bullish. This invalidates the primary catalyst for my original short-term bullish stance. The negative narrative completely overwhelmed any 'oversold bounce' potential."
         },
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.8,
-        "revised_confidence_rationale": "Confidence is now higher because the views of all three agents (technical, news, fundamental) have converged into a single, coherent narrative. The technicals now reflect the short-term bearishness driven by the news, while the fundamentals support a long-term bullish outlook. The 'why' behind the price move is clear, reducing uncertainty.",
-        "revised_stance_rationale": "The original technical analysis is now obsolete. The market has experienced a major catalyst: a blowout earnings report followed by a massive, fear-driven sell-off. The short-term technical picture is now broken and bearish due to the 18% plunge. However, the exceptional fundamental data (66% revenue growth) confirms the company's underlying strength. This creates a classic dislocation where short-term panic has created a long-term value opportunity. The stance is now short-term bearish on price momentum and long-term bullish on fundamental value.",
+        "revised_confidence": 0.7,
         "evidence_needed": [
-          "Updated price chart and technical indicators (Price, MA20, MA50, MA200, RSI, MACD) following the ~18% price drop to confirm the technical breakdown and identify new potential support levels.",
-          "Volume data for the day(s) of the major sell-off to confirm the conviction of the bearish move.",
-          "The specific forward guidance numbers provided by management to independently verify the news agent's claim of 'robust 2026 guidance'."
-        ]
-      },
-      {
-        "response_type": "agent_revision",
-        "agreement": "I agree with the core evidence provided by the news_macro agent. Their report fills the critical gaps in my original analysis by confirming the earnings report was a 'blowout' with a '66% YoY revenue beat' and that the company issued 'strong forward guidance'. This confirms my initial hypothesis that the fundamentals were exceptionally strong. I also agree with their assessment that the 18% price drop is a narrative-driven overreaction to 'AI fears' rather than a reflection of fundamental weakness, which supports my long-term bullish thesis.",
-        "disagreement": "I disagree with the market_technical agent's short-term bullish stance. Their analysis appears to be based on pre-earnings data and is therefore outdated. The 18% plunge described by the news_macro agent has invalidated the bullish short-term signals (e.g., price > MA20/50, RSI). The current technical picture is now bearish. I also disagree with my own original 'Neutral' short-term stance, which was a product of incomplete information. The new evidence of a massive sell-off makes a 'Bearish' short-term stance more appropriate.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.8,
-        "evidence_needed": [
-          "A detailed analysis of the specific AI-driven competitive threats from Google and Meta to determine if the market's 'AI fear' is a structural risk or a temporary narrative.",
-          "Management's commentary from the earnings call regarding the competitive landscape and their strategy to defend their position.",
-          "Updated technical analysis reflecting the post-earnings price plunge to identify potential support levels and signs of capitulation.",
-          "A review of analyst reports post-earnings to see if they are defending the stock or downgrading based on the competitive fears."
+          "Technical confirmation of a price bottom, such as a bullish MACD crossover on the daily chart.",
+          "Price successfully reclaiming a short-term moving average (e.g., MA20) on sustained volume.",
+          "Formation of a clear price consolidation or base-building pattern, indicating seller exhaustion.",
+          "A sustained move in the RSI indicator out of oversold territory (above 30) to show a shift in momentum."
         ]
       }
     ],
@@ -1991,9 +2029,9 @@
         "ticker": "APP",
         "company": "AppLovin",
         "agent_name": "news_macro",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Neutral",
-        "confidence": 0.7,
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is high in the factual basis of the event: a very strong earnings report directly contradicted by a very weak stock reaction. The thesis rests on the rational assumption that fundamentals will eventually outweigh a vague, narrative-based fear. Confidence is not higher because the timing of this sentiment reversal is uncertain, and narrative-driven sell-offs in high-beta stocks can be prolonged.",
         "stance_rationale": "Short-term bearish due to the violent negative price reaction, indicating a narrative break and momentum-driven selling that will take time to exhaust. Long-term bullish because the fundamental results (66% revenue growth, beat-and-raise) are exceptional, and the 18% sell-off provides a compelling entry point once the panicked narrative subsides and focus returns to stellar execution and profitability.",
         "key_signals": [
@@ -2356,314 +2394,22 @@
           }
         },
         "debate_response": {
-          "response_type": "CIO_committee_revision",
+          "response_type": "revised_view",
           "agreement": {
-            "agent_name": [
-              "fundamental",
-              "market_technical"
-            ],
-            "rationale": "I agree with the core findings of the `fundamental` agent. Their analysis provides specific, quantitative evidence (18% QoQ revenue growth, 31.9% QoQ net income growth, 60.8% profit margin) that validates my initial assessment of 'exceptional' results, strongly reinforcing my long-term bullish thesis. I also agree with the `market_technical` agent's signals indicating a 'High-Risk Environment' (70.2% volatility) and a 'Lack of Bullish Conviction' (low volume). This evidence supports my view that the stock is in an unstable, narrative-driven period, justifying a cautious short-term stance."
+            "agent_name": "fundamental",
+            "rationale": "The fundamental agent's data provides robust, quantitative validation for my long-term bullish thesis. Specifically, the exceptional QoQ growth in revenue (+18.0%), net income (+31.9%), and free cash flow (+22.0%), along with the extremely high profit margin (60.8%), confirms my qualitative assessment of 'stellar execution and profitability'. Furthermore, the fundamental agent's observation that the Forward P/E (22.34) is significantly lower than the Trailing P/E (45.85) directly supports my view that the stock offers a 'compelling entry point' based on expected earnings growth."
           },
           "disagreement": {
             "agent_name": "market_technical",
-            "rationale": "I disagree with the `market_technical` agent's overall 'Bullish' short-term stance. While their indicators like price crossing short-term moving averages are factually correct, they represent a likely technical bounce following a catastrophic 18% single-day drop. I assign much higher weight to the catalyst of that drop—a complete narrative breakdown where blowout earnings were met with intense selling. The technical agent's own data on extremely high volatility and low-volume recovery strengthens my conviction that this is not a healthy bottom, but rather a period of instability and high risk that is more bearish than bullish in the immediate term."
+            "rationale": "My original short-term bearish stance was based on news reports of an '18% plunge'. The market_technical agent's evidence of a positive '+6.23% abnormal return' post-earnings directly contradicts the narrative of sustained selling. This indicates the initial drop was met with aggressive buying, invalidating my assumption that momentum-driven selling would continue. Therefore, I am revising my short-term view based on this superior, data-driven evidence of a rapid sentiment reversal. I also disagree with the market_technical agent's 'long-term bearish' stance, as it appears to overweight lagging indicators (price vs. moving averages) in the face of a powerful new fundamental catalyst confirmed by the fundamental agent."
           },
-          "revised_view": {
-            "revised_short_term_stance": "Bearish",
-            "revised_long_term_stance": "Bullish",
-            "revised_confidence": 0.8,
-            "revision_rationale": "I am maintaining my short-term Bearish and long-term Bullish stances, but increasing my confidence from 0.7 to 0.8. The `fundamental` agent's data provided powerful quantitative validation for my long-term thesis, removing ambiguity about the strength of the underlying business. The `market_technical` agent, despite a differing conclusion, provided evidence of high volatility and weak volume that supports my rationale for short-term caution. The combination of these new data points makes the fundamental/narrative disconnect even clearer, increasing my confidence in the overall thesis."
-          },
-          "evidence_needed": [
-            "Qualitative commentary from the AppLovin earnings call transcript to understand management's perspective on the 'AI fear' narrative and the market reaction.",
-            "Forward-looking guidance from management to contextualize the growth trajectory and address the uncertainty noted by the `fundamental` agent.",
-            "Volume and price action over the next 5-10 trading days to determine if the technical bounce gains conviction or fails, which will clarify whether the narrative-driven selling has exhausted itself.",
-            "Any specific product announcements or strategic shifts from key competitors like Google (GOOGL) or Meta (META) that would give substance to the market's 'AI fear' and challenge the long-term thesis."
-          ]
-        }
-      },
-      {
-        "ticker": "APP",
-        "company": "AppLovin",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-        "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Short-Term Structure",
-            "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Acceleration",
-            "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Bullish Conviction",
-            "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High-Risk Environment",
-            "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Long-Term Recovery Phase",
-            "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.28%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-          "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-          "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-        "raw_packet": {
-          "ticker": "APP",
-          "company": "AppLovin",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-          "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Short-Term Structure",
-              "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Acceleration",
-              "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Bullish Conviction",
-              "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High-Risk Environment",
-              "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Long-Term Recovery Phase",
-              "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.28%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-            "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-            "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-          "raw_packet": {
-            "ticker": "APP",
-            "company": "AppLovin",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-            "stance_rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Short-Term Structure",
-                "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Acceleration",
-                "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Bullish Conviction",
-                "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High-Risk Environment",
-                "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Long-Term Recovery Phase",
-                "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.28%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-              "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-              "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-            "raw_packet": {
-              "ticker": "APP",
-              "company": "AppLovin",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high due to the confluence of bullish short-term trend and momentum signals (Price > MA20/MA50, MACD crossover, RSI > 50). However, it is not higher because the recent price advance lacks strong volume confirmation, and the price remains below the key long-term 200-day moving average, indicating unresolved overhead resistance.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Short-Term Structure",
-                  "evidence": "The price at 475.0 was trading above both its 20-day (445.77) and 50-day (440.37) moving averages, indicating a positive short-to-medium term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Acceleration",
-                  "evidence": "A bullish MACD crossover was in effect, with the MACD line (7.72) above the signal line (6.22) and a positive histogram (1.50), signaling strengthening upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "The RSI was at 57.75, firmly in bullish territory (>50) but not yet overbought (<70), suggesting room for further upside."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY) by a substantial 28.49% over the analysis period, indicating market leadership."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Bullish Conviction",
-                  "evidence": "The recent price advance was accompanied by below-average volume (Volume Spike Ratio: 0.95), suggesting a potential lack of strong conviction behind the move."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High-Risk Environment",
-                  "evidence": "The stock exhibited very high annualized volatility of 70.2%, indicating a propensity for large price swings and elevated risk."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Long-Term Recovery Phase",
-                  "evidence": "The stock was still in a significant drawdown of -35.25% from its peak, framing the current rally as a recovery within a larger downtrend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.28%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price remains below the 200-day moving average, a major long-term resistance level that could cap the rally.",
-                "The recent price strength was not confirmed by above-average volume, which could indicate weak conviction and make the rally susceptible to a reversal.",
-                "Extremely high annualized volatility (70.2%) implies a risk of sharp, unpredictable price swings in either direction."
-              ],
-              "summary": "As of 2026/02/12, AppLovin exhibited a bullish short-term technical profile, characterized by price action above its 20 and 50-day moving averages, a positive MACD crossover, and strong relative outperformance. However, this was contrasted by a more neutral long-term picture, with the price still well below its 200-day average and in a significant drawdown. The bullish move lacked strong volume confirmation in a high-volatility environment, warranting a degree of caution.",
-              "core_insight": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "rationale": "The new evidence from the news and fundamental agents provides a clear, unified narrative that was previously unavailable. The technical view must be updated to reflect the reality of the post-earnings price action.",
-            "statements": [
-              "I agree with the news_macro agent that a significant, news-driven event has occurred: a ~18% price plunge despite a blowout earnings report (66% YoY revenue growth). This event invalidates my previous short-term bullish technical signals.",
-              "I agree with the fundamental agent's data showing exceptional QoQ and YoY growth in revenue, net income, and cash flow. This provides a strong fundamental underpinning that was missing from my purely technical analysis.",
-              "I agree with the news_macro agent's core insight: there is a major disconnect between the company's reported fundamental performance and the market's narrative-driven price reaction. This supports their short-term bearish, long-term bullish stance, which I will now adopt.",
-              "The combination of evidence suggests my previous 'Lack of Bullish Conviction' signal due to low volume was correct in its caution, but the reason for the subsequent price move was an external news catalyst, not just a continuation of weak momentum."
-            ]
-          },
-          "disagreement": {
-            "rationale": "The new evidence is overwhelming and directly contradicts the previous technical picture, making my original short-term stance untenable.",
-            "statements": [
-              "I disagree with my own original 'Bullish' short-term stance. It is now factually incorrect, as the 18% price drop has certainly caused a breakdown below the 20-day and 50-day moving averages and reversed short-term momentum indicators.",
-              "I place a lower weight on the fundamental agent's 'Neutral' short-term stance. From a technical perspective, a violent 18% sell-off is not a neutral event; it is decisively bearish in the immediate term, indicating a break in market structure.",
-              "I now disagree with my original 'Neutral' long-term stance. The fundamental data is so compelling that it provides a strong reason to believe the long-term technical structure will eventually resolve to the upside, making the post-selloff price an attractive entry point."
-            ]
-          },
-          "revised_short_term_stance": "Bearish",
+          "revised_short_term_stance": "Bullish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.8,
-          "revised_confidence_rationale": "Confidence is now higher because the views of all three agents (technical, news, fundamental) have converged into a single, coherent narrative. The technicals now reflect the short-term bearishness driven by the news, while the fundamentals support a long-term bullish outlook. The 'why' behind the price move is clear, reducing uncertainty.",
-          "revised_stance_rationale": "The original technical analysis is now obsolete. The market has experienced a major catalyst: a blowout earnings report followed by a massive, fear-driven sell-off. The short-term technical picture is now broken and bearish due to the 18% plunge. However, the exceptional fundamental data (66% revenue growth) confirms the company's underlying strength. This creates a classic dislocation where short-term panic has created a long-term value opportunity. The stance is now short-term bearish on price momentum and long-term bullish on fundamental value.",
+          "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The fundamental agent's data provides concrete proof of the underlying business strength, removing ambiguity. The market_technical agent's data, while contradicting my initial short-term view, shows that the market is already rewarding these strong fundamentals, reducing the uncertainty around the 'timing of the sentiment reversal' which was my primary reason for lower confidence previously. The convergence of strong fundamentals and a positive market reaction to those fundamentals strengthens the overall thesis.",
+          "revised_stance_rationale": "The short-term stance is revised from Bearish to Bullish. The market_technical agent's data shows the initial negative reaction was short-lived and quickly reversed, indicating strong dip-buying interest and a positive sentiment shift. The long-term Bullish stance is maintained and strengthened. The fundamental agent's report confirms exceptional, accelerating growth and profitability, while the market's V-shaped reaction suggests investors are quickly looking past narrative fears to the underlying quality of the results. The disconnect between fundamentals and valuation remains, but the market is already showing signs of closing that gap.",
           "evidence_needed": [
-            "Updated price chart and technical indicators (Price, MA20, MA50, MA200, RSI, MACD) following the ~18% price drop to confirm the technical breakdown and identify new potential support levels.",
-            "Volume data for the day(s) of the major sell-off to confirm the conviction of the bearish move.",
-            "The specific forward guidance numbers provided by management to independently verify the news agent's claim of 'robust 2026 guidance'."
+            "The fundamental agent correctly identified that management guidance and the earnings call transcript are missing. This qualitative information is critical to fully assess the 'AI competition' narrative that triggered the initial sell-off and to understand management's strategic positioning. Obtaining the transcript would likely allow for a further increase in confidence."
           ]
         }
       },
@@ -2836,17 +2582,320 @@
           }
         },
         "debate_response": {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the core evidence provided by the news_macro agent. Their report fills the critical gaps in my original analysis by confirming the earnings report was a 'blowout' with a '66% YoY revenue beat' and that the company issued 'strong forward guidance'. This confirms my initial hypothesis that the fundamentals were exceptionally strong. I also agree with their assessment that the 18% price drop is a narrative-driven overreaction to 'AI fears' rather than a reflection of fundamental weakness, which supports my long-term bullish thesis.",
-          "disagreement": "I disagree with the market_technical agent's short-term bullish stance. Their analysis appears to be based on pre-earnings data and is therefore outdated. The 18% plunge described by the news_macro agent has invalidated the bullish short-term signals (e.g., price > MA20/50, RSI). The current technical picture is now bearish. I also disagree with my own original 'Neutral' short-term stance, which was a product of incomplete information. The new evidence of a massive sell-off makes a 'Bearish' short-term stance more appropriate.",
+          "response_type": "revised_view",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's core insight that AppLovin delivered a 'blowout' earnings beat and offered strong forward guidance, which fills the primary information gaps in my original analysis. I also concur with their assessment that the severe negative price reaction was driven by a narrative fear of AI competition, not the reported fundamentals.",
+            "market_technical": "I agree with the market_technical agent's assessment of the pre-earnings technical environment, which was characterized by a deeply bearish trend, high volatility, and significant underperformance."
+          },
+          "disagreement": {
+            "market_technical": "I strongly disagree with the market_technical agent's primary conclusion of a 'Strong Bullish Event Reaction' showing a +6.44% return. This is factually contradicted by the news_macro agent's evidence and multiple news citations reporting an ~18% price plunge. The technical agent's post-earnings data appears incorrect, and the news agent's description of the event is the valid one to use for analysis."
+          },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.8,
+          "stance_revision_rationale": "My original 'Neutral' short-term stance was due to a lack of information. The news_macro agent's evidence of an 18% price plunge driven by a negative narrative confirms that short-term momentum and sentiment are decidedly bearish, warranting a shift. However, this same evidence strengthens my long-term 'Bullish' stance. The company's fundamental performance was a 'beat-and-raise,' proving excellent execution. The narrative-driven sell-off creates a more attractive entry point for a long-term, fundamentals-based position. My confidence is increased from 0.6 to 0.8 because the other agents provided the critical missing context (beat/miss, guidance, and the reason for the market reaction), allowing for a much clearer, albeit more complex, picture of the situation.",
           "evidence_needed": [
-            "A detailed analysis of the specific AI-driven competitive threats from Google and Meta to determine if the market's 'AI fear' is a structural risk or a temporary narrative.",
-            "Management's commentary from the earnings call regarding the competitive landscape and their strategy to defend their position.",
-            "Updated technical analysis reflecting the post-earnings price plunge to identify potential support levels and signs of capitulation.",
-            "A review of analyst reports post-earnings to see if they are defending the stock or downgrading based on the competitive fears."
+            "Transcript of the earnings call to understand management's specific commentary on the AI competitive threat from Google and Meta.",
+            "Post-earnings sell-side analyst reports to determine if analysts are downgrading based on the AI fear or reiterating 'buy' ratings, viewing the sell-off as an opportunity.",
+            "Data on changes in institutional ownership following the earnings report to see if long-term holders sold or if funds initiated positions on the dip."
+          ]
+        }
+      },
+      {
+        "ticker": "APP",
+        "company": "AppLovin",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+        "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Event Reaction",
+            "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Deeply Bearish Trend Structure",
+            "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+          },
+          {
+            "type": "RSI",
+            "signal": "Approaching Oversold Levels",
+            "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+          },
+          {
+            "type": "MACD",
+            "signal": "Strong Bearish Momentum",
+            "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+          },
+          {
+            "type": "Volume",
+            "signal": "Capitulation Volume Spike",
+            "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High-Risk Environment",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Price Depreciation",
+            "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -3.72%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+          }
+        ],
+        "risks": [
+          "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+          "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+          "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+        "raw_packet": {
+          "ticker": "APP",
+          "company": "AppLovin",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.65,
+          "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+          "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Event Reaction",
+              "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Trend Structure",
+              "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Levels",
+              "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Strong Bearish Momentum",
+              "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High-Risk Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Price Depreciation",
+              "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.72%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+            }
+          ],
+          "risks": [
+            "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+            "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+            "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+          "raw_packet": {
+            "ticker": "APP",
+            "company": "AppLovin",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.65,
+            "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+            "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Event Reaction",
+                "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Trend Structure",
+                "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Levels",
+                "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Strong Bearish Momentum",
+                "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High-Risk Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Price Depreciation",
+                "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.72%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+              }
+            ],
+            "risks": [
+              "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+              "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+              "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+            "raw_packet": {
+              "ticker": "APP",
+              "company": "AppLovin",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.65,
+              "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Event Reaction",
+                  "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Trend Structure",
+                  "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Levels",
+                  "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Strong Bearish Momentum",
+                  "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High-Risk Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Price Depreciation",
+                  "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.72%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 86.39%, Recent 128.32%"
+                }
+              ],
+              "risks": [
+                "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+                "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+                "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
+              ],
+              "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+              "core_insight": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "agent_name": [
+              "news_macro",
+              "fundamental"
+            ],
+            "rationale": "I agree with the core evidence presented by both agents, which resolves a major contradiction in my initial analysis. The `news_macro` agent correctly identifies that the stock plunged ~18% post-earnings due to 'AI fears,' directly refuting my initial data of a positive market reaction. This narrative-driven sell-off explains the price action. Concurrently, I agree with the `fundamental` agent's evidence of exceptional underlying business performance (66% YoY revenue growth, strong QoQ growth in profit and cash flow). The combination of these two views paints a clear picture: a fundamentally strong company being punished by a negative market narrative."
+          },
+          "disagreement": {
+            "agent_name": "market_technical",
+            "rationale": "I disagree with my own original key signal: 'Strong Bullish Event Reaction'. The evidence from the `news_macro` agent, citing multiple news sources about an ~18% plunge, proves my initial assessment of a '+6.44% post-1d return' was incorrect or misinterpreted the event's true impact. The market's reaction was violently bearish, not bullish. This invalidates the primary catalyst for my original short-term bullish stance. The negative narrative completely overwhelmed any 'oversold bounce' potential."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.7,
+          "evidence_needed": [
+            "Technical confirmation of a price bottom, such as a bullish MACD crossover on the daily chart.",
+            "Price successfully reclaiming a short-term moving average (e.g., MA20) on sustained volume.",
+            "Formation of a clear price consolidation or base-building pattern, indicating seller exhaustion.",
+            "A sustained move in the RSI indicator out of oversold territory (above 30) to show a shift in momentum."
           ]
         }
       }
@@ -2858,20 +2907,20 @@
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bullish",
     "investment_action": "Accumulate on Weakness",
-    "position_size_hint": "Medium",
+    "position_size_hint": "Starter position",
     "confidence": 0.85,
-    "core_thesis": "A significant dislocation exists between AppLovin's stellar fundamental performance (accelerating growth and high profitability) and its post-earnings stock price collapse. The market is irrationally punishing the stock on vague, long-term competitive AI fears, creating a compelling long-term entry point as fundamentals are expected to eventually outweigh the negative narrative.",
-    "why_now": "The company just reported blowout earnings (66% revenue growth) and strong guidance, yet the stock plunged ~18%. This specific event created the dislocation, offering a chance to acquire a high-growth, profitable company at a price driven by fear, not facts.",
+    "core_thesis": "The market has created a significant long-term opportunity by punishing AppLovin with a severe, narrative-driven sell-off (~18% drop) despite blowout fundamental results (66% YoY revenue growth, beat-and-raise guidance). The fear of 'AI competition' appears to be an overreaction, ignoring the company's demonstrated strength and market-leading execution in its own AI-driven ad-tech platform.",
+    "why_now": "The extreme disconnect between stellar fundamental performance and the violent negative stock reaction provides a compelling entry point for long-term investors. The short-term bearishness allows for patient accumulation as the narrative-driven selling pressure abates.",
     "key_supporting_evidence": [
-      "Fundamental Strength: 66% YoY revenue growth, 18% QoQ revenue growth, and a 60.8% profit margin confirm exceptional business performance.",
-      "Price/Value Dislocation: A ~18% stock price plunge in the face of a 'beat-and-raise' quarter is a classic indicator of a narrative-driven sell-off, not a fundamental one.",
-      "Post-Debate Consensus: All three agents (Fundamental, Technical, News/Macro) independently converged on a 'Bearish Short-Term, Bullish Long-Term' stance after reviewing all evidence, indicating a robust and coherent thesis.",
-      "Valuation: The Forward P/E of 22.34 is significantly below the Trailing P/E of 45.85, suggesting the current price does not fully reflect expected earnings growth."
+      "Exceptional fundamental performance, confirmed by the fundamental agent, including 66% YoY revenue growth, 18% QoQ revenue growth, and very high profit margins (60.8%).",
+      "The post-earnings sell-off has created a more attractive valuation opportunity, with the Forward P/E (22.34) sitting at a significant discount to the Trailing P/E (45.85), indicating strong expected earnings growth.",
+      "The sell-off was driven by a vague 'AI fear' narrative, as identified by the news_macro agent, not by the company's actual results, which in fact demonstrate its own AI prowess.",
+      "After correcting for an initial data error, the market_technical agent confirmed the price action was a violent, high-volume sell-off, which often precedes a bottoming process and presents opportunities for contrarian investors."
     ],
     "key_risks": [
-      "Narrative Becomes Reality: The primary risk is that the market's 'AI fear' is not just a narrative, but a prescient warning. A strategic move by a mega-cap competitor (Google, Meta) could structurally impair AppLovin's business model.",
-      "Catching a Falling Knife: The short-term bearish momentum could be more severe or prolonged than anticipated, leading to further significant downside before a bottom is found.",
-      "High Volatility: The stock's high annualized volatility (~70%) implies the path will be turbulent, potentially testing investor conviction even if the long-term thesis is correct."
+      "Narrative Risk: The negative sentiment around AI competition from larger players (e.g., GOOGL, META) could persist, suppressing the stock price for longer than anticipated, regardless of fundamental performance.",
+      "Technical Risk: The stock is in a confirmed short-term downtrend after the sharp decline. It may face significant overhead resistance from key moving averages, capping near-term recovery attempts.",
+      "Execution Risk: The company must continue to execute flawlessly and deliver high growth to win back investor confidence and prove the competitive fears are overblown."
     ],
     "agent_view_summary": [
       {
@@ -2882,18 +2931,18 @@
         "rationale": "Short-term bearish due to the violent negative price reaction, indicating a narrative break and momentum-driven selling that will take time to exhaust. Long-term bullish because the fundamental results (66% revenue growth, beat-and-raise) are exceptional, and the 18% sell-off provides a compelling entry point once the panicked narrative subsides and focus returns to stellar execution and profitability."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between strong short-term bullish momentum and a weak long-term structure. While the stock was a clear market outperformer showing signs of a robust recovery, it had not yet overcome key long-term resistance (MA200), and the rally's sustainability was questionable due to a lack of volume confirmation."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.6,
         "rationale": "AppLovin demonstrated exceptional quarter-over-quarter growth across all key financial metrics, including revenue, profitability, and cash flow. Strong YoY growth metrics from yfinance further support this. While the trailing P/E suggests a premium valuation, the high profit margin and significant drop in the forward P/E indicate strong expected earnings growth. The lack of guidance and management commentary introduces uncertainty, but the reported fundamentals are unequivocally strong."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.65,
+        "rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
       }
     ],
     "debate_summary": {
@@ -2901,133 +2950,138 @@
       "conflict_level": "high",
       "debate_reason": [
         "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "Long-term views contain both bullish and bearish calls."
       ],
       "debate_responses": [
         {
-          "response_type": "CIO_committee_revision",
+          "response_type": "revised_view",
           "agreement": {
-            "agent_name": [
-              "fundamental",
-              "market_technical"
-            ],
-            "rationale": "I agree with the core findings of the `fundamental` agent. Their analysis provides specific, quantitative evidence (18% QoQ revenue growth, 31.9% QoQ net income growth, 60.8% profit margin) that validates my initial assessment of 'exceptional' results, strongly reinforcing my long-term bullish thesis. I also agree with the `market_technical` agent's signals indicating a 'High-Risk Environment' (70.2% volatility) and a 'Lack of Bullish Conviction' (low volume). This evidence supports my view that the stock is in an unstable, narrative-driven period, justifying a cautious short-term stance."
+            "agent_name": "fundamental",
+            "rationale": "The fundamental agent's data provides robust, quantitative validation for my long-term bullish thesis. Specifically, the exceptional QoQ growth in revenue (+18.0%), net income (+31.9%), and free cash flow (+22.0%), along with the extremely high profit margin (60.8%), confirms my qualitative assessment of 'stellar execution and profitability'. Furthermore, the fundamental agent's observation that the Forward P/E (22.34) is significantly lower than the Trailing P/E (45.85) directly supports my view that the stock offers a 'compelling entry point' based on expected earnings growth."
           },
           "disagreement": {
             "agent_name": "market_technical",
-            "rationale": "I disagree with the `market_technical` agent's overall 'Bullish' short-term stance. While their indicators like price crossing short-term moving averages are factually correct, they represent a likely technical bounce following a catastrophic 18% single-day drop. I assign much higher weight to the catalyst of that drop—a complete narrative breakdown where blowout earnings were met with intense selling. The technical agent's own data on extremely high volatility and low-volume recovery strengthens my conviction that this is not a healthy bottom, but rather a period of instability and high risk that is more bearish than bullish in the immediate term."
+            "rationale": "My original short-term bearish stance was based on news reports of an '18% plunge'. The market_technical agent's evidence of a positive '+6.23% abnormal return' post-earnings directly contradicts the narrative of sustained selling. This indicates the initial drop was met with aggressive buying, invalidating my assumption that momentum-driven selling would continue. Therefore, I am revising my short-term view based on this superior, data-driven evidence of a rapid sentiment reversal. I also disagree with the market_technical agent's 'long-term bearish' stance, as it appears to overweight lagging indicators (price vs. moving averages) in the face of a powerful new fundamental catalyst confirmed by the fundamental agent."
           },
-          "revised_view": {
-            "revised_short_term_stance": "Bearish",
-            "revised_long_term_stance": "Bullish",
-            "revised_confidence": 0.8,
-            "revision_rationale": "I am maintaining my short-term Bearish and long-term Bullish stances, but increasing my confidence from 0.7 to 0.8. The `fundamental` agent's data provided powerful quantitative validation for my long-term thesis, removing ambiguity about the strength of the underlying business. The `market_technical` agent, despite a differing conclusion, provided evidence of high volatility and weak volume that supports my rationale for short-term caution. The combination of these new data points makes the fundamental/narrative disconnect even clearer, increasing my confidence in the overall thesis."
-          },
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "revised_confidence_rationale": "Confidence is increased from 0.7 to 0.8. The fundamental agent's data provides concrete proof of the underlying business strength, removing ambiguity. The market_technical agent's data, while contradicting my initial short-term view, shows that the market is already rewarding these strong fundamentals, reducing the uncertainty around the 'timing of the sentiment reversal' which was my primary reason for lower confidence previously. The convergence of strong fundamentals and a positive market reaction to those fundamentals strengthens the overall thesis.",
+          "revised_stance_rationale": "The short-term stance is revised from Bearish to Bullish. The market_technical agent's data shows the initial negative reaction was short-lived and quickly reversed, indicating strong dip-buying interest and a positive sentiment shift. The long-term Bullish stance is maintained and strengthened. The fundamental agent's report confirms exceptional, accelerating growth and profitability, while the market's V-shaped reaction suggests investors are quickly looking past narrative fears to the underlying quality of the results. The disconnect between fundamentals and valuation remains, but the market is already showing signs of closing that gap.",
           "evidence_needed": [
-            "Qualitative commentary from the AppLovin earnings call transcript to understand management's perspective on the 'AI fear' narrative and the market reaction.",
-            "Forward-looking guidance from management to contextualize the growth trajectory and address the uncertainty noted by the `fundamental` agent.",
-            "Volume and price action over the next 5-10 trading days to determine if the technical bounce gains conviction or fails, which will clarify whether the narrative-driven selling has exhausted itself.",
-            "Any specific product announcements or strategic shifts from key competitors like Google (GOOGL) or Meta (META) that would give substance to the market's 'AI fear' and challenge the long-term thesis."
+            "The fundamental agent correctly identified that management guidance and the earnings call transcript are missing. This qualitative information is critical to fully assess the 'AI competition' narrative that triggered the initial sell-off and to understand management's strategic positioning. Obtaining the transcript would likely allow for a further increase in confidence."
+          ]
+        },
+        {
+          "response_type": "revised_view",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's core insight that AppLovin delivered a 'blowout' earnings beat and offered strong forward guidance, which fills the primary information gaps in my original analysis. I also concur with their assessment that the severe negative price reaction was driven by a narrative fear of AI competition, not the reported fundamentals.",
+            "market_technical": "I agree with the market_technical agent's assessment of the pre-earnings technical environment, which was characterized by a deeply bearish trend, high volatility, and significant underperformance."
+          },
+          "disagreement": {
+            "market_technical": "I strongly disagree with the market_technical agent's primary conclusion of a 'Strong Bullish Event Reaction' showing a +6.44% return. This is factually contradicted by the news_macro agent's evidence and multiple news citations reporting an ~18% price plunge. The technical agent's post-earnings data appears incorrect, and the news agent's description of the event is the valid one to use for analysis."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "stance_revision_rationale": "My original 'Neutral' short-term stance was due to a lack of information. The news_macro agent's evidence of an 18% price plunge driven by a negative narrative confirms that short-term momentum and sentiment are decidedly bearish, warranting a shift. However, this same evidence strengthens my long-term 'Bullish' stance. The company's fundamental performance was a 'beat-and-raise,' proving excellent execution. The narrative-driven sell-off creates a more attractive entry point for a long-term, fundamentals-based position. My confidence is increased from 0.6 to 0.8 because the other agents provided the critical missing context (beat/miss, guidance, and the reason for the market reaction), allowing for a much clearer, albeit more complex, picture of the situation.",
+          "evidence_needed": [
+            "Transcript of the earnings call to understand management's specific commentary on the AI competitive threat from Google and Meta.",
+            "Post-earnings sell-side analyst reports to determine if analysts are downgrading based on the AI fear or reiterating 'buy' ratings, viewing the sell-off as an opportunity.",
+            "Data on changes in institutional ownership following the earnings report to see if long-term holders sold or if funds initiated positions on the dip."
           ]
         },
         {
           "response_type": "revision",
           "agreement": {
-            "rationale": "The new evidence from the news and fundamental agents provides a clear, unified narrative that was previously unavailable. The technical view must be updated to reflect the reality of the post-earnings price action.",
-            "statements": [
-              "I agree with the news_macro agent that a significant, news-driven event has occurred: a ~18% price plunge despite a blowout earnings report (66% YoY revenue growth). This event invalidates my previous short-term bullish technical signals.",
-              "I agree with the fundamental agent's data showing exceptional QoQ and YoY growth in revenue, net income, and cash flow. This provides a strong fundamental underpinning that was missing from my purely technical analysis.",
-              "I agree with the news_macro agent's core insight: there is a major disconnect between the company's reported fundamental performance and the market's narrative-driven price reaction. This supports their short-term bearish, long-term bullish stance, which I will now adopt.",
-              "The combination of evidence suggests my previous 'Lack of Bullish Conviction' signal due to low volume was correct in its caution, but the reason for the subsequent price move was an external news catalyst, not just a continuation of weak momentum."
-            ]
+            "agent_name": [
+              "news_macro",
+              "fundamental"
+            ],
+            "rationale": "I agree with the core evidence presented by both agents, which resolves a major contradiction in my initial analysis. The `news_macro` agent correctly identifies that the stock plunged ~18% post-earnings due to 'AI fears,' directly refuting my initial data of a positive market reaction. This narrative-driven sell-off explains the price action. Concurrently, I agree with the `fundamental` agent's evidence of exceptional underlying business performance (66% YoY revenue growth, strong QoQ growth in profit and cash flow). The combination of these two views paints a clear picture: a fundamentally strong company being punished by a negative market narrative."
           },
           "disagreement": {
-            "rationale": "The new evidence is overwhelming and directly contradicts the previous technical picture, making my original short-term stance untenable.",
-            "statements": [
-              "I disagree with my own original 'Bullish' short-term stance. It is now factually incorrect, as the 18% price drop has certainly caused a breakdown below the 20-day and 50-day moving averages and reversed short-term momentum indicators.",
-              "I place a lower weight on the fundamental agent's 'Neutral' short-term stance. From a technical perspective, a violent 18% sell-off is not a neutral event; it is decisively bearish in the immediate term, indicating a break in market structure.",
-              "I now disagree with my original 'Neutral' long-term stance. The fundamental data is so compelling that it provides a strong reason to believe the long-term technical structure will eventually resolve to the upside, making the post-selloff price an attractive entry point."
-            ]
+            "agent_name": "market_technical",
+            "rationale": "I disagree with my own original key signal: 'Strong Bullish Event Reaction'. The evidence from the `news_macro` agent, citing multiple news sources about an ~18% plunge, proves my initial assessment of a '+6.44% post-1d return' was incorrect or misinterpreted the event's true impact. The market's reaction was violently bearish, not bullish. This invalidates the primary catalyst for my original short-term bullish stance. The negative narrative completely overwhelmed any 'oversold bounce' potential."
           },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
-          "revised_confidence_rationale": "Confidence is now higher because the views of all three agents (technical, news, fundamental) have converged into a single, coherent narrative. The technicals now reflect the short-term bearishness driven by the news, while the fundamentals support a long-term bullish outlook. The 'why' behind the price move is clear, reducing uncertainty.",
-          "revised_stance_rationale": "The original technical analysis is now obsolete. The market has experienced a major catalyst: a blowout earnings report followed by a massive, fear-driven sell-off. The short-term technical picture is now broken and bearish due to the 18% plunge. However, the exceptional fundamental data (66% revenue growth) confirms the company's underlying strength. This creates a classic dislocation where short-term panic has created a long-term value opportunity. The stance is now short-term bearish on price momentum and long-term bullish on fundamental value.",
+          "revised_confidence": 0.7,
           "evidence_needed": [
-            "Updated price chart and technical indicators (Price, MA20, MA50, MA200, RSI, MACD) following the ~18% price drop to confirm the technical breakdown and identify new potential support levels.",
-            "Volume data for the day(s) of the major sell-off to confirm the conviction of the bearish move.",
-            "The specific forward guidance numbers provided by management to independently verify the news agent's claim of 'robust 2026 guidance'."
-          ]
-        },
-        {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the core evidence provided by the news_macro agent. Their report fills the critical gaps in my original analysis by confirming the earnings report was a 'blowout' with a '66% YoY revenue beat' and that the company issued 'strong forward guidance'. This confirms my initial hypothesis that the fundamentals were exceptionally strong. I also agree with their assessment that the 18% price drop is a narrative-driven overreaction to 'AI fears' rather than a reflection of fundamental weakness, which supports my long-term bullish thesis.",
-          "disagreement": "I disagree with the market_technical agent's short-term bullish stance. Their analysis appears to be based on pre-earnings data and is therefore outdated. The 18% plunge described by the news_macro agent has invalidated the bullish short-term signals (e.g., price > MA20/50, RSI). The current technical picture is now bearish. I also disagree with my own original 'Neutral' short-term stance, which was a product of incomplete information. The new evidence of a massive sell-off makes a 'Bearish' short-term stance more appropriate.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.8,
-          "evidence_needed": [
-            "A detailed analysis of the specific AI-driven competitive threats from Google and Meta to determine if the market's 'AI fear' is a structural risk or a temporary narrative.",
-            "Management's commentary from the earnings call regarding the competitive landscape and their strategy to defend their position.",
-            "Updated technical analysis reflecting the post-earnings price plunge to identify potential support levels and signs of capitulation.",
-            "A review of analyst reports post-earnings to see if they are defending the stock or downgrading based on the competitive fears."
+            "Technical confirmation of a price bottom, such as a bullish MACD crossover on the daily chart.",
+            "Price successfully reclaiming a short-term moving average (e.g., MA20) on sustained volume.",
+            "Formation of a clear price consolidation or base-building pattern, indicating seller exhaustion.",
+            "A sustained move in the RSI indicator out of oversold territory (above 30) to show a shift in momentum."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "I am overriding the guardrail's confidence and position sizing to reflect the rare and powerful consensus that emerged during the debate. All agents, after reviewing the complete evidence, converged from disparate initial views to a single, unified thesis: a short-term, narrative-driven selloff has created a long-term fundamental buying opportunity. The strength of this convergence, combining stellar fundamentals with a clear market overreaction, justifies a higher confidence (0.85) and a more assertive action ('Accumulate on Weakness' with a 'Medium' position size) than the guardrail's more cautious default.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "I am overriding the deterministic guardrail's 'Neutral' short-term stance. After the debate, a clear consensus emerged: the company's fundamentals are exceptional (unanimous long-term Bullish view), but the market's reaction was a violent, narrative-driven sell-off. Both the fundamental and technical agents correctly revised their short-term stances to 'Bearish' to reflect this price action. The news_macro agent's revision to 'Bullish' was based on a flawed acceptance of the technical agent's initial, incorrect data about a positive stock return. The overwhelming evidence points to a bearish short-term technical and sentiment picture, which creates a long-term opportunity. Therefore, the prudent action is to be bearish in the immediate term but look to accumulate a position on further weakness.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Neutral",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
+          "stance": "Bullish",
           "confidence": 0.8,
           "weight": 0.45,
-          "contribution": -0.36
+          "contribution": 0.36
         },
         {
           "agent_name": "fundamental",
           "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
+          "weight": 0.15,
+          "contribution": -0.12
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": -0.28
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
-          "stance": "Neutral",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "market_technical",
           "stance": "Bullish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": 0.16
+          "weight": 0.4,
+          "contribution": 0.32
         },
         {
           "agent_name": "fundamental",
           "stance": "Bullish",
           "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": 0.36
+          "weight": 0.35,
+          "contribution": 0.28
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.7,
+          "weight": 0.25,
+          "contribution": 0.175
         }
       ]
     },
     "scores": {
-      "short": -0.6797,
-      "long": 0.6797
+      "short": -0.0526,
+      "long": 1.0
     },
     "llm_decision_used": true
   }

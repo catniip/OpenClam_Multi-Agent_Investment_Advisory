@@ -215,127 +215,135 @@
     "ticker": "PWR",
     "company": "Quanta Services",
     "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
+    "short_term_stance": "Neutral",
     "long_term_stance": "Bullish",
-    "confidence": 0.75,
-    "confidence_rationale": "Confidence is strong due to the alignment of multiple bullish trend and momentum indicators (Price vs. MAs, MACD, Relative Strength). However, it is tempered from a higher level by the extreme RSI reading (85.57), which indicates a high risk of a short-term pullback.",
-    "stance_rationale": "The dominant technical profile is a conflict between exceptionally strong bullish momentum and a severely overbought condition. While the path of least resistance remains upward, the risk of a short-term reversal or consolidation is significant, suggesting caution is warranted.",
+    "confidence": 0.7,
+    "confidence_rationale": "Confidence is tempered by the conflicting signals between the very strong long-term uptrend and the weak, negative post-earnings price reaction. While the underlying trend is powerful, the failure to follow through after the earnings event introduces short-term uncertainty, making a neutral stance most prudent.",
+    "stance_rationale": "The dominant technical feature is the conflict between the stock's exceptionally strong underlying uptrend and its disappointing post-earnings price action. This suggests the powerful rally has paused, shifting the immediate bias from bullish to neutral as the market digests the event.",
     "key_signals": [
+      {
+        "type": "Earnings Reaction",
+        "signal": "Negative Post-Earnings Drift",
+        "evidence": "Despite a strong run-up into earnings, the stock had a negative post-1D abnormal return of -1.13% versus QQQ, indicating a failure to continue momentum. However, reaction volume was below average (0.96x), suggesting weak selling conviction."
+      },
       {
         "type": "Moving Averages",
         "signal": "Strong Bullish Trend Structure",
-        "evidence": "Price at 757.34 is 21.4% above its 20-day MA and 29.1% above its 50-day MA, indicating a powerful, established uptrend."
-      },
-      {
-        "type": "MACD",
-        "signal": "Accelerating Bullish Momentum",
-        "evidence": "The MACD line (39.64) is substantially above its signal line (24.85), with a large, positive histogram (14.79) confirming strong upward momentum."
+        "evidence": "Price at $553.89 is significantly above its rising 20-day ($496.46), 50-day ($462.35), and 200-day ($411.34) moving averages, indicating a well-established uptrend."
       },
       {
         "type": "RSI",
-        "signal": "Extreme Overbought Condition",
-        "evidence": "RSI of 85.57 is deep in overbought territory (above 70), signaling the move is becoming stretched and increasing the probability of a pullback."
+        "signal": "Overbought Condition",
+        "evidence": "RSI is 72.91, suggesting the price move is extended and potentially due for consolidation or a pullback."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bullish Momentum Confirmation",
+        "evidence": "The MACD line (21.27) is above the signal line (17.33) with a positive histogram, confirming strong upward momentum leading into the earnings event."
       },
       {
         "type": "Relative Strength",
-        "signal": "Significant Market Leadership",
-        "evidence": "The stock has outperformed the SPY benchmark by a substantial 52.31% over the analysis period, demonstrating clear market leadership."
+        "signal": "Significant Market Outperformance",
+        "evidence": "The stock has outperformed the SPY benchmark by a substantial 76.91% over the measured period, highlighting its status as a market leader."
       },
       {
         "type": "Volume",
-        "signal": "Breakout Confirmed by Volume",
-        "evidence": "The sharp price move from ~628 to ~727 was accompanied by a significant volume spike to 2.43M shares, validating the conviction behind the move."
+        "signal": "Elevated Pre-Earnings Volume",
+        "evidence": "Volume on the day of earnings was 1.48 times the recent average, indicating heightened investor participation and conviction in the pre-event rally."
       },
       {
         "type": "Drawdown",
         "signal": "Trading at New Highs",
-        "evidence": "The current drawdown is 0.0%, indicating the stock is at a peak price for the period and has no recent overhead resistance."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "Confirmed Bull Trend",
-        "evidence": "The underlying market regime is classified as 'bullish_trend', providing a supportive macro context for the price action."
+        "evidence": "Current drawdown is 0.0%, indicating the stock closed at its peak for the period, which is technically a strong bullish signal."
       },
       {
         "type": "Returns",
         "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 2.37%"
+        "evidence": "Mean of recent returns: 1.81%"
       },
       {
         "type": "Volatility",
         "signal": "moderate volatility",
-        "evidence": "Annualized volatility 46.36%, Recent 57.4%"
+        "evidence": "Annualized volatility 36.96%, Recent 41.92%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "bullish_trend",
+        "evidence": "Regime classification: bullish_trend"
       }
     ],
     "risks": [
-      "Extreme overbought condition with an RSI of 85.57 suggests the asset is vulnerable to a near-term pullback or consolidation as buyers become exhausted.",
-      "The price is significantly extended from its 20-day moving average by over 21%, increasing the risk of a sharp mean-reversion move.",
-      "Recent volatility has increased to 57.4%, indicating wider price swings and higher risk for new positions."
+      "Post-Earnings Weakness: The failure to rally post-earnings, known as a 'sell the news' reaction, can cap short-term upside as positive momentum is immediately halted.",
+      "Mean Reversion Risk: The stock is in overbought territory (RSI > 70) and significantly extended from its 20-day and 50-day moving averages, increasing the likelihood of a short-term pullback."
     ],
     "citations": [],
-    "summary": "PWR is in a powerful, short-term uptrend characterized by exceptionally strong momentum and significant market outperformance. All primary trend and momentum indicators are aligned bullishly. However, the stock is now in a deeply overbought condition (RSI > 85), which elevates the risk of a sharp pullback or consolidation in the near term. The trend remains strong, but the risk/reward for new long positions has deteriorated.",
+    "summary": "PWR exhibits a powerful, long-term bullish trend, evidenced by its alignment of moving averages, strong relative performance, and recent close at a new high. However, the analysis is complicated by a negative post-earnings reaction where the stock underperformed the market. This immediate failure to follow through, even on low volume, shifts the short-term outlook to neutral, suggesting a period of consolidation is likely.",
     "raw_packet": {
       "ticker": "PWR",
       "company": "Quanta Services",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
+      "short_term_stance": "neutral",
       "long_term_stance": "bullish",
-      "confidence": 0.75,
-      "confidence_rationale": "Confidence is strong due to the alignment of multiple bullish trend and momentum indicators (Price vs. MAs, MACD, Relative Strength). However, it is tempered from a higher level by the extreme RSI reading (85.57), which indicates a high risk of a short-term pullback.",
+      "confidence": 0.7,
+      "confidence_rationale": "Confidence is tempered by the conflicting signals between the very strong long-term uptrend and the weak, negative post-earnings price reaction. While the underlying trend is powerful, the failure to follow through after the earnings event introduces short-term uncertainty, making a neutral stance most prudent.",
       "key_signals": [
+        {
+          "type": "Earnings Reaction",
+          "signal": "Negative Post-Earnings Drift",
+          "evidence": "Despite a strong run-up into earnings, the stock had a negative post-1D abnormal return of -1.13% versus QQQ, indicating a failure to continue momentum. However, reaction volume was below average (0.96x), suggesting weak selling conviction."
+        },
         {
           "type": "Moving Averages",
           "signal": "Strong Bullish Trend Structure",
-          "evidence": "Price at 757.34 is 21.4% above its 20-day MA and 29.1% above its 50-day MA, indicating a powerful, established uptrend."
-        },
-        {
-          "type": "MACD",
-          "signal": "Accelerating Bullish Momentum",
-          "evidence": "The MACD line (39.64) is substantially above its signal line (24.85), with a large, positive histogram (14.79) confirming strong upward momentum."
+          "evidence": "Price at $553.89 is significantly above its rising 20-day ($496.46), 50-day ($462.35), and 200-day ($411.34) moving averages, indicating a well-established uptrend."
         },
         {
           "type": "RSI",
-          "signal": "Extreme Overbought Condition",
-          "evidence": "RSI of 85.57 is deep in overbought territory (above 70), signaling the move is becoming stretched and increasing the probability of a pullback."
+          "signal": "Overbought Condition",
+          "evidence": "RSI is 72.91, suggesting the price move is extended and potentially due for consolidation or a pullback."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bullish Momentum Confirmation",
+          "evidence": "The MACD line (21.27) is above the signal line (17.33) with a positive histogram, confirming strong upward momentum leading into the earnings event."
         },
         {
           "type": "Relative Strength",
-          "signal": "Significant Market Leadership",
-          "evidence": "The stock has outperformed the SPY benchmark by a substantial 52.31% over the analysis period, demonstrating clear market leadership."
+          "signal": "Significant Market Outperformance",
+          "evidence": "The stock has outperformed the SPY benchmark by a substantial 76.91% over the measured period, highlighting its status as a market leader."
         },
         {
           "type": "Volume",
-          "signal": "Breakout Confirmed by Volume",
-          "evidence": "The sharp price move from ~628 to ~727 was accompanied by a significant volume spike to 2.43M shares, validating the conviction behind the move."
+          "signal": "Elevated Pre-Earnings Volume",
+          "evidence": "Volume on the day of earnings was 1.48 times the recent average, indicating heightened investor participation and conviction in the pre-event rally."
         },
         {
           "type": "Drawdown",
           "signal": "Trading at New Highs",
-          "evidence": "The current drawdown is 0.0%, indicating the stock is at a peak price for the period and has no recent overhead resistance."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "Confirmed Bull Trend",
-          "evidence": "The underlying market regime is classified as 'bullish_trend', providing a supportive macro context for the price action."
+          "evidence": "Current drawdown is 0.0%, indicating the stock closed at its peak for the period, which is technically a strong bullish signal."
         },
         {
           "type": "Returns",
           "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 2.37%"
+          "evidence": "Mean of recent returns: 1.81%"
         },
         {
           "type": "Volatility",
           "signal": "moderate volatility",
-          "evidence": "Annualized volatility 46.36%, Recent 57.4%"
+          "evidence": "Annualized volatility 36.96%, Recent 41.92%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "bullish_trend",
+          "evidence": "Regime classification: bullish_trend"
         }
       ],
       "risks": [
-        "Extreme overbought condition with an RSI of 85.57 suggests the asset is vulnerable to a near-term pullback or consolidation as buyers become exhausted.",
-        "The price is significantly extended from its 20-day moving average by over 21%, increasing the risk of a sharp mean-reversion move.",
-        "Recent volatility has increased to 57.4%, indicating wider price swings and higher risk for new positions."
+        "Post-Earnings Weakness: The failure to rally post-earnings, known as a 'sell the news' reaction, can cap short-term upside as positive momentum is immediately halted.",
+        "Mean Reversion Risk: The stock is in overbought territory (RSI > 70) and significantly extended from its 20-day and 50-day moving averages, increasing the likelihood of a short-term pullback."
       ],
-      "summary": "PWR is in a powerful, short-term uptrend characterized by exceptionally strong momentum and significant market outperformance. All primary trend and momentum indicators are aligned bullishly. However, the stock is now in a deeply overbought condition (RSI > 85), which elevates the risk of a sharp pullback or consolidation in the near term. The trend remains strong, but the risk/reward for new long positions has deteriorated.",
-      "core_insight": "The dominant technical profile is a conflict between exceptionally strong bullish momentum and a severely overbought condition. While the path of least resistance remains upward, the risk of a short-term reversal or consolidation is significant, suggesting caution is warranted."
+      "summary": "PWR exhibits a powerful, long-term bullish trend, evidenced by its alignment of moving averages, strong relative performance, and recent close at a new high. However, the analysis is complicated by a negative post-earnings reaction where the stock underperformed the market. This immediate failure to follow through, even on low volume, shifts the short-term outlook to neutral, suggesting a period of consolidation is likely.",
+      "core_insight": "The dominant technical feature is the conflict between the stock's exceptionally strong underlying uptrend and its disappointing post-earnings price action. This suggests the powerful rally has paused, shifting the immediate bias from bullish to neutral as the market digests the event."
     }
   }
 ]

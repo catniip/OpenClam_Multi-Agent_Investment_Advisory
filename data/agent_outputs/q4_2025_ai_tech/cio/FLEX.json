@@ -11,30 +11,29 @@
         "rationale": "Short-term: Investor expectations are extremely high after a multi-year 200%+ run, and valuation is a key debate. With a recent pullback and a PT cut from a bull, the stock is vulnerable to a 'sell the news' reaction or a significant drop on any perceived weakness in its upcoming earnings report. Long-term: The commentary about a 'strong operational shift' suggests Flex has successfully repositioned itself into higher-growth, more complex manufacturing areas (e.g., AI, industrial, auto). If this strategic shift is real, it will drive sustained earnings growth over the next few quarters, justifying a higher valuation once short-term volatility subsides."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Flex Ltd. demonstrated strong quarter-over-quarter growth in revenue and all levels of profitability. However, this is contrasted by a decrease in both operating and free cash flow over the same period, negative year-over-year earnings growth reported by yfinance, and a high trailing P/E ratio, presenting a mixed fundamental picture."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
+        "rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
       }
     ],
     "areas_of_agreement": [
+      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean bullish on the long-term horizon."
     ],
-    "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
-    ],
+    "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 1,
+      "Bullish": 0,
+      "Neutral": 2,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -409,261 +408,6 @@
       {
         "ticker": "FLEX",
         "company": "Flex",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-        "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Confirmation",
-            "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bull Trend",
-            "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Price at New High",
-            "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weakening Conviction",
-            "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-          },
-          {
-            "type": "Returns",
-            "signal": "Strong Short-Term Gains",
-            "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-          }
-        ],
-        "risks": [
-          "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-          "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-          "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-        "raw_packet": {
-          "ticker": "FLEX",
-          "company": "Flex",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-          "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Confirmation",
-              "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bull Trend",
-              "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price at New High",
-              "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Short-Term Gains",
-              "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-            }
-          ],
-          "risks": [
-            "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-            "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-            "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-          "raw_packet": {
-            "ticker": "FLEX",
-            "company": "Flex",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-            "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Confirmation",
-                "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bull Trend",
-                "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price at New High",
-                "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Short-Term Gains",
-                "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-              }
-            ],
-            "risks": [
-              "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-              "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-              "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-            "raw_packet": {
-              "ticker": "FLEX",
-              "company": "Flex",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Confirmation",
-                  "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bull Trend",
-                  "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price at New High",
-                  "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Short-Term Gains",
-                  "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-                }
-              ],
-              "risks": [
-                "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-                "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-                "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-              ],
-              "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-              "core_insight": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "FLEX",
-        "company": "Flex",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -813,16 +557,287 @@
             }
           }
         }
+      },
+      {
+        "ticker": "FLEX",
+        "company": "Flex",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+        "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Negative Post-Earnings Reaction",
+            "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bullish Trend Structure",
+            "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Confirmation",
+            "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Healthy Bullish Momentum",
+            "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bullish Trend",
+            "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Resilient Price Action",
+            "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.33%"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.89x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+          }
+        ],
+        "risks": [
+          "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+          "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+        "raw_packet": {
+          "ticker": "FLEX",
+          "company": "Flex",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+          "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Negative Post-Earnings Reaction",
+              "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bullish Trend Structure",
+              "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Confirmation",
+              "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Resilient Price Action",
+              "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.33%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.89x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+            }
+          ],
+          "risks": [
+            "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+            "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+          "raw_packet": {
+            "ticker": "FLEX",
+            "company": "Flex",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+            "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Negative Post-Earnings Reaction",
+                "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bullish Trend Structure",
+                "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Confirmation",
+                "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Resilient Price Action",
+                "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.33%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.89x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+              }
+            ],
+            "risks": [
+              "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+              "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+            "raw_packet": {
+              "ticker": "FLEX",
+              "company": "Flex",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Negative Post-Earnings Reaction",
+                  "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bullish Trend Structure",
+                  "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Confirmation",
+                  "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Resilient Price Action",
+                  "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.33%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.89x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+                }
+              ],
+              "risks": [
+                "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+                "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+              ],
+              "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+              "core_insight": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": true,
+    "triggered": false,
     "trigger": {
-      "debate_required": true,
-      "conflict_level": "high",
+      "debate_required": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "No material cross-agent disagreement."
       ]
     },
     "synthesis": {
@@ -837,30 +852,29 @@
           "rationale": "Short-term: Investor expectations are extremely high after a multi-year 200%+ run, and valuation is a key debate. With a recent pullback and a PT cut from a bull, the stock is vulnerable to a 'sell the news' reaction or a significant drop on any perceived weakness in its upcoming earnings report. Long-term: The commentary about a 'strong operational shift' suggests Flex has successfully repositioned itself into higher-growth, more complex manufacturing areas (e.g., AI, industrial, auto). If this strategic shift is real, it will drive sustained earnings growth over the next few quarters, justifying a higher valuation once short-term volatility subsides."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Flex Ltd. demonstrated strong quarter-over-quarter growth in revenue and all levels of profitability. However, this is contrasted by a decrease in both operating and free cash flow over the same period, negative year-over-year earnings growth reported by yfinance, and a high trailing P/E ratio, presenting a mixed fundamental picture."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.8,
+          "rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
         }
       ],
       "areas_of_agreement": [
+        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean bullish on the long-term horizon."
       ],
-      "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
-      ],
+      "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 1,
+        "Bullish": 0,
+        "Neutral": 2,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1355,325 +1369,6 @@
         {
           "ticker": "FLEX",
           "company": "Flex",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-          "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Confirmation",
-              "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bull Trend",
-              "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price at New High",
-              "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Short-Term Gains",
-              "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-            }
-          ],
-          "risks": [
-            "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-            "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-            "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-          "raw_packet": {
-            "ticker": "FLEX",
-            "company": "Flex",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-            "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Confirmation",
-                "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bull Trend",
-                "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price at New High",
-                "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Short-Term Gains",
-                "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-              }
-            ],
-            "risks": [
-              "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-              "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-              "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-            "raw_packet": {
-              "ticker": "FLEX",
-              "company": "Flex",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-              "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Confirmation",
-                  "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bull Trend",
-                  "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price at New High",
-                  "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Short-Term Gains",
-                  "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-                }
-              ],
-              "risks": [
-                "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-                "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-                "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-              ],
-              "citations": [],
-              "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-              "raw_packet": {
-                "ticker": "FLEX",
-                "company": "Flex",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bullish",
-                "confidence": 0.8,
-                "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-                "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Confirmation",
-                    "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Overbought Condition",
-                    "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Confirmed Bull Trend",
-                    "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Price at New High",
-                    "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weakening Conviction",
-                    "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "Strong Short-Term Gains",
-                    "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-                  }
-                ],
-                "risks": [
-                  "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-                  "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-                  "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-                ],
-                "citations": [],
-                "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-                "raw_packet": {
-                  "ticker": "FLEX",
-                  "company": "Flex",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.8,
-                  "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Confirmation",
-                      "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Overbought Condition",
-                      "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Confirmed Bull Trend",
-                      "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Price at New High",
-                      "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weakening Conviction",
-                      "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "Strong Short-Term Gains",
-                      "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-                    }
-                  ],
-                  "risks": [
-                    "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-                    "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-                    "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-                  ],
-                  "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-                  "core_insight": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "FLEX",
-          "company": "Flex",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1860,54 +1555,349 @@
               }
             }
           }
+        },
+        {
+          "ticker": "FLEX",
+          "company": "Flex",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+          "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Negative Post-Earnings Reaction",
+              "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bullish Trend Structure",
+              "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Confirmation",
+              "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Resilient Price Action",
+              "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.33%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.89x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+            }
+          ],
+          "risks": [
+            "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+            "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+          "raw_packet": {
+            "ticker": "FLEX",
+            "company": "Flex",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+            "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Negative Post-Earnings Reaction",
+                "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bullish Trend Structure",
+                "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Confirmation",
+                "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Resilient Price Action",
+                "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.33%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.89x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+              }
+            ],
+            "risks": [
+              "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+              "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+            "raw_packet": {
+              "ticker": "FLEX",
+              "company": "Flex",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bullish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+              "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Negative Post-Earnings Reaction",
+                  "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bullish Trend Structure",
+                  "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Confirmation",
+                  "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Resilient Price Action",
+                  "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.33%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.89x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+                }
+              ],
+              "risks": [
+                "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+                "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+              ],
+              "citations": [],
+              "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+              "raw_packet": {
+                "ticker": "FLEX",
+                "company": "Flex",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bullish",
+                "confidence": 0.8,
+                "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+                "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Negative Post-Earnings Reaction",
+                    "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Strong Bullish Trend Structure",
+                    "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Outperformance",
+                    "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bullish Momentum Confirmation",
+                    "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Healthy Bullish Momentum",
+                    "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Confirmed Bullish Trend",
+                    "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Resilient Price Action",
+                    "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.33%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "weak participation",
+                    "evidence": "Volume spike ratio 0.89x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+                  }
+                ],
+                "risks": [
+                  "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+                  "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+                ],
+                "citations": [],
+                "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+                "raw_packet": {
+                  "ticker": "FLEX",
+                  "company": "Flex",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.8,
+                  "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Negative Post-Earnings Reaction",
+                      "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Strong Bullish Trend Structure",
+                      "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Outperformance",
+                      "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bullish Momentum Confirmation",
+                      "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Healthy Bullish Momentum",
+                      "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Confirmed Bullish Trend",
+                      "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Resilient Price Action",
+                      "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.33%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "weak participation",
+                      "evidence": "Volume spike ratio 0.89x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+                    }
+                  ],
+                  "risks": [
+                    "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+                    "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+                  ],
+                  "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+                  "core_insight": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [
-      {
-        "response_type": "agent_revision",
-        "agreement": "I agree with the `market_technical` agent's evidence of an 'Overbought Condition' (RSI at 72.81) and price being significantly extended from moving averages. This provides quantitative support for my original qualitative assessment that 'investor expectations are extremely high'. I also agree with the `fundamental` agent's data points showing a high 'Trailing P/E' of 41.18, declining quarter-over-quarter cash flow, and negative year-over-year earnings growth. These facts strengthen my short-term bearish thesis regarding valuation risk and potential weakness.",
-        "disagreement": "I disagree with the `market_technical` agent's resulting 'Bullish' short-term stance. While the trend is strong, I place a higher weight on their own cautionary signals (overbought RSI, price extension, weakening volume) as being more predictive of a pre-earnings pullback or a 'sell the news' reaction. The trend describes the past, whereas the overbought condition signals immediate risk. I also assign a different interpretation to the `fundamental` agent's 'Neutral' view; the combination of strong QoQ profit growth with declining cash flow and negative YoY earnings growth does not signal neutrality to me, but rather heightened uncertainty and risk, which reinforces a short-term bearish stance.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.7,
-        "evidence_needed": [
-          "Management's forward-looking guidance from the earnings call to understand if the positive operational shift is expected to continue.",
-          "The earnings call transcript to assess management's tone and explanations for the conflicting signals (e.g., why cash flow declined despite profit growth).",
-          "A segment-level breakdown of revenue and margins to confirm if growth is coming from the hypothesized high-value areas like AI and automotive.",
-          "Performance against analyst consensus estimates for revenue and EPS, as this will be the primary driver of the immediate stock reaction.",
-          "A detailed explanation for the decline in operating and free cash flow quarter-over-quarter."
-        ]
-      },
-      {
-        "response_type": "agent_revision",
-        "agreement": "I agree with the core insight from the `news_macro` agent. Its identification of extremely high investor expectations, valuation concerns, and a potential 'sell the news' setup around the upcoming earnings provides a strong narrative catalyst for the pullback risk I identified in my own technical analysis (overbought RSI, price extension from moving averages). The `fundamental` agent's data points, specifically the high trailing P/E, negative YoY earnings growth, and declining cash flow, further reinforce the idea that the stock is vulnerable to any disappointment.",
-        "disagreement": "I place lower weight on the `fundamental` agent's overall 'Neutral' stance. The agent itself correctly identifies its confidence is low due to significant missing data. The powerful, multi-timeframe uptrend I am tracking suggests the market has, to date, been willing to overlook the mixed fundamental signals (like declining QoQ cash flow) in favor of a stronger, forward-looking narrative, which the `news_macro` agent identifies as a 'strong operational shift'. The price action remains the primary truth, and it has been unequivocally bullish long-term.",
-        "revised_short_term_stance": "Neutral",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.6,
-        "evidence_needed": [
-          "The market's price and volume reaction to the upcoming earnings report and guidance. This is the most critical catalyst that will either resolve the overbought condition through a correction or confirm the trend's strength and lead to a breakout.",
-          "Post-earnings analyst revisions and commentary to see if the 'strong operational shift' narrative is confirmed or questioned.",
-          "Consolidation or pullback price levels. I need to see if buyers emerge at key technical support levels, such as the 20-day moving average, which would be a sign of trend health."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": "I agree with the news_macro agent that investor expectations are extremely high after a significant rally, making valuation a key debate and creating short-term risk. I also find their long-term thesis compelling: a 'strong operational shift' into higher-growth areas like AI, industrial, and auto provides a narrative that explains the market's optimism, which my fundamental data alone could not. This aligns with the market_technical agent's finding of a powerful uptrend and significant market outperformance. The technical agent's identification of an 'overbought condition' (RSI 72.81) corroborates the news agent's view of stretched expectations.",
-        "disagreement": "While I acknowledge the market_technical agent's 'Bullish' short-term stance based on strong trend indicators, I assign this a lower weight. The combination of overbought technicals, extremely high expectations (per news_macro), and the fundamental weaknesses I originally identified (negative YoY earnings growth of -4.5%, declining QoQ operating and free cash flow) creates a precarious short-term risk/reward profile. The market appears to be overlooking these fundamental red flags in favor of the long-term narrative, a situation that could reverse sharply on any disappointment.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.6,
-        "evidence_needed": [
-          "The upcoming earnings report and management guidance are now critical to validate the 'operational shift' thesis proposed by the news_macro agent.",
-          "Confirmation from management regarding the nature and profitability of new programs, particularly in AI, industrial, and auto.",
-          "A breakdown of revenue and margins by segment to see if the data supports the narrative of a shift to higher-value manufacturing.",
-          "Management's explanation for the quarter-over-quarter decline in operating and free cash flow, and their outlook for cash generation.",
-          "Performance relative to analyst consensus estimates for revenue and EPS to gauge the magnitude of any beat or miss against high expectations."
-        ]
-      }
-    ],
+    "debate_responses": [],
     "revised_packets": [
       {
         "ticker": "FLEX",
@@ -1915,7 +1905,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bullish",
-        "confidence": 0.7,
+        "confidence": 0.6,
         "confidence_rationale": "Confidence is moderate because the analysis is based on pre-earnings analyst commentary and price action, not on direct company disclosures about orders or margins. The high investor expectations are inferred from the stock's massive prior run. The long-term bullish thesis depends on the 'operational shift' proving to be both real and profitable, which will only be confirmed by future earnings reports.",
         "stance_rationale": "Short-term: Investor expectations are extremely high after a multi-year 200%+ run, and valuation is a key debate. With a recent pullback and a PT cut from a bull, the stock is vulnerable to a 'sell the news' reaction or a significant drop on any perceived weakness in its upcoming earnings report. Long-term: The commentary about a 'strong operational shift' suggests Flex has successfully repositioned itself into higher-growth, more complex manufacturing areas (e.g., AI, industrial, auto). If this strategic shift is real, it will drive sustained earnings growth over the next few quarters, justifying a higher valuation once short-term volatility subsides.",
         "key_signals": [
@@ -2270,298 +2260,15 @@
               "core_insight": "The market is fixated on Flex's valuation after a huge run, but is overlooking the second-order beneficiaries within the electronics supply chain, particularly the specialized component and equipment suppliers who benefit from the increasing complexity of the systems Flex is now building, likely for AI infrastructure."
             }
           }
-        },
-        "debate_response": {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the `market_technical` agent's evidence of an 'Overbought Condition' (RSI at 72.81) and price being significantly extended from moving averages. This provides quantitative support for my original qualitative assessment that 'investor expectations are extremely high'. I also agree with the `fundamental` agent's data points showing a high 'Trailing P/E' of 41.18, declining quarter-over-quarter cash flow, and negative year-over-year earnings growth. These facts strengthen my short-term bearish thesis regarding valuation risk and potential weakness.",
-          "disagreement": "I disagree with the `market_technical` agent's resulting 'Bullish' short-term stance. While the trend is strong, I place a higher weight on their own cautionary signals (overbought RSI, price extension, weakening volume) as being more predictive of a pre-earnings pullback or a 'sell the news' reaction. The trend describes the past, whereas the overbought condition signals immediate risk. I also assign a different interpretation to the `fundamental` agent's 'Neutral' view; the combination of strong QoQ profit growth with declining cash flow and negative YoY earnings growth does not signal neutrality to me, but rather heightened uncertainty and risk, which reinforces a short-term bearish stance.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "Management's forward-looking guidance from the earnings call to understand if the positive operational shift is expected to continue.",
-            "The earnings call transcript to assess management's tone and explanations for the conflicting signals (e.g., why cash flow declined despite profit growth).",
-            "A segment-level breakdown of revenue and margins to confirm if growth is coming from the hypothesized high-value areas like AI and automotive.",
-            "Performance against analyst consensus estimates for revenue and EPS, as this will be the primary driver of the immediate stock reaction.",
-            "A detailed explanation for the decline in operating and free cash flow quarter-over-quarter."
-          ]
-        }
-      },
-      {
-        "ticker": "FLEX",
-        "company": "Flex",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.6,
-        "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-        "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Confirmation",
-            "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Confirmed Bull Trend",
-            "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Price at New High",
-            "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weakening Conviction",
-            "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-          },
-          {
-            "type": "Returns",
-            "signal": "Strong Short-Term Gains",
-            "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-          }
-        ],
-        "risks": [
-          "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-          "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-          "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-        ],
-        "citations": [],
-        "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-        "raw_packet": {
-          "ticker": "FLEX",
-          "company": "Flex",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-          "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Confirmation",
-              "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Confirmed Bull Trend",
-              "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Price at New High",
-              "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weakening Conviction",
-              "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Short-Term Gains",
-              "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-            }
-          ],
-          "risks": [
-            "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-            "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-            "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-          ],
-          "citations": [],
-          "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-          "raw_packet": {
-            "ticker": "FLEX",
-            "company": "Flex",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-            "stance_rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Confirmation",
-                "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Confirmed Bull Trend",
-                "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Price at New High",
-                "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weakening Conviction",
-                "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Short-Term Gains",
-                "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-              }
-            ],
-            "risks": [
-              "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-              "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-              "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-            ],
-            "citations": [],
-            "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-            "raw_packet": {
-              "ticker": "FLEX",
-              "company": "Flex",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high due to the strong confluence of bullish signals across trend, momentum, and relative strength indicators. The price is in a clear uptrend above all key moving averages, confirmed by a positive MACD and significant outperformance. The main reservations are the overbought RSI and recent low volume, which suggest a risk of short-term consolidation but do not negate the dominant trend.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price ($91.84) is above the MA20 ($83.39), MA50 ($72.03), and MA200 ($62.54), with all moving averages aligned in ascending order."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Confirmation",
-                  "evidence": "The MACD line (6.02) is above its signal line (5.63), with a positive histogram (0.39), confirming upward momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 122.12% over the measured period, indicating strong market leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 72.81, above the 70 threshold, suggesting the recent price move may be overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Confirmed Bull Trend",
-                  "evidence": "The market regime is algorithmically classified as 'bullish_trend', reinforcing the analysis from moving averages."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Price at New High",
-                  "evidence": "The current drawdown is 0.0%, indicating the stock is trading at its peak for the analysis window."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weakening Conviction",
-                  "evidence": "The latest volume spike ratio is 0.67, indicating lower-than-average participation on the last trading day's advance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Short-Term Gains",
-                  "evidence": "The stock has appreciated by over 7.8% in the last 10 sessions, demonstrating strong recent performance."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 43.09%, Recent 38.09%"
-                }
-              ],
-              "risks": [
-                "The RSI at 72.81 indicates an overbought condition, which could lead to a short-term price correction or consolidation.",
-                "The price is significantly extended from its key moving averages (+10.1% from MA20, +27.5% from MA50), suggesting a potential for mean reversion.",
-                "The latest price move occurred on lower-than-average volume, which can sometimes signal weakening conviction in the immediate uptrend."
-              ],
-              "summary": "As of 2026/01/28, FLEX is in a strong, established bullish trend. This is evidenced by a classic bullish alignment of its moving averages, positive MACD momentum, and significant outperformance against the broader market. The stock is trading at a new high for the period. However, the trend appears overextended, with the RSI in overbought territory and the latest advance occurring on weak volume, introducing risks of a near-term pullback or consolidation.",
-              "core_insight": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the core insight from the `news_macro` agent. Its identification of extremely high investor expectations, valuation concerns, and a potential 'sell the news' setup around the upcoming earnings provides a strong narrative catalyst for the pullback risk I identified in my own technical analysis (overbought RSI, price extension from moving averages). The `fundamental` agent's data points, specifically the high trailing P/E, negative YoY earnings growth, and declining cash flow, further reinforce the idea that the stock is vulnerable to any disappointment.",
-          "disagreement": "I place lower weight on the `fundamental` agent's overall 'Neutral' stance. The agent itself correctly identifies its confidence is low due to significant missing data. The powerful, multi-timeframe uptrend I am tracking suggests the market has, to date, been willing to overlook the mixed fundamental signals (like declining QoQ cash flow) in favor of a stronger, forward-looking narrative, which the `news_macro` agent identifies as a 'strong operational shift'. The price action remains the primary truth, and it has been unequivocally bullish long-term.",
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "evidence_needed": [
-            "The market's price and volume reaction to the upcoming earnings report and guidance. This is the most critical catalyst that will either resolve the overbought condition through a correction or confirm the trend's strength and lead to a breakout.",
-            "Post-earnings analyst revisions and commentary to see if the 'strong operational shift' narrative is confirmed or questioned.",
-            "Consolidation or pullback price levels. I need to see if buyers emerge at key technical support levels, such as the 20-day moving average, which would be a sign of trend health."
-          ]
         }
       },
       {
         "ticker": "FLEX",
         "company": "Flex",
         "agent_name": "fundamental",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.6,
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
         "confidence_rationale": "Confidence is low due to a significant amount of missing information. The analysis lacks analyst consensus estimates, management's forward-looking guidance, and commentary from the earnings call. Furthermore, most comparisons are quarter-over-quarter, with limited year-over-year data, which is crucial for understanding seasonal trends and true growth.",
         "stance_rationale": "Flex Ltd. demonstrated strong quarter-over-quarter growth in revenue and all levels of profitability. However, this is contrasted by a decrease in both operating and free cash flow over the same period, negative year-over-year earnings growth reported by yfinance, and a high trailing P/E ratio, presenting a mixed fundamental picture.",
         "key_signals": [
@@ -2706,21 +2413,277 @@
               }
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the news_macro agent that investor expectations are extremely high after a significant rally, making valuation a key debate and creating short-term risk. I also find their long-term thesis compelling: a 'strong operational shift' into higher-growth areas like AI, industrial, and auto provides a narrative that explains the market's optimism, which my fundamental data alone could not. This aligns with the market_technical agent's finding of a powerful uptrend and significant market outperformance. The technical agent's identification of an 'overbought condition' (RSI 72.81) corroborates the news agent's view of stretched expectations.",
-          "disagreement": "While I acknowledge the market_technical agent's 'Bullish' short-term stance based on strong trend indicators, I assign this a lower weight. The combination of overbought technicals, extremely high expectations (per news_macro), and the fundamental weaknesses I originally identified (negative YoY earnings growth of -4.5%, declining QoQ operating and free cash flow) creates a precarious short-term risk/reward profile. The market appears to be overlooking these fundamental red flags in favor of the long-term narrative, a situation that could reverse sharply on any disappointment.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "evidence_needed": [
-            "The upcoming earnings report and management guidance are now critical to validate the 'operational shift' thesis proposed by the news_macro agent.",
-            "Confirmation from management regarding the nature and profitability of new programs, particularly in AI, industrial, and auto.",
-            "A breakdown of revenue and margins by segment to see if the data supports the narrative of a shift to higher-value manufacturing.",
-            "Management's explanation for the quarter-over-quarter decline in operating and free cash flow, and their outlook for cash generation.",
-            "Performance relative to analyst consensus estimates for revenue and EPS to gauge the magnitude of any beat or miss against high expectations."
-          ]
+        }
+      },
+      {
+        "ticker": "FLEX",
+        "company": "Flex",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+        "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Negative Post-Earnings Reaction",
+            "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bullish Trend Structure",
+            "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Outperformance",
+            "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Confirmation",
+            "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Healthy Bullish Momentum",
+            "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Confirmed Bullish Trend",
+            "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Resilient Price Action",
+            "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.33%"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.89x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+          }
+        ],
+        "risks": [
+          "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+          "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+        ],
+        "citations": [],
+        "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+        "raw_packet": {
+          "ticker": "FLEX",
+          "company": "Flex",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bullish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+          "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Negative Post-Earnings Reaction",
+              "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bullish Trend Structure",
+              "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Confirmation",
+              "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Healthy Bullish Momentum",
+              "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Confirmed Bullish Trend",
+              "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Resilient Price Action",
+              "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.33%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.89x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+            }
+          ],
+          "risks": [
+            "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+            "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+          ],
+          "citations": [],
+          "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+          "raw_packet": {
+            "ticker": "FLEX",
+            "company": "Flex",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bullish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+            "stance_rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Negative Post-Earnings Reaction",
+                "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bullish Trend Structure",
+                "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Confirmation",
+                "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Healthy Bullish Momentum",
+                "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Confirmed Bullish Trend",
+                "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Resilient Price Action",
+                "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.33%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.89x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+              }
+            ],
+            "risks": [
+              "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+              "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+            ],
+            "citations": [],
+            "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+            "raw_packet": {
+              "ticker": "FLEX",
+              "company": "Flex",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bullish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high because the analysis is based on a clear conflict between a strong, established long-term trend and a definitive, albeit mild, negative short-term catalyst reaction. The data clearly supports a long-term bullish view but points to a short-term pause or consolidation due to the post-earnings pullback.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Negative Post-Earnings Reaction",
+                  "evidence": "The stock fell -1.21% on the day after earnings (-0.61% abnormal vs QQQ) on 1.4x average volume, indicating a negative market response to the event."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bullish Trend Structure",
+                  "evidence": "Price at $66.27 is trading decisively above its MA20 ($63.45), MA50 ($62.59), and MA200 ($53.38), with all averages aligned in a bullish formation."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by a substantial 46.88% over the analysis period, demonstrating clear market leadership."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Confirmation",
+                  "evidence": "A bullish crossover is in effect, with the MACD line (0.649) above the signal line (0.464), confirming upward momentum was present leading into the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Healthy Bullish Momentum",
+                  "evidence": "RSI is at 57.31, which is in the bullish zone (above 50) but not yet overbought, suggesting momentum was healthy."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Confirmed Bullish Trend",
+                  "evidence": "The broader market regime for the stock is classified as 'bullish_trend'."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Resilient Price Action",
+                  "evidence": "The current drawdown is a modest -8.06%, indicating the stock is trading close to its recent highs and has been resilient."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.33%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.89x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 44.61%, Recent 39.67%"
+                }
+              ],
+              "risks": [
+                "The primary risk is the negative post-earnings price reaction, which suggests the news failed to act as a positive catalyst and could lead to short-term selling pressure or consolidation.",
+                "While the trend is strong, volume leading into the earnings event was below average (0.89x), suggesting a potential lack of broad conviction in the move higher."
+              ],
+              "summary": "As of 2026-01-28, FLEX exhibited a strong, confirmed long-term uptrend, characterized by bullishly aligned moving averages and significant market outperformance. Momentum indicators like RSI and MACD were positive. However, the critical post-earnings reaction was negative, with the stock declining -1.21% on elevated volume. This negative catalyst reaction overrides the prior momentum, creating a neutral short-term outlook despite the strong underlying long-term bullish structure.",
+              "core_insight": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
+            }
+          }
         }
       }
     ]
@@ -2728,22 +2691,24 @@
   "final_decision": {
     "ticker": "FLEX",
     "company": "Flex",
-    "final_short_term_stance": "Bearish",
+    "final_short_term_stance": "Neutral",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Wait for pullback",
-    "position_size_hint": "None",
-    "confidence": 0.7,
-    "core_thesis": "Flex is successfully executing a long-term strategic pivot into higher-margin, higher-growth sectors like AI infrastructure, automotive, and industrial manufacturing. However, the market has already priced in significant success after a multi-year rally, leaving the stock vulnerable in the short-term to a pullback due to stretched valuation, overbought technicals, and sky-high expectations heading into its earnings report.",
-    "why_now": "The stock is at a critical inflection point, trading at new highs with an overbought RSI (>72) just before its earnings announcement. This setup creates a classic 'sell the news' risk, where even a good report may not be enough to satisfy the market. The prudent action is to remain on the sidelines, allowing the near-term volatility to play out and seeking a more attractive entry point to participate in the compelling long-term growth story.",
+    "investment_action": "Wait for consolidation/pullback",
+    "position_size_hint": "Small",
+    "confidence": 0.6,
+    "core_thesis": "Flex is successfully transitioning into a higher-value manufacturer for secular growth markets like AI, industrial, and automotive. This strategic shift, if executed well, will drive sustained earnings growth and re-rate the stock higher over time.",
+    "why_now": "The recent earnings report acted as a 'clearing event.' It didn't cause a major breakdown but did halt the powerful uptrend, creating a period of consolidation. This provides an opportunity for patient investors to evaluate the long-term thesis and look for a more attractive entry point, as the immediate 'buy the rumor' crowd has been flushed out.",
     "key_supporting_evidence": [
-      "Narrative/Sentiment: Analyst commentary points to a 'strong operational shift' but also extremely high investor expectations after a 200%+ run, setting a high bar for earnings.",
-      "Technical: The stock is technically overbought with an RSI of 72.81 and is significantly extended from its key moving averages (+10.1% from MA20), signaling a high probability of mean reversion or consolidation.",
-      "Fundamental: The valuation appears stretched with a Trailing P/E of 41.18, which is not supported by recent fundamental trends like declining quarter-over-quarter operating cash flow and negative year-over-year earnings growth (-4.5%)."
+      "The company is undergoing a 'strong operational shift' into higher-growth, more complex manufacturing for AI, industrial, and auto sectors, which should support long-term earnings growth (news_macro).",
+      "The stock is in a powerful, confirmed long-term uptrend, trading decisively above its 50-day and 200-day moving averages and showing significant market outperformance (market_technical).",
+      "Recent results showed strong sequential margin expansion, with Operating Income growing 16.6% QoQ, suggesting the shift to higher-value work may be bearing fruit (fundamental).",
+      "The negative post-earnings price reaction was mild, suggesting a period of consolidation rather than a major trend reversal, which could create a favorable entry point (market_technical)."
     ],
     "key_risks": [
-      "Short-Term Thesis Risk: The company could deliver a blowout earnings report and guidance that far exceeds even the most bullish expectations, invalidating the bearish short-term thesis and causing the stock to gap up.",
-      "Long-Term Thesis Risk: The 'operational shift' may prove less profitable or durable than anticipated. Margins on new AI and auto programs could disappoint, or a cyclical downturn in these end markets could stall growth.",
-      "Execution Risk: The declining cash flow, if it persists, could signal underlying working capital issues or a deterioration in the quality of earnings, undermining the entire bullish narrative."
+      "High expectations and valuation after a multi-year 200%+ run make the stock vulnerable to any disappointment in guidance or execution (news_macro).",
+      "The fundamental picture is mixed, with declining quarter-over-quarter operating and free cash flow and negative year-over-year earnings growth, which conflicts with the bullish narrative (fundamental).",
+      "The 'strong operational shift' thesis is an assumption. If the shift is concentrated in lower-margin areas or fails to deliver expected profitability, the long-term case is weakened (news_macro).",
+      "The negative price reaction to earnings confirms the report was not a strong positive catalyst, signaling a potential pause or near-term weakness in the stock (market_technical)."
     ],
     "agent_view_summary": [
       {
@@ -2754,124 +2719,94 @@
         "rationale": "Short-term: Investor expectations are extremely high after a multi-year 200%+ run, and valuation is a key debate. With a recent pullback and a PT cut from a bull, the stock is vulnerable to a 'sell the news' reaction or a significant drop on any perceived weakness in its upcoming earnings report. Long-term: The commentary about a 'strong operational shift' suggests Flex has successfully repositioned itself into higher-growth, more complex manufacturing areas (e.g., AI, industrial, auto). If this strategic shift is real, it will drive sustained earnings growth over the next few quarters, justifying a higher valuation once short-term volatility subsides."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.8,
-        "rationale": "The dominant technical feature is the powerful, multi-timeframe uptrend confirmed by trend and momentum indicators. While the stock is clearly in a bullish state, the overextended nature of the recent rally (overbought RSI, large gap to moving averages) suggests the immediate risk of a pause or pullback is elevated."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Flex Ltd. demonstrated strong quarter-over-quarter growth in revenue and all levels of profitability. However, this is contrasted by a decrease in both operating and free cash flow over the same period, negative year-over-year earnings growth reported by yfinance, and a high trailing P/E ratio, presenting a mixed fundamental picture."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
+        "rationale": "The key takeaway is the divergence between the stock's powerful long-term uptrend and its negative reaction to the earnings report. The failure to rally on the catalyst introduces significant short-term uncertainty and suggests a period of consolidation or a minor pullback is likely, even as the long-term bullish case remains intact."
       }
     ],
     "debate_summary": {
-      "debate_triggered": true,
-      "conflict_level": "high",
+      "debate_triggered": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "No material cross-agent disagreement."
       ],
-      "debate_responses": [
-        {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the `market_technical` agent's evidence of an 'Overbought Condition' (RSI at 72.81) and price being significantly extended from moving averages. This provides quantitative support for my original qualitative assessment that 'investor expectations are extremely high'. I also agree with the `fundamental` agent's data points showing a high 'Trailing P/E' of 41.18, declining quarter-over-quarter cash flow, and negative year-over-year earnings growth. These facts strengthen my short-term bearish thesis regarding valuation risk and potential weakness.",
-          "disagreement": "I disagree with the `market_technical` agent's resulting 'Bullish' short-term stance. While the trend is strong, I place a higher weight on their own cautionary signals (overbought RSI, price extension, weakening volume) as being more predictive of a pre-earnings pullback or a 'sell the news' reaction. The trend describes the past, whereas the overbought condition signals immediate risk. I also assign a different interpretation to the `fundamental` agent's 'Neutral' view; the combination of strong QoQ profit growth with declining cash flow and negative YoY earnings growth does not signal neutrality to me, but rather heightened uncertainty and risk, which reinforces a short-term bearish stance.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "Management's forward-looking guidance from the earnings call to understand if the positive operational shift is expected to continue.",
-            "The earnings call transcript to assess management's tone and explanations for the conflicting signals (e.g., why cash flow declined despite profit growth).",
-            "A segment-level breakdown of revenue and margins to confirm if growth is coming from the hypothesized high-value areas like AI and automotive.",
-            "Performance against analyst consensus estimates for revenue and EPS, as this will be the primary driver of the immediate stock reaction.",
-            "A detailed explanation for the decline in operating and free cash flow quarter-over-quarter."
-          ]
-        },
-        {
-          "response_type": "agent_revision",
-          "agreement": "I agree with the core insight from the `news_macro` agent. Its identification of extremely high investor expectations, valuation concerns, and a potential 'sell the news' setup around the upcoming earnings provides a strong narrative catalyst for the pullback risk I identified in my own technical analysis (overbought RSI, price extension from moving averages). The `fundamental` agent's data points, specifically the high trailing P/E, negative YoY earnings growth, and declining cash flow, further reinforce the idea that the stock is vulnerable to any disappointment.",
-          "disagreement": "I place lower weight on the `fundamental` agent's overall 'Neutral' stance. The agent itself correctly identifies its confidence is low due to significant missing data. The powerful, multi-timeframe uptrend I am tracking suggests the market has, to date, been willing to overlook the mixed fundamental signals (like declining QoQ cash flow) in favor of a stronger, forward-looking narrative, which the `news_macro` agent identifies as a 'strong operational shift'. The price action remains the primary truth, and it has been unequivocally bullish long-term.",
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "evidence_needed": [
-            "The market's price and volume reaction to the upcoming earnings report and guidance. This is the most critical catalyst that will either resolve the overbought condition through a correction or confirm the trend's strength and lead to a breakout.",
-            "Post-earnings analyst revisions and commentary to see if the 'strong operational shift' narrative is confirmed or questioned.",
-            "Consolidation or pullback price levels. I need to see if buyers emerge at key technical support levels, such as the 20-day moving average, which would be a sign of trend health."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": "I agree with the news_macro agent that investor expectations are extremely high after a significant rally, making valuation a key debate and creating short-term risk. I also find their long-term thesis compelling: a 'strong operational shift' into higher-growth areas like AI, industrial, and auto provides a narrative that explains the market's optimism, which my fundamental data alone could not. This aligns with the market_technical agent's finding of a powerful uptrend and significant market outperformance. The technical agent's identification of an 'overbought condition' (RSI 72.81) corroborates the news agent's view of stretched expectations.",
-          "disagreement": "While I acknowledge the market_technical agent's 'Bullish' short-term stance based on strong trend indicators, I assign this a lower weight. The combination of overbought technicals, extremely high expectations (per news_macro), and the fundamental weaknesses I originally identified (negative YoY earnings growth of -4.5%, declining QoQ operating and free cash flow) creates a precarious short-term risk/reward profile. The market appears to be overlooking these fundamental red flags in favor of the long-term narrative, a situation that could reverse sharply on any disappointment.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "evidence_needed": [
-            "The upcoming earnings report and management guidance are now critical to validate the 'operational shift' thesis proposed by the news_macro agent.",
-            "Confirmation from management regarding the nature and profitability of new programs, particularly in AI, industrial, and auto.",
-            "A breakdown of revenue and margins by segment to see if the data supports the narrative of a shift to higher-value manufacturing.",
-            "Management's explanation for the quarter-over-quarter decline in operating and free cash flow, and their outlook for cash generation.",
-            "Performance relative to analyst consensus estimates for revenue and EPS to gauge the magnitude of any beat or miss against high expectations."
-          ]
-        }
-      ]
+      "debate_responses": []
     },
-    "reason_for_final_decision": "This final view represents a CIO override of the initial divided agent opinions, instead adopting the strong consensus that emerged during the debate process. The decision aligns with the deterministic guardrail. All agents, after reviewing the collective evidence, converged on a 'Bearish Short-Term, Bullish Long-Term' outlook. The evidence for near-term caution is compelling and cross-validated: news analysis shows dangerously high expectations, technicals show a classic overbought condition, and fundamentals reveal a stretched valuation against weakening cash flow. Therefore, the committee's decision is to wait for the anticipated short-term weakness to create a more attractive entry point for what is otherwise a strong long-term investment thesis.",
+    "routing_profile": {
+      "bucket": "ai_infrastructure",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI infrastructure is driven by second-order demand signals, but price confirmation still matters after earnings."
+    },
+    "reason_for_final_decision": "The committee is constructive on Flex's long-term prospects, driven by a strategic shift into higher-value markets like AI infrastructure, which is supported by a strong technical uptrend. However, we are adopting a Neutral short-term stance. The decision to override the guardrail's 'Bearish' short-term view is based on the evidence from the technical agent that the post-earnings pullback was mild, suggesting consolidation is more likely than a significant decline. The combination of high investor expectations, a lofty valuation, and some conflicting fundamental signals (declining cash flow) warrants patience. We will wait for the current consolidation phase to offer a more attractive risk/reward entry point to build a position for the long-term bullish thesis.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": -0.245
+          "confidence": 0.6,
+          "weight": 0.45,
+          "contribution": -0.27
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.15,
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Neutral",
-          "confidence": 0.6,
-          "weight": 0.45,
+          "confidence": 0.8,
+          "weight": 0.4,
           "contribution": 0.0
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bearish",
-          "confidence": 0.6,
-          "weight": 0.2,
-          "contribution": -0.12
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
-          "confidence": 0.7,
+          "confidence": 0.6,
+          "weight": 0.4,
+          "contribution": 0.24
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
           "weight": 0.35,
-          "contribution": 0.245
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Bullish",
-          "confidence": 0.6,
-          "weight": 0.2,
-          "contribution": 0.12
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bullish",
-          "confidence": 0.6,
-          "weight": 0.45,
-          "contribution": 0.27
+          "confidence": 0.8,
+          "weight": 0.25,
+          "contribution": 0.2
         }
       ]
     },
     "scores": {
-      "short": -0.5748,
-      "long": 1.0
+      "short": -0.4252,
+      "long": 0.8073
     },
     "llm_decision_used": true
   }

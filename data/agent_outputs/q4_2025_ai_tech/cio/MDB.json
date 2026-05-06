@@ -11,31 +11,31 @@
         "rationale": "A unified, severe price target reduction from the entire sell-side is a direct signal of a catastrophic guidance miss. This shatters investor confidence and triggers massive valuation multiple compression, which is not a one-day event. The stock will be in the 'penalty box' for multiple quarters as it tries to rebuild a track record, likely underperforming the broader market during this period."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.65,
-        "rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.4,
         "rationale": "MongoDB demonstrated significant fundamental improvement this quarter, with strong sequential growth in revenue and a notable turn to profitability in both operating and net income. Cash flow generation remains robust, and the balance sheet is healthy. While the company remains unprofitable on a trailing basis and the valuation is at a premium, the strong operational momentum is a key positive driver, suggesting a strengthening business."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
+        "rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
       }
     ],
     "areas_of_agreement": [
+      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean bearish on the long-term horizon."
     ],
     "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls.",
       "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 1,
+      "Bullish": 0,
+      "Neutral": 2,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -440,261 +440,6 @@
       {
         "ticker": "MDB",
         "company": "MongoDB",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.65,
-        "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-        "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral-to-Bullish Momentum",
-            "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Conviction",
-            "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Long-Term Weakness",
-            "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Risk Environment",
-            "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Outperforming Benchmark",
-            "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.07%"
-          }
-        ],
-        "risks": [
-          "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-          "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-          "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-        "raw_packet": {
-          "ticker": "MDB",
-          "company": "MongoDB",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-          "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Conviction",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Long-Term Weakness",
-              "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk Environment",
-              "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Outperforming Benchmark",
-              "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.07%"
-            }
-          ],
-          "risks": [
-            "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-            "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-            "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-          "raw_packet": {
-            "ticker": "MDB",
-            "company": "MongoDB",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-            "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Conviction",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Long-Term Weakness",
-                "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk Environment",
-                "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Outperforming Benchmark",
-                "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.07%"
-              }
-            ],
-            "risks": [
-              "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-              "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-              "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-            "raw_packet": {
-              "ticker": "MDB",
-              "company": "MongoDB",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Conviction",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Long-Term Weakness",
-                  "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk Environment",
-                  "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Outperforming Benchmark",
-                  "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.07%"
-                }
-              ],
-              "risks": [
-                "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-                "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-                "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-              ],
-              "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-              "core_insight": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "MDB",
-        "company": "MongoDB",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -852,6 +597,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "MDB",
+        "company": "MongoDB",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+        "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bullish Post-Earnings Reversal Signal",
+            "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+          },
+          {
+            "type": "RSI",
+            "signal": "Technically Oversold",
+            "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+          },
+          {
+            "type": "Volume",
+            "signal": "Capitulation Volume Spike",
+            "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Drawdown",
+            "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish",
+            "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -3.41%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+          }
+        ],
+        "risks": [
+          "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+          "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+        ],
+        "citations": [],
+        "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+        "raw_packet": {
+          "ticker": "MDB",
+          "company": "MongoDB",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+          "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Reversal Signal",
+              "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+            },
+            {
+              "type": "RSI",
+              "signal": "Technically Oversold",
+              "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Drawdown",
+              "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish",
+              "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+            }
+          ],
+          "risks": [
+            "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+            "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+          "raw_packet": {
+            "ticker": "MDB",
+            "company": "MongoDB",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+            "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Reversal Signal",
+                "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+              },
+              {
+                "type": "RSI",
+                "signal": "Technically Oversold",
+                "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Drawdown",
+                "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish",
+                "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+              }
+            ],
+            "risks": [
+              "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+              "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+            "raw_packet": {
+              "ticker": "MDB",
+              "company": "MongoDB",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Reversal Signal",
+                  "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Technically Oversold",
+                  "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Drawdown",
+                  "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish",
+                  "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+                }
+              ],
+              "risks": [
+                "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+                "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+              ],
+              "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+              "core_insight": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
+            }
+          }
+        }
       }
     ]
   },
@@ -861,7 +877,6 @@
       "debate_required": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ]
     },
@@ -877,31 +892,31 @@
           "rationale": "A unified, severe price target reduction from the entire sell-side is a direct signal of a catastrophic guidance miss. This shatters investor confidence and triggers massive valuation multiple compression, which is not a one-day event. The stock will be in the 'penalty box' for multiple quarters as it tries to rebuild a track record, likely underperforming the broader market during this period."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.65,
-          "rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.4,
           "rationale": "MongoDB demonstrated significant fundamental improvement this quarter, with strong sequential growth in revenue and a notable turn to profitability in both operating and net income. Cash flow generation remains robust, and the balance sheet is healthy. While the company remains unprofitable on a trailing basis and the valuation is at a premium, the strong operational momentum is a key positive driver, suggesting a strengthening business."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.8,
+          "rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
         }
       ],
       "areas_of_agreement": [
+        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean bearish on the long-term horizon."
       ],
       "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 1,
+        "Bullish": 0,
+        "Neutral": 2,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1436,325 +1451,6 @@
         {
           "ticker": "MDB",
           "company": "MongoDB",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-          "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Conviction",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Long-Term Weakness",
-              "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk Environment",
-              "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Outperforming Benchmark",
-              "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.07%"
-            }
-          ],
-          "risks": [
-            "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-            "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-            "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-          "raw_packet": {
-            "ticker": "MDB",
-            "company": "MongoDB",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-            "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Conviction",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Long-Term Weakness",
-                "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk Environment",
-                "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Outperforming Benchmark",
-                "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.07%"
-              }
-            ],
-            "risks": [
-              "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-              "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-              "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-            "raw_packet": {
-              "ticker": "MDB",
-              "company": "MongoDB",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bearish",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-              "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Conviction",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Long-Term Weakness",
-                  "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk Environment",
-                  "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Outperforming Benchmark",
-                  "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.07%"
-                }
-              ],
-              "risks": [
-                "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-                "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-                "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-              ],
-              "citations": [],
-              "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-              "raw_packet": {
-                "ticker": "MDB",
-                "company": "MongoDB",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bearish",
-                "confidence": 0.65,
-                "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-                "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Conflicting Trend Structure",
-                    "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral-to-Bullish Momentum",
-                    "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weak Conviction",
-                    "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Long-Term Weakness",
-                    "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "High Risk Environment",
-                    "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Outperforming Benchmark",
-                    "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Conditions",
-                    "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.07%"
-                  }
-                ],
-                "risks": [
-                  "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-                  "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-                  "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-                ],
-                "citations": [],
-                "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-                "raw_packet": {
-                  "ticker": "MDB",
-                  "company": "MongoDB",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.65,
-                  "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Conflicting Trend Structure",
-                      "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral-to-Bullish Momentum",
-                      "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weak Conviction",
-                      "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Long-Term Weakness",
-                      "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "High Risk Environment",
-                      "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Outperforming Benchmark",
-                      "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Conditions",
-                      "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.07%"
-                    }
-                  ],
-                  "risks": [
-                    "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-                    "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-                    "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-                  ],
-                  "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-                  "core_insight": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "MDB",
-          "company": "MongoDB",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1951,44 +1647,392 @@
               }
             }
           }
+        },
+        {
+          "ticker": "MDB",
+          "company": "MongoDB",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+          "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Reversal Signal",
+              "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+            },
+            {
+              "type": "RSI",
+              "signal": "Technically Oversold",
+              "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Drawdown",
+              "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish",
+              "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+            }
+          ],
+          "risks": [
+            "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+            "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+          "raw_packet": {
+            "ticker": "MDB",
+            "company": "MongoDB",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+            "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Reversal Signal",
+                "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+              },
+              {
+                "type": "RSI",
+                "signal": "Technically Oversold",
+                "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Drawdown",
+                "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish",
+                "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+              }
+            ],
+            "risks": [
+              "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+              "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+            "raw_packet": {
+              "ticker": "MDB",
+              "company": "MongoDB",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bearish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+              "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Reversal Signal",
+                  "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Technically Oversold",
+                  "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Drawdown",
+                  "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish",
+                  "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+                }
+              ],
+              "risks": [
+                "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+                "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+              ],
+              "citations": [],
+              "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+              "raw_packet": {
+                "ticker": "MDB",
+                "company": "MongoDB",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bearish",
+                "confidence": 0.8,
+                "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+                "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Bullish Post-Earnings Reversal Signal",
+                    "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Strong Bearish Trend Structure",
+                    "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Technically Oversold",
+                    "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Accelerating Bearish Momentum",
+                    "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Capitulation Volume Spike",
+                    "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Severe Drawdown",
+                    "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Underperformance",
+                    "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "High Volatility Bearish",
+                    "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -3.41%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+                  }
+                ],
+                "risks": [
+                  "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+                  "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+                ],
+                "citations": [],
+                "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+                "raw_packet": {
+                  "ticker": "MDB",
+                  "company": "MongoDB",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.8,
+                  "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Bullish Post-Earnings Reversal Signal",
+                      "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Strong Bearish Trend Structure",
+                      "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Technically Oversold",
+                      "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Accelerating Bearish Momentum",
+                      "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Capitulation Volume Spike",
+                      "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Severe Drawdown",
+                      "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Underperformance",
+                      "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "High Volatility Bearish",
+                      "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -3.41%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+                    }
+                  ],
+                  "risks": [
+                    "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+                    "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+                  ],
+                  "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+                  "core_insight": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
         "response_type": "revision",
-        "agreement": "I agree with the `market_technical` agent that the long-term trend is bearish, as evidenced by the price being significantly below the 200-day moving average and the stock being in a major drawdown. I also agree with the `fundamental` agent's assessment that forward guidance is the most critical missing piece of information; my evidence of coordinated analyst downgrades provides a strong inference about what that guidance contained.",
-        "disagreement": "I disagree with the `market_technical` agent's short-term bullish stance. The technical rally shows weak volume ('Weak Conviction') and is likely a fragile counter-trend move that will be overwhelmed by the powerful negative fundamental catalyst I identified (the implied guidance collapse). I also disagree with the `fundamental` agent's long-term bullish stance. It is based on historical quarterly data (strong revenue, turn to profitability) that has been rendered irrelevant by the forward-looking guidance miss implied by the wave of analyst price target cuts. The market is reacting to the future, not the past.",
+        "agreement": {
+          "market_technical": "I agree with the market_technical agent's assessment that the long-term trend is broken (price below 200-day moving average) and that a 'capitulation-style sell-off' occurred prior to the earnings event. This technical view aligns with my 'penalty box' thesis and explains the subsequent 'oversold bounce' as a reaction to extreme pre-event positioning rather than a fundamentally bullish signal.",
+          "fundamental": "I agree with the raw, backward-looking financial data points presented by the fundamental agent, such as the reported revenue and net income figures for the quarter. These are factual inputs."
+        },
+        "disagreement": {
+          "fundamental": "I strongly disagree with the fundamental agent's bullish conclusion. The analysis is critically flawed as it lacks the context of consensus expectations and, most importantly, forward guidance. My evidence of widespread, severe analyst price target cuts indicates that the reported results, while showing sequential growth, must have been paired with a disastrous forward outlook. The fundamental agent is incorrectly interpreting historical data as a positive, whereas the market and sell-side analysts clearly treated the entire event (results + guidance) as a major negative catalyst.",
+          "market_technical": "I place less weight on the market_technical agent's 'Neutral' short-term stance. While I acknowledge the technical setup for an oversold bounce, the fundamental narrative has been severely damaged. I believe the negative fundamental revision will act as a cap on any relief rally and reassert itself, making the primary short-term trend bearish, not neutral."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bearish",
+        "revised_confidence": 0.8,
+        "evidence_needed": [
+          "The official earnings transcript to understand management's qualitative explanation for the implied guidance reduction.",
+          "The exact forward guidance figures for the next quarter and full year to quantify the magnitude of the business deceleration.",
+          "Pre-announcement consensus analyst estimates for revenue and EPS to confirm the size of the miss and guidance cut that my thesis infers."
+        ]
+      },
+      {
+        "response_type": "CIO Committee Revision",
+        "agreement": "I agree with the core evidence presented by the news_macro agent, which is the most critical new information. The wave of coordinated, severe price target cuts from over ten sell-side firms is undeniable evidence of a significant negative catalyst. The inference that this was caused by a 'catastrophic guidance miss' is highly probable and provides the missing context that my original analysis lacked. This fundamental development directly explains the technical breakdown detailed by the market_technical agent, specifically the break below all key moving averages on high volume, confirming a new long-term bearish trend.",
+        "disagreement": "I must now treat my original analysis as obsolete. Its bullish conclusion was based on historical financial strength, which is a backward-looking indicator. The new forward-looking evidence, implied by the analyst actions, completely invalidates the extrapolation of past success. While I acknowledge the market_technical agent's observation of a short-term 'oversold bounce' post-earnings, I place a lower weight on its significance. It is more likely a temporary relief rally or 'dead cat bounce' rather than the start of a sustainable recovery, given the severity of the implied fundamental damage.",
         "revised_short_term_stance": "Bearish",
         "revised_long_term_stance": "Bearish",
         "revised_confidence": 0.9,
-        "evidence_needed": "The most critical pieces of evidence needed to confirm this thesis are the official earnings release transcript and the company's formal guidance statement. This would confirm the inference that a catastrophic guidance miss was the catalyst for the analyst downgrades."
-      },
-      {
-        "response_type": "revision",
-        "agreement": "I agree with the core evidence presented by the `news_macro` agent. The coordinated, widespread price target cuts from over nine sell-side firms is an overwhelming and high-conviction signal. This new information provides the fundamental rationale for the 'Weak Conviction' signal (low volume) I had previously identified in my technical analysis. The market was clearly anticipating a severe negative catalyst, which invalidates the nascent short-term bullish signals I had observed. This evidence confirms that the long-term bearish trend is the dominant and correct narrative.",
-        "disagreement": "I disagree with the conclusion of the `fundamental` agent. While its historical data points (strong QoQ revenue, turn to profitability) are factually correct, its bullish interpretation is misguided and dangerous given the context. It explicitly lacks forward guidance, which the `news_macro` agent's evidence strongly implies will be catastrophic. The market is a forward-looking mechanism, and a wave of analyst downgrades indicates the strong historical performance is irrelevant and unsustainable. Therefore, the `fundamental` agent's 'Strengthened' thesis impact is incorrect; the new information completely shatters the bullish thesis. I also now disagree with my own original 'Bullish' short-term stance, as it was clearly a bull trap leading into a major negative event.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.95,
         "evidence_needed": [
-          "The actual price action and volume at the next market open to confirm the impact of the downgrades.",
-          "The specific forward guidance issued by MongoDB management that triggered the analyst actions.",
-          "Identification of the new, post-collapse price levels that could form support or resistance."
+          "The official earnings call transcript and press release to obtain the exact forward guidance figures provided by management.",
+          "Management's qualitative commentary explaining the reasons for the guidance reduction (e.g., macro headwinds, consumption slowdown, competition, sales execution).",
+          "Updated consensus revenue and EPS estimates from analysts post-downgrades to quantify the new baseline expectations.",
+          "Key operating metrics from the report, such as customer count, net expansion rate, and Atlas revenue growth, to diagnose the source of the weakness."
         ]
       },
       {
         "response_type": "revision",
-        "agreement": "I agree with the core evidence presented by the news_macro agent. My original analysis was performed with low confidence precisely because it lacked analyst consensus and forward guidance. The news_macro agent's evidence of a coordinated, massive wave of price target cuts from over nine sell-side firms is a powerful proxy for a catastrophic guidance miss. This new information directly fills the critical gaps in my initial assessment. I also agree with the market_technical agent's observation that the stock is in a significant long-term downtrend, a view that is strongly reinforced by this new fundamental catalyst.",
-        "disagreement": "I now disagree with my own original analysis. The historical fundamental strength I observed (QoQ growth, turn to profitability) is clearly not expected to continue, rendering my 'Bullish' long-term stance invalid. The new evidence suggests the thesis is broken, not strengthened. I also place low weight on the market_technical agent's 'Bullish' short-term stance. The technical signals they noted (MACD crossover, etc.) are lagging indicators and likely represent a 'bull trap' in the face of an overwhelming negative fundamental event. The weak volume confirmation they cited supports this view.",
-        "revised_short_term_stance": "Bearish",
+        "agreement": "I agree with the core evidence presented by the `news_macro` agent. The widespread, severe price target cuts from over nine sell-side firms provide the fundamental catalyst that explains the technical picture I observed, specifically the capitulation volume and the breakdown of the long-term trend structure. This evidence confirms that the sell-off was driven by a significant negative event, inferred to be a disastrous forward guidance.",
+        "disagreement": "I assign a very low weight to the `fundamental` agent's analysis and its 'Bullish' long-term stance. While the historical data it cites (QoQ revenue growth, quarterly profit) is factually correct, the agent itself notes its analysis is incomplete as it lacks forward-looking guidance and consensus estimates. The market is forward-looking, and the `news_macro` evidence strongly suggests the future outlook, not the past quarter's performance, is the dominant driver of the stock price. The `fundamental` agent's conclusion is therefore misleading in this context.",
+        "revised_short_term_stance": "Neutral",
         "revised_long_term_stance": "Bearish",
         "revised_confidence": 0.9,
         "evidence_needed": [
-          "The official earnings release and guidance figures to confirm the magnitude of the implied miss.",
-          "The earnings call transcript to understand management's explanation for the guidance reduction (e.g., macro weakness, consumption slowdown, competitive pressure, sales execution issues).",
-          "Updated consensus revenue and EPS estimates following the wave of analyst downgrades.",
-          "Commentary on key operating metrics, particularly Atlas consumption growth and net expansion rate, to diagnose the source of the slowdown."
+          "The official financial guidance provided by MongoDB's management for the upcoming quarter and full year.",
+          "The full earnings call transcript to understand management's qualitative commentary on the business slowdown, customer behavior, and the reasons for the guidance change."
         ]
       }
     ],
@@ -1999,7 +2043,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bearish",
-        "confidence": 0.9,
+        "confidence": 0.8,
         "confidence_rationale": "The evidence of a severe negative catalyst is overwhelming and direct, based on the coordinated action of over nine sell-side firms. While the exact cause (the earnings report/guidance) is inferred, this pattern is a classic and highly reliable indicator of a major business deceleration. The only uncertainty is the exact magnitude, not the direction.",
         "stance_rationale": "A unified, severe price target reduction from the entire sell-side is a direct signal of a catastrophic guidance miss. This shatters investor confidence and triggers massive valuation multiple compression, which is not a one-day event. The stock will be in the 'penalty box' for multiple quarters as it tries to rebuild a track record, likely underperforming the broader market during this period.",
         "key_signals": [
@@ -2387,279 +2431,21 @@
         },
         "debate_response": {
           "response_type": "revision",
-          "agreement": "I agree with the `market_technical` agent that the long-term trend is bearish, as evidenced by the price being significantly below the 200-day moving average and the stock being in a major drawdown. I also agree with the `fundamental` agent's assessment that forward guidance is the most critical missing piece of information; my evidence of coordinated analyst downgrades provides a strong inference about what that guidance contained.",
-          "disagreement": "I disagree with the `market_technical` agent's short-term bullish stance. The technical rally shows weak volume ('Weak Conviction') and is likely a fragile counter-trend move that will be overwhelmed by the powerful negative fundamental catalyst I identified (the implied guidance collapse). I also disagree with the `fundamental` agent's long-term bullish stance. It is based on historical quarterly data (strong revenue, turn to profitability) that has been rendered irrelevant by the forward-looking guidance miss implied by the wave of analyst price target cuts. The market is reacting to the future, not the past.",
+          "agreement": {
+            "market_technical": "I agree with the market_technical agent's assessment that the long-term trend is broken (price below 200-day moving average) and that a 'capitulation-style sell-off' occurred prior to the earnings event. This technical view aligns with my 'penalty box' thesis and explains the subsequent 'oversold bounce' as a reaction to extreme pre-event positioning rather than a fundamentally bullish signal.",
+            "fundamental": "I agree with the raw, backward-looking financial data points presented by the fundamental agent, such as the reported revenue and net income figures for the quarter. These are factual inputs."
+          },
+          "disagreement": {
+            "fundamental": "I strongly disagree with the fundamental agent's bullish conclusion. The analysis is critically flawed as it lacks the context of consensus expectations and, most importantly, forward guidance. My evidence of widespread, severe analyst price target cuts indicates that the reported results, while showing sequential growth, must have been paired with a disastrous forward outlook. The fundamental agent is incorrectly interpreting historical data as a positive, whereas the market and sell-side analysts clearly treated the entire event (results + guidance) as a major negative catalyst.",
+            "market_technical": "I place less weight on the market_technical agent's 'Neutral' short-term stance. While I acknowledge the technical setup for an oversold bounce, the fundamental narrative has been severely damaged. I believe the negative fundamental revision will act as a cap on any relief rally and reassert itself, making the primary short-term trend bearish, not neutral."
+          },
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.9,
-          "evidence_needed": "The most critical pieces of evidence needed to confirm this thesis are the official earnings release transcript and the company's formal guidance statement. This would confirm the inference that a catastrophic guidance miss was the catalyst for the analyst downgrades."
-        }
-      },
-      {
-        "ticker": "MDB",
-        "company": "MongoDB",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.95,
-        "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-        "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral-to-Bullish Momentum",
-            "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Conviction",
-            "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Long-Term Weakness",
-            "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "High Risk Environment",
-            "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Outperforming Benchmark",
-            "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.07%"
-          }
-        ],
-        "risks": [
-          "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-          "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-          "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-        "raw_packet": {
-          "ticker": "MDB",
-          "company": "MongoDB",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.65,
-          "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-          "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral-to-Bullish Momentum",
-              "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Conviction",
-              "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Long-Term Weakness",
-              "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "High Risk Environment",
-              "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Outperforming Benchmark",
-              "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.07%"
-            }
-          ],
-          "risks": [
-            "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-            "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-            "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-          "raw_packet": {
-            "ticker": "MDB",
-            "company": "MongoDB",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.65,
-            "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-            "stance_rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral-to-Bullish Momentum",
-                "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Conviction",
-                "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Long-Term Weakness",
-                "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "High Risk Environment",
-                "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Outperforming Benchmark",
-                "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.07%"
-              }
-            ],
-            "risks": [
-              "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-              "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-              "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-            "raw_packet": {
-              "ticker": "MDB",
-              "company": "MongoDB",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.65,
-              "confidence_rationale": "Confidence is moderate. While short-term momentum signals like the MACD crossover and price moving above the MA50 are bullish, they are contradicted by the strong long-term downtrend (price well below MA200), high volatility, and a lack of volume confirmation, indicating a high-risk environment.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price ($264.69) was above the MA20 ($252.74) and MA50 ($263.48), but remained significantly below the long-term MA200 ($317.23)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was active, with the MACD line (-0.765) above the signal line (-3.319) and a positive histogram (2.554)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral-to-Bullish Momentum",
-                  "evidence": "RSI was at 52.97, crossing into the upper half of its range, indicating improving momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Conviction",
-                  "evidence": "Recent trading volume was below average (spike ratio of 0.65), suggesting a lack of strong participation in the recent price move."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Long-Term Weakness",
-                  "evidence": "The stock was 39.93% below its recent peak, indicating it was in a major downtrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "High Risk Environment",
-                  "evidence": "Annualized volatility stood at a high 68.41%, signifying price instability and elevated risk."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Outperforming Benchmark",
-                  "evidence": "Despite its drawdown, the stock showed a relative return of +24.16% versus the SPY benchmark, indicating recent relative leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The technicals suggested the stock was in a 'range_bound' regime, lacking a clear, strong trend direction at the time."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.07%"
-                }
-              ],
-              "risks": [
-                "The stock was in a clear long-term downtrend, with the price significantly below the 200-day moving average. Short-term strength could be a counter-trend rally.",
-                "The recent bullish price action was not supported by an increase in volume, questioning the conviction and sustainability of the move.",
-                "Extremely high annualized volatility (68.41%) suggested significant price risk and potential for large, unpredictable swings."
-              ],
-              "summary": "As of 2026/03/04, MDB's technical posture was a conflict between a new short-term uptrend and a persistent long-term downtrend. Bullish signals, including a MACD crossover and the price clearing the 50-day moving average, pointed to improving momentum. However, these were tempered by weak volume, high volatility, and the price remaining far below its 200-day average, suggesting the move was a high-risk rally within a bearish long-term structure.",
-              "core_insight": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the core evidence presented by the `news_macro` agent. The coordinated, widespread price target cuts from over nine sell-side firms is an overwhelming and high-conviction signal. This new information provides the fundamental rationale for the 'Weak Conviction' signal (low volume) I had previously identified in my technical analysis. The market was clearly anticipating a severe negative catalyst, which invalidates the nascent short-term bullish signals I had observed. This evidence confirms that the long-term bearish trend is the dominant and correct narrative.",
-          "disagreement": "I disagree with the conclusion of the `fundamental` agent. While its historical data points (strong QoQ revenue, turn to profitability) are factually correct, its bullish interpretation is misguided and dangerous given the context. It explicitly lacks forward guidance, which the `news_macro` agent's evidence strongly implies will be catastrophic. The market is a forward-looking mechanism, and a wave of analyst downgrades indicates the strong historical performance is irrelevant and unsustainable. Therefore, the `fundamental` agent's 'Strengthened' thesis impact is incorrect; the new information completely shatters the bullish thesis. I also now disagree with my own original 'Bullish' short-term stance, as it was clearly a bull trap leading into a major negative event.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.95,
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "The actual price action and volume at the next market open to confirm the impact of the downgrades.",
-            "The specific forward guidance issued by MongoDB management that triggered the analyst actions.",
-            "Identification of the new, post-collapse price levels that could form support or resistance."
+            "The official earnings transcript to understand management's qualitative explanation for the implied guidance reduction.",
+            "The exact forward guidance figures for the next quarter and full year to quantify the magnitude of the business deceleration.",
+            "Pre-announcement consensus analyst estimates for revenue and EPS to confirm the size of the miss and guidance cut that my thesis infers."
           ]
         }
       },
@@ -2824,17 +2610,300 @@
           }
         },
         "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the core evidence presented by the news_macro agent. My original analysis was performed with low confidence precisely because it lacked analyst consensus and forward guidance. The news_macro agent's evidence of a coordinated, massive wave of price target cuts from over nine sell-side firms is a powerful proxy for a catastrophic guidance miss. This new information directly fills the critical gaps in my initial assessment. I also agree with the market_technical agent's observation that the stock is in a significant long-term downtrend, a view that is strongly reinforced by this new fundamental catalyst.",
-          "disagreement": "I now disagree with my own original analysis. The historical fundamental strength I observed (QoQ growth, turn to profitability) is clearly not expected to continue, rendering my 'Bullish' long-term stance invalid. The new evidence suggests the thesis is broken, not strengthened. I also place low weight on the market_technical agent's 'Bullish' short-term stance. The technical signals they noted (MACD crossover, etc.) are lagging indicators and likely represent a 'bull trap' in the face of an overwhelming negative fundamental event. The weak volume confirmation they cited supports this view.",
+          "response_type": "CIO Committee Revision",
+          "agreement": "I agree with the core evidence presented by the news_macro agent, which is the most critical new information. The wave of coordinated, severe price target cuts from over ten sell-side firms is undeniable evidence of a significant negative catalyst. The inference that this was caused by a 'catastrophic guidance miss' is highly probable and provides the missing context that my original analysis lacked. This fundamental development directly explains the technical breakdown detailed by the market_technical agent, specifically the break below all key moving averages on high volume, confirming a new long-term bearish trend.",
+          "disagreement": "I must now treat my original analysis as obsolete. Its bullish conclusion was based on historical financial strength, which is a backward-looking indicator. The new forward-looking evidence, implied by the analyst actions, completely invalidates the extrapolation of past success. While I acknowledge the market_technical agent's observation of a short-term 'oversold bounce' post-earnings, I place a lower weight on its significance. It is more likely a temporary relief rally or 'dead cat bounce' rather than the start of a sustainable recovery, given the severity of the implied fundamental damage.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
           "revised_confidence": 0.9,
           "evidence_needed": [
-            "The official earnings release and guidance figures to confirm the magnitude of the implied miss.",
-            "The earnings call transcript to understand management's explanation for the guidance reduction (e.g., macro weakness, consumption slowdown, competitive pressure, sales execution issues).",
-            "Updated consensus revenue and EPS estimates following the wave of analyst downgrades.",
-            "Commentary on key operating metrics, particularly Atlas consumption growth and net expansion rate, to diagnose the source of the slowdown."
+            "The official earnings call transcript and press release to obtain the exact forward guidance figures provided by management.",
+            "Management's qualitative commentary explaining the reasons for the guidance reduction (e.g., macro headwinds, consumption slowdown, competition, sales execution).",
+            "Updated consensus revenue and EPS estimates from analysts post-downgrades to quantify the new baseline expectations.",
+            "Key operating metrics from the report, such as customer count, net expansion rate, and Atlas revenue growth, to diagnose the source of the weakness."
+          ]
+        }
+      },
+      {
+        "ticker": "MDB",
+        "company": "MongoDB",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+        "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bullish Post-Earnings Reversal Signal",
+            "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+          },
+          {
+            "type": "RSI",
+            "signal": "Technically Oversold",
+            "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+          },
+          {
+            "type": "Volume",
+            "signal": "Capitulation Volume Spike",
+            "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Drawdown",
+            "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Underperformance",
+            "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish",
+            "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -3.41%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+          }
+        ],
+        "risks": [
+          "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+          "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+        ],
+        "citations": [],
+        "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+        "raw_packet": {
+          "ticker": "MDB",
+          "company": "MongoDB",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+          "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Reversal Signal",
+              "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+            },
+            {
+              "type": "RSI",
+              "signal": "Technically Oversold",
+              "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+            },
+            {
+              "type": "Volume",
+              "signal": "Capitulation Volume Spike",
+              "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Drawdown",
+              "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Underperformance",
+              "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish",
+              "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -3.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+            }
+          ],
+          "risks": [
+            "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+            "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+          ],
+          "citations": [],
+          "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+          "raw_packet": {
+            "ticker": "MDB",
+            "company": "MongoDB",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+            "stance_rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Reversal Signal",
+                "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+              },
+              {
+                "type": "RSI",
+                "signal": "Technically Oversold",
+                "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+              },
+              {
+                "type": "Volume",
+                "signal": "Capitulation Volume Spike",
+                "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Drawdown",
+                "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Underperformance",
+                "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish",
+                "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -3.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+              }
+            ],
+            "risks": [
+              "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+              "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+            ],
+            "citations": [],
+            "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+            "raw_packet": {
+              "ticker": "MDB",
+              "company": "MongoDB",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.8,
+              "confidence_rationale": "Confidence is high due to the clear conflict between indicators. A powerful bearish trend is met with extreme oversold conditions (RSI 27) and capitulation volume right before earnings. This creates an unstable, neutral state where the directional trend is paused, as confirmed by the subsequent positive earnings reaction.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Reversal Signal",
+                  "evidence": "Despite a severe downtrend, the stock reacted positively to earnings with a +6.42% return (+6.72% abnormal vs. QQQ), suggesting the preceding sell-off was overdone."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "The price at $248.01 is significantly below all key moving averages: MA20 ($333.73), MA50 ($378.18), and MA200 ($306.20), indicating a breakdown of both short and long-term trends."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Technically Oversold",
+                  "evidence": "RSI reading of 27.21 is below the 30 threshold, indicating the recent selling has been extreme and the stock is susceptible to a short-term bounce."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-26.29) is far below the signal line (-18.55), with a deeply negative histogram, confirming the strength of the recent downward price move."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Capitulation Volume Spike",
+                  "evidence": "Recent trading sessions saw extremely high volume (e.g., 12.1M shares), coinciding with the sharpest price drops, which is characteristic of seller exhaustion or capitulation."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Drawdown",
+                  "evidence": "The stock is trading at a -43.71% drawdown from its recent peak, highlighting significant recent price damage and risk."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Underperformance",
+                  "evidence": "MDB has dramatically underperformed the SPY benchmark, with a relative return of -22.67%, indicating it is a market laggard."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish",
+                  "evidence": "The stock is in a formally classified high-volatility bearish regime, reflecting both the downward trend and price instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -3.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 76.19%, Recent 102.97%"
+                }
+              ],
+              "risks": [
+                "The powerful bearish trend structure remains the dominant force; the post-earnings bounce could be a temporary relief rally ('dead cat bounce') before the downtrend resumes.",
+                "Extremely high volatility (Recent Volatility: 103%) creates a wide range of potential outcomes and makes price action highly unpredictable."
+              ],
+              "summary": "As of the close on 2026-03-04, MDB was in a state of technical crisis. It had a confirmed long-term bearish trend, having broken below its 200-day moving average with accelerating downward momentum and massive volume. However, the sell-off reached an extreme, pushing the RSI into oversold territory, signaling potential seller exhaustion. The subsequent positive earnings reaction confirms that a short-term bottom was likely formed due to the pre-event capitulation.",
+              "core_insight": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the core evidence presented by the `news_macro` agent. The widespread, severe price target cuts from over nine sell-side firms provide the fundamental catalyst that explains the technical picture I observed, specifically the capitulation volume and the breakdown of the long-term trend structure. This evidence confirms that the sell-off was driven by a significant negative event, inferred to be a disastrous forward guidance.",
+          "disagreement": "I assign a very low weight to the `fundamental` agent's analysis and its 'Bullish' long-term stance. While the historical data it cites (QoQ revenue growth, quarterly profit) is factually correct, the agent itself notes its analysis is incomplete as it lacks forward-looking guidance and consensus estimates. The market is forward-looking, and the `news_macro` evidence strongly suggests the future outlook, not the past quarter's performance, is the dominant driver of the stock price. The `fundamental` agent's conclusion is therefore misleading in this context.",
+          "revised_short_term_stance": "Neutral",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.9,
+          "evidence_needed": [
+            "The official financial guidance provided by MongoDB's management for the upcoming quarter and full year.",
+            "The full earnings call transcript to understand management's qualitative commentary on the business slowdown, customer behavior, and the reasons for the guidance change."
           ]
         }
       }
@@ -2848,18 +2917,18 @@
     "investment_action": "Short / Avoid",
     "position_size_hint": "Normal",
     "confidence": 0.9,
-    "core_thesis": "A catastrophic guidance miss, strongly implied by a coordinated wave of over nine sell-side analyst price target cuts, has fundamentally broken MongoDB's growth narrative. This will lead to significant valuation multiple compression and a prolonged period of underperformance as the company is placed in the 'penalty box' by investors.",
-    "why_now": "The flood of analyst downgrades is a high-fidelity proxy for the company's unreleased (but clearly negative) forward guidance. This single event is a powerful catalyst that invalidates the backward-looking fundamental strength and the recent, weak technical rally, which now appears to have been a bull trap.",
+    "core_thesis": "MongoDB has experienced a significant negative business event, strongly implied by a coordinated wave of severe price target cuts from the entire sell-side. This suggests a catastrophic forward guidance miss, which has fundamentally broken the company's growth narrative and valuation support. The stock is now in the 'penalty box' and is expected to underperform for multiple quarters as it attempts to rebuild investor confidence and establish a new, lower growth trajectory.",
+    "why_now": "The catalyst is the recent earnings event and the subsequent flood of analyst downgrades. This has reset market expectations downwards and confirmed a break in the stock's long-term technical trend. While the stock is technically oversold and may experience short-term bounces, the overriding fundamental damage suggests any strength should be sold into. The narrative has shifted from high-growth to 'broken growth', a process that is rarely a one-day event.",
     "key_supporting_evidence": [
-      "The coordinated and severe price target reductions from over nine sell-side firms (Goldman Sachs, UBS, Piper Sandler, etc.), which is a classic and highly reliable indicator of a major business deceleration.",
-      "The post-debate consensus where all three agents (News/Macro, Technical, Fundamental) unanimously revised their stances to Bearish with high confidence, acknowledging the primacy of the analyst downgrade news.",
-      "The technical agent's identification of 'Weak Conviction' (low volume) in the recent rally, which supports the view that the upward price action was fragile and unsustainable in the face of a major negative catalyst.",
-      "The fundamental agent's initial low confidence (0.4) due to missing forward guidance, which was the exact piece of information the analyst actions have now clarified in a negative direction."
+      "The unified, severe, and widespread price target reductions from over nine sell-side firms, a classic and highly reliable indicator of a disastrous forward guidance cut.",
+      "The stock price has decisively broken below all key long-term moving averages (e.g., 200-day) on capitulation-style volume, confirming a shift from a long-term uptrend to a new downtrend.",
+      "The post-debate consensus is overwhelmingly bearish, with the fundamental agent completely reversing its initial bullish stance after being presented with the forward-looking evidence from the news_macro agent.",
+      "The implied slowdown at a category leader like MDB signals a high probability of negative contagion and re-rating for peers with similar consumption-based models (e.g., SNOW, ESTC, DDOG)."
     ],
     "key_risks": [
-      "The market has already fully priced in the worst-case scenario, leading to a 'sell the rumor, buy the news' rally on the official announcement, causing short positions to be squeezed.",
-      "The cause of the guidance reduction is a one-time, quickly resolvable issue (e.g., a temporary sales execution fumble) rather than a structural slowdown in demand for MDB's products or a broader macro issue.",
-      "The inference is incorrect: The analyst actions were driven by a less severe concern, and the market's reaction is an overreaction. This is deemed a low-probability risk given the scale and coordination of the downgrades."
+      "The stock is technically oversold (RSI < 30) after a massive price decline, creating the potential for a sharp, short-term 'dead cat bounce' or short-squeeze that could challenge the timing of a short entry.",
+      "The core thesis relies on the inference that analyst downgrades were caused by a guidance miss. If the cause was a different, less permanent issue (e.g., executive departure, correctable sales execution fumble), the business could recover faster than the bearish thesis anticipates.",
+      "If the market perceives MDB's issues as company-specific rather than a broader industry slowdown, capital may rotate to direct competitors (e.g., Couchbase, Oracle), making a 'pairs trade' a better expression of the thesis than an outright short."
     ],
     "agent_view_summary": [
       {
@@ -2870,95 +2939,124 @@
         "rationale": "A unified, severe price target reduction from the entire sell-side is a direct signal of a catastrophic guidance miss. This shatters investor confidence and triggers massive valuation multiple compression, which is not a one-day event. The stock will be in the 'penalty box' for multiple quarters as it tries to rebuild a track record, likely underperforming the broader market during this period."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.65,
-        "rationale": "The key dynamic was a nascent bullish reversal in the short-term, clashing with a deeply entrenched long-term downtrend. The lack of volume confirmation was a critical non-confirmation, suggesting the bullish move lacked conviction and was vulnerable to failure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.4,
         "rationale": "MongoDB demonstrated significant fundamental improvement this quarter, with strong sequential growth in revenue and a notable turn to profitability in both operating and net income. Cash flow generation remains robust, and the balance sheet is healthy. While the company remains unprofitable on a trailing basis and the valuation is at a premium, the strong operational momentum is a key positive driver, suggesting a strengthening business."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
+        "rationale": "The stock experienced a capitulation-style sell-off into its earnings report, creating a classic 'oversold bounce' scenario. While the positive earnings reaction provides short-term relief, the severe damage to the long-term trend structure makes the path forward highly contested between a potential recovery and a continuation of the primary downtrend."
       }
     ],
     "debate_summary": {
       "debate_triggered": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
         "Long-term views contain both bullish and bearish calls."
       ],
       "debate_responses": [
         {
           "response_type": "revision",
-          "agreement": "I agree with the `market_technical` agent that the long-term trend is bearish, as evidenced by the price being significantly below the 200-day moving average and the stock being in a major drawdown. I also agree with the `fundamental` agent's assessment that forward guidance is the most critical missing piece of information; my evidence of coordinated analyst downgrades provides a strong inference about what that guidance contained.",
-          "disagreement": "I disagree with the `market_technical` agent's short-term bullish stance. The technical rally shows weak volume ('Weak Conviction') and is likely a fragile counter-trend move that will be overwhelmed by the powerful negative fundamental catalyst I identified (the implied guidance collapse). I also disagree with the `fundamental` agent's long-term bullish stance. It is based on historical quarterly data (strong revenue, turn to profitability) that has been rendered irrelevant by the forward-looking guidance miss implied by the wave of analyst price target cuts. The market is reacting to the future, not the past.",
+          "agreement": {
+            "market_technical": "I agree with the market_technical agent's assessment that the long-term trend is broken (price below 200-day moving average) and that a 'capitulation-style sell-off' occurred prior to the earnings event. This technical view aligns with my 'penalty box' thesis and explains the subsequent 'oversold bounce' as a reaction to extreme pre-event positioning rather than a fundamentally bullish signal.",
+            "fundamental": "I agree with the raw, backward-looking financial data points presented by the fundamental agent, such as the reported revenue and net income figures for the quarter. These are factual inputs."
+          },
+          "disagreement": {
+            "fundamental": "I strongly disagree with the fundamental agent's bullish conclusion. The analysis is critically flawed as it lacks the context of consensus expectations and, most importantly, forward guidance. My evidence of widespread, severe analyst price target cuts indicates that the reported results, while showing sequential growth, must have been paired with a disastrous forward outlook. The fundamental agent is incorrectly interpreting historical data as a positive, whereas the market and sell-side analysts clearly treated the entire event (results + guidance) as a major negative catalyst.",
+            "market_technical": "I place less weight on the market_technical agent's 'Neutral' short-term stance. While I acknowledge the technical setup for an oversold bounce, the fundamental narrative has been severely damaged. I believe the negative fundamental revision will act as a cap on any relief rally and reassert itself, making the primary short-term trend bearish, not neutral."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
+          "evidence_needed": [
+            "The official earnings transcript to understand management's qualitative explanation for the implied guidance reduction.",
+            "The exact forward guidance figures for the next quarter and full year to quantify the magnitude of the business deceleration.",
+            "Pre-announcement consensus analyst estimates for revenue and EPS to confirm the size of the miss and guidance cut that my thesis infers."
+          ]
+        },
+        {
+          "response_type": "CIO Committee Revision",
+          "agreement": "I agree with the core evidence presented by the news_macro agent, which is the most critical new information. The wave of coordinated, severe price target cuts from over ten sell-side firms is undeniable evidence of a significant negative catalyst. The inference that this was caused by a 'catastrophic guidance miss' is highly probable and provides the missing context that my original analysis lacked. This fundamental development directly explains the technical breakdown detailed by the market_technical agent, specifically the break below all key moving averages on high volume, confirming a new long-term bearish trend.",
+          "disagreement": "I must now treat my original analysis as obsolete. Its bullish conclusion was based on historical financial strength, which is a backward-looking indicator. The new forward-looking evidence, implied by the analyst actions, completely invalidates the extrapolation of past success. While I acknowledge the market_technical agent's observation of a short-term 'oversold bounce' post-earnings, I place a lower weight on its significance. It is more likely a temporary relief rally or 'dead cat bounce' rather than the start of a sustainable recovery, given the severity of the implied fundamental damage.",
           "revised_short_term_stance": "Bearish",
           "revised_long_term_stance": "Bearish",
           "revised_confidence": 0.9,
-          "evidence_needed": "The most critical pieces of evidence needed to confirm this thesis are the official earnings release transcript and the company's formal guidance statement. This would confirm the inference that a catastrophic guidance miss was the catalyst for the analyst downgrades."
-        },
-        {
-          "response_type": "revision",
-          "agreement": "I agree with the core evidence presented by the `news_macro` agent. The coordinated, widespread price target cuts from over nine sell-side firms is an overwhelming and high-conviction signal. This new information provides the fundamental rationale for the 'Weak Conviction' signal (low volume) I had previously identified in my technical analysis. The market was clearly anticipating a severe negative catalyst, which invalidates the nascent short-term bullish signals I had observed. This evidence confirms that the long-term bearish trend is the dominant and correct narrative.",
-          "disagreement": "I disagree with the conclusion of the `fundamental` agent. While its historical data points (strong QoQ revenue, turn to profitability) are factually correct, its bullish interpretation is misguided and dangerous given the context. It explicitly lacks forward guidance, which the `news_macro` agent's evidence strongly implies will be catastrophic. The market is a forward-looking mechanism, and a wave of analyst downgrades indicates the strong historical performance is irrelevant and unsustainable. Therefore, the `fundamental` agent's 'Strengthened' thesis impact is incorrect; the new information completely shatters the bullish thesis. I also now disagree with my own original 'Bullish' short-term stance, as it was clearly a bull trap leading into a major negative event.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.95,
           "evidence_needed": [
-            "The actual price action and volume at the next market open to confirm the impact of the downgrades.",
-            "The specific forward guidance issued by MongoDB management that triggered the analyst actions.",
-            "Identification of the new, post-collapse price levels that could form support or resistance."
+            "The official earnings call transcript and press release to obtain the exact forward guidance figures provided by management.",
+            "Management's qualitative commentary explaining the reasons for the guidance reduction (e.g., macro headwinds, consumption slowdown, competition, sales execution).",
+            "Updated consensus revenue and EPS estimates from analysts post-downgrades to quantify the new baseline expectations.",
+            "Key operating metrics from the report, such as customer count, net expansion rate, and Atlas revenue growth, to diagnose the source of the weakness."
           ]
         },
         {
           "response_type": "revision",
-          "agreement": "I agree with the core evidence presented by the news_macro agent. My original analysis was performed with low confidence precisely because it lacked analyst consensus and forward guidance. The news_macro agent's evidence of a coordinated, massive wave of price target cuts from over nine sell-side firms is a powerful proxy for a catastrophic guidance miss. This new information directly fills the critical gaps in my initial assessment. I also agree with the market_technical agent's observation that the stock is in a significant long-term downtrend, a view that is strongly reinforced by this new fundamental catalyst.",
-          "disagreement": "I now disagree with my own original analysis. The historical fundamental strength I observed (QoQ growth, turn to profitability) is clearly not expected to continue, rendering my 'Bullish' long-term stance invalid. The new evidence suggests the thesis is broken, not strengthened. I also place low weight on the market_technical agent's 'Bullish' short-term stance. The technical signals they noted (MACD crossover, etc.) are lagging indicators and likely represent a 'bull trap' in the face of an overwhelming negative fundamental event. The weak volume confirmation they cited supports this view.",
-          "revised_short_term_stance": "Bearish",
+          "agreement": "I agree with the core evidence presented by the `news_macro` agent. The widespread, severe price target cuts from over nine sell-side firms provide the fundamental catalyst that explains the technical picture I observed, specifically the capitulation volume and the breakdown of the long-term trend structure. This evidence confirms that the sell-off was driven by a significant negative event, inferred to be a disastrous forward guidance.",
+          "disagreement": "I assign a very low weight to the `fundamental` agent's analysis and its 'Bullish' long-term stance. While the historical data it cites (QoQ revenue growth, quarterly profit) is factually correct, the agent itself notes its analysis is incomplete as it lacks forward-looking guidance and consensus estimates. The market is forward-looking, and the `news_macro` evidence strongly suggests the future outlook, not the past quarter's performance, is the dominant driver of the stock price. The `fundamental` agent's conclusion is therefore misleading in this context.",
+          "revised_short_term_stance": "Neutral",
           "revised_long_term_stance": "Bearish",
           "revised_confidence": 0.9,
           "evidence_needed": [
-            "The official earnings release and guidance figures to confirm the magnitude of the implied miss.",
-            "The earnings call transcript to understand management's explanation for the guidance reduction (e.g., macro weakness, consumption slowdown, competitive pressure, sales execution issues).",
-            "Updated consensus revenue and EPS estimates following the wave of analyst downgrades.",
-            "Commentary on key operating metrics, particularly Atlas consumption growth and net expansion rate, to diagnose the source of the slowdown."
+            "The official financial guidance provided by MongoDB's management for the upcoming quarter and full year.",
+            "The full earnings call transcript to understand management's qualitative commentary on the business slowdown, customer behavior, and the reasons for the guidance change."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "This decision aligns with the deterministic guardrail. The evidence is overwhelming and the debate process was highly effective. The `news_macro` agent's high-conviction, forward-looking evidence correctly reframed the context for the other agents. The `fundamental` agent rightly discarded its analysis based on now-irrelevant historical data, and the `market_technical` agent correctly identified its bullish signals as a 'bull trap'. The resulting unanimous bearish consensus across all three agents, with high post-debate confidence, provides a clear and compelling mandate for a bearish stance. No override is necessary.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "I am confirming the deterministic guardrail's Bearish/Bearish conclusion, as it aligns with the overwhelming post-debate consensus. The initial conflict was resolved when the `fundamental` agent correctly conceded that its backward-looking analysis was rendered obsolete by the forward-looking evidence of a catastrophic guidance miss, as presented by the `news_macro` agent. This fundamental catalyst perfectly explains the severe technical breakdown identified by the `market_technical` agent. The resulting unified view is that the company's growth story is broken and will require multiple quarters to repair, justifying a bearish stance on both short and long-term horizons.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.9,
-          "weight": 0.35,
-          "contribution": -0.315
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.95,
+          "confidence": 0.8,
           "weight": 0.45,
-          "contribution": -0.4275
+          "contribution": -0.36
         },
         {
           "agent_name": "fundamental",
           "stance": "Bearish",
           "confidence": 0.9,
-          "weight": 0.2,
-          "contribution": -0.18
+          "weight": 0.15,
+          "contribution": -0.135
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.9,
+          "weight": 0.4,
+          "contribution": 0.0
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": -0.32
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Bearish",
           "confidence": 0.9,
           "weight": 0.35,
           "contribution": -0.315
@@ -2966,21 +3064,14 @@
         {
           "agent_name": "market_technical",
           "stance": "Bearish",
-          "confidence": 0.95,
-          "weight": 0.2,
-          "contribution": -0.19
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bearish",
           "confidence": 0.9,
-          "weight": 0.45,
-          "contribution": -0.405
+          "weight": 0.25,
+          "contribution": -0.225
         }
       ]
     },
     "scores": {
-      "short": -1.0,
+      "short": -0.5789,
       "long": -1.0
     },
     "llm_decision_used": true

@@ -211,127 +211,137 @@
     "ticker": "MRVL",
     "company": "Marvell Technology",
     "agent_name": "market_technical",
-    "short_term_stance": "Neutral",
-    "long_term_stance": "Bullish",
-    "confidence": 0.7,
-    "confidence_rationale": "Confidence is moderated by conflicting signals: a strong, established uptrend (Price > MA20 > MA50) is counteracted by clear signs of short-term exhaustion, such as an overbought RSI, weak volume confirmation, and a very small MACD histogram.",
-    "stance_rationale": "The primary tension is between a powerful, established uptrend and clear signals of short-term exhaustion. While the long-term picture remains bullish, the overbought RSI and waning momentum suggest a high probability of consolidation or a pullback before the primary trend can resume.",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings signal. The combination of a +18.35% price surge, massive volume confirmation (6.6x average), and significant abnormal return (+19.86% vs. QQQ) provides textbook evidence of a bullish catalyst capable of reversing the prior trend.",
+    "stance_rationale": "The massive, high-volume, positive abnormal return following earnings is a classic catalyst-driven reversal signal, invalidating the pre-existing bearish trend and shifting the immediate outlook to bullish.",
     "key_signals": [
       {
+        "type": "Earnings Reaction",
+        "signal": "Powerful Bullish Catalyst",
+        "evidence": "Stock rose 18.35% (+19.86% abnormal vs. QQQ) on 6.6x average volume the day after earnings, indicating strong buyer conviction."
+      },
+      {
         "type": "Moving Averages",
-        "signal": "Strong Bullish Trend Structure",
-        "evidence": "Price at $163.66 is significantly above both the MA20 ($144.65) and MA50 ($111.49), indicating a powerful uptrend."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "Significant Market Outperformance",
-        "evidence": "The stock has outperformed the SPY benchmark by 114.4%, demonstrating strong market leadership."
-      },
-      {
-        "type": "RSI",
-        "signal": "Overbought Condition",
-        "evidence": "RSI is at 75.52, which is above the 70 threshold, suggesting the recent price advance may be overextended and due for a pause or pullback."
-      },
-      {
-        "type": "MACD",
-        "signal": "Waning Bullish Momentum",
-        "evidence": "While a bullish crossover is technically in effect, the histogram is barely positive at 0.135, indicating that the upward momentum is decelerating sharply."
+        "signal": "Pre-Event Bearish Trend",
+        "evidence": "As of the event date close, price ($75.64) was below the MA20, MA50, and MA200, defining a clear downtrend that was subsequently broken by the earnings reaction."
       },
       {
         "type": "Volume",
-        "signal": "Lack of Conviction",
-        "evidence": "The volume spike ratio is low at 0.52, suggesting recent price movements are not supported by strong investor participation."
+        "signal": "Capitulation and Confirmation Volume",
+        "evidence": "Volume spiked 2.99x on the event date, followed by a 6.62x volume surge on the reaction day, confirming the bullish reversal with massive participation."
       },
       {
-        "type": "Volatility",
-        "signal": "High Volatility Environment",
-        "evidence": "The stock is in a 'high_volatility_bullish' regime with annualized volatility at 67.1%, implying larger price swings and increased risk."
+        "type": "RSI",
+        "signal": "Pre-Event Weak Momentum",
+        "evidence": "The RSI of 40.22 heading into the event indicated bearish momentum, highlighting the surprise and strength of the subsequent bullish move."
       },
       {
-        "type": "Drawdown",
-        "signal": "Resilience to Selling Pressure",
-        "evidence": "The current drawdown from the recent high is minimal at -1.15%, indicating that buyers have stepped in quickly on dips."
+        "type": "MACD",
+        "signal": "Bearish Momentum Pre-Earnings",
+        "evidence": "A bearish MACD crossover was in place before earnings (MACD -0.857 vs Signal -0.755), which was invalidated by the post-event price action."
       },
       {
-        "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 1.07%"
+        "type": "Relative Strength",
+        "signal": "Prior Underperformance",
+        "evidence": "The stock was significantly underperforming the SPY (-33.98% relative return), a trend that the post-earnings surge is positioned to reverse."
       },
       {
         "type": "Market Regime",
-        "signal": "high_volatility_bullish",
-        "evidence": "Regime classification: high_volatility_bullish"
+        "signal": "High Volatility Environment",
+        "evidence": "The classification of 'high_volatility_bearish' provides context for the potential of large price swings, such as the observed post-earnings rally."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.48%"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 63.57%, Recent 44.14%"
+      },
+      {
+        "type": "Drawdown",
+        "signal": "elevated drawdown risk",
+        "evidence": "Current drawdown -24.42%, Max drawdown -45.16%"
       }
     ],
     "risks": [
-      "The overbought RSI (75.52) signals a high risk of a short-term price correction or consolidation.",
-      "Waning momentum, evidenced by a near-zero MACD histogram and low volume, suggests the current rally lacks conviction and could falter.",
-      "High annualized volatility (67.1%) increases the risk of sharp, sudden price drops, even within an uptrend."
+      "Gap Fill Risk: The large upward price gap from the earnings reaction may attract profit-taking, potentially leading to a price decline to 'fill the gap'.",
+      "Event Overreaction: The powerful initial move might be an emotional overreaction, risking a fade or consolidation as the market digests the news.",
+      "Broader Market Headwinds: The positive reaction occurred while the QQQ benchmark was negative. Persistent market weakness could suppress upward momentum despite company-specific strength."
     ],
     "citations": [],
-    "summary": "Marvell Technology is in a strong, long-term uptrend, confirmed by its price position well above key moving averages and its significant outperformance against the market. However, short-term warning signs are present. The stock is technically overbought, and momentum indicators like the MACD histogram and volume suggest the rally is losing steam. This creates a neutral short-term outlook, anticipating consolidation or a minor pullback.",
+    "summary": "As of March 5th, MRVL was in a clear bearish trend, trading below all key moving averages with negative momentum. However, the post-earnings reaction was a technically significant event, with the stock surging 18.35% on over 6x average volume. This powerful bullish impulse, dramatically outperforming a weak market, invalidates the prior trend structure and establishes a strong short-term bullish bias. The long-term trend is now neutral, pending further confirmation.",
     "raw_packet": {
       "ticker": "MRVL",
       "company": "Marvell Technology",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "neutral",
-      "long_term_stance": "bullish",
-      "confidence": 0.7,
-      "confidence_rationale": "Confidence is moderated by conflicting signals: a strong, established uptrend (Price > MA20 > MA50) is counteracted by clear signs of short-term exhaustion, such as an overbought RSI, weak volume confirmation, and a very small MACD histogram.",
+      "short_term_stance": "bullish",
+      "long_term_stance": "neutral",
+      "confidence": 0.9,
+      "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings signal. The combination of a +18.35% price surge, massive volume confirmation (6.6x average), and significant abnormal return (+19.86% vs. QQQ) provides textbook evidence of a bullish catalyst capable of reversing the prior trend.",
       "key_signals": [
         {
+          "type": "Earnings Reaction",
+          "signal": "Powerful Bullish Catalyst",
+          "evidence": "Stock rose 18.35% (+19.86% abnormal vs. QQQ) on 6.6x average volume the day after earnings, indicating strong buyer conviction."
+        },
+        {
           "type": "Moving Averages",
-          "signal": "Strong Bullish Trend Structure",
-          "evidence": "Price at $163.66 is significantly above both the MA20 ($144.65) and MA50 ($111.49), indicating a powerful uptrend."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "Significant Market Outperformance",
-          "evidence": "The stock has outperformed the SPY benchmark by 114.4%, demonstrating strong market leadership."
-        },
-        {
-          "type": "RSI",
-          "signal": "Overbought Condition",
-          "evidence": "RSI is at 75.52, which is above the 70 threshold, suggesting the recent price advance may be overextended and due for a pause or pullback."
-        },
-        {
-          "type": "MACD",
-          "signal": "Waning Bullish Momentum",
-          "evidence": "While a bullish crossover is technically in effect, the histogram is barely positive at 0.135, indicating that the upward momentum is decelerating sharply."
+          "signal": "Pre-Event Bearish Trend",
+          "evidence": "As of the event date close, price ($75.64) was below the MA20, MA50, and MA200, defining a clear downtrend that was subsequently broken by the earnings reaction."
         },
         {
           "type": "Volume",
-          "signal": "Lack of Conviction",
-          "evidence": "The volume spike ratio is low at 0.52, suggesting recent price movements are not supported by strong investor participation."
+          "signal": "Capitulation and Confirmation Volume",
+          "evidence": "Volume spiked 2.99x on the event date, followed by a 6.62x volume surge on the reaction day, confirming the bullish reversal with massive participation."
         },
         {
-          "type": "Volatility",
-          "signal": "High Volatility Environment",
-          "evidence": "The stock is in a 'high_volatility_bullish' regime with annualized volatility at 67.1%, implying larger price swings and increased risk."
+          "type": "RSI",
+          "signal": "Pre-Event Weak Momentum",
+          "evidence": "The RSI of 40.22 heading into the event indicated bearish momentum, highlighting the surprise and strength of the subsequent bullish move."
         },
         {
-          "type": "Drawdown",
-          "signal": "Resilience to Selling Pressure",
-          "evidence": "The current drawdown from the recent high is minimal at -1.15%, indicating that buyers have stepped in quickly on dips."
+          "type": "MACD",
+          "signal": "Bearish Momentum Pre-Earnings",
+          "evidence": "A bearish MACD crossover was in place before earnings (MACD -0.857 vs Signal -0.755), which was invalidated by the post-event price action."
         },
         {
-          "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 1.07%"
+          "type": "Relative Strength",
+          "signal": "Prior Underperformance",
+          "evidence": "The stock was significantly underperforming the SPY (-33.98% relative return), a trend that the post-earnings surge is positioned to reverse."
         },
         {
           "type": "Market Regime",
-          "signal": "high_volatility_bullish",
-          "evidence": "Regime classification: high_volatility_bullish"
+          "signal": "High Volatility Environment",
+          "evidence": "The classification of 'high_volatility_bearish' provides context for the potential of large price swings, such as the observed post-earnings rally."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.48%"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 63.57%, Recent 44.14%"
+        },
+        {
+          "type": "Drawdown",
+          "signal": "elevated drawdown risk",
+          "evidence": "Current drawdown -24.42%, Max drawdown -45.16%"
         }
       ],
       "risks": [
-        "The overbought RSI (75.52) signals a high risk of a short-term price correction or consolidation.",
-        "Waning momentum, evidenced by a near-zero MACD histogram and low volume, suggests the current rally lacks conviction and could falter.",
-        "High annualized volatility (67.1%) increases the risk of sharp, sudden price drops, even within an uptrend."
+        "Gap Fill Risk: The large upward price gap from the earnings reaction may attract profit-taking, potentially leading to a price decline to 'fill the gap'.",
+        "Event Overreaction: The powerful initial move might be an emotional overreaction, risking a fade or consolidation as the market digests the news.",
+        "Broader Market Headwinds: The positive reaction occurred while the QQQ benchmark was negative. Persistent market weakness could suppress upward momentum despite company-specific strength."
       ],
-      "summary": "Marvell Technology is in a strong, long-term uptrend, confirmed by its price position well above key moving averages and its significant outperformance against the market. However, short-term warning signs are present. The stock is technically overbought, and momentum indicators like the MACD histogram and volume suggest the rally is losing steam. This creates a neutral short-term outlook, anticipating consolidation or a minor pullback.",
-      "core_insight": "The primary tension is between a powerful, established uptrend and clear signals of short-term exhaustion. While the long-term picture remains bullish, the overbought RSI and waning momentum suggest a high probability of consolidation or a pullback before the primary trend can resume."
+      "summary": "As of March 5th, MRVL was in a clear bearish trend, trading below all key moving averages with negative momentum. However, the post-earnings reaction was a technically significant event, with the stock surging 18.35% on over 6x average volume. This powerful bullish impulse, dramatically outperforming a weak market, invalidates the prior trend structure and establishes a strong short-term bullish bias. The long-term trend is now neutral, pending further confirmation.",
+      "core_insight": "The massive, high-volume, positive abnormal return following earnings is a classic catalyst-driven reversal signal, invalidating the pre-existing bearish trend and shifting the immediate outlook to bullish."
     }
   }
 ]

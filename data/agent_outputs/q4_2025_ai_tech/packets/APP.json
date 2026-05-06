@@ -216,126 +216,136 @@
     "company": "AppLovin",
     "agent_name": "market_technical",
     "short_term_stance": "Bullish",
-    "long_term_stance": "Bullish",
-    "confidence": 0.75,
-    "confidence_rationale": "Confidence is strong but not absolute due to conflicting signals. While price action, momentum (RSI, MACD), and relative strength are clearly bullish, the lack of strong volume confirmation and the high underlying volatility introduce notable risk of a reversal.",
-    "stance_rationale": "The primary insight is the bullish momentum-risk conflict: while key trend and momentum signals point upward, the combination of extremely high volatility and weak volume participation suggests the current rally is fragile and carries a significant risk of a sharp reversal.",
+    "long_term_stance": "Bearish",
+    "confidence": 0.65,
+    "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
+    "stance_rationale": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend.",
     "key_signals": [
       {
-        "type": "Moving Averages",
-        "signal": "Bullish Trend Structure",
-        "evidence": "Price at 475.0 is trading +6.6% above the MA20 (445.77) and +7.9% above the MA50 (440.37)."
+        "type": "Earnings Reaction",
+        "signal": "Strong Bullish Event Reaction",
+        "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
       },
       {
-        "type": "MACD",
-        "signal": "Bullish Momentum Confirmation",
-        "evidence": "A bullish crossover is active with the MACD line (9.398) above the signal line (8.675) and a positive histogram (0.723)."
+        "type": "Moving Averages",
+        "signal": "Deeply Bearish Trend Structure",
+        "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
       },
       {
         "type": "RSI",
-        "signal": "Strong Upward Momentum",
-        "evidence": "RSI is at 59.61, indicating bullish momentum with room to run before reaching overbought (70) levels."
+        "signal": "Approaching Oversold Levels",
+        "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
       },
       {
-        "type": "Relative Strength",
-        "signal": "Significant Market Outperformance",
-        "evidence": "The stock has outperformed the SPY benchmark by 20.34% over the analysis period."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "High Volatility Bullish Trend",
-        "evidence": "The current regime is identified as 'high_volatility_bullish', contextualizing the uptrend within a high-risk framework."
+        "type": "MACD",
+        "signal": "Strong Bearish Momentum",
+        "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
       },
       {
         "type": "Volume",
-        "signal": "Weak Conviction on Price Advance",
-        "evidence": "Latest volume spike ratio is 0.97, suggesting the recent price increase lacks strong volume-based confirmation."
+        "signal": "Capitulation Volume Spike",
+        "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
       },
       {
-        "type": "Volatility",
-        "signal": "Elevated Risk Environment",
-        "evidence": "Annualized volatility is very high at 85.0%, indicating potential for large and rapid price swings."
+        "type": "Market Regime",
+        "signal": "High-Risk Environment",
+        "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
       },
       {
         "type": "Drawdown",
-        "signal": "Recovering from Pullback",
-        "evidence": "The price is recovering from a recent peak, with a current drawdown of -8.16%."
+        "signal": "Severe Price Depreciation",
+        "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Underperformance",
+        "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
       },
       {
         "type": "Returns",
         "signal": "negative short-term momentum",
-        "evidence": "Mean of recent returns: -0.28%"
+        "evidence": "Mean of recent returns: -3.72%"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 86.39%, Recent 128.32%"
       }
     ],
     "risks": [
-      "Extremely high annualized volatility (85.0%) creates the potential for sharp, unexpected price reversals.",
-      "The recent upward price movement was not accompanied by a significant volume spike (0.97x), suggesting a lack of strong conviction that could make the trend fragile.",
-      "The stock has been volatile, with a max drawdown of -28.06% in the analysis period, highlighting the potential downside risk."
+      "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+      "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+      "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
     ],
     "citations": [],
-    "summary": "AppLovin exhibits a strong short-term bullish technical posture, characterized by price trading well above its 20-day and 50-day moving averages and confirmed by positive momentum from both RSI and a MACD bullish crossover. The stock is also a clear market outperformer. However, this bullish trend is occurring in a high-volatility environment and lacks strong volume confirmation, which introduces significant risk and potential for instability.",
+    "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
     "raw_packet": {
       "ticker": "APP",
       "company": "AppLovin",
       "agent_name": "Market & Technical Analysis Agent",
       "short_term_stance": "bullish",
-      "long_term_stance": "bullish",
-      "confidence": 0.75,
-      "confidence_rationale": "Confidence is strong but not absolute due to conflicting signals. While price action, momentum (RSI, MACD), and relative strength are clearly bullish, the lack of strong volume confirmation and the high underlying volatility introduce notable risk of a reversal.",
+      "long_term_stance": "bearish",
+      "confidence": 0.65,
+      "confidence_rationale": "Confidence is moderate because the strong bullish post-earnings event reaction is directly conflicting with a deeply entrenched bearish trend across multiple timeframes. While the event is a powerful catalyst, the established downtrend presents significant resistance.",
       "key_signals": [
         {
-          "type": "Moving Averages",
-          "signal": "Bullish Trend Structure",
-          "evidence": "Price at 475.0 is trading +6.6% above the MA20 (445.77) and +7.9% above the MA50 (440.37)."
+          "type": "Earnings Reaction",
+          "signal": "Strong Bullish Event Reaction",
+          "evidence": "The market responded very positively to earnings with a +6.44% post-1d return, representing a +6.23% abnormal return vs. the QQQ benchmark on slightly increased volume."
         },
         {
-          "type": "MACD",
-          "signal": "Bullish Momentum Confirmation",
-          "evidence": "A bullish crossover is active with the MACD line (9.398) above the signal line (8.675) and a positive histogram (0.723)."
+          "type": "Moving Averages",
+          "signal": "Deeply Bearish Trend Structure",
+          "evidence": "Price at $366.91 is significantly below the MA20 ($492.75), MA50 ($603.15), and MA200 ($503.49), indicating a strong, established downtrend."
         },
         {
           "type": "RSI",
-          "signal": "Strong Upward Momentum",
-          "evidence": "RSI is at 59.61, indicating bullish momentum with room to run before reaching overbought (70) levels."
+          "signal": "Approaching Oversold Levels",
+          "evidence": "RSI at 31.36 indicates bearish momentum but also suggests the stock was entering oversold territory prior to the earnings event, potentially setting up a bounce."
         },
         {
-          "type": "Relative Strength",
-          "signal": "Significant Market Outperformance",
-          "evidence": "The stock has outperformed the SPY benchmark by 20.34% over the analysis period."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "High Volatility Bullish Trend",
-          "evidence": "The current regime is identified as 'high_volatility_bullish', contextualizing the uptrend within a high-risk framework."
+          "type": "MACD",
+          "signal": "Strong Bearish Momentum",
+          "evidence": "The MACD line (-54.35) is well below the signal line (-49.60), with a negative histogram, confirming strong downward momentum leading into the earnings report."
         },
         {
           "type": "Volume",
-          "signal": "Weak Conviction on Price Advance",
-          "evidence": "Latest volume spike ratio is 0.97, suggesting the recent price increase lacks strong volume-based confirmation."
+          "signal": "Capitulation Volume Spike",
+          "evidence": "Volume on the day of the earnings close spiked to 2.32x the recent average, coinciding with a large price drop, suggesting seller exhaustion."
         },
         {
-          "type": "Volatility",
-          "signal": "Elevated Risk Environment",
-          "evidence": "Annualized volatility is very high at 85.0%, indicating potential for large and rapid price swings."
+          "type": "Market Regime",
+          "signal": "High-Risk Environment",
+          "evidence": "The stock is classified in a 'high_volatility_bearish' regime, highlighting significant instability and risk."
         },
         {
           "type": "Drawdown",
-          "signal": "Recovering from Pullback",
-          "evidence": "The price is recovering from a recent peak, with a current drawdown of -8.16%."
+          "signal": "Severe Price Depreciation",
+          "evidence": "The stock is in a current drawdown of -49.99% from its recent peak, indicating substantial capital destruction and investor pessimism."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Underperformance",
+          "evidence": "The stock has underperformed its SPY benchmark by a wide margin (-17.76% relative return), showing clear market weakness."
         },
         {
           "type": "Returns",
           "signal": "negative short-term momentum",
-          "evidence": "Mean of recent returns: -0.28%"
+          "evidence": "Mean of recent returns: -3.72%"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 86.39%, Recent 128.32%"
         }
       ],
       "risks": [
-        "Extremely high annualized volatility (85.0%) creates the potential for sharp, unexpected price reversals.",
-        "The recent upward price movement was not accompanied by a significant volume spike (0.97x), suggesting a lack of strong conviction that could make the trend fragile.",
-        "The stock has been volatile, with a max drawdown of -28.06% in the analysis period, highlighting the potential downside risk."
+        "The positive post-earnings move could be a short-lived 'dead cat bounce' within a severe long-term downtrend.",
+        "Extremely high recent volatility (128%) suggests the potential for large, unpredictable price swings in either direction.",
+        "The 20, 50, and 200-day moving averages are now significant overhead resistance levels that could cap any near-term rally."
       ],
-      "summary": "AppLovin exhibits a strong short-term bullish technical posture, characterized by price trading well above its 20-day and 50-day moving averages and confirmed by positive momentum from both RSI and a MACD bullish crossover. The stock is also a clear market outperformer. However, this bullish trend is occurring in a high-volatility environment and lacks strong volume confirmation, which introduces significant risk and potential for instability.",
-      "core_insight": "The primary insight is the bullish momentum-risk conflict: while key trend and momentum signals point upward, the combination of extremely high volatility and weak volume participation suggests the current rally is fragile and carries a significant risk of a sharp reversal."
+      "summary": "As of 2026-02-12, APP was in a severe bearish downtrend, evidenced by price trading far below key moving averages, negative momentum, and a capitulation-like volume spike. However, the subsequent post-earnings reaction was strongly bullish (+6.23% abnormal return), creating a powerful catalyst for a potential short-term reversal or relief rally. The long-term trend remains weak, but the immediate reaction to the new information is positive.",
+      "core_insight": "A classic technical conflict is underway: a deeply oversold, bearish trend is being challenged by a strong, news-driven bullish reversal signal from the earnings reaction. This points to a probable short-term relief rally, with the key question being whether it can overcome the immense overhead resistance from the established downtrend."
     }
   }
 ]

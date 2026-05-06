@@ -208,127 +208,135 @@
     "ticker": "NRG",
     "company": "NRG Energy",
     "agent_name": "market_technical",
-    "short_term_stance": "Bearish",
-    "long_term_stance": "Neutral",
-    "confidence": 0.75,
-    "confidence_rationale": "Confidence is set at 0.75 because multiple key indicators like the price action relative to moving averages and the MACD crossover point to a bearish short-term outlook. However, this is tempered by a neutral RSI, a 'range_bound' market regime, and positive relative strength against the benchmark, which prevent a higher confidence rating.",
-    "stance_rationale": "The core technical conflict is between the bearish trend signals (price below MAs, MACD) and signs of underlying resilience or indecision (neutral RSI, positive relative strength). This indicates that while the path of least resistance is currently down, the bearish trend lacks strong conviction, making it vulnerable to a reversal or a prolonged period of range-bound trading.",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.65,
+    "confidence_rationale": "Confidence is moderate due to conflicting signals: a strong, established uptrend is challenged by a negative post-earnings price reaction, creating short-term uncertainty.",
+    "stance_rationale": "The key conflict is between a powerful, established uptrend and a negative 'sell the news' reaction to earnings. This suggests a pause or potential reversal in the short-term trend, making the immediate path uncertain despite the strong long-term technical posture.",
     "key_signals": [
       {
+        "type": "Earnings Reaction",
+        "signal": "Negative Post-Earnings Price Action",
+        "evidence": "On the day following the 2026-02-27 earnings, the stock returned -1.89%, representing a -2.02% abnormal return versus the QQQ benchmark, signaling initial investor disappointment."
+      },
+      {
         "type": "Moving Averages",
-        "signal": "Bearish Trend Structure",
-        "evidence": "Price at 154.82 is below both the MA20 (158.75) and MA50 (158.12)."
-      },
-      {
-        "type": "MACD",
-        "signal": "Bearish Momentum Confirmed",
-        "evidence": "The MACD line (-0.78) is below the signal line (-0.11) with a negative histogram (-0.66), indicating strengthening downward momentum."
-      },
-      {
-        "type": "RSI",
-        "signal": "Neutral Momentum",
-        "evidence": "RSI is 49.93, indicating a lack of strong directional conviction and market indecision."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "Range-Bound Behavior",
-        "evidence": "The stock is classified in a 'range_bound' regime, suggesting price is likely to oscillate rather than trend strongly."
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "The price of 178.41 was substantially above all key moving averages: MA20 (164.76), MA50 (158.16), and MA200 (158.24), confirming a robust uptrend."
       },
       {
         "type": "Relative Strength",
-        "signal": "Outperforming Benchmark",
-        "evidence": "Despite recent price weakness, the stock shows a positive relative return of 1.26% against SPY."
+        "signal": "Significant Market Outperformance",
+        "evidence": "NRG has strongly outperformed its benchmark, with a relative return of +53.74% against SPY, indicating market leadership."
+      },
+      {
+        "type": "MACD",
+        "signal": "Sustained Bullish Momentum",
+        "evidence": "A bullish MACD crossover was active, with the MACD line (7.37) well above the signal line (5.58), indicating strong positive momentum leading into the event."
+      },
+      {
+        "type": "RSI",
+        "signal": "Strong but not Overbought Momentum",
+        "evidence": "The RSI was at 64.13, reflecting strong buying pressure but still below the conventional overbought threshold of 70."
       },
       {
         "type": "Volume",
-        "signal": "Weak Conviction on Price Moves",
-        "evidence": "The volume spike ratio of 0.74 indicates recent price action has occurred on below-average volume."
-      },
-      {
-        "type": "Drawdown",
-        "signal": "Significant Price Correction",
-        "evidence": "The stock is currently in a -15.61% drawdown from its recent peak, indicating sustained selling pressure."
+        "signal": "Weak Conviction on Post-Earnings Sell-off",
+        "evidence": "The negative price reaction occurred on below-average volume, with the reaction day volume being only 76% of the trailing average, questioning the durability of the sell-off."
       },
       {
         "type": "Volatility",
-        "signal": "High Risk Environment",
-        "evidence": "Annualized volatility is elevated at 50.13%, suggesting the potential for large price swings."
+        "signal": "High-Risk Environment",
+        "evidence": "The stock is in a high volatility regime with annualized volatility at 52.99%, suggesting a wide range of potential price swings."
       },
       {
         "type": "Returns",
-        "signal": "negative short-term momentum",
-        "evidence": "Mean of recent returns: -0.08%"
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 1.05%"
+      },
+      {
+        "type": "Drawdown",
+        "signal": "contained drawdown",
+        "evidence": "Current drawdown -2.75%, Max drawdown -20.91%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "high_volatility_bullish",
+        "evidence": "Regime classification: high_volatility_bullish"
       }
     ],
     "risks": [
-      "High volatility (50.13%) increases the risk of sharp, unpredictable price movements contrary to the current trend.",
-      "The stock's positive relative strength could attract buyers and lead to a short squeeze or trend reversal if the broader market turns positive.",
-      "The 'range_bound' classification implies that a breakdown below recent support may not occur, and price could revert back up toward the moving averages."
+      "A potential short-term trend reversal or significant pullback following the negative earnings reaction, which acts as a bearish catalyst against the prior uptrend.",
+      "High annualized volatility (52.99%) implies a heightened risk of large and rapid price movements in either direction."
     ],
     "citations": [],
-    "summary": "NRG exhibits a bearish short-term posture, trading below its key moving averages with a confirmed bearish MACD signal. However, this downward pressure is met with conflicting evidence: momentum is neutral (RSI near 50), conviction is low (below-average volume), and the stock maintains positive relative strength against the S&P 500. The market is defined as 'range_bound' and highly volatile, suggesting a continued choppy, sideways-to-downward trajectory is most likely in the immediate future.",
+    "summary": "As of 2026-02-27, NRG was in a strong, high-volatility uptrend, with price significantly above all key moving averages and demonstrating strong momentum and market outperformance. However, the immediate post-earnings reaction was negative, with the stock underperforming the market on below-average volume. This created a neutral short-term outlook due to the conflict between the established bullish trend and the new, bearish event-driven signal.",
     "raw_packet": {
       "ticker": "NRG",
       "company": "NRG Energy",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bearish",
-      "long_term_stance": "neutral",
-      "confidence": 0.75,
-      "confidence_rationale": "Confidence is set at 0.75 because multiple key indicators like the price action relative to moving averages and the MACD crossover point to a bearish short-term outlook. However, this is tempered by a neutral RSI, a 'range_bound' market regime, and positive relative strength against the benchmark, which prevent a higher confidence rating.",
+      "short_term_stance": "neutral",
+      "long_term_stance": "bullish",
+      "confidence": 0.65,
+      "confidence_rationale": "Confidence is moderate due to conflicting signals: a strong, established uptrend is challenged by a negative post-earnings price reaction, creating short-term uncertainty.",
       "key_signals": [
         {
+          "type": "Earnings Reaction",
+          "signal": "Negative Post-Earnings Price Action",
+          "evidence": "On the day following the 2026-02-27 earnings, the stock returned -1.89%, representing a -2.02% abnormal return versus the QQQ benchmark, signaling initial investor disappointment."
+        },
+        {
           "type": "Moving Averages",
-          "signal": "Bearish Trend Structure",
-          "evidence": "Price at 154.82 is below both the MA20 (158.75) and MA50 (158.12)."
-        },
-        {
-          "type": "MACD",
-          "signal": "Bearish Momentum Confirmed",
-          "evidence": "The MACD line (-0.78) is below the signal line (-0.11) with a negative histogram (-0.66), indicating strengthening downward momentum."
-        },
-        {
-          "type": "RSI",
-          "signal": "Neutral Momentum",
-          "evidence": "RSI is 49.93, indicating a lack of strong directional conviction and market indecision."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "Range-Bound Behavior",
-          "evidence": "The stock is classified in a 'range_bound' regime, suggesting price is likely to oscillate rather than trend strongly."
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "The price of 178.41 was substantially above all key moving averages: MA20 (164.76), MA50 (158.16), and MA200 (158.24), confirming a robust uptrend."
         },
         {
           "type": "Relative Strength",
-          "signal": "Outperforming Benchmark",
-          "evidence": "Despite recent price weakness, the stock shows a positive relative return of 1.26% against SPY."
+          "signal": "Significant Market Outperformance",
+          "evidence": "NRG has strongly outperformed its benchmark, with a relative return of +53.74% against SPY, indicating market leadership."
+        },
+        {
+          "type": "MACD",
+          "signal": "Sustained Bullish Momentum",
+          "evidence": "A bullish MACD crossover was active, with the MACD line (7.37) well above the signal line (5.58), indicating strong positive momentum leading into the event."
+        },
+        {
+          "type": "RSI",
+          "signal": "Strong but not Overbought Momentum",
+          "evidence": "The RSI was at 64.13, reflecting strong buying pressure but still below the conventional overbought threshold of 70."
         },
         {
           "type": "Volume",
-          "signal": "Weak Conviction on Price Moves",
-          "evidence": "The volume spike ratio of 0.74 indicates recent price action has occurred on below-average volume."
-        },
-        {
-          "type": "Drawdown",
-          "signal": "Significant Price Correction",
-          "evidence": "The stock is currently in a -15.61% drawdown from its recent peak, indicating sustained selling pressure."
+          "signal": "Weak Conviction on Post-Earnings Sell-off",
+          "evidence": "The negative price reaction occurred on below-average volume, with the reaction day volume being only 76% of the trailing average, questioning the durability of the sell-off."
         },
         {
           "type": "Volatility",
-          "signal": "High Risk Environment",
-          "evidence": "Annualized volatility is elevated at 50.13%, suggesting the potential for large price swings."
+          "signal": "High-Risk Environment",
+          "evidence": "The stock is in a high volatility regime with annualized volatility at 52.99%, suggesting a wide range of potential price swings."
         },
         {
           "type": "Returns",
-          "signal": "negative short-term momentum",
-          "evidence": "Mean of recent returns: -0.08%"
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 1.05%"
+        },
+        {
+          "type": "Drawdown",
+          "signal": "contained drawdown",
+          "evidence": "Current drawdown -2.75%, Max drawdown -20.91%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "high_volatility_bullish",
+          "evidence": "Regime classification: high_volatility_bullish"
         }
       ],
       "risks": [
-        "High volatility (50.13%) increases the risk of sharp, unpredictable price movements contrary to the current trend.",
-        "The stock's positive relative strength could attract buyers and lead to a short squeeze or trend reversal if the broader market turns positive.",
-        "The 'range_bound' classification implies that a breakdown below recent support may not occur, and price could revert back up toward the moving averages."
+        "A potential short-term trend reversal or significant pullback following the negative earnings reaction, which acts as a bearish catalyst against the prior uptrend.",
+        "High annualized volatility (52.99%) implies a heightened risk of large and rapid price movements in either direction."
       ],
-      "summary": "NRG exhibits a bearish short-term posture, trading below its key moving averages with a confirmed bearish MACD signal. However, this downward pressure is met with conflicting evidence: momentum is neutral (RSI near 50), conviction is low (below-average volume), and the stock maintains positive relative strength against the S&P 500. The market is defined as 'range_bound' and highly volatile, suggesting a continued choppy, sideways-to-downward trajectory is most likely in the immediate future.",
-      "core_insight": "The core technical conflict is between the bearish trend signals (price below MAs, MACD) and signs of underlying resilience or indecision (neutral RSI, positive relative strength). This indicates that while the path of least resistance is currently down, the bearish trend lacks strong conviction, making it vulnerable to a reversal or a prolonged period of range-bound trading."
+      "summary": "As of 2026-02-27, NRG was in a strong, high-volatility uptrend, with price significantly above all key moving averages and demonstrating strong momentum and market outperformance. However, the immediate post-earnings reaction was negative, with the stock underperforming the market on below-average volume. This created a neutral short-term outlook due to the conflict between the established bullish trend and the new, bearish event-driven signal.",
+      "core_insight": "The key conflict is between a powerful, established uptrend and a negative 'sell the news' reaction to earnings. This suggests a pause or potential reversal in the short-term trend, making the immediate path uncertain despite the strong long-term technical posture."
     }
   }
 ]

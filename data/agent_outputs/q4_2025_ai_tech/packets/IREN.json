@@ -219,125 +219,135 @@
     "agent_name": "market_technical",
     "short_term_stance": "Bullish",
     "long_term_stance": "Bullish",
-    "confidence": 0.7,
-    "confidence_rationale": "Confidence is moderate because while the price trend, moving averages, and relative strength are clearly bullish, a recent bearish MACD crossover suggests a potential short-term momentum slowdown. Extremely high volatility also increases risk and the potential for sharp pullbacks.",
-    "stance_rationale": "The dominant technical picture is a conflict between a strong bullish trend and a new bearish momentum signal (MACD crossover). This suggests that while the path of least resistance remains higher, the stock is vulnerable to a short-term pullback or consolidation within its volatile uptrend.",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is moderate because the bullish stance is based almost entirely on the strong post-earnings price reaction, which contradicts the deeply bearish momentum and trend signals leading into the event. The low volume accompanying the reaction further tempers conviction.",
+    "stance_rationale": "The strong positive reaction to earnings provides a potential catalyst to reverse the severe short-term downtrend. However, the move's sustainability is questionable due to the lack of volume confirmation, creating a high-risk scenario where the new bullish signal is battling established bearish momentum.",
     "key_signals": [
       {
+        "type": "Earnings Reaction",
+        "signal": "Bullish Event Catalyst",
+        "evidence": "The stock posted a +5.47% return the day after earnings, representing a +5.26% abnormal return versus the QQQ benchmark, signaling a strongly positive market interpretation of the new information."
+      },
+      {
         "type": "Moving Averages",
-        "signal": "bullish trend structure",
-        "evidence": "Price at $49.48 is trading 9.3% above its 20-day MA ($45.26) and 17.5% above its 50-day MA ($42.11)."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "significant market outperformance",
-        "evidence": "The stock has outperformed the SPY benchmark by 18.1% over the measured period, indicating strong market leadership."
-      },
-      {
-        "type": "RSI",
-        "signal": "healthy bullish momentum",
-        "evidence": "RSI at 59.69 is in bullish territory but not yet overbought, suggesting momentum has room to run."
+        "signal": "Mixed Trend Structure",
+        "evidence": "Price at $40.03 is above the long-term MA200 ($33.48), supporting a long-term uptrend, but significantly below the short-term MA20 ($51.05) and MA50 ($46.21), indicating a sharp recent downtrend."
       },
       {
         "type": "MACD",
-        "signal": "bearish momentum crossover (caution)",
-        "evidence": "The MACD line has crossed below its signal line (Histogram: -0.09), indicating a potential short-term weakening of upward momentum."
+        "signal": "Strong Bearish Momentum",
+        "evidence": "A bearish MACD crossover is in effect, with the MACD line (-1.77) well below the signal line (0.04) and a negative histogram (-1.81), showing strong downward momentum preceding the earnings event."
       },
       {
-        "type": "Market Regime",
-        "signal": "high_volatility_bullish",
-        "evidence": "The current market regime is characterized as a high-volatility uptrend, confirming the trend direction and risk profile."
+        "type": "Relative Strength",
+        "signal": "Long-Term Market Outperformance",
+        "evidence": "The stock has demonstrated significant long-term strength, outperforming the SPY benchmark by 193.45% over the measured period."
       },
       {
-        "type": "Volatility",
-        "signal": "extremely high risk profile",
-        "evidence": "Annualized volatility of 92.42% suggests the potential for very large price swings."
+        "type": "RSI",
+        "signal": "Weakening Momentum",
+        "evidence": "The RSI of 40.26 is below 50, indicating that bearish momentum was dominant leading into the analysis date."
       },
       {
         "type": "Volume",
-        "signal": "above-average participation",
-        "evidence": "Latest volume represents a 1.19x spike over the average, confirming interest in the stock at the current price level."
+        "signal": "Weak Conviction on Earnings Reaction",
+        "evidence": "The post-earnings rally occurred on volume that was only 0.61x the trailing average, suggesting a lack of broad participation and conviction in the upward move."
+      },
+      {
+        "type": "Volatility",
+        "signal": "Extremely High Risk Environment",
+        "evidence": "Recent annualized volatility of 131.94% indicates the stock is highly unstable and prone to very large price swings in either direction."
       },
       {
         "type": "Drawdown",
-        "signal": "minor pullback from peak",
-        "evidence": "The current drawdown of -4.88% is minimal and well within the context of its recent uptrend."
+        "signal": "Significant Recent Decline",
+        "evidence": "The stock is in a -47.61% drawdown from its recent peak, highlighting the severity of the downtrend that preceded the earnings report."
       },
       {
         "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 0.34%"
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -3.61%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "range_bound",
+        "evidence": "Regime classification: range_bound"
       }
     ],
     "risks": [
-      "A bearish MACD crossover suggests weakening upward momentum, which could lead to a period of consolidation or a pullback.",
-      "Extremely high annualized volatility (92.42%) creates a high-risk environment with the potential for sharp, unpredictable price swings.",
-      "The stock has pulled back from its recent high, and failure to find support could signal a short-term top is in place."
+      "The bullish post-earnings move was not confirmed by high volume (0.61x ratio), increasing the risk that the rally may be short-lived or a 'bull trap'.",
+      "Extreme volatility (recent annualized > 130%) creates significant risk of large, unpredictable price swings and potential for rapid reversals.",
+      "The pre-existing bearish momentum (negative MACD, price below MA20/MA50) is strong and could reassert itself if the post-earnings optimism fades."
     ],
     "citations": [],
-    "summary": "IREN exhibits a strong, high-volatility uptrend, trading well above its key moving averages and significantly outperforming the broader market. While trend structure and relative strength are firmly bullish, a recent bearish MACD crossover warrants caution, signaling a potential pause or pullback. The overall technical posture remains constructive but carries significant risk due to the stock's inherent volatility.",
+    "summary": "As of 2026-02-12, IREN presented a conflicting technical profile. It entered earnings in a steep short-term downtrend (price below MA20/50, bearish MACD) within a broader long-term uptrend (price above MA200, strong relative strength). The pivotal signal is the strong positive post-earnings price reaction (+5.26% abnormal return), which acts as a bullish catalyst suggesting a potential trend reversal. This justifies a short-term bullish stance despite the preceding weakness. However, this rally occurred on low volume, indicating weak conviction and warranting caution.",
     "raw_packet": {
       "ticker": "IREN",
       "company": "IREN",
       "agent_name": "Market & Technical Analysis Agent",
       "short_term_stance": "bullish",
       "long_term_stance": "bullish",
-      "confidence": 0.7,
-      "confidence_rationale": "Confidence is moderate because while the price trend, moving averages, and relative strength are clearly bullish, a recent bearish MACD crossover suggests a potential short-term momentum slowdown. Extremely high volatility also increases risk and the potential for sharp pullbacks.",
+      "confidence": 0.6,
+      "confidence_rationale": "Confidence is moderate because the bullish stance is based almost entirely on the strong post-earnings price reaction, which contradicts the deeply bearish momentum and trend signals leading into the event. The low volume accompanying the reaction further tempers conviction.",
       "key_signals": [
         {
+          "type": "Earnings Reaction",
+          "signal": "Bullish Event Catalyst",
+          "evidence": "The stock posted a +5.47% return the day after earnings, representing a +5.26% abnormal return versus the QQQ benchmark, signaling a strongly positive market interpretation of the new information."
+        },
+        {
           "type": "Moving Averages",
-          "signal": "bullish trend structure",
-          "evidence": "Price at $49.48 is trading 9.3% above its 20-day MA ($45.26) and 17.5% above its 50-day MA ($42.11)."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "significant market outperformance",
-          "evidence": "The stock has outperformed the SPY benchmark by 18.1% over the measured period, indicating strong market leadership."
-        },
-        {
-          "type": "RSI",
-          "signal": "healthy bullish momentum",
-          "evidence": "RSI at 59.69 is in bullish territory but not yet overbought, suggesting momentum has room to run."
+          "signal": "Mixed Trend Structure",
+          "evidence": "Price at $40.03 is above the long-term MA200 ($33.48), supporting a long-term uptrend, but significantly below the short-term MA20 ($51.05) and MA50 ($46.21), indicating a sharp recent downtrend."
         },
         {
           "type": "MACD",
-          "signal": "bearish momentum crossover (caution)",
-          "evidence": "The MACD line has crossed below its signal line (Histogram: -0.09), indicating a potential short-term weakening of upward momentum."
+          "signal": "Strong Bearish Momentum",
+          "evidence": "A bearish MACD crossover is in effect, with the MACD line (-1.77) well below the signal line (0.04) and a negative histogram (-1.81), showing strong downward momentum preceding the earnings event."
         },
         {
-          "type": "Market Regime",
-          "signal": "high_volatility_bullish",
-          "evidence": "The current market regime is characterized as a high-volatility uptrend, confirming the trend direction and risk profile."
+          "type": "Relative Strength",
+          "signal": "Long-Term Market Outperformance",
+          "evidence": "The stock has demonstrated significant long-term strength, outperforming the SPY benchmark by 193.45% over the measured period."
         },
         {
-          "type": "Volatility",
-          "signal": "extremely high risk profile",
-          "evidence": "Annualized volatility of 92.42% suggests the potential for very large price swings."
+          "type": "RSI",
+          "signal": "Weakening Momentum",
+          "evidence": "The RSI of 40.26 is below 50, indicating that bearish momentum was dominant leading into the analysis date."
         },
         {
           "type": "Volume",
-          "signal": "above-average participation",
-          "evidence": "Latest volume represents a 1.19x spike over the average, confirming interest in the stock at the current price level."
+          "signal": "Weak Conviction on Earnings Reaction",
+          "evidence": "The post-earnings rally occurred on volume that was only 0.61x the trailing average, suggesting a lack of broad participation and conviction in the upward move."
+        },
+        {
+          "type": "Volatility",
+          "signal": "Extremely High Risk Environment",
+          "evidence": "Recent annualized volatility of 131.94% indicates the stock is highly unstable and prone to very large price swings in either direction."
         },
         {
           "type": "Drawdown",
-          "signal": "minor pullback from peak",
-          "evidence": "The current drawdown of -4.88% is minimal and well within the context of its recent uptrend."
+          "signal": "Significant Recent Decline",
+          "evidence": "The stock is in a -47.61% drawdown from its recent peak, highlighting the severity of the downtrend that preceded the earnings report."
         },
         {
           "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 0.34%"
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -3.61%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "range_bound",
+          "evidence": "Regime classification: range_bound"
         }
       ],
       "risks": [
-        "A bearish MACD crossover suggests weakening upward momentum, which could lead to a period of consolidation or a pullback.",
-        "Extremely high annualized volatility (92.42%) creates a high-risk environment with the potential for sharp, unpredictable price swings.",
-        "The stock has pulled back from its recent high, and failure to find support could signal a short-term top is in place."
+        "The bullish post-earnings move was not confirmed by high volume (0.61x ratio), increasing the risk that the rally may be short-lived or a 'bull trap'.",
+        "Extreme volatility (recent annualized > 130%) creates significant risk of large, unpredictable price swings and potential for rapid reversals.",
+        "The pre-existing bearish momentum (negative MACD, price below MA20/MA50) is strong and could reassert itself if the post-earnings optimism fades."
       ],
-      "summary": "IREN exhibits a strong, high-volatility uptrend, trading well above its key moving averages and significantly outperforming the broader market. While trend structure and relative strength are firmly bullish, a recent bearish MACD crossover warrants caution, signaling a potential pause or pullback. The overall technical posture remains constructive but carries significant risk due to the stock's inherent volatility.",
-      "core_insight": "The dominant technical picture is a conflict between a strong bullish trend and a new bearish momentum signal (MACD crossover). This suggests that while the path of least resistance remains higher, the stock is vulnerable to a short-term pullback or consolidation within its volatile uptrend."
+      "summary": "As of 2026-02-12, IREN presented a conflicting technical profile. It entered earnings in a steep short-term downtrend (price below MA20/50, bearish MACD) within a broader long-term uptrend (price above MA200, strong relative strength). The pivotal signal is the strong positive post-earnings price reaction (+5.26% abnormal return), which acts as a bullish catalyst suggesting a potential trend reversal. This justifies a short-term bullish stance despite the preceding weakness. However, this rally occurred on low volume, indicating weak conviction and warranting caution.",
+      "core_insight": "The strong positive reaction to earnings provides a potential catalyst to reverse the severe short-term downtrend. However, the move's sustainability is questionable due to the lack of volume confirmation, creating a high-risk scenario where the new bullish signal is battling established bearish momentum."
     }
   }
 ]

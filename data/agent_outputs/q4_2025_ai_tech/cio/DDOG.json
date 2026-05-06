@@ -11,36 +11,36 @@
         "rationale": "Short-term: The stock's +14% post-earnings rally appears over-extended given the significant growth deceleration implied in the full-year guidance (from 29% to ~19%). In a volatile macro environment, the premium valuation makes the stock vulnerable to a pullback or underperformance as the market digests the slowing growth. Long-term: Datadog is a clear leader in the secular growth market of observability, with a strong AI narrative. The cautious guidance sets a low bar, and continued platform adoption in complex cloud environments should support outperformance over multiple quarters if they execute."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Datadog demonstrated strong sequential improvement in key financial metrics, including revenue, profitability, and cash flow generation. However, the company's valuation is extremely high, with a trailing P/E ratio of over 470, which implies significant growth expectations and poses a risk. The lack of guidance and management commentary warrants a cautious stance despite the strong operational performance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean bullish on the long-term horizon."
+      "2 agents lean neutral on the short-term horizon."
     ],
     "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
+      "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 1,
+      "Bullish": 0,
+      "Neutral": 2,
       "Bearish": 1
     },
     "long_stance_counts": {
-      "Bullish": 2,
+      "Bullish": 1,
       "Neutral": 1,
-      "Bearish": 0
+      "Bearish": 1
     },
     "agent_packets": [
       {
@@ -439,261 +439,6 @@
       {
         "ticker": "DDOG",
         "company": "Datadog",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-        "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Trend Alignment",
-            "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-          },
-          {
-            "type": "Returns",
-            "signal": "Strong Price Acceleration",
-            "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Confirming Volume",
-            "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish",
-            "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "high volatility",
-            "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-          },
-          {
-            "type": "Drawdown",
-            "signal": "elevated drawdown risk",
-            "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-          }
-        ],
-        "risks": [
-          "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-          "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-          "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-        "raw_packet": {
-          "ticker": "DDOG",
-          "company": "Datadog",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-          "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Price Acceleration",
-              "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirming Volume",
-              "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish",
-              "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "high volatility",
-              "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-            }
-          ],
-          "risks": [
-            "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-            "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-            "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-          "raw_packet": {
-            "ticker": "DDOG",
-            "company": "Datadog",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-            "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Price Acceleration",
-                "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirming Volume",
-                "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish",
-                "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "high volatility",
-                "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-              }
-            ],
-            "risks": [
-              "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-              "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-              "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-            "raw_packet": {
-              "ticker": "DDOG",
-              "company": "Datadog",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Price Acceleration",
-                  "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirming Volume",
-                  "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish",
-                  "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "high volatility",
-                  "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-                }
-              ],
-              "risks": [
-                "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-                "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-                "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-              ],
-              "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-              "core_insight": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "DDOG",
-        "company": "Datadog",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -855,6 +600,281 @@
             }
           }
         }
+      },
+      {
+        "ticker": "DDOG",
+        "company": "Datadog",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+        "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Muted Negative Reaction",
+            "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Bearish Long-Term Trend",
+            "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Crossover",
+            "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum",
+            "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Range-Bound Conditions",
+            "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+          },
+          {
+            "type": "Volatility",
+            "signal": "High Instability",
+            "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.01%"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.86x"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "elevated drawdown risk",
+            "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+          }
+        ],
+        "risks": [
+          "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+          "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+          "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+        ],
+        "citations": [],
+        "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+        "raw_packet": {
+          "ticker": "DDOG",
+          "company": "Datadog",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+          "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Muted Negative Reaction",
+              "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Long-Term Trend",
+              "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Crossover",
+              "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+            },
+            {
+              "type": "Volatility",
+              "signal": "High Instability",
+              "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.86x"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "elevated drawdown risk",
+              "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+            }
+          ],
+          "risks": [
+            "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+            "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+            "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+          ],
+          "citations": [],
+          "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+          "raw_packet": {
+            "ticker": "DDOG",
+            "company": "Datadog",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+            "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Muted Negative Reaction",
+                "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Long-Term Trend",
+                "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Crossover",
+                "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+              },
+              {
+                "type": "Volatility",
+                "signal": "High Instability",
+                "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.86x"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "elevated drawdown risk",
+                "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+              }
+            ],
+            "risks": [
+              "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+              "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+              "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+            ],
+            "citations": [],
+            "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+            "raw_packet": {
+              "ticker": "DDOG",
+              "company": "Datadog",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Muted Negative Reaction",
+                  "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Long-Term Trend",
+                  "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Crossover",
+                  "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "High Instability",
+                  "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.86x"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "elevated drawdown risk",
+                  "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+                }
+              ],
+              "risks": [
+                "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+                "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+                "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+              ],
+              "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+              "core_insight": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
+            }
+          }
+        }
       }
     ]
   },
@@ -864,7 +884,7 @@
       "debate_required": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "Long-term views contain both bullish and bearish calls."
       ]
     },
     "synthesis": {
@@ -879,36 +899,36 @@
           "rationale": "Short-term: The stock's +14% post-earnings rally appears over-extended given the significant growth deceleration implied in the full-year guidance (from 29% to ~19%). In a volatile macro environment, the premium valuation makes the stock vulnerable to a pullback or underperformance as the market digests the slowing growth. Long-term: Datadog is a clear leader in the secular growth market of observability, with a strong AI narrative. The cautious guidance sets a low bar, and continued platform adoption in complex cloud environments should support outperformance over multiple quarters if they execute."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Datadog demonstrated strong sequential improvement in key financial metrics, including revenue, profitability, and cash flow generation. However, the company's valuation is extremely high, with a trailing P/E ratio of over 470, which implies significant growth expectations and poses a risk. The lack of guidance and management commentary warrants a cautious stance despite the strong operational performance."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean bullish on the long-term horizon."
+        "2 agents lean neutral on the short-term horizon."
       ],
       "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
+        "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 1,
+        "Bullish": 0,
+        "Neutral": 2,
         "Bearish": 1
       },
       "long_stance_counts": {
-        "Bullish": 2,
+        "Bullish": 1,
         "Neutral": 1,
-        "Bearish": 0
+        "Bearish": 1
       },
       "agent_packets": [
         {
@@ -1437,325 +1457,6 @@
         {
           "ticker": "DDOG",
           "company": "Datadog",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-          "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Price Acceleration",
-              "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirming Volume",
-              "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish",
-              "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "high volatility",
-              "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-            }
-          ],
-          "risks": [
-            "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-            "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-            "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-          "raw_packet": {
-            "ticker": "DDOG",
-            "company": "Datadog",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-            "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Price Acceleration",
-                "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirming Volume",
-                "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish",
-                "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "high volatility",
-                "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-              }
-            ],
-            "risks": [
-              "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-              "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-              "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-            "raw_packet": {
-              "ticker": "DDOG",
-              "company": "Datadog",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-              "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Price Acceleration",
-                  "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirming Volume",
-                  "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish",
-                  "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "high volatility",
-                  "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-                }
-              ],
-              "risks": [
-                "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-                "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-                "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-              "raw_packet": {
-                "ticker": "DDOG",
-                "company": "Datadog",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bullish",
-                "confidence": 0.85,
-                "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-                "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Bullish Trend Alignment",
-                    "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Accelerating Bullish Momentum",
-                    "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Overbought Condition",
-                    "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "Strong Price Acceleration",
-                    "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Confirming Volume",
-                    "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Market Outperformance",
-                    "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "High Volatility Bullish",
-                    "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "high volatility",
-                    "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "elevated drawdown risk",
-                    "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-                  }
-                ],
-                "risks": [
-                  "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-                  "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-                  "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-                "raw_packet": {
-                  "ticker": "DDOG",
-                  "company": "Datadog",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.85,
-                  "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Bullish Trend Alignment",
-                      "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Accelerating Bullish Momentum",
-                      "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Overbought Condition",
-                      "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "Strong Price Acceleration",
-                      "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Confirming Volume",
-                      "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Market Outperformance",
-                      "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "High Volatility Bullish",
-                      "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "high volatility",
-                      "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "elevated drawdown risk",
-                      "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-                    }
-                  ],
-                  "risks": [
-                    "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-                    "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-                    "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-                  ],
-                  "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-                  "core_insight": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "DDOG",
-          "company": "Datadog",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1957,74 +1658,422 @@
               }
             }
           }
+        },
+        {
+          "ticker": "DDOG",
+          "company": "Datadog",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+          "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Muted Negative Reaction",
+              "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Long-Term Trend",
+              "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Crossover",
+              "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+            },
+            {
+              "type": "Volatility",
+              "signal": "High Instability",
+              "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.86x"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "elevated drawdown risk",
+              "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+            }
+          ],
+          "risks": [
+            "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+            "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+            "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+          ],
+          "citations": [],
+          "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+          "raw_packet": {
+            "ticker": "DDOG",
+            "company": "Datadog",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+            "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Muted Negative Reaction",
+                "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Long-Term Trend",
+                "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Crossover",
+                "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+              },
+              {
+                "type": "Volatility",
+                "signal": "High Instability",
+                "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.86x"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "elevated drawdown risk",
+                "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+              }
+            ],
+            "risks": [
+              "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+              "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+              "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+            ],
+            "citations": [],
+            "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+            "raw_packet": {
+              "ticker": "DDOG",
+              "company": "Datadog",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+              "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Muted Negative Reaction",
+                  "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Long-Term Trend",
+                  "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Crossover",
+                  "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "High Instability",
+                  "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.86x"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "elevated drawdown risk",
+                  "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+                }
+              ],
+              "risks": [
+                "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+                "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+                "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+              ],
+              "citations": [],
+              "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+              "raw_packet": {
+                "ticker": "DDOG",
+                "company": "Datadog",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bearish",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+                "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Muted Negative Reaction",
+                    "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Bearish Long-Term Trend",
+                    "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Bullish Momentum Crossover",
+                    "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Neutral Momentum",
+                    "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "Range-Bound Conditions",
+                    "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "High Instability",
+                    "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.01%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "weak participation",
+                    "evidence": "Volume spike ratio 0.86x"
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "elevated drawdown risk",
+                    "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+                  }
+                ],
+                "risks": [
+                  "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+                  "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+                  "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+                ],
+                "citations": [],
+                "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+                "raw_packet": {
+                  "ticker": "DDOG",
+                  "company": "Datadog",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.7,
+                  "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Muted Negative Reaction",
+                      "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Bearish Long-Term Trend",
+                      "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Bullish Momentum Crossover",
+                      "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Neutral Momentum",
+                      "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "Range-Bound Conditions",
+                      "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "High Instability",
+                      "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.01%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "weak participation",
+                      "evidence": "Volume spike ratio 0.86x"
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "elevated drawdown risk",
+                      "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+                    }
+                  ],
+                  "risks": [
+                    "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+                    "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+                    "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+                  ],
+                  "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+                  "core_insight": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "revision",
-        "agreement": [
-          "I agree with the market_technical agent's evidence that the stock is technically overbought (RSI at 71.05) and extended from its moving averages. This evidence directly supports my short-term Bearish stance.",
-          "I agree with the fundamental agent's evidence of an 'extremely high valuation' (Trailing P/E of 473), which is a key component of my rationale for short-term caution.",
-          "I agree with the fundamental agent's data points showing strong sequential operational performance, including revenue growth, a swing to operating profit, and robust free cash flow. This evidence supports my long-term Bullish thesis.",
-          "I agree with the market_technical agent's evidence of a strong underlying long-term trend (price above 200-day MA, bullish MACD), which aligns with my long-term Bullish stance."
-        ],
-        "disagreement": [
-          "I disagree with the market_technical agent's conclusion of a 'Bullish' short-term stance. While acknowledging the bullish trend signals, I place higher weight on the overbought and mean-reversion risk signals (overbought RSI, price extension) as the primary driver for the immediate-term outlook.",
-          "I place low weight on the fundamental agent's overall 'Neutral' stance and low confidence (0.3). Their analysis explicitly states it is missing company guidance, which is a critical input that my agent's view possesses. My analysis incorporates the known growth deceleration in the guidance, making my stance more informed."
-        ],
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.6,
+        "response_type": "CIO_committee_revision",
+        "agreement": {
+          "statement": "I concur with key evidence from the other agents that tempers my original view. I agree with the `fundamental` agent's quantitative data point of an 'extremely high' valuation (Trailing P/E > 470), which provides a concrete anchor for my qualitative 'premium valuation' concern. I also agree with the `market_technical` agent's primary observation that the stock is in a 'Bearish Long-Term Trend' (price below 50/200-day MAs) and is a significant market laggard, which presents a major challenge to my original long-term bullish thesis.",
+          "evidence_sources": [
+            "fundamental",
+            "market_technical"
+          ]
+        },
+        "disagreement": {
+          "statement": "My primary point of disagreement is with the `market_technical` agent's characterization of the earnings reaction as a 'Muted Negative Reaction' of -0.74%. My evidence, based on multiple news citations, indicates a significant positive rally of 8-14%. This is a critical factual discrepancy; my short-term thesis was predicated on this rally being over-extended. I also assign lower weight to the `fundamental` agent's overall 'Neutral' stance, as it is explicitly based on missing guidance information which my agent possesses and has incorporated.",
+          "evidence_sources": [
+            "market_technical",
+            "fundamental"
+          ]
+        },
+        "revised_short_term_stance": "Neutral",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.5,
+        "revision_rationale": "I am downgrading both my short-term and long-term stances to 'Neutral' and reducing confidence. The conflicting evidence regarding the immediate post-earnings price action makes my initial 'Bearish' short-term call on an over-extended rally untenable; a 'Neutral' stance better reflects the market's apparent indecision between a strong quarter and weak guidance. For the long term, while the fundamental growth story remains intact, the `market_technical` agent's evidence of a persistent downtrend and the `fundamental` agent's stark valuation metrics are too significant to maintain a 'Bullish' view. The stock is now a 'show-me' story, justifying a neutral stance until it can demonstrably outperform guidance and reverse the technical trend.",
         "evidence_needed": [
-          "Sell-side analyst commentary that specifically reconciles the high valuation and strong momentum with the company's cautious, decelerating growth guidance.",
-          "Data on institutional investor positioning post-earnings to gauge whether the rally is driven by new money or short covering.",
-          "Intra-quarter data or channel checks on cloud consumption trends to get a leading indicator on whether Datadog is tracking to beat its conservative guidance."
+          "A definitive, time-stamped reconciliation of the post-earnings price action. My news sources report a double-digit rally, while the technical agent reports a slight loss. Clarifying whether the market reaction was euphoric or muted is critical to interpreting investor sentiment and validating any short-term thesis."
         ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the news_macro agent's key finding that Datadog's forward guidance implies a significant growth deceleration to ~19% from 29%; this was a critical missing piece of data. I also concur that Datadog is a leader in the secular growth observability market with a strong AI narrative. I agree with the market_technical agent's factual observation that the stock is in a long-term technical downtrend and has underperformed the broader market.",
+        "disagreement": "I disagree with the news_macro agent's long-term Bullish stance. From a fundamental perspective, the newly revealed growth deceleration to ~19% makes the company's extremely high valuation (Forward P/E of 55.5, Trailing P/E of 473) difficult to justify, increasing long-term risk. I also assign low weight to the market_technical agent's assessment of a 'Muted Negative Reaction' to earnings, as multiple news citations point to a strong initial positive stock move.",
+        "revised_short_term_stance": {
+          "stance": "Bearish",
+          "rationale": "My original Neutral stance was based on strong fundamentals balanced by high valuation and missing information. The new evidence confirms growth is decelerating significantly (to ~19%). This fundamental headwind, combined with the extremely high valuation, outweighs the strong Q4 performance, warranting a Bearish short-term view."
+        },
+        "revised_long_term_stance": {
+          "stance": "Bearish",
+          "rationale": "I am revising my stance from Neutral to Bearish. The confirmation of a growth slowdown to the sub-20% range fundamentally alters the long-term investment case that was built on hyper-growth. The secular tailwinds mentioned by the news_macro agent are valid, but they do not justify the current valuation if growth has structurally slowed to this degree. The risk of multiple compression is now the dominant long-term factor."
+        },
+        "revised_confidence": {
+          "confidence": 0.7,
+          "rationale": "Confidence increases from 0.3 to 0.7. My initial low confidence was explicitly due to the lack of forward guidance and management commentary. The news_macro agent's evidence filled this critical gap, allowing for a much more complete and confident fundamental assessment."
+        },
+        "evidence_needed": "To further refine this view, a detailed competitive analysis is required. Specifically, I need a quantitative comparison of Datadog's forward growth rates, profit margins, and valuation multiples (EV/Sales, Forward P/E) against its direct observability peers like Dynatrace (DT) and Elastic (ESTC) to better contextualize its market position and valuation following the revised guidance."
       },
       {
         "response_type": "revision",
         "agreement": {
-          "agreed_with": "news_macro",
-          "evidence": "I agree with the news_macro agent's assessment that the stock's recent rally is over-extended, especially in light of the new fundamental context. The news agent's key insight that full-year guidance implies a significant growth deceleration provides a strong rationale for the pullback risk that my own technical indicators (overbought RSI, price extension above MAs) were already flagging. This context helps explain *why* a pullback is likely, rather than just observing the technical condition.",
-          "impact": "This new information provides a fundamental catalyst for the technical risks I had identified, making them more immediate and credible."
+          "news_macro": [
+            "I agree that the post-earnings reaction was strongly positive, contrary to my initial evidence. The news agent's citations of an 8-14% climb are a decisive piece of evidence that invalidates my 'Muted Negative Reaction' signal.",
+            "I agree with the assessment that the company issued 'cautious' full-year guidance implying a significant growth deceleration. This is a critical fundamental factor that I was missing.",
+            "I agree that the AI narrative is a powerful driver for the stock, explaining the market's willingness to look past the decelerating growth in the short term."
+          ],
+          "fundamental": [
+            "I agree with the finding of an 'extremely high valuation', specifically the Trailing P/E of over 470. This is a key risk factor that supports a more cautious long-term view.",
+            "I agree with the data showing strong sequential improvement in revenue, profitability, and cash flow, which provides the fundamental justification for the positive stock reaction."
+          ]
         },
         "disagreement": {
-          "disagreed_with": "self",
-          "evidence": "I disagree with my original unqualified 'Bullish' short-term stance. While the technical picture of a breakout on high volume and momentum is factually correct, it lacks the crucial context of the earnings report. The rally is now understood as a reaction to a Q4 beat, but the 'cautious guidance' for 2026, as highlighted by the news_macro agent, creates a significant headwind. The technical strength is now pitted against a negative fundamental narrative, making a continued, uninterrupted rally less likely.",
-          "impact": "The initial 'Bullish' stance is no longer tenable as it over-weights the momentum and under-weights the increased probability of a near-term consolidation or pullback. The risk/reward for short-term longs has deteriorated."
+          "market_technical": [
+            "My original key signal, 'Muted Negative Reaction', is incorrect. The evidence provided by the news_macro agent is overwhelming and demonstrates a strong positive market reaction. My data point of a -0.74% return was clearly not representative of the event's true impact.",
+            "My 'Bearish Long-Term Trend' signal, based on price relative to the 50 and 200-day moving averages, is now highly suspect. The significant post-earnings rally described by the news_macro agent has likely changed this technical picture entirely. My price data is outdated."
+          ]
         },
-        "revised_short_term_stance": "Neutral",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.6,
-        "revised_confidence_rationale": "Confidence is reduced from 0.85 to 0.60. My original high confidence was based on the alignment of multiple technical indicators. The introduction of a conflicting fundamental narrative (strong Q4 vs. weak guidance) creates significant uncertainty. The short-term path is now a contest between bullish technical momentum and a bearish fundamental catalyst, reducing overall predictability.",
-        "stance_change_rationale": "The short-term stance is revised from 'Bullish' to 'Neutral' to reflect the conflict between the strong, but overbought, technical chart and the fundamental headwind of decelerating growth guidance. While the breakout is real, the risk of mean reversion or consolidation is now significantly elevated. The long-term 'Bullish' stance is maintained, as the price action above the 200-day MA remains a powerful long-term signal, and the news_macro agent's long-term view corroborates the underlying secular growth story.",
+        "revised_short_term_stance": "Bullish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.8,
         "evidence_needed": [
-          "Price action over the next 5-10 trading sessions to see if the stock can consolidate constructively and hold key support levels (e.g., near the breakout point around $138) after the post-earnings surge.",
-          "A cooling-off of the RSI below 70 without a significant price breakdown, which would indicate healthy consolidation rather than a reversal.",
-          "Volume patterns during any potential pullback; low volume on down days would suggest the uptrend remains intact."
-        ]
-      },
-      {
-        "response_type": "revised_view",
-        "agreement": [
-          "I agree with the news_macro agent's core evidence that Datadog reported a strong Q4 beat but provided cautious forward guidance implying growth deceleration. This fills the primary information gap identified in my original analysis.",
-          "I agree with the news_macro agent's long-term bullish rationale. The evidence of Datadog's leadership in the secular growth observability market, coupled with a strong AI narrative and a pattern of setting a low bar with guidance, strengthens the long-term investment thesis.",
-          "I agree with the news_macro agent's assessment that the stock's recent rally may be over-extended in the short term, given the new information about growth deceleration.",
-          "I agree with the market_technical agent's data points showing an overbought RSI (71.05) and significant price extension from short-term moving averages. This technical evidence supports the fundamental view that the stock is ripe for a short-term pullback or consolidation."
-        ],
-        "disagreement": [
-          "I disagree with the market_technical agent's overall short-term Bullish stance. While their indicators accurately reflect the strong rally that has already occurred, their own risk factors (overbought RSI, price extension), when combined with the news_macro agent's evidence of decelerating growth guidance, point to a higher probability of a near-term pullback. The technical strength appears to be a lagging indicator of the news event.",
-          "I place less weight on the market_technical agent's analysis for the long-term stance. While a breakout above the 200-day MA is a positive signal, the long-term outlook is more dependent on the fundamental drivers of growth, profitability, and market positioning, which were better captured by the news_macro agent.",
-          "I now disagree with my own original Neutral long-term stance. The new evidence provided by the news_macro agent provides the necessary context (secular trends, market leadership) to adopt a more constructive long-term view, despite the high valuation."
-        ],
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bullish",
-        "revised_confidence": 0.7,
-        "evidence_needed": [
-          "Management commentary from the earnings call transcript to understand the tone and specific drivers behind the cautious guidance.",
-          "Updated analyst consensus estimates and price targets post-earnings to gauge street sentiment.",
-          "Specific metrics on customer growth, particularly for customers with high annual recurring revenue (ARR) and adoption rates for newer platform modules."
+          "Updated price and volume data to confirm the magnitude and character of the post-earnings rally.",
+          "Current price relative to the 50-day and 200-day moving averages to re-evaluate the long-term trend.",
+          "Updated RSI and other momentum indicators following the rally to assess if the stock is now in overbought territory."
         ]
       }
     ],
@@ -2033,9 +2082,9 @@
         "ticker": "DDOG",
         "company": "Datadog",
         "agent_name": "news_macro",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.6,
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.5,
         "confidence_rationale": "Confidence is moderate. The core data (Q4 results, 2026 guidance) is directly from the company, providing a solid factual basis. The massive post-earnings stock reaction is also a fact. However, the short-term stance is a tactical call against strong momentum fueled by the AI narrative, making it inherently uncertain. The long-term view depends on the 'cautious guidance' being truly beatable, which is an assumption.",
         "stance_rationale": "Short-term: The stock's +14% post-earnings rally appears over-extended given the significant growth deceleration implied in the full-year guidance (from 29% to ~19%). In a volatile macro environment, the premium valuation makes the stock vulnerable to a pullback or underperformance as the market digests the slowing growth. Long-term: Datadog is a clear leader in the secular growth market of observability, with a strong AI narrative. The cautious guidance sets a low bar, and continued platform adoption in complex cloud environments should support outperformance over multiple quarters if they execute.",
         "key_signals": [
@@ -2422,302 +2471,27 @@
           }
         },
         "debate_response": {
-          "response_type": "revision",
-          "agreement": [
-            "I agree with the market_technical agent's evidence that the stock is technically overbought (RSI at 71.05) and extended from its moving averages. This evidence directly supports my short-term Bearish stance.",
-            "I agree with the fundamental agent's evidence of an 'extremely high valuation' (Trailing P/E of 473), which is a key component of my rationale for short-term caution.",
-            "I agree with the fundamental agent's data points showing strong sequential operational performance, including revenue growth, a swing to operating profit, and robust free cash flow. This evidence supports my long-term Bullish thesis.",
-            "I agree with the market_technical agent's evidence of a strong underlying long-term trend (price above 200-day MA, bullish MACD), which aligns with my long-term Bullish stance."
-          ],
-          "disagreement": [
-            "I disagree with the market_technical agent's conclusion of a 'Bullish' short-term stance. While acknowledging the bullish trend signals, I place higher weight on the overbought and mean-reversion risk signals (overbought RSI, price extension) as the primary driver for the immediate-term outlook.",
-            "I place low weight on the fundamental agent's overall 'Neutral' stance and low confidence (0.3). Their analysis explicitly states it is missing company guidance, which is a critical input that my agent's view possesses. My analysis incorporates the known growth deceleration in the guidance, making my stance more informed."
-          ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "evidence_needed": [
-            "Sell-side analyst commentary that specifically reconciles the high valuation and strong momentum with the company's cautious, decelerating growth guidance.",
-            "Data on institutional investor positioning post-earnings to gauge whether the rally is driven by new money or short covering.",
-            "Intra-quarter data or channel checks on cloud consumption trends to get a leading indicator on whether Datadog is tracking to beat its conservative guidance."
-          ]
-        }
-      },
-      {
-        "ticker": "DDOG",
-        "company": "Datadog",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.6,
-        "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-        "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish Trend Alignment",
-            "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-          },
-          {
-            "type": "MACD",
-            "signal": "Accelerating Bullish Momentum",
-            "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Overbought Condition",
-            "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-          },
-          {
-            "type": "Returns",
-            "signal": "Strong Price Acceleration",
-            "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-          },
-          {
-            "type": "Volume",
-            "signal": "Confirming Volume",
-            "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish",
-            "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-          },
-          {
-            "type": "Volatility",
-            "signal": "high volatility",
-            "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-          },
-          {
-            "type": "Drawdown",
-            "signal": "elevated drawdown risk",
-            "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-          }
-        ],
-        "risks": [
-          "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-          "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-          "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-        "raw_packet": {
-          "ticker": "DDOG",
-          "company": "Datadog",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-          "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish Trend Alignment",
-              "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-            },
-            {
-              "type": "MACD",
-              "signal": "Accelerating Bullish Momentum",
-              "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Overbought Condition",
-              "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-            },
-            {
-              "type": "Returns",
-              "signal": "Strong Price Acceleration",
-              "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-            },
-            {
-              "type": "Volume",
-              "signal": "Confirming Volume",
-              "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish",
-              "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-            },
-            {
-              "type": "Volatility",
-              "signal": "high volatility",
-              "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-            },
-            {
-              "type": "Drawdown",
-              "signal": "elevated drawdown risk",
-              "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-            }
-          ],
-          "risks": [
-            "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-            "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-            "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-          "raw_packet": {
-            "ticker": "DDOG",
-            "company": "Datadog",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-            "stance_rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish Trend Alignment",
-                "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-              },
-              {
-                "type": "MACD",
-                "signal": "Accelerating Bullish Momentum",
-                "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Overbought Condition",
-                "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-              },
-              {
-                "type": "Returns",
-                "signal": "Strong Price Acceleration",
-                "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-              },
-              {
-                "type": "Volume",
-                "signal": "Confirming Volume",
-                "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish",
-                "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-              },
-              {
-                "type": "Volatility",
-                "signal": "high volatility",
-                "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-              },
-              {
-                "type": "Drawdown",
-                "signal": "elevated drawdown risk",
-                "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-              }
-            ],
-            "risks": [
-              "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-              "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-              "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-            "raw_packet": {
-              "ticker": "DDOG",
-              "company": "Datadog",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bullish",
-              "confidence": 0.85,
-              "confidence_rationale": "Confidence is high due to strong alignment across multiple indicators. Price is above key moving averages (20, 50, 200), MACD shows strong bullish momentum, and the stock is outperforming its benchmark. The primary tempering factors are the overbought RSI and high volatility, which introduce pullback risk but do not negate the prevailing trend as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish Trend Alignment",
-                  "evidence": "Price at 146.69 is decisively above the MA20 (125.26), MA50 (122.32), and MA200 (138.10), indicating a bullish structure across all timeframes."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Accelerating Bullish Momentum",
-                  "evidence": "A strong bullish crossover is in effect, with the MACD line (5.13) significantly above the signal line (3.01) and a large positive histogram (2.12)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Overbought Condition",
-                  "evidence": "RSI is at 71.05, a level considered overbought, suggesting the recent powerful rally may be overextended."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "Strong Price Acceleration",
-                  "evidence": "The stock surged with recent daily returns of +6.3% and +4.4%, confirming strong upward momentum."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Confirming Volume",
-                  "evidence": "The price advance was supported by a volume spike of 1.35x the average, indicating healthy conviction behind the move."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock has outperformed its benchmark (SPY) by 9.9% over the measured period, indicating market leadership."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish",
-                  "evidence": "The prevailing market regime is classified as 'high_volatility_bullish', accurately describing the strong but erratic uptrend."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "high volatility",
-                  "evidence": "Annualized volatility 54.97%, Recent 56.15%"
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "elevated drawdown risk",
-                  "evidence": "Current drawdown -26.55%, Max drawdown -48.62%"
-                }
-              ],
-              "risks": [
-                "The RSI reading of 71.05 indicates the stock is in overbought territory, increasing the potential for a short-term pullback or consolidation.",
-                "Price is significantly extended from its short-term moving averages (17.1% above MA20), suggesting a risk of mean reversion.",
-                "High annualized volatility (54.97%) signifies a high-risk environment with the potential for large and sudden price swings."
-              ],
-              "summary": "As of 2026/02/12, DDOG exhibited a strong bullish technical posture. A sharp price advance on confirming volume pushed the stock above all key moving averages, signaling a definitive uptrend. Momentum indicators like MACD were strongly bullish. While the stock was outperforming the broader market, signs of overextension, such as an overbought RSI and high volatility, pointed to elevated risk of a near-term pullback.",
-              "core_insight": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
+          "response_type": "CIO_committee_revision",
           "agreement": {
-            "agreed_with": "news_macro",
-            "evidence": "I agree with the news_macro agent's assessment that the stock's recent rally is over-extended, especially in light of the new fundamental context. The news agent's key insight that full-year guidance implies a significant growth deceleration provides a strong rationale for the pullback risk that my own technical indicators (overbought RSI, price extension above MAs) were already flagging. This context helps explain *why* a pullback is likely, rather than just observing the technical condition.",
-            "impact": "This new information provides a fundamental catalyst for the technical risks I had identified, making them more immediate and credible."
+            "statement": "I concur with key evidence from the other agents that tempers my original view. I agree with the `fundamental` agent's quantitative data point of an 'extremely high' valuation (Trailing P/E > 470), which provides a concrete anchor for my qualitative 'premium valuation' concern. I also agree with the `market_technical` agent's primary observation that the stock is in a 'Bearish Long-Term Trend' (price below 50/200-day MAs) and is a significant market laggard, which presents a major challenge to my original long-term bullish thesis.",
+            "evidence_sources": [
+              "fundamental",
+              "market_technical"
+            ]
           },
           "disagreement": {
-            "disagreed_with": "self",
-            "evidence": "I disagree with my original unqualified 'Bullish' short-term stance. While the technical picture of a breakout on high volume and momentum is factually correct, it lacks the crucial context of the earnings report. The rally is now understood as a reaction to a Q4 beat, but the 'cautious guidance' for 2026, as highlighted by the news_macro agent, creates a significant headwind. The technical strength is now pitted against a negative fundamental narrative, making a continued, uninterrupted rally less likely.",
-            "impact": "The initial 'Bullish' stance is no longer tenable as it over-weights the momentum and under-weights the increased probability of a near-term consolidation or pullback. The risk/reward for short-term longs has deteriorated."
+            "statement": "My primary point of disagreement is with the `market_technical` agent's characterization of the earnings reaction as a 'Muted Negative Reaction' of -0.74%. My evidence, based on multiple news citations, indicates a significant positive rally of 8-14%. This is a critical factual discrepancy; my short-term thesis was predicated on this rally being over-extended. I also assign lower weight to the `fundamental` agent's overall 'Neutral' stance, as it is explicitly based on missing guidance information which my agent possesses and has incorporated.",
+            "evidence_sources": [
+              "market_technical",
+              "fundamental"
+            ]
           },
           "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "revised_confidence_rationale": "Confidence is reduced from 0.85 to 0.60. My original high confidence was based on the alignment of multiple technical indicators. The introduction of a conflicting fundamental narrative (strong Q4 vs. weak guidance) creates significant uncertainty. The short-term path is now a contest between bullish technical momentum and a bearish fundamental catalyst, reducing overall predictability.",
-          "stance_change_rationale": "The short-term stance is revised from 'Bullish' to 'Neutral' to reflect the conflict between the strong, but overbought, technical chart and the fundamental headwind of decelerating growth guidance. While the breakout is real, the risk of mean reversion or consolidation is now significantly elevated. The long-term 'Bullish' stance is maintained, as the price action above the 200-day MA remains a powerful long-term signal, and the news_macro agent's long-term view corroborates the underlying secular growth story.",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.5,
+          "revision_rationale": "I am downgrading both my short-term and long-term stances to 'Neutral' and reducing confidence. The conflicting evidence regarding the immediate post-earnings price action makes my initial 'Bearish' short-term call on an over-extended rally untenable; a 'Neutral' stance better reflects the market's apparent indecision between a strong quarter and weak guidance. For the long term, while the fundamental growth story remains intact, the `market_technical` agent's evidence of a persistent downtrend and the `fundamental` agent's stark valuation metrics are too significant to maintain a 'Bullish' view. The stock is now a 'show-me' story, justifying a neutral stance until it can demonstrably outperform guidance and reverse the technical trend.",
           "evidence_needed": [
-            "Price action over the next 5-10 trading sessions to see if the stock can consolidate constructively and hold key support levels (e.g., near the breakout point around $138) after the post-earnings surge.",
-            "A cooling-off of the RSI below 70 without a significant price breakdown, which would indicate healthy consolidation rather than a reversal.",
-            "Volume patterns during any potential pullback; low volume on down days would suggest the uptrend remains intact."
+            "A definitive, time-stamped reconciliation of the post-earnings price action. My news sources report a double-digit rally, while the technical agent reports a slight loss. Clarifying whether the market reaction was euphoric or muted is critical to interpreting investor sentiment and validating any short-term thesis."
           ]
         }
       },
@@ -2725,9 +2499,9 @@
         "ticker": "DDOG",
         "company": "Datadog",
         "agent_name": "fundamental",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.7,
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
         "confidence_rationale": "Confidence is low due to a significant amount of missing information critical for a comprehensive analysis. The absence of analyst consensus estimates, company guidance, and management commentary from the earnings call transcript prevents a full assessment of performance context and future outlook.",
         "stance_rationale": "Datadog demonstrated strong sequential improvement in key financial metrics, including revenue, profitability, and cash flow generation. However, the company's valuation is extremely high, with a trailing P/E ratio of over 470, which implies significant growth expectations and poses a risk. The lack of guidance and management commentary warrants a cautious stance despite the strong operational performance.",
         "key_signals": [
@@ -2886,25 +2660,324 @@
           }
         },
         "debate_response": {
-          "response_type": "revised_view",
-          "agreement": [
-            "I agree with the news_macro agent's core evidence that Datadog reported a strong Q4 beat but provided cautious forward guidance implying growth deceleration. This fills the primary information gap identified in my original analysis.",
-            "I agree with the news_macro agent's long-term bullish rationale. The evidence of Datadog's leadership in the secular growth observability market, coupled with a strong AI narrative and a pattern of setting a low bar with guidance, strengthens the long-term investment thesis.",
-            "I agree with the news_macro agent's assessment that the stock's recent rally may be over-extended in the short term, given the new information about growth deceleration.",
-            "I agree with the market_technical agent's data points showing an overbought RSI (71.05) and significant price extension from short-term moving averages. This technical evidence supports the fundamental view that the stock is ripe for a short-term pullback or consolidation."
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's key finding that Datadog's forward guidance implies a significant growth deceleration to ~19% from 29%; this was a critical missing piece of data. I also concur that Datadog is a leader in the secular growth observability market with a strong AI narrative. I agree with the market_technical agent's factual observation that the stock is in a long-term technical downtrend and has underperformed the broader market.",
+          "disagreement": "I disagree with the news_macro agent's long-term Bullish stance. From a fundamental perspective, the newly revealed growth deceleration to ~19% makes the company's extremely high valuation (Forward P/E of 55.5, Trailing P/E of 473) difficult to justify, increasing long-term risk. I also assign low weight to the market_technical agent's assessment of a 'Muted Negative Reaction' to earnings, as multiple news citations point to a strong initial positive stock move.",
+          "revised_short_term_stance": {
+            "stance": "Bearish",
+            "rationale": "My original Neutral stance was based on strong fundamentals balanced by high valuation and missing information. The new evidence confirms growth is decelerating significantly (to ~19%). This fundamental headwind, combined with the extremely high valuation, outweighs the strong Q4 performance, warranting a Bearish short-term view."
+          },
+          "revised_long_term_stance": {
+            "stance": "Bearish",
+            "rationale": "I am revising my stance from Neutral to Bearish. The confirmation of a growth slowdown to the sub-20% range fundamentally alters the long-term investment case that was built on hyper-growth. The secular tailwinds mentioned by the news_macro agent are valid, but they do not justify the current valuation if growth has structurally slowed to this degree. The risk of multiple compression is now the dominant long-term factor."
+          },
+          "revised_confidence": {
+            "confidence": 0.7,
+            "rationale": "Confidence increases from 0.3 to 0.7. My initial low confidence was explicitly due to the lack of forward guidance and management commentary. The news_macro agent's evidence filled this critical gap, allowing for a much more complete and confident fundamental assessment."
+          },
+          "evidence_needed": "To further refine this view, a detailed competitive analysis is required. Specifically, I need a quantitative comparison of Datadog's forward growth rates, profit margins, and valuation multiples (EV/Sales, Forward P/E) against its direct observability peers like Dynatrace (DT) and Elastic (ESTC) to better contextualize its market position and valuation following the revised guidance."
+        }
+      },
+      {
+        "ticker": "DDOG",
+        "company": "Datadog",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+        "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Muted Negative Reaction",
+            "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Bearish Long-Term Trend",
+            "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Bullish Momentum Crossover",
+            "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum",
+            "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "Range-Bound Conditions",
+            "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+          },
+          {
+            "type": "Volatility",
+            "signal": "High Instability",
+            "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.01%"
+          },
+          {
+            "type": "Volume",
+            "signal": "weak participation",
+            "evidence": "Volume spike ratio 0.86x"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "elevated drawdown risk",
+            "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+          }
+        ],
+        "risks": [
+          "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+          "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+          "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+        ],
+        "citations": [],
+        "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+        "raw_packet": {
+          "ticker": "DDOG",
+          "company": "Datadog",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+          "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Muted Negative Reaction",
+              "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Bearish Long-Term Trend",
+              "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Bullish Momentum Crossover",
+              "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "Range-Bound Conditions",
+              "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+            },
+            {
+              "type": "Volatility",
+              "signal": "High Instability",
+              "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.01%"
+            },
+            {
+              "type": "Volume",
+              "signal": "weak participation",
+              "evidence": "Volume spike ratio 0.86x"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "elevated drawdown risk",
+              "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+            }
           ],
-          "disagreement": [
-            "I disagree with the market_technical agent's overall short-term Bullish stance. While their indicators accurately reflect the strong rally that has already occurred, their own risk factors (overbought RSI, price extension), when combined with the news_macro agent's evidence of decelerating growth guidance, point to a higher probability of a near-term pullback. The technical strength appears to be a lagging indicator of the news event.",
-            "I place less weight on the market_technical agent's analysis for the long-term stance. While a breakout above the 200-day MA is a positive signal, the long-term outlook is more dependent on the fundamental drivers of growth, profitability, and market positioning, which were better captured by the news_macro agent.",
-            "I now disagree with my own original Neutral long-term stance. The new evidence provided by the news_macro agent provides the necessary context (secular trends, market leadership) to adopt a more constructive long-term view, despite the high valuation."
+          "risks": [
+            "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+            "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+            "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
           ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
+          "citations": [],
+          "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+          "raw_packet": {
+            "ticker": "DDOG",
+            "company": "Datadog",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+            "stance_rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Muted Negative Reaction",
+                "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Bearish Long-Term Trend",
+                "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Bullish Momentum Crossover",
+                "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "Range-Bound Conditions",
+                "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+              },
+              {
+                "type": "Volatility",
+                "signal": "High Instability",
+                "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.01%"
+              },
+              {
+                "type": "Volume",
+                "signal": "weak participation",
+                "evidence": "Volume spike ratio 0.86x"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "elevated drawdown risk",
+                "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+              }
+            ],
+            "risks": [
+              "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+              "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+              "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+            ],
+            "citations": [],
+            "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+            "raw_packet": {
+              "ticker": "DDOG",
+              "company": "Datadog",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because short-term signals are conflicting (bullish MACD vs. neutral RSI and weak price action), and the post-earnings reaction lacked a clear directional catalyst. This indecision supports a neutral stance but reduces conviction in any single outcome.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Muted Negative Reaction",
+                  "evidence": "Post-earnings return was -0.74% (-0.95% vs. QQQ) on below-average volume (0.73x ratio), indicating a lack of conviction and a non-event for directional traders as of 2026-02-12."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Bearish Long-Term Trend",
+                  "evidence": "The price of $126.13 is significantly below the 50-day MA ($134.20) and 200-day MA ($138.37), confirming a well-established long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Bullish Momentum Crossover",
+                  "evidence": "The MACD line (-3.57) has crossed above the signal line (-4.44), generating a positive histogram (0.87) that signals a potential short-term bullish momentum shift."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -29.07%, identifying it as a clear market laggard."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "The RSI of 49.03 is in neutral territory, suggesting a balance between buying and selling pressure and no immediate overbought or oversold condition."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "Range-Bound Conditions",
+                  "evidence": "The stock is classified as being in a 'range_bound' regime, consistent with the conflicting technical signals and lack of a clear trend."
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "High Instability",
+                  "evidence": "Annualized volatility is high at 54.08%, with recent volatility even higher at 83.58%, indicating significant price instability and risk."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.01%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "weak participation",
+                  "evidence": "Volume spike ratio 0.86x"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "elevated drawdown risk",
+                  "evidence": "Current drawdown -36.85%, Max drawdown -46.56%"
+                }
+              ],
+              "risks": [
+                "The dominant long-term downtrend (price below MA50/MA200) may reassert itself, turning any short-term strength into a bull trap.",
+                "The bullish MACD crossover could fail to generate follow-through, especially after a weak post-earnings reaction, leading to a quick resumption of negative momentum.",
+                "High volatility suggests wide price swings, increasing the risk of being stopped out on positions, even if the general direction is correct."
+              ],
+              "summary": "Datadog exhibits a clear conflict between a bearish long-term trend and mixed short-term signals. The stock remains below key long-term moving averages and is severely underperforming the market. While a recent MACD crossover provides a bullish momentum signal, the RSI is neutral and the critical post-earnings reaction on 2026-02-12 was muted and slightly negative, offering no decisive catalyst. This suggests the stock is likely to remain in a volatile, range-bound state.",
+              "core_insight": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": [
+              "I agree that the post-earnings reaction was strongly positive, contrary to my initial evidence. The news agent's citations of an 8-14% climb are a decisive piece of evidence that invalidates my 'Muted Negative Reaction' signal.",
+              "I agree with the assessment that the company issued 'cautious' full-year guidance implying a significant growth deceleration. This is a critical fundamental factor that I was missing.",
+              "I agree that the AI narrative is a powerful driver for the stock, explaining the market's willingness to look past the decelerating growth in the short term."
+            ],
+            "fundamental": [
+              "I agree with the finding of an 'extremely high valuation', specifically the Trailing P/E of over 470. This is a key risk factor that supports a more cautious long-term view.",
+              "I agree with the data showing strong sequential improvement in revenue, profitability, and cash flow, which provides the fundamental justification for the positive stock reaction."
+            ]
+          },
+          "disagreement": {
+            "market_technical": [
+              "My original key signal, 'Muted Negative Reaction', is incorrect. The evidence provided by the news_macro agent is overwhelming and demonstrates a strong positive market reaction. My data point of a -0.74% return was clearly not representative of the event's true impact.",
+              "My 'Bearish Long-Term Trend' signal, based on price relative to the 50 and 200-day moving averages, is now highly suspect. The significant post-earnings rally described by the news_macro agent has likely changed this technical picture entirely. My price data is outdated."
+            ]
+          },
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Management commentary from the earnings call transcript to understand the tone and specific drivers behind the cautious guidance.",
-            "Updated analyst consensus estimates and price targets post-earnings to gauge street sentiment.",
-            "Specific metrics on customer growth, particularly for customers with high annual recurring revenue (ARR) and adoption rates for newer platform modules."
+            "Updated price and volume data to confirm the magnitude and character of the post-earnings rally.",
+            "Current price relative to the 50-day and 200-day moving averages to re-evaluate the long-term trend.",
+            "Updated RSI and other momentum indicators following the rally to assess if the stock is now in overbought territory."
           ]
         }
       }
@@ -2913,40 +2986,23 @@
   "final_decision": {
     "ticker": "DDOG",
     "company": "Datadog",
-    "final_short_term_stance": "Bearish",
-    "final_long_term_stance": "Bullish",
-    "investment_action": "Wait for Pullback",
-    "position_size_hint": "Small",
-    "confidence": 0.7,
-    "core_thesis": "Datadog is a best-in-class, long-term secular growth leader in the essential observability market, poised to benefit from increasing cloud and AI complexity. However, in the short term, the stock's valuation is stretched and its price has run ahead of fundamentals following a strong Q4 report that was coupled with cautious forward guidance implying significant growth deceleration.",
-    "why_now": "The catalyst is the recent Q4 earnings report. The market has reacted euphorically to the backward-looking beat but has not yet fully priced in the risk from the forward-looking, decelerating growth guidance. This creates a short-term dislocation where the stock is vulnerable to a pullback as the narrative shifts from the beat to the guidance.",
+    "final_short_term_stance": "Neutral",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Watch / No Trade",
+    "position_size_hint": "No new position",
+    "confidence": 0.6,
+    "core_thesis": "Datadog is at a critical inflection point where its strong market leadership, impressive Q4 execution, and powerful AI narrative are colliding with a stark fundamental reality: a significant guided growth deceleration and an extremely high valuation. The stock is now a 'show-me' story, where it must consistently outperform its cautious guidance to justify its premium multiple.",
+    "why_now": "The post-earnings environment has created a clear battleground. The market's initial euphoric reaction to the Q4 beat is directly at odds with the company's own cautious full-year guidance. This disconnect between positive momentum and deteriorating forward-looking fundamentals makes it a critical time to reassess the stock, as the resolution of this conflict will likely dictate the next major move.",
     "key_supporting_evidence": [
-      {
-        "source_agent": "news_macro",
-        "evidence": "Company's full-year guidance implies a significant growth deceleration from 29% to ~19%, creating a fundamental headwind that contradicts the recent price surge."
-      },
-      {
-        "source_agent": "market_technical",
-        "evidence": "The stock is technically overbought with an RSI of 71.05 and is significantly extended from its short-term moving averages (17.1% above MA20), indicating a high probability of mean reversion or consolidation."
-      },
-      {
-        "source_agent": "fundamental",
-        "evidence": "Valuation is extremely high, with a Trailing P/E ratio of 473, suggesting the stock is priced for perfection and is highly sensitive to any negative news or failure to meet lofty expectations."
-      },
-      {
-        "source_agent": "All Agents (Post-Debate)",
-        "evidence": "Unanimous long-term bullish consensus based on Datadog's market leadership, strong platform adoption, AI narrative, and a history of setting a low bar with guidance that it subsequently beats."
-      }
+      "The core conflict is between strong Q4 2025 results (strong sequential revenue growth, swing to operating profit) and weak full-year 2026 guidance implying a growth deceleration from ~29% to ~19%.",
+      "The valuation is extremely high (Trailing P/E > 470, Forward P/E > 55), which is difficult to justify if growth structurally slows to the sub-20% range.",
+      "Datadog is a consensus leader in the secular growth observability market, benefiting from increasing cloud complexity and a strong AI narrative, which provides a floor for the stock.",
+      "The debate process revealed a critical data conflict, with the news agent's evidence of a strong +8-14% post-earnings rally correctly invalidating the technical agent's initial data of a muted negative reaction. This highlights the market's current willingness to favor narrative over guidance."
     ],
     "key_risks": [
-      {
-        "risk": "The primary risk to the short-term Bearish stance is that the market's AI-fueled euphoria and strong momentum completely overshadow the growth deceleration math, causing the stock to continue its upward trend without a meaningful pullback.",
-        "mitigation": "Maintain a strict price discipline for entry. If the stock does not pull back, we will miss the entry but avoid chasing an overextended name. Re-evaluate if the stock consolidates constructively at a higher level."
-      },
-      {
-        "risk": "The long-term thesis could be impaired if competition from Dynatrace (DT) or hyperscalers intensifies more than expected, or if the company's 'beat and raise' cadence falters, suggesting the growth deceleration is structural rather than conservative.",
-        "mitigation": "Monitor customer growth metrics, especially large ARR customers and multi-product adoption rates, in subsequent quarters. Track competitive win rates and commentary from both DDOG and DT."
-      }
+      "Bull Case Risk: The AI-fueled narrative and strong market momentum could continue to drive the stock higher, causing it to ignore the fundamental growth deceleration for several more quarters.",
+      "Bear Case Risk: Management's guidance may be overly conservative ('sandbagging'). If the company easily beats and raises expectations throughout the year, the growth narrative will be restored, and the stock could rally significantly.",
+      "Valuation Compression Risk: The primary long-term risk is that the market re-rates DDOG to a valuation multiple consistent with a sub-20% growth company, which could lead to significant downside even if the company meets its operational targets."
     ],
     "agent_view_summary": [
       {
@@ -2957,147 +3013,165 @@
         "rationale": "Short-term: The stock's +14% post-earnings rally appears over-extended given the significant growth deceleration implied in the full-year guidance (from 29% to ~19%). In a volatile macro environment, the premium valuation makes the stock vulnerable to a pullback or underperformance as the market digests the slowing growth. Long-term: Datadog is a clear leader in the secular growth market of observability, with a strong AI narrative. The cautious guidance sets a low bar, and continued platform adoption in complex cloud environments should support outperformance over multiple quarters if they execute."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bullish",
-        "confidence": 0.85,
-        "rationale": "The dominant technical feature was the powerful, momentum-driven breakout above the 200-day moving average. This established a clear bullish trend across all timeframes, though signs of short-term overextension suggest the rally was mature as of this date."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Datadog demonstrated strong sequential improvement in key financial metrics, including revenue, profitability, and cash flow generation. However, the company's valuation is extremely high, with a trailing P/E ratio of over 470, which implies significant growth expectations and poses a risk. The lack of guidance and management commentary warrants a cautious stance despite the strong operational performance."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The indecisive and low-volume post-earnings reaction failed to resolve the technical conflict between a nascent bullish momentum signal (MACD) and the prevailing long-term downtrend, solidifying a neutral short-term bias due to lack of market conviction."
       }
     ],
     "debate_summary": {
       "debate_triggered": true,
       "conflict_level": "high",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls."
+        "Long-term views contain both bullish and bearish calls."
       ],
       "debate_responses": [
         {
-          "response_type": "revision",
-          "agreement": [
-            "I agree with the market_technical agent's evidence that the stock is technically overbought (RSI at 71.05) and extended from its moving averages. This evidence directly supports my short-term Bearish stance.",
-            "I agree with the fundamental agent's evidence of an 'extremely high valuation' (Trailing P/E of 473), which is a key component of my rationale for short-term caution.",
-            "I agree with the fundamental agent's data points showing strong sequential operational performance, including revenue growth, a swing to operating profit, and robust free cash flow. This evidence supports my long-term Bullish thesis.",
-            "I agree with the market_technical agent's evidence of a strong underlying long-term trend (price above 200-day MA, bullish MACD), which aligns with my long-term Bullish stance."
-          ],
-          "disagreement": [
-            "I disagree with the market_technical agent's conclusion of a 'Bullish' short-term stance. While acknowledging the bullish trend signals, I place higher weight on the overbought and mean-reversion risk signals (overbought RSI, price extension) as the primary driver for the immediate-term outlook.",
-            "I place low weight on the fundamental agent's overall 'Neutral' stance and low confidence (0.3). Their analysis explicitly states it is missing company guidance, which is a critical input that my agent's view possesses. My analysis incorporates the known growth deceleration in the guidance, making my stance more informed."
-          ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
+          "response_type": "CIO_committee_revision",
+          "agreement": {
+            "statement": "I concur with key evidence from the other agents that tempers my original view. I agree with the `fundamental` agent's quantitative data point of an 'extremely high' valuation (Trailing P/E > 470), which provides a concrete anchor for my qualitative 'premium valuation' concern. I also agree with the `market_technical` agent's primary observation that the stock is in a 'Bearish Long-Term Trend' (price below 50/200-day MAs) and is a significant market laggard, which presents a major challenge to my original long-term bullish thesis.",
+            "evidence_sources": [
+              "fundamental",
+              "market_technical"
+            ]
+          },
+          "disagreement": {
+            "statement": "My primary point of disagreement is with the `market_technical` agent's characterization of the earnings reaction as a 'Muted Negative Reaction' of -0.74%. My evidence, based on multiple news citations, indicates a significant positive rally of 8-14%. This is a critical factual discrepancy; my short-term thesis was predicated on this rally being over-extended. I also assign lower weight to the `fundamental` agent's overall 'Neutral' stance, as it is explicitly based on missing guidance information which my agent possesses and has incorporated.",
+            "evidence_sources": [
+              "market_technical",
+              "fundamental"
+            ]
+          },
+          "revised_short_term_stance": "Neutral",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.5,
+          "revision_rationale": "I am downgrading both my short-term and long-term stances to 'Neutral' and reducing confidence. The conflicting evidence regarding the immediate post-earnings price action makes my initial 'Bearish' short-term call on an over-extended rally untenable; a 'Neutral' stance better reflects the market's apparent indecision between a strong quarter and weak guidance. For the long term, while the fundamental growth story remains intact, the `market_technical` agent's evidence of a persistent downtrend and the `fundamental` agent's stark valuation metrics are too significant to maintain a 'Bullish' view. The stock is now a 'show-me' story, justifying a neutral stance until it can demonstrably outperform guidance and reverse the technical trend.",
           "evidence_needed": [
-            "Sell-side analyst commentary that specifically reconciles the high valuation and strong momentum with the company's cautious, decelerating growth guidance.",
-            "Data on institutional investor positioning post-earnings to gauge whether the rally is driven by new money or short covering.",
-            "Intra-quarter data or channel checks on cloud consumption trends to get a leading indicator on whether Datadog is tracking to beat its conservative guidance."
+            "A definitive, time-stamped reconciliation of the post-earnings price action. My news sources report a double-digit rally, while the technical agent reports a slight loss. Clarifying whether the market reaction was euphoric or muted is critical to interpreting investor sentiment and validating any short-term thesis."
           ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's key finding that Datadog's forward guidance implies a significant growth deceleration to ~19% from 29%; this was a critical missing piece of data. I also concur that Datadog is a leader in the secular growth observability market with a strong AI narrative. I agree with the market_technical agent's factual observation that the stock is in a long-term technical downtrend and has underperformed the broader market.",
+          "disagreement": "I disagree with the news_macro agent's long-term Bullish stance. From a fundamental perspective, the newly revealed growth deceleration to ~19% makes the company's extremely high valuation (Forward P/E of 55.5, Trailing P/E of 473) difficult to justify, increasing long-term risk. I also assign low weight to the market_technical agent's assessment of a 'Muted Negative Reaction' to earnings, as multiple news citations point to a strong initial positive stock move.",
+          "revised_short_term_stance": {
+            "stance": "Bearish",
+            "rationale": "My original Neutral stance was based on strong fundamentals balanced by high valuation and missing information. The new evidence confirms growth is decelerating significantly (to ~19%). This fundamental headwind, combined with the extremely high valuation, outweighs the strong Q4 performance, warranting a Bearish short-term view."
+          },
+          "revised_long_term_stance": {
+            "stance": "Bearish",
+            "rationale": "I am revising my stance from Neutral to Bearish. The confirmation of a growth slowdown to the sub-20% range fundamentally alters the long-term investment case that was built on hyper-growth. The secular tailwinds mentioned by the news_macro agent are valid, but they do not justify the current valuation if growth has structurally slowed to this degree. The risk of multiple compression is now the dominant long-term factor."
+          },
+          "revised_confidence": {
+            "confidence": 0.7,
+            "rationale": "Confidence increases from 0.3 to 0.7. My initial low confidence was explicitly due to the lack of forward guidance and management commentary. The news_macro agent's evidence filled this critical gap, allowing for a much more complete and confident fundamental assessment."
+          },
+          "evidence_needed": "To further refine this view, a detailed competitive analysis is required. Specifically, I need a quantitative comparison of Datadog's forward growth rates, profit margins, and valuation multiples (EV/Sales, Forward P/E) against its direct observability peers like Dynatrace (DT) and Elastic (ESTC) to better contextualize its market position and valuation following the revised guidance."
         },
         {
           "response_type": "revision",
           "agreement": {
-            "agreed_with": "news_macro",
-            "evidence": "I agree with the news_macro agent's assessment that the stock's recent rally is over-extended, especially in light of the new fundamental context. The news agent's key insight that full-year guidance implies a significant growth deceleration provides a strong rationale for the pullback risk that my own technical indicators (overbought RSI, price extension above MAs) were already flagging. This context helps explain *why* a pullback is likely, rather than just observing the technical condition.",
-            "impact": "This new information provides a fundamental catalyst for the technical risks I had identified, making them more immediate and credible."
+            "news_macro": [
+              "I agree that the post-earnings reaction was strongly positive, contrary to my initial evidence. The news agent's citations of an 8-14% climb are a decisive piece of evidence that invalidates my 'Muted Negative Reaction' signal.",
+              "I agree with the assessment that the company issued 'cautious' full-year guidance implying a significant growth deceleration. This is a critical fundamental factor that I was missing.",
+              "I agree that the AI narrative is a powerful driver for the stock, explaining the market's willingness to look past the decelerating growth in the short term."
+            ],
+            "fundamental": [
+              "I agree with the finding of an 'extremely high valuation', specifically the Trailing P/E of over 470. This is a key risk factor that supports a more cautious long-term view.",
+              "I agree with the data showing strong sequential improvement in revenue, profitability, and cash flow, which provides the fundamental justification for the positive stock reaction."
+            ]
           },
           "disagreement": {
-            "disagreed_with": "self",
-            "evidence": "I disagree with my original unqualified 'Bullish' short-term stance. While the technical picture of a breakout on high volume and momentum is factually correct, it lacks the crucial context of the earnings report. The rally is now understood as a reaction to a Q4 beat, but the 'cautious guidance' for 2026, as highlighted by the news_macro agent, creates a significant headwind. The technical strength is now pitted against a negative fundamental narrative, making a continued, uninterrupted rally less likely.",
-            "impact": "The initial 'Bullish' stance is no longer tenable as it over-weights the momentum and under-weights the increased probability of a near-term consolidation or pullback. The risk/reward for short-term longs has deteriorated."
+            "market_technical": [
+              "My original key signal, 'Muted Negative Reaction', is incorrect. The evidence provided by the news_macro agent is overwhelming and demonstrates a strong positive market reaction. My data point of a -0.74% return was clearly not representative of the event's true impact.",
+              "My 'Bearish Long-Term Trend' signal, based on price relative to the 50 and 200-day moving averages, is now highly suspect. The significant post-earnings rally described by the news_macro agent has likely changed this technical picture entirely. My price data is outdated."
+            ]
           },
-          "revised_short_term_stance": "Neutral",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.6,
-          "revised_confidence_rationale": "Confidence is reduced from 0.85 to 0.60. My original high confidence was based on the alignment of multiple technical indicators. The introduction of a conflicting fundamental narrative (strong Q4 vs. weak guidance) creates significant uncertainty. The short-term path is now a contest between bullish technical momentum and a bearish fundamental catalyst, reducing overall predictability.",
-          "stance_change_rationale": "The short-term stance is revised from 'Bullish' to 'Neutral' to reflect the conflict between the strong, but overbought, technical chart and the fundamental headwind of decelerating growth guidance. While the breakout is real, the risk of mean reversion or consolidation is now significantly elevated. The long-term 'Bullish' stance is maintained, as the price action above the 200-day MA remains a powerful long-term signal, and the news_macro agent's long-term view corroborates the underlying secular growth story.",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.8,
           "evidence_needed": [
-            "Price action over the next 5-10 trading sessions to see if the stock can consolidate constructively and hold key support levels (e.g., near the breakout point around $138) after the post-earnings surge.",
-            "A cooling-off of the RSI below 70 without a significant price breakdown, which would indicate healthy consolidation rather than a reversal.",
-            "Volume patterns during any potential pullback; low volume on down days would suggest the uptrend remains intact."
-          ]
-        },
-        {
-          "response_type": "revised_view",
-          "agreement": [
-            "I agree with the news_macro agent's core evidence that Datadog reported a strong Q4 beat but provided cautious forward guidance implying growth deceleration. This fills the primary information gap identified in my original analysis.",
-            "I agree with the news_macro agent's long-term bullish rationale. The evidence of Datadog's leadership in the secular growth observability market, coupled with a strong AI narrative and a pattern of setting a low bar with guidance, strengthens the long-term investment thesis.",
-            "I agree with the news_macro agent's assessment that the stock's recent rally may be over-extended in the short term, given the new information about growth deceleration.",
-            "I agree with the market_technical agent's data points showing an overbought RSI (71.05) and significant price extension from short-term moving averages. This technical evidence supports the fundamental view that the stock is ripe for a short-term pullback or consolidation."
-          ],
-          "disagreement": [
-            "I disagree with the market_technical agent's overall short-term Bullish stance. While their indicators accurately reflect the strong rally that has already occurred, their own risk factors (overbought RSI, price extension), when combined with the news_macro agent's evidence of decelerating growth guidance, point to a higher probability of a near-term pullback. The technical strength appears to be a lagging indicator of the news event.",
-            "I place less weight on the market_technical agent's analysis for the long-term stance. While a breakout above the 200-day MA is a positive signal, the long-term outlook is more dependent on the fundamental drivers of growth, profitability, and market positioning, which were better captured by the news_macro agent.",
-            "I now disagree with my own original Neutral long-term stance. The new evidence provided by the news_macro agent provides the necessary context (secular trends, market leadership) to adopt a more constructive long-term view, despite the high valuation."
-          ],
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bullish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "Management commentary from the earnings call transcript to understand the tone and specific drivers behind the cautious guidance.",
-            "Updated analyst consensus estimates and price targets post-earnings to gauge street sentiment.",
-            "Specific metrics on customer growth, particularly for customers with high annual recurring revenue (ARR) and adoption rates for newer platform modules."
+            "Updated price and volume data to confirm the magnitude and character of the post-earnings rally.",
+            "Current price relative to the 50-day and 200-day moving averages to re-evaluate the long-term trend.",
+            "Updated RSI and other momentum indicators following the rally to assess if the stock is now in overbought territory."
           ]
         }
       ]
     },
-    "reason_for_final_decision": "The decision is a direct synthesis of the post-debate agent consensus, which aligns with the deterministic guardrail. The initial conflict in short-term views was resolved during the debate, leading to a strong consensus: all agents are long-term bullish, but the fundamental, technical, and news-flow evidence points to a high probability of a near-term pullback. The news of decelerating growth guidance (from the news_macro agent) provided the crucial context that caused the technical agent to moderate its bullishness and the fundamental agent to firm up its cautious stance. The resulting 'Bearish' short-term and 'Bullish' long-term view is well-supported across all analytical disciplines. Therefore, no CIO override is necessary.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "I am overriding the guardrail's short-term 'Bullish' stance to 'Neutral'. The guardrail was heavily influenced by the technical agent's revised bullishness on the strong price move. However, the debate made it clear that this momentum is in direct conflict with the fundamental agent's now high-conviction bearish view, which is based on the newly-revealed guidance of a major growth deceleration. A Neutral stance better reflects this unresolved tension. I concur with the guardrail's 'Neutral' long-term stance. The debate effectively dismantled the initial bullish case, as all agents converged on the view that the combination of slowing growth and extreme valuation makes the long-term risk/reward balanced at best, pending further evidence of outperformance.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bearish",
-          "confidence": 0.6,
-          "weight": 0.35,
-          "contribution": -0.21
-        },
-        {
-          "agent_name": "market_technical",
           "stance": "Neutral",
-          "confidence": 0.6,
+          "confidence": 0.5,
           "weight": 0.45,
           "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
-          "stance": "Bearish",
-          "confidence": 0.7,
-          "weight": 0.2,
-          "contribution": -0.14
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": 0.32
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
-          "confidence": 0.6,
-          "weight": 0.35,
-          "contribution": 0.21
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bullish",
-          "confidence": 0.6,
-          "weight": 0.2,
-          "contribution": 0.12
+          "stance": "Neutral",
+          "confidence": 0.5,
+          "weight": 0.4,
+          "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
-          "stance": "Bullish",
-          "confidence": 0.7,
-          "weight": 0.45,
-          "contribution": 0.315
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.35,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.8,
+          "weight": 0.25,
+          "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.5645,
-      "long": 1.0
+      "short": 0.5424,
+      "long": 0.0
     },
     "llm_decision_used": true
   }

@@ -11,31 +11,30 @@
         "rationale": "Short-term: The market has decisively punished the stock for its earnings miss and margin guidance. This negative narrative shift, focused on a broken profitability story for a high-multiple stock, will lead to analyst downgrades and fund outflows, causing near-term underperformance. Long-term: The company has explicitly guided for a period of margin pressure due to investments. Until these investments show a clear return in the form of re-accelerated growth or the spending cycle peaks, the stock's valuation multiple will remain compressed, likely causing it to lag the QQQ over the next 1-3 quarters as it transitions into a 'show-me' story."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.7,
-        "rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Shopify reported robust quarter-over-quarter growth in revenue, profitability, and cash flow, highlighting strong operational execution. However, the company's valuation is exceptionally high with a trailing P/E of 135.7, and a conflicting yfinance report of negative earnings growth poses a significant risk. The analysis is constrained by the absence of analyst estimates, management guidance, and an earnings call transcript."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.95,
+        "rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
       }
     ],
     "areas_of_agreement": [
+      "2 agents lean bearish on the short-term horizon.",
       "2 agents lean bearish on the long-term horizon."
     ],
-    "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
-    ],
+    "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
+      "Bullish": 0,
       "Neutral": 1,
-      "Bearish": 1
+      "Bearish": 2
     },
     "long_stance_counts": {
       "Bullish": 0,
@@ -439,261 +438,6 @@
       {
         "ticker": "SHOP",
         "company": "Shopify",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.7,
-        "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-        "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Short-Term Bullish Structure",
-            "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Constructive Momentum",
-            "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-          },
-          {
-            "type": "Volume",
-            "signal": "Increased Participation",
-            "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Drawdown",
-            "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk Environment",
-            "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.54%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-          "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-          "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-        "raw_packet": {
-          "ticker": "SHOP",
-          "company": "Shopify",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.7,
-          "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-          "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Structure",
-              "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Constructive Momentum",
-              "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Participation",
-              "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Drawdown",
-              "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.54%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-            "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-            "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-          "raw_packet": {
-            "ticker": "SHOP",
-            "company": "Shopify",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.7,
-            "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-            "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Structure",
-                "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Constructive Momentum",
-                "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Participation",
-                "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Drawdown",
-                "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.54%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-              "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-              "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-            "raw_packet": {
-              "ticker": "SHOP",
-              "company": "Shopify",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.7,
-              "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Structure",
-                  "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Constructive Momentum",
-                  "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Participation",
-                  "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Drawdown",
-                  "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.54%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-                "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-                "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-              ],
-              "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-              "core_insight": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "SHOP",
-        "company": "Shopify",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -835,17 +579,291 @@
             }
           }
         }
+      },
+      {
+        "ticker": "SHOP",
+        "company": "Shopify",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.95,
+        "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+        "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bearish Post-Earnings Confirmation",
+            "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Confirmed Bearish Trend Structure",
+            "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+          },
+          {
+            "type": "Volume",
+            "signal": "High-Conviction Selling Pressure",
+            "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weakening Momentum",
+            "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Substantial Downside Risk Realized",
+            "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish Environment",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -1.4%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+          }
+        ],
+        "risks": [
+          "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+          "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+          "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+        "raw_packet": {
+          "ticker": "SHOP",
+          "company": "Shopify",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.95,
+          "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+          "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Post-Earnings Confirmation",
+              "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend Structure",
+              "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Selling Pressure",
+              "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weakening Momentum",
+              "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Downside Risk Realized",
+              "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.4%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+            }
+          ],
+          "risks": [
+            "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+            "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+            "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+          "raw_packet": {
+            "ticker": "SHOP",
+            "company": "Shopify",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.95,
+            "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+            "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Post-Earnings Confirmation",
+                "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend Structure",
+                "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Selling Pressure",
+                "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weakening Momentum",
+                "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Downside Risk Realized",
+                "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.4%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+              }
+            ],
+            "risks": [
+              "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+              "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+              "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+            "raw_packet": {
+              "ticker": "SHOP",
+              "company": "Shopify",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.95,
+              "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Post-Earnings Confirmation",
+                  "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend Structure",
+                  "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Selling Pressure",
+                  "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weakening Momentum",
+                  "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Downside Risk Realized",
+                  "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.4%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+                }
+              ],
+              "risks": [
+                "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+                "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+                "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+              ],
+              "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+              "core_insight": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": true,
+    "triggered": false,
     "trigger": {
-      "debate_required": true,
-      "conflict_level": "high",
+      "debate_required": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ]
     },
     "synthesis": {
@@ -860,31 +878,30 @@
           "rationale": "Short-term: The market has decisively punished the stock for its earnings miss and margin guidance. This negative narrative shift, focused on a broken profitability story for a high-multiple stock, will lead to analyst downgrades and fund outflows, causing near-term underperformance. Long-term: The company has explicitly guided for a period of margin pressure due to investments. Until these investments show a clear return in the form of re-accelerated growth or the spending cycle peaks, the stock's valuation multiple will remain compressed, likely causing it to lag the QQQ over the next 1-3 quarters as it transitions into a 'show-me' story."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.7,
-          "rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Shopify reported robust quarter-over-quarter growth in revenue, profitability, and cash flow, highlighting strong operational execution. However, the company's valuation is exceptionally high with a trailing P/E of 135.7, and a conflicting yfinance report of negative earnings growth poses a significant risk. The analysis is constrained by the absence of analyst estimates, management guidance, and an earnings call transcript."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.95,
+          "rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
         }
       ],
       "areas_of_agreement": [
+        "2 agents lean bearish on the short-term horizon.",
         "2 agents lean bearish on the long-term horizon."
       ],
-      "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
-      ],
+      "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
+        "Bullish": 0,
         "Neutral": 1,
-        "Bearish": 1
+        "Bearish": 2
       },
       "long_stance_counts": {
         "Bullish": 0,
@@ -1418,325 +1435,6 @@
         {
           "ticker": "SHOP",
           "company": "Shopify",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.7,
-          "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-          "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Structure",
-              "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Constructive Momentum",
-              "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Participation",
-              "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Drawdown",
-              "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.54%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-            "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-            "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-          "raw_packet": {
-            "ticker": "SHOP",
-            "company": "Shopify",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.7,
-            "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-            "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Structure",
-                "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Constructive Momentum",
-                "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Participation",
-                "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Drawdown",
-                "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.54%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-              "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-              "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-            "raw_packet": {
-              "ticker": "SHOP",
-              "company": "Shopify",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Bearish",
-              "confidence": 0.7,
-              "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-              "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Structure",
-                  "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Constructive Momentum",
-                  "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Participation",
-                  "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Drawdown",
-                  "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.54%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-                "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-                "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-              "raw_packet": {
-                "ticker": "SHOP",
-                "company": "Shopify",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Bearish",
-                "confidence": 0.7,
-                "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-                "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Short-Term Bullish Structure",
-                    "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Constructive Momentum",
-                    "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Increased Participation",
-                    "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Market Outperformance",
-                    "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Drawdown",
-                    "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Risk Environment",
-                    "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.54%"
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "high_volatility_bullish",
-                    "evidence": "Regime classification: high_volatility_bullish"
-                  }
-                ],
-                "risks": [
-                  "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-                  "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-                  "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-                "raw_packet": {
-                  "ticker": "SHOP",
-                  "company": "Shopify",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.7,
-                  "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Short-Term Bullish Structure",
-                      "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Constructive Momentum",
-                      "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Increased Participation",
-                      "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Market Outperformance",
-                      "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Drawdown",
-                      "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Risk Environment",
-                      "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.54%"
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "high_volatility_bullish",
-                      "evidence": "Regime classification: high_volatility_bullish"
-                    }
-                  ],
-                  "risks": [
-                    "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-                    "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-                    "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-                  ],
-                  "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-                  "core_insight": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "SHOP",
-          "company": "Shopify",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1913,56 +1611,354 @@
               }
             }
           }
+        },
+        {
+          "ticker": "SHOP",
+          "company": "Shopify",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.95,
+          "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+          "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Post-Earnings Confirmation",
+              "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend Structure",
+              "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Selling Pressure",
+              "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weakening Momentum",
+              "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Downside Risk Realized",
+              "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.4%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+            }
+          ],
+          "risks": [
+            "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+            "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+            "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+          "raw_packet": {
+            "ticker": "SHOP",
+            "company": "Shopify",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.95,
+            "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+            "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Post-Earnings Confirmation",
+                "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend Structure",
+                "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Selling Pressure",
+                "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weakening Momentum",
+                "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Downside Risk Realized",
+                "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.4%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+              }
+            ],
+            "risks": [
+              "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+              "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+              "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+            "raw_packet": {
+              "ticker": "SHOP",
+              "company": "Shopify",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bearish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.95,
+              "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+              "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Post-Earnings Confirmation",
+                  "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend Structure",
+                  "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Selling Pressure",
+                  "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weakening Momentum",
+                  "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Downside Risk Realized",
+                  "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.4%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+                }
+              ],
+              "risks": [
+                "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+                "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+                "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+              "raw_packet": {
+                "ticker": "SHOP",
+                "company": "Shopify",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bearish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.95,
+                "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+                "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bearish Post-Earnings Confirmation",
+                    "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Confirmed Bearish Trend Structure",
+                    "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "High-Conviction Selling Pressure",
+                    "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Accelerating Bearish Momentum",
+                    "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Weakening Momentum",
+                    "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Substantial Downside Risk Realized",
+                    "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "High Volatility Bearish Environment",
+                    "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -1.4%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+                  }
+                ],
+                "risks": [
+                  "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+                  "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+                  "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+                "raw_packet": {
+                  "ticker": "SHOP",
+                  "company": "Shopify",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bearish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.95,
+                  "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bearish Post-Earnings Confirmation",
+                      "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Confirmed Bearish Trend Structure",
+                      "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "High-Conviction Selling Pressure",
+                      "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Accelerating Bearish Momentum",
+                      "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Weakening Momentum",
+                      "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Substantial Downside Risk Realized",
+                      "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "High Volatility Bearish Environment",
+                      "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -1.4%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+                    }
+                  ],
+                  "risks": [
+                    "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+                    "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+                    "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+                  ],
+                  "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+                  "core_insight": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [
-      {
-        "response_type": "revision",
-        "agreement": {
-          "market_technical": "I agree with the market_technical agent's long-term Bearish stance. Their evidence that the stock price is significantly below its 200-day moving average and in a substantial drawdown aligns with my fundamental view that the stock's valuation multiple will remain compressed following the negative guidance.",
-          "fundamental": "I agree with the fundamental agent's identification of an 'extremely high valuation' (P/E of 135.7) and strong quarter-over-quarter revenue growth. The high valuation is a core component of my bearish thesis, as it makes the stock vulnerable to a narrative shift around profitability. The strong revenue growth aligns with my evidence of 'record GMV' and underpins my second-order 'pick-and-shovel' opportunities."
-        },
-        "disagreement": {
-          "market_technical": "I disagree with the market_technical agent's short-term Bullish stance. I assign higher weight to the powerful, event-driven catalyst from my news evidence (earnings miss, negative margin guidance, 13% stock slide) than to the short-term technical indicators they cite. I interpret the technical bounce as a temporary reaction ('dead-cat bounce') that is unlikely to hold against the negative fundamental shift.",
-          "fundamental": "I disagree with the fundamental agent's Neutral stance and low confidence. Their neutrality is a direct result of missing the critical context that my news_macro analysis provides: the reason for the stock's decline was forward guidance on margin pressure. Their analysis correctly identifies conflicting data points (strong growth vs. high valuation), but my evidence resolves this conflict by explaining that investors are now focused on future profitability, not past growth."
-        },
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.85,
-        "evidence_needed": [
-          "Clarification for the conflicting '-42.3% earnings growth' figure cited by the fundamental agent to determine if it is a GAAP/non-GAAP discrepancy or a data error.",
-          "The specific analyst consensus estimates for Q4 revenue and EPS to precisely quantify the beat and miss.",
-          "The explicit quantitative forward guidance for Q1 revenue and operating margins provided by management on the earnings call."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": "The news_macro agent's evidence is highly compelling and provides the fundamental catalyst for a major technical breakdown. I agree that the market's sharp negative reaction (~13% slide) to the earnings report, specifically the guidance on margin pressure from AI investments, is the most critical signal. This narrative shift from profitability to a 'show-me' story validates and strengthens my original long-term bearish view and completely invalidates my prior short-term bullish stance. The news explains *why* the counter-trend rally I observed has failed.",
-        "disagreement": "I disagree with the fundamental agent's 'Neutral' stance and assign its analysis a very low weight. The agent itself correctly identifies its low confidence (0.3) due to missing context (guidance, analyst estimates). The news_macro agent's report provides this exact context, showing that the market is forward-looking and has chosen to punish the stock for future margin compression, ignoring the backward-looking QoQ growth that the fundamental agent highlighted. My own original 'Short-Term Bullish' stance is now incorrect and obsolete in light of the earnings event.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.9,
-        "evidence_needed": [
-          "Updated price chart and technical indicators (MACD, RSI, Moving Averages) following the earnings-related price drop to confirm the breakdown of the prior bullish structure.",
-          "Price's new position relative to the 20-day and 50-day moving averages, which it has almost certainly broken below.",
-          "Volume data for the session showing the price decline to confirm if it was a high-conviction sell-off."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": "I agree with the core evidence and rationale presented by the news_macro agent. My original analysis was hampered by a lack of context regarding expectations and forward guidance. The news_macro agent provides this critical information, clarifying that Shopify missed earnings expectations and issued guidance for margin pressure due to an AI investment cycle. This resolves my primary uncertainties and explains the negative market reaction, which I consider a strong confirmation signal. The long-term bearish technical view from the market_technical agent (price below 200-day MA) is also consistent with this new, more negative fundamental outlook.",
-        "disagreement": "I disagree with the weight the market_technical agent places on its short-term bullish signals. While technically accurate, indicators like price crossing the 20/50-day moving averages likely reflect a minor, temporary bounce after a significant fundamental-driven sell-off (~13% drop post-earnings). As a fundamental agent, the explicit forward guidance for margin compression is a much more significant and durable signal than short-term price action, which I view as noise in this context.",
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.8,
-        "evidence_needed": [
-          "My previous request for analyst estimates, management guidance, and the earnings transcript has been satisfied by the other agents' inputs.",
-          "The key unknown has shifted from 'what happened' to 'will the new strategy work'.",
-          "Future evidence needed includes: metrics on the adoption and efficacy of new AI-driven tools, data showing a re-acceleration in growth or merchant acquisition attributable to the new investments, and management commentary indicating the peak or conclusion of the investment spending cycle."
-        ]
-      }
-    ],
+    "debate_responses": [],
     "revised_packets": [
       {
         "ticker": "SHOP",
@@ -1970,7 +1966,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bearish",
-        "confidence": 0.85,
+        "confidence": 0.9,
         "confidence_rationale": "Confidence is high because the evidence is direct from SHOP's own earnings report and management commentary. The market's negative reaction is unambiguous and strong, confirming that investor expectations for profitability were misaligned with the company's strategic spending plans. The cause-and-effect is very clear.",
         "stance_rationale": "Short-term: The market has decisively punished the stock for its earnings miss and margin guidance. This negative narrative shift, focused on a broken profitability story for a high-multiple stock, will lead to analyst downgrades and fund outflows, causing near-term underperformance. Long-term: The company has explicitly guided for a period of margin pressure due to investments. Until these investments show a clear return in the form of re-accelerated growth or the spending cycle peaks, the stock's valuation multiple will remain compressed, likely causing it to lag the QQQ over the next 1-3 quarters as it transitions into a 'show-me' story.",
         "key_signals": [
@@ -2355,302 +2351,15 @@
               "core_insight": "While investors punish Shopify for its margin-compressing AI investment cycle, they are overlooking the 'pick-and-shovel' beneficiaries of this spending, specifically the underlying data platforms, marketing automation tools, and advertising networks that will see increased demand from Shopify's AI push."
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "market_technical": "I agree with the market_technical agent's long-term Bearish stance. Their evidence that the stock price is significantly below its 200-day moving average and in a substantial drawdown aligns with my fundamental view that the stock's valuation multiple will remain compressed following the negative guidance.",
-            "fundamental": "I agree with the fundamental agent's identification of an 'extremely high valuation' (P/E of 135.7) and strong quarter-over-quarter revenue growth. The high valuation is a core component of my bearish thesis, as it makes the stock vulnerable to a narrative shift around profitability. The strong revenue growth aligns with my evidence of 'record GMV' and underpins my second-order 'pick-and-shovel' opportunities."
-          },
-          "disagreement": {
-            "market_technical": "I disagree with the market_technical agent's short-term Bullish stance. I assign higher weight to the powerful, event-driven catalyst from my news evidence (earnings miss, negative margin guidance, 13% stock slide) than to the short-term technical indicators they cite. I interpret the technical bounce as a temporary reaction ('dead-cat bounce') that is unlikely to hold against the negative fundamental shift.",
-            "fundamental": "I disagree with the fundamental agent's Neutral stance and low confidence. Their neutrality is a direct result of missing the critical context that my news_macro analysis provides: the reason for the stock's decline was forward guidance on margin pressure. Their analysis correctly identifies conflicting data points (strong growth vs. high valuation), but my evidence resolves this conflict by explaining that investors are now focused on future profitability, not past growth."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "Clarification for the conflicting '-42.3% earnings growth' figure cited by the fundamental agent to determine if it is a GAAP/non-GAAP discrepancy or a data error.",
-            "The specific analyst consensus estimates for Q4 revenue and EPS to precisely quantify the beat and miss.",
-            "The explicit quantitative forward guidance for Q1 revenue and operating margins provided by management on the earnings call."
-          ]
-        }
-      },
-      {
-        "ticker": "SHOP",
-        "company": "Shopify",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.9,
-        "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-        "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Short-Term Bullish Structure",
-            "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-          },
-          {
-            "type": "RSI",
-            "signal": "Constructive Momentum",
-            "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-          },
-          {
-            "type": "Volume",
-            "signal": "Increased Participation",
-            "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Market Outperformance",
-            "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Drawdown",
-            "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk Environment",
-            "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.54%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "high_volatility_bullish",
-            "evidence": "Regime classification: high_volatility_bullish"
-          }
-        ],
-        "risks": [
-          "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-          "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-          "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-        "raw_packet": {
-          "ticker": "SHOP",
-          "company": "Shopify",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bearish",
-          "confidence": 0.7,
-          "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-          "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Short-Term Bullish Structure",
-              "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-            },
-            {
-              "type": "RSI",
-              "signal": "Constructive Momentum",
-              "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-            },
-            {
-              "type": "Volume",
-              "signal": "Increased Participation",
-              "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Market Outperformance",
-              "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Drawdown",
-              "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.54%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "high_volatility_bullish",
-              "evidence": "Regime classification: high_volatility_bullish"
-            }
-          ],
-          "risks": [
-            "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-            "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-            "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-          "raw_packet": {
-            "ticker": "SHOP",
-            "company": "Shopify",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bearish",
-            "confidence": 0.7,
-            "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-            "stance_rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Short-Term Bullish Structure",
-                "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-              },
-              {
-                "type": "RSI",
-                "signal": "Constructive Momentum",
-                "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-              },
-              {
-                "type": "Volume",
-                "signal": "Increased Participation",
-                "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Market Outperformance",
-                "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Drawdown",
-                "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.54%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "high_volatility_bullish",
-                "evidence": "Regime classification: high_volatility_bullish"
-              }
-            ],
-            "risks": [
-              "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-              "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-              "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-            "raw_packet": {
-              "ticker": "SHOP",
-              "company": "Shopify",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "bearish",
-              "confidence": 0.7,
-              "confidence_rationale": "Confidence is based on multiple aligned short-term bullish signals (Price > MA20/50, MACD crossover, RSI > 50). However, it is tempered by a strong long-term bearish signal (Price is 10.2% below MA200) and high volatility, creating a conflicting technical picture.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Short-Term Bullish Structure",
-                  "evidence": "Price at $127.55 was above its 20-day ($123.53) and 50-day ($122.71) moving averages, indicating a positive short-term trend."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover was in effect, with the MACD line (1.04) having crossed above its signal line (0.94)."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Constructive Momentum",
-                  "evidence": "The RSI of 54.86 was above the neutral 50 level, supporting bullish momentum without being in overbought territory."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Increased Participation",
-                  "evidence": "The most recent volume showed a 1.43x spike over its average, indicating higher conviction in the recent price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Market Outperformance",
-                  "evidence": "The stock was outperforming its benchmark (SPY), with a positive relative return of 0.77% for the period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Drawdown",
-                  "evidence": "The stock was still in a substantial drawdown of -28.75% from its recent peak, highlighting underlying weakness."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility was high at 55.1%, signaling a risk of large and unpredictable price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.54%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "high_volatility_bullish",
-                  "evidence": "Regime classification: high_volatility_bullish"
-                }
-              ],
-              "risks": [
-                "The price was significantly below the 200-day moving average, which often acts as major long-term resistance and could cap upside potential.",
-                "High annualized volatility (55.1%) increases the risk profile, suggesting the potential for sharp price reversals.",
-                "The stock being in a 28.75% drawdown from its peak indicates it was in a recovery phase and remained vulnerable to a resumption of selling pressure."
-              ],
-              "summary": "As of 2026/02/11, SHOP exhibited a bullish short-term posture within a bearish long-term context. The price was above its key short-term moving averages (20D, 50D) and supported by bullish MACD and RSI signals. However, this strength was challenged by the price being significantly below the 200-day moving average, indicating the primary trend was still down. High volatility and a large existing drawdown represented notable risks.",
-              "core_insight": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "The news_macro agent's evidence is highly compelling and provides the fundamental catalyst for a major technical breakdown. I agree that the market's sharp negative reaction (~13% slide) to the earnings report, specifically the guidance on margin pressure from AI investments, is the most critical signal. This narrative shift from profitability to a 'show-me' story validates and strengthens my original long-term bearish view and completely invalidates my prior short-term bullish stance. The news explains *why* the counter-trend rally I observed has failed.",
-          "disagreement": "I disagree with the fundamental agent's 'Neutral' stance and assign its analysis a very low weight. The agent itself correctly identifies its low confidence (0.3) due to missing context (guidance, analyst estimates). The news_macro agent's report provides this exact context, showing that the market is forward-looking and has chosen to punish the stock for future margin compression, ignoring the backward-looking QoQ growth that the fundamental agent highlighted. My own original 'Short-Term Bullish' stance is now incorrect and obsolete in light of the earnings event.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "Updated price chart and technical indicators (MACD, RSI, Moving Averages) following the earnings-related price drop to confirm the breakdown of the prior bullish structure.",
-            "Price's new position relative to the 20-day and 50-day moving averages, which it has almost certainly broken below.",
-            "Volume data for the session showing the price decline to confirm if it was a high-conviction sell-off."
-          ]
         }
       },
       {
         "ticker": "SHOP",
         "company": "Shopify",
         "agent_name": "fundamental",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
         "confidence_rationale": "Confidence is low due to the absence of critical contextual information: analyst consensus estimates, management guidance, and the earnings call transcript. This prevents a comprehensive analysis of performance versus expectations and the future outlook.",
         "stance_rationale": "Shopify reported robust quarter-over-quarter growth in revenue, profitability, and cash flow, highlighting strong operational execution. However, the company's valuation is exceptionally high with a trailing P/E of 135.7, and a conflicting yfinance report of negative earnings growth poses a significant risk. The analysis is constrained by the absence of analyst estimates, management guidance, and an earnings call transcript.",
         "key_signals": [
@@ -2787,19 +2496,281 @@
               }
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": "I agree with the core evidence and rationale presented by the news_macro agent. My original analysis was hampered by a lack of context regarding expectations and forward guidance. The news_macro agent provides this critical information, clarifying that Shopify missed earnings expectations and issued guidance for margin pressure due to an AI investment cycle. This resolves my primary uncertainties and explains the negative market reaction, which I consider a strong confirmation signal. The long-term bearish technical view from the market_technical agent (price below 200-day MA) is also consistent with this new, more negative fundamental outlook.",
-          "disagreement": "I disagree with the weight the market_technical agent places on its short-term bullish signals. While technically accurate, indicators like price crossing the 20/50-day moving averages likely reflect a minor, temporary bounce after a significant fundamental-driven sell-off (~13% drop post-earnings). As a fundamental agent, the explicit forward guidance for margin compression is a much more significant and durable signal than short-term price action, which I view as noise in this context.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "evidence_needed": [
-            "My previous request for analyst estimates, management guidance, and the earnings transcript has been satisfied by the other agents' inputs.",
-            "The key unknown has shifted from 'what happened' to 'will the new strategy work'.",
-            "Future evidence needed includes: metrics on the adoption and efficacy of new AI-driven tools, data showing a re-acceleration in growth or merchant acquisition attributable to the new investments, and management commentary indicating the peak or conclusion of the investment spending cycle."
-          ]
+        }
+      },
+      {
+        "ticker": "SHOP",
+        "company": "Shopify",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.95,
+        "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+        "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bearish Post-Earnings Confirmation",
+            "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Confirmed Bearish Trend Structure",
+            "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+          },
+          {
+            "type": "Volume",
+            "signal": "High-Conviction Selling Pressure",
+            "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+          },
+          {
+            "type": "MACD",
+            "signal": "Accelerating Bearish Momentum",
+            "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "Weakening Momentum",
+            "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Substantial Downside Risk Realized",
+            "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Volatility Bearish Environment",
+            "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -1.4%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+          }
+        ],
+        "risks": [
+          "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+          "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+          "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+        "raw_packet": {
+          "ticker": "SHOP",
+          "company": "Shopify",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.95,
+          "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+          "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bearish Post-Earnings Confirmation",
+              "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Confirmed Bearish Trend Structure",
+              "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+            },
+            {
+              "type": "Volume",
+              "signal": "High-Conviction Selling Pressure",
+              "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+            },
+            {
+              "type": "MACD",
+              "signal": "Accelerating Bearish Momentum",
+              "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Weakening Momentum",
+              "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Downside Risk Realized",
+              "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Volatility Bearish Environment",
+              "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -1.4%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+            }
+          ],
+          "risks": [
+            "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+            "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+            "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+          "raw_packet": {
+            "ticker": "SHOP",
+            "company": "Shopify",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.95,
+            "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+            "stance_rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bearish Post-Earnings Confirmation",
+                "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Confirmed Bearish Trend Structure",
+                "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+              },
+              {
+                "type": "Volume",
+                "signal": "High-Conviction Selling Pressure",
+                "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+              },
+              {
+                "type": "MACD",
+                "signal": "Accelerating Bearish Momentum",
+                "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Weakening Momentum",
+                "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Downside Risk Realized",
+                "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Volatility Bearish Environment",
+                "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -1.4%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+              }
+            ],
+            "risks": [
+              "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+              "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+              "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+            "raw_packet": {
+              "ticker": "SHOP",
+              "company": "Shopify",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bearish",
+              "long_term_stance": "bearish",
+              "confidence": 0.95,
+              "confidence_rationale": "Extremely high signal consistency across all indicators and timeframes. The strong negative post-earnings reaction on high volume provides powerful confirmation of the pre-existing bearish trend and momentum.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bearish Post-Earnings Confirmation",
+                  "evidence": "Following earnings on 2026-02-11, the stock fell -6.78% the next day, with an abnormal negative return of -4.75% vs QQQ on 1.96x average volume."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Confirmed Bearish Trend Structure",
+                  "evidence": "The price at $118.71 is trading significantly below all key moving averages: MA20 ($133.53), MA50 ($151.91), and MA200 ($137.96)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "High-Conviction Selling Pressure",
+                  "evidence": "Volume on the analysis date spiked to 3.47x the recent average, coinciding with a sharp price drop, indicating strong seller participation."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Accelerating Bearish Momentum",
+                  "evidence": "The MACD line (-10.66) is below the signal line (-9.84) and the histogram is negative, confirming accelerating downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -19.61% over the analysis window, indicating severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Weakening Momentum",
+                  "evidence": "RSI is low at 35.57, reflecting weak price momentum and approaching oversold levels."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Downside Risk Realized",
+                  "evidence": "The stock is in a significant current drawdown of -33.69% from its recent peak."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Volatility Bearish Environment",
+                  "evidence": "The stock is classified in a 'high_volatility_bearish' regime, suggesting downside price action with instability."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -1.4%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 61.49%, Recent 72.83%"
+                }
+              ],
+              "risks": [
+                "The RSI at 35.57 is approaching oversold territory (<30), which could trigger a short-term technical bounce.",
+                "The massive volume spike could be interpreted as seller capitulation, potentially establishing a near-term price floor if buying interest emerges.",
+                "The high volatility environment means price swings can be sharp and unpredictable, increasing the risk of a fast counter-trend rally."
+              ],
+              "summary": "As of 2026-02-11, Shopify displays an unequivocally bearish technical posture. The stock is in a confirmed downtrend below all key moving averages, with bearish momentum confirmed by MACD and a low RSI. This analysis is powerfully reinforced by the market's negative reaction to earnings released on this date, which resulted in a -6.8% high-volume decline the subsequent day, validating the intense selling pressure and relative weakness.",
+              "core_insight": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
+            }
+          }
         }
       }
     ]
@@ -2811,20 +2782,19 @@
     "final_long_term_stance": "Bearish",
     "investment_action": "Short / Avoid",
     "position_size_hint": "Normal",
-    "confidence": 0.9,
-    "core_thesis": "The market has shifted its focus from Shopify's top-line growth to its profitability. Management's guidance for a period of margin compression due to heavy AI investment has broken the previous bullish narrative for this high-multiple stock, leading to a valuation re-rating and a 'show-me' story that will pressure the stock in both the short and medium term.",
-    "why_now": "The catalyst is the recent Q4 earnings report, where management guided for lower margins. The stock's sharp ~13% decline confirms the market's negative interpretation, creating a clear inflection point. The bearish view should be acted upon before the full impact of expected analyst downgrades and fund outflows is priced in.",
+    "confidence": 0.85,
+    "core_thesis": "The market has repriced Shopify from a high-margin growth compounder to a 'show-me' investment story. The company has explicitly guided to a period of margin compression to fund strategic AI investments. Until these investments demonstrate a clear return on investment through re-accelerated growth or improved merchant success, the stock's high valuation multiple will remain under pressure, likely leading to sustained market underperformance.",
+    "why_now": "The recent Q4 earnings report acted as a major bearish catalyst. While revenue growth was strong, the guidance for lower margins due to an aggressive investment cycle broke the prevailing profitability narrative. This fundamental shift was confirmed by a powerful, high-volume price breakdown, indicating a clear and decisive change in market sentiment that is likely to persist in the near-to-medium term.",
     "key_supporting_evidence": [
-      "Direct management guidance for a period of margin pressure due to a strategic investment cycle in AI.",
-      "The market's immediate and severe negative reaction (stock slide of ~13%) post-earnings, confirming a decisive shift in investor sentiment away from growth-at-any-cost.",
-      "An extremely high valuation (Trailing P/E of 135.7) makes the stock highly vulnerable to negative changes in the profitability narrative.",
-      "Post-debate, a unanimous and high-confidence bearish consensus was reached across all agents (News/Macro, Technical, and Fundamental), a rare and powerful signal.",
-      "The earnings-driven price drop caused a technical breakdown, invalidating the prior short-term bullish structure and reinforcing the long-term bearish trend (price below the 200-day moving average)."
+      "Management guidance for a period of margin pressure due to heavy investment in AI, shifting the narrative from profitability to investment.",
+      "The stock's severe negative reaction to earnings (-6.78% on 1.96x average volume), confirming the market's disapproval of the new margin outlook.",
+      "The technical picture is unequivocally bearish, with the price breaking below all key moving averages (20, 50, 200-day) on high volume, confirming a downtrend with strong momentum.",
+      "An extremely high valuation (Trailing P/E of 135.7) provides no margin of safety for the execution risk associated with the multi-quarter investment cycle."
     ],
     "key_risks": [
-      "The AI investment cycle could be shorter or more fruitful than anticipated, leading to a rapid re-acceleration of growth and margin expansion that catches bears off guard.",
-      "The market could quickly 'look through' the short-term margin dip and refocus on the strong underlying GMV growth and long-term market position, causing a sharp reversal.",
-      "The post-earnings sell-off was an overreaction, and the stock could find technical support and revert to the mean, trapping short-sellers."
+      "The investment in AI could prove successful and show tangible results faster than the market anticipates, leading to a rapid positive re-rating of the stock.",
+      "The stock is approaching technically oversold levels (RSI at 35.57), which could trigger a sharp, short-term counter-trend rally.",
+      "The underlying business growth (GMV, revenue) remains robust. The market could choose to look past the near-term margin pressure and focus on the long-term growth potential, causing the bearish thesis to fail."
     ],
     "agent_view_summary": [
       {
@@ -2835,87 +2805,47 @@
         "rationale": "Short-term: The market has decisively punished the stock for its earnings miss and margin guidance. This negative narrative shift, focused on a broken profitability story for a high-multiple stock, will lead to analyst downgrades and fund outflows, causing near-term underperformance. Long-term: The company has explicitly guided for a period of margin pressure due to investments. Until these investments show a clear return in the form of re-accelerated growth or the spending cycle peaks, the stock's valuation multiple will remain compressed, likely causing it to lag the QQQ over the next 1-3 quarters as it transitions into a 'show-me' story."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.7,
-        "rationale": "The dominant technical feature was the conflict between a short-term recovery rally and a bearish long-term trend. This suggests the upward move was a counter-trend rally facing a significant test of resistance at the 200-day moving average."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Shopify reported robust quarter-over-quarter growth in revenue, profitability, and cash flow, highlighting strong operational execution. However, the company's valuation is exceptionally high with a trailing P/E of 135.7, and a conflicting yfinance report of negative earnings growth poses a significant risk. The analysis is constrained by the absence of analyst estimates, management guidance, and an earnings call transcript."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.95,
+        "rationale": "The powerful, high-volume negative reaction to earnings serves as a major bearish catalyst, confirming the pre-existing downtrend and signaling a high probability of continued downside price action in the near term."
       }
     ],
     "debate_summary": {
-      "debate_triggered": true,
-      "conflict_level": "high",
+      "debate_triggered": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ],
-      "debate_responses": [
-        {
-          "response_type": "revision",
-          "agreement": {
-            "market_technical": "I agree with the market_technical agent's long-term Bearish stance. Their evidence that the stock price is significantly below its 200-day moving average and in a substantial drawdown aligns with my fundamental view that the stock's valuation multiple will remain compressed following the negative guidance.",
-            "fundamental": "I agree with the fundamental agent's identification of an 'extremely high valuation' (P/E of 135.7) and strong quarter-over-quarter revenue growth. The high valuation is a core component of my bearish thesis, as it makes the stock vulnerable to a narrative shift around profitability. The strong revenue growth aligns with my evidence of 'record GMV' and underpins my second-order 'pick-and-shovel' opportunities."
-          },
-          "disagreement": {
-            "market_technical": "I disagree with the market_technical agent's short-term Bullish stance. I assign higher weight to the powerful, event-driven catalyst from my news evidence (earnings miss, negative margin guidance, 13% stock slide) than to the short-term technical indicators they cite. I interpret the technical bounce as a temporary reaction ('dead-cat bounce') that is unlikely to hold against the negative fundamental shift.",
-            "fundamental": "I disagree with the fundamental agent's Neutral stance and low confidence. Their neutrality is a direct result of missing the critical context that my news_macro analysis provides: the reason for the stock's decline was forward guidance on margin pressure. Their analysis correctly identifies conflicting data points (strong growth vs. high valuation), but my evidence resolves this conflict by explaining that investors are now focused on future profitability, not past growth."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "Clarification for the conflicting '-42.3% earnings growth' figure cited by the fundamental agent to determine if it is a GAAP/non-GAAP discrepancy or a data error.",
-            "The specific analyst consensus estimates for Q4 revenue and EPS to precisely quantify the beat and miss.",
-            "The explicit quantitative forward guidance for Q1 revenue and operating margins provided by management on the earnings call."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": "The news_macro agent's evidence is highly compelling and provides the fundamental catalyst for a major technical breakdown. I agree that the market's sharp negative reaction (~13% slide) to the earnings report, specifically the guidance on margin pressure from AI investments, is the most critical signal. This narrative shift from profitability to a 'show-me' story validates and strengthens my original long-term bearish view and completely invalidates my prior short-term bullish stance. The news explains *why* the counter-trend rally I observed has failed.",
-          "disagreement": "I disagree with the fundamental agent's 'Neutral' stance and assign its analysis a very low weight. The agent itself correctly identifies its low confidence (0.3) due to missing context (guidance, analyst estimates). The news_macro agent's report provides this exact context, showing that the market is forward-looking and has chosen to punish the stock for future margin compression, ignoring the backward-looking QoQ growth that the fundamental agent highlighted. My own original 'Short-Term Bullish' stance is now incorrect and obsolete in light of the earnings event.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.9,
-          "evidence_needed": [
-            "Updated price chart and technical indicators (MACD, RSI, Moving Averages) following the earnings-related price drop to confirm the breakdown of the prior bullish structure.",
-            "Price's new position relative to the 20-day and 50-day moving averages, which it has almost certainly broken below.",
-            "Volume data for the session showing the price decline to confirm if it was a high-conviction sell-off."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": "I agree with the core evidence and rationale presented by the news_macro agent. My original analysis was hampered by a lack of context regarding expectations and forward guidance. The news_macro agent provides this critical information, clarifying that Shopify missed earnings expectations and issued guidance for margin pressure due to an AI investment cycle. This resolves my primary uncertainties and explains the negative market reaction, which I consider a strong confirmation signal. The long-term bearish technical view from the market_technical agent (price below 200-day MA) is also consistent with this new, more negative fundamental outlook.",
-          "disagreement": "I disagree with the weight the market_technical agent places on its short-term bullish signals. While technically accurate, indicators like price crossing the 20/50-day moving averages likely reflect a minor, temporary bounce after a significant fundamental-driven sell-off (~13% drop post-earnings). As a fundamental agent, the explicit forward guidance for margin compression is a much more significant and durable signal than short-term price action, which I view as noise in this context.",
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.8,
-          "evidence_needed": [
-            "My previous request for analyst estimates, management guidance, and the earnings transcript has been satisfied by the other agents' inputs.",
-            "The key unknown has shifted from 'what happened' to 'will the new strategy work'.",
-            "Future evidence needed includes: metrics on the adoption and efficacy of new AI-driven tools, data showing a re-acceleration in growth or merchant acquisition attributable to the new investments, and management commentary indicating the peak or conclusion of the investment spending cycle."
-          ]
-        }
-      ]
+      "debate_responses": []
     },
-    "reason_for_final_decision": "This is a high-conviction decision to override the initial conflicting agent views and fully endorse the unanimous post-debate consensus. The news_macro agent provided a powerful, event-driven catalyst—negative forward guidance on margins—that correctly resolved the uncertainty of the other agents. The market's unambiguous ~13% sell-off serves as strong validation. The fundamental story has changed from 'growth' to 'prove it', the technicals have broken down, and sentiment has turned negative. The deterministic guardrail's bearish conclusion is not only affirmed but adopted with high confidence, as the qualitative evidence is overwhelming and all analytical perspectives are now aligned.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "The final decision aligns with the deterministic guardrail, as the evidence provides a clear and consistent bearish narrative. The high-confidence `news_macro` and `market_technical` agents are in strong agreement: a fundamental catalyst (margin guidance) has triggered a technical breakdown. The `fundamental` agent's neutral stance is due to missing data and its primary concern—high valuation—actually supports the bearish thesis in this context. The collective evidence strongly suggests the path of least resistance for the stock is lower until the company can prove the ROI of its new investment cycle.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bearish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": -0.2975
-        },
-        {
-          "agent_name": "market_technical",
           "stance": "Bearish",
           "confidence": 0.9,
           "weight": 0.45,
@@ -2923,39 +2853,46 @@
         },
         {
           "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
           "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
+          "confidence": 0.95,
+          "weight": 0.4,
+          "contribution": -0.38
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.85,
+          "confidence": 0.9,
+          "weight": 0.4,
+          "contribution": -0.36
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
           "weight": 0.35,
-          "contribution": -0.2975
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Bearish",
-          "confidence": 0.9,
-          "weight": 0.2,
-          "contribution": -0.18
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.45,
-          "contribution": -0.36
+          "confidence": 0.95,
+          "weight": 0.25,
+          "contribution": -0.2375
         }
       ]
     },
     "scores": {
-      "short": -1.0,
-      "long": -1.0
+      "short": -0.9458,
+      "long": -0.8505
     },
     "llm_decision_used": true
   }

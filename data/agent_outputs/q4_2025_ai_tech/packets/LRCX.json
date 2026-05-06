@@ -209,127 +209,135 @@
     "ticker": "LRCX",
     "company": "Lam Research",
     "agent_name": "market_technical",
-    "short_term_stance": "Neutral",
+    "short_term_stance": "Bullish",
     "long_term_stance": "Bullish",
-    "confidence": 0.6,
-    "confidence_rationale": "Confidence is moderate due to conflicting signals. While the medium-term trend and relative strength are bullish (Price > MA50, RSI > 50), short-term momentum has weakened, as evidenced by a bearish MACD crossover and price consolidation around the MA20.",
-    "stance_rationale": "The primary technical conflict is between weakening short-term momentum (bearish MACD) and a solid medium-term uptrend (price > MA50, strong relative strength). This suggests the stock is likely in a temporary pause or consolidation phase within an ongoing uptrend, rather than starting a major reversal.",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is high due to the powerful confluence of a strong positive post-earnings reaction (price and volume confirmation) with an already established, multi-timeframe bullish trend across all major moving averages. The overbought RSI is the only notable counter-signal but is often seen in strong breakouts.",
+    "stance_rationale": "The decisive positive earnings reaction, characterized by a significant abnormal return on high volume, provides strong confirmation for the continuation of the established bullish trend. This event-driven momentum is the primary factor supporting the bullish stance, despite the overbought RSI.",
     "key_signals": [
       {
-        "type": "MACD",
-        "signal": "bearish crossover",
-        "evidence": "MACD line (6.11) has crossed below the signal line (7.85), with a negative histogram (-1.74), indicating waning upward momentum."
+        "type": "Earnings Reaction",
+        "signal": "Strong Bullish Post-Earnings Confirmation",
+        "evidence": "Post-1d abnormal return vs. QQQ was +4.18% on a high reaction volume ratio of 1.47x, confirming strong buyer conviction after the earnings event on 2026-01-28."
       },
       {
         "type": "Moving Averages",
-        "signal": "short-term consolidation, medium-term strength",
-        "evidence": "Price (258.57) is trading flat against its MA20 (258.64) but remains 8.9% above its MA50 (237.36), suggesting a pause in a wider uptrend."
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "Price (239.29) is significantly above all key moving averages (MA20: 211.17, MA50: 180.28, MA200: 124.56), indicating a well-established uptrend across multiple timeframes."
       },
       {
         "type": "Relative Strength",
-        "signal": "significant market outperformance",
-        "evidence": "The stock has outperformed the SPY benchmark by 15.11% over the period, indicating strong investor preference."
+        "signal": "Significant Market Outperformance",
+        "evidence": "Stock demonstrated a relative return of 208.1% against the SPY benchmark, highlighting its status as a market leader."
+      },
+      {
+        "type": "MACD",
+        "signal": "Accelerating Bullish Momentum",
+        "evidence": "MACD (15.34) is above its signal line (14.35) and the histogram (0.99) is positive and expanding, indicating strengthening upward momentum."
       },
       {
         "type": "RSI",
-        "signal": "healthy momentum",
-        "evidence": "RSI at 56.63 is in bullish territory (>50) without being overbought (<70), suggesting momentum is still positive but has room to move higher."
-      },
-      {
-        "type": "Volume",
-        "signal": "lack of conviction",
-        "evidence": "The latest volume is 31.5% below its recent average (spike ratio of 0.68), suggesting weak participation and indecision in the current price action."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "range-bound conditions",
-        "evidence": "The current market regime is classified as 'range_bound', which aligns with the price consolidating near its 20-day moving average."
-      },
-      {
-        "type": "Volatility",
-        "signal": "elevated risk environment",
-        "evidence": "Annualized volatility is high at 56.9%, implying a greater potential for large price swings."
-      },
-      {
-        "type": "Returns",
-        "signal": "negative short-term momentum",
-        "evidence": "Mean of recent returns: -0.14%"
+        "signal": "Overbought Momentum",
+        "evidence": "RSI is at 72.86, indicating the stock is in overbought territory, which reflects strong recent buying pressure but also heightens the risk of a short-term consolidation or pullback."
       },
       {
         "type": "Drawdown",
-        "signal": "contained drawdown",
-        "evidence": "Current drawdown -5.08%, Max drawdown -20.01%"
+        "signal": "Trading at New Highs",
+        "evidence": "Current drawdown is 0.0%, indicating the price is at its peak for the period analyzed and showing no recent downside pressure."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "High Volatility Bullish Environment",
+        "evidence": "The stock is classified in a 'high_volatility_bullish' regime, consistent with a strong uptrend accompanied by large price movements."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 1.16%"
+      },
+      {
+        "type": "Volume",
+        "signal": "moderate participation",
+        "evidence": "Volume spike ratio 1.21x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 50.53%, Recent 60.52%"
       }
     ],
     "risks": [
-      "The bearish MACD crossover signals weakening momentum, which could precede a price decline if support at the MA20 fails.",
-      "High annualized volatility (56.9%) increases the risk of sharp, adverse price movements.",
-      "The price stalling at the 20-day moving average on low volume points to indecision and a potential failure to resume the prior uptrend."
+      "The RSI of 72.86 signals an overbought condition, which could make the stock susceptible to a short-term pullback or consolidation as some traders take profits.",
+      "Elevated recent volatility (60.52%) suggests a higher degree of price risk and the potential for sharp price swings in both directions."
     ],
     "citations": [],
-    "summary": "Lam Research is exhibiting conflicting technical signals. The stock is in a short-term consolidation phase, characterized by a 'range_bound' market regime and price hovering around the 20-day moving average. A bearish MACD crossover indicates that upward momentum is fading. However, the medium-term trend remains positive, with the price well above the 50-day average and demonstrating significant relative strength against the broader market. Low volume points to general indecision among traders.",
+    "summary": "As of 2026-01-28, Lam Research displays a robustly bullish technical profile. The analysis is anchored by a powerful post-earnings reaction which saw the stock surge with a +4.18% abnormal return versus QQQ on high volume. This event provides strong validation for the pre-existing uptrend, evidenced by price trading well above its 20, 50, and 200-day moving averages and showing significant relative strength. While momentum is strong, the overbought RSI suggests the rally is extended, introducing risk of a near-term pause.",
     "raw_packet": {
       "ticker": "LRCX",
       "company": "Lam Research",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "neutral",
+      "short_term_stance": "bullish",
       "long_term_stance": "bullish",
-      "confidence": 0.6,
-      "confidence_rationale": "Confidence is moderate due to conflicting signals. While the medium-term trend and relative strength are bullish (Price > MA50, RSI > 50), short-term momentum has weakened, as evidenced by a bearish MACD crossover and price consolidation around the MA20.",
+      "confidence": 0.9,
+      "confidence_rationale": "Confidence is high due to the powerful confluence of a strong positive post-earnings reaction (price and volume confirmation) with an already established, multi-timeframe bullish trend across all major moving averages. The overbought RSI is the only notable counter-signal but is often seen in strong breakouts.",
       "key_signals": [
         {
-          "type": "MACD",
-          "signal": "bearish crossover",
-          "evidence": "MACD line (6.11) has crossed below the signal line (7.85), with a negative histogram (-1.74), indicating waning upward momentum."
+          "type": "Earnings Reaction",
+          "signal": "Strong Bullish Post-Earnings Confirmation",
+          "evidence": "Post-1d abnormal return vs. QQQ was +4.18% on a high reaction volume ratio of 1.47x, confirming strong buyer conviction after the earnings event on 2026-01-28."
         },
         {
           "type": "Moving Averages",
-          "signal": "short-term consolidation, medium-term strength",
-          "evidence": "Price (258.57) is trading flat against its MA20 (258.64) but remains 8.9% above its MA50 (237.36), suggesting a pause in a wider uptrend."
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "Price (239.29) is significantly above all key moving averages (MA20: 211.17, MA50: 180.28, MA200: 124.56), indicating a well-established uptrend across multiple timeframes."
         },
         {
           "type": "Relative Strength",
-          "signal": "significant market outperformance",
-          "evidence": "The stock has outperformed the SPY benchmark by 15.11% over the period, indicating strong investor preference."
+          "signal": "Significant Market Outperformance",
+          "evidence": "Stock demonstrated a relative return of 208.1% against the SPY benchmark, highlighting its status as a market leader."
+        },
+        {
+          "type": "MACD",
+          "signal": "Accelerating Bullish Momentum",
+          "evidence": "MACD (15.34) is above its signal line (14.35) and the histogram (0.99) is positive and expanding, indicating strengthening upward momentum."
         },
         {
           "type": "RSI",
-          "signal": "healthy momentum",
-          "evidence": "RSI at 56.63 is in bullish territory (>50) without being overbought (<70), suggesting momentum is still positive but has room to move higher."
-        },
-        {
-          "type": "Volume",
-          "signal": "lack of conviction",
-          "evidence": "The latest volume is 31.5% below its recent average (spike ratio of 0.68), suggesting weak participation and indecision in the current price action."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "range-bound conditions",
-          "evidence": "The current market regime is classified as 'range_bound', which aligns with the price consolidating near its 20-day moving average."
-        },
-        {
-          "type": "Volatility",
-          "signal": "elevated risk environment",
-          "evidence": "Annualized volatility is high at 56.9%, implying a greater potential for large price swings."
-        },
-        {
-          "type": "Returns",
-          "signal": "negative short-term momentum",
-          "evidence": "Mean of recent returns: -0.14%"
+          "signal": "Overbought Momentum",
+          "evidence": "RSI is at 72.86, indicating the stock is in overbought territory, which reflects strong recent buying pressure but also heightens the risk of a short-term consolidation or pullback."
         },
         {
           "type": "Drawdown",
-          "signal": "contained drawdown",
-          "evidence": "Current drawdown -5.08%, Max drawdown -20.01%"
+          "signal": "Trading at New Highs",
+          "evidence": "Current drawdown is 0.0%, indicating the price is at its peak for the period analyzed and showing no recent downside pressure."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "High Volatility Bullish Environment",
+          "evidence": "The stock is classified in a 'high_volatility_bullish' regime, consistent with a strong uptrend accompanied by large price movements."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 1.16%"
+        },
+        {
+          "type": "Volume",
+          "signal": "moderate participation",
+          "evidence": "Volume spike ratio 1.21x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 50.53%, Recent 60.52%"
         }
       ],
       "risks": [
-        "The bearish MACD crossover signals weakening momentum, which could precede a price decline if support at the MA20 fails.",
-        "High annualized volatility (56.9%) increases the risk of sharp, adverse price movements.",
-        "The price stalling at the 20-day moving average on low volume points to indecision and a potential failure to resume the prior uptrend."
+        "The RSI of 72.86 signals an overbought condition, which could make the stock susceptible to a short-term pullback or consolidation as some traders take profits.",
+        "Elevated recent volatility (60.52%) suggests a higher degree of price risk and the potential for sharp price swings in both directions."
       ],
-      "summary": "Lam Research is exhibiting conflicting technical signals. The stock is in a short-term consolidation phase, characterized by a 'range_bound' market regime and price hovering around the 20-day moving average. A bearish MACD crossover indicates that upward momentum is fading. However, the medium-term trend remains positive, with the price well above the 50-day average and demonstrating significant relative strength against the broader market. Low volume points to general indecision among traders.",
-      "core_insight": "The primary technical conflict is between weakening short-term momentum (bearish MACD) and a solid medium-term uptrend (price > MA50, strong relative strength). This suggests the stock is likely in a temporary pause or consolidation phase within an ongoing uptrend, rather than starting a major reversal."
+      "summary": "As of 2026-01-28, Lam Research displays a robustly bullish technical profile. The analysis is anchored by a powerful post-earnings reaction which saw the stock surge with a +4.18% abnormal return versus QQQ on high volume. This event provides strong validation for the pre-existing uptrend, evidenced by price trading well above its 20, 50, and 200-day moving averages and showing significant relative strength. While momentum is strong, the overbought RSI suggests the rally is extended, introducing risk of a near-term pause.",
+      "core_insight": "The decisive positive earnings reaction, characterized by a significant abnormal return on high volume, provides strong confirmation for the continuation of the established bullish trend. This event-driven momentum is the primary factor supporting the bullish stance, despite the overbought RSI."
     }
   }
 ]

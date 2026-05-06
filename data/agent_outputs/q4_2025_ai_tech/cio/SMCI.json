@@ -11,30 +11,30 @@
         "rationale": "Short-term: The magnitude of the revenue and guidance beat is exceptional (+20% vs consensus), which will force significant analyst upgrades and a chase from under-allocated investors, likely driving multi-day outperformance. Long-term: Expectations are now reset to a near-perfect execution level. The company's low-margin, high-volume model is vulnerable to any supply chain hiccup, competition, or margin compression. The risk/reward over 1-3 quarters is more balanced, making it difficult to sustain outperformance against QQQ from this new, elevated base."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.5,
         "rationale": "The company is experiencing explosive QoQ revenue and profit growth, indicating a period of hypergrowth. This, combined with a low forward P/E ratio, presents a compelling investment case. However, this growth has come at the cost of significant margin compression and continued negative free cash flow, which are substantial risks that require close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon."
+      "2 agents lean bullish on the short-term horizon."
     ],
     "areas_of_disagreement": [
       "Long-term views contain both bullish and bearish calls."
     ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 2,
+      "Bullish": 2,
+      "Neutral": 1,
       "Bearish": 0
     },
     "long_stance_counts": {
@@ -442,261 +442,6 @@
       {
         "ticker": "SMCI",
         "company": "Super Micro Computer",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-        "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Rally Conviction",
-            "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Long-Term Damage",
-            "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Extremely High Risk Environment",
-            "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Contention",
-            "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.21%"
-          }
-        ],
-        "risks": [
-          "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-          "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-          "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-        "raw_packet": {
-          "ticker": "SMCI",
-          "company": "Super Micro Computer",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-          "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Rally Conviction",
-              "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Long-Term Damage",
-              "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Risk Environment",
-              "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Contention",
-              "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-            "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-            "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-          "raw_packet": {
-            "ticker": "SMCI",
-            "company": "Super Micro Computer",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-            "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Rally Conviction",
-                "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Long-Term Damage",
-                "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Risk Environment",
-                "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Contention",
-                "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-              "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-              "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-            "raw_packet": {
-              "ticker": "SMCI",
-              "company": "Super Micro Computer",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Rally Conviction",
-                  "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Long-Term Damage",
-                  "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Risk Environment",
-                  "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Contention",
-                  "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-                "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-                "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-              ],
-              "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-              "core_insight": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "SMCI",
-        "company": "Super Micro Computer",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
@@ -838,6 +583,277 @@
             }
           }
         }
+      },
+      {
+        "ticker": "SMCI",
+        "company": "Super Micro Computer",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+        "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Exceptional Bullish Catalyst",
+            "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+          },
+          {
+            "type": "MACD",
+            "signal": "Early Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Deeply Bearish Long-Term Trend",
+            "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Long-Term Weakness",
+            "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum With Room to Rise",
+            "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Risk Environment",
+            "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Historic Laggard, Potential New Leader",
+            "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.54%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.32x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+          }
+        ],
+        "risks": [
+          "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+          "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+        "raw_packet": {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+          "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Exceptional Bullish Catalyst",
+              "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+            },
+            {
+              "type": "MACD",
+              "signal": "Early Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Long-Term Trend",
+              "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Long-Term Weakness",
+              "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum With Room to Rise",
+              "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Risk Environment",
+              "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Historic Laggard, Potential New Leader",
+              "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.54%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.32x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+            }
+          ],
+          "risks": [
+            "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+            "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SMCI",
+            "company": "Super Micro Computer",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+            "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Exceptional Bullish Catalyst",
+                "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+              },
+              {
+                "type": "MACD",
+                "signal": "Early Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Long-Term Trend",
+                "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Long-Term Weakness",
+                "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum With Room to Rise",
+                "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Risk Environment",
+                "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Historic Laggard, Potential New Leader",
+                "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.54%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.32x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+              }
+            ],
+            "risks": [
+              "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+              "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SMCI",
+              "company": "Super Micro Computer",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Exceptional Bullish Catalyst",
+                  "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Early Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Long-Term Trend",
+                  "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Long-Term Weakness",
+                  "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum With Room to Rise",
+                  "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Risk Environment",
+                  "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Historic Laggard, Potential New Leader",
+                  "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.54%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.32x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+                }
+              ],
+              "risks": [
+                "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+                "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+              ],
+              "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+              "core_insight": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
+            }
+          }
+        }
       }
     ]
   },
@@ -862,30 +878,30 @@
           "rationale": "Short-term: The magnitude of the revenue and guidance beat is exceptional (+20% vs consensus), which will force significant analyst upgrades and a chase from under-allocated investors, likely driving multi-day outperformance. Long-term: Expectations are now reset to a near-perfect execution level. The company's low-margin, high-volume model is vulnerable to any supply chain hiccup, competition, or margin compression. The risk/reward over 1-3 quarters is more balanced, making it difficult to sustain outperformance against QQQ from this new, elevated base."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
           "confidence": 0.5,
           "rationale": "The company is experiencing explosive QoQ revenue and profit growth, indicating a period of hypergrowth. This, combined with a low forward P/E ratio, presents a compelling investment case. However, this growth has come at the cost of significant margin compression and continued negative free cash flow, which are substantial risks that require close monitoring."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon."
+        "2 agents lean bullish on the short-term horizon."
       ],
       "areas_of_disagreement": [
         "Long-term views contain both bullish and bearish calls."
       ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 2,
+        "Bullish": 2,
+        "Neutral": 1,
         "Bearish": 0
       },
       "long_stance_counts": {
@@ -1424,325 +1440,6 @@
         {
           "ticker": "SMCI",
           "company": "Super Micro Computer",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-          "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Rally Conviction",
-              "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Long-Term Damage",
-              "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Risk Environment",
-              "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Contention",
-              "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-            "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-            "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-          "raw_packet": {
-            "ticker": "SMCI",
-            "company": "Super Micro Computer",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-            "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Rally Conviction",
-                "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Long-Term Damage",
-                "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Risk Environment",
-                "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Contention",
-                "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-              "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-              "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-            "raw_packet": {
-              "ticker": "SMCI",
-              "company": "Super Micro Computer",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-              "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Rally Conviction",
-                  "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Long-Term Damage",
-                  "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Risk Environment",
-                  "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Contention",
-                  "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-                "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-                "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-              "raw_packet": {
-                "ticker": "SMCI",
-                "company": "Super Micro Computer",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-                "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Conflicting Trend Structure",
-                    "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weak Rally Conviction",
-                    "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Severe Long-Term Damage",
-                    "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Underperformance",
-                    "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral Momentum",
-                    "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Extremely High Risk Environment",
-                    "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Contention",
-                    "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.21%"
-                  }
-                ],
-                "risks": [
-                  "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-                  "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-                  "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-                "raw_packet": {
-                  "ticker": "SMCI",
-                  "company": "Super Micro Computer",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Conflicting Trend Structure",
-                      "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weak Rally Conviction",
-                      "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Severe Long-Term Damage",
-                      "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Underperformance",
-                      "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral Momentum",
-                      "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Extremely High Risk Environment",
-                      "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Contention",
-                      "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.21%"
-                    }
-                  ],
-                  "risks": [
-                    "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-                    "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-                    "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-                  ],
-                  "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-                  "core_insight": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "SMCI",
-          "company": "Super Micro Computer",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Bullish",
@@ -1919,85 +1616,410 @@
               }
             }
           }
+        },
+        {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+          "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Exceptional Bullish Catalyst",
+              "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+            },
+            {
+              "type": "MACD",
+              "signal": "Early Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Long-Term Trend",
+              "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Long-Term Weakness",
+              "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum With Room to Rise",
+              "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Risk Environment",
+              "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Historic Laggard, Potential New Leader",
+              "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.54%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.32x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+            }
+          ],
+          "risks": [
+            "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+            "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SMCI",
+            "company": "Super Micro Computer",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+            "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Exceptional Bullish Catalyst",
+                "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+              },
+              {
+                "type": "MACD",
+                "signal": "Early Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Long-Term Trend",
+                "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Long-Term Weakness",
+                "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum With Room to Rise",
+                "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Risk Environment",
+                "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Historic Laggard, Potential New Leader",
+                "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.54%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.32x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+              }
+            ],
+            "risks": [
+              "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+              "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SMCI",
+              "company": "Super Micro Computer",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+              "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Exceptional Bullish Catalyst",
+                  "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Early Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Long-Term Trend",
+                  "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Long-Term Weakness",
+                  "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum With Room to Rise",
+                  "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Risk Environment",
+                  "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Historic Laggard, Potential New Leader",
+                  "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.54%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.32x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+                }
+              ],
+              "risks": [
+                "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+                "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+              "raw_packet": {
+                "ticker": "SMCI",
+                "company": "Super Micro Computer",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.75,
+                "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+                "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Exceptional Bullish Catalyst",
+                    "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Early Bullish Momentum Shift",
+                    "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Deeply Bearish Long-Term Trend",
+                    "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Severe Long-Term Weakness",
+                    "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Neutral Momentum With Room to Rise",
+                    "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "High Risk Environment",
+                    "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Historic Laggard, Potential New Leader",
+                    "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.54%"
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "moderate participation",
+                    "evidence": "Volume spike ratio 1.32x"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+                  }
+                ],
+                "risks": [
+                  "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+                  "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+                "raw_packet": {
+                  "ticker": "SMCI",
+                  "company": "Super Micro Computer",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.75,
+                  "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Exceptional Bullish Catalyst",
+                      "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Early Bullish Momentum Shift",
+                      "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Deeply Bearish Long-Term Trend",
+                      "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Severe Long-Term Weakness",
+                      "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Neutral Momentum With Room to Rise",
+                      "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "High Risk Environment",
+                      "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Historic Laggard, Potential New Leader",
+                      "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.54%"
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "moderate participation",
+                      "evidence": "Volume spike ratio 1.32x"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+                    }
+                  ],
+                  "risks": [
+                    "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+                    "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+                  ],
+                  "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+                  "core_insight": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
+                }
+              }
+            }
+          }
         }
       ]
     },
     "debate_responses": [
       {
-        "response_type": "Revised Agent View",
-        "agreement": [
-          {
-            "agent_name": "fundamental",
-            "rationale": "I agree with the fundamental agent's data showing 'explosive QoQ revenue growth of 152.7% to $12.7B'. This is a quantitative confirmation of the news-based earnings beat I initially identified.",
-            "impact": "This strengthens my short-term Bullish stance."
-          },
-          {
-            "agent_name": "fundamental",
-            "rationale": "I strongly agree with the fundamental agent's key findings of 'significant gross margin compression, falling from approximately 9.3% to 6.3% QoQ' and 'continued negative free cash flow (-$45.1M)'. This provides concrete evidence for the long-term risks I had previously hypothesized.",
-            "impact": "This validates and strengthens my cautious long-term Neutral stance."
-          },
-          {
-            "agent_name": "market_technical",
-            "rationale": "I agree with the technical agent's assessment that the stock is in a 'severe long-term downtrend', as evidenced by the price being 25.8% below the MA200 and the -54.01% drawdown from its peak.",
-            "impact": "This adds significant weight to my long-term Neutral stance, as the positive fundamental story must now overcome a heavily damaged technical picture."
-          }
-        ],
-        "disagreement": [
-          {
-            "agent_name": "market_technical",
-            "rationale": "I disagree with the technical agent's short-term Neutral stance. They are overweighting the 'weak rally conviction' due to a volume spike ratio of 0.98. I believe the sheer magnitude of the fundamental earnings and guidance beat is a primary catalyst that will compel volume to follow in the coming sessions. The initial price move often precedes institutional buying.",
-            "impact": "I am maintaining my short-term Bullish stance, as the fundamental catalyst is too powerful to be negated by initial volume readings."
-          },
-          {
-            "agent_name": "fundamental",
-            "rationale": "I disagree with the fundamental agent's long-term Bullish stance. This view seems to underappreciate the severity of the margin compression and negative free cash flow that the agent's own analysis uncovered. Hypergrowth without a clear path to margin expansion or positive FCF is not a sustainable long-term bullish thesis.",
-            "impact": "I am maintaining my long-term Neutral stance, as the fundamental agent's own data supports a more cautious outlook."
-          }
-        ],
+        "response_type": "revision",
+        "agreement": {
+          "market_technical": "The agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides powerful, objective evidence that validates the short-term Bullish stance.",
+          "fundamental": "The agent's calculation of significant gross margin compression (from ~9.3% to ~6.3% QoQ) provides critical quantitative evidence supporting the primary risk in my original thesis and justifies maintaining a Neutral long-term stance.",
+          "market_technical_2": "The context that the stock is attempting a reversal from a deep, long-term bearish trend (-51% drawdown, below key moving averages) correctly frames the short-term opportunity and the long-term risks."
+        },
+        "disagreement": {
+          "fundamental_short_term": "I disagree with the `fundamental` agent's 'Neutral' short-term stance. It was based on 'Unclear' beat/miss data, whereas my evidence shows a massive beat versus consensus and a significant guidance raise, which is an unequivocally bullish short-term catalyst.",
+          "fundamental_long_term": "I disagree with the `fundamental` agent's 'Bullish' long-term stance. This view seems to underweight the severity of the gross margin compression that the agent itself identified. This compression is a primary risk that tempers the long-term outlook, making 'Neutral' more appropriate.",
+          "market_technical_long_term": "I place lower weight on the `market_technical` agent's 'Bearish' long-term stance. While technically sound based on historical data, it may not fully account for the fundamental paradigm shift indicated by the earnings report. A 'Neutral' stance better balances the new growth trajectory against historical technical damage and future execution risks."
+        },
         "revised_short_term_stance": "Bullish",
         "revised_long_term_stance": "Neutral",
         "revised_confidence": 0.9,
-        "revision_rationale": "My confidence is increased because the new evidence from the other agents has validated the core tenets of my original thesis. The fundamental agent provided specific data (margin compression, negative FCF) that confirms the risks I theorized for my long-term Neutral stance. The technical agent's data on the severe long-term downtrend adds further support for this caution. The fundamental agent's revenue data also confirms the scale of the beat supporting my short-term Bullish view. My thesis is now stronger as it reconciles the short-term fundamental strength with the long-term fundamental and technical headwinds.",
-        "evidence_needed": [
-          "The earnings call transcript is the most critical missing piece. Management's commentary is needed to understand the drivers of the significant margin compression and their strategy for balancing growth and profitability.",
-          "Updated sell-side analyst reports to see how the consensus view shifts in response to the growth vs. margin trade-off presented in the report.",
-          "A breakdown of revenue by customer segment (e.g., cloud service providers, enterprise, etc.) to better assess the concentration and sustainability of demand."
-        ]
+        "evidence_needed": "No new evidence is immediately required. The `fundamental` agent's margin analysis and the `market_technical` agent's price/volume analysis have sufficiently validated the core tenets of the original view. The next key catalyst will be monitoring margin trends and competitive responses in subsequent quarters."
       },
       {
         "response_type": "revision",
         "agreement": {
           "agent_name": "news_macro",
-          "evidence": "I agree with the core finding from the news_macro agent. The reported earnings and guidance were a massive beat, representing a significant fundamental catalyst that overrides the prior technical picture. The news agent's evidence of a '$12.682B vs $10.216B estimate' sales beat and a guidance raise 'to $40B vs $36.092B Est' provides a clear, quantifiable reason for a trend reversal."
+          "evidence": "The news_macro agent provided the critical missing pieces of my analysis: the analyst consensus estimates and the company's forward guidance. I agree that the magnitude of the Q2 beat (Sales $12.682B vs $10.216B est) and the strength of the guidance raise (FY2026 Sales to $40B vs $36.092B est) are exceptionally strong bullish signals that resolve the uncertainty I previously had.",
+          "agent_name_2": "market_technical",
+          "evidence_2": "The market_technical agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides objective, high-conviction evidence that the market interprets the fundamental data as a major positive catalyst, validating the shift to a more bullish short-term view."
         },
         "disagreement": {
-          "agent_name": "market_technical",
-          "evidence": "My original analysis, based purely on historical price data, is now outdated. The fundamental landscape has shifted so dramatically that the predictive power of past technical signals like the 'Severe Long-Term Damage' (drawdown of -54.01%) and 'Weak Rally Conviction' (volume spike ratio of 0.98) is severely diminished. The earnings catalyst is a forward-looking event that invalidates the backward-looking bearish technicals."
+          "agent_name": "news_macro",
+          "evidence": "I disagree with the news_macro agent's 'Long-term Neutral' stance. While their concern about high expectations is valid, I believe the sheer scale of the beat and raise strengthens the long-term secular growth thesis more than it introduces risk. The results suggest SMCI is capturing market share at a rate that justifies a long-term bullish view, even with potential margin volatility.",
+          "agent_name_2": "market_technical",
+          "evidence_2": "I disagree with the market_technical agent's 'Long-term Bearish' stance. This view appears to be overly anchored to historical price action. A fundamental catalyst of this magnitude often invalidates prior technical trends. The fundamental shift from 'hypergrowth with uncertainty' to 'confirmed hypergrowth execution' is a more powerful long-term indicator than the stock's previous drawdown."
         },
-        "revised_view": {
-          "ticker": "SMCI",
-          "company": "Super Micro Computer",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Bullish",
-          "confidence": 0.85,
-          "confidence_rationale": "Confidence is now high. The initial bearish technical view has been decisively invalidated by an overwhelmingly positive fundamental catalyst (massive earnings/guidance beat). This type of event typically forces a major repricing and trend reversal, making the new bullish stance strongly supported by the most current and impactful evidence.",
-          "stance_rationale": "The massive earnings and guidance beat is a trend-reversal event. The previous bearish technical structure is now irrelevant. The short-term will be driven by forced buying from under-allocated investors and analyst upgrades. The long-term trend will now attempt to rebuild as the market prices in a new era of hypergrowth, even with the margin concerns highlighted by other agents. The fundamental catalyst is too strong to ignore, and the path of least resistance has shifted from down to up."
-        },
-        "evidence_needed": [
-          "Post-earnings price action: Confirmation of a large gap up on exceptionally high volume to validate the start of a new uptrend.",
-          "Consolidation pattern: How the stock behaves after the initial surge. A healthy consolidation or 'flag' pattern would further strengthen the bullish case.",
-          "Moving Average reclamation: The ability for the price to quickly reclaim and hold above the long-term MA200 (37.64) will be a key technical milestone for confirming a new long-term bull trend."
-        ]
-      },
-      {
-        "response_type": "CIO Committee Revision",
-        "agreement": "I agree with the quantitative evidence provided by the `news_macro` agent. My original analysis was hampered by a lack of analyst consensus and company guidance. The `news_macro` agent's evidence that SMCI beat Q2 sales estimates by over $2.4B ($12.682B vs $10.216B est) and raised full-year 2026 guidance to $40B (vs $36.092B est) directly resolves the primary sources of my previous uncertainty and low confidence. This new data confirms the hypergrowth thesis is not only intact but accelerating beyond expectations.",
-        "disagreement": "I assign low weight to the `market_technical` agent's analysis. Its data, showing a stock in a severe long-term downtrend, appears to be from immediately before the earnings release and is therefore superseded by this powerful fundamental catalyst. A 20%+ revenue beat and significant guidance raise is a regime-changing event that invalidates the prior technical picture. I also disagree with the `news_macro` agent's 'Neutral' long-term stance. While acknowledging the risks of high expectations, the sheer scale of the AI buildout, confirmed by this report, strengthens my original 'Bullish' long-term thesis. The margin compression I noted is a manageable risk in the face of such historic market share capture.",
         "revised_short_term_stance": "Bullish",
         "revised_long_term_stance": "Bullish",
         "revised_confidence": 0.9,
-        "evidence_needed": "My confidence has increased substantially as the 'what' (massive growth) is confirmed. Now, the priority is to understand the 'why' and 'how'. The most critical piece of evidence is now the full earnings call transcript, which the `news_macro` agent confirmed is available. I need to analyze management's commentary to understand the drivers of margin compression (e.g., strategic pricing, product mix, logistics costs), the composition of their backlog, and their strategy for managing cash flow during this hypergrowth phase."
+        "revised_confidence_rationale": "Confidence is now high. My initial low confidence was explicitly due to the absence of analyst consensus and company guidance. The news_macro agent provided this data, which showed a massive beat and raise. This new information directly addresses my previous uncertainty, confirms the hypergrowth thesis, and provides crucial context for the margin compression and cash flow as strategic choices for market share capture.",
+        "revised_stance_rationale": "The new evidence confirms that SMCI is not just growing, but is massively outperforming expectations and accelerating its capture of the AI server market. The Q2 beat and FY26 guidance raise are so significant they re-frame the investment case. The previously noted risks of margin compression and negative free cash flow now appear to be calculated, tactical decisions to fuel an overwhelming strategic land grab. The short-term stance is now Bullish due to the powerful earnings catalyst, and the long-term Bullish stance is reaffirmed with much higher conviction.",
+        "evidence_needed": [
+          "Detailed management commentary from the earnings call transcript on the drivers of gross margin compression (e.g., product mix, pricing for strategic customers, logistics costs) to assess its sustainability.",
+          "Balance sheet details, specifically inventory levels and accounts receivable growth relative to revenue, to assess working capital management and the quality of the reported revenue.",
+          "A competitive analysis of margins for AI server businesses at Dell and HPE to determine if SMCI's margin profile is structural to the industry segment or company-specific."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": [
+          "I agree with the news_macro agent that the earnings event was a fundamental game-changer. The specific data provided (Sales $12.682B vs $10.216B Est; FY2026 Sales guidance raised to $40B vs $36.092B Est) provides the fundamental 'why' behind the 'what' of the explosive price and volume action I observed.",
+          "The news_macro agent's short-term bullish stance is in perfect alignment with my own and is now reinforced by concrete fundamental data, not just market reaction.",
+          "I agree with the fundamental agent's observation of 'Explosive QoQ revenue growth of 152.7%', which quantifies the scale of the business acceleration driving the market's reaction."
+        ],
+        "disagreement": [
+          "I disagree with the fundamental agent's 'Neutral' short-term stance. While margin compression is a valid fundamental concern, my technical evidence shows the market is overwhelmingly prioritizing the hyper-growth narrative in the short term, making the price impact decidedly bullish.",
+          "I must now disagree with my own original 'Bearish' long-term stance. It was based on a technical trend that is now being invalidated by a historic fundamental catalyst. The evidence from both the news_macro and fundamental agents suggests the prior downtrend is broken. The risk of a 'failed reversal' is now significantly lower than I initially assessed."
+        ],
+        "revised_short_term_stance": "Bullish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.9,
+        "evidence_needed": [
+          "Technical confirmation that the long-term trend has reversed, which would involve the price reclaiming and holding above key moving averages, particularly the 200-day moving average ($41.76).",
+          "Sustained high-volume buying in the days following the earnings gap, which would provide evidence of institutional accumulation and invalidate the 'gap-and-crap' risk scenario.",
+          "Price action relative to the margin concerns raised by the fundamental agent. If the stock continues to rally despite this news, it confirms the market is solely focused on growth, strengthening the bullish technical case."
+        ]
       }
     ],
     "revised_packets": [
@@ -2397,326 +2419,21 @@
           }
         },
         "debate_response": {
-          "response_type": "Revised Agent View",
-          "agreement": [
-            {
-              "agent_name": "fundamental",
-              "rationale": "I agree with the fundamental agent's data showing 'explosive QoQ revenue growth of 152.7% to $12.7B'. This is a quantitative confirmation of the news-based earnings beat I initially identified.",
-              "impact": "This strengthens my short-term Bullish stance."
-            },
-            {
-              "agent_name": "fundamental",
-              "rationale": "I strongly agree with the fundamental agent's key findings of 'significant gross margin compression, falling from approximately 9.3% to 6.3% QoQ' and 'continued negative free cash flow (-$45.1M)'. This provides concrete evidence for the long-term risks I had previously hypothesized.",
-              "impact": "This validates and strengthens my cautious long-term Neutral stance."
-            },
-            {
-              "agent_name": "market_technical",
-              "rationale": "I agree with the technical agent's assessment that the stock is in a 'severe long-term downtrend', as evidenced by the price being 25.8% below the MA200 and the -54.01% drawdown from its peak.",
-              "impact": "This adds significant weight to my long-term Neutral stance, as the positive fundamental story must now overcome a heavily damaged technical picture."
-            }
-          ],
-          "disagreement": [
-            {
-              "agent_name": "market_technical",
-              "rationale": "I disagree with the technical agent's short-term Neutral stance. They are overweighting the 'weak rally conviction' due to a volume spike ratio of 0.98. I believe the sheer magnitude of the fundamental earnings and guidance beat is a primary catalyst that will compel volume to follow in the coming sessions. The initial price move often precedes institutional buying.",
-              "impact": "I am maintaining my short-term Bullish stance, as the fundamental catalyst is too powerful to be negated by initial volume readings."
-            },
-            {
-              "agent_name": "fundamental",
-              "rationale": "I disagree with the fundamental agent's long-term Bullish stance. This view seems to underappreciate the severity of the margin compression and negative free cash flow that the agent's own analysis uncovered. Hypergrowth without a clear path to margin expansion or positive FCF is not a sustainable long-term bullish thesis.",
-              "impact": "I am maintaining my long-term Neutral stance, as the fundamental agent's own data supports a more cautious outlook."
-            }
-          ],
+          "response_type": "revision",
+          "agreement": {
+            "market_technical": "The agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides powerful, objective evidence that validates the short-term Bullish stance.",
+            "fundamental": "The agent's calculation of significant gross margin compression (from ~9.3% to ~6.3% QoQ) provides critical quantitative evidence supporting the primary risk in my original thesis and justifies maintaining a Neutral long-term stance.",
+            "market_technical_2": "The context that the stock is attempting a reversal from a deep, long-term bearish trend (-51% drawdown, below key moving averages) correctly frames the short-term opportunity and the long-term risks."
+          },
+          "disagreement": {
+            "fundamental_short_term": "I disagree with the `fundamental` agent's 'Neutral' short-term stance. It was based on 'Unclear' beat/miss data, whereas my evidence shows a massive beat versus consensus and a significant guidance raise, which is an unequivocally bullish short-term catalyst.",
+            "fundamental_long_term": "I disagree with the `fundamental` agent's 'Bullish' long-term stance. This view seems to underweight the severity of the gross margin compression that the agent itself identified. This compression is a primary risk that tempers the long-term outlook, making 'Neutral' more appropriate.",
+            "market_technical_long_term": "I place lower weight on the `market_technical` agent's 'Bearish' long-term stance. While technically sound based on historical data, it may not fully account for the fundamental paradigm shift indicated by the earnings report. A 'Neutral' stance better balances the new growth trajectory against historical technical damage and future execution risks."
+          },
           "revised_short_term_stance": "Bullish",
           "revised_long_term_stance": "Neutral",
           "revised_confidence": 0.9,
-          "revision_rationale": "My confidence is increased because the new evidence from the other agents has validated the core tenets of my original thesis. The fundamental agent provided specific data (margin compression, negative FCF) that confirms the risks I theorized for my long-term Neutral stance. The technical agent's data on the severe long-term downtrend adds further support for this caution. The fundamental agent's revenue data also confirms the scale of the beat supporting my short-term Bullish view. My thesis is now stronger as it reconciles the short-term fundamental strength with the long-term fundamental and technical headwinds.",
-          "evidence_needed": [
-            "The earnings call transcript is the most critical missing piece. Management's commentary is needed to understand the drivers of the significant margin compression and their strategy for balancing growth and profitability.",
-            "Updated sell-side analyst reports to see how the consensus view shifts in response to the growth vs. margin trade-off presented in the report.",
-            "A breakdown of revenue by customer segment (e.g., cloud service providers, enterprise, etc.) to better assess the concentration and sustainability of demand."
-          ]
-        }
-      },
-      {
-        "ticker": "SMCI",
-        "company": "Super Micro Computer",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-        "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Rally Conviction",
-            "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Severe Long-Term Damage",
-            "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral Momentum",
-            "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Extremely High Risk Environment",
-            "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Contention",
-            "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.21%"
-          }
-        ],
-        "risks": [
-          "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-          "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-          "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-        "raw_packet": {
-          "ticker": "SMCI",
-          "company": "Super Micro Computer",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-          "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Rally Conviction",
-              "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Severe Long-Term Damage",
-              "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral Momentum",
-              "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Extremely High Risk Environment",
-              "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Contention",
-              "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.21%"
-            }
-          ],
-          "risks": [
-            "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-            "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-            "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-          "raw_packet": {
-            "ticker": "SMCI",
-            "company": "Super Micro Computer",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-            "stance_rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Rally Conviction",
-                "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Severe Long-Term Damage",
-                "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral Momentum",
-                "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Extremely High Risk Environment",
-                "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Contention",
-                "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.21%"
-              }
-            ],
-            "risks": [
-              "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-              "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-              "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-            "raw_packet": {
-              "ticker": "SMCI",
-              "company": "Super Micro Computer",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is moderate-to-high because the long-term bearish trend is unequivocally clear from multiple indicators (MA200, Drawdown, Relative Strength). The short-term neutral stance is also well-supported by the direct conflict between bullish momentum signals and a lack of volume confirmation, indicating an unstable equilibrium.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at 27.92 is above the short-term MA20 (26.90) and MA50 (27.65), but remains 25.8% below the long-term MA200 (37.64)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is confirmed with the MACD line (0.286) above the signal line (0.186) and a positive histogram."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Rally Conviction",
-                  "evidence": "The volume spike ratio is 0.98, indicating the latest price move was not supported by above-average trading volume."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Severe Long-Term Damage",
-                  "evidence": "The stock is in a significant current drawdown of -54.01% from its peak, confirming the severity of the downtrend."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "SMCI has underperformed the SPY benchmark by -42.09% over the period, indicating profound relative weakness."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral Momentum",
-                  "evidence": "RSI at 53.29 is in neutral territory, not indicating overbought or oversold conditions, but showing a slight positive bias."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Extremely High Risk Environment",
-                  "evidence": "Annualized volatility is very high at 76.0%, suggesting large price swings and high instability."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Contention",
-                  "evidence": "The current regime is classified as 'range_bound', reflecting the battle between short-term buying pressure and long-term overhead resistance."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.21%"
-                }
-              ],
-              "risks": [
-                "The dominant long-term bearish trend poses a major risk that the recent bounce is a temporary bear market rally.",
-                "Extremely high volatility (76% annualized) creates a risky environment with potential for large, unpredictable price swings.",
-                "Lack of volume confirmation on the recent upward price movement suggests weak buyer conviction and a fragile rally."
-              ],
-              "summary": "As of 2026/02/03, the technical analysis of SMCI shows a stock attempting a short-term rally within a severe long-term downtrend. Bullish signals like a MACD crossover and price action above the MA20/50 are present but are not confirmed by volume and are overshadowed by the stock's position deep below its MA200, its massive drawdown, and its extreme underperformance relative to the broader market.",
-              "core_insight": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "agent_name": "news_macro",
-            "evidence": "I agree with the core finding from the news_macro agent. The reported earnings and guidance were a massive beat, representing a significant fundamental catalyst that overrides the prior technical picture. The news agent's evidence of a '$12.682B vs $10.216B estimate' sales beat and a guidance raise 'to $40B vs $36.092B Est' provides a clear, quantifiable reason for a trend reversal."
-          },
-          "disagreement": {
-            "agent_name": "market_technical",
-            "evidence": "My original analysis, based purely on historical price data, is now outdated. The fundamental landscape has shifted so dramatically that the predictive power of past technical signals like the 'Severe Long-Term Damage' (drawdown of -54.01%) and 'Weak Rally Conviction' (volume spike ratio of 0.98) is severely diminished. The earnings catalyst is a forward-looking event that invalidates the backward-looking bearish technicals."
-          },
-          "revised_view": {
-            "ticker": "SMCI",
-            "company": "Super Micro Computer",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is now high. The initial bearish technical view has been decisively invalidated by an overwhelmingly positive fundamental catalyst (massive earnings/guidance beat). This type of event typically forces a major repricing and trend reversal, making the new bullish stance strongly supported by the most current and impactful evidence.",
-            "stance_rationale": "The massive earnings and guidance beat is a trend-reversal event. The previous bearish technical structure is now irrelevant. The short-term will be driven by forced buying from under-allocated investors and analyst upgrades. The long-term trend will now attempt to rebuild as the market prices in a new era of hypergrowth, even with the margin concerns highlighted by other agents. The fundamental catalyst is too strong to ignore, and the path of least resistance has shifted from down to up."
-          },
-          "evidence_needed": [
-            "Post-earnings price action: Confirmation of a large gap up on exceptionally high volume to validate the start of a new uptrend.",
-            "Consolidation pattern: How the stock behaves after the initial surge. A healthy consolidation or 'flag' pattern would further strengthen the bullish case.",
-            "Moving Average reclamation: The ability for the price to quickly reclaim and hold above the long-term MA200 (37.64) will be a key technical milestone for confirming a new long-term bull trend."
-          ]
+          "evidence_needed": "No new evidence is immediately required. The `fundamental` agent's margin analysis and the `market_technical` agent's price/volume analysis have sufficiently validated the core tenets of the original view. The next key catalyst will be monitoring margin trends and competitive responses in subsequent quarters."
         }
       },
       {
@@ -2864,13 +2581,320 @@
           }
         },
         "debate_response": {
-          "response_type": "CIO Committee Revision",
-          "agreement": "I agree with the quantitative evidence provided by the `news_macro` agent. My original analysis was hampered by a lack of analyst consensus and company guidance. The `news_macro` agent's evidence that SMCI beat Q2 sales estimates by over $2.4B ($12.682B vs $10.216B est) and raised full-year 2026 guidance to $40B (vs $36.092B est) directly resolves the primary sources of my previous uncertainty and low confidence. This new data confirms the hypergrowth thesis is not only intact but accelerating beyond expectations.",
-          "disagreement": "I assign low weight to the `market_technical` agent's analysis. Its data, showing a stock in a severe long-term downtrend, appears to be from immediately before the earnings release and is therefore superseded by this powerful fundamental catalyst. A 20%+ revenue beat and significant guidance raise is a regime-changing event that invalidates the prior technical picture. I also disagree with the `news_macro` agent's 'Neutral' long-term stance. While acknowledging the risks of high expectations, the sheer scale of the AI buildout, confirmed by this report, strengthens my original 'Bullish' long-term thesis. The margin compression I noted is a manageable risk in the face of such historic market share capture.",
+          "response_type": "revision",
+          "agreement": {
+            "agent_name": "news_macro",
+            "evidence": "The news_macro agent provided the critical missing pieces of my analysis: the analyst consensus estimates and the company's forward guidance. I agree that the magnitude of the Q2 beat (Sales $12.682B vs $10.216B est) and the strength of the guidance raise (FY2026 Sales to $40B vs $36.092B est) are exceptionally strong bullish signals that resolve the uncertainty I previously had.",
+            "agent_name_2": "market_technical",
+            "evidence_2": "The market_technical agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides objective, high-conviction evidence that the market interprets the fundamental data as a major positive catalyst, validating the shift to a more bullish short-term view."
+          },
+          "disagreement": {
+            "agent_name": "news_macro",
+            "evidence": "I disagree with the news_macro agent's 'Long-term Neutral' stance. While their concern about high expectations is valid, I believe the sheer scale of the beat and raise strengthens the long-term secular growth thesis more than it introduces risk. The results suggest SMCI is capturing market share at a rate that justifies a long-term bullish view, even with potential margin volatility.",
+            "agent_name_2": "market_technical",
+            "evidence_2": "I disagree with the market_technical agent's 'Long-term Bearish' stance. This view appears to be overly anchored to historical price action. A fundamental catalyst of this magnitude often invalidates prior technical trends. The fundamental shift from 'hypergrowth with uncertainty' to 'confirmed hypergrowth execution' is a more powerful long-term indicator than the stock's previous drawdown."
+          },
           "revised_short_term_stance": "Bullish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.9,
-          "evidence_needed": "My confidence has increased substantially as the 'what' (massive growth) is confirmed. Now, the priority is to understand the 'why' and 'how'. The most critical piece of evidence is now the full earnings call transcript, which the `news_macro` agent confirmed is available. I need to analyze management's commentary to understand the drivers of margin compression (e.g., strategic pricing, product mix, logistics costs), the composition of their backlog, and their strategy for managing cash flow during this hypergrowth phase."
+          "revised_confidence_rationale": "Confidence is now high. My initial low confidence was explicitly due to the absence of analyst consensus and company guidance. The news_macro agent provided this data, which showed a massive beat and raise. This new information directly addresses my previous uncertainty, confirms the hypergrowth thesis, and provides crucial context for the margin compression and cash flow as strategic choices for market share capture.",
+          "revised_stance_rationale": "The new evidence confirms that SMCI is not just growing, but is massively outperforming expectations and accelerating its capture of the AI server market. The Q2 beat and FY26 guidance raise are so significant they re-frame the investment case. The previously noted risks of margin compression and negative free cash flow now appear to be calculated, tactical decisions to fuel an overwhelming strategic land grab. The short-term stance is now Bullish due to the powerful earnings catalyst, and the long-term Bullish stance is reaffirmed with much higher conviction.",
+          "evidence_needed": [
+            "Detailed management commentary from the earnings call transcript on the drivers of gross margin compression (e.g., product mix, pricing for strategic customers, logistics costs) to assess its sustainability.",
+            "Balance sheet details, specifically inventory levels and accounts receivable growth relative to revenue, to assess working capital management and the quality of the reported revenue.",
+            "A competitive analysis of margins for AI server businesses at Dell and HPE to determine if SMCI's margin profile is structural to the industry segment or company-specific."
+          ]
+        }
+      },
+      {
+        "ticker": "SMCI",
+        "company": "Super Micro Computer",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+        "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Exceptional Bullish Catalyst",
+            "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+          },
+          {
+            "type": "MACD",
+            "signal": "Early Bullish Momentum Shift",
+            "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Deeply Bearish Long-Term Trend",
+            "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Severe Long-Term Weakness",
+            "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum With Room to Rise",
+            "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "High Risk Environment",
+            "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Historic Laggard, Potential New Leader",
+            "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.54%"
+          },
+          {
+            "type": "Volume",
+            "signal": "moderate participation",
+            "evidence": "Volume spike ratio 1.32x"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+          }
+        ],
+        "risks": [
+          "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+          "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+        "raw_packet": {
+          "ticker": "SMCI",
+          "company": "Super Micro Computer",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.75,
+          "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+          "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Exceptional Bullish Catalyst",
+              "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+            },
+            {
+              "type": "MACD",
+              "signal": "Early Bullish Momentum Shift",
+              "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Deeply Bearish Long-Term Trend",
+              "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Severe Long-Term Weakness",
+              "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum With Room to Rise",
+              "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "High Risk Environment",
+              "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Historic Laggard, Potential New Leader",
+              "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.54%"
+            },
+            {
+              "type": "Volume",
+              "signal": "moderate participation",
+              "evidence": "Volume spike ratio 1.32x"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+            }
+          ],
+          "risks": [
+            "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+            "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+          "raw_packet": {
+            "ticker": "SMCI",
+            "company": "Super Micro Computer",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.75,
+            "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+            "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Exceptional Bullish Catalyst",
+                "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+              },
+              {
+                "type": "MACD",
+                "signal": "Early Bullish Momentum Shift",
+                "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Deeply Bearish Long-Term Trend",
+                "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Severe Long-Term Weakness",
+                "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum With Room to Rise",
+                "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "High Risk Environment",
+                "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Historic Laggard, Potential New Leader",
+                "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.54%"
+              },
+              {
+                "type": "Volume",
+                "signal": "moderate participation",
+                "evidence": "Volume spike ratio 1.32x"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+              }
+            ],
+            "risks": [
+              "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+              "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+            "raw_packet": {
+              "ticker": "SMCI",
+              "company": "Super Micro Computer",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.75,
+              "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Exceptional Bullish Catalyst",
+                  "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Early Bullish Momentum Shift",
+                  "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Deeply Bearish Long-Term Trend",
+                  "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Severe Long-Term Weakness",
+                  "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum With Room to Rise",
+                  "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "High Risk Environment",
+                  "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Historic Laggard, Potential New Leader",
+                  "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.54%"
+                },
+                {
+                  "type": "Volume",
+                  "signal": "moderate participation",
+                  "evidence": "Volume spike ratio 1.32x"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 83.5%, Recent 55.7%"
+                }
+              ],
+              "risks": [
+                "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+                "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
+              ],
+              "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+              "core_insight": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the news_macro agent that the earnings event was a fundamental game-changer. The specific data provided (Sales $12.682B vs $10.216B Est; FY2026 Sales guidance raised to $40B vs $36.092B Est) provides the fundamental 'why' behind the 'what' of the explosive price and volume action I observed.",
+            "The news_macro agent's short-term bullish stance is in perfect alignment with my own and is now reinforced by concrete fundamental data, not just market reaction.",
+            "I agree with the fundamental agent's observation of 'Explosive QoQ revenue growth of 152.7%', which quantifies the scale of the business acceleration driving the market's reaction."
+          ],
+          "disagreement": [
+            "I disagree with the fundamental agent's 'Neutral' short-term stance. While margin compression is a valid fundamental concern, my technical evidence shows the market is overwhelmingly prioritizing the hyper-growth narrative in the short term, making the price impact decidedly bullish.",
+            "I must now disagree with my own original 'Bearish' long-term stance. It was based on a technical trend that is now being invalidated by a historic fundamental catalyst. The evidence from both the news_macro and fundamental agents suggests the prior downtrend is broken. The risk of a 'failed reversal' is now significantly lower than I initially assessed."
+          ],
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.9,
+          "evidence_needed": [
+            "Technical confirmation that the long-term trend has reversed, which would involve the price reclaiming and holding above key moving averages, particularly the 200-day moving average ($41.76).",
+            "Sustained high-volume buying in the days following the earnings gap, which would provide evidence of institutional accumulation and invalidate the 'gap-and-crap' risk scenario.",
+            "Price action relative to the margin concerns raised by the fundamental agent. If the stock continues to rally despite this news, it confirms the market is solely focused on growth, strengthening the bullish technical case."
+          ]
         }
       }
     ]
@@ -2881,22 +2905,21 @@
     "final_short_term_stance": "Bullish",
     "final_long_term_stance": "Neutral",
     "investment_action": "Long",
-    "position_size_hint": "Small",
-    "confidence": 0.585,
-    "core_thesis": "SMCI is experiencing a massive, catalyst-driven short-term repricing due to an unprecedented AI-driven revenue beat and guidance raise. However, this hypergrowth is being achieved at the expense of significant gross margin compression and negative free cash flow, creating a more balanced and uncertain risk/reward profile for the long term as expectations are now reset to perfection.",
-    "why_now": "The company just reported a massive Q2 earnings and revenue beat ($12.7B vs $10.2B est) and raised full-year guidance significantly (to $40B vs $36.1B est). This is a powerful, trend-reversing catalyst that will force analyst upgrades and attract capital from under-allocated investors in the immediate term.",
+    "position_size_hint": "Normal",
+    "confidence": 0.85,
+    "core_thesis": "Super Micro Computer has confirmed its status as a primary beneficiary and market share winner in the AI infrastructure buildout. The company is executing a 'land grab' strategy, prioritizing hypergrowth over short-term margins, which creates a powerful immediate catalyst but a more balanced long-term risk/reward profile as expectations are now set for near-perfection.",
+    "why_now": "The company just delivered a historic earnings report, beating Q2 revenue estimates by over 20% ($12.7B vs $10.2B est) and raising full-year guidance significantly (to $40B vs $36B est). This fundamental shock is forcing a major repricing of the stock as under-allocated investors chase the new growth narrative, a dynamic confirmed by the post-earnings +15.5% abnormal return on nearly 5x average volume.",
     "key_supporting_evidence": [
-      "Massive Q2 revenue beat: Sales of $12.682B beat the $10.216B estimate by over 20%.",
-      "Significant FY2026 guidance raise: Full-year sales guidance was raised to $40B, well above the $36.092B estimate.",
-      "Explosive QoQ revenue growth of 152.7%, confirming a state of hypergrowth.",
-      "Post-debate agent consensus: All agents revised their short-term stance to Bullish, acknowledging the power of the fundamental catalyst.",
-      "The earnings event invalidates the prior bearish technical structure, creating a new technical regime."
+      "Massive Beat & Raise: Q2 sales of $12.7B beat consensus by over $2.4B, and FY26 guidance was raised by $4B to $40B, indicating a fundamental acceleration in the business.",
+      "Explosive Growth: Revenue grew 152.7% quarter-over-quarter, confirming a state of hypergrowth and aggressive market share capture in the AI server space.",
+      "Powerful Market Confirmation: The stock's +15.5% abnormal return on 4.83x average volume post-earnings signals strong institutional conviction and a technical trend reversal.",
+      "Ecosystem Validation: SMCI's results serve as a strong positive leading indicator for the entire AI supply chain, particularly for demand for NVIDIA GPUs and data center infrastructure (e.g., VRT, CRDO)."
     ],
     "key_risks": [
-      "Significant gross margin compression: Gross margin fell sharply from ~9.3% to ~6.3% QoQ, indicating that growth is coming at a high cost.",
-      "Continued negative free cash flow: The company is still burning cash (-$45.1M FCF) to fund its growth, raising questions about the sustainability and quality of earnings.",
-      "Execution Risk & High Expectations: The stock's performance now depends on flawless execution, as sky-high expectations are priced in, leaving no room for error.",
-      "High Volatility: The stock exhibits extremely high annualized volatility of 76%, indicating a high-risk environment with the potential for large price swings in either direction."
+      "Severe Margin Compression: Gross margins contracted sharply from ~9.3% to ~6.3% QoQ. If this is not a temporary strategic choice for market share, it poses a significant threat to long-term profitability.",
+      "Perfection is Priced In: After the massive guidance raise and stock reaction, expectations are now incredibly high. The company must execute flawlessly to avoid a sharp correction on any minor stumble.",
+      "Extreme Volatility: With an annualized volatility over 80%, the stock is prone to large, rapid price swings, increasing the risk of poor entry/exit points and requiring careful position management.",
+      "Competitive Response: Legacy players like Dell and HPE will not cede the AI server market without a fight. An effective competitive response could slow SMCI's growth and pressure its already-thin margins."
     ],
     "agent_view_summary": [
       {
@@ -2907,18 +2930,18 @@
         "rationale": "Short-term: The magnitude of the revenue and guidance beat is exceptional (+20% vs consensus), which will force significant analyst upgrades and a chase from under-allocated investors, likely driving multi-day outperformance. Long-term: Expectations are now reset to a near-perfect execution level. The company's low-margin, high-volume model is vulnerable to any supply chain hiccup, competition, or margin compression. The risk/reward over 1-3 quarters is more balanced, making it difficult to sustain outperformance against QQQ from this new, elevated base."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "A nascent, unconfirmed short-term rally is fighting an entrenched long-term downtrend. The lack of volume confirmation suggests this rally is fragile and the path of least resistance remains downwards until stronger evidence of a trend reversal emerges."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Bullish",
         "confidence": 0.5,
         "rationale": "The company is experiencing explosive QoQ revenue and profit growth, indicating a period of hypergrowth. This, combined with a low forward P/E ratio, presents a compelling investment case. However, this growth has come at the cost of significant margin compression and continued negative free cash flow, which are substantial risks that require close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.75,
+        "rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
       }
     ],
     "debate_summary": {
@@ -2929,106 +2952,106 @@
       ],
       "debate_responses": [
         {
-          "response_type": "Revised Agent View",
-          "agreement": [
-            {
-              "agent_name": "fundamental",
-              "rationale": "I agree with the fundamental agent's data showing 'explosive QoQ revenue growth of 152.7% to $12.7B'. This is a quantitative confirmation of the news-based earnings beat I initially identified.",
-              "impact": "This strengthens my short-term Bullish stance."
-            },
-            {
-              "agent_name": "fundamental",
-              "rationale": "I strongly agree with the fundamental agent's key findings of 'significant gross margin compression, falling from approximately 9.3% to 6.3% QoQ' and 'continued negative free cash flow (-$45.1M)'. This provides concrete evidence for the long-term risks I had previously hypothesized.",
-              "impact": "This validates and strengthens my cautious long-term Neutral stance."
-            },
-            {
-              "agent_name": "market_technical",
-              "rationale": "I agree with the technical agent's assessment that the stock is in a 'severe long-term downtrend', as evidenced by the price being 25.8% below the MA200 and the -54.01% drawdown from its peak.",
-              "impact": "This adds significant weight to my long-term Neutral stance, as the positive fundamental story must now overcome a heavily damaged technical picture."
-            }
-          ],
-          "disagreement": [
-            {
-              "agent_name": "market_technical",
-              "rationale": "I disagree with the technical agent's short-term Neutral stance. They are overweighting the 'weak rally conviction' due to a volume spike ratio of 0.98. I believe the sheer magnitude of the fundamental earnings and guidance beat is a primary catalyst that will compel volume to follow in the coming sessions. The initial price move often precedes institutional buying.",
-              "impact": "I am maintaining my short-term Bullish stance, as the fundamental catalyst is too powerful to be negated by initial volume readings."
-            },
-            {
-              "agent_name": "fundamental",
-              "rationale": "I disagree with the fundamental agent's long-term Bullish stance. This view seems to underappreciate the severity of the margin compression and negative free cash flow that the agent's own analysis uncovered. Hypergrowth without a clear path to margin expansion or positive FCF is not a sustainable long-term bullish thesis.",
-              "impact": "I am maintaining my long-term Neutral stance, as the fundamental agent's own data supports a more cautious outlook."
-            }
-          ],
+          "response_type": "revision",
+          "agreement": {
+            "market_technical": "The agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides powerful, objective evidence that validates the short-term Bullish stance.",
+            "fundamental": "The agent's calculation of significant gross margin compression (from ~9.3% to ~6.3% QoQ) provides critical quantitative evidence supporting the primary risk in my original thesis and justifies maintaining a Neutral long-term stance.",
+            "market_technical_2": "The context that the stock is attempting a reversal from a deep, long-term bearish trend (-51% drawdown, below key moving averages) correctly frames the short-term opportunity and the long-term risks."
+          },
+          "disagreement": {
+            "fundamental_short_term": "I disagree with the `fundamental` agent's 'Neutral' short-term stance. It was based on 'Unclear' beat/miss data, whereas my evidence shows a massive beat versus consensus and a significant guidance raise, which is an unequivocally bullish short-term catalyst.",
+            "fundamental_long_term": "I disagree with the `fundamental` agent's 'Bullish' long-term stance. This view seems to underweight the severity of the gross margin compression that the agent itself identified. This compression is a primary risk that tempers the long-term outlook, making 'Neutral' more appropriate.",
+            "market_technical_long_term": "I place lower weight on the `market_technical` agent's 'Bearish' long-term stance. While technically sound based on historical data, it may not fully account for the fundamental paradigm shift indicated by the earnings report. A 'Neutral' stance better balances the new growth trajectory against historical technical damage and future execution risks."
+          },
           "revised_short_term_stance": "Bullish",
           "revised_long_term_stance": "Neutral",
           "revised_confidence": 0.9,
-          "revision_rationale": "My confidence is increased because the new evidence from the other agents has validated the core tenets of my original thesis. The fundamental agent provided specific data (margin compression, negative FCF) that confirms the risks I theorized for my long-term Neutral stance. The technical agent's data on the severe long-term downtrend adds further support for this caution. The fundamental agent's revenue data also confirms the scale of the beat supporting my short-term Bullish view. My thesis is now stronger as it reconciles the short-term fundamental strength with the long-term fundamental and technical headwinds.",
-          "evidence_needed": [
-            "The earnings call transcript is the most critical missing piece. Management's commentary is needed to understand the drivers of the significant margin compression and their strategy for balancing growth and profitability.",
-            "Updated sell-side analyst reports to see how the consensus view shifts in response to the growth vs. margin trade-off presented in the report.",
-            "A breakdown of revenue by customer segment (e.g., cloud service providers, enterprise, etc.) to better assess the concentration and sustainability of demand."
-          ]
+          "evidence_needed": "No new evidence is immediately required. The `fundamental` agent's margin analysis and the `market_technical` agent's price/volume analysis have sufficiently validated the core tenets of the original view. The next key catalyst will be monitoring margin trends and competitive responses in subsequent quarters."
         },
         {
           "response_type": "revision",
           "agreement": {
             "agent_name": "news_macro",
-            "evidence": "I agree with the core finding from the news_macro agent. The reported earnings and guidance were a massive beat, representing a significant fundamental catalyst that overrides the prior technical picture. The news agent's evidence of a '$12.682B vs $10.216B estimate' sales beat and a guidance raise 'to $40B vs $36.092B Est' provides a clear, quantifiable reason for a trend reversal."
+            "evidence": "The news_macro agent provided the critical missing pieces of my analysis: the analyst consensus estimates and the company's forward guidance. I agree that the magnitude of the Q2 beat (Sales $12.682B vs $10.216B est) and the strength of the guidance raise (FY2026 Sales to $40B vs $36.092B est) are exceptionally strong bullish signals that resolve the uncertainty I previously had.",
+            "agent_name_2": "market_technical",
+            "evidence_2": "The market_technical agent's quantification of the post-earnings reaction (+15.53% abnormal return on 4.83x volume) provides objective, high-conviction evidence that the market interprets the fundamental data as a major positive catalyst, validating the shift to a more bullish short-term view."
           },
           "disagreement": {
-            "agent_name": "market_technical",
-            "evidence": "My original analysis, based purely on historical price data, is now outdated. The fundamental landscape has shifted so dramatically that the predictive power of past technical signals like the 'Severe Long-Term Damage' (drawdown of -54.01%) and 'Weak Rally Conviction' (volume spike ratio of 0.98) is severely diminished. The earnings catalyst is a forward-looking event that invalidates the backward-looking bearish technicals."
+            "agent_name": "news_macro",
+            "evidence": "I disagree with the news_macro agent's 'Long-term Neutral' stance. While their concern about high expectations is valid, I believe the sheer scale of the beat and raise strengthens the long-term secular growth thesis more than it introduces risk. The results suggest SMCI is capturing market share at a rate that justifies a long-term bullish view, even with potential margin volatility.",
+            "agent_name_2": "market_technical",
+            "evidence_2": "I disagree with the market_technical agent's 'Long-term Bearish' stance. This view appears to be overly anchored to historical price action. A fundamental catalyst of this magnitude often invalidates prior technical trends. The fundamental shift from 'hypergrowth with uncertainty' to 'confirmed hypergrowth execution' is a more powerful long-term indicator than the stock's previous drawdown."
           },
-          "revised_view": {
-            "ticker": "SMCI",
-            "company": "Super Micro Computer",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Bullish",
-            "confidence": 0.85,
-            "confidence_rationale": "Confidence is now high. The initial bearish technical view has been decisively invalidated by an overwhelmingly positive fundamental catalyst (massive earnings/guidance beat). This type of event typically forces a major repricing and trend reversal, making the new bullish stance strongly supported by the most current and impactful evidence.",
-            "stance_rationale": "The massive earnings and guidance beat is a trend-reversal event. The previous bearish technical structure is now irrelevant. The short-term will be driven by forced buying from under-allocated investors and analyst upgrades. The long-term trend will now attempt to rebuild as the market prices in a new era of hypergrowth, even with the margin concerns highlighted by other agents. The fundamental catalyst is too strong to ignore, and the path of least resistance has shifted from down to up."
-          },
-          "evidence_needed": [
-            "Post-earnings price action: Confirmation of a large gap up on exceptionally high volume to validate the start of a new uptrend.",
-            "Consolidation pattern: How the stock behaves after the initial surge. A healthy consolidation or 'flag' pattern would further strengthen the bullish case.",
-            "Moving Average reclamation: The ability for the price to quickly reclaim and hold above the long-term MA200 (37.64) will be a key technical milestone for confirming a new long-term bull trend."
-          ]
-        },
-        {
-          "response_type": "CIO Committee Revision",
-          "agreement": "I agree with the quantitative evidence provided by the `news_macro` agent. My original analysis was hampered by a lack of analyst consensus and company guidance. The `news_macro` agent's evidence that SMCI beat Q2 sales estimates by over $2.4B ($12.682B vs $10.216B est) and raised full-year 2026 guidance to $40B (vs $36.092B est) directly resolves the primary sources of my previous uncertainty and low confidence. This new data confirms the hypergrowth thesis is not only intact but accelerating beyond expectations.",
-          "disagreement": "I assign low weight to the `market_technical` agent's analysis. Its data, showing a stock in a severe long-term downtrend, appears to be from immediately before the earnings release and is therefore superseded by this powerful fundamental catalyst. A 20%+ revenue beat and significant guidance raise is a regime-changing event that invalidates the prior technical picture. I also disagree with the `news_macro` agent's 'Neutral' long-term stance. While acknowledging the risks of high expectations, the sheer scale of the AI buildout, confirmed by this report, strengthens my original 'Bullish' long-term thesis. The margin compression I noted is a manageable risk in the face of such historic market share capture.",
           "revised_short_term_stance": "Bullish",
           "revised_long_term_stance": "Bullish",
           "revised_confidence": 0.9,
-          "evidence_needed": "My confidence has increased substantially as the 'what' (massive growth) is confirmed. Now, the priority is to understand the 'why' and 'how'. The most critical piece of evidence is now the full earnings call transcript, which the `news_macro` agent confirmed is available. I need to analyze management's commentary to understand the drivers of margin compression (e.g., strategic pricing, product mix, logistics costs), the composition of their backlog, and their strategy for managing cash flow during this hypergrowth phase."
+          "revised_confidence_rationale": "Confidence is now high. My initial low confidence was explicitly due to the absence of analyst consensus and company guidance. The news_macro agent provided this data, which showed a massive beat and raise. This new information directly addresses my previous uncertainty, confirms the hypergrowth thesis, and provides crucial context for the margin compression and cash flow as strategic choices for market share capture.",
+          "revised_stance_rationale": "The new evidence confirms that SMCI is not just growing, but is massively outperforming expectations and accelerating its capture of the AI server market. The Q2 beat and FY26 guidance raise are so significant they re-frame the investment case. The previously noted risks of margin compression and negative free cash flow now appear to be calculated, tactical decisions to fuel an overwhelming strategic land grab. The short-term stance is now Bullish due to the powerful earnings catalyst, and the long-term Bullish stance is reaffirmed with much higher conviction.",
+          "evidence_needed": [
+            "Detailed management commentary from the earnings call transcript on the drivers of gross margin compression (e.g., product mix, pricing for strategic customers, logistics costs) to assess its sustainability.",
+            "Balance sheet details, specifically inventory levels and accounts receivable growth relative to revenue, to assess working capital management and the quality of the reported revenue.",
+            "A competitive analysis of margins for AI server businesses at Dell and HPE to determine if SMCI's margin profile is structural to the industry segment or company-specific."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the news_macro agent that the earnings event was a fundamental game-changer. The specific data provided (Sales $12.682B vs $10.216B Est; FY2026 Sales guidance raised to $40B vs $36.092B Est) provides the fundamental 'why' behind the 'what' of the explosive price and volume action I observed.",
+            "The news_macro agent's short-term bullish stance is in perfect alignment with my own and is now reinforced by concrete fundamental data, not just market reaction.",
+            "I agree with the fundamental agent's observation of 'Explosive QoQ revenue growth of 152.7%', which quantifies the scale of the business acceleration driving the market's reaction."
+          ],
+          "disagreement": [
+            "I disagree with the fundamental agent's 'Neutral' short-term stance. While margin compression is a valid fundamental concern, my technical evidence shows the market is overwhelmingly prioritizing the hyper-growth narrative in the short term, making the price impact decidedly bullish.",
+            "I must now disagree with my own original 'Bearish' long-term stance. It was based on a technical trend that is now being invalidated by a historic fundamental catalyst. The evidence from both the news_macro and fundamental agents suggests the prior downtrend is broken. The risk of a 'failed reversal' is now significantly lower than I initially assessed."
+          ],
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.9,
+          "evidence_needed": [
+            "Technical confirmation that the long-term trend has reversed, which would involve the price reclaiming and holding above key moving averages, particularly the 200-day moving average ($41.76).",
+            "Sustained high-volume buying in the days following the earnings gap, which would provide evidence of institutional accumulation and invalidate the 'gap-and-crap' risk scenario.",
+            "Price action relative to the margin concerns raised by the fundamental agent. If the stock continues to rally despite this news, it confirms the market is solely focused on growth, strengthening the bullish technical case."
+          ]
         }
       ]
     },
-    "reason_for_final_decision": "The committee reached a unanimous short-term Bullish consensus following a massive, trend-reversing earnings and guidance beat. This is a powerful catalyst that will force a repricing. However, I am overriding the guardrail's long-term Bullish stance to Neutral. The evidence of severe gross margin compression (from 9.3% to 6.3% QoQ) and continued negative free cash flow, as highlighted by the fundamental and news agents, presents a significant, unresolved risk to the long-term thesis. The market is celebrating hypergrowth now, but the focus will inevitably shift to profitability, making the long-term outlook uncertain. The final decision balances the powerful short-term opportunity with this critical long-term risk, justifying a small tactical long position.",
+    "routing_profile": {
+      "bucket": "ai_infrastructure",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI infrastructure is driven by second-order demand signals, but price confirmation still matters after earnings."
+    },
+    "reason_for_final_decision": "I am overriding the guardrail's 'Bullish' long-term stance to 'Neutral'. While the post-debate consensus shifted to Bullish, I am placing more weight on the `news_macro` agent's well-reasoned caution. The evidence for a short-term Bullish stance is overwhelming and unanimous: a historic fundamental beat confirmed by a powerful technical reaction. We will take a 'Long' position to capture this momentum. However, the CIO's role is to look past the immediate euphoria. The significant gross margin compression (from 9.3% to 6.3% QoQ) identified by the `fundamental` agent, combined with now-stratospheric expectations, creates a precarious long-term balance. The company is in a 'growth at any cost' phase, which is powerful now but introduces major execution risk. Therefore, the long-term stance is 'Neutral', reflecting a view that while the opportunity is immense, the risk/reward from this new, elevated base is more balanced than purely bullish.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bullish",
           "confidence": 0.9,
-          "weight": 0.35,
-          "contribution": 0.315
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
           "weight": 0.45,
-          "contribution": 0.0
+          "contribution": 0.405
         },
         {
           "agent_name": "fundamental",
           "stance": "Bullish",
           "confidence": 0.9,
-          "weight": 0.2,
-          "contribution": 0.18
+          "weight": 0.15,
+          "contribution": 0.135
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.9,
+          "weight": 0.4,
+          "contribution": 0.36
         }
       ],
       "long": [
@@ -3036,28 +3059,28 @@
           "agent_name": "news_macro",
           "stance": "Neutral",
           "confidence": 0.9,
-          "weight": 0.35,
-          "contribution": 0.0
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.2,
+          "weight": 0.4,
           "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
           "stance": "Bullish",
           "confidence": 0.9,
-          "weight": 0.45,
-          "contribution": 0.405
+          "weight": 0.35,
+          "contribution": 0.315
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.9,
+          "weight": 0.25,
+          "contribution": 0.225
         }
       ]
     },
     "scores": {
-      "short": 0.5946,
-      "long": 0.4655
+      "short": 1.0,
+      "long": 0.6
     },
     "llm_decision_used": true
   }

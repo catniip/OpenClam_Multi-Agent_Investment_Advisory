@@ -4,60 +4,70 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.75,
-  "confidence_rationale": "Confidence is high due to the confluence of a strong bullish trend, accelerating momentum, and high-volume confirmation. It is not higher because the extreme overbought reading on the RSI (85) signals a high probability of a near-term pullback or consolidation.",
+  "confidence": 0.7,
+  "confidence_rationale": "Confidence is moderately high due to the overwhelmingly strong trend and momentum signals. However, it is tempered from a higher level because the immediate post-earnings reaction was muted, underperforming the benchmark on low volume. This suggests a potential lack of conviction or that the good news was already priced in.",
   "key_signals": [
     {
-      "type": "Returns",
-      "signal": "Parabolic Up-Thrust",
-      "evidence": "Recent returns include a series of strong gains, such as +11.1%, +4.7%, and +7.9% in the last 5 sessions, indicating powerful momentum."
-    },
-    {
-      "type": "RSI",
-      "signal": "Severely Overbought",
-      "evidence": "RSI is at 85.09, well into overbought territory (>70) and indicating the recent price run is extended and potentially unsustainable in the immediate term."
-    },
-    {
       "type": "Moving Averages",
-      "signal": "Strong Bullish Trend",
-      "evidence": "The price at 738.54 is significantly above both the MA20 (571.28) and MA50 (466.42), confirming a strong upward trend structure."
+      "signal": "Strong Bullish Trend Structure",
+      "evidence": "Price at $343.62 is significantly above all key moving averages (MA20: $301.77, MA50: $284.48, MA200: $187.76), indicating a well-established uptrend across short, medium, and long terms."
     },
     {
-      "type": "MACD",
+      "type": "Momentum",
       "signal": "Accelerating Bullish Momentum",
-      "evidence": "The MACD line (66.92) is well above the signal line (51.21) with a large positive histogram (15.71), confirming strong and increasing upward momentum."
-    },
-    {
-      "type": "Volume",
-      "signal": "Rally Confirmation",
-      "evidence": "Recent volume has been elevated during the price surge, including a 10.9M share day, suggesting strong conviction and institutional participation in the rally."
+      "evidence": "A bullish MACD crossover is in effect with an expanding histogram (3.08), and the RSI is strong at 65.71, supporting continued upward price action."
     },
     {
       "type": "Relative Strength",
       "signal": "Significant Market Outperformance",
-      "evidence": "STX is outperforming its benchmark (SPY) by 76.22% over the analysis period, establishing it as a clear market leader."
-    },
-    {
-      "type": "Volatility",
-      "signal": "High Risk Environment",
-      "evidence": "Annualized volatility is high at 68.09%, which is consistent with the 'high_volatility_bullish' market regime and implies large price swings."
+      "evidence": "The stock has demonstrated strong relative strength, outperforming the SPY benchmark by over 231% over the analysis period, indicating market leadership."
     },
     {
       "type": "Drawdown",
-      "signal": "Trading at New High",
-      "evidence": "Current drawdown is 0.0%, indicating the stock is trading at the peak of its recent price range."
+      "signal": "Trading at New Highs",
+      "evidence": "The current drawdown is 0.0%, indicating the stock closed at its peak for the period, a sign of strength."
+    },
+    {
+      "type": "Earnings Reaction",
+      "signal": "Muted Post-Earnings Reaction",
+      "evidence": "Despite a positive 1-day return of +0.67%, the stock underperformed QQQ (-0.06% abnormal return) on below-average volume (0.9x ratio), signaling a lack of strong conviction from the earnings catalyst."
+    },
+    {
+      "type": "Volume",
+      "signal": "Elevated Trading Interest",
+      "evidence": "The most recent volume was a 1.5x spike over the average, showing increased participation leading into the earnings event."
     },
     {
       "type": "Market Regime",
-      "signal": "high_volatility_bullish",
-      "evidence": "Regime classification: high_volatility_bullish"
+      "signal": "High Volatility Bullish Regime",
+      "evidence": "The stock is classified in a high volatility bullish regime, suggesting strong upward moves but with a higher degree of price fluctuation and risk."
+    },
+    {
+      "type": "Returns",
+      "signal": "positive short-term momentum",
+      "evidence": "Mean of recent returns: 0.52%"
+    },
+    {
+      "type": "RSI",
+      "signal": "bullish momentum",
+      "evidence": "RSI at 65.71"
+    },
+    {
+      "type": "MACD",
+      "signal": "bullish crossover",
+      "evidence": "MACD 13.931, Signal 10.848, Histogram 3.083"
+    },
+    {
+      "type": "Volatility",
+      "signal": "high volatility",
+      "evidence": "Annualized volatility 56.59%, Recent 78.08%"
     }
   ],
   "risks": [
-    "Extreme overbought conditions (RSI at 85) suggest the stock is vulnerable to a sharp pullback or consolidation in the near term.",
-    "High volatility (68% annualized) implies that price swings can be large in both directions, increasing downside risk during any potential correction.",
-    "The price is 29% above its 20-day moving average, a level of extension that is often followed by a reversion to the mean."
+    "The weak, low-volume post-earnings reaction suggests the rally may be losing steam or that the positive news failed to attract significant new buying pressure.",
+    "Recent volatility is very high (78% annualized), which increases the potential for sharp price swings and downside risk if momentum falters.",
+    "The RSI at 65.71 is approaching overbought territory, which could indicate the current upward move is becoming mature and may be due for consolidation."
   ],
-  "summary": "STX is in a powerful, high-volatility bullish trend, characterized by accelerating momentum and strong relative strength. The price is significantly extended above its moving averages, confirmed by elevated volume. While the primary trend is strongly bullish, the stock is now deeply overbought (RSI 85), indicating a heightened risk of a near-term pullback. The overall technical posture remains bullish but is tactically risky for new entries at this level.",
-  "core_insight": "The dominant technical picture is a conflict between extremely strong bullish momentum and a severely overbought condition. While the upward trend is undeniable and well-supported, the parabolic nature of the recent advance makes the stock highly susceptible to a sharp, albeit potentially temporary, reversal or consolidation."
+  "summary": "STX exhibits a powerful and well-established bullish trend across all timeframes, supported by strong momentum indicators, significant market outperformance, and the stock trading at new highs. However, the analysis as of 2026-01-21 is tempered by a muted post-earnings reaction which lacked volume and failed to outperform its benchmark. This suggests a potential near-term pause or consolidation despite the strong underlying technical picture.",
+  "core_insight": "The primary insight is the divergence between the extremely strong bullish trend and momentum leading into earnings, and the weak, unconfirmed price reaction to the event itself. This suggests that while the trend is intact, the catalyst failed to provide new fuel, introducing uncertainty for the immediate path forward."
 }

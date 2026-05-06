@@ -11,29 +11,30 @@
         "rationale": "Short-term: The stock's 164% gain over the past year has priced in immense optimism. Despite the strong beat and raise, the stock is likely to face a 'sell the news' reaction as investors with large gains take profits, especially in a risk-off macro environment (rising VIX). Long-term: The results and guidance confirm Coherent is a critical enabler of the multi-year AI infrastructure buildout. Demand for high-speed optical components is accelerating, which should drive sustained revenue and earnings growth over the next several quarters."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.5,
         "rationale": "Coherent Corp. shows strong quarter-over-quarter revenue and operating income growth, but this is overshadowed by a significant decline in net income and worsening negative free cash flow. The high valuation, reflected in a Trailing P/E of over 300, is predicated on substantial future earnings growth, which introduces significant risk if execution falters. The disconnect between operating profit and net income/cash flow requires further investigation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean bullish on the long-term horizon."
     ],
-    "areas_of_disagreement": [],
+    "areas_of_disagreement": [
+      "Short-term views contain both bullish and bearish calls."
+    ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 0,
-      "Neutral": 2,
+      "Bullish": 1,
+      "Neutral": 1,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -438,261 +439,6 @@
       {
         "ticker": "COHR",
         "company": "Coherent",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-        "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Crossover",
-            "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Trend",
-            "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk Environment",
-            "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Minor Pullback from Highs",
-            "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-          },
-          {
-            "type": "Volume",
-            "signal": "Moderate Trading Interest",
-            "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.47%"
-          }
-        ],
-        "risks": [
-          "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-          "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-          "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-        "raw_packet": {
-          "ticker": "COHR",
-          "company": "Coherent",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-          "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Crossover",
-              "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Highs",
-              "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-            },
-            {
-              "type": "Volume",
-              "signal": "Moderate Trading Interest",
-              "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.47%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-            "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-            "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-          "raw_packet": {
-            "ticker": "COHR",
-            "company": "Coherent",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-            "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Crossover",
-                "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Highs",
-                "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-              },
-              {
-                "type": "Volume",
-                "signal": "Moderate Trading Interest",
-                "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.47%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-              "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-              "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-            "raw_packet": {
-              "ticker": "COHR",
-              "company": "Coherent",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Crossover",
-                  "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Highs",
-                  "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Moderate Trading Interest",
-                  "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.47%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-                "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-                "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-              ],
-              "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-              "core_insight": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "COHR",
-        "company": "Coherent",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -838,16 +584,288 @@
             }
           }
         }
+      },
+      {
+        "ticker": "COHR",
+        "company": "Coherent",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+        "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "bullish post-earnings confirmation",
+            "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "strong bullish trend structure",
+            "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+          },
+          {
+            "type": "Volume",
+            "signal": "high conviction price action",
+            "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "significant market outperformance",
+            "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+          },
+          {
+            "type": "MACD",
+            "signal": "building bullish momentum",
+            "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+          },
+          {
+            "type": "RSI",
+            "signal": "healthy bullish momentum",
+            "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high volatility bullish regime",
+            "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.41%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+          }
+        ],
+        "risks": [
+          "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+          "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+        "raw_packet": {
+          "ticker": "COHR",
+          "company": "Coherent",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+          "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bullish post-earnings confirmation",
+              "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "strong bullish trend structure",
+              "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction price action",
+              "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+            },
+            {
+              "type": "MACD",
+              "signal": "building bullish momentum",
+              "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+            },
+            {
+              "type": "RSI",
+              "signal": "healthy bullish momentum",
+              "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high volatility bullish regime",
+              "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+            }
+          ],
+          "risks": [
+            "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+            "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+          "raw_packet": {
+            "ticker": "COHR",
+            "company": "Coherent",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+            "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bullish post-earnings confirmation",
+                "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "strong bullish trend structure",
+                "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction price action",
+                "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+              },
+              {
+                "type": "MACD",
+                "signal": "building bullish momentum",
+                "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+              },
+              {
+                "type": "RSI",
+                "signal": "healthy bullish momentum",
+                "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high volatility bullish regime",
+                "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+              }
+            ],
+            "risks": [
+              "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+              "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+            "raw_packet": {
+              "ticker": "COHR",
+              "company": "Coherent",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bullish post-earnings confirmation",
+                  "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "strong bullish trend structure",
+                  "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction price action",
+                  "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "building bullish momentum",
+                  "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "healthy bullish momentum",
+                  "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high volatility bullish regime",
+                  "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+                }
+              ],
+              "risks": [
+                "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+                "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+              ],
+              "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+              "core_insight": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": false,
+    "triggered": true,
     "trigger": {
-      "debate_required": false,
-      "conflict_level": "low",
+      "debate_required": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ]
     },
     "synthesis": {
@@ -862,29 +880,30 @@
           "rationale": "Short-term: The stock's 164% gain over the past year has priced in immense optimism. Despite the strong beat and raise, the stock is likely to face a 'sell the news' reaction as investors with large gains take profits, especially in a risk-off macro environment (rising VIX). Long-term: The results and guidance confirm Coherent is a critical enabler of the multi-year AI infrastructure buildout. Demand for high-speed optical components is accelerating, which should drive sustained revenue and earnings growth over the next several quarters."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.5,
           "rationale": "Coherent Corp. shows strong quarter-over-quarter revenue and operating income growth, but this is overshadowed by a significant decline in net income and worsening negative free cash flow. The high valuation, reflected in a Trailing P/E of over 300, is predicated on substantial future earnings growth, which introduces significant risk if execution falters. The disconnect between operating profit and net income/cash flow requires further investigation."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean bullish on the long-term horizon."
       ],
-      "areas_of_disagreement": [],
+      "areas_of_disagreement": [
+        "Short-term views contain both bullish and bearish calls."
+      ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 0,
-        "Neutral": 2,
+        "Bullish": 1,
+        "Neutral": 1,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1419,325 +1438,6 @@
         {
           "ticker": "COHR",
           "company": "Coherent",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-          "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Crossover",
-              "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Highs",
-              "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-            },
-            {
-              "type": "Volume",
-              "signal": "Moderate Trading Interest",
-              "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.47%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-            "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-            "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-          "raw_packet": {
-            "ticker": "COHR",
-            "company": "Coherent",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-            "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Crossover",
-                "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Highs",
-                "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-              },
-              {
-                "type": "Volume",
-                "signal": "Moderate Trading Interest",
-                "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.47%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-              "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-              "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-            "raw_packet": {
-              "ticker": "COHR",
-              "company": "Coherent",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-              "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Crossover",
-                  "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Highs",
-                  "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Moderate Trading Interest",
-                  "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.47%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-                "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-                "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-              "raw_packet": {
-                "ticker": "COHR",
-                "company": "Coherent",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bullish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-                "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Strong Bullish Trend Structure",
-                    "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bearish Momentum Crossover",
-                    "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Outperformance",
-                    "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Healthy Bullish Momentum",
-                    "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "High Volatility Bullish Trend",
-                    "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Elevated Risk Environment",
-                    "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Minor Pullback from Highs",
-                    "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Moderate Trading Interest",
-                    "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.47%"
-                  }
-                ],
-                "risks": [
-                  "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-                  "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-                  "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-                "raw_packet": {
-                  "ticker": "COHR",
-                  "company": "Coherent",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bullish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Strong Bullish Trend Structure",
-                      "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bearish Momentum Crossover",
-                      "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Outperformance",
-                      "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Healthy Bullish Momentum",
-                      "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "High Volatility Bullish Trend",
-                      "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Elevated Risk Environment",
-                      "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Minor Pullback from Highs",
-                      "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Moderate Trading Interest",
-                      "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.47%"
-                    }
-                  ],
-                  "risks": [
-                    "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-                    "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-                    "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-                  ],
-                  "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-                  "core_insight": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "COHR",
-          "company": "Coherent",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1919,17 +1619,398 @@
               }
             }
           }
+        },
+        {
+          "ticker": "COHR",
+          "company": "Coherent",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+          "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bullish post-earnings confirmation",
+              "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "strong bullish trend structure",
+              "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction price action",
+              "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+            },
+            {
+              "type": "MACD",
+              "signal": "building bullish momentum",
+              "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+            },
+            {
+              "type": "RSI",
+              "signal": "healthy bullish momentum",
+              "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high volatility bullish regime",
+              "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+            }
+          ],
+          "risks": [
+            "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+            "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+          "raw_packet": {
+            "ticker": "COHR",
+            "company": "Coherent",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+            "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bullish post-earnings confirmation",
+                "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "strong bullish trend structure",
+                "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction price action",
+                "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+              },
+              {
+                "type": "MACD",
+                "signal": "building bullish momentum",
+                "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+              },
+              {
+                "type": "RSI",
+                "signal": "healthy bullish momentum",
+                "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high volatility bullish regime",
+                "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+              }
+            ],
+            "risks": [
+              "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+              "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+            "raw_packet": {
+              "ticker": "COHR",
+              "company": "Coherent",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+              "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bullish post-earnings confirmation",
+                  "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "strong bullish trend structure",
+                  "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction price action",
+                  "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "building bullish momentum",
+                  "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "healthy bullish momentum",
+                  "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high volatility bullish regime",
+                  "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+                }
+              ],
+              "risks": [
+                "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+                "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+              "raw_packet": {
+                "ticker": "COHR",
+                "company": "Coherent",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bullish",
+                "confidence": 0.9,
+                "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+                "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "bullish post-earnings confirmation",
+                    "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "strong bullish trend structure",
+                    "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "high conviction price action",
+                    "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "significant market outperformance",
+                    "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "building bullish momentum",
+                    "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "healthy bullish momentum",
+                    "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "high volatility bullish regime",
+                    "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.41%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "high volatility",
+                    "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "contained drawdown",
+                    "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+                  }
+                ],
+                "risks": [
+                  "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+                  "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+                "raw_packet": {
+                  "ticker": "COHR",
+                  "company": "Coherent",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bullish",
+                  "confidence": 0.9,
+                  "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "bullish post-earnings confirmation",
+                      "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "strong bullish trend structure",
+                      "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "high conviction price action",
+                      "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "significant market outperformance",
+                      "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "building bullish momentum",
+                      "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "healthy bullish momentum",
+                      "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "high volatility bullish regime",
+                      "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.41%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "high volatility",
+                      "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "contained drawdown",
+                      "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+                    }
+                  ],
+                  "risks": [
+                    "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+                    "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+                  ],
+                  "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+                  "core_insight": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [],
+    "debate_responses": [
+      {
+        "response_type": "revision",
+        "agreement": {
+          "fundamental_agent": "I agree with the fundamental agent's identification of strong quarter-over-quarter revenue and operating income growth, which aligns with my news-based evidence of accelerating AI demand. I also agree with their identification of negative free cash flow and high debt as notable risks that require monitoring.",
+          "market_technical_agent": "I agree with the market_technical agent's analysis. Their evidence of a strong positive post-earnings stock reaction (+8.81%) is a critical, factual data point that directly refutes my original short-term hypothesis. Their broader analysis of a strong bullish trend, high-conviction volume, and market outperformance confirms the underlying strength of the stock."
+        },
+        "disagreement": {
+          "news_macro_agent_original_view": "I disagree with my own original short-term 'Bearish' stance. My hypothesis of a 'sell the news' reaction was proven incorrect by the market's actual behavior, as quantified by the market_technical agent. The risk I outlined ('if new money flows into the name post-earnings, this call will be wrong') materialized.",
+          "fundamental_agent": "I place lower weight on the fundamental agent's 'Neutral' stance. Their analysis correctly notes negative FCF and a net income decline but explicitly states it lacks context like forward guidance and management commentary. My news evidence provides this context, showing a significant beat and strong guidance driven by AI demand. The market's strongly positive reaction suggests investors are prioritizing this forward-looking narrative over the historical cash flow, likely interpreting it as investment for growth, as my news sources on 'capacity expansion' suggest."
+        },
+        "revised_view": {
+          "ticker": "COHR",
+          "company": "Coherent",
+          "agent_name": "news_macro",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "revision_rationale": "My original short-term Bearish thesis was invalidated by the market's strong positive reaction to earnings, as confirmed by the market_technical agent. Instead of 'selling the news,' the market aggressively bought into the strong results and guidance. This powerful market validation, combined with the underlying news flow confirming a multi-year AI demand cycle, strengthens the overall Bullish case for both the short and long term. Confidence is increased because the primary short-term uncertainty (the earnings reaction) has been resolved positively, creating a powerful alignment between the fundamental narrative, forward guidance, and price action. The risks highlighted by the fundamental agent (negative FCF) are noted but are likely explained by growth investments mentioned in news reports."
+        },
+        "evidence_needed": [
+          "Earnings call transcript to confirm the reason for negative free cash flow (e.g., growth-related capital expenditures for AI capacity expansion) and to understand the specific drivers of the QoQ net income decline."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the core long-term bullish thesis from the 'news_macro' agent. The evidence provided about the earnings beat (Adj. EPS $1.29 vs $1.21 estimate) and strong guidance driven by AI data center demand directly addresses the key information I was missing in my original analysis. This AI narrative provides the context for the high valuation. I also agree with the 'market_technical' agent's analysis that the strong positive post-earnings price reaction (+8.81%) is a powerful bullish confirmation signal, indicating strong market conviction in the company's story.",
+        "disagreement": "I disagree with the 'news_macro' agent's short-term 'Bearish' stance. The thesis of a 'sell the news' reaction was explicitly disproven by the market's actual behavior, as captured by the 'market_technical' agent's data showing a significant positive abnormal return. While my original concerns about the QoQ net income decline and negative free cash flow remain mathematically correct, I am now placing a lower weight on them. The new evidence suggests these are likely temporary effects of investment and growth to meet the AI demand surge, which the market is clearly willing to look past.",
+        "revised_short_term_stance": "Bullish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.8,
+        "evidence_needed": "While the new evidence is compelling, I still require a detailed reconciliation from management explaining the discrepancy between operating income growth and the GAAP net income decline. Furthermore, I need to see management's detailed plan and timeline for returning to positive free cash flow as capital expenditures for the AI buildout ramp."
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the news_macro agent's long-term bullish stance. The evidence provided regarding accelerating AI data center demand and positive analyst actions provides a strong fundamental narrative that underpins the bullish price action my technical indicators have captured. This confirms that the market's positive reaction is rooted in a credible growth story. I also agree with the fundamental agent's observation of strong QoQ revenue and operating income growth, which is the likely catalyst for the market's enthusiasm.",
+        "disagreement": "I disagree with the news_macro agent's short-term Bearish stance. The core of their thesis was a potential 'sell the news' reaction, but my own evidence shows the exact opposite occurred: the stock had a post-1d abnormal return of +6.7% vs. QQQ. For a technical agent, the market's actual price reaction outweighs a theoretical psychological narrative. I am also assigning lower weight to the fundamental agent's concerns regarding negative free cash flow and declining net income. While valid points, the market has clearly seen this data and chosen to bid the stock higher, indicating it is prioritizing the AI growth story (as detailed by the news_macro agent) over these current cash flow metrics, likely interpreting them as investments for growth.",
+        "revised_short_term_stance": "Bullish",
+        "revised_long_term_stance": "Bullish",
+        "revised_confidence": 0.8,
+        "evidence_needed": "While the market is currently ignoring it, the fundamental agent correctly highlights a key risk. To better assess the durability of this trend, I need: Management's explanation for the negative Free Cash Flow and the QoQ decline in Net Income, specifically distinguishing between growth-oriented capital expenditures and potential operational issues. This information is likely in the earnings call transcript."
+      }
+    ],
     "revised_packets": [
       {
         "ticker": "COHR",
         "company": "Coherent",
         "agent_name": "news_macro",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bullish",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
         "confidence": 0.7,
         "confidence_rationale": "Confidence is relatively high due to the direct, unambiguous evidence from the company's earnings report and guidance. The thesis is anchored in the clear AI datacenter demand trend. Confidence is not higher because the short-term stance depends on interpreting investor positioning and psychology ('sell the news' dynamic), which is less certain than fundamental analysis. The macro environment adds another layer of short-term uncertainty.",
         "stance_rationale": "Short-term: The stock's 164% gain over the past year has priced in immense optimism. Despite the strong beat and raise, the stock is likely to face a 'sell the news' reaction as investors with large gains take profits, especially in a risk-off macro environment (rising VIX). Long-term: The results and guidance confirm Coherent is a critical enabler of the multi-year AI infrastructure buildout. Demand for high-speed optical components is accelerating, which should drive sustained revenue and earnings growth over the next several quarters.",
@@ -2315,270 +2396,38 @@
               "core_insight": "While investors focus on Coherent as a direct play on AI optical interconnects, the explosive growth in data transfer rates and density creates a massive second-order problem of power consumption and heat, creating a bottleneck that specialized infrastructure providers must solve."
             }
           }
-        }
-      },
-      {
-        "ticker": "COHR",
-        "company": "Coherent",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-        "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Strong Bullish Trend Structure",
-            "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "fundamental_agent": "I agree with the fundamental agent's identification of strong quarter-over-quarter revenue and operating income growth, which aligns with my news-based evidence of accelerating AI demand. I also agree with their identification of negative free cash flow and high debt as notable risks that require monitoring.",
+            "market_technical_agent": "I agree with the market_technical agent's analysis. Their evidence of a strong positive post-earnings stock reaction (+8.81%) is a critical, factual data point that directly refutes my original short-term hypothesis. Their broader analysis of a strong bullish trend, high-conviction volume, and market outperformance confirms the underlying strength of the stock."
           },
-          {
-            "type": "MACD",
-            "signal": "Bearish Momentum Crossover",
-            "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
+          "disagreement": {
+            "news_macro_agent_original_view": "I disagree with my own original short-term 'Bearish' stance. My hypothesis of a 'sell the news' reaction was proven incorrect by the market's actual behavior, as quantified by the market_technical agent. The risk I outlined ('if new money flows into the name post-earnings, this call will be wrong') materialized.",
+            "fundamental_agent": "I place lower weight on the fundamental agent's 'Neutral' stance. Their analysis correctly notes negative FCF and a net income decline but explicitly states it lacks context like forward guidance and management commentary. My news evidence provides this context, showing a significant beat and strong guidance driven by AI demand. The market's strongly positive reaction suggests investors are prioritizing this forward-looking narrative over the historical cash flow, likely interpreting it as investment for growth, as my news sources on 'capacity expansion' suggest."
           },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Outperformance",
-            "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-          },
-          {
-            "type": "RSI",
-            "signal": "Healthy Bullish Momentum",
-            "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "High Volatility Bullish Trend",
-            "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Elevated Risk Environment",
-            "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Minor Pullback from Highs",
-            "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-          },
-          {
-            "type": "Volume",
-            "signal": "Moderate Trading Interest",
-            "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.47%"
-          }
-        ],
-        "risks": [
-          "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-          "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-          "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-        "raw_packet": {
-          "ticker": "COHR",
-          "company": "Coherent",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bullish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-          "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Strong Bullish Trend Structure",
-              "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bearish Momentum Crossover",
-              "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Outperformance",
-              "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-            },
-            {
-              "type": "RSI",
-              "signal": "Healthy Bullish Momentum",
-              "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "High Volatility Bullish Trend",
-              "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Elevated Risk Environment",
-              "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Minor Pullback from Highs",
-              "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-            },
-            {
-              "type": "Volume",
-              "signal": "Moderate Trading Interest",
-              "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.47%"
-            }
-          ],
-          "risks": [
-            "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-            "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-            "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-          "raw_packet": {
+          "revised_view": {
             "ticker": "COHR",
             "company": "Coherent",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bullish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-            "stance_rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Strong Bullish Trend Structure",
-                "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bearish Momentum Crossover",
-                "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Outperformance",
-                "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-              },
-              {
-                "type": "RSI",
-                "signal": "Healthy Bullish Momentum",
-                "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "High Volatility Bullish Trend",
-                "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Elevated Risk Environment",
-                "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Minor Pullback from Highs",
-                "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-              },
-              {
-                "type": "Volume",
-                "signal": "Moderate Trading Interest",
-                "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.47%"
-              }
-            ],
-            "risks": [
-              "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-              "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-              "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-            "raw_packet": {
-              "ticker": "COHR",
-              "company": "Coherent",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bullish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is high in the long-term bullish trend due to the strong moving average alignment. However, it is tempered by conflicting short-term signals (bullish trend vs. bearish momentum) and a high volatility regime, justifying a 0.75 level.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Strong Bullish Trend Structure",
-                  "evidence": "Price at $329.89 is trading significantly above its 20-day ($317.81), 50-day ($280.25), and 200-day ($179.63) moving averages."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bearish Momentum Crossover",
-                  "evidence": "The MACD line (15.06) has crossed below the signal line (17.74), resulting in a negative histogram (-2.68), indicating weakening short-term momentum."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Outperformance",
-                  "evidence": "The stock has outperformed the SPY benchmark by 336.08% over the analyzed period, indicating strong leadership."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Healthy Bullish Momentum",
-                  "evidence": "RSI is at 59.95, which is in the bullish zone without being overbought, suggesting momentum can still support the price."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "High Volatility Bullish Trend",
-                  "evidence": "The market regime is classified as 'high_volatility_bullish', confirming the uptrend is accompanied by significant price fluctuations."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Elevated Risk Environment",
-                  "evidence": "Annualized volatility is high at 67.8%, indicating a greater potential for large price swings in either direction."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Minor Pullback from Highs",
-                  "evidence": "The stock was in a 5.87% drawdown from its recent peak, consistent with a short-term consolidation or pullback."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Moderate Trading Interest",
-                  "evidence": "The latest volume represents a 1.14x spike over the average, which indicates elevated but not climactic participation."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.47%"
-                }
-              ],
-              "risks": [
-                "The bearish MACD crossover is a primary warning signal for a potential short-term price correction or extended consolidation.",
-                "High annualized volatility of 67.8% increases the risk of sharp, sudden price declines even within a broader uptrend.",
-                "The price is extended 83.6% above its 200-day moving average, which could be considered overstretched and susceptible to profit-taking."
-              ],
-              "summary": "As of 2026/02/05, Coherent exhibited a powerful long-term uptrend, confirmed by its price trading well above all key moving averages and its exceptional relative strength versus the market. However, short-term analysis revealed a divergence, with a bearish MACD crossover signaling weakening momentum. The stock was in a high-volatility regime, experiencing a minor pullback from recent highs. The overall picture was that of a strong bull trend undergoing a short-term consolidation.",
-              "core_insight": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-            }
-          }
+            "agent_name": "news_macro",
+            "revised_short_term_stance": "Bullish",
+            "revised_long_term_stance": "Bullish",
+            "revised_confidence": 0.8,
+            "revision_rationale": "My original short-term Bearish thesis was invalidated by the market's strong positive reaction to earnings, as confirmed by the market_technical agent. Instead of 'selling the news,' the market aggressively bought into the strong results and guidance. This powerful market validation, combined with the underlying news flow confirming a multi-year AI demand cycle, strengthens the overall Bullish case for both the short and long term. Confidence is increased because the primary short-term uncertainty (the earnings reaction) has been resolved positively, creating a powerful alignment between the fundamental narrative, forward guidance, and price action. The risks highlighted by the fundamental agent (negative FCF) are noted but are likely explained by growth investments mentioned in news reports."
+          },
+          "evidence_needed": [
+            "Earnings call transcript to confirm the reason for negative free cash flow (e.g., growth-related capital expenditures for AI capacity expansion) and to understand the specific drivers of the QoQ net income decline."
+          ]
         }
       },
       {
         "ticker": "COHR",
         "company": "Coherent",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Neutral",
-        "confidence": 0.5,
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is medium because the analysis is based solely on quantitative data without context. Key information is missing, including consensus estimates, management's explanation for the QoQ decline in net income despite higher operating income, the reasons for negative free cash flow, and any forward-looking guidance.",
         "stance_rationale": "Coherent Corp. shows strong quarter-over-quarter revenue and operating income growth, but this is overshadowed by a significant decline in net income and worsening negative free cash flow. The high valuation, reflected in a Trailing P/E of over 300, is predicated on substantial future earnings growth, which introduces significant risk if execution falters. The disconnect between operating profit and net income/cash flow requires further investigation.",
         "key_signals": [
@@ -2719,6 +2568,295 @@
               }
             }
           }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the core long-term bullish thesis from the 'news_macro' agent. The evidence provided about the earnings beat (Adj. EPS $1.29 vs $1.21 estimate) and strong guidance driven by AI data center demand directly addresses the key information I was missing in my original analysis. This AI narrative provides the context for the high valuation. I also agree with the 'market_technical' agent's analysis that the strong positive post-earnings price reaction (+8.81%) is a powerful bullish confirmation signal, indicating strong market conviction in the company's story.",
+          "disagreement": "I disagree with the 'news_macro' agent's short-term 'Bearish' stance. The thesis of a 'sell the news' reaction was explicitly disproven by the market's actual behavior, as captured by the 'market_technical' agent's data showing a significant positive abnormal return. While my original concerns about the QoQ net income decline and negative free cash flow remain mathematically correct, I am now placing a lower weight on them. The new evidence suggests these are likely temporary effects of investment and growth to meet the AI demand surge, which the market is clearly willing to look past.",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "evidence_needed": "While the new evidence is compelling, I still require a detailed reconciliation from management explaining the discrepancy between operating income growth and the GAAP net income decline. Furthermore, I need to see management's detailed plan and timeline for returning to positive free cash flow as capital expenditures for the AI buildout ramp."
+        }
+      },
+      {
+        "ticker": "COHR",
+        "company": "Coherent",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.8,
+        "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+        "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "bullish post-earnings confirmation",
+            "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "strong bullish trend structure",
+            "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+          },
+          {
+            "type": "Volume",
+            "signal": "high conviction price action",
+            "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "significant market outperformance",
+            "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+          },
+          {
+            "type": "MACD",
+            "signal": "building bullish momentum",
+            "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+          },
+          {
+            "type": "RSI",
+            "signal": "healthy bullish momentum",
+            "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+          },
+          {
+            "type": "Market Regime",
+            "signal": "high volatility bullish regime",
+            "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.41%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "high volatility",
+            "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+          },
+          {
+            "type": "Drawdown",
+            "signal": "contained drawdown",
+            "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+          }
+        ],
+        "risks": [
+          "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+          "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+        "raw_packet": {
+          "ticker": "COHR",
+          "company": "Coherent",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.9,
+          "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+          "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "bullish post-earnings confirmation",
+              "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "strong bullish trend structure",
+              "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+            },
+            {
+              "type": "Volume",
+              "signal": "high conviction price action",
+              "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "significant market outperformance",
+              "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+            },
+            {
+              "type": "MACD",
+              "signal": "building bullish momentum",
+              "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+            },
+            {
+              "type": "RSI",
+              "signal": "healthy bullish momentum",
+              "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+            },
+            {
+              "type": "Market Regime",
+              "signal": "high volatility bullish regime",
+              "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.41%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "high volatility",
+              "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+            },
+            {
+              "type": "Drawdown",
+              "signal": "contained drawdown",
+              "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+            }
+          ],
+          "risks": [
+            "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+            "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+          "raw_packet": {
+            "ticker": "COHR",
+            "company": "Coherent",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.9,
+            "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+            "stance_rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "bullish post-earnings confirmation",
+                "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "strong bullish trend structure",
+                "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+              },
+              {
+                "type": "Volume",
+                "signal": "high conviction price action",
+                "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "significant market outperformance",
+                "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+              },
+              {
+                "type": "MACD",
+                "signal": "building bullish momentum",
+                "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+              },
+              {
+                "type": "RSI",
+                "signal": "healthy bullish momentum",
+                "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+              },
+              {
+                "type": "Market Regime",
+                "signal": "high volatility bullish regime",
+                "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.41%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "high volatility",
+                "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+              },
+              {
+                "type": "Drawdown",
+                "signal": "contained drawdown",
+                "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+              }
+            ],
+            "risks": [
+              "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+              "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+            "raw_packet": {
+              "ticker": "COHR",
+              "company": "Coherent",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bullish",
+              "confidence": 0.9,
+              "confidence_rationale": "Extremely high confluence of bullish signals across trend, momentum, relative strength, and volume. The analysis is anchored by a powerful and positive post-earnings reaction which serves as strong event-driven validation of the underlying uptrend.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "bullish post-earnings confirmation",
+                  "evidence": "Post-1d return 8.81% with an abnormal return of +6.7% vs. QQQ on 1.08x average volume, confirming strong positive reception to the news."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "strong bullish trend structure",
+                  "evidence": "Price at $209.24 is trading significantly above its 20-day ($201.25), 50-day ($188.67), and 200-day ($122.09) moving averages."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "high conviction price action",
+                  "evidence": "Recent volume is 2.26 times the long-term average, indicating strong participation and interest driving the price trend."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "significant market outperformance",
+                  "evidence": "The stock has outperformed the SPY benchmark by 118.77% over the measured period, identifying it as a market leader."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "building bullish momentum",
+                  "evidence": "A recent bullish crossover is confirmed with the MACD line (9.23) above the signal line (8.86) and a positive histogram (0.369)."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "healthy bullish momentum",
+                  "evidence": "RSI is at 54.93, indicating positive momentum with room to run before reaching overbought levels."
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "high volatility bullish regime",
+                  "evidence": "The stock is classified in a high volatility bullish regime, which is consistent with its strong uptrend and large price movements."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.41%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "high volatility",
+                  "evidence": "Annualized volatility 73.1%, Recent 71.57%"
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "contained drawdown",
+                  "evidence": "Current drawdown -8.7%, Max drawdown -49.65%"
+                }
+              ],
+              "risks": [
+                "Extremely high annualized volatility (73.1%) implies a potential for sharp price swings and pullbacks, even within a strong uptrend.",
+                "The stock is significantly extended from its 200-day moving average (+71.4%), which increases the risk of a sharp reversion-to-the-mean correction if momentum were to falter."
+              ],
+              "summary": "As of 2026-02-05, COHR exhibited a robust bullish technical posture, characterized by a strong uptrend across all key moving averages, positive momentum indicators, and significant outperformance versus the market. This setup was powerfully validated by the subsequent post-earnings reaction on Feb 6th, where the stock surged 8.8% with an abnormal return of +6.7% vs. QQQ, confirming strong market conviction.",
+              "core_insight": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's long-term bullish stance. The evidence provided regarding accelerating AI data center demand and positive analyst actions provides a strong fundamental narrative that underpins the bullish price action my technical indicators have captured. This confirms that the market's positive reaction is rooted in a credible growth story. I also agree with the fundamental agent's observation of strong QoQ revenue and operating income growth, which is the likely catalyst for the market's enthusiasm.",
+          "disagreement": "I disagree with the news_macro agent's short-term Bearish stance. The core of their thesis was a potential 'sell the news' reaction, but my own evidence shows the exact opposite occurred: the stock had a post-1d abnormal return of +6.7% vs. QQQ. For a technical agent, the market's actual price reaction outweighs a theoretical psychological narrative. I am also assigning lower weight to the fundamental agent's concerns regarding negative free cash flow and declining net income. While valid points, the market has clearly seen this data and chosen to bid the stock higher, indicating it is prioritizing the AI growth story (as detailed by the news_macro agent) over these current cash flow metrics, likely interpreting them as investments for growth.",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "evidence_needed": "While the market is currently ignoring it, the fundamental agent correctly highlights a key risk. To better assess the durability of this trend, I need: Management's explanation for the negative Free Cash Flow and the QoQ decline in Net Income, specifically distinguishing between growth-oriented capital expenditures and potential operational issues. This information is likely in the earnings call transcript."
         }
       }
     ]
@@ -2726,24 +2864,24 @@
   "final_decision": {
     "ticker": "COHR",
     "company": "Coherent",
-    "final_short_term_stance": "Neutral",
+    "final_short_term_stance": "Bullish",
     "final_long_term_stance": "Bullish",
-    "investment_action": "Wait for Pullback",
-    "position_size_hint": "Small",
-    "confidence": 0.75,
-    "core_thesis": "Coherent is a key beneficiary of the multi-year AI infrastructure buildout, supplying critical high-speed optical components. Accelerating demand from hyperscalers is driving strong revenue and earnings growth, confirming its role as a 'pick-and-shovel' play on AI.",
-    "why_now": "The company just delivered a significant earnings and guidance beat, validating the AI-driven demand thesis. However, the stock's +160% run-up in the past year and signs of short-term technical exhaustion create a high probability of a 'sell the news' reaction or consolidation, which should present a more attractive entry point for a long-term position.",
+    "investment_action": "Long",
+    "position_size_hint": "Medium",
+    "confidence": 0.8,
+    "core_thesis": "Coherent is a critical and direct beneficiary of the accelerating, multi-year AI infrastructure buildout for high-speed optical interconnects. The company's strong earnings and guidance have been powerfully validated by the market's positive price reaction, indicating strong investor conviction in the forward growth story.",
+    "why_now": "The company just delivered a strong earnings beat and raise, and the market's decisively positive reaction (+8.81% post-earnings) has invalidated the primary short-term 'sell the news' risk. This provides a clear, event-driven catalyst for trend continuation, with the fundamental narrative, company results, and price action now in strong alignment.",
     "key_supporting_evidence": [
-      "Reported a significant quarterly earnings and sales beat, with strong forward guidance driven by accelerating AI data center demand.",
-      "The long-term technical trend is strongly bullish, with the price well above its 50-day and 200-day moving averages and showing significant market outperformance.",
-      "Positive ecosystem checks confirm the health of the AI infrastructure spending cycle, with strong demand signals from customers and peers like NVIDIA, Arista Networks, and Microsoft.",
-      "The forward P/E ratio of ~43 is becoming more reasonable as earnings estimates rise, suggesting growth is beginning to catch up to the valuation."
+      "Strong earnings results (Adj. EPS $1.29 vs $1.21 estimate) and robust forward guidance driven by accelerating AI data center demand.",
+      "Decisive positive post-earnings stock reaction (+8.81% return, +6.7% abnormal return vs. QQQ), confirming strong market conviction and invalidating the 'sell the news' thesis.",
+      "Unanimous post-debate agent consensus, with the news_macro agent explicitly retracting its initial short-term bearish view based on the market's price action.",
+      "A strong bullish technical posture, with the price above all key moving averages, supported by high-conviction volume and significant market outperformance."
     ],
     "key_risks": [
-      "The stock has risen 164% over the past year and is technically extended, making it highly susceptible to a short-term pullback or consolidation on profit-taking.",
-      "The bearish MACD crossover indicates weakening short-term momentum, corroborating the risk of a pause in the uptrend.",
-      "The long-term thesis is highly dependent on the continuation of the hyperscaler AI capex cycle. Any signal of a slowdown would invalidate the core thesis.",
-      "Valuation remains high, pricing in significant future growth and leaving little room for execution error."
+      "Execution Risk & Valuation: The stock is priced for significant future growth (Forward P/E of 43.4). Any faltering in execution or slowdown in AI demand could lead to a sharp correction.",
+      "Negative Free Cash Flow & Debt: While likely due to growth investments, the negative FCF (-$95.7M) and high debt load ($3.55B) require monitoring. A failure to improve cash flow over the medium term is a key risk.",
+      "High Volatility: The stock exhibits high annualized volatility (~73%), which implies the potential for sharp pullbacks even within a strong uptrend.",
+      "Capex Cycle Dependency: The thesis is highly dependent on the continuation of the hyperscaler AI capital expenditure cycle. Any signal of a slowdown from major cloud providers would invalidate the thesis."
     ],
     "agent_view_summary": [
       {
@@ -2754,80 +2892,137 @@
         "rationale": "Short-term: The stock's 164% gain over the past year has priced in immense optimism. Despite the strong beat and raise, the stock is likely to face a 'sell the news' reaction as investors with large gains take profits, especially in a risk-off macro environment (rising VIX). Long-term: The results and guidance confirm Coherent is a critical enabler of the multi-year AI infrastructure buildout. Demand for high-speed optical components is accelerating, which should drive sustained revenue and earnings growth over the next several quarters."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bullish",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between the robust long-term uptrend and weakening short-term momentum. While the primary trend remained strongly bullish, the bearish MACD signal suggested a pause or pullback was likely, representing a test of the trend's resilience in a high-volatility context."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.5,
         "rationale": "Coherent Corp. shows strong quarter-over-quarter revenue and operating income growth, but this is overshadowed by a significant decline in net income and worsening negative free cash flow. The high valuation, reflected in a Trailing P/E of over 300, is predicated on substantial future earnings growth, which introduces significant risk if execution falters. The disconnect between operating profit and net income/cash flow requires further investigation."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.9,
+        "rationale": "The decisive positive earnings reaction acts as a powerful catalyst, providing event-driven confirmation for an already strong bullish trend. This significantly increases the probability of short-to-medium term trend continuation."
       }
     ],
     "debate_summary": {
-      "debate_triggered": false,
-      "conflict_level": "low",
+      "debate_triggered": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ],
-      "debate_responses": []
+      "debate_responses": [
+        {
+          "response_type": "revision",
+          "agreement": {
+            "fundamental_agent": "I agree with the fundamental agent's identification of strong quarter-over-quarter revenue and operating income growth, which aligns with my news-based evidence of accelerating AI demand. I also agree with their identification of negative free cash flow and high debt as notable risks that require monitoring.",
+            "market_technical_agent": "I agree with the market_technical agent's analysis. Their evidence of a strong positive post-earnings stock reaction (+8.81%) is a critical, factual data point that directly refutes my original short-term hypothesis. Their broader analysis of a strong bullish trend, high-conviction volume, and market outperformance confirms the underlying strength of the stock."
+          },
+          "disagreement": {
+            "news_macro_agent_original_view": "I disagree with my own original short-term 'Bearish' stance. My hypothesis of a 'sell the news' reaction was proven incorrect by the market's actual behavior, as quantified by the market_technical agent. The risk I outlined ('if new money flows into the name post-earnings, this call will be wrong') materialized.",
+            "fundamental_agent": "I place lower weight on the fundamental agent's 'Neutral' stance. Their analysis correctly notes negative FCF and a net income decline but explicitly states it lacks context like forward guidance and management commentary. My news evidence provides this context, showing a significant beat and strong guidance driven by AI demand. The market's strongly positive reaction suggests investors are prioritizing this forward-looking narrative over the historical cash flow, likely interpreting it as investment for growth, as my news sources on 'capacity expansion' suggest."
+          },
+          "revised_view": {
+            "ticker": "COHR",
+            "company": "Coherent",
+            "agent_name": "news_macro",
+            "revised_short_term_stance": "Bullish",
+            "revised_long_term_stance": "Bullish",
+            "revised_confidence": 0.8,
+            "revision_rationale": "My original short-term Bearish thesis was invalidated by the market's strong positive reaction to earnings, as confirmed by the market_technical agent. Instead of 'selling the news,' the market aggressively bought into the strong results and guidance. This powerful market validation, combined with the underlying news flow confirming a multi-year AI demand cycle, strengthens the overall Bullish case for both the short and long term. Confidence is increased because the primary short-term uncertainty (the earnings reaction) has been resolved positively, creating a powerful alignment between the fundamental narrative, forward guidance, and price action. The risks highlighted by the fundamental agent (negative FCF) are noted but are likely explained by growth investments mentioned in news reports."
+          },
+          "evidence_needed": [
+            "Earnings call transcript to confirm the reason for negative free cash flow (e.g., growth-related capital expenditures for AI capacity expansion) and to understand the specific drivers of the QoQ net income decline."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the core long-term bullish thesis from the 'news_macro' agent. The evidence provided about the earnings beat (Adj. EPS $1.29 vs $1.21 estimate) and strong guidance driven by AI data center demand directly addresses the key information I was missing in my original analysis. This AI narrative provides the context for the high valuation. I also agree with the 'market_technical' agent's analysis that the strong positive post-earnings price reaction (+8.81%) is a powerful bullish confirmation signal, indicating strong market conviction in the company's story.",
+          "disagreement": "I disagree with the 'news_macro' agent's short-term 'Bearish' stance. The thesis of a 'sell the news' reaction was explicitly disproven by the market's actual behavior, as captured by the 'market_technical' agent's data showing a significant positive abnormal return. While my original concerns about the QoQ net income decline and negative free cash flow remain mathematically correct, I am now placing a lower weight on them. The new evidence suggests these are likely temporary effects of investment and growth to meet the AI demand surge, which the market is clearly willing to look past.",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "evidence_needed": "While the new evidence is compelling, I still require a detailed reconciliation from management explaining the discrepancy between operating income growth and the GAAP net income decline. Furthermore, I need to see management's detailed plan and timeline for returning to positive free cash flow as capital expenditures for the AI buildout ramp."
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the news_macro agent's long-term bullish stance. The evidence provided regarding accelerating AI data center demand and positive analyst actions provides a strong fundamental narrative that underpins the bullish price action my technical indicators have captured. This confirms that the market's positive reaction is rooted in a credible growth story. I also agree with the fundamental agent's observation of strong QoQ revenue and operating income growth, which is the likely catalyst for the market's enthusiasm.",
+          "disagreement": "I disagree with the news_macro agent's short-term Bearish stance. The core of their thesis was a potential 'sell the news' reaction, but my own evidence shows the exact opposite occurred: the stock had a post-1d abnormal return of +6.7% vs. QQQ. For a technical agent, the market's actual price reaction outweighs a theoretical psychological narrative. I am also assigning lower weight to the fundamental agent's concerns regarding negative free cash flow and declining net income. While valid points, the market has clearly seen this data and chosen to bid the stock higher, indicating it is prioritizing the AI growth story (as detailed by the news_macro agent) over these current cash flow metrics, likely interpreting them as investments for growth.",
+          "revised_short_term_stance": "Bullish",
+          "revised_long_term_stance": "Bullish",
+          "revised_confidence": 0.8,
+          "evidence_needed": "While the market is currently ignoring it, the fundamental agent correctly highlights a key risk. To better assess the durability of this trend, I need: Management's explanation for the negative Free Cash Flow and the QoQ decline in Net Income, specifically distinguishing between growth-oriented capital expenditures and potential operational issues. This information is likely in the earnings call transcript."
+        }
+      ]
     },
-    "reason_for_final_decision": "The CIO has overridden the guardrail's 'Bearish' short-term stance to 'Neutral'. While we acknowledge the high risk of a pullback ('sell the news') identified by the news_macro agent, the technical agent's 'Neutral' stance and the sheer strength of the underlying business momentum suggest the stock may consolidate sideways rather than enter a definitive downtrend. Therefore, 'Neutral' is the most prudent stance, strongly advising against chasing the stock at current levels. The core investment strategy remains to 'Wait for Pullback' to initiate a long-term position, as the long-term 'Bullish' thesis, supported by both news and technical agents, is compelling. The fundamental agent's concerns about cash flow and net income are discounted as they lack the crucial context from the earnings report, which indicates these are likely tied to investments for growth.",
+    "routing_profile": {
+      "bucket": "ai_infrastructure",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "AI infrastructure is driven by second-order demand signals, but price confirmation still matters after earnings."
+    },
+    "reason_for_final_decision": "I am overriding the guardrail's low confidence (0.556) and 'Small' position size. The debate process was highly effective, leading to a unanimous, high-confidence (0.8) Bullish consensus across all agents. The initial short-term bearish thesis was factually disproven by the market's powerful post-earnings price action, which is the most critical piece of new evidence. The alignment of the fundamental AI narrative, strong company results, and bullish technical confirmation justifies a higher conviction and a 'Medium' position size.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bearish",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": -0.245
-        },
-        {
-          "agent_name": "market_technical",
           "stance": "Neutral",
-          "confidence": 0.75,
+          "confidence": 0.7,
           "weight": 0.45,
           "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.5,
-          "weight": 0.2,
-          "contribution": 0.0
+          "stance": "Bullish",
+          "confidence": 0.8,
+          "weight": 0.15,
+          "contribution": 0.12
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bullish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": 0.32
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
-          "stance": "Bullish",
+          "stance": "Neutral",
           "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Bullish",
+          "confidence": 0.8,
           "weight": 0.35,
-          "contribution": 0.245
+          "contribution": 0.28
         },
         {
           "agent_name": "market_technical",
           "stance": "Bullish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": 0.15
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.5,
-          "weight": 0.45,
-          "contribution": 0.0
+          "confidence": 0.8,
+          "weight": 0.25,
+          "contribution": 0.2
         }
       ]
     },
     "scores": {
-      "short": -0.359,
-      "long": 0.6371
+      "short": 0.5828,
+      "long": 0.6316
     },
     "llm_decision_used": true
   }

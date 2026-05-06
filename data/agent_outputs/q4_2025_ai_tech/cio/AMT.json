@@ -11,29 +11,30 @@
         "rationale": "Short-term is Bearish because the stock is facing a classic 'beat and guide down' scenario, with a confirmed major customer default (DISH) leading to a cautious 2026 outlook and analyst price target cuts. The market will price in the negative guidance over the strong historical results. Long-term is Neutral because while the DISH default creates a multi-quarter revenue and margin headwind, the company's core business with other carriers remains solid, its data center pivot is promising, and a lower interest rate environment provides valuation support, creating a balanced risk/reward profile versus the QQQ."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company reported mixed results. Quarter-over-quarter performance was stagnant with flat revenue and slightly lower operating income, but net income and free cash flow improved. In contrast, reported year-over-year metrics show strong revenue and very strong earnings growth. High leverage remains a key characteristic, and the valuation is not inexpensive. The lack of management commentary or guidance makes it difficult to assess the near-term outlook."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean neutral on the long-term horizon."
     ],
-    "areas_of_disagreement": [],
+    "areas_of_disagreement": [
+      "Short-term views contain both bullish and bearish calls."
+    ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 0,
-      "Neutral": 2,
+      "Bullish": 1,
+      "Neutral": 1,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -414,261 +415,6 @@
       {
         "ticker": "AMT",
         "company": "American Tower",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-        "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral to Bullish Momentum",
-            "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Participation",
-            "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "In a Major Drawdown",
-            "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Consolidation",
-            "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.03%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "low volatility",
-            "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-          }
-        ],
-        "risks": [
-          "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-          "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-          "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-        "raw_packet": {
-          "ticker": "AMT",
-          "company": "American Tower",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-          "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Participation",
-              "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In a Major Drawdown",
-              "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "low volatility",
-              "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-            }
-          ],
-          "risks": [
-            "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-            "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-            "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-          "raw_packet": {
-            "ticker": "AMT",
-            "company": "American Tower",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-            "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Participation",
-                "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In a Major Drawdown",
-                "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "low volatility",
-                "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-              "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-              "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-            "raw_packet": {
-              "ticker": "AMT",
-              "company": "American Tower",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Participation",
-                  "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In a Major Drawdown",
-                  "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "low volatility",
-                  "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-                "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-                "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-              ],
-              "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-              "core_insight": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "AMT",
-        "company": "American Tower",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -830,16 +576,292 @@
             }
           }
         }
+      },
+      {
+        "ticker": "AMT",
+        "company": "American Tower",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+        "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bullish Post-Earnings Confirmation",
+            "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Conflicting Trend Structure",
+            "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Building Bullish Momentum",
+            "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Long-Term Underperformance",
+            "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Bear Market Territory",
+            "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum",
+            "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+          },
+          {
+            "type": "Volume",
+            "signal": "Average Conviction on Earnings Move",
+            "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.25%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "low volatility",
+            "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bullish_trend",
+            "evidence": "Regime classification: bullish_trend"
+          }
+        ],
+        "risks": [
+          "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+          "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+          "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+        "raw_packet": {
+          "ticker": "AMT",
+          "company": "American Tower",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+          "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Confirmation",
+              "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Conflicting Trend Structure",
+              "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Building Bullish Momentum",
+              "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Bear Market Territory",
+              "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+            },
+            {
+              "type": "Volume",
+              "signal": "Average Conviction on Earnings Move",
+              "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.25%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "low volatility",
+              "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bullish_trend",
+              "evidence": "Regime classification: bullish_trend"
+            }
+          ],
+          "risks": [
+            "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+            "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+            "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+          "raw_packet": {
+            "ticker": "AMT",
+            "company": "American Tower",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+            "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Confirmation",
+                "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Conflicting Trend Structure",
+                "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Building Bullish Momentum",
+                "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Bear Market Territory",
+                "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+              },
+              {
+                "type": "Volume",
+                "signal": "Average Conviction on Earnings Move",
+                "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.25%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "low volatility",
+                "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bullish_trend",
+                "evidence": "Regime classification: bullish_trend"
+              }
+            ],
+            "risks": [
+              "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+              "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+              "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+            "raw_packet": {
+              "ticker": "AMT",
+              "company": "American Tower",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Confirmation",
+                  "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Conflicting Trend Structure",
+                  "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Bear Market Territory",
+                  "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Average Conviction on Earnings Move",
+                  "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.25%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "low volatility",
+                  "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bullish_trend",
+                  "evidence": "Regime classification: bullish_trend"
+                }
+              ],
+              "risks": [
+                "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+                "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+                "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+              ],
+              "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+              "core_insight": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": false,
+    "triggered": true,
     "trigger": {
-      "debate_required": false,
-      "conflict_level": "low",
+      "debate_required": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ]
     },
     "synthesis": {
@@ -854,29 +876,30 @@
           "rationale": "Short-term is Bearish because the stock is facing a classic 'beat and guide down' scenario, with a confirmed major customer default (DISH) leading to a cautious 2026 outlook and analyst price target cuts. The market will price in the negative guidance over the strong historical results. Long-term is Neutral because while the DISH default creates a multi-quarter revenue and margin headwind, the company's core business with other carriers remains solid, its data center pivot is promising, and a lower interest rate environment provides valuation support, creating a balanced risk/reward profile versus the QQQ."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "The company reported mixed results. Quarter-over-quarter performance was stagnant with flat revenue and slightly lower operating income, but net income and free cash flow improved. In contrast, reported year-over-year metrics show strong revenue and very strong earnings growth. High leverage remains a key characteristic, and the valuation is not inexpensive. The lack of management commentary or guidance makes it difficult to assess the near-term outlook."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean neutral on the long-term horizon."
       ],
-      "areas_of_disagreement": [],
+      "areas_of_disagreement": [
+        "Short-term views contain both bullish and bearish calls."
+      ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 0,
-        "Neutral": 2,
+        "Bullish": 1,
+        "Neutral": 1,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1379,325 +1402,6 @@
         {
           "ticker": "AMT",
           "company": "American Tower",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-          "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Participation",
-              "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In a Major Drawdown",
-              "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "low volatility",
-              "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-            }
-          ],
-          "risks": [
-            "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-            "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-            "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-          "raw_packet": {
-            "ticker": "AMT",
-            "company": "American Tower",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-            "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Participation",
-                "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In a Major Drawdown",
-                "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "low volatility",
-                "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-              "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-              "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-            "raw_packet": {
-              "ticker": "AMT",
-              "company": "American Tower",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-              "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Participation",
-                  "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In a Major Drawdown",
-                  "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "low volatility",
-                  "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-                "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-                "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-              "raw_packet": {
-                "ticker": "AMT",
-                "company": "American Tower",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-                "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Conflicting Trend Structure",
-                    "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral to Bullish Momentum",
-                    "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weak Participation",
-                    "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant Market Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "In a Major Drawdown",
-                    "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Consolidation",
-                    "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "negative short-term momentum",
-                    "evidence": "Mean of recent returns: -0.03%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "low volatility",
-                    "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-                  }
-                ],
-                "risks": [
-                  "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-                  "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-                  "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-                "raw_packet": {
-                  "ticker": "AMT",
-                  "company": "American Tower",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Conflicting Trend Structure",
-                      "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral to Bullish Momentum",
-                      "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weak Participation",
-                      "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant Market Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "In a Major Drawdown",
-                      "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Consolidation",
-                      "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "negative short-term momentum",
-                      "evidence": "Mean of recent returns: -0.03%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "low volatility",
-                      "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-                    }
-                  ],
-                  "risks": [
-                    "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-                    "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-                    "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-                  ],
-                  "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-                  "core_insight": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "AMT",
-          "company": "American Tower",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1899,18 +1603,450 @@
               }
             }
           }
+        },
+        {
+          "ticker": "AMT",
+          "company": "American Tower",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+          "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Confirmation",
+              "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Conflicting Trend Structure",
+              "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Building Bullish Momentum",
+              "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Bear Market Territory",
+              "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+            },
+            {
+              "type": "Volume",
+              "signal": "Average Conviction on Earnings Move",
+              "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.25%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "low volatility",
+              "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bullish_trend",
+              "evidence": "Regime classification: bullish_trend"
+            }
+          ],
+          "risks": [
+            "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+            "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+            "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+          "raw_packet": {
+            "ticker": "AMT",
+            "company": "American Tower",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+            "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Confirmation",
+                "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Conflicting Trend Structure",
+                "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Building Bullish Momentum",
+                "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Bear Market Territory",
+                "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+              },
+              {
+                "type": "Volume",
+                "signal": "Average Conviction on Earnings Move",
+                "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.25%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "low volatility",
+                "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bullish_trend",
+                "evidence": "Regime classification: bullish_trend"
+              }
+            ],
+            "risks": [
+              "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+              "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+              "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+            "raw_packet": {
+              "ticker": "AMT",
+              "company": "American Tower",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+              "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Confirmation",
+                  "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Conflicting Trend Structure",
+                  "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Bear Market Territory",
+                  "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Average Conviction on Earnings Move",
+                  "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.25%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "low volatility",
+                  "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bullish_trend",
+                  "evidence": "Regime classification: bullish_trend"
+                }
+              ],
+              "risks": [
+                "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+                "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+                "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+              "raw_packet": {
+                "ticker": "AMT",
+                "company": "American Tower",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+                "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Bullish Post-Earnings Confirmation",
+                    "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Conflicting Trend Structure",
+                    "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Building Bullish Momentum",
+                    "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Long-Term Underperformance",
+                    "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Significant Bear Market Territory",
+                    "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Neutral Momentum",
+                    "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Average Conviction on Earnings Move",
+                    "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "positive short-term momentum",
+                    "evidence": "Mean of recent returns: 0.25%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "low volatility",
+                    "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "bullish_trend",
+                    "evidence": "Regime classification: bullish_trend"
+                  }
+                ],
+                "risks": [
+                  "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+                  "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+                  "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+                "raw_packet": {
+                  "ticker": "AMT",
+                  "company": "American Tower",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.7,
+                  "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Bullish Post-Earnings Confirmation",
+                      "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Conflicting Trend Structure",
+                      "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Building Bullish Momentum",
+                      "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Long-Term Underperformance",
+                      "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Significant Bear Market Territory",
+                      "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Neutral Momentum",
+                      "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Average Conviction on Earnings Move",
+                      "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "positive short-term momentum",
+                      "evidence": "Mean of recent returns: 0.25%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "low volatility",
+                      "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "bullish_trend",
+                      "evidence": "Regime classification: bullish_trend"
+                    }
+                  ],
+                  "risks": [
+                    "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+                    "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+                    "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+                  ],
+                  "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+                  "core_insight": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [],
+    "debate_responses": [
+      {
+        "response_type": "agent_revision",
+        "agreement": [
+          "I agree with the `market_technical` agent's assessment that AMT is in a long-term bearish trend, evidenced by the price being significantly below the 200-day moving average and its substantial underperformance relative to the SPY. This technical weakness is the market's validation of the fundamental headwinds I identified.",
+          "I agree with the `fundamental` agent's identification of the 'significant total debt load of $45.1B' as a key risk, which supports my Neutral long-term stance by acting as a counterbalance to potential growth drivers."
+        ],
+        "disagreement": [
+          "I disagree with the `market_technical` agent's short-term 'Bullish' stance. Their primary evidence is the positive one-day post-earnings stock reaction. While this is a factual and important data point that challenges my original 'Bearish' view, I weigh it as a sign of a relief rally or a focus on historical beats, rather than a sustainable bullish reversal. The negative forward guidance due to the DISH default is a more powerful fundamental driver that should cap near-term upside.",
+          "I place a lower weight on the `fundamental` agent's entire analysis. Their 'Neutral' stance is derived from incomplete data, as they explicitly note the lack of management guidance and an earnings transcript. My agent's view is based on having this critical information, which makes their analysis of historical YoY growth less relevant than the forward-looking reality of the DISH default."
+        ],
+        "revised_short_term_stance": "Neutral",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.6,
+        "revised_confidence_rationale": "My original confidence of 0.8 was predicated on the 'beat and guide down' being a clear, negative catalyst. The `market_technical` agent's evidence of a positive abnormal return post-earnings directly contradicts this expectation. The conflict between the negative fundamental news and the market's initial positive reaction introduces significant uncertainty, forcing a reduction in confidence.",
+        "revised_stance_rationale": "I am revising my short-term stance from Bearish to Neutral. The fundamental negative catalyst (DISH default and guidance cut) remains valid, but the market's initial positive price reaction, as highlighted by the `market_technical` agent, cannot be ignored. This creates a balanced, uncertain short-term outlook. The long-term Neutral stance is maintained, as the combination of the DISH headwind, high debt, a solid core business, and the AI/edge growth option creates a balanced risk/reward profile, a view supported by data points from all agents.",
+        "evidence_needed": [
+          "Price action and relative volume over the next 5-10 trading days to determine if the post-earnings strength is a sustainable trend change or a short-lived relief rally.",
+          "Guidance and commentary from peer tower companies (CCI, SBA) regarding their own DISH exposure to confirm if this is a sector-wide issue.",
+          "Updated sell-side analyst reports to see how they adjust multi-year forecasts to account for both the DISH revenue loss and the potential AI/edge growth narrative."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "short_term": "I agree with the news_macro agent's core evidence that this is a 'beat and lower' quarter. The confirmed default of a major customer (DISH) and the subsequent cautious guidance for 2026 are significant negative fundamental events. This information directly fills the critical gaps in my original analysis regarding guidance and management commentary.",
+          "long_term": "I agree with the news_macro agent's Neutral long-term stance. They correctly balance the multi-quarter headwind from the DISH default against the solid underlying business with other carriers and the emerging growth narrative around data centers and 'AI at the edge'. I also agree with the market_technical agent's evidence that the stock is in a confirmed long-term downtrend, which supports not being outright bullish."
+        },
+        "disagreement": {
+          "short_term": "I disagree with the market_technical agent's short-term Bullish stance. While their observation of a positive post-earnings price reaction is factually correct, I assign it a much lower weight. From a fundamental perspective, a major customer default and a guidance cut are unequivocally negative catalysts. The market's one-day reaction on average volume does not override the negative change in the company's forward-looking business prospects. The fundamental damage is a more durable signal than a single day's price action.",
+          "long_term": "I do not have any major disagreements with the other agents' long-term evidence. The combination of fundamental headwinds (DISH) and tailwinds (AI, core business) from the news_macro agent, along with the bearish trend context from the market_technical agent, paints a comprehensive and balanced picture that aligns with a Neutral stance."
+        },
+        "revised_view": {
+          "ticker": "AMT",
+          "company": "American Tower",
+          "agent_name": "fundamental",
+          "short_term_stance": "Bearish",
+          "long_term_stance": "Neutral",
+          "confidence": 0.8,
+          "confidence_rationale": "Confidence is now high. The initial analysis was hampered by a lack of critical information. The evidence provided by the news_macro agent, including the earnings transcript, management guidance on the DISH default, and analyst reactions, has filled these gaps. The fundamental picture is now much clearer.",
+          "stance_rationale": "The short-term stance is revised to Bearish. While historical results were strong, the confirmed default by major customer DISH and the resulting cautious 2026 outlook represent a significant fundamental headwind that will pressure revenue and margins. This 'beat and guide down' is a classic negative catalyst. The long-term stance remains Neutral, but is now based on a more informed view: the negative impact of the DISH situation is balanced by the stability of the core business with other carriers and the potential new growth vector from data centers supporting 'AI at the edge'.",
+          "key_signals": [
+            "Confirmed lease payment default by major customer DISH Network.",
+            "Cautious 2026 revenue outlook that missed expectations.",
+            "Multiple analyst price target cuts following the earnings announcement.",
+            "Management commentary pivoting the growth narrative to include data centers and 'AI at the edge'.",
+            "AFFO per share beat analyst estimates for the reported quarter."
+          ],
+          "risks": [
+            "The DISH default creates a multi-quarter revenue and margin headwind.",
+            "The entire tower sector (including CCI, SBA) faces negative sentiment and repricing due to the DISH situation.",
+            "The 'AI at the edge' growth story is still nascent and may not materialize quickly enough to offset the DISH revenue loss.",
+            "The company continues to carry a significant total debt load of $45.1B."
+          ],
+          "citations": [
+            {
+              "agent": "news_macro",
+              "quote": "American Tower (AMT) reported strong Q4 2025 AFFO but issued a cautious 2026 outlook that missed expectations due to a confirmed lease payment default by major customer DISH Network."
+            },
+            {
+              "agent": "news_macro",
+              "quote": "UBS Maintains Buy on American Tower, Lowers Price Target to $248"
+            },
+            {
+              "agent": "market_technical",
+              "quote": "Price at $180.67 is... significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+            }
+          ]
+        },
+        "evidence_needed": [
+          "Clarity on the financial resolution of the DISH lease default (e.g., renegotiation, termination costs, asset sales).",
+          "Evidence of concrete capital commitments from customers for the 'AI at the edge' data center buildout to validate the new growth narrative.",
+          "Updated guidance from peers (CCI, SBA) regarding their own DISH exposure to quantify the sector-wide impact."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": "I agree with the core evidence and rationale from the news_macro agent. The confirmation of a major customer default (DISH) and subsequent cautious guidance for 2026 is a significant negative fundamental catalyst. This 'beat and guide down' scenario provides crucial context that my technical analysis was missing. My observation of a positive post-earnings price move was a misinterpretation of a complex reaction; the underlying news is bearish and will likely lead to short-term underperformance as the market reprices estimates downward, as the news_macro agent correctly identifies.",
+        "disagreement": "I disagree with my original interpretation of the 'Earnings Reaction' signal. What I labeled a 'Bullish Post-Earnings Confirmation' was, in light of the news_macro agent's evidence, a volatile head-fake. The fundamental news invalidates the bullish interpretation of that specific price move. I also assign a low weight to the fundamental agent's entire view, as it explicitly states it is missing the earnings transcript and guidance, which the news_macro agent possessed. The fundamental agent's analysis is therefore outdated and superseded by more complete information.",
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.85,
+        "evidence_needed": [
+          "Updated analyst consensus estimates for revenue and EPS to quantify the impact of the DISH default and lowered guidance.",
+          "Price and volume action in the days following the earnings report to see if the price breaks below short-term support levels (MA20, MA50) on increased volume, which would confirm bearish conviction.",
+          "Commentary on the DISH situation from peers like Crown Castle (CCI) and SBA Communications (SBA) in their own filings or public statements to confirm the sector-wide impact."
+        ]
+      }
+    ],
     "revised_packets": [
       {
         "ticker": "AMT",
         "company": "American Tower",
         "agent_name": "news_macro",
-        "short_term_stance": "Bearish",
+        "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
-        "confidence": 0.8,
+        "confidence": 0.6,
         "confidence_rationale": "Confidence is high due to direct evidence from AMT's earnings call transcript and official guidance regarding the DISH default and its financial impact. Multiple analyst downgrades confirm the negative catalyst. The 'beat and lower' pattern is a well-understood driver of short-term underperformance. The long-term stance is slightly less certain as it relies on balancing competing fundamental factors.",
         "stance_rationale": "Short-term is Bearish because the stock is facing a classic 'beat and guide down' scenario, with a confirmed major customer default (DISH) leading to a cautious 2026 outlook and analyst price target cuts. The market will price in the negative guidance over the strong historical results. Long-term is Neutral because while the DISH default creates a multi-quarter revenue and margin headwind, the company's core business with other carriers remains solid, its data center pivot is promising, and a lower interest rate environment provides valuation support, creating a balanced risk/reward profile versus the QQQ.",
         "key_signals": [
@@ -2271,261 +2407,27 @@
               "core_insight": "While the market focuses on the immediate revenue impact from the DISH default on tower REITs, it's overlooking the confirmation that the 4th US wireless carrier's buildout is failing, which solidifies the long-term market structure for incumbent carriers and shifts the growth narrative for tower infrastructure towards AI-driven edge computing."
             }
           }
-        }
-      },
-      {
-        "ticker": "AMT",
-        "company": "American Tower",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-        "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral to Bullish Momentum",
-            "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak Participation",
-            "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant Market Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "In a Major Drawdown",
-            "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Consolidation",
-            "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-          },
-          {
-            "type": "Returns",
-            "signal": "negative short-term momentum",
-            "evidence": "Mean of recent returns: -0.03%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "low volatility",
-            "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-          }
-        ],
-        "risks": [
-          "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-          "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-          "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-        "raw_packet": {
-          "ticker": "AMT",
-          "company": "American Tower",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-          "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak Participation",
-              "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant Market Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In a Major Drawdown",
-              "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Consolidation",
-              "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-            },
-            {
-              "type": "Returns",
-              "signal": "negative short-term momentum",
-              "evidence": "Mean of recent returns: -0.03%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "low volatility",
-              "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-            }
+        },
+        "debate_response": {
+          "response_type": "agent_revision",
+          "agreement": [
+            "I agree with the `market_technical` agent's assessment that AMT is in a long-term bearish trend, evidenced by the price being significantly below the 200-day moving average and its substantial underperformance relative to the SPY. This technical weakness is the market's validation of the fundamental headwinds I identified.",
+            "I agree with the `fundamental` agent's identification of the 'significant total debt load of $45.1B' as a key risk, which supports my Neutral long-term stance by acting as a counterbalance to potential growth drivers."
           ],
-          "risks": [
-            "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-            "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-            "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
+          "disagreement": [
+            "I disagree with the `market_technical` agent's short-term 'Bullish' stance. Their primary evidence is the positive one-day post-earnings stock reaction. While this is a factual and important data point that challenges my original 'Bearish' view, I weigh it as a sign of a relief rally or a focus on historical beats, rather than a sustainable bullish reversal. The negative forward guidance due to the DISH default is a more powerful fundamental driver that should cap near-term upside.",
+            "I place a lower weight on the `fundamental` agent's entire analysis. Their 'Neutral' stance is derived from incomplete data, as they explicitly note the lack of management guidance and an earnings transcript. My agent's view is based on having this critical information, which makes their analysis of historical YoY growth less relevant than the forward-looking reality of the DISH default."
           ],
-          "citations": [],
-          "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-          "raw_packet": {
-            "ticker": "AMT",
-            "company": "American Tower",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-            "stance_rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak Participation",
-                "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant Market Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In a Major Drawdown",
-                "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Consolidation",
-                "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-              },
-              {
-                "type": "Returns",
-                "signal": "negative short-term momentum",
-                "evidence": "Mean of recent returns: -0.03%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "low volatility",
-                "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-              "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-              "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-            "raw_packet": {
-              "ticker": "AMT",
-              "company": "American Tower",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence is solid but not absolute due to conflicting signals. While short-term momentum indicators (MACD, RSI) are bullish, they are challenged by a bearish long-term structure (price < MA200), significant relative weakness, and low volume, creating a neutral short-term outlook.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $180.88 is above its short-term supports (MA20: $178.15, MA50: $178.85) but remains below its key long-term resistance (MA200: $183.74)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover is active with the MACD line (1.04) above the signal line (0.51), indicating recent positive momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI is 54.91, which is in the upper half of the neutral zone, suggesting some buying pressure but not overextended."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak Participation",
-                  "evidence": "Recent trading volume has been low (volume spike ratio of 0.41), indicating a lack of strong conviction behind the price action."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant Market Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by a substantial -45.1% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In a Major Drawdown",
-                  "evidence": "The stock is currently trading 19.9% below its recent peak, reflecting significant downside from prior highs."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Consolidation",
-                  "evidence": "The market regime is classified as 'range_bound', suggesting the stock lacks a clear, sustained directional trend."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "negative short-term momentum",
-                  "evidence": "Mean of recent returns: -0.03%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "low volatility",
-                  "evidence": "Annualized volatility 23.45%, Recent 24.69%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 200-day moving average. The bullish short-term signals could be a 'bull trap' if price is rejected at this key resistance level.",
-                "Low volume on price appreciation suggests weak buying conviction, making the stock vulnerable to a swift reversal on any increase in selling pressure.",
-                "Continued significant underperformance against the broader market may lead to capital rotation out of the stock, exacerbating weakness."
-              ],
-              "summary": "As of 2026/02/25, American Tower presented a mixed technical picture. Short-term momentum signals (MACD, RSI) were constructive, pushing the price above the 20- and 50-day moving averages. However, this bullish attempt was occurring within a dominant long-term bearish context, defined by the price trading below the 200-day moving average, a large drawdown, and severe underperformance relative to the market. Low volume highlighted a lack of conviction, suggesting the stock was in a fragile consolidation phase.",
-              "core_insight": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-            }
-          }
+          "revised_short_term_stance": "Neutral",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.6,
+          "revised_confidence_rationale": "My original confidence of 0.8 was predicated on the 'beat and guide down' being a clear, negative catalyst. The `market_technical` agent's evidence of a positive abnormal return post-earnings directly contradicts this expectation. The conflict between the negative fundamental news and the market's initial positive reaction introduces significant uncertainty, forcing a reduction in confidence.",
+          "revised_stance_rationale": "I am revising my short-term stance from Bearish to Neutral. The fundamental negative catalyst (DISH default and guidance cut) remains valid, but the market's initial positive price reaction, as highlighted by the `market_technical` agent, cannot be ignored. This creates a balanced, uncertain short-term outlook. The long-term Neutral stance is maintained, as the combination of the DISH headwind, high debt, a solid core business, and the AI/edge growth option creates a balanced risk/reward profile, a view supported by data points from all agents.",
+          "evidence_needed": [
+            "Price action and relative volume over the next 5-10 trading days to determine if the post-earnings strength is a sustainable trend change or a short-lived relief rally.",
+            "Guidance and commentary from peer tower companies (CCI, SBA) regarding their own DISH exposure to confirm if this is a sector-wide issue.",
+            "Updated sell-side analyst reports to see how they adjust multi-year forecasts to account for both the DISH revenue loss and the potential AI/edge growth narrative."
+          ]
         }
       },
       {
@@ -2691,6 +2593,347 @@
               }
             }
           }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "short_term": "I agree with the news_macro agent's core evidence that this is a 'beat and lower' quarter. The confirmed default of a major customer (DISH) and the subsequent cautious guidance for 2026 are significant negative fundamental events. This information directly fills the critical gaps in my original analysis regarding guidance and management commentary.",
+            "long_term": "I agree with the news_macro agent's Neutral long-term stance. They correctly balance the multi-quarter headwind from the DISH default against the solid underlying business with other carriers and the emerging growth narrative around data centers and 'AI at the edge'. I also agree with the market_technical agent's evidence that the stock is in a confirmed long-term downtrend, which supports not being outright bullish."
+          },
+          "disagreement": {
+            "short_term": "I disagree with the market_technical agent's short-term Bullish stance. While their observation of a positive post-earnings price reaction is factually correct, I assign it a much lower weight. From a fundamental perspective, a major customer default and a guidance cut are unequivocally negative catalysts. The market's one-day reaction on average volume does not override the negative change in the company's forward-looking business prospects. The fundamental damage is a more durable signal than a single day's price action.",
+            "long_term": "I do not have any major disagreements with the other agents' long-term evidence. The combination of fundamental headwinds (DISH) and tailwinds (AI, core business) from the news_macro agent, along with the bearish trend context from the market_technical agent, paints a comprehensive and balanced picture that aligns with a Neutral stance."
+          },
+          "revised_view": {
+            "ticker": "AMT",
+            "company": "American Tower",
+            "agent_name": "fundamental",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is now high. The initial analysis was hampered by a lack of critical information. The evidence provided by the news_macro agent, including the earnings transcript, management guidance on the DISH default, and analyst reactions, has filled these gaps. The fundamental picture is now much clearer.",
+            "stance_rationale": "The short-term stance is revised to Bearish. While historical results were strong, the confirmed default by major customer DISH and the resulting cautious 2026 outlook represent a significant fundamental headwind that will pressure revenue and margins. This 'beat and guide down' is a classic negative catalyst. The long-term stance remains Neutral, but is now based on a more informed view: the negative impact of the DISH situation is balanced by the stability of the core business with other carriers and the potential new growth vector from data centers supporting 'AI at the edge'.",
+            "key_signals": [
+              "Confirmed lease payment default by major customer DISH Network.",
+              "Cautious 2026 revenue outlook that missed expectations.",
+              "Multiple analyst price target cuts following the earnings announcement.",
+              "Management commentary pivoting the growth narrative to include data centers and 'AI at the edge'.",
+              "AFFO per share beat analyst estimates for the reported quarter."
+            ],
+            "risks": [
+              "The DISH default creates a multi-quarter revenue and margin headwind.",
+              "The entire tower sector (including CCI, SBA) faces negative sentiment and repricing due to the DISH situation.",
+              "The 'AI at the edge' growth story is still nascent and may not materialize quickly enough to offset the DISH revenue loss.",
+              "The company continues to carry a significant total debt load of $45.1B."
+            ],
+            "citations": [
+              {
+                "agent": "news_macro",
+                "quote": "American Tower (AMT) reported strong Q4 2025 AFFO but issued a cautious 2026 outlook that missed expectations due to a confirmed lease payment default by major customer DISH Network."
+              },
+              {
+                "agent": "news_macro",
+                "quote": "UBS Maintains Buy on American Tower, Lowers Price Target to $248"
+              },
+              {
+                "agent": "market_technical",
+                "quote": "Price at $180.67 is... significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+              }
+            ]
+          },
+          "evidence_needed": [
+            "Clarity on the financial resolution of the DISH lease default (e.g., renegotiation, termination costs, asset sales).",
+            "Evidence of concrete capital commitments from customers for the 'AI at the edge' data center buildout to validate the new growth narrative.",
+            "Updated guidance from peers (CCI, SBA) regarding their own DISH exposure to quantify the sector-wide impact."
+          ]
+        }
+      },
+      {
+        "ticker": "AMT",
+        "company": "American Tower",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Neutral",
+        "confidence": 0.85,
+        "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+        "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Bullish Post-Earnings Confirmation",
+            "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Conflicting Trend Structure",
+            "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Building Bullish Momentum",
+            "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Long-Term Underperformance",
+            "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Significant Bear Market Territory",
+            "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+          },
+          {
+            "type": "RSI",
+            "signal": "Neutral Momentum",
+            "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+          },
+          {
+            "type": "Volume",
+            "signal": "Average Conviction on Earnings Move",
+            "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+          },
+          {
+            "type": "Returns",
+            "signal": "positive short-term momentum",
+            "evidence": "Mean of recent returns: 0.25%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "low volatility",
+            "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bullish_trend",
+            "evidence": "Regime classification: bullish_trend"
+          }
+        ],
+        "risks": [
+          "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+          "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+          "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+        "raw_packet": {
+          "ticker": "AMT",
+          "company": "American Tower",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+          "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Bullish Post-Earnings Confirmation",
+              "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Conflicting Trend Structure",
+              "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Building Bullish Momentum",
+              "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Long-Term Underperformance",
+              "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Significant Bear Market Territory",
+              "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+            },
+            {
+              "type": "RSI",
+              "signal": "Neutral Momentum",
+              "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+            },
+            {
+              "type": "Volume",
+              "signal": "Average Conviction on Earnings Move",
+              "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+            },
+            {
+              "type": "Returns",
+              "signal": "positive short-term momentum",
+              "evidence": "Mean of recent returns: 0.25%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "low volatility",
+              "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bullish_trend",
+              "evidence": "Regime classification: bullish_trend"
+            }
+          ],
+          "risks": [
+            "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+            "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+            "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+          "raw_packet": {
+            "ticker": "AMT",
+            "company": "American Tower",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+            "stance_rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Bullish Post-Earnings Confirmation",
+                "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Conflicting Trend Structure",
+                "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Building Bullish Momentum",
+                "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Long-Term Underperformance",
+                "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Significant Bear Market Territory",
+                "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+              },
+              {
+                "type": "RSI",
+                "signal": "Neutral Momentum",
+                "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+              },
+              {
+                "type": "Volume",
+                "signal": "Average Conviction on Earnings Move",
+                "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+              },
+              {
+                "type": "Returns",
+                "signal": "positive short-term momentum",
+                "evidence": "Mean of recent returns: 0.25%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "low volatility",
+                "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bullish_trend",
+                "evidence": "Regime classification: bullish_trend"
+              }
+            ],
+            "risks": [
+              "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+              "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+              "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+            "raw_packet": {
+              "ticker": "AMT",
+              "company": "American Tower",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is set at 0.70 because while the post-earnings reaction provides a strong bullish short-term catalyst, it conflicts with significant long-term bearish signals, primarily the price being well below the 200-day moving average and substantial market underperformance.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Bullish Post-Earnings Confirmation",
+                  "evidence": "Stock gained +1.39% on the day after earnings while the benchmark QQQ fell -1.21%, resulting in a strong abnormal positive reaction of +2.59%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Conflicting Trend Structure",
+                  "evidence": "Price at $180.67 is above its short-term MA20 ($179.79) and mid-term MA50 ($176.26), but remains significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Building Bullish Momentum",
+                  "evidence": "A bullish crossover is in effect with the MACD line (2.93) above the signal line (2.53), and a positive histogram (0.40) suggests upward momentum is increasing."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Long-Term Underperformance",
+                  "evidence": "The stock has a relative return of -25.31% against the SPY benchmark, highlighting severe weakness compared to the broader market."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Significant Bear Market Territory",
+                  "evidence": "The stock is in a -20.0% drawdown from its recent peak, which is a common threshold for defining a bear market for an individual security."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Neutral Momentum",
+                  "evidence": "RSI is at 50.52, indicating a neutral state. This suggests the stock is neither overbought nor oversold and has room to move in either direction."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Average Conviction on Earnings Move",
+                  "evidence": "The post-earnings reaction volume was only 1.03x the recent average, suggesting the positive move was not confirmed by an exceptionally strong surge in trading activity."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "positive short-term momentum",
+                  "evidence": "Mean of recent returns: 0.25%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "low volatility",
+                  "evidence": "Annualized volatility 24.46%, Recent 35.7%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bullish_trend",
+                  "evidence": "Regime classification: bullish_trend"
+                }
+              ],
+              "risks": [
+                "The primary risk is that the positive earnings reaction is a temporary bounce within a persistent long-term downtrend, as defined by the price being below the MA200.",
+                "Significant underperformance relative to the SPY benchmark may cause investors to favor stronger assets, limiting capital inflow.",
+                "The lack of a major volume spike on the post-earnings rally suggests conviction may not be strong enough to overcome major overhead resistance levels."
+              ],
+              "summary": "As of 2026-02-25, AMT presents a classic case of a bullish short-term catalyst clashing with a bearish long-term trend. The strong positive abnormal return post-earnings, supported by a MACD crossover and price action above the MA20/MA50, underpins a bullish short-term stance. However, this is contrasted by a long-term bearish structure, evidenced by the price being in a 20% drawdown, well below the MA200, and severely underperforming the market.",
+              "core_insight": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": "I agree with the core evidence and rationale from the news_macro agent. The confirmation of a major customer default (DISH) and subsequent cautious guidance for 2026 is a significant negative fundamental catalyst. This 'beat and guide down' scenario provides crucial context that my technical analysis was missing. My observation of a positive post-earnings price move was a misinterpretation of a complex reaction; the underlying news is bearish and will likely lead to short-term underperformance as the market reprices estimates downward, as the news_macro agent correctly identifies.",
+          "disagreement": "I disagree with my original interpretation of the 'Earnings Reaction' signal. What I labeled a 'Bullish Post-Earnings Confirmation' was, in light of the news_macro agent's evidence, a volatile head-fake. The fundamental news invalidates the bullish interpretation of that specific price move. I also assign a low weight to the fundamental agent's entire view, as it explicitly states it is missing the earnings transcript and guidance, which the news_macro agent possessed. The fundamental agent's analysis is therefore outdated and superseded by more complete information.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.85,
+          "evidence_needed": [
+            "Updated analyst consensus estimates for revenue and EPS to quantify the impact of the DISH default and lowered guidance.",
+            "Price and volume action in the days following the earnings report to see if the price breaks below short-term support levels (MA20, MA50) on increased volume, which would confirm bearish conviction.",
+            "Commentary on the DISH situation from peers like Crown Castle (CCI) and SBA Communications (SBA) in their own filings or public statements to confirm the sector-wide impact."
+          ]
         }
       }
     ]
@@ -2700,23 +2943,23 @@
     "company": "American Tower",
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Neutral",
-    "investment_action": "Avoid / Reduce",
-    "position_size_hint": "Reduce existing positions or avoid initiating new ones. Not a candidate for a new long position at this time.",
-    "confidence": 0.7,
-    "core_thesis": "In the short term, American Tower faces a classic 'beat and guide down' scenario following the material negative catalyst of the DISH customer default, which will lead to estimate revisions and stock underperformance. The long-term thesis is more balanced; while the DISH headwind is significant, the company's core business remains solid, the competitive landscape has improved with the failure of a 4th carrier, and a strategic pivot to data centers and 'AI at the edge' presents a credible, albeit nascent, new growth vector.",
-    "why_now": "The recent earnings report provided a clear and material negative catalyst. The market is actively repricing the stock to account for the confirmed DISH default and lowered 2026 guidance. This period of estimate revisions and uncertainty creates a high probability of near-term underperformance, making it prudent to wait on the sidelines.",
+    "investment_action": "Avoid / Do Not Add",
+    "position_size_hint": "Reduce existing or avoid new positions",
+    "confidence": 0.75,
+    "core_thesis": "The market has not yet fully priced in the negative impact of the confirmed DISH customer default and the associated cautious forward guidance. This classic 'beat and guide down' scenario creates a short-term headwind that outweighs the strong historical results and the confusing one-day positive price reaction.",
+    "why_now": "The conflict between the negative fundamental news (DISH default) and the initial positive price reaction has created a window of opportunity. The market appears to be misinterpreting the situation, focusing on the historical beat instead of the damaged forward outlook, which is likely to lead to near-term underperformance as estimates are revised downwards.",
     "key_supporting_evidence": [
-      "Direct confirmation from management on the Q4 earnings call of a lease payment default by major customer DISH Network.",
-      "Cautious 2026 outlook issued by the company, which missed prior expectations and led to multiple analyst price target reductions.",
-      "Technical confirmation of weakness: The stock is trading below its 200-day moving average, has shown significant relative underperformance versus the SPY, and recent price bounces have occurred on low volume, suggesting a lack of conviction.",
-      "The failure of DISH as a 4th US wireless carrier solidifies the market structure for the remaining three incumbents, which are AMT's primary customers.",
-      "Management has explicitly pivoted the growth narrative to include data centers and supporting AI workloads at the network edge, providing a potential future growth driver."
+      "A major customer, DISH Network, has confirmed a lease payment default, creating a direct revenue and margin headwind for future quarters.",
+      "Management issued a cautious 2026 outlook that missed expectations, directly as a result of the DISH situation, signaling a multi-quarter problem.",
+      "Multiple sell-side analysts (UBS, Scotiabank, Morgan Stanley) lowered their price targets following the announcement, confirming that forward estimates are coming down.",
+      "The stock remains in a long-term downtrend, trading below its 200-day moving average, suggesting the path of least resistance is lower and that the recent price pop is a rally to be sold.",
+      "The initial positive price reaction occurred on average volume, suggesting a lack of strong conviction and potentially representing a short-lived relief rally or a misinterpretation of the news."
     ],
     "key_risks": [
-      "The DISH default proves to be a temporary negotiating tactic and is resolved favorably, causing a sharp reversal in the stock.",
-      "The market could quickly look past the DISH headwind and begin pricing in the long-term 'AI at the edge' narrative, causing investors to miss a bottom.",
-      "The revenue and margin impact from the DISH default could be worse or more prolonged than currently understood, turning the long-term outlook from Neutral to Bearish.",
-      "The 'AI at the edge' growth story could prove to be more aspirational than real, failing to generate sufficient revenue to offset slowing growth in the core tower business."
+      "The market may have already priced in the DISH default, and the positive price action could signal that investors are looking past this issue towards future growth drivers.",
+      "The DISH default could be resolved more quickly or favorably than anticipated, through renegotiation or asset sales, reversing the negative sentiment.",
+      "The 'AI at the edge' growth narrative, mentioned by management, could gain traction with investors more quickly than expected, offsetting the negative DISH news.",
+      "As a REIT, AMT is sensitive to interest rates. A significant dovish pivot by the Federal Reserve could lift the entire sector, overriding company-specific headwinds."
     ],
     "agent_view_summary": [
       {
@@ -2727,80 +2970,183 @@
         "rationale": "Short-term is Bearish because the stock is facing a classic 'beat and guide down' scenario, with a confirmed major customer default (DISH) leading to a cautious 2026 outlook and analyst price target cuts. The market will price in the negative guidance over the strong historical results. Long-term is Neutral because while the DISH default creates a multi-quarter revenue and margin headwind, the company's core business with other carriers remains solid, its data center pivot is promising, and a lower interest rate environment provides valuation support, creating a balanced risk/reward profile versus the QQQ."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.75,
-        "rationale": "The stock is in a technical battleground, with short-term bullish momentum confronting a formidable long-term bearish trend. The lack of volume confirmation and proximity to the 200-day moving average resistance suggest the bullish case is tenuous and at high risk of failure."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "The company reported mixed results. Quarter-over-quarter performance was stagnant with flat revenue and slightly lower operating income, but net income and free cash flow improved. In contrast, reported year-over-year metrics show strong revenue and very strong earnings growth. High leverage remains a key characteristic, and the valuation is not inexpensive. The lack of management commentary or guidance makes it difficult to assess the near-term outlook."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The market's positive reaction to earnings provides a strong catalyst for a potential trend reversal, but the stock remains in a confirmed long-term downtrend. The most critical question is whether this event-driven momentum is sufficient to challenge and break the overhead resistance of the 200-day moving average."
       }
     ],
     "debate_summary": {
-      "debate_triggered": false,
-      "conflict_level": "low",
+      "debate_triggered": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls.",
+        "High-confidence short-term agents disagree."
       ],
-      "debate_responses": []
+      "debate_responses": [
+        {
+          "response_type": "agent_revision",
+          "agreement": [
+            "I agree with the `market_technical` agent's assessment that AMT is in a long-term bearish trend, evidenced by the price being significantly below the 200-day moving average and its substantial underperformance relative to the SPY. This technical weakness is the market's validation of the fundamental headwinds I identified.",
+            "I agree with the `fundamental` agent's identification of the 'significant total debt load of $45.1B' as a key risk, which supports my Neutral long-term stance by acting as a counterbalance to potential growth drivers."
+          ],
+          "disagreement": [
+            "I disagree with the `market_technical` agent's short-term 'Bullish' stance. Their primary evidence is the positive one-day post-earnings stock reaction. While this is a factual and important data point that challenges my original 'Bearish' view, I weigh it as a sign of a relief rally or a focus on historical beats, rather than a sustainable bullish reversal. The negative forward guidance due to the DISH default is a more powerful fundamental driver that should cap near-term upside.",
+            "I place a lower weight on the `fundamental` agent's entire analysis. Their 'Neutral' stance is derived from incomplete data, as they explicitly note the lack of management guidance and an earnings transcript. My agent's view is based on having this critical information, which makes their analysis of historical YoY growth less relevant than the forward-looking reality of the DISH default."
+          ],
+          "revised_short_term_stance": "Neutral",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.6,
+          "revised_confidence_rationale": "My original confidence of 0.8 was predicated on the 'beat and guide down' being a clear, negative catalyst. The `market_technical` agent's evidence of a positive abnormal return post-earnings directly contradicts this expectation. The conflict between the negative fundamental news and the market's initial positive reaction introduces significant uncertainty, forcing a reduction in confidence.",
+          "revised_stance_rationale": "I am revising my short-term stance from Bearish to Neutral. The fundamental negative catalyst (DISH default and guidance cut) remains valid, but the market's initial positive price reaction, as highlighted by the `market_technical` agent, cannot be ignored. This creates a balanced, uncertain short-term outlook. The long-term Neutral stance is maintained, as the combination of the DISH headwind, high debt, a solid core business, and the AI/edge growth option creates a balanced risk/reward profile, a view supported by data points from all agents.",
+          "evidence_needed": [
+            "Price action and relative volume over the next 5-10 trading days to determine if the post-earnings strength is a sustainable trend change or a short-lived relief rally.",
+            "Guidance and commentary from peer tower companies (CCI, SBA) regarding their own DISH exposure to confirm if this is a sector-wide issue.",
+            "Updated sell-side analyst reports to see how they adjust multi-year forecasts to account for both the DISH revenue loss and the potential AI/edge growth narrative."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "short_term": "I agree with the news_macro agent's core evidence that this is a 'beat and lower' quarter. The confirmed default of a major customer (DISH) and the subsequent cautious guidance for 2026 are significant negative fundamental events. This information directly fills the critical gaps in my original analysis regarding guidance and management commentary.",
+            "long_term": "I agree with the news_macro agent's Neutral long-term stance. They correctly balance the multi-quarter headwind from the DISH default against the solid underlying business with other carriers and the emerging growth narrative around data centers and 'AI at the edge'. I also agree with the market_technical agent's evidence that the stock is in a confirmed long-term downtrend, which supports not being outright bullish."
+          },
+          "disagreement": {
+            "short_term": "I disagree with the market_technical agent's short-term Bullish stance. While their observation of a positive post-earnings price reaction is factually correct, I assign it a much lower weight. From a fundamental perspective, a major customer default and a guidance cut are unequivocally negative catalysts. The market's one-day reaction on average volume does not override the negative change in the company's forward-looking business prospects. The fundamental damage is a more durable signal than a single day's price action.",
+            "long_term": "I do not have any major disagreements with the other agents' long-term evidence. The combination of fundamental headwinds (DISH) and tailwinds (AI, core business) from the news_macro agent, along with the bearish trend context from the market_technical agent, paints a comprehensive and balanced picture that aligns with a Neutral stance."
+          },
+          "revised_view": {
+            "ticker": "AMT",
+            "company": "American Tower",
+            "agent_name": "fundamental",
+            "short_term_stance": "Bearish",
+            "long_term_stance": "Neutral",
+            "confidence": 0.8,
+            "confidence_rationale": "Confidence is now high. The initial analysis was hampered by a lack of critical information. The evidence provided by the news_macro agent, including the earnings transcript, management guidance on the DISH default, and analyst reactions, has filled these gaps. The fundamental picture is now much clearer.",
+            "stance_rationale": "The short-term stance is revised to Bearish. While historical results were strong, the confirmed default by major customer DISH and the resulting cautious 2026 outlook represent a significant fundamental headwind that will pressure revenue and margins. This 'beat and guide down' is a classic negative catalyst. The long-term stance remains Neutral, but is now based on a more informed view: the negative impact of the DISH situation is balanced by the stability of the core business with other carriers and the potential new growth vector from data centers supporting 'AI at the edge'.",
+            "key_signals": [
+              "Confirmed lease payment default by major customer DISH Network.",
+              "Cautious 2026 revenue outlook that missed expectations.",
+              "Multiple analyst price target cuts following the earnings announcement.",
+              "Management commentary pivoting the growth narrative to include data centers and 'AI at the edge'.",
+              "AFFO per share beat analyst estimates for the reported quarter."
+            ],
+            "risks": [
+              "The DISH default creates a multi-quarter revenue and margin headwind.",
+              "The entire tower sector (including CCI, SBA) faces negative sentiment and repricing due to the DISH situation.",
+              "The 'AI at the edge' growth story is still nascent and may not materialize quickly enough to offset the DISH revenue loss.",
+              "The company continues to carry a significant total debt load of $45.1B."
+            ],
+            "citations": [
+              {
+                "agent": "news_macro",
+                "quote": "American Tower (AMT) reported strong Q4 2025 AFFO but issued a cautious 2026 outlook that missed expectations due to a confirmed lease payment default by major customer DISH Network."
+              },
+              {
+                "agent": "news_macro",
+                "quote": "UBS Maintains Buy on American Tower, Lowers Price Target to $248"
+              },
+              {
+                "agent": "market_technical",
+                "quote": "Price at $180.67 is... significantly below its long-term MA200 ($191.05), indicating a short-term rally within a long-term downtrend."
+              }
+            ]
+          },
+          "evidence_needed": [
+            "Clarity on the financial resolution of the DISH lease default (e.g., renegotiation, termination costs, asset sales).",
+            "Evidence of concrete capital commitments from customers for the 'AI at the edge' data center buildout to validate the new growth narrative.",
+            "Updated guidance from peers (CCI, SBA) regarding their own DISH exposure to quantify the sector-wide impact."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": "I agree with the core evidence and rationale from the news_macro agent. The confirmation of a major customer default (DISH) and subsequent cautious guidance for 2026 is a significant negative fundamental catalyst. This 'beat and guide down' scenario provides crucial context that my technical analysis was missing. My observation of a positive post-earnings price move was a misinterpretation of a complex reaction; the underlying news is bearish and will likely lead to short-term underperformance as the market reprices estimates downward, as the news_macro agent correctly identifies.",
+          "disagreement": "I disagree with my original interpretation of the 'Earnings Reaction' signal. What I labeled a 'Bullish Post-Earnings Confirmation' was, in light of the news_macro agent's evidence, a volatile head-fake. The fundamental news invalidates the bullish interpretation of that specific price move. I also assign a low weight to the fundamental agent's entire view, as it explicitly states it is missing the earnings transcript and guidance, which the news_macro agent possessed. The fundamental agent's analysis is therefore outdated and superseded by more complete information.",
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.85,
+          "evidence_needed": [
+            "Updated analyst consensus estimates for revenue and EPS to quantify the impact of the DISH default and lowered guidance.",
+            "Price and volume action in the days following the earnings report to see if the price breaks below short-term support levels (MA20, MA50) on increased volume, which would confirm bearish conviction.",
+            "Commentary on the DISH situation from peers like Crown Castle (CCI) and SBA Communications (SBA) in their own filings or public statements to confirm the sector-wide impact."
+          ]
+        }
+      ]
     },
-    "reason_for_final_decision": "The committee adopts a Bearish short-term stance, aligning with the deterministic guardrail. The evidence of a major customer default (DISH) and a subsequent guidance cut is a powerful catalyst for near-term underperformance, corroborated by technical weakness. However, I am overriding the guardrail's long-term Bearish stance to Neutral. The `news_macro` agent provides compelling evidence that the long-term thesis is not broken but shifting. The demise of the 4th wireless carrier and the pivot to an 'AI at the edge' narrative provide a credible, albeit uncertain, path to future growth that balances the current headwinds. Therefore, the appropriate action is to Avoid or Reduce exposure, waiting for the market to fully price in the negative news and for more clarity on the new growth drivers.",
+    "routing_profile": {
+      "bucket": "data_center_reit",
+      "short": {
+        "market_technical": 0.45,
+        "news_macro": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "fundamental": 0.4,
+        "news_macro": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Data-center REITs require balancing capital-cost fundamentals with AI demand and price confirmation."
+    },
+    "reason_for_final_decision": "I am overriding the low confidence score of the deterministic guardrail. While I agree with its final Bearish/Neutral stance, the debate process was decisive. The information provided by the `news_macro` agent regarding the DISH default was the pivotal ground truth that correctly forced the other agents to abandon their initial, flawed interpretations. The convergence of two high-confidence agents to a Bearish short-term view, based on a clear and powerful negative catalyst, is a stronger signal than the final weighted average suggests. The fundamental damage is a more durable signal than a confusing one-day price reaction, justifying a higher conviction in the Bearish short-term thesis.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
-          "stance": "Bearish",
-          "confidence": 0.8,
-          "weight": 0.35,
-          "contribution": -0.28
-        },
-        {
-          "agent_name": "market_technical",
           "stance": "Neutral",
-          "confidence": 0.75,
-          "weight": 0.45,
+          "confidence": 0.6,
+          "weight": 0.4,
           "contribution": 0.0
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.2,
+          "weight": 0.15,
           "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.85,
+          "weight": 0.45,
+          "contribution": -0.3825
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Neutral",
-          "confidence": 0.8,
+          "confidence": 0.6,
           "weight": 0.35,
           "contribution": 0.0
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.75,
-          "weight": 0.2,
-          "contribution": -0.15
         },
         {
           "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.3,
-          "weight": 0.45,
+          "weight": 0.4,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.85,
+          "weight": 0.25,
           "contribution": 0.0
         }
       ]
     },
     "scores": {
-      "short": -0.4133,
-      "long": -0.2655
+      "short": -0.573,
+      "long": 0.0
     },
     "llm_decision_used": true
   }

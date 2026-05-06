@@ -218,126 +218,134 @@
     "company": "Arm Holdings",
     "agent_name": "market_technical",
     "short_term_stance": "Bullish",
-    "long_term_stance": "Bullish",
+    "long_term_stance": "Bearish",
     "confidence": 0.75,
-    "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish signals: price above key moving averages (MA20, MA50), a positive MACD crossover, and significant outperformance vs. the benchmark. However, confidence is tempered from higher levels because of the recent sharp pullback, extremely high volatility, and lack of strong volume confirmation.",
-    "stance_rationale": "The dominant bullish trend and massive relative strength suggest the current pullback is likely a consolidation phase rather than a reversal. The key forward-looking test will be whether the price can find support near its 20-day moving average and resume its ascent on increasing volume, confirming the primary trend's strength.",
+    "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings signal (abnormal return on high volume). However, it is tempered because this new bullish momentum is directly confronting a well-established long-term bearish trend, as evidenced by price trading significantly below the 50-day and 200-day moving averages.",
+    "stance_rationale": "The powerful, high-volume positive earnings reaction is a potential trend-reversal catalyst that overrides the preceding bearish technicals in the short term. The primary conflict is now between this new bullish event momentum and the established long-term downtrend.",
     "key_signals": [
       {
+        "type": "Earnings Reaction",
+        "signal": "Strong Bullish Event Momentum",
+        "evidence": "On 2026-02-05, the stock returned +5.7% while the benchmark QQQ returned -1.44%, resulting in a +7.14% abnormal return on 4.38x average volume, indicating strong conviction."
+      },
+      {
         "type": "Moving Averages",
-        "signal": "strong bullish trend",
-        "evidence": "Price at $203.26 is significantly above both the MA20 ($181.31) and MA50 ($151.39), indicating a robust uptrend."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "significant market outperformance",
-        "evidence": "ARM is outperforming the SPY benchmark by 77.07%, identifying it as a clear market leader."
-      },
-      {
-        "type": "MACD",
-        "signal": "bullish momentum confirmation",
-        "evidence": "The MACD line (18.10) is above the signal line (17.01) with a positive histogram (1.09), confirming the upward momentum is still in place."
-      },
-      {
-        "type": "RSI",
-        "signal": "healthy bullish momentum",
-        "evidence": "RSI is at 62.76, which is in bullish territory but not yet overbought, suggesting momentum has room to continue."
-      },
-      {
-        "type": "Drawdown",
-        "signal": "pullback in progress",
-        "evidence": "The stock is currently in a -13.44% drawdown from its recent peak, indicating a consolidation or profit-taking phase."
-      },
-      {
-        "type": "Volatility",
-        "signal": "high-risk environment",
-        "evidence": "Recent annualized volatility is extremely high at 88.02%, implying large price swings are likely."
-      },
-      {
-        "type": "Volume",
-        "signal": "weakening participation",
-        "evidence": "The volume spike ratio of 0.78 suggests that recent price action has occurred on below-average volume, signaling a lack of strong conviction."
+        "signal": "Established Bearish Trend",
+        "evidence": "As of 2026-02-04, the price of $104.90 was significantly below its key moving averages: MA20 ($110.08), MA50 ($119.24), and MA200 ($137.87)."
       },
       {
         "type": "Market Regime",
-        "signal": "high volatility bullish",
-        "evidence": "The market regime is classified as 'high_volatility_bullish', contextualizing the uptrend within a high-risk framework."
+        "signal": "High-Risk Environment",
+        "evidence": "The stock was in a 'high_volatility_bearish' regime leading into the earnings event, with annualized volatility at 57.08%."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Long-Term Underperformance",
+        "evidence": "Prior to the earnings event, the stock had underperformed the SPY benchmark by -50.69% over the analysis window, highlighting the severity of the downtrend."
+      },
+      {
+        "type": "RSI",
+        "signal": "Bearish Momentum Pre-Event",
+        "evidence": "The RSI of 36.63 indicated bearish momentum leading into the earnings report, making the positive reaction more significant."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bearish Momentum Confirmation",
+        "evidence": "The MACD line (-3.489) was below the signal line (-3.482), confirming a state of bearish momentum before the earnings catalyst."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Substantial Price Decline",
+        "evidence": "The stock was in a -41.27% drawdown from its peak, reflecting major downside risk prior to the positive earnings reaction."
       },
       {
         "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 1.75%"
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.79%"
+      },
+      {
+        "type": "Volume",
+        "signal": "strong participation",
+        "evidence": "Volume spike ratio 1.75x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 57.08%, Recent 40.81%"
       }
     ],
     "risks": [
-      "Extremely high volatility (88.02% recent annualized) creates a risk of large, unpredictable price swings and potential for sharp declines.",
-      "The current 13.44% drawdown could intensify if the price breaks below key support, such as the 20-day moving average, potentially signaling a trend reversal.",
-      "Declining volume during the recent pullback suggests a lack of strong buying pressure to immediately resume the prior uptrend."
+      "The strong one-day move could be an overreaction or a 'gap and fade' scenario, with the prevailing long-term bearish trend (price below MA50/MA200) reasserting itself.",
+      "The positive reaction occurred while the broader market (QQQ) was negative, indicating potential for macro headwinds to suppress further gains."
     ],
     "citations": [],
-    "summary": "ARM exhibits a strong, high-volatility bullish trend, with its price well above key moving averages and demonstrating significant market outperformance. Momentum indicators like RSI and MACD remain positive. However, the stock is currently consolidating in a sharp 13.44% pullback from its recent high. This pullback, combined with extremely high volatility and lower volume, points to elevated risk and potential for further consolidation before a potential continuation of the uptrend.",
+    "summary": "As of 2026-02-04, ARM was in a confirmed high-volatility bearish trend. However, the post-earnings reaction was exceptionally bullish, with a +7.14% abnormal return on over 4x average volume. This creates a strong short-term bullish bias that directly conflicts with the still-intact long-term bearish structure defined by the major moving averages.",
     "raw_packet": {
       "ticker": "ARM",
       "company": "Arm Holdings",
       "agent_name": "Market & Technical Analysis Agent",
       "short_term_stance": "bullish",
-      "long_term_stance": "bullish",
+      "long_term_stance": "bearish",
       "confidence": 0.75,
-      "confidence_rationale": "Confidence is high due to the strong alignment of multiple bullish signals: price above key moving averages (MA20, MA50), a positive MACD crossover, and significant outperformance vs. the benchmark. However, confidence is tempered from higher levels because of the recent sharp pullback, extremely high volatility, and lack of strong volume confirmation.",
+      "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings signal (abnormal return on high volume). However, it is tempered because this new bullish momentum is directly confronting a well-established long-term bearish trend, as evidenced by price trading significantly below the 50-day and 200-day moving averages.",
       "key_signals": [
         {
+          "type": "Earnings Reaction",
+          "signal": "Strong Bullish Event Momentum",
+          "evidence": "On 2026-02-05, the stock returned +5.7% while the benchmark QQQ returned -1.44%, resulting in a +7.14% abnormal return on 4.38x average volume, indicating strong conviction."
+        },
+        {
           "type": "Moving Averages",
-          "signal": "strong bullish trend",
-          "evidence": "Price at $203.26 is significantly above both the MA20 ($181.31) and MA50 ($151.39), indicating a robust uptrend."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "significant market outperformance",
-          "evidence": "ARM is outperforming the SPY benchmark by 77.07%, identifying it as a clear market leader."
-        },
-        {
-          "type": "MACD",
-          "signal": "bullish momentum confirmation",
-          "evidence": "The MACD line (18.10) is above the signal line (17.01) with a positive histogram (1.09), confirming the upward momentum is still in place."
-        },
-        {
-          "type": "RSI",
-          "signal": "healthy bullish momentum",
-          "evidence": "RSI is at 62.76, which is in bullish territory but not yet overbought, suggesting momentum has room to continue."
-        },
-        {
-          "type": "Drawdown",
-          "signal": "pullback in progress",
-          "evidence": "The stock is currently in a -13.44% drawdown from its recent peak, indicating a consolidation or profit-taking phase."
-        },
-        {
-          "type": "Volatility",
-          "signal": "high-risk environment",
-          "evidence": "Recent annualized volatility is extremely high at 88.02%, implying large price swings are likely."
-        },
-        {
-          "type": "Volume",
-          "signal": "weakening participation",
-          "evidence": "The volume spike ratio of 0.78 suggests that recent price action has occurred on below-average volume, signaling a lack of strong conviction."
+          "signal": "Established Bearish Trend",
+          "evidence": "As of 2026-02-04, the price of $104.90 was significantly below its key moving averages: MA20 ($110.08), MA50 ($119.24), and MA200 ($137.87)."
         },
         {
           "type": "Market Regime",
-          "signal": "high volatility bullish",
-          "evidence": "The market regime is classified as 'high_volatility_bullish', contextualizing the uptrend within a high-risk framework."
+          "signal": "High-Risk Environment",
+          "evidence": "The stock was in a 'high_volatility_bearish' regime leading into the earnings event, with annualized volatility at 57.08%."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Long-Term Underperformance",
+          "evidence": "Prior to the earnings event, the stock had underperformed the SPY benchmark by -50.69% over the analysis window, highlighting the severity of the downtrend."
+        },
+        {
+          "type": "RSI",
+          "signal": "Bearish Momentum Pre-Event",
+          "evidence": "The RSI of 36.63 indicated bearish momentum leading into the earnings report, making the positive reaction more significant."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bearish Momentum Confirmation",
+          "evidence": "The MACD line (-3.489) was below the signal line (-3.482), confirming a state of bearish momentum before the earnings catalyst."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Substantial Price Decline",
+          "evidence": "The stock was in a -41.27% drawdown from its peak, reflecting major downside risk prior to the positive earnings reaction."
         },
         {
           "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 1.75%"
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.79%"
+        },
+        {
+          "type": "Volume",
+          "signal": "strong participation",
+          "evidence": "Volume spike ratio 1.75x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 57.08%, Recent 40.81%"
         }
       ],
       "risks": [
-        "Extremely high volatility (88.02% recent annualized) creates a risk of large, unpredictable price swings and potential for sharp declines.",
-        "The current 13.44% drawdown could intensify if the price breaks below key support, such as the 20-day moving average, potentially signaling a trend reversal.",
-        "Declining volume during the recent pullback suggests a lack of strong buying pressure to immediately resume the prior uptrend."
+        "The strong one-day move could be an overreaction or a 'gap and fade' scenario, with the prevailing long-term bearish trend (price below MA50/MA200) reasserting itself.",
+        "The positive reaction occurred while the broader market (QQQ) was negative, indicating potential for macro headwinds to suppress further gains."
       ],
-      "summary": "ARM exhibits a strong, high-volatility bullish trend, with its price well above key moving averages and demonstrating significant market outperformance. Momentum indicators like RSI and MACD remain positive. However, the stock is currently consolidating in a sharp 13.44% pullback from its recent high. This pullback, combined with extremely high volatility and lower volume, points to elevated risk and potential for further consolidation before a potential continuation of the uptrend.",
-      "core_insight": "The dominant bullish trend and massive relative strength suggest the current pullback is likely a consolidation phase rather than a reversal. The key forward-looking test will be whether the price can find support near its 20-day moving average and resume its ascent on increasing volume, confirming the primary trend's strength."
+      "summary": "As of 2026-02-04, ARM was in a confirmed high-volatility bearish trend. However, the post-earnings reaction was exceptionally bullish, with a +7.14% abnormal return on over 4x average volume. This creates a strong short-term bullish bias that directly conflicts with the still-intact long-term bearish structure defined by the major moving averages.",
+      "core_insight": "The powerful, high-volume positive earnings reaction is a potential trend-reversal catalyst that overrides the preceding bearish technicals in the short term. The primary conflict is now between this new bullish event momentum and the established long-term downtrend."
     }
   }
 ]

@@ -213,126 +213,134 @@
     "company": "Super Micro Computer",
     "agent_name": "market_technical",
     "short_term_stance": "Bullish",
-    "long_term_stance": "Neutral",
-    "confidence": 0.65,
-    "confidence_rationale": "Confidence is moderate. While key momentum indicators (MACD, RSI) and price action versus short-term MAs are bullish, this is countered by weak volume, very high volatility, and significant relative underperformance against the market, which tempers the bullish conviction.",
-    "stance_rationale": "A clear conflict exists between bullish momentum indicators and a weak, high-risk market context. While signals point to a potential short-term rally, the lack of volume conviction and severe market underperformance make the move highly speculative and question its sustainability.",
+    "long_term_stance": "Bearish",
+    "confidence": 0.75,
+    "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
+    "stance_rationale": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture.",
     "key_signals": [
       {
+        "type": "Earnings Reaction",
+        "signal": "Exceptional Bullish Catalyst",
+        "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+      },
+      {
         "type": "MACD",
-        "signal": "Bullish Momentum Shift",
-        "evidence": "A bullish crossover is in effect, with the MACD line (0.288) above the signal line (0.189) and a positive histogram (0.099)."
+        "signal": "Early Bullish Momentum Shift",
+        "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
       },
       {
         "type": "Moving Averages",
-        "signal": "Constructive Short-Term Trend",
-        "evidence": "The current price of $27.92 is trading above both the 20-day MA ($26.90) and the 50-day MA ($27.65)."
+        "signal": "Deeply Bearish Long-Term Trend",
+        "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Severe Long-Term Weakness",
+        "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
       },
       {
         "type": "RSI",
-        "signal": "Building Bullish Momentum",
-        "evidence": "RSI is at 55.23, which is in bullish territory (>50) and suggests there is room for further upside before becoming overbought."
-      },
-      {
-        "type": "Volume",
-        "signal": "Weak Conviction",
-        "evidence": "The volume spike ratio of 0.98 indicates that recent price action is occurring on below-average volume, suggesting a lack of strong participation."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "Significant Market Underperformance",
-        "evidence": "The stock is underperforming the SPY benchmark by -15.75% over the measured period, indicating it is a market laggard."
-      },
-      {
-        "type": "Volatility",
-        "signal": "High-Risk Environment",
-        "evidence": "Annualized volatility is extremely high at 97.36%, signaling potential for large and erratic price swings."
+        "signal": "Neutral Momentum With Room to Rise",
+        "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
       },
       {
         "type": "Market Regime",
-        "signal": "Lacking Directional Trend",
-        "evidence": "The market regime is classified as 'range_bound', which is consistent with the high volatility and lack of a clear, sustained trend."
+        "signal": "High Risk Environment",
+        "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Historic Laggard, Potential New Leader",
+        "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
       },
       {
         "type": "Returns",
         "signal": "negative short-term momentum",
-        "evidence": "Mean of recent returns: -0.21%"
+        "evidence": "Mean of recent returns: -0.54%"
       },
       {
-        "type": "Drawdown",
-        "signal": "elevated drawdown risk",
-        "evidence": "Current drawdown -18.79%, Max drawdown -40.29%"
+        "type": "Volume",
+        "signal": "moderate participation",
+        "evidence": "Volume spike ratio 1.32x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 83.5%, Recent 55.7%"
       }
     ],
     "risks": [
-      "Extremely high volatility (97.36% annualized) creates a risk of large, unpredictable price swings and potential for sharp reversals.",
-      "The bullish move lacks strong volume confirmation, suggesting the rally could be fragile and may not be sustainable without increased market participation.",
-      "Significant underperformance against the broader market (SPY) could deter new investment and act as a headwind for price appreciation."
+      "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+      "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
     ],
     "citations": [],
-    "summary": "SMCI shows a short-term bullish bias driven by a recent MACD crossover and price strength above its key short-term moving averages. However, this nascent rally is speculative and faces considerable headwinds. The bullish signals are not confirmed by volume, and the stock exists in a high-risk, volatile, and range-bound context while significantly underperforming the broader market.",
+    "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
     "raw_packet": {
       "ticker": "SMCI",
       "company": "Super Micro Computer",
       "agent_name": "Market & Technical Analysis Agent",
       "short_term_stance": "bullish",
-      "long_term_stance": "neutral",
-      "confidence": 0.65,
-      "confidence_rationale": "Confidence is moderate. While key momentum indicators (MACD, RSI) and price action versus short-term MAs are bullish, this is countered by weak volume, very high volatility, and significant relative underperformance against the market, which tempers the bullish conviction.",
+      "long_term_stance": "bearish",
+      "confidence": 0.75,
+      "confidence_rationale": "Confidence is high due to the exceptionally strong post-earnings reaction in terms of both price and volume. However, it is not higher because this bullish signal is a reversal attempt against a deeply entrenched long-term bearish trend, which presents significant overhead resistance and risk.",
       "key_signals": [
         {
+          "type": "Earnings Reaction",
+          "signal": "Exceptional Bullish Catalyst",
+          "evidence": "Post-earnings 1-day return was +13.78% vs QQQ's -1.75%, resulting in a +15.53% abnormal return. This move was confirmed by explosive volume at 4.83x the trailing average."
+        },
+        {
           "type": "MACD",
-          "signal": "Bullish Momentum Shift",
-          "evidence": "A bullish crossover is in effect, with the MACD line (0.288) above the signal line (0.189) and a positive histogram (0.099)."
+          "signal": "Early Bullish Momentum Shift",
+          "evidence": "A bullish MACD crossover occurred just before the earnings event (Histogram turned positive to 0.002), providing an early hint of a potential bottoming process, which was then confirmed by the price action."
         },
         {
           "type": "Moving Averages",
-          "signal": "Constructive Short-Term Trend",
-          "evidence": "The current price of $27.92 is trading above both the 20-day MA ($26.90) and the 50-day MA ($27.65)."
+          "signal": "Deeply Bearish Long-Term Trend",
+          "evidence": "Price at $29.67 is significantly below all key moving averages: MA20 ($30.46), MA50 ($31.45), and MA200 ($41.76), establishing the context of a downtrend that the earnings reaction is now challenging."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Severe Long-Term Weakness",
+          "evidence": "The stock closed at a -51.13% drawdown from its peak, indicating substantial capital destruction and a bearish long-term history prior to the earnings event."
         },
         {
           "type": "RSI",
-          "signal": "Building Bullish Momentum",
-          "evidence": "RSI is at 55.23, which is in bullish territory (>50) and suggests there is room for further upside before becoming overbought."
-        },
-        {
-          "type": "Volume",
-          "signal": "Weak Conviction",
-          "evidence": "The volume spike ratio of 0.98 indicates that recent price action is occurring on below-average volume, suggesting a lack of strong participation."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "Significant Market Underperformance",
-          "evidence": "The stock is underperforming the SPY benchmark by -15.75% over the measured period, indicating it is a market laggard."
-        },
-        {
-          "type": "Volatility",
-          "signal": "High-Risk Environment",
-          "evidence": "Annualized volatility is extremely high at 97.36%, signaling potential for large and erratic price swings."
+          "signal": "Neutral Momentum With Room to Rise",
+          "evidence": "RSI at 43.30 was in bearish territory but not oversold, suggesting that coming out of the earnings event, the stock has ample room for upward momentum before becoming technically overbought."
         },
         {
           "type": "Market Regime",
-          "signal": "Lacking Directional Trend",
-          "evidence": "The market regime is classified as 'range_bound', which is consistent with the high volatility and lack of a clear, sustained trend."
+          "signal": "High Risk Environment",
+          "evidence": "The stock is classified within a 'high_volatility_bearish' regime, with annualized volatility at 83.5%, underscoring the potential for large price swings in either direction."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Historic Laggard, Potential New Leader",
+          "evidence": "While historically underperforming the SPY by -6.2%, the massive abnormal return vs QQQ suggests a sharp, immediate reversal in relative performance."
         },
         {
           "type": "Returns",
           "signal": "negative short-term momentum",
-          "evidence": "Mean of recent returns: -0.21%"
+          "evidence": "Mean of recent returns: -0.54%"
         },
         {
-          "type": "Drawdown",
-          "signal": "elevated drawdown risk",
-          "evidence": "Current drawdown -18.79%, Max drawdown -40.29%"
+          "type": "Volume",
+          "signal": "moderate participation",
+          "evidence": "Volume spike ratio 1.32x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 83.5%, Recent 55.7%"
         }
       ],
       "risks": [
-        "Extremely high volatility (97.36% annualized) creates a risk of large, unpredictable price swings and potential for sharp reversals.",
-        "The bullish move lacks strong volume confirmation, suggesting the rally could be fragile and may not be sustainable without increased market participation.",
-        "Significant underperformance against the broader market (SPY) could deter new investment and act as a headwind for price appreciation."
+        "Failed Reversal Attempt: The powerful one-day earnings reaction could be an over-enthusiastic 'gap-and-crap' scenario where the stock fails to hold its gains and resumes its prior long-term downtrend.",
+        "Extreme Volatility: With annualized volatility over 83%, the stock is prone to very large price swings, increasing the risk of sharp pullbacks even within a new potential uptrend."
       ],
-      "summary": "SMCI shows a short-term bullish bias driven by a recent MACD crossover and price strength above its key short-term moving averages. However, this nascent rally is speculative and faces considerable headwinds. The bullish signals are not confirmed by volume, and the stock exists in a high-risk, volatile, and range-bound context while significantly underperforming the broader market.",
-      "core_insight": "A clear conflict exists between bullish momentum indicators and a weak, high-risk market context. While signals point to a potential short-term rally, the lack of volume conviction and severe market underperformance make the move highly speculative and question its sustainability."
+      "summary": "As of 2026-02-03, SMCI was in a deep, long-term bearish trend. However, the earnings report released on this date triggered an exceptionally strong bullish reaction on massive volume the following day. This event serves as a powerful catalyst that shifts the short-term stance to bullish, signaling a potential trend reversal despite the negative long-term technical structure.",
+      "core_insight": "The market's explosive and high-conviction positive reaction to earnings (+15.5% abnormal return on ~5x volume) is the most critical signal, strongly suggesting a short-term trend reversal that overrides the previously bearish technical picture."
     }
   }
 ]

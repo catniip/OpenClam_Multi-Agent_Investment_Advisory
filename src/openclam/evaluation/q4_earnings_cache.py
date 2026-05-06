@@ -585,6 +585,124 @@ def summarize_cio_eval_by_bucket(cio_eval: pd.DataFrame) -> dict[str, Any]:
     return rows
 
 
+def rebuild_cio_eval_from_cache(
+    summary_df: pd.DataFrame,
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+    output_name: str = "cio_eval_full_55",
+) -> tuple[pd.DataFrame, dict[str, dict[str, Any]], dict[str, Any]]:
+    """Rebuild a CIO eval table from cached per-ticker CIO workflow JSON files."""
+    root = ensure_cache_dirs(cache_root)
+    rows: list[dict[str, Any]] = []
+    cio_results: dict[str, dict[str, Any]] = {}
+    long_abnormal_col = f"abnormal_{long_post_trading_days}d_vs_qqq"
+    long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
+
+    for _, row in summary_df.iterrows():
+        ticker = str(row["ticker"]).upper()
+        cio_path = root / "cio" / f"{ticker}.json"
+        base = row.to_dict()
+
+        if not cio_path.exists():
+            base.update(
+                {
+                    "cio_ready": False,
+                    "cio_short_term_stance": None,
+                    "cio_long_term_stance": None,
+                    "cio_action": None,
+                    "cio_confidence": None,
+                    "cio_debate_triggered": None,
+                    "cio_debate_conflict_level": None,
+                    "cio_routing_bucket": None,
+                    "cio_routing_rationale": None,
+                    "cio_reason": "missing cached CIO workflow",
+                    "cio_short_direction_match": None,
+                    "cio_short_direction_match_reason": "missing cached CIO workflow",
+                    "cio_long_direction_match": None,
+                    "cio_long_direction_match_reason": "missing cached CIO workflow",
+                }
+            )
+            rows.append(base)
+            continue
+
+        workflow = load_json(cio_path)
+        cio_results[ticker] = workflow
+        decision = workflow["final_decision"]
+        debate = workflow["debate"]
+        short_predicted = stance_to_direction_label(decision["final_short_term_stance"])
+        long_predicted = stance_to_direction_label(decision["final_long_term_stance"])
+
+        base.update(
+            {
+                "cio_ready": True,
+                "cio_short_term_stance": decision["final_short_term_stance"],
+                "cio_long_term_stance": decision["final_long_term_stance"],
+                "cio_action": decision["investment_action"],
+                "cio_confidence": decision["confidence"],
+                "cio_debate_triggered": debate["triggered"],
+                "cio_debate_conflict_level": debate["trigger"]["conflict_level"],
+                "cio_routing_bucket": decision.get("routing_profile", {}).get("bucket"),
+                "cio_routing_rationale": decision.get("routing_profile", {}).get("rationale"),
+                "cio_reason": decision["reason_for_final_decision"],
+                "cio_short_direction_match": direction_match_label(
+                    short_predicted,
+                    row.get("realized_direction_vs_qqq"),
+                    row.get("abnormal_vs_qqq"),
+                    neutral_band=neutral_band,
+                ),
+                "cio_short_direction_match_reason": direction_match_reason(
+                    short_predicted,
+                    row.get("realized_direction_vs_qqq"),
+                    row.get("abnormal_vs_qqq"),
+                    neutral_band=neutral_band,
+                ),
+                "cio_long_direction_match": direction_match_label(
+                    long_predicted,
+                    row.get(long_direction_col),
+                    row.get(long_abnormal_col),
+                    neutral_band=neutral_band,
+                ),
+                "cio_long_direction_match_reason": direction_match_reason(
+                    long_predicted,
+                    row.get(long_direction_col),
+                    row.get(long_abnormal_col),
+                    neutral_band=neutral_band,
+                ),
+            }
+        )
+        rows.append(base)
+
+    cio_eval = pd.DataFrame(rows)
+    summary = {
+        "overall": {
+            "cases": int(len(cio_eval)),
+            "cio_ready_cases": int((cio_eval["cio_ready"] == True).sum()) if "cio_ready" in cio_eval else 0,
+            "debate_trigger_rate": float((cio_eval["cio_debate_triggered"] == True).mean())
+            if "cio_debate_triggered" in cio_eval and len(cio_eval)
+            else None,
+            "cio_short_direction_match_evaluable": int(cio_eval["cio_short_direction_match"].notna().sum()),
+            "cio_short_direction_match_matched": int((cio_eval["cio_short_direction_match"] == True).sum()),
+            "cio_short_direction_match_accuracy": float(
+                (cio_eval[cio_eval["cio_short_direction_match"].notna()]["cio_short_direction_match"] == True).mean()
+            )
+            if not cio_eval[cio_eval["cio_short_direction_match"].notna()].empty
+            else None,
+            "cio_long_direction_match_evaluable": int(cio_eval["cio_long_direction_match"].notna().sum()),
+            "cio_long_direction_match_matched": int((cio_eval["cio_long_direction_match"] == True).sum()),
+            "cio_long_direction_match_accuracy": float(
+                (cio_eval[cio_eval["cio_long_direction_match"].notna()]["cio_long_direction_match"] == True).mean()
+            )
+            if not cio_eval[cio_eval["cio_long_direction_match"].notna()].empty
+            else None,
+        },
+        "by_bucket": summarize_cio_eval_by_bucket(cio_eval),
+    }
+    cio_eval.to_csv(root / "tables" / f"{output_name}.csv", index=False)
+    save_json(root / "tables" / f"{output_name}_summary.json", summary)
+    return cio_eval, cio_results, summary
+
+
 def load_cached_packets_by_ticker(cache_root: str | Path = DEFAULT_CACHE_ROOT) -> dict[str, list[dict[str, Any]]]:
     path = Path(cache_root) / "tables" / "packets_by_ticker.json"
     if path.exists():
@@ -942,3 +1060,107 @@ def write_deepresearch_label_template(
     template["deepresearch_rationale"] = ""
     template.to_csv(output_path, index=False)
     return output_path
+
+
+def compare_with_external_baselines(
+    cio_eval: pd.DataFrame,
+    packets_by_ticker: dict[str, list[dict[str, Any]]],
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+    external_baselines: dict[str, str | Path] | None = None,
+) -> dict[str, Any]:
+    """Compare CIO, single agents, and optional external LLM baseline CSVs."""
+    root = ensure_cache_dirs(cache_root)
+    comparison_eval = add_single_agent_baselines(
+        cio_eval,
+        packets_by_ticker,
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+    strategy_prefixes = ["cio", "news_macro", "market_technical", "fundamental"]
+    external_baselines = external_baselines or {
+        "gpt_baseline": root / "tables" / "baseline_gpt.csv",
+        "gemini_baseline": root / "tables" / "baseline_gemini.csv",
+        "claude_baseline": root / "tables" / "baseline_claude.csv",
+    }
+
+    loaded_external: list[str] = []
+    missing_external: list[str] = []
+    for prefix, path in external_baselines.items():
+        path = Path(path)
+        if not path.exists():
+            missing_external.append(str(path))
+            continue
+        labels_df = pd.read_csv(path)
+        comparison_eval = add_deepresearch_baseline(
+            comparison_eval,
+            labels_df,
+            ticker_col="ticker",
+            short_col="short_term_stance",
+            long_col="long_term_stance",
+            prefix=prefix,
+            long_post_trading_days=long_post_trading_days,
+            neutral_band=neutral_band,
+        )
+        strategy_prefixes.append(prefix)
+        loaded_external.append(prefix)
+
+    strategy_summary = build_strategy_comparison_table(comparison_eval, strategy_prefixes)
+    strategy_bucket_summary = build_strategy_bucket_comparison(comparison_eval, strategy_prefixes)
+    cio_row = strategy_summary[strategy_summary["strategy"] == "cio"].iloc[0]
+    strategy_summary["short_delta_vs_cio"] = strategy_summary["short_accuracy"] - cio_row["short_accuracy"]
+    strategy_summary["long_delta_vs_cio"] = strategy_summary["long_accuracy"] - cio_row["long_accuracy"]
+
+    external_vs_cio = strategy_summary[strategy_summary["strategy"].isin(loaded_external)][
+        [
+            "strategy",
+            "short_accuracy",
+            "short_delta_vs_cio",
+            "long_accuracy",
+            "long_delta_vs_cio",
+            "short_matched",
+            "short_evaluable",
+            "long_matched",
+            "long_evaluable",
+        ]
+    ].copy()
+
+    bucket_winners: list[dict[str, Any]] = []
+    accuracy_cols = [col for col in strategy_bucket_summary.columns if col.endswith("_accuracy")]
+    for _, row in strategy_bucket_summary.iterrows():
+        short_cols = [col for col in accuracy_cols if col.endswith("_short_accuracy")]
+        long_cols = [col for col in accuracy_cols if col.endswith("_long_accuracy")]
+        best_short_col = max(short_cols, key=lambda col: -1 if pd.isna(row[col]) else row[col])
+        best_long_col = max(long_cols, key=lambda col: -1 if pd.isna(row[col]) else row[col])
+        bucket_winners.append(
+            {
+                "bucket": row["bucket"],
+                "cases": row["cases"],
+                "best_short_strategy": best_short_col.replace("_short_accuracy", ""),
+                "best_short_accuracy": row[best_short_col],
+                "cio_short_accuracy": row.get("cio_short_accuracy"),
+                "best_long_strategy": best_long_col.replace("_long_accuracy", ""),
+                "best_long_accuracy": row[best_long_col],
+                "cio_long_accuracy": row.get("cio_long_accuracy"),
+            }
+        )
+    bucket_winners_df = pd.DataFrame(bucket_winners)
+
+    comparison_eval.to_csv(root / "tables" / "agent_strategy_comparison_eval_with_external_baselines.csv", index=False)
+    strategy_summary.to_csv(root / "tables" / "agent_strategy_summary_with_external_baselines.csv", index=False)
+    strategy_bucket_summary.to_csv(
+        root / "tables" / "agent_strategy_bucket_summary_with_external_baselines.csv", index=False
+    )
+    external_vs_cio.to_csv(root / "tables" / "external_baselines_vs_cio.csv", index=False)
+    bucket_winners_df.to_csv(root / "tables" / "bucket_winners_with_external_baselines.csv", index=False)
+
+    return {
+        "comparison_eval": comparison_eval,
+        "strategy_summary": strategy_summary,
+        "strategy_bucket_summary": strategy_bucket_summary,
+        "external_vs_cio": external_vs_cio,
+        "bucket_winners": bucket_winners_df,
+        "loaded_external": loaded_external,
+        "missing_external": missing_external,
+    }

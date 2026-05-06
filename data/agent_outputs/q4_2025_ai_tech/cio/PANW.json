@@ -11,36 +11,35 @@
         "rationale": "The combination of negative analyst revisions, a damaging reputational news story (China attribution), and significant uncertainty surrounding the massive CyberArk acquisition creates a powerful headwind heading into earnings. Over the medium-term, the complexity and cost of integrating CyberArk will likely pressure margins and distract management, leading to execution risk and potential earnings disappointments for the next 2-3 quarters. The market will be in 'show-me' mode regarding the platform synergies."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Palo Alto Networks reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant and sharp decline in operating and free cash flow. The company maintains a high valuation, with a Trailing P/E of 103.11, suggesting the market has priced in substantial future growth. The disconnect between P&L growth and cash flow generation warrants close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the long-term horizon."
+      "2 agents lean neutral on the short-term horizon.",
+      "2 agents lean bearish on the long-term horizon."
     ],
-    "areas_of_disagreement": [
-      "Short-term views contain both bullish and bearish calls."
-    ],
+    "areas_of_disagreement": [],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 1,
-      "Neutral": 1,
+      "Bullish": 0,
+      "Neutral": 2,
       "Bearish": 1
     },
     "long_stance_counts": {
       "Bullish": 0,
-      "Neutral": 2,
-      "Bearish": 1
+      "Neutral": 1,
+      "Bearish": 2
     },
     "agent_packets": [
       {
@@ -439,261 +438,6 @@
       {
         "ticker": "PANW",
         "company": "Palo Alto Networks",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-        "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish short-term trend, testing long-term resistance",
-            "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Strengthening bullish momentum",
-            "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong momentum with room to run",
-            "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak conviction on recent price rise",
-            "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant underperformance vs. market",
-            "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "In recovery from a major decline",
-            "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Increased recent price instability",
-            "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.88%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "bullish_trend",
-            "evidence": "Regime classification: bullish_trend"
-          }
-        ],
-        "risks": [
-          "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-          "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-          "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-        "raw_packet": {
-          "ticker": "PANW",
-          "company": "Palo Alto Networks",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-          "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish short-term trend, testing long-term resistance",
-              "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Strengthening bullish momentum",
-              "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong momentum with room to run",
-              "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak conviction on recent price rise",
-              "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant underperformance vs. market",
-              "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In recovery from a major decline",
-              "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Increased recent price instability",
-              "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.88%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "bullish_trend",
-              "evidence": "Regime classification: bullish_trend"
-            }
-          ],
-          "risks": [
-            "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-            "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-            "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-          "raw_packet": {
-            "ticker": "PANW",
-            "company": "Palo Alto Networks",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-            "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish short-term trend, testing long-term resistance",
-                "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Strengthening bullish momentum",
-                "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong momentum with room to run",
-                "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak conviction on recent price rise",
-                "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant underperformance vs. market",
-                "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In recovery from a major decline",
-                "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Increased recent price instability",
-                "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.88%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "bullish_trend",
-                "evidence": "Regime classification: bullish_trend"
-              }
-            ],
-            "risks": [
-              "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-              "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-              "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-            "raw_packet": {
-              "ticker": "PANW",
-              "company": "Palo Alto Networks",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish short-term trend, testing long-term resistance",
-                  "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Strengthening bullish momentum",
-                  "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong momentum with room to run",
-                  "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak conviction on recent price rise",
-                  "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant underperformance vs. market",
-                  "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In recovery from a major decline",
-                  "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Increased recent price instability",
-                  "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.88%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "bullish_trend",
-                  "evidence": "Regime classification: bullish_trend"
-                }
-              ],
-              "risks": [
-                "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-                "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-                "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-              ],
-              "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-              "core_insight": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -843,17 +587,287 @@
             }
           }
         }
+      },
+      {
+        "ticker": "PANW",
+        "company": "Palo Alto Networks",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+        "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Positive Post-Earnings Reaction",
+            "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+          },
+          {
+            "type": "Volume",
+            "signal": "Weak Conviction on Earnings Pop",
+            "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Sustained Bearish Momentum",
+            "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "Approaching Oversold Territory",
+            "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Substantial Decline From Peak",
+            "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.73%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "Regime classification: bearish_trend"
+          }
+        ],
+        "risks": [
+          "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+          "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+        "raw_packet": {
+          "ticker": "PANW",
+          "company": "Palo Alto Networks",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+          "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Positive Post-Earnings Reaction",
+              "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction on Earnings Pop",
+              "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Sustained Bearish Momentum",
+              "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Territory",
+              "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Decline From Peak",
+              "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.73%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+            "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+          "raw_packet": {
+            "ticker": "PANW",
+            "company": "Palo Alto Networks",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+            "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Positive Post-Earnings Reaction",
+                "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction on Earnings Pop",
+                "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Sustained Bearish Momentum",
+                "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Territory",
+                "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Decline From Peak",
+                "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.73%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+              "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+            "raw_packet": {
+              "ticker": "PANW",
+              "company": "Palo Alto Networks",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Positive Post-Earnings Reaction",
+                  "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction on Earnings Pop",
+                  "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Sustained Bearish Momentum",
+                  "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Territory",
+                  "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Decline From Peak",
+                  "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.73%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+                "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+              ],
+              "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+              "core_insight": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": true,
+    "triggered": false,
     "trigger": {
-      "debate_required": true,
-      "conflict_level": "high",
+      "debate_required": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ]
     },
     "synthesis": {
@@ -868,36 +882,35 @@
           "rationale": "The combination of negative analyst revisions, a damaging reputational news story (China attribution), and significant uncertainty surrounding the massive CyberArk acquisition creates a powerful headwind heading into earnings. Over the medium-term, the complexity and cost of integrating CyberArk will likely pressure margins and distract management, leading to execution risk and potential earnings disappointments for the next 2-3 quarters. The market will be in 'show-me' mode regarding the platform synergies."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Palo Alto Networks reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant and sharp decline in operating and free cash flow. The company maintains a high valuation, with a Trailing P/E of 103.11, suggesting the market has priced in substantial future growth. The disconnect between P&L growth and cash flow generation warrants close monitoring."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the long-term horizon."
+        "2 agents lean neutral on the short-term horizon.",
+        "2 agents lean bearish on the long-term horizon."
       ],
-      "areas_of_disagreement": [
-        "Short-term views contain both bullish and bearish calls."
-      ],
+      "areas_of_disagreement": [],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 1,
-        "Neutral": 1,
+        "Bullish": 0,
+        "Neutral": 2,
         "Bearish": 1
       },
       "long_stance_counts": {
         "Bullish": 0,
-        "Neutral": 2,
-        "Bearish": 1
+        "Neutral": 1,
+        "Bearish": 2
       },
       "agent_packets": [
         {
@@ -1426,325 +1439,6 @@
         {
           "ticker": "PANW",
           "company": "Palo Alto Networks",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-          "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish short-term trend, testing long-term resistance",
-              "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Strengthening bullish momentum",
-              "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong momentum with room to run",
-              "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak conviction on recent price rise",
-              "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant underperformance vs. market",
-              "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In recovery from a major decline",
-              "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Increased recent price instability",
-              "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.88%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "bullish_trend",
-              "evidence": "Regime classification: bullish_trend"
-            }
-          ],
-          "risks": [
-            "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-            "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-            "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-          "raw_packet": {
-            "ticker": "PANW",
-            "company": "Palo Alto Networks",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-            "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish short-term trend, testing long-term resistance",
-                "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Strengthening bullish momentum",
-                "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong momentum with room to run",
-                "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak conviction on recent price rise",
-                "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant underperformance vs. market",
-                "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In recovery from a major decline",
-                "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Increased recent price instability",
-                "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.88%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "bullish_trend",
-                "evidence": "Regime classification: bullish_trend"
-              }
-            ],
-            "risks": [
-              "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-              "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-              "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-            "raw_packet": {
-              "ticker": "PANW",
-              "company": "Palo Alto Networks",
-              "agent_name": "market_technical",
-              "short_term_stance": "Bullish",
-              "long_term_stance": "Neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-              "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish short-term trend, testing long-term resistance",
-                  "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Strengthening bullish momentum",
-                  "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong momentum with room to run",
-                  "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak conviction on recent price rise",
-                  "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant underperformance vs. market",
-                  "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In recovery from a major decline",
-                  "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Increased recent price instability",
-                  "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.88%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "bullish_trend",
-                  "evidence": "Regime classification: bullish_trend"
-                }
-              ],
-              "risks": [
-                "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-                "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-                "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-              ],
-              "citations": [],
-              "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-              "raw_packet": {
-                "ticker": "PANW",
-                "company": "Palo Alto Networks",
-                "agent_name": "market_technical",
-                "short_term_stance": "Bullish",
-                "long_term_stance": "Neutral",
-                "confidence": 0.75,
-                "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-                "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Bullish short-term trend, testing long-term resistance",
-                    "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Strengthening bullish momentum",
-                    "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Strong momentum with room to run",
-                    "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Weak conviction on recent price rise",
-                    "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Significant underperformance vs. market",
-                    "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "In recovery from a major decline",
-                    "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "Increased recent price instability",
-                    "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.88%"
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "bullish_trend",
-                    "evidence": "Regime classification: bullish_trend"
-                  }
-                ],
-                "risks": [
-                  "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-                  "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-                  "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-                ],
-                "citations": [],
-                "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-                "raw_packet": {
-                  "ticker": "PANW",
-                  "company": "Palo Alto Networks",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "bullish",
-                  "long_term_stance": "neutral",
-                  "confidence": 0.75,
-                  "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Bullish short-term trend, testing long-term resistance",
-                      "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Strengthening bullish momentum",
-                      "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Strong momentum with room to run",
-                      "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Weak conviction on recent price rise",
-                      "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Significant underperformance vs. market",
-                      "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "In recovery from a major decline",
-                      "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "Increased recent price instability",
-                      "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.88%"
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "bullish_trend",
-                      "evidence": "Regime classification: bullish_trend"
-                    }
-                  ],
-                  "risks": [
-                    "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-                    "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-                    "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-                  ],
-                  "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-                  "core_insight": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "PANW",
-          "company": "Palo Alto Networks",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1931,68 +1625,349 @@
               }
             }
           }
+        },
+        {
+          "ticker": "PANW",
+          "company": "Palo Alto Networks",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+          "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Positive Post-Earnings Reaction",
+              "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction on Earnings Pop",
+              "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Sustained Bearish Momentum",
+              "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Territory",
+              "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Decline From Peak",
+              "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.73%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+            "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+          "raw_packet": {
+            "ticker": "PANW",
+            "company": "Palo Alto Networks",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+            "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Positive Post-Earnings Reaction",
+                "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction on Earnings Pop",
+                "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Sustained Bearish Momentum",
+                "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Territory",
+                "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Decline From Peak",
+                "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.73%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+              "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+            "raw_packet": {
+              "ticker": "PANW",
+              "company": "Palo Alto Networks",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+              "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Positive Post-Earnings Reaction",
+                  "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction on Earnings Pop",
+                  "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Sustained Bearish Momentum",
+                  "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Territory",
+                  "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Decline From Peak",
+                  "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.73%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+                "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+              ],
+              "citations": [],
+              "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+              "raw_packet": {
+                "ticker": "PANW",
+                "company": "Palo Alto Networks",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Bearish",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+                "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Positive Post-Earnings Reaction",
+                    "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Weak Conviction on Earnings Pop",
+                    "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Strong Bearish Trend Structure",
+                    "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Sustained Bearish Momentum",
+                    "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Approaching Oversold Territory",
+                    "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Substantial Decline From Peak",
+                    "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.73%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "bearish_trend",
+                    "evidence": "Regime classification: bearish_trend"
+                  }
+                ],
+                "risks": [
+                  "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+                  "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+                ],
+                "citations": [],
+                "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+                "raw_packet": {
+                  "ticker": "PANW",
+                  "company": "Palo Alto Networks",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.7,
+                  "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Positive Post-Earnings Reaction",
+                      "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Weak Conviction on Earnings Pop",
+                      "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Strong Bearish Trend Structure",
+                      "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Sustained Bearish Momentum",
+                      "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Approaching Oversold Territory",
+                      "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Substantial Decline From Peak",
+                      "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.73%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "bearish_trend",
+                      "evidence": "Regime classification: bearish_trend"
+                    }
+                  ],
+                  "risks": [
+                    "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+                    "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+                  ],
+                  "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+                  "core_insight": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [
-      {
-        "response_type": "revised_view",
-        "agreement": {
-          "fundamental_agent": "The fundamental agent's discovery of a severe quarter-over-quarter decline in Operating Cash Flow (from $1.77B to $554M) and Free Cash Flow (from $1.69B to $384M) provides strong, data-driven evidence for my original thesis that M&A complexity would pressure the business. This alarming cash flow signal, combined with the high P/E ratio of 103, validates my bearish stance.",
-          "market_technical_agent": "The technical agent's findings that the stock is a 'significant underperformer' against its benchmark, the recent rally has 'weak conviction' due to low volume, and the price is directly testing critical long-term resistance at the MA200, all strongly corroborate my bearish view. This suggests the market is skeptical and the stock is at a technically vulnerable inflection point."
-        },
-        "disagreement": {
-          "fundamental_agent": "I disagree with the fundamental agent's 'Neutral' stance. While their low confidence is understandable due to missing information, the sheer magnitude of the cash flow collapse is a powerful bearish signal that, in my view, outweighs the reported P&L growth. A neutral stance underweights the severity of this red flag.",
-          "market_technical_agent": "I disagree with the technical agent's 'Bullish' short-term stance. They correctly identify the conflict between short-term momentum and long-term resistance, but I believe they are overweighting the momentum indicators (RSI, MACD). Given the weak volume, significant relative weakness, and the fundamental headwinds, I interpret the current price action as a fragile rally into resistance (a potential 'bull trap') rather than the start of a sustainable trend."
-        },
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.85,
-        "evidence_needed": [
-          "The primary evidence needed is management's explanation for the severe quarter-over-quarter decline in operating and free cash flow, which would be found in the upcoming earnings call transcript. Understanding if this is a one-time issue (e.g., related to M&A closing costs) or a structural change (e.g., changes in billing, deteriorating collections) is critical to validating the long-term thesis.",
-          "Forward-looking guidance on billings and margins, which will indicate how the CyberArk integration is expected to impact financial performance in the coming quarters."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": {
-          "news_macro": "The news & macro agent's bearish stance, citing analyst price target cuts, M&A integration risk, and reputational concerns, provides a strong narrative explanation for the technical weakness I observed at the 200-day moving average. Their evidence of stock underperformance also directly validates my own relative strength signal.",
-          "fundamental": "The fundamental agent's discovery of a severe quarter-over-quarter drop in operating and free cash flow is a critical red flag. This fundamental deterioration undermines the recent price momentum and suggests the rally lacks a solid foundation, making a failure at technical resistance more likely. The high P/E ratio they noted amplifies this risk."
-        },
-        "disagreement": {
-          "news_macro": "While insightful, the 'second-order opportunities' identified in competitors and M&A targets (OKTA, S, VRNS) are speculative and have a lower weight in my direct technical assessment of PANW's future price action.",
-          "fundamental": "I assign a lower weight to the fundamental agent's evidence of QoQ revenue and net income growth. While factually correct, this positive data is clearly being overshadowed by the severe cash flow decline and negative news flow, and does not seem to be influencing the current price action."
-        },
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.85,
-        "revision_rationale": "My original 'Bullish' short-term stance is no longer tenable. The strong negative evidence from the news and fundamental agents provides a compelling explanation for why the technical rally was showing signs of weakness (low volume, hitting MA200 resistance). The confluence of a major technical resistance level, negative news flow (PT cuts, M&A risk), and a severe, unexplained drop in cash flow has shifted the balance of evidence decisively towards a bearish outlook for both the short and long term. The alignment across technical, fundamental, and news factors increases my overall confidence.",
-        "evidence_needed": [
-          "Management's explanation for the severe QoQ drop in operating and free cash flow is the most critical missing piece of evidence.",
-          "Forward-looking guidance from the company on billings, margins, and integration costs following the CyberArk acquisition.",
-          "The market's reaction and subsequent analyst estimate revisions following the upcoming earnings report on Feb 17."
-        ]
-      },
-      {
-        "response_type": "revision",
-        "agreement": {
-          "news_macro": "The CyberArk acquisition introduces significant long-term execution and integration risk, which could pressure margins and distract management. The analyst price target cuts are a tangible negative signal, and the Reuters story regarding China attribution represents a material, albeit hard-to-quantify, reputational risk.",
-          "market_technical": "The stock is a significant market laggard, underperforming the SPY by over 30%. The weak volume accompanying the recent price rally suggests a lack of conviction from institutional buyers, supporting a more cautious view."
-        },
-        "disagreement": {
-          "market_technical": "I disagree with the short-term 'Bullish' stance. While momentum indicators like RSI and MACD are positive, they are overshadowed by the stock hitting a critical long-term resistance level (MA200), the rally's weak volume confirmation, and the overwhelmingly negative fundamental and news catalysts. The technical setup appears more like a fragile relief rally poised to fail rather than a sustainable trend reversal.",
-          "news_macro": "I assign lower weight to the second-order M&A opportunities identified for competitors like OKTA and VRNS. While a valid strategic insight for the sector, this is speculative and less directly impactful to PANW's immediate fundamental outlook compared to its own internal execution risks."
-        },
-        "revised_short_term_stance": "Bearish",
-        "revised_long_term_stance": "Bearish",
-        "revised_confidence": 0.7,
-        "evidence_needed": [
-          "Upcoming earnings call transcript and updated guidance, specifically addressing the previous quarter's cash flow decline.",
-          "Management commentary on the CyberArk integration plan, including expected costs, timeline, and synergy targets.",
-          "Updated forward-looking guidance for revenue, margins, and free cash flow that incorporates the CyberArk acquisition."
-        ]
-      }
-    ],
+    "debate_responses": [],
     "revised_packets": [
       {
         "ticker": "PANW",
@@ -2000,7 +1975,7 @@
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
         "long_term_stance": "Bearish",
-        "confidence": 0.85,
+        "confidence": 0.7,
         "confidence_rationale": "The stance is supported by multiple direct news items (PT cuts, stock underperformance) and a credible, high-risk event (massive M&A). The primary uncertainty is the upcoming earnings release on Feb 17, which could surprise a bearishly positioned market. The reputational damage is real but its financial impact is difficult to quantify.",
         "stance_rationale": "The combination of negative analyst revisions, a damaging reputational news story (China attribution), and significant uncertainty surrounding the massive CyberArk acquisition creates a powerful headwind heading into earnings. Over the medium-term, the complexity and cost of integrating CyberArk will likely pressure margins and distract management, leading to execution risk and potential earnings disappointments for the next 2-3 quarters. The market will be in 'show-me' mode regarding the platform synergies.",
         "key_signals": [
@@ -2385,308 +2360,15 @@
               "core_insight": "Palo Alto Networks' huge, dilutive acquisition of CyberArk validates Identity Security as a critical pillar for any major security platform, thereby increasing the M&A premium for remaining best-of-breed players like Okta and Varonis as competitors are forced to respond."
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revised_view",
-          "agreement": {
-            "fundamental_agent": "The fundamental agent's discovery of a severe quarter-over-quarter decline in Operating Cash Flow (from $1.77B to $554M) and Free Cash Flow (from $1.69B to $384M) provides strong, data-driven evidence for my original thesis that M&A complexity would pressure the business. This alarming cash flow signal, combined with the high P/E ratio of 103, validates my bearish stance.",
-            "market_technical_agent": "The technical agent's findings that the stock is a 'significant underperformer' against its benchmark, the recent rally has 'weak conviction' due to low volume, and the price is directly testing critical long-term resistance at the MA200, all strongly corroborate my bearish view. This suggests the market is skeptical and the stock is at a technically vulnerable inflection point."
-          },
-          "disagreement": {
-            "fundamental_agent": "I disagree with the fundamental agent's 'Neutral' stance. While their low confidence is understandable due to missing information, the sheer magnitude of the cash flow collapse is a powerful bearish signal that, in my view, outweighs the reported P&L growth. A neutral stance underweights the severity of this red flag.",
-            "market_technical_agent": "I disagree with the technical agent's 'Bullish' short-term stance. They correctly identify the conflict between short-term momentum and long-term resistance, but I believe they are overweighting the momentum indicators (RSI, MACD). Given the weak volume, significant relative weakness, and the fundamental headwinds, I interpret the current price action as a fragile rally into resistance (a potential 'bull trap') rather than the start of a sustainable trend."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "The primary evidence needed is management's explanation for the severe quarter-over-quarter decline in operating and free cash flow, which would be found in the upcoming earnings call transcript. Understanding if this is a one-time issue (e.g., related to M&A closing costs) or a structural change (e.g., changes in billing, deteriorating collections) is critical to validating the long-term thesis.",
-            "Forward-looking guidance on billings and margins, which will indicate how the CyberArk integration is expected to impact financial performance in the coming quarters."
-          ]
-        }
-      },
-      {
-        "ticker": "PANW",
-        "company": "Palo Alto Networks",
-        "agent_name": "market_technical",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.85,
-        "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-        "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Bullish short-term trend, testing long-term resistance",
-            "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Strengthening bullish momentum",
-            "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-          },
-          {
-            "type": "RSI",
-            "signal": "Strong momentum with room to run",
-            "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-          },
-          {
-            "type": "Volume",
-            "signal": "Weak conviction on recent price rise",
-            "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Significant underperformance vs. market",
-            "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "In recovery from a major decline",
-            "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-          },
-          {
-            "type": "Volatility",
-            "signal": "Increased recent price instability",
-            "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.88%"
-          },
-          {
-            "type": "Market Regime",
-            "signal": "bullish_trend",
-            "evidence": "Regime classification: bullish_trend"
-          }
-        ],
-        "risks": [
-          "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-          "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-          "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-        ],
-        "citations": [],
-        "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-        "raw_packet": {
-          "ticker": "PANW",
-          "company": "Palo Alto Networks",
-          "agent_name": "market_technical",
-          "short_term_stance": "Bullish",
-          "long_term_stance": "Neutral",
-          "confidence": 0.75,
-          "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-          "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Bullish short-term trend, testing long-term resistance",
-              "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Strengthening bullish momentum",
-              "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-            },
-            {
-              "type": "RSI",
-              "signal": "Strong momentum with room to run",
-              "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-            },
-            {
-              "type": "Volume",
-              "signal": "Weak conviction on recent price rise",
-              "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Significant underperformance vs. market",
-              "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "In recovery from a major decline",
-              "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-            },
-            {
-              "type": "Volatility",
-              "signal": "Increased recent price instability",
-              "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.88%"
-            },
-            {
-              "type": "Market Regime",
-              "signal": "bullish_trend",
-              "evidence": "Regime classification: bullish_trend"
-            }
-          ],
-          "risks": [
-            "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-            "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-            "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-          ],
-          "citations": [],
-          "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-          "raw_packet": {
-            "ticker": "PANW",
-            "company": "Palo Alto Networks",
-            "agent_name": "market_technical",
-            "short_term_stance": "Bullish",
-            "long_term_stance": "Neutral",
-            "confidence": 0.75,
-            "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-            "stance_rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Bullish short-term trend, testing long-term resistance",
-                "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Strengthening bullish momentum",
-                "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-              },
-              {
-                "type": "RSI",
-                "signal": "Strong momentum with room to run",
-                "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-              },
-              {
-                "type": "Volume",
-                "signal": "Weak conviction on recent price rise",
-                "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Significant underperformance vs. market",
-                "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "In recovery from a major decline",
-                "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-              },
-              {
-                "type": "Volatility",
-                "signal": "Increased recent price instability",
-                "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.88%"
-              },
-              {
-                "type": "Market Regime",
-                "signal": "bullish_trend",
-                "evidence": "Regime classification: bullish_trend"
-              }
-            ],
-            "risks": [
-              "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-              "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-              "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-            ],
-            "citations": [],
-            "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-            "raw_packet": {
-              "ticker": "PANW",
-              "company": "Palo Alto Networks",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "bullish",
-              "long_term_stance": "neutral",
-              "confidence": 0.75,
-              "confidence_rationale": "Confidence in the short-term bullish stance is supported by multiple aligned momentum indicators (RSI, MACD, price vs MA20/50). However, confidence is not higher because the price is at a critical long-term resistance (MA200), the recent rally has lacked strong volume confirmation, and the stock shows significant relative weakness against its benchmark.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Bullish short-term trend, testing long-term resistance",
-                  "evidence": "Price at $184.56 is well above the MA20 ($172.86) and MA50 ($164.53), but is directly testing the MA200 ($184.97)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Strengthening bullish momentum",
-                  "evidence": "A bullish crossover is in effect with the MACD line (5.25) above its signal line (4.20) and a positive histogram (1.06), indicating accelerating upward momentum."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Strong momentum with room to run",
-                  "evidence": "RSI is at 62.92, indicating strong buying pressure but not yet in the overbought territory (above 70)."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Weak conviction on recent price rise",
-                  "evidence": "The volume spike ratio is 0.65, indicating that recent trading volume is below the average and does not strongly confirm the upward price movement."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Significant underperformance vs. market",
-                  "evidence": "The stock has underperformed the SPY benchmark by -30.78% over the measurement period, classifying it as a market laggard."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "In recovery from a major decline",
-                  "evidence": "The stock is currently 16.63% below its prior peak, suggesting it is still in a recovery phase."
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "Increased recent price instability",
-                  "evidence": "Recent volatility (47.67%) is elevated compared to its annualized volatility (34.65%), signaling higher risk and wider price swings."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.88%"
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "bullish_trend",
-                  "evidence": "Regime classification: bullish_trend"
-                }
-              ],
-              "risks": [
-                "Failure at the 200-day moving average, a critical long-term resistance level, could trigger a reversal.",
-                "The lack of volume confirmation on the recent rally suggests weak institutional conviction, making the trend fragile.",
-                "Significant underperformance relative to the broader market could lead to further weakness if the market sentiment shifts negatively."
-              ],
-              "summary": "As of 2026/02/12, PANW exhibited strong short-term bullish momentum, evidenced by a price above its 20/50-day moving averages and supportive RSI and MACD signals. However, this strength was met with caution as the price confronted major resistance at the 200-day moving average. The analysis was tempered by weak volume on the rally and significant long-term underperformance against the S&P 500, creating a neutral long-term outlook.",
-              "core_insight": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-            }
-          }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "The news & macro agent's bearish stance, citing analyst price target cuts, M&A integration risk, and reputational concerns, provides a strong narrative explanation for the technical weakness I observed at the 200-day moving average. Their evidence of stock underperformance also directly validates my own relative strength signal.",
-            "fundamental": "The fundamental agent's discovery of a severe quarter-over-quarter drop in operating and free cash flow is a critical red flag. This fundamental deterioration undermines the recent price momentum and suggests the rally lacks a solid foundation, making a failure at technical resistance more likely. The high P/E ratio they noted amplifies this risk."
-          },
-          "disagreement": {
-            "news_macro": "While insightful, the 'second-order opportunities' identified in competitors and M&A targets (OKTA, S, VRNS) are speculative and have a lower weight in my direct technical assessment of PANW's future price action.",
-            "fundamental": "I assign a lower weight to the fundamental agent's evidence of QoQ revenue and net income growth. While factually correct, this positive data is clearly being overshadowed by the severe cash flow decline and negative news flow, and does not seem to be influencing the current price action."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "revision_rationale": "My original 'Bullish' short-term stance is no longer tenable. The strong negative evidence from the news and fundamental agents provides a compelling explanation for why the technical rally was showing signs of weakness (low volume, hitting MA200 resistance). The confluence of a major technical resistance level, negative news flow (PT cuts, M&A risk), and a severe, unexplained drop in cash flow has shifted the balance of evidence decisively towards a bearish outlook for both the short and long term. The alignment across technical, fundamental, and news factors increases my overall confidence.",
-          "evidence_needed": [
-            "Management's explanation for the severe QoQ drop in operating and free cash flow is the most critical missing piece of evidence.",
-            "Forward-looking guidance from the company on billings, margins, and integration costs following the CyberArk acquisition.",
-            "The market's reaction and subsequent analyst estimate revisions following the upcoming earnings report on Feb 17."
-          ]
         }
       },
       {
         "ticker": "PANW",
         "company": "Palo Alto Networks",
         "agent_name": "fundamental",
-        "short_term_stance": "Bearish",
-        "long_term_stance": "Bearish",
-        "confidence": 0.7,
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.3,
         "confidence_rationale": "Confidence is low due to a lack of critical information. The absence of analyst consensus estimates, an earnings call transcript to explain the drastic cash flow decline, and forward-looking guidance from management makes a comprehensive analysis difficult.",
         "stance_rationale": "Palo Alto Networks reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant and sharp decline in operating and free cash flow. The company maintains a high valuation, with a Trailing P/E of 103.11, suggesting the market has priced in substantial future growth. The disconnect between P&L growth and cash flow generation warrants close monitoring.",
         "key_signals": [
@@ -2831,25 +2513,277 @@
               }
             }
           }
-        },
-        "debate_response": {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "The CyberArk acquisition introduces significant long-term execution and integration risk, which could pressure margins and distract management. The analyst price target cuts are a tangible negative signal, and the Reuters story regarding China attribution represents a material, albeit hard-to-quantify, reputational risk.",
-            "market_technical": "The stock is a significant market laggard, underperforming the SPY by over 30%. The weak volume accompanying the recent price rally suggests a lack of conviction from institutional buyers, supporting a more cautious view."
+        }
+      },
+      {
+        "ticker": "PANW",
+        "company": "Palo Alto Networks",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+        "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Positive Post-Earnings Reaction",
+            "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
           },
-          "disagreement": {
-            "market_technical": "I disagree with the short-term 'Bullish' stance. While momentum indicators like RSI and MACD are positive, they are overshadowed by the stock hitting a critical long-term resistance level (MA200), the rally's weak volume confirmation, and the overwhelmingly negative fundamental and news catalysts. The technical setup appears more like a fragile relief rally poised to fail rather than a sustainable trend reversal.",
-            "news_macro": "I assign lower weight to the second-order M&A opportunities identified for competitors like OKTA and VRNS. While a valid strategic insight for the sector, this is speculative and less directly impactful to PANW's immediate fundamental outlook compared to its own internal execution risks."
+          {
+            "type": "Volume",
+            "signal": "Weak Conviction on Earnings Pop",
+            "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
           },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "Upcoming earnings call transcript and updated guidance, specifically addressing the previous quarter's cash flow decline.",
-            "Management commentary on the CyberArk integration plan, including expected costs, timeline, and synergy targets.",
-            "Updated forward-looking guidance for revenue, margins, and free cash flow that incorporates the CyberArk acquisition."
-          ]
+          {
+            "type": "Moving Averages",
+            "signal": "Strong Bearish Trend Structure",
+            "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+          },
+          {
+            "type": "MACD",
+            "signal": "Sustained Bearish Momentum",
+            "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+          },
+          {
+            "type": "RSI",
+            "signal": "Approaching Oversold Territory",
+            "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Substantial Decline From Peak",
+            "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.73%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "Regime classification: bearish_trend"
+          }
+        ],
+        "risks": [
+          "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+          "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+        ],
+        "citations": [],
+        "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+        "raw_packet": {
+          "ticker": "PANW",
+          "company": "Palo Alto Networks",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Bearish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+          "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Positive Post-Earnings Reaction",
+              "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction on Earnings Pop",
+              "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Strong Bearish Trend Structure",
+              "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+            },
+            {
+              "type": "MACD",
+              "signal": "Sustained Bearish Momentum",
+              "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+            },
+            {
+              "type": "RSI",
+              "signal": "Approaching Oversold Territory",
+              "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Substantial Decline From Peak",
+              "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.73%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+            "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+          ],
+          "citations": [],
+          "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+          "raw_packet": {
+            "ticker": "PANW",
+            "company": "Palo Alto Networks",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Bearish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+            "stance_rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Positive Post-Earnings Reaction",
+                "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction on Earnings Pop",
+                "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Strong Bearish Trend Structure",
+                "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+              },
+              {
+                "type": "MACD",
+                "signal": "Sustained Bearish Momentum",
+                "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+              },
+              {
+                "type": "RSI",
+                "signal": "Approaching Oversold Territory",
+                "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Substantial Decline From Peak",
+                "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.73%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+              "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+            ],
+            "citations": [],
+            "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+            "raw_packet": {
+              "ticker": "PANW",
+              "company": "Palo Alto Networks",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "bearish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is moderate because of the significant conflict between a strong underlying bearish trend and a positive post-earnings reaction. The lack of strong volume confirmation on the earnings pop introduces significant uncertainty, making a neutral short-term stance the most prudent.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Positive Post-Earnings Reaction",
+                  "evidence": "The stock posted a 2.54% gain the day after the event (2026-02-13), representing a +2.33% abnormal return versus the QQQ benchmark."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction on Earnings Pop",
+                  "evidence": "The positive earnings reaction occurred on a volume of only 0.7x the trailing average, suggesting a potential lack of strong institutional buying or conviction."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Strong Bearish Trend Structure",
+                  "evidence": "Price at $162.81 is significantly below the MA20 ($174.50), MA50 ($183.31), and MA200 ($193.35), indicating a deeply entrenched downtrend."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Sustained Bearish Momentum",
+                  "evidence": "The MACD line (-6.62) is below the signal line (-5.75) and is deeply negative, confirming strong downward momentum."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -31.48% over the analysis period, highlighting severe relative weakness."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Approaching Oversold Territory",
+                  "evidence": "RSI is low at 34.88, reflecting strong bearish pressure but also indicating the stock may be nearing a point where a bounce is possible."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Substantial Decline From Peak",
+                  "evidence": "The stock is in a 26.46% drawdown from its recent high, confirming the severity of the ongoing correction."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.73%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 35.96%, Recent 41.34%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "Trend continuation risk: The powerful bearish trend and weak relative strength could easily overwhelm the post-earnings bounce, leading to new lows.",
+                "Whipsaw risk: The conflict between the bearish trend and the positive earnings catalyst could lead to volatile, range-bound trading without a clear direction."
+              ],
+              "summary": "As of 2026-02-12, PANW is in a confirmed bearish trend, with price trading well below all key moving averages and demonstrating significant underperformance. While momentum indicators are bearish, the stock just registered a positive abnormal return post-earnings. However, this bullish reaction was on low volume, questioning its sustainability. The technical stance is therefore neutral in the immediate short-term, acknowledging the potential for a relief bounce, but remains bearish from a long-term trend perspective.",
+              "core_insight": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
+            }
+          }
         }
       }
     ]
@@ -2859,23 +2793,23 @@
     "company": "Palo Alto Networks",
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bearish",
-    "investment_action": "Avoid / Short",
-    "position_size_hint": "Normal",
-    "confidence": 0.85,
-    "core_thesis": "Palo Alto Networks is facing a perfect storm of fundamental deterioration, execution risk, and technical weakness. A severe, unexplained collapse in cash flow generation undermines the growth narrative required to support its high valuation. This is compounded by the significant integration risk and management distraction from the massive CyberArk acquisition, which is already attracting negative analyst sentiment. The stock's price action confirms this bearish view, with a recent rally failing at a critical long-term resistance level on weak volume, suggesting a 'bull trap' ahead of a pivotal earnings report.",
-    "why_now": "The stock is at a critical technical inflection point, testing its 200-day moving average from below just days before its February 17th earnings report. The combination of a weak technical setup, a deteriorating fundamental picture (cash flow collapse), and a negative news narrative (M&A integration risk, PT cuts) creates a high-probability setup for a negative reaction to earnings or a failure at this resistance level.",
+    "investment_action": "Avoid / Do Not Add",
+    "position_size_hint": "N/A",
+    "confidence": 0.7,
+    "core_thesis": "Palo Alto Networks is entering a period of significant uncertainty and execution risk following its massive CyberArk acquisition. This complex integration is likely to distract management and pressure margins for several quarters, a risk that is not reflected in its high valuation. A severe, unexplained drop in cash flow further compounds the risk, while the technical picture confirms a strong downtrend.",
+    "why_now": "The stock has had a weak relief rally post-earnings on low volume, which may present a favorable opportunity to avoid or exit positions before the market fully prices in the multi-quarter integration risks and the alarming drop in cash flow. The narrative has shifted from a clean growth story to a complex integration story.",
     "key_supporting_evidence": [
-      "Fundamental: A severe and unexplained quarter-over-quarter collapse in Operating Cash Flow (from $1.77B to $554M) and Free Cash Flow (from $1.69B to $384M), despite reported P&L growth.",
-      "Technical: The stock price is directly testing and struggling at the critical 200-day moving average ($184.97), a major long-term resistance level.",
-      "Technical: The recent rally to this resistance level has been on weak volume (Volume Spike Ratio of 0.65), indicating a lack of institutional conviction and suggesting it is a 'bull trap'.",
-      "News/Macro: The massive, complex acquisition of CyberArk introduces significant integration risk, potential margin pressure, and management distraction over the next several quarters.",
-      "News/Macro: Multiple analysts have recently cut their price targets (e.g., BTIG, DA Davidson), signaling growing Street concern.",
-      "Valuation: The stock's high Trailing P/E ratio of over 103 leaves it highly vulnerable to any disappointment in growth or cash flow metrics."
+      "Massive, dilutive acquisition of CyberArk creating significant integration risk and potential for management distraction over the next 2-3 quarters.",
+      "Severe and unexplained QoQ decline in Operating Cash Flow (from $1.77B to $0.55B) and Free Cash Flow (from $1.69B to $0.38B).",
+      "Confirmed long-term bearish technical trend, with the price significantly below the 20, 50, and 200-day moving averages.",
+      "Negative news flow, including analyst price target cuts and a reputational risk story regarding threat attribution.",
+      "The recent post-earnings rally occurred on weak volume (0.7x average), suggesting a lack of conviction and a potential 'bull trap'."
     ],
     "key_risks": [
-      "The upcoming earnings report on Feb 17 is a major binary event. A strong beat-and-raise, coupled with a convincing explanation for the cash flow decline and positive guidance on the CyberArk integration, could cause a sharp rally and invalidate the bearish thesis.",
-      "The cash flow decline could be a one-time event related to M&A closing costs or other non-recurring items, which management could clarify and assuage market fears.",
-      "The market could choose to look past the near-term integration challenges and focus on the long-term strategic rationale of the CyberArk acquisition, rewarding the company for its aggressive platform strategy."
+      "The CyberArk integration proves to be faster and more synergistic than expected, leading to accelerated growth.",
+      "Management provides a clear, benign explanation for the cash flow drop in the upcoming earnings call, and the market accepts it.",
+      "The post-earnings bounce gains momentum and volume, signaling a genuine reversal of the downtrend.",
+      "The company delivers a blowout earnings report and guidance, catching a bearishly positioned market by surprise."
     ],
     "agent_view_summary": [
       {
@@ -2886,139 +2820,94 @@
         "rationale": "The combination of negative analyst revisions, a damaging reputational news story (China attribution), and significant uncertainty surrounding the massive CyberArk acquisition creates a powerful headwind heading into earnings. Over the medium-term, the complexity and cost of integrating CyberArk will likely pressure margins and distract management, leading to execution risk and potential earnings disappointments for the next 2-3 quarters. The market will be in 'show-me' mode regarding the platform synergies."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Bullish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.75,
-        "rationale": "The dominant technical feature was the conflict between a strong short-term momentum rally and a critical long-term resistance level at the 200-day moving average. The rally's viability was questionable due to weak volume and poor relative strength, making this a pivotal point for the stock."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Palo Alto Networks reported strong quarter-over-quarter growth in revenue and profitability, but this was overshadowed by a significant and sharp decline in operating and free cash flow. The company maintains a high valuation, with a Trailing P/E of 103.11, suggesting the market has priced in substantial future growth. The disconnect between P&L growth and cash flow generation warrants close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Bearish",
+        "confidence": 0.7,
+        "rationale": "The stock is at a critical juncture, pitting a strong, established bearish trend against a positive earnings catalyst. The weak volume confirmation on the post-earnings rally suggests that this may be a temporary relief bounce or short-covering rather than a definitive trend reversal."
       }
     ],
     "debate_summary": {
-      "debate_triggered": true,
-      "conflict_level": "high",
+      "debate_triggered": false,
+      "conflict_level": "low",
       "debate_reason": [
-        "Short-term views contain both bullish and bearish calls.",
-        "High-confidence short-term agents disagree."
+        "No material cross-agent disagreement."
       ],
-      "debate_responses": [
-        {
-          "response_type": "revised_view",
-          "agreement": {
-            "fundamental_agent": "The fundamental agent's discovery of a severe quarter-over-quarter decline in Operating Cash Flow (from $1.77B to $554M) and Free Cash Flow (from $1.69B to $384M) provides strong, data-driven evidence for my original thesis that M&A complexity would pressure the business. This alarming cash flow signal, combined with the high P/E ratio of 103, validates my bearish stance.",
-            "market_technical_agent": "The technical agent's findings that the stock is a 'significant underperformer' against its benchmark, the recent rally has 'weak conviction' due to low volume, and the price is directly testing critical long-term resistance at the MA200, all strongly corroborate my bearish view. This suggests the market is skeptical and the stock is at a technically vulnerable inflection point."
-          },
-          "disagreement": {
-            "fundamental_agent": "I disagree with the fundamental agent's 'Neutral' stance. While their low confidence is understandable due to missing information, the sheer magnitude of the cash flow collapse is a powerful bearish signal that, in my view, outweighs the reported P&L growth. A neutral stance underweights the severity of this red flag.",
-            "market_technical_agent": "I disagree with the technical agent's 'Bullish' short-term stance. They correctly identify the conflict between short-term momentum and long-term resistance, but I believe they are overweighting the momentum indicators (RSI, MACD). Given the weak volume, significant relative weakness, and the fundamental headwinds, I interpret the current price action as a fragile rally into resistance (a potential 'bull trap') rather than the start of a sustainable trend."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "evidence_needed": [
-            "The primary evidence needed is management's explanation for the severe quarter-over-quarter decline in operating and free cash flow, which would be found in the upcoming earnings call transcript. Understanding if this is a one-time issue (e.g., related to M&A closing costs) or a structural change (e.g., changes in billing, deteriorating collections) is critical to validating the long-term thesis.",
-            "Forward-looking guidance on billings and margins, which will indicate how the CyberArk integration is expected to impact financial performance in the coming quarters."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "The news & macro agent's bearish stance, citing analyst price target cuts, M&A integration risk, and reputational concerns, provides a strong narrative explanation for the technical weakness I observed at the 200-day moving average. Their evidence of stock underperformance also directly validates my own relative strength signal.",
-            "fundamental": "The fundamental agent's discovery of a severe quarter-over-quarter drop in operating and free cash flow is a critical red flag. This fundamental deterioration undermines the recent price momentum and suggests the rally lacks a solid foundation, making a failure at technical resistance more likely. The high P/E ratio they noted amplifies this risk."
-          },
-          "disagreement": {
-            "news_macro": "While insightful, the 'second-order opportunities' identified in competitors and M&A targets (OKTA, S, VRNS) are speculative and have a lower weight in my direct technical assessment of PANW's future price action.",
-            "fundamental": "I assign a lower weight to the fundamental agent's evidence of QoQ revenue and net income growth. While factually correct, this positive data is clearly being overshadowed by the severe cash flow decline and negative news flow, and does not seem to be influencing the current price action."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.85,
-          "revision_rationale": "My original 'Bullish' short-term stance is no longer tenable. The strong negative evidence from the news and fundamental agents provides a compelling explanation for why the technical rally was showing signs of weakness (low volume, hitting MA200 resistance). The confluence of a major technical resistance level, negative news flow (PT cuts, M&A risk), and a severe, unexplained drop in cash flow has shifted the balance of evidence decisively towards a bearish outlook for both the short and long term. The alignment across technical, fundamental, and news factors increases my overall confidence.",
-          "evidence_needed": [
-            "Management's explanation for the severe QoQ drop in operating and free cash flow is the most critical missing piece of evidence.",
-            "Forward-looking guidance from the company on billings, margins, and integration costs following the CyberArk acquisition.",
-            "The market's reaction and subsequent analyst estimate revisions following the upcoming earnings report on Feb 17."
-          ]
-        },
-        {
-          "response_type": "revision",
-          "agreement": {
-            "news_macro": "The CyberArk acquisition introduces significant long-term execution and integration risk, which could pressure margins and distract management. The analyst price target cuts are a tangible negative signal, and the Reuters story regarding China attribution represents a material, albeit hard-to-quantify, reputational risk.",
-            "market_technical": "The stock is a significant market laggard, underperforming the SPY by over 30%. The weak volume accompanying the recent price rally suggests a lack of conviction from institutional buyers, supporting a more cautious view."
-          },
-          "disagreement": {
-            "market_technical": "I disagree with the short-term 'Bullish' stance. While momentum indicators like RSI and MACD are positive, they are overshadowed by the stock hitting a critical long-term resistance level (MA200), the rally's weak volume confirmation, and the overwhelmingly negative fundamental and news catalysts. The technical setup appears more like a fragile relief rally poised to fail rather than a sustainable trend reversal.",
-            "news_macro": "I assign lower weight to the second-order M&A opportunities identified for competitors like OKTA and VRNS. While a valid strategic insight for the sector, this is speculative and less directly impactful to PANW's immediate fundamental outlook compared to its own internal execution risks."
-          },
-          "revised_short_term_stance": "Bearish",
-          "revised_long_term_stance": "Bearish",
-          "revised_confidence": 0.7,
-          "evidence_needed": [
-            "Upcoming earnings call transcript and updated guidance, specifically addressing the previous quarter's cash flow decline.",
-            "Management commentary on the CyberArk integration plan, including expected costs, timeline, and synergy targets.",
-            "Updated forward-looking guidance for revenue, margins, and free cash flow that incorporates the CyberArk acquisition."
-          ]
-        }
-      ]
+      "debate_responses": []
     },
-    "reason_for_final_decision": "I am overriding the initial mixed signals from the agents to adopt the unanimous post-debate consensus. The debate process was critical, as the fundamental agent's discovery of a severe cash flow collapse provided the necessary context for the technical agent to correctly interpret a weak rally failing at resistance. This alignment across all three disciplines—fundamental deterioration, technical weakness, and a negative news narrative—creates a high-conviction bearish thesis that is much stronger than the pre-debate weighted average would suggest. The deterministic guardrail, which reflects the post-debate consensus, confirms this bearish view, making the decision to proceed straightforward.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "The committee's decision is to adopt a Bearish stance on both short and long-term horizons, overriding the guardrail's 'Short / Avoid' action to a more cautious 'Avoid / Do Not Add' due to recent volatility. The decision is based on a powerful confluence of negative factors across all three agents. The news_macro agent highlights significant, multi-quarter execution risk from the CyberArk acquisition. The fundamental agent, despite low confidence, uncovered a critical and alarming drop in cash flow that contradicts the P&L growth story. The market_technical agent confirms that the stock is in a strong, established downtrend and that the recent post-earnings bounce lacks conviction. The combination of a broken long-term story, a major fundamental red flag, and a weak technical picture justifies a high-conviction bearish view. The risks are too high for the current valuation.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.85,
-          "weight": 0.35,
-          "contribution": -0.2975
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Bearish",
-          "confidence": 0.85,
+          "confidence": 0.7,
           "weight": 0.45,
-          "contribution": -0.3825
+          "contribution": -0.315
         },
         {
           "agent_name": "fundamental",
-          "stance": "Bearish",
+          "stance": "Neutral",
+          "confidence": 0.3,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
           "confidence": 0.7,
-          "weight": 0.2,
-          "contribution": -0.14
+          "weight": 0.4,
+          "contribution": 0.0
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.85,
+          "confidence": 0.7,
+          "weight": 0.4,
+          "contribution": -0.28
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.3,
           "weight": 0.35,
-          "contribution": -0.2975
+          "contribution": 0.0
         },
         {
           "agent_name": "market_technical",
           "stance": "Bearish",
-          "confidence": 0.85,
-          "weight": 0.2,
-          "contribution": -0.17
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Bearish",
           "confidence": 0.7,
-          "weight": 0.45,
-          "contribution": -0.315
+          "weight": 0.25,
+          "contribution": -0.175
         }
       ]
     },
     "scores": {
-      "short": -1.0,
-      "long": -1.0
+      "short": -0.4922,
+      "long": -0.8125
     },
     "llm_decision_used": true
   }

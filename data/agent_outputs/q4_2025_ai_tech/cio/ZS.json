@@ -11,29 +11,30 @@
         "rationale": "Short-term: The 15% post-earnings decline on a 'beat and raise' is a powerful negative signal. The narrative is dominated by analyst price target cuts and valuation concerns, not fundamentals. In a risk-off macro environment (higher VIX, rate sensitivity), the stock will likely continue to see pressure from momentum-chasing investors and a valuation reset, causing it to underperform the QQQ. Long-term: The fundamental picture of 25%+ growth and margin expansion is solid, but the stock must now digest its valuation re-rating. It will likely trade sideways or in-line with the market over the next few quarters as strong business performance battles a persistent valuation overhang, preventing significant outperformance versus the QQQ."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
-        "rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Zscaler shows a conflicting picture of strong top-line revenue growth contrasted with weakening fundamentals, evidenced by widening QoQ operating and net losses and a sharp sequential decline in cash flow. While the company remains free cash flow positive, the deteriorating profitability and cash generation efficiency warrant caution and close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.6,
+        "rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
       }
     ],
     "areas_of_agreement": [
-      "2 agents lean neutral on the short-term horizon.",
       "2 agents lean neutral on the long-term horizon."
     ],
-    "areas_of_disagreement": [],
+    "areas_of_disagreement": [
+      "Short-term views contain both bullish and bearish calls."
+    ],
     "missing_information": [],
     "short_stance_counts": {
-      "Bullish": 0,
-      "Neutral": 2,
+      "Bullish": 1,
+      "Neutral": 1,
       "Bearish": 1
     },
     "long_stance_counts": {
@@ -414,257 +415,6 @@
       {
         "ticker": "ZS",
         "company": "Zscaler",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-        "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Severe Long-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Existing Downtrend",
-            "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral to Bullish Momentum",
-            "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.6%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-          }
-        ],
-        "risks": [
-          "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-          "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-        "raw_packet": {
-          "ticker": "ZS",
-          "company": "Zscaler",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-          "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Existing Downtrend",
-              "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-            }
-          ],
-          "risks": [
-            "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-            "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-          "raw_packet": {
-            "ticker": "ZS",
-            "company": "Zscaler",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-            "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Existing Downtrend",
-                "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-              "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-            "raw_packet": {
-              "ticker": "ZS",
-              "company": "Zscaler",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Existing Downtrend",
-                  "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-                "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-              ],
-              "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-              "core_insight": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-            }
-          }
-        }
-      },
-      {
-        "ticker": "ZS",
-        "company": "Zscaler",
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
@@ -818,16 +568,291 @@
             }
           }
         }
+      },
+      {
+        "ticker": "ZS",
+        "company": "Zscaler",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.6,
+        "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+        "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Price Catalyst",
+            "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Severe Long-Term Bearish Trend",
+            "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+          },
+          {
+            "type": "MACD",
+            "signal": "Nascent Bullish Momentum Shift",
+            "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+          },
+          {
+            "type": "Volume",
+            "signal": "Weak Conviction in Rally",
+            "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Extreme Downside Realized",
+            "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+          },
+          {
+            "type": "RSI",
+            "signal": "Bearish but Not Oversold",
+            "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.76%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "Regime classification: bearish_trend"
+          }
+        ],
+        "risks": [
+          "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+          "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+          "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+        ],
+        "citations": [],
+        "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+        "raw_packet": {
+          "ticker": "ZS",
+          "company": "Zscaler",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.6,
+          "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+          "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Price Catalyst",
+              "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Severe Long-Term Bearish Trend",
+              "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction in Rally",
+              "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Extreme Downside Realized",
+              "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish but Not Oversold",
+              "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.76%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+            "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+            "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+          ],
+          "citations": [],
+          "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+          "raw_packet": {
+            "ticker": "ZS",
+            "company": "Zscaler",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.6,
+            "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+            "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Price Catalyst",
+                "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Severe Long-Term Bearish Trend",
+                "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction in Rally",
+                "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Extreme Downside Realized",
+                "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish but Not Oversold",
+                "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.76%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+              "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+              "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+            ],
+            "citations": [],
+            "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+            "raw_packet": {
+              "ticker": "ZS",
+              "company": "Zscaler",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.6,
+              "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Price Catalyst",
+                  "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Severe Long-Term Bearish Trend",
+                  "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction in Rally",
+                  "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Extreme Downside Realized",
+                  "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish but Not Oversold",
+                  "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.76%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+                "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+                "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+              ],
+              "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+              "core_insight": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
+            }
+          }
+        }
       }
     ]
   },
   "debate": {
-    "triggered": false,
+    "triggered": true,
     "trigger": {
-      "debate_required": false,
-      "conflict_level": "low",
+      "debate_required": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls."
       ]
     },
     "synthesis": {
@@ -842,29 +867,30 @@
           "rationale": "Short-term: The 15% post-earnings decline on a 'beat and raise' is a powerful negative signal. The narrative is dominated by analyst price target cuts and valuation concerns, not fundamentals. In a risk-off macro environment (higher VIX, rate sensitivity), the stock will likely continue to see pressure from momentum-chasing investors and a valuation reset, causing it to underperform the QQQ. Long-term: The fundamental picture of 25%+ growth and margin expansion is solid, but the stock must now digest its valuation re-rating. It will likely trade sideways or in-line with the market over the next few quarters as strong business performance battles a persistent valuation overhang, preventing significant outperformance versus the QQQ."
         },
         {
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.8,
-          "rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-        },
-        {
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
           "confidence": 0.3,
           "rationale": "Zscaler shows a conflicting picture of strong top-line revenue growth contrasted with weakening fundamentals, evidenced by widening QoQ operating and net losses and a sharp sequential decline in cash flow. While the company remains free cash flow positive, the deteriorating profitability and cash generation efficiency warrant caution and close monitoring."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.6,
+          "rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
         }
       ],
       "areas_of_agreement": [
-        "2 agents lean neutral on the short-term horizon.",
         "2 agents lean neutral on the long-term horizon."
       ],
-      "areas_of_disagreement": [],
+      "areas_of_disagreement": [
+        "Short-term views contain both bullish and bearish calls."
+      ],
       "missing_information": [],
       "short_stance_counts": {
-        "Bullish": 0,
-        "Neutral": 2,
+        "Bullish": 1,
+        "Neutral": 1,
         "Bearish": 1
       },
       "long_stance_counts": {
@@ -1367,320 +1393,6 @@
         {
           "ticker": "ZS",
           "company": "Zscaler",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-          "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Existing Downtrend",
-              "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-            }
-          ],
-          "risks": [
-            "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-            "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-          ],
-          "citations": [],
-          "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-          "raw_packet": {
-            "ticker": "ZS",
-            "company": "Zscaler",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-            "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Existing Downtrend",
-                "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-              "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-            "raw_packet": {
-              "ticker": "ZS",
-              "company": "Zscaler",
-              "agent_name": "market_technical",
-              "short_term_stance": "Neutral",
-              "long_term_stance": "Bearish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-              "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Existing Downtrend",
-                  "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-                "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-              ],
-              "citations": [],
-              "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-              "raw_packet": {
-                "ticker": "ZS",
-                "company": "Zscaler",
-                "agent_name": "market_technical",
-                "short_term_stance": "Neutral",
-                "long_term_stance": "Bearish",
-                "confidence": 0.8,
-                "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-                "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-                "key_signals": [
-                  {
-                    "type": "Moving Averages",
-                    "signal": "Conflicting Trend Structure",
-                    "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-                  },
-                  {
-                    "type": "MACD",
-                    "signal": "Bullish Momentum Shift",
-                    "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-                  },
-                  {
-                    "type": "Relative Strength",
-                    "signal": "Severe Long-Term Underperformance",
-                    "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-                  },
-                  {
-                    "type": "Drawdown",
-                    "signal": "Significant Existing Downtrend",
-                    "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-                  },
-                  {
-                    "type": "Volume",
-                    "signal": "Lack of Conviction",
-                    "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-                  },
-                  {
-                    "type": "RSI",
-                    "signal": "Neutral to Bullish Momentum",
-                    "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-                  },
-                  {
-                    "type": "Market Regime",
-                    "signal": "Range-Bound Conditions",
-                    "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-                  },
-                  {
-                    "type": "Returns",
-                    "signal": "positive short-term momentum",
-                    "evidence": "Mean of recent returns: 0.6%"
-                  },
-                  {
-                    "type": "Volatility",
-                    "signal": "moderate volatility",
-                    "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-                  }
-                ],
-                "risks": [
-                  "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-                  "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-                ],
-                "citations": [],
-                "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-                "raw_packet": {
-                  "ticker": "ZS",
-                  "company": "Zscaler",
-                  "agent_name": "Market & Technical Analysis Agent",
-                  "short_term_stance": "neutral",
-                  "long_term_stance": "bearish",
-                  "confidence": 0.8,
-                  "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-                  "key_signals": [
-                    {
-                      "type": "Moving Averages",
-                      "signal": "Conflicting Trend Structure",
-                      "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-                    },
-                    {
-                      "type": "MACD",
-                      "signal": "Bullish Momentum Shift",
-                      "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-                    },
-                    {
-                      "type": "Relative Strength",
-                      "signal": "Severe Long-Term Underperformance",
-                      "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-                    },
-                    {
-                      "type": "Drawdown",
-                      "signal": "Significant Existing Downtrend",
-                      "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-                    },
-                    {
-                      "type": "Volume",
-                      "signal": "Lack of Conviction",
-                      "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-                    },
-                    {
-                      "type": "RSI",
-                      "signal": "Neutral to Bullish Momentum",
-                      "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-                    },
-                    {
-                      "type": "Market Regime",
-                      "signal": "Range-Bound Conditions",
-                      "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-                    },
-                    {
-                      "type": "Returns",
-                      "signal": "positive short-term momentum",
-                      "evidence": "Mean of recent returns: 0.6%"
-                    },
-                    {
-                      "type": "Volatility",
-                      "signal": "moderate volatility",
-                      "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-                    }
-                  ],
-                  "risks": [
-                    "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-                    "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-                  ],
-                  "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-                  "core_insight": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-                }
-              }
-            }
-          }
-        },
-        {
-          "ticker": "ZS",
-          "company": "Zscaler",
           "agent_name": "fundamental",
           "short_term_stance": "Neutral",
           "long_term_stance": "Neutral",
@@ -1872,18 +1584,423 @@
               }
             }
           }
+        },
+        {
+          "ticker": "ZS",
+          "company": "Zscaler",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.6,
+          "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+          "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Price Catalyst",
+              "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Severe Long-Term Bearish Trend",
+              "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction in Rally",
+              "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Extreme Downside Realized",
+              "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish but Not Oversold",
+              "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.76%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+            "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+            "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+          ],
+          "citations": [],
+          "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+          "raw_packet": {
+            "ticker": "ZS",
+            "company": "Zscaler",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.6,
+            "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+            "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Price Catalyst",
+                "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Severe Long-Term Bearish Trend",
+                "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction in Rally",
+                "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Extreme Downside Realized",
+                "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish but Not Oversold",
+                "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.76%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+              "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+              "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+            ],
+            "citations": [],
+            "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+            "raw_packet": {
+              "ticker": "ZS",
+              "company": "Zscaler",
+              "agent_name": "market_technical",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bearish",
+              "confidence": 0.6,
+              "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+              "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Price Catalyst",
+                  "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Severe Long-Term Bearish Trend",
+                  "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction in Rally",
+                  "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Extreme Downside Realized",
+                  "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish but Not Oversold",
+                  "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.76%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+                "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+                "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+              ],
+              "citations": [],
+              "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+              "raw_packet": {
+                "ticker": "ZS",
+                "company": "Zscaler",
+                "agent_name": "market_technical",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bearish",
+                "confidence": 0.6,
+                "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+                "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+                "key_signals": [
+                  {
+                    "type": "Earnings Reaction",
+                    "signal": "Strong Bullish Price Catalyst",
+                    "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+                  },
+                  {
+                    "type": "Moving Averages",
+                    "signal": "Severe Long-Term Bearish Trend",
+                    "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+                  },
+                  {
+                    "type": "MACD",
+                    "signal": "Nascent Bullish Momentum Shift",
+                    "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+                  },
+                  {
+                    "type": "Volume",
+                    "signal": "Weak Conviction in Rally",
+                    "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+                  },
+                  {
+                    "type": "Relative Strength",
+                    "signal": "Significant Market Underperformance",
+                    "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+                  },
+                  {
+                    "type": "Drawdown",
+                    "signal": "Extreme Downside Realized",
+                    "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+                  },
+                  {
+                    "type": "RSI",
+                    "signal": "Bearish but Not Oversold",
+                    "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+                  },
+                  {
+                    "type": "Returns",
+                    "signal": "negative short-term momentum",
+                    "evidence": "Mean of recent returns: -0.76%"
+                  },
+                  {
+                    "type": "Volatility",
+                    "signal": "moderate volatility",
+                    "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+                  },
+                  {
+                    "type": "Market Regime",
+                    "signal": "bearish_trend",
+                    "evidence": "Regime classification: bearish_trend"
+                  }
+                ],
+                "risks": [
+                  "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+                  "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+                  "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+                ],
+                "citations": [],
+                "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+                "raw_packet": {
+                  "ticker": "ZS",
+                  "company": "Zscaler",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "bullish",
+                  "long_term_stance": "bearish",
+                  "confidence": 0.6,
+                  "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+                  "key_signals": [
+                    {
+                      "type": "Earnings Reaction",
+                      "signal": "Strong Bullish Price Catalyst",
+                      "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+                    },
+                    {
+                      "type": "Moving Averages",
+                      "signal": "Severe Long-Term Bearish Trend",
+                      "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+                    },
+                    {
+                      "type": "MACD",
+                      "signal": "Nascent Bullish Momentum Shift",
+                      "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+                    },
+                    {
+                      "type": "Volume",
+                      "signal": "Weak Conviction in Rally",
+                      "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+                    },
+                    {
+                      "type": "Relative Strength",
+                      "signal": "Significant Market Underperformance",
+                      "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+                    },
+                    {
+                      "type": "Drawdown",
+                      "signal": "Extreme Downside Realized",
+                      "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+                    },
+                    {
+                      "type": "RSI",
+                      "signal": "Bearish but Not Oversold",
+                      "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+                    },
+                    {
+                      "type": "Returns",
+                      "signal": "negative short-term momentum",
+                      "evidence": "Mean of recent returns: -0.76%"
+                    },
+                    {
+                      "type": "Volatility",
+                      "signal": "moderate volatility",
+                      "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+                    },
+                    {
+                      "type": "Market Regime",
+                      "signal": "bearish_trend",
+                      "evidence": "Regime classification: bearish_trend"
+                    }
+                  ],
+                  "risks": [
+                    "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+                    "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+                    "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+                  ],
+                  "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+                  "core_insight": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
+                }
+              }
+            }
+          }
         }
       ]
     },
-    "debate_responses": [],
+    "debate_responses": [
+      {
+        "response_type": "revision",
+        "agreement": [
+          "I agree with the `fundamental` agent's data showing strong top-line revenue growth, which aligns with my initial assessment.",
+          "I strongly agree with and incorporate the `fundamental` agent's key finding of deteriorating underlying financials, specifically the widening QoQ operating/net losses and the sharp sequential decline in operating and free cash flow. This provides a fundamental basis for the stock's weakness, which was a risk in my original thesis.",
+          "I agree with the `market_technical` agent's assessment that the stock is in a 'Severe Long-Term Bearish Trend', as evidenced by its position far below key moving averages and significant market underperformance. This reinforces the negative macro and valuation pressures I had identified."
+        ],
+        "disagreement": [
+          "I disagree with the `market_technical` agent's 'Bullish' short-term stance. The evidence cited (a single-day +3.68% return) appears to be a minor relief rally or dead-cat bounce, especially as the agent themselves notes it occurred on very weak volume ('reaction volume ratio of just 0.53x'). This single data point is outweighed by the initial ~15% post-earnings plunge, the wave of analyst price target cuts, and the newly-surfaced negative fundamental data regarding cash flow and profitability."
+        ],
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bearish",
+        "revised_confidence": 0.8,
+        "revised_confidence_rationale": "My confidence has increased from 0.7 to 0.8. My original thesis identified a risk that the stock's decline was due to more than just valuation. The `fundamental` agent provided direct evidence of this risk (deteriorating cash flow and profitability), confirming the weakness. The confluence of negative macro sentiment, a confirmed fundamental problem, and a severe technical downtrend creates a clearer, more convicted bearish picture across both short and long-term horizons.",
+        "revised_stance_rationale": "The short-term Bearish case is now stronger. The negative market reaction is not just about a valuation reset; it is also justified by a significant sequential drop in cash flow and widening losses, as highlighted by the `fundamental` agent. For the long-term, I am shifting from Neutral to Bearish. My original Neutral stance balanced strong fundamentals against valuation. The new evidence shows these fundamentals are not as 'solid' as assumed, with profitability and cash generation efficiency deteriorating despite revenue growth. This combination of a persistent valuation overhang and now-questionable fundamental execution warrants a Bearish long-term view.",
+        "evidence_needed": [
+          "The earnings call transcript is now the most critical piece of missing evidence. Management's explanation for the sharp drop in cash flow and widening losses is required to determine if this is a one-time issue or a new, negative structural trend.",
+          "A clear breakdown of billings growth, as this key forward-looking metric remains absent from all supplied evidence.",
+          "Context for the company's debt load ($1.86B) relative to its cash position ($1.20B) and cash generation capabilities."
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "news_macro": "I agree with the news_macro agent's core assessment. It provided the critical missing context that my original analysis lacked. Specifically, I agree that: 1) The company delivered a 'beat and raise' quarter, which clarifies the performance vs. expectations. 2) The sharp stock decline (~15%) was a reaction to valuation concerns and a risk-off environment, not a fundamental miss. 3) The wave of analyst price target cuts confirms this valuation-driven sentiment shift. This information directly addresses the primary gaps in my initial view.",
+          "market_technical": "I agree with the market_technical agent's data points that the stock is in a 'Severe Long-Term Bearish Trend' and that the recent positive price action occurred on 'Weak Conviction in Rally' (low volume). This supports the news_macro agent's narrative of a valuation re-rating and suggests the recent bounce is not a sustainable reversal."
+        },
+        "disagreement": {
+          "news_macro": "I have no significant disagreements with the news_macro agent's evidence; it was crucial for updating my view.",
+          "market_technical": "I disagree with the market_technical agent's interpretation and resulting 'Short-term Bullish' stance. While the agent correctly identified a single-day positive abnormal return, calling it a 'Strong Bullish Price Catalyst' is misleading. When placed in the context provided by the news_macro agent (a ~15% sell-off post-earnings), this single day appears to be a minor relief rally or 'dead cat bounce' rather than a meaningful bullish signal. The broader, more powerful signal was the initial, large negative reaction to the earnings report."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Neutral",
+        "revised_confidence": 0.7,
+        "evidence_needed": [
+          "While the news agent clarified the market's reaction, my core fundamental concern about the sharp sequential decline in operating and free cash flow remains. The key piece of missing evidence is management's specific explanation for this deterioration from the earnings call transcript. Was it due to one-time events, a change in billing cycles, or a structural increase in cash burn?"
+        ]
+      },
+      {
+        "response_type": "revision",
+        "agreement": {
+          "agent_name": [
+            "news_macro",
+            "fundamental"
+          ],
+          "rationale": "I agree with the core evidence from both other agents. The `news_macro` agent's report of a ~15% post-earnings stock decline and widespread analyst price target cuts is a powerful, overriding signal. This is corroborated by the `fundamental` agent's data showing that despite revenue growth, the company experienced widening operating losses and a sharp sequential decline in operating and free cash flow. Together, this evidence explains the severe negative market reaction and aligns with my existing long-term bearish technical view."
+        },
+        "disagreement": {
+          "agent_name": "market_technical",
+          "rationale": "I must retract my own initial key signal of a 'Strong Bullish Price Catalyst' based on a +3.98% abnormal return. The `news_macro` agent's evidence of a subsequent ~15% drop shows my initial data was either incomplete, premature, or captured a fleeting pre-market move that was quickly overwhelmed. The true earnings reaction was profoundly bearish, not bullish. Consequently, my secondary signal of a 'Nascent Bullish Momentum Shift' from the MACD crossover is now considered low-weight noise in the face of such a significant, fundamentally-driven price shock."
+        },
+        "revised_short_term_stance": "Bearish",
+        "revised_long_term_stance": "Bearish",
+        "revised_confidence": 0.8,
+        "revised_confidence_rationale": "Confidence is now high because the previously conflicting signals have been resolved. The market's severe negative reaction (news), deteriorating profitability and cash flow (fundamentals), and the pre-existing long-term downtrend (technicals) are now all aligned. The bearish case is coherent across all three analytical perspectives, removing the ambiguity that tempered the original view.",
+        "evidence_needed": [
+          "Confirmation of the post-earnings price drop (~15%) with updated daily price and volume data to analyze the technical damage.",
+          "The earnings call transcript, as noted by the fundamental agent, to understand management's explanation for the sharp decline in cash flow and determine if it's a one-time issue or a new structural trend."
+        ]
+      }
+    ],
     "revised_packets": [
       {
         "ticker": "ZS",
         "company": "Zscaler",
         "agent_name": "news_macro",
         "short_term_stance": "Bearish",
-        "long_term_stance": "Neutral",
-        "confidence": 0.7,
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
         "confidence_rationale": "Confidence is relatively high because the short-term stance is based on the direct and unambiguous market reaction (15% stock drop) and a wave of analyst PT cuts. The long-term stance is less certain, balancing direct evidence of strong fundamental growth against the macro-driven valuation pressures, justifying a score above 0.5 but below 0.9. The lack of a specific metric like billings growth in the news prevents higher confidence.",
         "stance_rationale": "Short-term: The 15% post-earnings decline on a 'beat and raise' is a powerful negative signal. The narrative is dominated by analyst price target cuts and valuation concerns, not fundamentals. In a risk-off macro environment (higher VIX, rate sensitivity), the stock will likely continue to see pressure from momentum-chasing investors and a valuation reset, causing it to underperform the QQQ. Long-term: The fundamental picture of 25%+ growth and margin expansion is solid, but the stock must now digest its valuation re-rating. It will likely trade sideways or in-line with the market over the next few quarters as strong business performance battles a persistent valuation overhang, preventing significant outperformance versus the QQQ.",
         "key_signals": [
@@ -2244,266 +2361,36 @@
               "core_insight": "While Zscaler's strong growth confirms robust enterprise demand for cloud security, the market's violent de-rating of its valuation reveals a blind spot: the stable, recurring revenue generated by the 'picks-and-shovels' infrastructure providers that enable this growth without the same valuation volatility."
             }
           }
-        }
-      },
-      {
-        "ticker": "ZS",
-        "company": "Zscaler",
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
-        "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-        "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-        "key_signals": [
-          {
-            "type": "Moving Averages",
-            "signal": "Conflicting Trend Structure",
-            "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-          },
-          {
-            "type": "MACD",
-            "signal": "Bullish Momentum Shift",
-            "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-          },
-          {
-            "type": "Relative Strength",
-            "signal": "Severe Long-Term Underperformance",
-            "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-          },
-          {
-            "type": "Drawdown",
-            "signal": "Significant Existing Downtrend",
-            "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-          },
-          {
-            "type": "Volume",
-            "signal": "Lack of Conviction",
-            "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-          },
-          {
-            "type": "RSI",
-            "signal": "Neutral to Bullish Momentum",
-            "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-          },
-          {
-            "type": "Market Regime",
-            "signal": "Range-Bound Conditions",
-            "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-          },
-          {
-            "type": "Returns",
-            "signal": "positive short-term momentum",
-            "evidence": "Mean of recent returns: 0.6%"
-          },
-          {
-            "type": "Volatility",
-            "signal": "moderate volatility",
-            "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-          }
-        ],
-        "risks": [
-          "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-          "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-        ],
-        "citations": [],
-        "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-        "raw_packet": {
-          "ticker": "ZS",
-          "company": "Zscaler",
-          "agent_name": "market_technical",
-          "short_term_stance": "Neutral",
-          "long_term_stance": "Bearish",
-          "confidence": 0.8,
-          "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-          "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-          "key_signals": [
-            {
-              "type": "Moving Averages",
-              "signal": "Conflicting Trend Structure",
-              "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-            },
-            {
-              "type": "MACD",
-              "signal": "Bullish Momentum Shift",
-              "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-            },
-            {
-              "type": "Relative Strength",
-              "signal": "Severe Long-Term Underperformance",
-              "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-            },
-            {
-              "type": "Drawdown",
-              "signal": "Significant Existing Downtrend",
-              "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-            },
-            {
-              "type": "Volume",
-              "signal": "Lack of Conviction",
-              "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-            },
-            {
-              "type": "RSI",
-              "signal": "Neutral to Bullish Momentum",
-              "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-            },
-            {
-              "type": "Market Regime",
-              "signal": "Range-Bound Conditions",
-              "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-            },
-            {
-              "type": "Returns",
-              "signal": "positive short-term momentum",
-              "evidence": "Mean of recent returns: 0.6%"
-            },
-            {
-              "type": "Volatility",
-              "signal": "moderate volatility",
-              "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-            }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the `fundamental` agent's data showing strong top-line revenue growth, which aligns with my initial assessment.",
+            "I strongly agree with and incorporate the `fundamental` agent's key finding of deteriorating underlying financials, specifically the widening QoQ operating/net losses and the sharp sequential decline in operating and free cash flow. This provides a fundamental basis for the stock's weakness, which was a risk in my original thesis.",
+            "I agree with the `market_technical` agent's assessment that the stock is in a 'Severe Long-Term Bearish Trend', as evidenced by its position far below key moving averages and significant market underperformance. This reinforces the negative macro and valuation pressures I had identified."
           ],
-          "risks": [
-            "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-            "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
+          "disagreement": [
+            "I disagree with the `market_technical` agent's 'Bullish' short-term stance. The evidence cited (a single-day +3.68% return) appears to be a minor relief rally or dead-cat bounce, especially as the agent themselves notes it occurred on very weak volume ('reaction volume ratio of just 0.53x'). This single data point is outweighed by the initial ~15% post-earnings plunge, the wave of analyst price target cuts, and the newly-surfaced negative fundamental data regarding cash flow and profitability."
           ],
-          "citations": [],
-          "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-          "raw_packet": {
-            "ticker": "ZS",
-            "company": "Zscaler",
-            "agent_name": "market_technical",
-            "short_term_stance": "Neutral",
-            "long_term_stance": "Bearish",
-            "confidence": 0.8,
-            "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-            "stance_rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down.",
-            "key_signals": [
-              {
-                "type": "Moving Averages",
-                "signal": "Conflicting Trend Structure",
-                "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-              },
-              {
-                "type": "MACD",
-                "signal": "Bullish Momentum Shift",
-                "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-              },
-              {
-                "type": "Relative Strength",
-                "signal": "Severe Long-Term Underperformance",
-                "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-              },
-              {
-                "type": "Drawdown",
-                "signal": "Significant Existing Downtrend",
-                "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-              },
-              {
-                "type": "Volume",
-                "signal": "Lack of Conviction",
-                "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-              },
-              {
-                "type": "RSI",
-                "signal": "Neutral to Bullish Momentum",
-                "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-              },
-              {
-                "type": "Market Regime",
-                "signal": "Range-Bound Conditions",
-                "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-              },
-              {
-                "type": "Returns",
-                "signal": "positive short-term momentum",
-                "evidence": "Mean of recent returns: 0.6%"
-              },
-              {
-                "type": "Volatility",
-                "signal": "moderate volatility",
-                "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-              }
-            ],
-            "risks": [
-              "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-              "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-            ],
-            "citations": [],
-            "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-            "raw_packet": {
-              "ticker": "ZS",
-              "company": "Zscaler",
-              "agent_name": "Market & Technical Analysis Agent",
-              "short_term_stance": "neutral",
-              "long_term_stance": "bearish",
-              "confidence": 0.8,
-              "confidence_rationale": "Confidence is high as the analysis is supported by a confluence of indicators. The long-term bearish stance is unequivocally confirmed by the price being 39% below its MA200 and significant relative underperformance. The short-term neutral stance is based on a clear conflict between nascent bullish momentum (MACD crossover, RSI > 50) and strong overhead resistance (MA50) on weak volume, making a strong directional bias inappropriate as of this date.",
-              "key_signals": [
-                {
-                  "type": "Moving Averages",
-                  "signal": "Conflicting Trend Structure",
-                  "evidence": "Price at $142.20 is above its MA20 ($133.43), but below its MA50 ($143.31) and significantly below its MA200 ($232.99)."
-                },
-                {
-                  "type": "MACD",
-                  "signal": "Bullish Momentum Shift",
-                  "evidence": "A bullish crossover has occurred, with the MACD line (-1.77) crossing above the signal line (-3.53)."
-                },
-                {
-                  "type": "Relative Strength",
-                  "signal": "Severe Long-Term Underperformance",
-                  "evidence": "The stock has underperformed the SPY benchmark by -67.84% over the analysis period."
-                },
-                {
-                  "type": "Drawdown",
-                  "signal": "Significant Existing Downtrend",
-                  "evidence": "The stock is in a major drawdown of -57.71% from its peak, indicating substantial capital depreciation."
-                },
-                {
-                  "type": "Volume",
-                  "signal": "Lack of Conviction",
-                  "evidence": "Recent volume is 27% below its average (volume spike ratio of 0.73), suggesting the recent price rise lacks strong participation."
-                },
-                {
-                  "type": "RSI",
-                  "signal": "Neutral to Bullish Momentum",
-                  "evidence": "RSI at 53.82 is in neutral territory but above the 50 midline, indicating some positive momentum but not overextended."
-                },
-                {
-                  "type": "Market Regime",
-                  "signal": "Range-Bound Conditions",
-                  "evidence": "The current market regime is classified as 'range_bound', suggesting a lack of a clear directional trend in the immediate term."
-                },
-                {
-                  "type": "Returns",
-                  "signal": "positive short-term momentum",
-                  "evidence": "Mean of recent returns: 0.6%"
-                },
-                {
-                  "type": "Volatility",
-                  "signal": "moderate volatility",
-                  "evidence": "Annualized volatility 45.25%, Recent 68.28%"
-                }
-              ],
-              "risks": [
-                "The primary risk is a failure at the 50-day moving average resistance, which could lead to a resumption of the dominant long-term downtrend, especially given the weak volume on the rally.",
-                "A secondary risk is that the bullish MACD crossover could gain traction, pushing the price decisively above the MA50 and invalidating the short-term neutral outlook."
-              ],
-              "summary": "As of 2026/03/04, ZS presented a mixed technical picture. A long-term bearish trend remained firmly in place, evidenced by the price's position far below the 200-day average and severe market underperformance. In the short-term, bullish momentum signals like a MACD crossover had emerged, pushing the price above its 20-day average. However, this rally faced immediate resistance at the 50-day average and lacked volume confirmation, suggesting it was a counter-trend bounce within a range rather than a new sustainable uptrend.",
-              "core_insight": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-            }
-          }
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
+          "revised_confidence_rationale": "My confidence has increased from 0.7 to 0.8. My original thesis identified a risk that the stock's decline was due to more than just valuation. The `fundamental` agent provided direct evidence of this risk (deteriorating cash flow and profitability), confirming the weakness. The confluence of negative macro sentiment, a confirmed fundamental problem, and a severe technical downtrend creates a clearer, more convicted bearish picture across both short and long-term horizons.",
+          "revised_stance_rationale": "The short-term Bearish case is now stronger. The negative market reaction is not just about a valuation reset; it is also justified by a significant sequential drop in cash flow and widening losses, as highlighted by the `fundamental` agent. For the long-term, I am shifting from Neutral to Bearish. My original Neutral stance balanced strong fundamentals against valuation. The new evidence shows these fundamentals are not as 'solid' as assumed, with profitability and cash generation efficiency deteriorating despite revenue growth. This combination of a persistent valuation overhang and now-questionable fundamental execution warrants a Bearish long-term view.",
+          "evidence_needed": [
+            "The earnings call transcript is now the most critical piece of missing evidence. Management's explanation for the sharp drop in cash flow and widening losses is required to determine if this is a one-time issue or a new, negative structural trend.",
+            "A clear breakdown of billings growth, as this key forward-looking metric remains absent from all supplied evidence.",
+            "Context for the company's debt load ($1.86B) relative to its cash position ($1.20B) and cash generation capabilities."
+          ]
         }
       },
       {
         "ticker": "ZS",
         "company": "Zscaler",
         "agent_name": "fundamental",
-        "short_term_stance": "Neutral",
+        "short_term_stance": "Bearish",
         "long_term_stance": "Neutral",
-        "confidence": 0.3,
+        "confidence": 0.7,
         "confidence_rationale": "Confidence is low due to critical missing information. The absence of analyst consensus estimates, management guidance, and the earnings call transcript makes it difficult to interpret the quarter's results, particularly the reasons for the significant cash flow decline and widening losses.",
         "stance_rationale": "Zscaler shows a conflicting picture of strong top-line revenue growth contrasted with weakening fundamentals, evidenced by widening QoQ operating and net losses and a sharp sequential decline in cash flow. While the company remains free cash flow positive, the deteriorating profitability and cash generation efficiency warrant caution and close monitoring.",
         "key_signals": [
@@ -2652,6 +2539,320 @@
               }
             }
           }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's core assessment. It provided the critical missing context that my original analysis lacked. Specifically, I agree that: 1) The company delivered a 'beat and raise' quarter, which clarifies the performance vs. expectations. 2) The sharp stock decline (~15%) was a reaction to valuation concerns and a risk-off environment, not a fundamental miss. 3) The wave of analyst price target cuts confirms this valuation-driven sentiment shift. This information directly addresses the primary gaps in my initial view.",
+            "market_technical": "I agree with the market_technical agent's data points that the stock is in a 'Severe Long-Term Bearish Trend' and that the recent positive price action occurred on 'Weak Conviction in Rally' (low volume). This supports the news_macro agent's narrative of a valuation re-rating and suggests the recent bounce is not a sustainable reversal."
+          },
+          "disagreement": {
+            "news_macro": "I have no significant disagreements with the news_macro agent's evidence; it was crucial for updating my view.",
+            "market_technical": "I disagree with the market_technical agent's interpretation and resulting 'Short-term Bullish' stance. While the agent correctly identified a single-day positive abnormal return, calling it a 'Strong Bullish Price Catalyst' is misleading. When placed in the context provided by the news_macro agent (a ~15% sell-off post-earnings), this single day appears to be a minor relief rally or 'dead cat bounce' rather than a meaningful bullish signal. The broader, more powerful signal was the initial, large negative reaction to the earnings report."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.7,
+          "evidence_needed": [
+            "While the news agent clarified the market's reaction, my core fundamental concern about the sharp sequential decline in operating and free cash flow remains. The key piece of missing evidence is management's specific explanation for this deterioration from the earnings call transcript. Was it due to one-time events, a change in billing cycles, or a structural increase in cash burn?"
+          ]
+        }
+      },
+      {
+        "ticker": "ZS",
+        "company": "Zscaler",
+        "agent_name": "market_technical",
+        "short_term_stance": "Bearish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.8,
+        "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+        "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+        "key_signals": [
+          {
+            "type": "Earnings Reaction",
+            "signal": "Strong Bullish Price Catalyst",
+            "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+          },
+          {
+            "type": "Moving Averages",
+            "signal": "Severe Long-Term Bearish Trend",
+            "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+          },
+          {
+            "type": "MACD",
+            "signal": "Nascent Bullish Momentum Shift",
+            "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+          },
+          {
+            "type": "Volume",
+            "signal": "Weak Conviction in Rally",
+            "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+          },
+          {
+            "type": "Relative Strength",
+            "signal": "Significant Market Underperformance",
+            "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+          },
+          {
+            "type": "Drawdown",
+            "signal": "Extreme Downside Realized",
+            "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+          },
+          {
+            "type": "RSI",
+            "signal": "Bearish but Not Oversold",
+            "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+          },
+          {
+            "type": "Returns",
+            "signal": "negative short-term momentum",
+            "evidence": "Mean of recent returns: -0.76%"
+          },
+          {
+            "type": "Volatility",
+            "signal": "moderate volatility",
+            "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+          },
+          {
+            "type": "Market Regime",
+            "signal": "bearish_trend",
+            "evidence": "Regime classification: bearish_trend"
+          }
+        ],
+        "risks": [
+          "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+          "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+          "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+        ],
+        "citations": [],
+        "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+        "raw_packet": {
+          "ticker": "ZS",
+          "company": "Zscaler",
+          "agent_name": "market_technical",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bearish",
+          "confidence": 0.6,
+          "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+          "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+          "key_signals": [
+            {
+              "type": "Earnings Reaction",
+              "signal": "Strong Bullish Price Catalyst",
+              "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+            },
+            {
+              "type": "Moving Averages",
+              "signal": "Severe Long-Term Bearish Trend",
+              "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+            },
+            {
+              "type": "MACD",
+              "signal": "Nascent Bullish Momentum Shift",
+              "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+            },
+            {
+              "type": "Volume",
+              "signal": "Weak Conviction in Rally",
+              "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+            },
+            {
+              "type": "Relative Strength",
+              "signal": "Significant Market Underperformance",
+              "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+            },
+            {
+              "type": "Drawdown",
+              "signal": "Extreme Downside Realized",
+              "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+            },
+            {
+              "type": "RSI",
+              "signal": "Bearish but Not Oversold",
+              "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+            },
+            {
+              "type": "Returns",
+              "signal": "negative short-term momentum",
+              "evidence": "Mean of recent returns: -0.76%"
+            },
+            {
+              "type": "Volatility",
+              "signal": "moderate volatility",
+              "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+            },
+            {
+              "type": "Market Regime",
+              "signal": "bearish_trend",
+              "evidence": "Regime classification: bearish_trend"
+            }
+          ],
+          "risks": [
+            "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+            "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+            "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+          ],
+          "citations": [],
+          "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+          "raw_packet": {
+            "ticker": "ZS",
+            "company": "Zscaler",
+            "agent_name": "market_technical",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bearish",
+            "confidence": 0.6,
+            "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+            "stance_rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change.",
+            "key_signals": [
+              {
+                "type": "Earnings Reaction",
+                "signal": "Strong Bullish Price Catalyst",
+                "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+              },
+              {
+                "type": "Moving Averages",
+                "signal": "Severe Long-Term Bearish Trend",
+                "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+              },
+              {
+                "type": "MACD",
+                "signal": "Nascent Bullish Momentum Shift",
+                "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+              },
+              {
+                "type": "Volume",
+                "signal": "Weak Conviction in Rally",
+                "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+              },
+              {
+                "type": "Relative Strength",
+                "signal": "Significant Market Underperformance",
+                "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+              },
+              {
+                "type": "Drawdown",
+                "signal": "Extreme Downside Realized",
+                "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+              },
+              {
+                "type": "RSI",
+                "signal": "Bearish but Not Oversold",
+                "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+              },
+              {
+                "type": "Returns",
+                "signal": "negative short-term momentum",
+                "evidence": "Mean of recent returns: -0.76%"
+              },
+              {
+                "type": "Volatility",
+                "signal": "moderate volatility",
+                "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+              },
+              {
+                "type": "Market Regime",
+                "signal": "bearish_trend",
+                "evidence": "Regime classification: bearish_trend"
+              }
+            ],
+            "risks": [
+              "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+              "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+              "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+            ],
+            "citations": [],
+            "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+            "raw_packet": {
+              "ticker": "ZS",
+              "company": "Zscaler",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "bullish",
+              "long_term_stance": "bearish",
+              "confidence": 0.6,
+              "confidence_rationale": "Confidence is moderate because the strong positive earnings price reaction and MACD crossover conflict with the established long-term downtrend and, crucially, the weak volume confirmation of the post-earnings move.",
+              "key_signals": [
+                {
+                  "type": "Earnings Reaction",
+                  "signal": "Strong Bullish Price Catalyst",
+                  "evidence": "On 2026-03-05, the stock returned +3.68% while the QQQ benchmark returned -0.30%, resulting in a strong abnormal positive reaction of +3.98%."
+                },
+                {
+                  "type": "Moving Averages",
+                  "signal": "Severe Long-Term Bearish Trend",
+                  "evidence": "Price at $156.21 is significantly below the MA50 ($195.86) and MA200 ($264.52), trading at a 20.2% and 40.9% discount, respectively."
+                },
+                {
+                  "type": "MACD",
+                  "signal": "Nascent Bullish Momentum Shift",
+                  "evidence": "A bullish crossover has occurred, with the MACD line (-13.22) crossing above the signal line (-14.15), resulting in a positive histogram (0.928)."
+                },
+                {
+                  "type": "Volume",
+                  "signal": "Weak Conviction in Rally",
+                  "evidence": "The post-earnings rally occurred on low volume, with a reaction volume ratio of just 0.53x the recent average, questioning the move's sustainability."
+                },
+                {
+                  "type": "Relative Strength",
+                  "signal": "Significant Market Underperformance",
+                  "evidence": "The stock has underperformed the SPY benchmark by -39.57%, indicating profound relative weakness."
+                },
+                {
+                  "type": "Drawdown",
+                  "signal": "Extreme Downside Realized",
+                  "evidence": "The stock is in a severe current drawdown of -53.55% from its peak, confirming the strength of the bearish trend."
+                },
+                {
+                  "type": "RSI",
+                  "signal": "Bearish but Not Oversold",
+                  "evidence": "RSI of 39.45 indicates negative momentum but suggests there is still room for movement before reaching oversold conditions."
+                },
+                {
+                  "type": "Returns",
+                  "signal": "negative short-term momentum",
+                  "evidence": "Mean of recent returns: -0.76%"
+                },
+                {
+                  "type": "Volatility",
+                  "signal": "moderate volatility",
+                  "evidence": "Annualized volatility 46.0%, Recent 81.75%"
+                },
+                {
+                  "type": "Market Regime",
+                  "signal": "bearish_trend",
+                  "evidence": "Regime classification: bearish_trend"
+                }
+              ],
+              "risks": [
+                "The strong post-earnings price rally occurred on low volume, suggesting a lack of institutional conviction and increasing the risk of a 'bull trap' or failed reversal.",
+                "The stock remains in a severe long-term downtrend, and the key 20-day and 50-day moving averages could act as major overhead resistance.",
+                "High recent volatility (81.7%) points to an unstable and high-risk trading environment."
+              ],
+              "summary": "As of 2026-03-04, ZS is in a deep, long-term bearish trend, trading significantly below all key moving averages. However, a strong positive earnings reaction created a +4% abnormal return versus the benchmark, providing a powerful bullish catalyst. This, along with a MACD bullish crossover, signals potential for a short-term rally. This nascent bullishness is high-risk, as the move lacked volume confirmation and faces a wall of overhead resistance from the prevailing downtrend.",
+              "core_insight": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
+            }
+          }
+        },
+        "debate_response": {
+          "response_type": "revision",
+          "agreement": {
+            "agent_name": [
+              "news_macro",
+              "fundamental"
+            ],
+            "rationale": "I agree with the core evidence from both other agents. The `news_macro` agent's report of a ~15% post-earnings stock decline and widespread analyst price target cuts is a powerful, overriding signal. This is corroborated by the `fundamental` agent's data showing that despite revenue growth, the company experienced widening operating losses and a sharp sequential decline in operating and free cash flow. Together, this evidence explains the severe negative market reaction and aligns with my existing long-term bearish technical view."
+          },
+          "disagreement": {
+            "agent_name": "market_technical",
+            "rationale": "I must retract my own initial key signal of a 'Strong Bullish Price Catalyst' based on a +3.98% abnormal return. The `news_macro` agent's evidence of a subsequent ~15% drop shows my initial data was either incomplete, premature, or captured a fleeting pre-market move that was quickly overwhelmed. The true earnings reaction was profoundly bearish, not bullish. Consequently, my secondary signal of a 'Nascent Bullish Momentum Shift' from the MACD crossover is now considered low-weight noise in the face of such a significant, fundamentally-driven price shock."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
+          "revised_confidence_rationale": "Confidence is now high because the previously conflicting signals have been resolved. The market's severe negative reaction (news), deteriorating profitability and cash flow (fundamentals), and the pre-existing long-term downtrend (technicals) are now all aligned. The bearish case is coherent across all three analytical perspectives, removing the ambiguity that tempered the original view.",
+          "evidence_needed": [
+            "Confirmation of the post-earnings price drop (~15%) with updated daily price and volume data to analyze the technical damage.",
+            "The earnings call transcript, as noted by the fundamental agent, to understand management's explanation for the sharp decline in cash flow and determine if it's a one-time issue or a new structural trend."
+          ]
         }
       }
     ]
@@ -2661,22 +2862,22 @@
     "company": "Zscaler",
     "final_short_term_stance": "Bearish",
     "final_long_term_stance": "Bearish",
-    "investment_action": "Avoid",
-    "position_size_hint": "None",
-    "confidence": 0.6,
-    "core_thesis": "The investment narrative for Zscaler has shifted from 'growth at any price' to a demand for 'profitable growth'. While the company continues to deliver strong top-line results, the market's sharp post-earnings rejection, coupled with deteriorating profitability metrics and a broken long-term technical trend, indicates the stock is undergoing a painful valuation reset. The path to market outperformance is now challenged by macro headwinds (valuation compression for high-growth tech) and internal questions about operational efficiency and cash generation.",
-    "why_now": "The stock's 15% price drop following a 'beat and raise' earnings report is a powerful negative signal from the market that fundamentals are not enough to support its prior valuation. The stock is now approaching key technical resistance (50-day moving average) on weak volume after a brief bounce, making this a critical inflection point where a failure would confirm the bearish trend.",
+    "investment_action": "Avoid / Short",
+    "position_size_hint": "Normal",
+    "confidence": 0.8,
+    "core_thesis": "Zscaler is a 'broken growth' stock. The market is no longer rewarding growth at any price, and the company's recent 'beat and raise' was rightly overshadowed by a deteriorating fundamental profile, specifically widening losses and a sharp decline in cash flow. This combination of a high valuation, negative macro sentiment, deteriorating fundamentals, and a broken technical trend creates a compelling bearish case.",
+    "why_now": "The severe post-earnings sell-off (~15%) was not just a valuation reset; it was a justified reaction to newly revealed fundamental weakness. The debate process confirmed that the decline in cash generation and profitability is a core issue, not just market noise. This provides a clear, catalyst-driven reason for the negative stance, as the stock is likely to remain under pressure until it can prove these fundamental issues are resolved.",
     "key_supporting_evidence": [
-      "The 15% post-earnings stock decline despite a beat-and-raise report, accompanied by numerous analyst price target cuts, signals a clear negative shift in market sentiment regarding valuation.",
-      "The stock is in a confirmed long-term downtrend, trading significantly below its 200-day moving average and exhibiting severe relative underperformance against the SPY benchmark.",
-      "Fundamental trends are weakening despite revenue growth, evidenced by widening quarter-over-quarter operating and net losses and a sharp sequential decline in operating and free cash flow.",
-      "The recent bounce off the lows has occurred on below-average volume, suggesting a lack of conviction from buyers and increasing the probability of failure at the 50-day moving average resistance level."
+      "Fundamental Deterioration: Despite revenue growth, Operating Cash Flow dropped sharply from $448.3M to $204.1M QoQ, and Net Loss widened from -$11.6M to -$34.3M QoQ.",
+      "Negative Market Reaction: The stock sold off ~15% post-earnings despite a 'beat and raise', indicating a profound negative shift in investor sentiment that overrode positive headline numbers.",
+      "Severe Technical Damage: The stock is in a confirmed long-term downtrend, trading significantly below its 50-day ($195.86) and 200-day ($264.52) moving averages, with significant market underperformance (-39.57% vs. SPY).",
+      "Analyst Capitulation: The wave of analyst price target cuts post-earnings validates the valuation compression narrative and reinforces negative sentiment.",
+      "Cross-Agent Consensus: After debate, all three agents (News/Macro, Fundamental, Technical) converged on a bearish short-term view, with two of three also adopting a bearish long-term view, creating a unified and robust conclusion."
     ],
     "key_risks": [
-      "The market's negative reaction could be an overreaction, creating a compelling entry point if the company's strong growth continues and profitability metrics reverse their negative trend in subsequent quarters.",
-      "A broad 'risk-on' shift in the macro environment could lift all high-growth technology stocks, causing ZS to rally regardless of its specific fundamental or technical picture.",
-      "The deterioration in cash flow and profitability could be due to temporary, strategic investments that will fuel future growth, making the current weakness misleading.",
-      "Competitors like Palo Alto Networks could report weaker results, making Zscaler's consistent growth appear more attractive on a relative basis and driving capital back into the stock."
+      "One-Time Issue: The sharp decline in cash flow could be a one-time, explainable event (e.g., changes in billing cycles, M&A costs) rather than a structural trend. Management's explanation on the earnings call is the key unknown.",
+      "Oversold Bounce: The stock has sold off sharply and could be due for a short-term relief rally or 'dead cat bounce', which would challenge the timing of a short position.",
+      "Secular Growth Intact: The long-term demand for cloud security is not in question. If the company can quickly stabilize its cash flow and profitability, the narrative could reverse, making the stock attractive at its new, lower valuation."
     ],
     "agent_view_summary": [
       {
@@ -2687,56 +2888,138 @@
         "rationale": "Short-term: The 15% post-earnings decline on a 'beat and raise' is a powerful negative signal. The narrative is dominated by analyst price target cuts and valuation concerns, not fundamentals. In a risk-off macro environment (higher VIX, rate sensitivity), the stock will likely continue to see pressure from momentum-chasing investors and a valuation reset, causing it to underperform the QQQ. Long-term: The fundamental picture of 25%+ growth and margin expansion is solid, but the stock must now digest its valuation re-rating. It will likely trade sideways or in-line with the market over the next few quarters as strong business performance battles a persistent valuation overhang, preventing significant outperformance versus the QQQ."
       },
       {
-        "agent_name": "market_technical",
-        "short_term_stance": "Neutral",
-        "long_term_stance": "Bearish",
-        "confidence": 0.8,
-        "rationale": "The core insight is that nascent bullish momentum signals are confronting a firmly established long-term downtrend at a key resistance level (MA50). The lack of volume confirmation on the recent up-move suggests the path of least resistance remains sideways to down."
-      },
-      {
         "agent_name": "fundamental",
         "short_term_stance": "Neutral",
         "long_term_stance": "Neutral",
         "confidence": 0.3,
         "rationale": "Zscaler shows a conflicting picture of strong top-line revenue growth contrasted with weakening fundamentals, evidenced by widening QoQ operating and net losses and a sharp sequential decline in cash flow. While the company remains free cash flow positive, the deteriorating profitability and cash generation efficiency warrant caution and close monitoring."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bearish",
+        "confidence": 0.6,
+        "rationale": "A potent, positive earnings catalyst is directly conflicting with an established, severe downtrend. The immediate price action is bullish, but the lack of volume confirmation makes this potential reversal fragile and suggests it may be a high-risk relief rally rather than a sustainable trend change."
       }
     ],
     "debate_summary": {
-      "debate_triggered": false,
-      "conflict_level": "low",
+      "debate_triggered": true,
+      "conflict_level": "high",
       "debate_reason": [
-        "No material cross-agent disagreement."
+        "Short-term views contain both bullish and bearish calls."
       ],
-      "debate_responses": []
+      "debate_responses": [
+        {
+          "response_type": "revision",
+          "agreement": [
+            "I agree with the `fundamental` agent's data showing strong top-line revenue growth, which aligns with my initial assessment.",
+            "I strongly agree with and incorporate the `fundamental` agent's key finding of deteriorating underlying financials, specifically the widening QoQ operating/net losses and the sharp sequential decline in operating and free cash flow. This provides a fundamental basis for the stock's weakness, which was a risk in my original thesis.",
+            "I agree with the `market_technical` agent's assessment that the stock is in a 'Severe Long-Term Bearish Trend', as evidenced by its position far below key moving averages and significant market underperformance. This reinforces the negative macro and valuation pressures I had identified."
+          ],
+          "disagreement": [
+            "I disagree with the `market_technical` agent's 'Bullish' short-term stance. The evidence cited (a single-day +3.68% return) appears to be a minor relief rally or dead-cat bounce, especially as the agent themselves notes it occurred on very weak volume ('reaction volume ratio of just 0.53x'). This single data point is outweighed by the initial ~15% post-earnings plunge, the wave of analyst price target cuts, and the newly-surfaced negative fundamental data regarding cash flow and profitability."
+          ],
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
+          "revised_confidence_rationale": "My confidence has increased from 0.7 to 0.8. My original thesis identified a risk that the stock's decline was due to more than just valuation. The `fundamental` agent provided direct evidence of this risk (deteriorating cash flow and profitability), confirming the weakness. The confluence of negative macro sentiment, a confirmed fundamental problem, and a severe technical downtrend creates a clearer, more convicted bearish picture across both short and long-term horizons.",
+          "revised_stance_rationale": "The short-term Bearish case is now stronger. The negative market reaction is not just about a valuation reset; it is also justified by a significant sequential drop in cash flow and widening losses, as highlighted by the `fundamental` agent. For the long-term, I am shifting from Neutral to Bearish. My original Neutral stance balanced strong fundamentals against valuation. The new evidence shows these fundamentals are not as 'solid' as assumed, with profitability and cash generation efficiency deteriorating despite revenue growth. This combination of a persistent valuation overhang and now-questionable fundamental execution warrants a Bearish long-term view.",
+          "evidence_needed": [
+            "The earnings call transcript is now the most critical piece of missing evidence. Management's explanation for the sharp drop in cash flow and widening losses is required to determine if this is a one-time issue or a new, negative structural trend.",
+            "A clear breakdown of billings growth, as this key forward-looking metric remains absent from all supplied evidence.",
+            "Context for the company's debt load ($1.86B) relative to its cash position ($1.20B) and cash generation capabilities."
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "news_macro": "I agree with the news_macro agent's core assessment. It provided the critical missing context that my original analysis lacked. Specifically, I agree that: 1) The company delivered a 'beat and raise' quarter, which clarifies the performance vs. expectations. 2) The sharp stock decline (~15%) was a reaction to valuation concerns and a risk-off environment, not a fundamental miss. 3) The wave of analyst price target cuts confirms this valuation-driven sentiment shift. This information directly addresses the primary gaps in my initial view.",
+            "market_technical": "I agree with the market_technical agent's data points that the stock is in a 'Severe Long-Term Bearish Trend' and that the recent positive price action occurred on 'Weak Conviction in Rally' (low volume). This supports the news_macro agent's narrative of a valuation re-rating and suggests the recent bounce is not a sustainable reversal."
+          },
+          "disagreement": {
+            "news_macro": "I have no significant disagreements with the news_macro agent's evidence; it was crucial for updating my view.",
+            "market_technical": "I disagree with the market_technical agent's interpretation and resulting 'Short-term Bullish' stance. While the agent correctly identified a single-day positive abnormal return, calling it a 'Strong Bullish Price Catalyst' is misleading. When placed in the context provided by the news_macro agent (a ~15% sell-off post-earnings), this single day appears to be a minor relief rally or 'dead cat bounce' rather than a meaningful bullish signal. The broader, more powerful signal was the initial, large negative reaction to the earnings report."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Neutral",
+          "revised_confidence": 0.7,
+          "evidence_needed": [
+            "While the news agent clarified the market's reaction, my core fundamental concern about the sharp sequential decline in operating and free cash flow remains. The key piece of missing evidence is management's specific explanation for this deterioration from the earnings call transcript. Was it due to one-time events, a change in billing cycles, or a structural increase in cash burn?"
+          ]
+        },
+        {
+          "response_type": "revision",
+          "agreement": {
+            "agent_name": [
+              "news_macro",
+              "fundamental"
+            ],
+            "rationale": "I agree with the core evidence from both other agents. The `news_macro` agent's report of a ~15% post-earnings stock decline and widespread analyst price target cuts is a powerful, overriding signal. This is corroborated by the `fundamental` agent's data showing that despite revenue growth, the company experienced widening operating losses and a sharp sequential decline in operating and free cash flow. Together, this evidence explains the severe negative market reaction and aligns with my existing long-term bearish technical view."
+          },
+          "disagreement": {
+            "agent_name": "market_technical",
+            "rationale": "I must retract my own initial key signal of a 'Strong Bullish Price Catalyst' based on a +3.98% abnormal return. The `news_macro` agent's evidence of a subsequent ~15% drop shows my initial data was either incomplete, premature, or captured a fleeting pre-market move that was quickly overwhelmed. The true earnings reaction was profoundly bearish, not bullish. Consequently, my secondary signal of a 'Nascent Bullish Momentum Shift' from the MACD crossover is now considered low-weight noise in the face of such a significant, fundamentally-driven price shock."
+          },
+          "revised_short_term_stance": "Bearish",
+          "revised_long_term_stance": "Bearish",
+          "revised_confidence": 0.8,
+          "revised_confidence_rationale": "Confidence is now high because the previously conflicting signals have been resolved. The market's severe negative reaction (news), deteriorating profitability and cash flow (fundamentals), and the pre-existing long-term downtrend (technicals) are now all aligned. The bearish case is coherent across all three analytical perspectives, removing the ambiguity that tempered the original view.",
+          "evidence_needed": [
+            "Confirmation of the post-earnings price drop (~15%) with updated daily price and volume data to analyze the technical damage.",
+            "The earnings call transcript, as noted by the fundamental agent, to understand management's explanation for the sharp decline in cash flow and determine if it's a one-time issue or a new structural trend."
+          ]
+        }
+      ]
     },
-    "reason_for_final_decision": "The deterministic guardrail recommended a Bearish/Bearish stance, and I am upholding this decision as it is strongly supported by the evidence. All three agents point towards caution. The 'news_macro' agent highlights the market's clear rejection of the stock's valuation. The 'market_technical' agent confirms a broken long-term trend and a weak short-term bounce. Most critically, the 'fundamental' agent raises red flags about deteriorating profitability and cash flow, which undermines the entire growth thesis. The confluence of negative market sentiment, a weak technical picture, and declining fundamental quality justifies a bearish stance on both time horizons. The prudent action is to avoid the stock until there is clear evidence of a reversal in both the profitability trend and the long-term price trend.",
+    "routing_profile": {
+      "bucket": "software_cloud",
+      "short": {
+        "news_macro": 0.45,
+        "market_technical": 0.4,
+        "fundamental": 0.15
+      },
+      "long": {
+        "news_macro": 0.4,
+        "fundamental": 0.35,
+        "market_technical": 0.25
+      },
+      "rationale": "Software/cloud reactions are often driven by growth durability, AI monetization narrative, and guidance quality."
+    },
+    "reason_for_final_decision": "I am upholding the deterministic guardrail's Bearish/Bearish conclusion. The debate process was highly effective, resolving initial conflicts and leading to a strong, unified consensus. The `news_macro` agent's context of the severe stock drop was validated by the `fundamental` agent's discovery of deteriorating cash flow and profitability. The `market_technical` agent correctly retracted its initial bullish call, recognizing it was based on a misleading data point. With news, fundamentals, and technicals now aligned in a bearish direction, the evidence is clear and compelling, leaving no reason for an override.",
     "agent_votes": {
       "short": [
         {
           "agent_name": "news_macro",
           "stance": "Bearish",
-          "confidence": 0.7,
-          "weight": 0.35,
-          "contribution": -0.245
-        },
-        {
-          "agent_name": "market_technical",
-          "stance": "Neutral",
           "confidence": 0.8,
           "weight": 0.45,
-          "contribution": 0.0
+          "contribution": -0.36
         },
         {
           "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.2,
-          "contribution": 0.0
+          "stance": "Bearish",
+          "confidence": 0.7,
+          "weight": 0.15,
+          "contribution": -0.105
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": -0.32
         }
       ],
       "long": [
         {
           "agent_name": "news_macro",
+          "stance": "Bearish",
+          "confidence": 0.8,
+          "weight": 0.4,
+          "contribution": -0.32
+        },
+        {
+          "agent_name": "fundamental",
           "stance": "Neutral",
           "confidence": 0.7,
           "weight": 0.35,
@@ -2746,21 +3029,14 @@
           "agent_name": "market_technical",
           "stance": "Bearish",
           "confidence": 0.8,
-          "weight": 0.2,
-          "contribution": -0.16
-        },
-        {
-          "agent_name": "fundamental",
-          "stance": "Neutral",
-          "confidence": 0.3,
-          "weight": 0.45,
-          "contribution": 0.0
+          "weight": 0.25,
+          "contribution": -0.2
         }
       ]
     },
     "scores": {
-      "short": -0.3684,
-      "long": -0.2963
+      "short": -1.0,
+      "long": -0.6797
     },
     "llm_decision_used": true
   }

@@ -207,127 +207,135 @@
     "ticker": "OKTA",
     "company": "Okta",
     "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
-    "long_term_stance": "Neutral",
-    "confidence": 0.65,
-    "confidence_rationale": "Confidence is moderate because strong bullish momentum signals (MACD crossover, RSI > 50) are present, but they are contradicted by weak confirmation (low volume) and contextual headwinds (market underperformance, range-bound regime). This conflict increases uncertainty.",
-    "stance_rationale": "The primary technical conflict is between strong short-term momentum and weak underlying confirmation. While momentum indicators favor a continued move higher, the lack of volume and relative weakness make this rally appear fragile and susceptible to reversal.",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Bearish",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
+    "stance_rationale": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend.",
     "key_signals": [
       {
-        "type": "MACD",
-        "signal": "bullish crossover",
-        "evidence": "A recent bullish crossover is confirmed, with the MACD line (0.105) above the signal line (-0.402) and a positive histogram (0.507), indicating a shift to positive momentum."
+        "type": "Earnings Reaction",
+        "signal": "Bearish Post-Earnings Confirmation",
+        "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
       },
       {
         "type": "Moving Averages",
-        "signal": "bullish short-term trend structure",
-        "evidence": "The price at $77.24 is trading above both the 20-day MA ($73.33) and 50-day MA ($75.62), signaling positive short-to-medium term trend alignment."
+        "signal": "Confirmed Bearish Trend",
+        "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
       },
       {
-        "type": "RSI",
-        "signal": "healthy momentum",
-        "evidence": "RSI is at 55.26, which is in bullish territory (>50) but not yet overbought (<70), suggesting momentum has room to continue."
-      },
-      {
-        "type": "Volume",
-        "signal": "weak conviction",
-        "evidence": "The volume spike ratio of 0.51 indicates that the recent price move is not supported by strong participation, questioning the durability of the rally."
+        "type": "MACD",
+        "signal": "Accelerating Bearish Momentum",
+        "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
       },
       {
         "type": "Relative Strength",
-        "signal": "significant underperformance",
-        "evidence": "The stock is lagging the benchmark (SPY) by -12.23% over the period, indicating it is a market laggard, not a leader."
+        "signal": "Significant Market Underperformance",
+        "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
       },
       {
-        "type": "Market Regime",
-        "signal": "range-bound conditions",
-        "evidence": "The stock is classified in a 'range_bound' regime, suggesting that despite recent gains, it has not yet established a clear directional uptrend."
-      },
-      {
-        "type": "Volatility",
-        "signal": "high risk environment",
-        "evidence": "Annualized volatility of 62.12% is high, implying larger price swings and elevated risk for both upside and downside moves."
-      },
-      {
-        "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 0.21%"
+        "type": "RSI",
+        "signal": "Weak Momentum",
+        "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
       },
       {
         "type": "Drawdown",
-        "signal": "elevated drawdown risk",
-        "evidence": "Current drawdown -12.67%, Max drawdown -28.85%"
+        "signal": "High Downside Risk Realized",
+        "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "Classified Bearish Trend",
+        "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -1.2%"
+      },
+      {
+        "type": "Volume",
+        "signal": "moderate participation",
+        "evidence": "Volume spike ratio 1.19x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 49.51%, Recent 61.86%"
       }
     ],
     "risks": [
-      "The bullish move lacks strong volume confirmation, increasing the risk of a reversal or 'bull trap'.",
-      "Significant underperformance relative to the benchmark (SPY) suggests the stock may be vulnerable during broad market weakness.",
-      "The 'range_bound' regime and high volatility suggest the price could easily revert back to the mean of its trading range, erasing recent gains."
+      "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+      "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
     ],
     "citations": [],
-    "summary": "OKTA shows strong short-term bullish momentum, with price breaking above its 20 and 50-day moving averages and a confirmed MACD crossover. However, this bullishness is tempered by weak volume, significant underperformance against the broader market, and a persistent range-bound market regime. The high volatility environment suggests caution is warranted.",
+    "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
     "raw_packet": {
       "ticker": "OKTA",
       "company": "Okta",
       "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
-      "long_term_stance": "neutral",
-      "confidence": 0.65,
-      "confidence_rationale": "Confidence is moderate because strong bullish momentum signals (MACD crossover, RSI > 50) are present, but they are contradicted by weak confirmation (low volume) and contextual headwinds (market underperformance, range-bound regime). This conflict increases uncertainty.",
+      "short_term_stance": "bearish",
+      "long_term_stance": "bearish",
+      "confidence": 0.9,
+      "confidence_rationale": "Confidence is high due to the strong alignment of multiple bearish signals. The negative post-earnings reaction on high volume provides a powerful confirmation of the pre-existing downtrend shown by moving averages, MACD, and relative strength.",
       "key_signals": [
         {
-          "type": "MACD",
-          "signal": "bullish crossover",
-          "evidence": "A recent bullish crossover is confirmed, with the MACD line (0.105) above the signal line (-0.402) and a positive histogram (0.507), indicating a shift to positive momentum."
+          "type": "Earnings Reaction",
+          "signal": "Bearish Post-Earnings Confirmation",
+          "evidence": "The stock fell -1.08% the day after earnings, representing a -2.6% abnormal underperformance vs. QQQ, on volume 1.61x the recent average, confirming negative market reception."
         },
         {
           "type": "Moving Averages",
-          "signal": "bullish short-term trend structure",
-          "evidence": "The price at $77.24 is trading above both the 20-day MA ($73.33) and 50-day MA ($75.62), signaling positive short-to-medium term trend alignment."
+          "signal": "Confirmed Bearish Trend",
+          "evidence": "The price of $72.52 is significantly below the MA20 ($80.05), MA50 ($85.90), and MA200 ($91.91), indicating a strong downtrend across all timeframes."
         },
         {
-          "type": "RSI",
-          "signal": "healthy momentum",
-          "evidence": "RSI is at 55.26, which is in bullish territory (>50) but not yet overbought (<70), suggesting momentum has room to continue."
-        },
-        {
-          "type": "Volume",
-          "signal": "weak conviction",
-          "evidence": "The volume spike ratio of 0.51 indicates that the recent price move is not supported by strong participation, questioning the durability of the rally."
+          "type": "MACD",
+          "signal": "Accelerating Bearish Momentum",
+          "evidence": "The MACD line (-4.13) is below the signal line (-3.42) and the histogram is negative (-0.72), indicating strengthening downward momentum."
         },
         {
           "type": "Relative Strength",
-          "signal": "significant underperformance",
-          "evidence": "The stock is lagging the benchmark (SPY) by -12.23% over the period, indicating it is a market laggard, not a leader."
+          "signal": "Significant Market Underperformance",
+          "evidence": "The stock has underperformed the SPY benchmark by -34.71% over the analysis period, marking it as a clear laggard."
         },
         {
-          "type": "Market Regime",
-          "signal": "range-bound conditions",
-          "evidence": "The stock is classified in a 'range_bound' regime, suggesting that despite recent gains, it has not yet established a clear directional uptrend."
-        },
-        {
-          "type": "Volatility",
-          "signal": "high risk environment",
-          "evidence": "Annualized volatility of 62.12% is high, implying larger price swings and elevated risk for both upside and downside moves."
-        },
-        {
-          "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 0.21%"
+          "type": "RSI",
+          "signal": "Weak Momentum",
+          "evidence": "The RSI is at 36.65, which is in bearish territory (below 50) and suggests there is still room to move lower before becoming oversold."
         },
         {
           "type": "Drawdown",
-          "signal": "elevated drawdown risk",
-          "evidence": "Current drawdown -12.67%, Max drawdown -28.85%"
+          "signal": "High Downside Risk Realized",
+          "evidence": "The stock is in a significant drawdown of -43.03% from its recent peak, trading near its maximum drawdown level of -45.4%."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "Classified Bearish Trend",
+          "evidence": "The prevailing market regime is algorithmically classified as 'bearish_trend', aligning with the price action and moving averages."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -1.2%"
+        },
+        {
+          "type": "Volume",
+          "signal": "moderate participation",
+          "evidence": "Volume spike ratio 1.19x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 49.51%, Recent 61.86%"
         }
       ],
       "risks": [
-        "The bullish move lacks strong volume confirmation, increasing the risk of a reversal or 'bull trap'.",
-        "Significant underperformance relative to the benchmark (SPY) suggests the stock may be vulnerable during broad market weakness.",
-        "The 'range_bound' regime and high volatility suggest the price could easily revert back to the mean of its trading range, erasing recent gains."
+        "The RSI is approaching oversold levels (<30), which could trigger a short-term counter-trend bounce.",
+        "Elevated recent volatility (61.86%) indicates a high degree of price instability and risk of sharp, unpredictable moves."
       ],
-      "summary": "OKTA shows strong short-term bullish momentum, with price breaking above its 20 and 50-day moving averages and a confirmed MACD crossover. However, this bullishness is tempered by weak volume, significant underperformance against the broader market, and a persistent range-bound market regime. The high volatility environment suggests caution is warranted.",
-      "core_insight": "The primary technical conflict is between strong short-term momentum and weak underlying confirmation. While momentum indicators favor a continued move higher, the lack of volume and relative weakness make this rally appear fragile and susceptible to reversal."
+      "summary": "As of March 3, 2026, OKTA is in a confirmed bearish trend across all timeframes. This downtrend was strongly reinforced by a negative post-earnings reaction characterized by a price drop on high volume and significant underperformance versus its benchmark. All key indicators, including moving averages, RSI, and MACD, point to continued bearish momentum. The stock is a notable market laggard, trading near its maximum drawdown levels, signaling sustained weakness.",
+      "core_insight": "The primary insight is the market's decisive negative reaction to the March 3rd earnings report. This event, validated by high volume and abnormal underperformance, serves as a powerful catalyst that reinforces the established long-term bearish trend, technically-driven trend."
     }
   }
 ]

@@ -4,65 +4,64 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.8,
-  "confidence_rationale": "High confidence is based on the strong alignment of multiple bullish indicators: price significantly above key moving averages, a recent MACD crossover, and significant relative strength. Confidence is tempered slightly from maximum due to the overbought RSI and recent high volatility, suggesting a potential for short-term consolidation or a pullback.",
+  "confidence": 0.75,
+  "confidence_rationale": "Confidence is high due to the alignment of a strong uptrend (Price > MAs), positive momentum (MACD crossover), and a bullish post-earnings abnormal reaction. It is tempered slightly by an overbought RSI and low volume on the price advance, which introduces some risk of short-term consolidation or pullback.",
   "key_signals": [
+    {
+      "type": "Earnings Reaction",
+      "signal": "Bullish Post-Earnings Confirmation",
+      "evidence": "Stock gained 0.82% while benchmark QQQ lost 1.22%, resulting in a strong abnormal positive reaction of +2.03% post-earnings."
+    },
     {
       "type": "Moving Averages",
       "signal": "Strong Bullish Trend Structure",
-      "evidence": "Price at $128.22 is trading significantly above its 20-day ($115.70) and 50-day ($109.31) moving averages, with the MA20 above the MA50, confirming a strong uptrend."
+      "evidence": "The price at $109.40 is significantly above its 20-day ($96.95), 50-day ($89.80), and 200-day ($93.83) moving averages, indicating a strong, established uptrend."
     },
     {
       "type": "MACD",
       "signal": "Accelerating Bullish Momentum",
-      "evidence": "A recent bullish crossover is confirmed, with the MACD line (4.73) well above the signal line (3.68) and a positive, expanding histogram (1.05)."
+      "evidence": "A bullish crossover is active with the MACD line (5.14) above the signal line (3.82) and a positive histogram (1.33), indicating strengthening upward momentum."
     },
     {
       "type": "Relative Strength",
-      "signal": "Significant Market Outperformance",
-      "evidence": "The stock has outperformed the SPY benchmark by 39.07% over the analysis period, indicating strong leadership."
+      "signal": "Market Outperformance",
+      "evidence": "IRM has outperformed the SPY benchmark by 7.93% over the analysis window, demonstrating market leadership."
     },
     {
       "type": "RSI",
       "signal": "Overbought Condition",
-      "evidence": "The RSI of 76.3 is above the 70 threshold, signaling the recent rally may be overextended and increasing the odds of a near-term pullback."
-    },
-    {
-      "type": "Price Action",
-      "signal": "New Highs",
-      "evidence": "The stock is trading at a recent peak, with a current drawdown of 0.0%, indicating strong upward price pressure."
-    },
-    {
-      "type": "Market Regime",
-      "signal": "Confirmed Bull Trend",
-      "evidence": "The underlying market regime is classified as 'bullish_trend'."
+      "evidence": "The RSI is at 73.27, which is above the 70 threshold, suggesting the recent price move is extended and may be prone to a pause."
     },
     {
       "type": "Volume",
-      "signal": "Volume Confirmation Followed by Easing",
-      "evidence": "A massive volume spike (5.04M shares) confirmed a major price breakout recently, although subsequent advances have been on lower volume (latest 1.49M)."
+      "signal": "Weak Volume Confirmation",
+      "evidence": "The post-earnings reaction volume was low (0.62x average), and recent volume spikes are below average (0.69x), suggesting a lack of strong conviction behind the latest price surge."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "Trading at New Highs",
+      "evidence": "Current drawdown is 0.0%, indicating the stock is at its peak price for the period and is not currently in a pullback."
     },
     {
       "type": "Returns",
       "signal": "positive short-term momentum",
-      "evidence": "Mean of recent returns: 0.67%"
+      "evidence": "Mean of recent returns: 2.21%"
     },
     {
       "type": "Volatility",
       "signal": "moderate volatility",
-      "evidence": "Annualized volatility 39.22%, Recent 41.68%"
+      "evidence": "Annualized volatility 33.17%, Recent 42.63%"
     },
     {
-      "type": "Drawdown",
-      "signal": "contained drawdown",
-      "evidence": "Current drawdown 0.0%, Max drawdown -13.11%"
+      "type": "Market Regime",
+      "signal": "bullish_trend",
+      "evidence": "Regime classification: bullish_trend"
     }
   ],
   "risks": [
-    "The primary risk is a short-term price correction or consolidation due to the deeply overbought RSI (76.3).",
-    "Price is extended 10.8% above its 20-day moving average, which is an unsustainable gap that may mean-revert.",
-    "Recent elevated volatility (41.7%) suggests increased price instability and potential for sharp swings in either direction."
+    "Overbought conditions (RSI at 73.27) may lead to a short-term pullback or consolidation, as the asset is trading at the upper end of its recent momentum range.",
+    "The recent price advance, including the post-earnings move, has occurred on below-average volume, which can sometimes indicate a lack of strong institutional conviction and raises questions about the rally's sustainability."
   ],
-  "summary": "Iron Mountain (IRM) is in a powerful, confirmed uptrend, characterized by strong price momentum, bullishly aligned moving averages, and significant outperformance versus the broader market. While all primary trend and momentum signals are bullish, the rally has pushed the stock into a deeply overbought condition (RSI > 76), which, combined with elevated recent volatility, signals a high probability of a short-term pullback or consolidation.",
-  "core_insight": "The dominant technical feature is the conflict between extremely strong bullish momentum and a severely overbought condition. While the underlying trend is firmly positive, the stock is vulnerable to a near-term retracement before a potential resumption of the uptrend."
+  "summary": "As of 2026-02-20, IRM displays a robust bullish technical posture. It is in a strong, well-defined uptrend, with accelerating momentum and clear outperformance against the market. A key confirming factor is the positive abnormal return following its earnings report, which occurred despite weakness in the broader market. The primary notes of caution are the overbought RSI and weak volume accompanying the recent rally.",
+  "core_insight": "The most critical factor is the bullish post-earnings confirmation. The stock's ability to post a strong abnormal gain (+2.03% vs. QQQ) immediately following its earnings report, even as the broader market declined, serves as powerful confirmation of the existing bullish trend and signals strong investor confidence."
 }
