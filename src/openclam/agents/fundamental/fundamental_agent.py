@@ -314,6 +314,7 @@ def safe_get_statement_value(
 def get_clean_statement(
     statement: pd.DataFrame | None,
     required_rows: Sequence[str] | None = None,
+    as_of_date: Any | None = None,
 ) -> pd.DataFrame | None:
     if statement is None or statement.empty:
         return None
@@ -323,6 +324,21 @@ def get_clean_statement(
         cleaned = cleaned.loc[:, sorted(cleaned.columns, key=lambda col: pd.Timestamp(col), reverse=True)]
     except Exception:
         pass
+
+    if as_of_date is not None:
+        try:
+            cutoff = pd.Timestamp(as_of_date).normalize()
+            eligible_cols = []
+            for col in cleaned.columns:
+                try:
+                    col_ts = pd.Timestamp(col).normalize()
+                except Exception:
+                    continue
+                if col_ts <= cutoff:
+                    eligible_cols.append(col)
+            cleaned = cleaned.loc[:, eligible_cols]
+        except Exception:
+            pass
 
     if required_rows is None:
         return cleaned.dropna(axis=1, how="all")
@@ -424,6 +440,7 @@ def get_yfinance_fundamental_input(
     transcript_year: int | None = None,
     transcript_quarter: int | None = None,
     require_transcript: bool = False,
+    as_of_date: str | None = None,
 ) -> FundamentalInput:
     """
     Build a FundamentalInput object automatically from yfinance data.
@@ -452,12 +469,14 @@ def get_yfinance_fundamental_input(
     income_stmt = get_clean_statement(
         stock.quarterly_income_stmt,
         required_rows=["Total Revenue", "Gross Profit", "Operating Income", "Net Income"],
+        as_of_date=as_of_date,
     )
     cashflow = get_clean_statement(
         stock.quarterly_cashflow,
         required_rows=["Operating Cash Flow", "Free Cash Flow"],
+        as_of_date=as_of_date,
     )
-    balance_sheet = get_clean_statement(stock.quarterly_balance_sheet)
+    balance_sheet = get_clean_statement(stock.quarterly_balance_sheet, as_of_date=as_of_date)
 
     revenue = safe_get_statement_value(income_stmt, "Total Revenue", 0)
     revenue_prior = safe_get_statement_value(income_stmt, "Total Revenue", 1)
@@ -474,12 +493,26 @@ def get_yfinance_fundamental_input(
     total_debt = safe_get_statement_value(balance_sheet, "Total Debt", 0)
     cash = safe_get_statement_value(balance_sheet, "Cash And Cash Equivalents", 0)
 
-    market_cap = _safe_float(info.get("marketCap"))
-    trailing_pe = _safe_float(info.get("trailingPE"))
-    forward_pe = _safe_float(info.get("forwardPE"))
-    profit_margins = _safe_float(info.get("profitMargins"))
-    revenue_growth = _safe_float(info.get("revenueGrowth"))
-    earnings_growth = _safe_float(info.get("earningsGrowth"))
+    historical_backtest = as_of_date is not None
+    if historical_backtest:
+        market_cap = None
+        trailing_pe = None
+        forward_pe = None
+        profit_margins = None
+        revenue_growth = None
+        earnings_growth = None
+        info_snapshot_note = (
+            "Point-in-time valuation and growth snapshot fields from yfinance info were omitted "
+            "to avoid forward-looking leakage in historical evaluation."
+        )
+    else:
+        market_cap = _safe_float(info.get("marketCap"))
+        trailing_pe = _safe_float(info.get("trailingPE"))
+        forward_pe = _safe_float(info.get("forwardPE"))
+        profit_margins = _safe_float(info.get("profitMargins"))
+        revenue_growth = _safe_float(info.get("revenueGrowth"))
+        earnings_growth = _safe_float(info.get("earningsGrowth"))
+        info_snapshot_note = "Using current yfinance info snapshot fields."
 
     latest_quarter = _format_statement_period(income_stmt)
 
@@ -534,6 +567,7 @@ def get_yfinance_fundamental_input(
     Profit Margin: {profit_margins}
     Revenue Growth from yfinance: {revenue_growth}
     Earnings Growth from yfinance: {earnings_growth}
+    Info Snapshot Note: {info_snapshot_note}
 
     Do not describe QoQ changes as YoY unless the field explicitly says YoY.
     """
@@ -740,6 +774,7 @@ def run_fundamental_analysis(
     transcript_year: int | None = None,
     transcript_quarter: int | None = None,
     require_transcript: bool = False,
+    as_of_date: str | None = None,
     agent: FundamentalAgent | None = None,
     api_key: str | None = None,
     model_name: str = "gpt-4o-mini",
@@ -755,6 +790,7 @@ def run_fundamental_analysis(
         transcript_year=transcript_year,
         transcript_quarter=transcript_quarter,
         require_transcript=require_transcript,
+        as_of_date=as_of_date,
     )
     return analyze_fundamental_input(
         data,
@@ -771,6 +807,7 @@ def run_fundamental_workflow(
     transcript_year: int | None = None,
     transcript_quarter: int | None = None,
     require_transcript: bool = False,
+    as_of_date: str | None = None,
     agent: FundamentalAgent | None = None,
     api_key: str | None = None,
     model_name: str = "gpt-4o-mini",
@@ -786,6 +823,7 @@ def run_fundamental_workflow(
         transcript_year=transcript_year,
         transcript_quarter=transcript_quarter,
         require_transcript=require_transcript,
+        as_of_date=as_of_date,
     )
     result = analyze_fundamental_input(
         data,
@@ -801,8 +839,299 @@ def run_fundamental_workflow(
     )
 
 
+def mag7_q4_2025_earnings_df():
+    """Return the shared Mag 7 Q4 2025 earnings case study used in other notebooks."""
+    from openclam.agents.news_macro.news_macro_agent import mag7_q4_2025_earnings_df as _source
+
+    return _source()
+
+
+def build_earnings_price_eval(
+    earnings_df=None,
+    pre_trading_days: int = 7,
+    post_trading_days: int = 7,
+    long_post_trading_days: int = 30,
+    benchmarks: tuple[str, ...] = ("SPY", "QQQ"),
+    price_anchor: str = "event_close",
+):
+    """Reuse the shared event-window pricing helper for the fundamental notebook."""
+    from openclam.agents.news_macro.news_macro_agent import build_earnings_price_eval as _source
+
+    return _source(
+        earnings_df=earnings_df,
+        pre_trading_days=pre_trading_days,
+        post_trading_days=post_trading_days,
+        long_post_trading_days=long_post_trading_days,
+        benchmarks=benchmarks,
+        price_anchor=price_anchor,
+    )
+
+
+def _normalize_eval_stance(stance: str | None) -> str:
+    stance_text = str(stance or "").strip().lower()
+    if stance_text == "bullish":
+        return "Bullish"
+    if stance_text == "bearish":
+        return "Bearish"
+    if stance_text in {"neutral", "watch"}:
+        return "Neutral"
+    return "Neutral"
+
+
+def _infer_short_term_stance(report: FundamentalOutput) -> str:
+    """Infer an event-driven stance from guidance, tone, and surprise fields."""
+    score = 0
+
+    guidance = str(report.guidance_change or "").strip().lower()
+    if guidance == "raise":
+        score += 2
+    elif guidance == "cut":
+        score -= 2
+
+    beat = str(report.beat_or_miss or "").strip().lower()
+    if beat == "beat":
+        score += 1
+    elif beat == "miss":
+        score -= 1
+
+    tone = str(report.management_tone or "").strip().lower()
+    if any(token in tone for token in ("optimistic", "positive", "constructive", "confident", "bullish")):
+        score += 1
+    elif any(token in tone for token in ("cautious", "negative", "weak", "concern", "bearish")):
+        score -= 1
+
+    thesis_impact = str(report.thesis_impact or "").strip().lower()
+    if thesis_impact == "strengthened":
+        score += 1
+    elif thesis_impact == "weakened":
+        score -= 1
+
+    long_stance = _normalize_eval_stance(report.stance)
+    if long_stance == "Bullish":
+        score += 1
+    elif long_stance == "Bearish":
+        score -= 1
+
+    signal_balance = len(report.positive_signals or []) - len(report.negative_signals or [])
+    if signal_balance >= 2:
+        score += 1
+    elif signal_balance <= -2:
+        score -= 1
+
+    if score >= 2:
+        return "Bullish"
+    if score <= -2:
+        return "Bearish"
+    return "Neutral"
+
+
+def _stance_to_direction(stance: str | None) -> str | None:
+    normalized = _normalize_eval_stance(stance)
+    if normalized == "Bullish":
+        return "up"
+    if normalized == "Bearish":
+        return "down"
+    return None
+
+
+def _direction_match(
+    predicted_direction: str | None,
+    realized_direction: str | None,
+    abnormal_return: Any,
+    pd_module,
+    neutral_band: float = 0.02,
+):
+    if predicted_direction is None or realized_direction is None:
+        return None
+    if pd_module.isna(abnormal_return):
+        return None
+    if abs(abnormal_return) < neutral_band:
+        return None
+    actual_direction = "up" if abnormal_return > 0 else "down"
+    return predicted_direction == actual_direction
+
+
+def _direction_match_reason(
+    predicted_direction: str | None,
+    realized_direction: str | None,
+    abnormal_return: Any,
+    pd_module,
+    neutral_band: float = 0.02,
+) -> str:
+    if predicted_direction is None or realized_direction is None:
+        return "prediction or realization missing"
+    if pd_module.isna(abnormal_return):
+        return "abnormal return not available"
+    if abs(abnormal_return) < neutral_band:
+        return f"moved within neutral band ({neutral_band * 100:.1f}%)"
+    actual_direction = "up" if abnormal_return > 0 else "down"
+    if predicted_direction == actual_direction:
+        return f"correctly predicted {actual_direction} move ({abnormal_return * 100:.2f}%)"
+    return f"predicted {predicted_direction} but realized {actual_direction} ({abnormal_return * 100:.2f}%)"
+
+
+def run_agent_event_window_eval(
+    summary_df,
+    transcript_year: int | None = 2025,
+    transcript_quarter: int | None = 4,
+    require_transcript: bool = False,
+    agent: FundamentalAgent | None = None,
+    api_key: str | None = None,
+    model_name: str = "gpt-4o-mini",
+    temperature: float = 0.2,
+    client: Any | None = None,
+    neutral_band: float = 0.02,
+    long_post_trading_days: int | None = None,
+):
+    """Run the fundamental agent on an earnings event set and score both horizons."""
+    if summary_df is None or summary_df.empty:
+        return pd.DataFrame(), {}
+
+    if long_post_trading_days is None:
+        if "long_horizon_trading_days" in summary_df.columns and not summary_df["long_horizon_trading_days"].dropna().empty:
+            long_post_trading_days = int(summary_df["long_horizon_trading_days"].dropna().iloc[0])
+        else:
+            long_post_trading_days = 30
+
+    long_return_col = f"post_{long_post_trading_days}d_return"
+    long_abnormal_col = f"abnormal_{long_post_trading_days}d_vs_qqq"
+    long_direction_col = f"realized_{long_post_trading_days}d_direction_vs_qqq"
+    required = [
+        "ticker",
+        "company",
+        "earnings_date",
+        "post_7d_return",
+        "abnormal_vs_qqq",
+        "realized_direction_vs_qqq",
+        long_return_col,
+        long_abnormal_col,
+        long_direction_col,
+    ]
+    agent_eval = summary_df[[column for column in required if column in summary_df.columns]].copy()
+
+    agent_eval["news_context_ready"] = agent_eval["earnings_date"].notna()
+    agent_eval["report_ready"] = False
+    agent_eval["agent_short_term_stance"] = None
+    agent_eval["agent_long_term_stance"] = None
+    agent_eval["agent_stance"] = None
+    agent_eval["agent_confidence"] = None
+    agent_eval["agent_guidance_change"] = None
+    agent_eval["agent_management_tone"] = None
+    agent_eval["agent_thesis_impact"] = None
+    agent_eval["agent_beat_or_miss"] = None
+    agent_eval["confidence_rationale"] = None
+    agent_eval["stance_rationale"] = None
+    agent_eval["short_direction_match"] = None
+    agent_eval["short_direction_match_reason"] = None
+    agent_eval["long_direction_match"] = None
+    agent_eval["long_direction_match_reason"] = None
+    agent_eval["direction_match"] = None
+    agent_eval["direction_match_reason"] = None
+    agent_reports: dict[str, FundamentalOutput] = {}
+
+    active_agent = agent or create_fundamental_agent(
+        api_key=api_key,
+        model_name=model_name,
+        temperature=temperature,
+        client=client,
+    )
+
+    for idx, row in agent_eval.iterrows():
+        if not row["news_context_ready"]:
+            agent_eval.loc[idx, "short_direction_match_reason"] = "missing earnings date"
+            agent_eval.loc[idx, "long_direction_match_reason"] = "missing earnings date"
+            agent_eval.loc[idx, "direction_match_reason"] = "missing earnings date"
+            continue
+
+        ticker = str(row["ticker"]).upper()
+        try:
+            report = run_fundamental_analysis(
+                ticker=ticker,
+                transcript_year=transcript_year,
+                transcript_quarter=transcript_quarter,
+                require_transcript=require_transcript,
+                as_of_date=str(row["earnings_date"]),
+                agent=active_agent,
+            )
+            agent_reports[ticker] = report
+
+            short_term_stance = _infer_short_term_stance(report)
+            long_term_stance = _normalize_eval_stance(report.stance)
+            short_predicted = _stance_to_direction(short_term_stance)
+            long_predicted = _stance_to_direction(long_term_stance)
+
+            short_realized = row.get("realized_direction_vs_qqq")
+            long_realized = row.get(long_direction_col)
+            short_abnormal = row.get("abnormal_vs_qqq")
+            long_abnormal = row.get(long_abnormal_col)
+
+            agent_eval.loc[idx, "report_ready"] = True
+            agent_eval.loc[idx, "agent_short_term_stance"] = short_term_stance
+            agent_eval.loc[idx, "agent_long_term_stance"] = long_term_stance
+            agent_eval.loc[idx, "agent_stance"] = f"ST: {short_term_stance}; LT: {long_term_stance}"
+            agent_eval.loc[idx, "agent_confidence"] = report.confidence
+            agent_eval.loc[idx, "agent_guidance_change"] = report.guidance_change
+            agent_eval.loc[idx, "agent_management_tone"] = report.management_tone
+            agent_eval.loc[idx, "agent_thesis_impact"] = report.thesis_impact
+            agent_eval.loc[idx, "agent_beat_or_miss"] = report.beat_or_miss
+            agent_eval.loc[idx, "confidence_rationale"] = report.confidence_reasoning
+            agent_eval.loc[idx, "stance_rationale"] = report.core_judgment or report.thesis_impact_reasoning
+
+            short_match = _direction_match(short_predicted, short_realized, short_abnormal, pd, neutral_band)
+            long_match = _direction_match(long_predicted, long_realized, long_abnormal, pd, neutral_band)
+            short_reason = _direction_match_reason(short_predicted, short_realized, short_abnormal, pd, neutral_band)
+            long_reason = _direction_match_reason(long_predicted, long_realized, long_abnormal, pd, neutral_band)
+
+            agent_eval.loc[idx, "short_direction_match"] = short_match
+            agent_eval.loc[idx, "short_direction_match_reason"] = short_reason
+            agent_eval.loc[idx, "long_direction_match"] = long_match
+            agent_eval.loc[idx, "long_direction_match_reason"] = long_reason
+            agent_eval.loc[idx, "direction_match"] = short_match
+            agent_eval.loc[idx, "direction_match_reason"] = short_reason
+        except Exception as exc:
+            error_text = f"agent error: {exc}"
+            agent_eval.loc[idx, "confidence_rationale"] = error_text
+            agent_eval.loc[idx, "short_direction_match_reason"] = error_text
+            agent_eval.loc[idx, "long_direction_match_reason"] = error_text
+            agent_eval.loc[idx, "direction_match_reason"] = error_text
+
+    return agent_eval, agent_reports
+
+
+def summarize_eval_results(agent_eval):
+    """Summarize short/long stance evaluation into presentation-friendly metrics."""
+
+    def _metric(prefix: str) -> dict[str, Any]:
+        match_col = f"{prefix}_direction_match"
+        reason_col = f"{prefix}_direction_match_reason"
+        stance_col = f"agent_{prefix}_term_stance"
+        evaluable = agent_eval[agent_eval[match_col].notna()] if match_col in agent_eval else pd.DataFrame()
+        matched = int((evaluable[match_col] == True).sum()) if not evaluable.empty else 0
+        total = int(len(evaluable))
+        neutral_rate = None
+        if stance_col in agent_eval:
+            neutral_rate = float((agent_eval[stance_col] == "Neutral").mean())
+        reason_counts = agent_eval[reason_col].value_counts(dropna=False).to_dict() if reason_col in agent_eval else {}
+        return {
+            f"{prefix}_evaluable_cases": total,
+            f"{prefix}_matched_cases": matched,
+            f"{prefix}_missed_cases": total - matched,
+            f"{prefix}_accuracy": matched / total if total else None,
+            f"{prefix}_neutral_rate": neutral_rate,
+            f"{prefix}_not_evaluable_cases": int(agent_eval[match_col].isna().sum()) if match_col in agent_eval else None,
+            f"{prefix}_reason_counts": reason_counts,
+        }
+
+    return {
+        "cases": int(len(agent_eval)),
+        **_metric("short"),
+        **_metric("long"),
+    }
+
+
 __all__ = [
     "analyze_fundamental_input",
+    "build_earnings_price_eval",
     "create_fundamental_agent",
     "FUNDAMENTAL_SYSTEM_PROMPT",
     "FinancialMetric",
@@ -810,6 +1139,8 @@ __all__ = [
     "FundamentalInput",
     "FundamentalOutput",
     "FundamentalWorkflowResult",
+    "mag7_q4_2025_earnings_df",
+    "run_agent_event_window_eval",
     "build_fundamental_prompt",
     "extract_guidance_text",
     "get_clean_statement",
@@ -818,4 +1149,5 @@ __all__ = [
     "run_fundamental_analysis",
     "run_fundamental_workflow",
     "safe_get_statement_value",
+    "summarize_eval_results",
 ]
