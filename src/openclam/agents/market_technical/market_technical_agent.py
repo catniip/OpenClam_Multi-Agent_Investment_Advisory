@@ -275,7 +275,7 @@ def compute_volatility(
 
 def compute_relative_strength(
 	ticker: str,
-	benchmark: str = "SPY",
+	benchmark: str = "QQQ",
 	start: str = None,
 	end: str = None,
 	period: str = None,
@@ -469,7 +469,7 @@ def compute_all_indicators(ticker: str, start: str = None, end: str = None, peri
 		"macd": _safe_compute(lambda: compute_macd(ticker, start, end, period), default={}),
 		"drawdown": _safe_compute(lambda: compute_drawdown(ticker, start, end, period), default={}),
 		"relative_strength": _safe_compute(
-			lambda: compute_relative_strength(ticker, "SPY", start, end, period), default={}
+			lambda: compute_relative_strength(ticker, "QQQ", start, end, period), default={}
 		),
 		"market_regime": _safe_compute(lambda: classify_market_regime(ticker, start, end, period), default={}),
 	}
@@ -596,7 +596,7 @@ def build_key_signals(indicators: dict):
 			{
 				"type": "Relative Strength",
 				"signal": rs_signal,
-				"evidence": f"Relative return vs {rs.get('benchmark', 'SPY')}: {_fmt_num(rel * 100, 2)}%",
+				"evidence": f"Relative return vs {rs.get('benchmark', 'QQQ')}: {_fmt_num(rel * 100, 2)}%",
 			}
 		)
 
@@ -1147,10 +1147,10 @@ def run_agent_event_window_eval(
 			
 			short_predicted = _stance_to_direction(short_term_stance)
 			long_predicted = _stance_to_direction(long_term_stance)
-			
+
 			short_realized = row.get("realized_direction_vs_qqq")
 			long_realized = row.get(long_direction_col)
-			
+
 			short_abnormal = row.get("abnormal_vs_qqq", np.nan)
 			long_abnormal = row.get(long_abnormal_col, np.nan)
 
@@ -1161,12 +1161,34 @@ def run_agent_event_window_eval(
 			agent_eval.loc[idx, "agent_confidence"] = confidence_score
 			agent_eval.loc[idx, "confidence_rationale"] = agent_report.get("confidence_rationale", "")
 			agent_eval.loc[idx, "stance_rationale"] = agent_report.get("summary", "")
-			
-			short_match = _direction_match(short_predicted, short_realized, short_abnormal, pd, neutral_band)
-			long_match = _direction_match(long_predicted, long_realized, long_abnormal, pd, neutral_band)
-			
-			short_reason = _direction_match_reason(short_predicted, short_realized, short_abnormal, pd, neutral_band)
-			long_reason = _direction_match_reason(long_predicted, long_realized, long_abnormal, pd, neutral_band)
+
+			# Treat an explicit 'neutral' stance as a valid prediction of "no meaningful abnormal move".
+			# If the agent predicted 'neutral' and the abnormal return is within the neutral_band,
+			# count that as a correct match. Otherwise fall back to the standard directional match logic.
+			def _compute_match_and_reason(pred_stance, pred_dir, realized_dir, abnormal):
+				# If agent explicitly predicted neutral
+				if isinstance(pred_stance, str) and pred_stance.lower().strip() == 'neutral':
+					if pd.isna(abnormal):
+						return None, 'abnormal return not available'
+					if abs(abnormal) < neutral_band:
+						return True, f"predicted neutral and moved within neutral band ({neutral_band*100:.1f}%)"
+					else:
+						actual_dir = 'up' if abnormal > 0 else 'down'
+						return False, f"predicted neutral but realized {actual_dir} ({abnormal*100:.2f}%)"
+
+				# If abnormal is within neutral band but agent predicted bullish/bearish,
+				# treat as evaluable and incorrect (False).
+				if not pd.isna(abnormal) and abs(abnormal) < neutral_band:
+					return False, f"moved within neutral band ({neutral_band*100:.1f}%)"
+
+				# Otherwise use directional match helpers
+				match = _direction_match(pred_dir, realized_dir, abnormal, pd, neutral_band)
+				reason = _direction_match_reason(pred_dir, realized_dir, abnormal, pd, neutral_band)
+				# If helper returned None for match (e.g., missing data), keep it None
+				return match, reason
+
+			short_match, short_reason = _compute_match_and_reason(short_term_stance, short_predicted, short_realized, short_abnormal)
+			long_match, long_reason = _compute_match_and_reason(long_term_stance, long_predicted, long_realized, long_abnormal)
 
 			agent_eval.loc[idx, "short_direction_match"] = short_match
 			agent_eval.loc[idx, "short_direction_match_reason"] = short_reason
