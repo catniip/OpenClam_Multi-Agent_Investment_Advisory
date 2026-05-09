@@ -531,7 +531,7 @@ def main() -> None:
     st.set_page_config(page_title="OpenClam CIO Demo", layout="wide")
     inject_ui_styles()
     st.title("OpenClam Multi-Agent Investment Advisory")
-    st.caption("Cached agent-output viewer and single-ticker runner")
+    st.caption("This research demo is for educational use only and does not constitute investment advice.")
 
     with st.sidebar:
         st.header("Demo Panel")
