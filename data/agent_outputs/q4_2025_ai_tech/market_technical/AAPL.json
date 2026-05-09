@@ -2,61 +2,67 @@
   "ticker": "AAPL",
   "company": "Apple",
   "agent_name": "Market & Technical Analysis Agent",
-  "short_term_stance": "bullish",
+  "short_term_stance": "neutral",
   "long_term_stance": "bullish",
-  "confidence": 0.75,
-  "confidence_rationale": "Confidence is high due to the alignment of trend (Price > MA50/MA20) and momentum (RSI > 60, MACD crossover) indicators. However, it is tempered by weak volume participation on recent moves and significant underperformance against the SPY benchmark, which questions the trend's conviction.",
+  "confidence": 0.65,
+  "confidence_rationale": "Confidence is moderate due to significant conflicting signals. A bullish long-term trend and a positive post-earnings catalyst are at odds with a bearish medium-term trend, weak momentum (RSI < 50), and persistent underperformance relative to the QQQ benchmark.",
   "key_signals": [
     {
+      "type": "Earnings Reaction",
+      "signal": "Strong Positive Abnormal Reaction",
+      "evidence": "Stock rose 0.46% on the day after earnings while the benchmark QQQ fell 1.20%, resulting in a +1.67% abnormal return on very high volume (1.78x average), indicating strong buyer conviction."
+    },
+    {
       "type": "Moving Averages",
-      "signal": "bullish trend alignment",
-      "evidence": "Price at 276.83 is trading above both its 20-day ($267.26) and 50-day ($261.46) moving averages, indicating a well-defined uptrend."
+      "signal": "Conflicting Trend Structure",
+      "evidence": "The price at $258.04 is above its long-term MA200 ($235.87) supporting a long-term uptrend, but below its medium-term MA50 ($268.20), indicating short-term weakness."
     },
     {
       "type": "MACD",
-      "signal": "bullish crossover",
-      "evidence": "A recent bullish crossover is in effect, with the MACD line (4.44) above the signal line (3.50) and a positive histogram, confirming upward momentum."
+      "signal": "Bullish Momentum Crossover",
+      "evidence": "The MACD line (-4.08) has crossed above its signal line (-4.73), with a positive histogram (0.65), signaling a potential bottoming of bearish momentum."
     },
     {
       "type": "RSI",
-      "signal": "strong bullish momentum",
-      "evidence": "RSI at 62.01 is in bullish territory (>50) and is not yet overbought (<70), suggesting momentum has room to continue."
-    },
-    {
-      "type": "Market Regime",
-      "signal": "bullish_trend",
-      "evidence": "The stock is classified in a 'bullish_trend' regime, providing a supportive broader context for the current price action."
+      "signal": "Weak Momentum",
+      "evidence": "The RSI is at 46.32, below the neutral 50 level, which indicates that selling pressure has recently been stronger than buying pressure."
     },
     {
       "type": "Relative Strength",
-      "signal": "underperforming benchmark",
-      "evidence": "The stock has underperformed the SPY benchmark by -5.82% over the measurement period, indicating it is a market laggard despite its own uptrend."
+      "signal": "Significant Underperformance",
+      "evidence": "The stock has underperformed the QQQ benchmark by -13.07% over the analysis period, indicating it has been a laggard."
     },
     {
-      "type": "Volume",
-      "signal": "weak participation",
-      "evidence": "The volume spike ratio is 0.97, below 1, indicating that recent price moves are not supported by a significant increase in trading volume, a sign of weak conviction."
+      "type": "Market Regime",
+      "signal": "Range-Bound Conditions",
+      "evidence": "The current market regime is classified as 'range_bound', consistent with the price being caught between key moving averages and showing conflicting signals."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "In Correction Territory",
+      "evidence": "The stock is currently 9.75% below its recent peak, indicating it is in a short-term correction within a longer-term uptrend."
     },
     {
       "type": "Returns",
-      "signal": "positive short-term momentum",
-      "evidence": "Mean of recent returns: 0.15%"
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.05%"
+    },
+    {
+      "type": "Volume",
+      "signal": "moderate participation",
+      "evidence": "Volume spike ratio 1.38x"
     },
     {
       "type": "Volatility",
       "signal": "moderate volatility",
-      "evidence": "Annualized volatility 25.51%, Recent 26.73%"
-    },
-    {
-      "type": "Drawdown",
-      "signal": "contained drawdown",
-      "evidence": "Current drawdown -1.18%, Max drawdown -11.24%"
+      "evidence": "Annualized volatility 31.83%, Recent 20.0%"
     }
   ],
   "risks": [
-    "Relative underperformance compared to the broader market (SPY) may indicate lagging strength or that capital is flowing to better-performing assets.",
-    "Recent price appreciation is not supported by high volume, suggesting a lack of strong conviction that could make the trend vulnerable to a reversal."
+    "The positive post-earnings momentum could fade if the price fails to break and hold above the 50-day moving average, which is acting as resistance.",
+    "The recent bullish MACD crossover could prove to be a whipsaw if buying pressure does not follow through, leading to a resumption of the short-term downtrend.",
+    "Continued underperformance relative to the QQQ benchmark could make the stock less attractive to momentum-focused investors, even if it trends higher."
   ],
-  "summary": "AAPL exhibits a clear short-term bullish posture, with price trading above key moving averages and momentum indicators like RSI and MACD signaling strength. This suggests a likely continuation of the current uptrend. However, this bullishness is tempered by notable risks, including weak volume confirmation and significant underperformance relative to the SPY benchmark, which could limit upside potential or signal fragility in the trend.",
-  "core_insight": "The primary insight is the conflict between AAPL's positive absolute trend and its relative weakness. While the stock's own technicals point to continued upward momentum, it is lagging the broader market, and the move is on unconvincing volume, creating a risk of reversal or stagnation if market leadership does not improve."
+  "summary": "Technically, AAPL is in a long-term uptrend but has experienced a short-term correction, placing it in a range-bound state. The price is above its MA200 but below its MA50. A strong, high-volume positive reaction to earnings and a bullish MACD crossover suggest a potential sentiment shift, but this is contrasted by a weak RSI and significant relative underperformance. The technical picture is neutral, pending confirmation of a new directional move.",
+  "core_insight": "The most critical technical development is the strong positive abnormal reaction to earnings, which directly challenges the established short-term downtrend. The stock's ability to use this catalyst to reclaim the 50-day moving average will determine if a new bullish leg is beginning or if the corrective trend will resume."
 }

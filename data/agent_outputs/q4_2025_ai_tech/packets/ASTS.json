@@ -1,0 +1,336 @@
+[
+  {
+    "ticker": "ASTS",
+    "company": "ASTS",
+    "agent_name": "news_macro",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is moderate. The short-term bearish stance is based on reliable sentiment and positioning indicators (high expectations, insider selling). However, the stock is notoriously volatile and prone to headline risk. The long-term neutral stance reflects the deeply uncertain and binary nature of the company's operational path; the evidence contains strong contradictory signals (FCC approval vs. launch setback), preventing a high-conviction directional call.",
+    "stance_rationale": "Short-term: Investor expectations heading into the May 11 earnings report are extremely high, as evidenced by 'strong buy' ratings and retail-focused media hype. The stock's recent volatility and a large insider sale from Rakuten suggest a classic 'sell the news' setup is likely, creating downside risk versus the market. Long-term: The company's future is binary, hinging on flawless execution of an incredibly complex satellite deployment. While the FCC approval is a significant de-risking event, the noted launch setback and intense competition from Starlink introduce substantial execution risk, making a neutral stance prudent over the next 1-3 quarters as we await further launch and testing milestones.",
+    "key_signals": [
+      {
+        "type": "mainstream_stock",
+        "ticker": "T",
+        "company": "AT&T Inc.",
+        "signal": "AT&T's stock is driven by myriad factors beyond ASTS, making it a poor pure-play vehicle. It serves as a sentiment check on the telecom industry's belief in the technology.",
+        "evidence": "Any mention of ASTS in AT&T's results or strategy updates will be scrutinized. Positive ASTS news is a mild positive for T."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "VOD",
+        "company": "Vodafone Group Plc",
+        "signal": "A consensus anchor, but its performance is tied to European telecom dynamics more than ASTS's specific milestones.",
+        "evidence": "Similar to AT&T, Vodafone's commentary validates the MNO demand thesis for direct-to-device satellite service."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "AAPL",
+        "company": "Apple Inc.",
+        "signal": "Apple is too large to be materially affected in the short term, but this represents a long-term strategic vector to monitor.",
+        "evidence": "Mainstream investors will watch to see if Apple ever partners with a broadband provider like ASTS or if ASTS's technology renders Apple's current solution less valuable."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "IRDM",
+        "company": "Iridium Communications Inc.",
+        "signal": "IRDM is a good barometer for the disruption threat posed by new direct-to-device technologies.",
+        "evidence": "Positive ASTS news often correlates with negative pressure on IRDM and other legacy satcom players."
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "RKLB",
+        "company": "Rocket Lab USA, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because the race to build Low Earth Orbit (LEO) constellations for services like direct-to-cell is accelerating (driven by ASTS, SpaceX, Amazon Kuiper), demand for satellite components (solar arrays, reaction wheels, software) and small satellite launch services will grow significantly. This directly benefits Rocket Lab's Space Systems and Launch Services segments, providing a secular tailwind irrespective of which constellation operator ultimately wins the consumer market.",
+        "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "GSAT",
+        "company": "Globalstar, Inc.",
+        "signal": "Short: Substitution Effect",
+        "evidence": "Because ASTS and SpaceX's Starlink are developing true broadband satellite-to-cell service, Globalstar's low-bandwidth, emergency-only satellite service offered via its Apple partnership becomes technologically inferior and at risk of being obsolete. If a 'bring your own phone' broadband service becomes reality, the strategic value of Apple's exclusive deal with GSAT could plummet, leading to a significant re-rating of GSAT's valuation, which is heavily dependent on the perpetuity of that contract.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "HEI",
+        "company": "HEICO Corporation",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because the number of satellites being manufactured and launched is entering a supercycle driven by commercial LEO constellations, demand for high-reliability, space-grade electronic and hardware components will surge. HEICO, as a leading niche supplier of these components to the aerospace and defense industry, is a prime beneficiary. This is a lower-risk way to play the theme, as HEICO's revenue is tied to the volume of manufacturing across the entire industry, not the success of a single operator.",
+        "impact_score": 5
+      }
+    ],
+    "risks": [
+      "The short-term Bearish stance on ASTS assumes no major positive surprise in the earnings call, such as a major new funding partner or a faster-than-expected resolution to the launch setback.",
+      "The Neutral long-term stance assumes that competition from Starlink remains formidable and that ASTS will face continued, non-trivial execution hurdles. A flawless series of launches would invalidate this stance.",
+      "The short GSAT thesis is contingent on ASTS and/or Starlink achieving commercial viability; delays or failures in their roadmaps would give GSAT more time and potentially invalidate the short.",
+      "The pick-and-shovel theses for RKLB and HEI assume the overall satellite capex trend continues, even if individual projects like ASTS face delays. A broad-based downturn in space investment would be a key risk."
+    ],
+    "citations": [
+      {
+        "title": "What Should be Your Stance on ASTS Stock Ahead of Q1 Earnings?",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=cae7c45c0832ad3c03a7ab7111a28c2422cdbc7c11d399167ee1ca40e7a06c6c"
+      },
+      {
+        "title": "AST SpaceMobile, Inc. (ASTS) Expected to Beat Earnings Estimates: What to Know Ahead of Q1 Release",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=6fab0e0a3e15e8a64ce276416a2bc9a6eff567eee9f3a3181026d19d76a90d64"
+      },
+      {
+        "title": "Earnings Preview On AST SpaceMobile: Strong Buy Due To Growth Prospects",
+        "source": "SeekingAlpha",
+        "url": "https://finnhub.io/api/news?id=e0773b5a5c24ecc9a431cb5fecf5797ce2de0f65c1e8191da02d71636b1e6f58"
+      },
+      {
+        "title": "Why Is AST SpaceMobile (ASTS) Stock Surging In After Hours?",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=ea480d6896e3b70e5b918fa66f54cd37de38f5c5bbc233543d071af740edf898"
+      },
+      {
+        "title": "Is It Time To Reassess AST SpaceMobile (ASTS) After Its 179% One Year Surge?",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=c3e99e13dcf490d141a6f8ecf4a0f8a39b2856cce8aa2e35a29177010afe4216"
+      },
+      {
+        "title": "Jim Cramer on AST SpaceMobile: “I Like Space, I Like This One”",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=6155b964fea058e8d4c28cb82741bf21235c550c0dc6753d15bb6837f2f4d058"
+      },
+      {
+        "title": "Here's Why AST SpaceMobile, Inc. (ASTS) Fell More Than Broader Market",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=61164ad2ee8d683cbb14be9f665ec948eeb1016daab7ed13ae1a21dcf5e82dce"
+      },
+      {
+        "title": "A Look At AST SpaceMobile (ASTS) Valuation After FCC Satellite Approval And BlueBird 7 Launch Setback",
+        "source": "Yahoo",
+        "url": "https://finnhub.io/api/news?id=dff332ba34ecd52b78f602bf50a8ecc58cb9907adde9ca0238e7f02099d335d2"
+      },
+      {
+        "title": "Is AST SpaceMobile A Buy? Selling Pressure Eases As Rakuten Trims Stake",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=a2858a4aeaa77343e4acc371ef3be985d68059ec96b24abcbbabe647adabcc6c"
+      },
+      {
+        "title": "AST SpaceMobile Shares Rebound: What's Happening Today?",
+        "source": "Benzinga",
+        "url": "https://finnhub.io/api/news?id=7119ac8bbdce28f3b3a6992537892a110e07247ea09988d90a91f45ded818ae0"
+      }
+    ],
+    "summary": {
+      "news_summary": "AST SpaceMobile heads into its Q1 earnings with high investor expectations, buoyed by recent FCC approval for its satellite constellation and a 'Strong Buy' consensus, but tempered by a recent satellite launch setback and a large share sale by partner Rakuten.",
+      "core_insight": "While the market focuses on ASTS's binary success or failure, the broader, less-risky opportunity lies in the 'pick-and-shovel' suppliers to the entire satellite-to-cell capex supercycle, which will thrive regardless of whether ASTS or its competitors win the end-user market."
+    }
+  },
+  {
+    "ticker": "ASTS",
+    "company": "AST SpaceMobile, Inc.",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bearish",
+    "long_term_stance": "Neutral",
+    "confidence": 0.7,
+    "confidence_rationale": "Confidence is moderate because strong bearish short-term momentum signals (MACD, price vs MA20/50) are conflicting with the stock holding critical long-term support (MA200) and showing significant historical outperformance vs. its benchmark.",
+    "stance_rationale": "The core technical dynamic is a conflict between a confirmed short-term bearish trend and the stock's tenuous hold on its 200-day moving average, a critical long-term support level. This clash, occurring in an extremely high-volatility environment, makes the stock's position precarious, with a break of the MA200 signaling a potential major trend shift.",
+    "key_signals": [
+      {
+        "type": "Moving Averages",
+        "signal": "Bearish Short-Term Trend vs. Long-Term Support",
+        "evidence": "Price ($75.05) is below the MA20 ($77.94) and MA50 ($84.92), indicating a short-to-medium term downtrend, but is narrowly holding above the MA200 ($74.07), a key long-term support level."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bearish Momentum Confirmation",
+        "evidence": "The MACD line (-5.17) is below the signal line (-4.71), and the histogram is negative (-0.46), confirming downward momentum is in place."
+      },
+      {
+        "type": "RSI",
+        "signal": "Weak Momentum",
+        "evidence": "The RSI of 47.33 is below the neutral 50 level, indicating a lack of bullish strength, though it is not in oversold territory."
+      },
+      {
+        "type": "Volatility",
+        "signal": "Extreme Volatility and Risk",
+        "evidence": "Annualized volatility is exceptionally high at 100.32%, signaling significant price instability and risk."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "Significant Recent Decline",
+        "evidence": "The stock is currently in a 38.53% drawdown from its recent peak, highlighting the severity of the recent sell-off."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Outperformance vs. Benchmark",
+        "evidence": "Despite the recent decline, the stock has massively outperformed its benchmark, with a relative return of +144.88% vs. QQQ over the measured period."
+      },
+      {
+        "type": "Volume",
+        "signal": "High-Volume Rebound Attempt",
+        "evidence": "The most recent session saw a 14.8% price gain on volume that was 1.2x the recent average, suggesting a surge in buying interest, though it may be a short-term bounce within a downtrend."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 0.09%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "high_volatility_bearish",
+        "evidence": "Regime classification: high_volatility_bearish"
+      }
+    ],
+    "risks": [
+      "The stock is in a defined short-term downtrend, trading below its 20-day and 50-day moving averages.",
+      "Extreme volatility (100% annualized) creates a wide range of potential outcomes and high risk of large price swings.",
+      "A failure to hold support at the 200-day moving average ($74.07) could lead to an acceleration of the downtrend."
+    ],
+    "citations": [],
+    "summary": "As of 2026/05/09, ASTS presented a conflicting technical picture. A strong short-term downtrend was evident, with the price below key moving averages (20, 50-day) and bearish MACD readings. This was occurring within a context of extreme volatility. However, mitigating factors included the price holding precariously onto its 200-day moving average, a history of strong relative outperformance, and a very strong single-day rebound on high volume. The overall posture was short-term bearish but neutral long-term, balanced on a critical support level.",
+    "raw_packet": {
+      "ticker": "ASTS",
+      "company": "AST SpaceMobile, Inc.",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bearish",
+      "long_term_stance": "neutral",
+      "confidence": 0.7,
+      "confidence_rationale": "Confidence is moderate because strong bearish short-term momentum signals (MACD, price vs MA20/50) are conflicting with the stock holding critical long-term support (MA200) and showing significant historical outperformance vs. its benchmark.",
+      "key_signals": [
+        {
+          "type": "Moving Averages",
+          "signal": "Bearish Short-Term Trend vs. Long-Term Support",
+          "evidence": "Price ($75.05) is below the MA20 ($77.94) and MA50 ($84.92), indicating a short-to-medium term downtrend, but is narrowly holding above the MA200 ($74.07), a key long-term support level."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bearish Momentum Confirmation",
+          "evidence": "The MACD line (-5.17) is below the signal line (-4.71), and the histogram is negative (-0.46), confirming downward momentum is in place."
+        },
+        {
+          "type": "RSI",
+          "signal": "Weak Momentum",
+          "evidence": "The RSI of 47.33 is below the neutral 50 level, indicating a lack of bullish strength, though it is not in oversold territory."
+        },
+        {
+          "type": "Volatility",
+          "signal": "Extreme Volatility and Risk",
+          "evidence": "Annualized volatility is exceptionally high at 100.32%, signaling significant price instability and risk."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "Significant Recent Decline",
+          "evidence": "The stock is currently in a 38.53% drawdown from its recent peak, highlighting the severity of the recent sell-off."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Outperformance vs. Benchmark",
+          "evidence": "Despite the recent decline, the stock has massively outperformed its benchmark, with a relative return of +144.88% vs. QQQ over the measured period."
+        },
+        {
+          "type": "Volume",
+          "signal": "High-Volume Rebound Attempt",
+          "evidence": "The most recent session saw a 14.8% price gain on volume that was 1.2x the recent average, suggesting a surge in buying interest, though it may be a short-term bounce within a downtrend."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 0.09%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "high_volatility_bearish",
+          "evidence": "Regime classification: high_volatility_bearish"
+        }
+      ],
+      "risks": [
+        "The stock is in a defined short-term downtrend, trading below its 20-day and 50-day moving averages.",
+        "Extreme volatility (100% annualized) creates a wide range of potential outcomes and high risk of large price swings.",
+        "A failure to hold support at the 200-day moving average ($74.07) could lead to an acceleration of the downtrend."
+      ],
+      "summary": "As of 2026/05/09, ASTS presented a conflicting technical picture. A strong short-term downtrend was evident, with the price below key moving averages (20, 50-day) and bearish MACD readings. This was occurring within a context of extreme volatility. However, mitigating factors included the price holding precariously onto its 200-day moving average, a history of strong relative outperformance, and a very strong single-day rebound on high volume. The overall posture was short-term bearish but neutral long-term, balanced on a critical support level.",
+      "core_insight": "The core technical dynamic is a conflict between a confirmed short-term bearish trend and the stock's tenuous hold on its 200-day moving average, a critical long-term support level. This clash, occurring in an extremely high-volatility environment, makes the stock's position precarious, with a break of the MA200 signaling a potential major trend shift."
+    }
+  },
+  {
+    "ticker": "ASTS",
+    "company": "ASTS",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Neutral",
+    "confidence": 0.4,
+    "confidence_rationale": "Confidence is low due to the complete lack of critical information, including management guidance, an earnings call transcript for context, analyst consensus estimates, and year-over-year comparisons. The analysis relies solely on a limited set of quarter-over-quarter financial data. Confidence calibrated upward because core financial statement metrics are available.",
+    "stance_rationale": "AST SpaceMobile demonstrates strong top-line momentum with significant quarter-over-quarter revenue growth and narrowing operating/net losses. A major positive is the swing to positive operating cash flow. However, the company remains deeply unprofitable, has worsening negative free cash flow due to high capital expenditures, and trades at an extremely high valuation. The conflicting signals between operational progress and high cash burn/valuation warrant a cautious approach.",
+    "key_signals": [
+      "Significant QoQ revenue growth from $14.7M to $54.3M, an increase of 268%.",
+      "Net loss narrowed considerably QoQ from -$122.9M to -$74.0M.",
+      "Operating cash flow turned strongly positive to $65.0M from a negative -$64.5M in the prior quarter.",
+      "Gross profit grew significantly from $9.2M to $24.9M QoQ.",
+      "The company's cash and cash equivalents of $2.34B slightly exceed its total debt of $2.24B.",
+      "Revenue QoQ: $54,305,000 vs $14,739,000",
+      "Net Income QoQ: -$73,966,000 vs -$122,874,000",
+      "Operating Cash Flow QoQ: $64,969,000 vs -$64,462,000",
+      "Free Cash Flow QoQ: -$359,163,000 vs -$330,846,000",
+      "Forward P/E: -456.48077",
+      "Market Cap: $29,123,674,112.0"
+    ],
+    "risks": [
+      "The company remains unprofitable with a net loss of $74.0M for the quarter.",
+      "Free cash flow is highly negative at -$359.2M and worsened from -$330.8M in the previous quarter, indicating significant and increasing cash burn from investments.",
+      "Valuation appears very high, with no Trailing P/E and a negative Forward P/E of -456.48, suggesting continued losses are expected.",
+      "A profit margin of 0.0 despite having revenue suggests data inconsistency or is otherwise a poor sign for profitability.",
+      "Critical information such as analyst consensus estimates, management guidance, and earnings call commentary is unavailable, increasing uncertainty.",
+      "Analyst consensus estimates for all key metrics.",
+      "Management guidance for future periods.",
+      "Earnings call transcript providing management commentary and tone.",
+      "Year-over-year comparative data to assess seasonal trends and long-term growth.",
+      "Peer company valuation benchmarks.",
+      "Details on capital expenditure drivers and future investment plans."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: For a growth-oriented thesis, the strong quarter-over-quarter revenue acceleration and narrowing losses signal successful operational execution. The significant positive swing in operating cash flow is a key milestone, strengthening the view that the business model is scaling, even as high, expected capital spending continues to drive negative free cash flow.",
+    "raw_packet": {
+      "ticker": "ASTS",
+      "company": "ASTS",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Watch",
+      "confidence": 0.4,
+      "confidence_rationale": "Confidence is low due to the complete lack of critical information, including management guidance, an earnings call transcript for context, analyst consensus estimates, and year-over-year comparisons. The analysis relies solely on a limited set of quarter-over-quarter financial data. Confidence calibrated upward because core financial statement metrics are available.",
+      "stance_rationale": "AST SpaceMobile demonstrates strong top-line momentum with significant quarter-over-quarter revenue growth and narrowing operating/net losses. A major positive is the swing to positive operating cash flow. However, the company remains deeply unprofitable, has worsening negative free cash flow due to high capital expenditures, and trades at an extremely high valuation. The conflicting signals between operational progress and high cash burn/valuation warrant a cautious approach.",
+      "key_signals": [
+        "Significant QoQ revenue growth from $14.7M to $54.3M, an increase of 268%.",
+        "Net loss narrowed considerably QoQ from -$122.9M to -$74.0M.",
+        "Operating cash flow turned strongly positive to $65.0M from a negative -$64.5M in the prior quarter.",
+        "Gross profit grew significantly from $9.2M to $24.9M QoQ.",
+        "The company's cash and cash equivalents of $2.34B slightly exceed its total debt of $2.24B.",
+        "Revenue QoQ: $54,305,000 vs $14,739,000",
+        "Net Income QoQ: -$73,966,000 vs -$122,874,000",
+        "Operating Cash Flow QoQ: $64,969,000 vs -$64,462,000",
+        "Free Cash Flow QoQ: -$359,163,000 vs -$330,846,000",
+        "Forward P/E: -456.48077",
+        "Market Cap: $29,123,674,112.0"
+      ],
+      "risks": [
+        "The company remains unprofitable with a net loss of $74.0M for the quarter.",
+        "Free cash flow is highly negative at -$359.2M and worsened from -$330.8M in the previous quarter, indicating significant and increasing cash burn from investments.",
+        "Valuation appears very high, with no Trailing P/E and a negative Forward P/E of -456.48, suggesting continued losses are expected.",
+        "A profit margin of 0.0 despite having revenue suggests data inconsistency or is otherwise a poor sign for profitability.",
+        "Critical information such as analyst consensus estimates, management guidance, and earnings call commentary is unavailable, increasing uncertainty.",
+        "Analyst consensus estimates for all key metrics.",
+        "Management guidance for future periods.",
+        "Earnings call transcript providing management commentary and tone.",
+        "Year-over-year comparative data to assess seasonal trends and long-term growth.",
+        "Peer company valuation benchmarks.",
+        "Details on capital expenditure drivers and future investment plans."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Strengthened",
+        "thesis_impact_reasoning": "For a growth-oriented thesis, the strong quarter-over-quarter revenue acceleration and narrowing losses signal successful operational execution. The significant positive swing in operating cash flow is a key milestone, strengthening the view that the business model is scaling, even as high, expected capital spending continues to drive negative free cash flow."
+      }
+    }
+  }
+]

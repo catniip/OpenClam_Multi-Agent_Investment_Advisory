@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -18,12 +19,45 @@ if str(SRC_ROOT) not in sys.path:
     sys.path.insert(0, str(SRC_ROOT))
 load_dotenv(REPO_ROOT / ".env")
 DEFAULT_CACHE_ROOT = REPO_ROOT / "data" / "agent_outputs" / "q4_2025_ai_tech"
+PRIMARY_BLUE = "#0b73d9"
 
 
 def load_json(path: Path, default: Any = None) -> Any:
     if not path.exists():
         return default
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def inject_ui_styles() -> None:
+    st.markdown(
+        f"""
+        <style>
+        div.stButton > button:first-child {{
+            background-color: {PRIMARY_BLUE};
+            border-color: {PRIMARY_BLUE};
+            color: white;
+            font-weight: 700;
+        }}
+        div.stButton > button:first-child:hover {{
+            background-color: #075cad;
+            border-color: #075cad;
+            color: white;
+        }}
+        div.stButton > button:first-child:focus {{
+            box-shadow: 0 0 0 0.15rem rgba(11, 115, 217, 0.25);
+            border-color: {PRIMARY_BLUE};
+            color: white;
+        }}
+        div[data-testid="stProgress"] > div > div > div > div {{
+            background-color: {PRIMARY_BLUE};
+        }}
+        div[data-testid="stProgress"] > div > div {{
+            background-color: #e8eef6;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 @st.cache_data(show_spinner=False)
@@ -171,6 +205,40 @@ def infer_ticker_company_date(query: str, cio_df: pd.DataFrame) -> tuple[str, st
     return upper, text, date.today()
 
 
+def infer_fmp_transcript_period(event_date: str) -> tuple[int, int]:
+    """Approximate the fiscal quarter whose call is reported around an event date."""
+    parsed = pd.to_datetime(event_date, errors="coerce")
+    if pd.isna(parsed):
+        today = date.today()
+        return today.year, (today.month - 1) // 3 + 1
+
+    month = int(parsed.month)
+    year = int(parsed.year)
+    if month <= 3:
+        return year - 1, 4
+    if month <= 6:
+        return year, 1
+    if month <= 9:
+        return year, 2
+    return year, 3
+
+
+def render_transcript_status(payload: dict[str, Any]) -> None:
+    status = payload.get("transcript_status") or {}
+    if not status:
+        return
+
+    requested_year = status.get("requested_year")
+    requested_quarter = status.get("requested_quarter")
+    period = f"{requested_year} Q{requested_quarter}" if requested_year and requested_quarter else "N/A"
+    cols = st.columns(3)
+    cols[0].metric("Transcript period", period)
+    cols[1].metric("Transcript", "Loaded" if status.get("loaded") else "Not found")
+    cols[2].metric("Guidance", "Extracted" if status.get("guidance_extracted") else "Not found")
+    if status.get("message"):
+        st.caption(str(status.get("message")))
+
+
 def render_agent_output(title: str, payload: Any) -> None:
     st.write(f"### {title}")
     if not payload:
@@ -194,6 +262,7 @@ def render_agent_output(title: str, payload: Any) -> None:
             cols[2].metric("Confidence", f"{float(payload.get('confidence') or 0):.2f}")
         if payload.get("thesis_impact"):
             cols[3].metric("Thesis impact", str(payload.get("thesis_impact")))
+        render_transcript_status(payload)
 
         summary = (
             payload.get("news_summary")
@@ -257,11 +326,23 @@ def run_agents_from_ui(
     details = st.empty()
     agent_outputs: dict[str, Any] = {}
     agent_errors: dict[str, str] = {}
-    vertex_generator = None
+    active_vertex_project = ""
 
     def step(percent: int, message: str, extra: str = "") -> None:
         progress.progress(percent)
-        status.info(message)
+        status.markdown(
+            f"""
+            <div style="
+                background:#f4f6f8;
+                border:1px solid #d9dee7;
+                color:#334155;
+                border-radius:6px;
+                padding:0.7rem 0.9rem;
+                font-weight:600;
+            ">{message}</div>
+            """,
+            unsafe_allow_html=True,
+        )
         if extra:
             details.caption(extra)
 
@@ -272,12 +353,12 @@ def run_agents_from_ui(
     step(5, "Initializing LLM provider.", "Checking Vertex/OpenAI configuration.")
     if vertex_project:
         try:
-            vertex_generator = q4.VertexTextGenerator(vertex_project, vertex_location, vertex_model)
+            q4.VertexTextGenerator(vertex_project, vertex_location, vertex_model)
+            active_vertex_project = vertex_project
         except Exception as exc:
             agent_errors["vertex_generator"] = q4._vertex_error_hint(exc)
 
-    step(15, "Collecting News/Macro context.", "Fetching event-window news, company context, and macro proxies.")
-    try:
+    def run_news_macro_agent() -> Any:
         context = news_macro_agent.collect_context(
             ticker=ticker,
             company=company,
@@ -290,24 +371,20 @@ def run_agents_from_ui(
             news_end_offset_days=0,
         )
         q4.save_json(paths["context"], context)
-        step(28, "Generating News/Macro report.", f"Analyzing {len(context.news)} news items.")
         news_report = news_macro_agent.generate_report(
             context,
             provider="auto",
             model=os.getenv("NEWS_MODEL", openai_model),
             gemini_model=vertex_model,
-            vertex_project=vertex_project or None,
+            vertex_project=active_vertex_project or None,
             vertex_location=vertex_location,
         )
-        agent_outputs["news_macro"] = news_report
         q4.save_json(paths["news_macro"], news_report)
-    except Exception as exc:
-        agent_errors["news_macro"] = repr(exc)
-        step(35, "News/Macro failed; continuing.", repr(exc))
+        return news_report
 
-    step(45, "Running Market Technical Agent.", "Computing price, momentum, volume, and event-reaction signals.")
-    try:
-        if vertex_generator:
+    def run_market_agent() -> Any:
+        if active_vertex_project:
+            vertex_generator = q4.VertexTextGenerator(active_vertex_project, vertex_location, vertex_model)
             market_llm = q4.VertexLangChainCompatibleLLM(vertex_generator, temperature=1.0)
         else:
             market_llm = market_technical_agent.create_market_llm(
@@ -317,21 +394,19 @@ def run_agents_from_ui(
             )
         market_query = f"{company} ({ticker}) technical analysis as of {earnings_date.replace('-', '/')}"
         market_report = market_technical_agent.run_market_analysis(market_query, llm=market_llm, ticker=ticker)
-        agent_outputs["market_technical"] = market_report
         q4.save_json(paths["market_technical"], market_report)
-    except Exception as exc:
-        agent_errors["market_technical"] = repr(exc)
-        step(58, "Market Technical failed; continuing.", repr(exc))
+        return market_report
 
-    step(65, "Running Fundamental Agent.", "Reviewing financial metrics, valuation, transcript data, and missing information.")
-    try:
+    def run_fundamental_agent() -> Any:
+        transcript_year, transcript_quarter = infer_fmp_transcript_period(earnings_date)
         kwargs: dict[str, Any] = {
             "ticker": ticker,
-            "transcript_year": int(earnings_date[:4]) - 1,
-            "transcript_quarter": 4,
+            "transcript_year": transcript_year,
+            "transcript_quarter": transcript_quarter,
             "require_transcript": False,
         }
-        if vertex_generator:
+        if active_vertex_project:
+            vertex_generator = q4.VertexTextGenerator(active_vertex_project, vertex_location, vertex_model)
             kwargs.update(
                 {
                     "model_name": vertex_model,
@@ -347,11 +422,49 @@ def run_agents_from_ui(
                 }
             )
         fundamental_report = fundamental_agent.run_fundamental_analysis(**kwargs)
-        agent_outputs["fundamental"] = fundamental_report
         q4.save_json(paths["fundamental"], fundamental_report)
-    except Exception as exc:
-        agent_errors["fundamental"] = repr(exc)
-        step(78, "Fundamental failed; continuing.", repr(exc))
+        return fundamental_report
+
+    agent_jobs = {
+        "news_macro": {
+            "label": "News/Macro Agent",
+            "details": "Fetching event-window news, company context, macro proxies, and generating the report.",
+            "runner": run_news_macro_agent,
+        },
+        "market_technical": {
+            "label": "Market Technical Agent",
+            "details": "Computing price, momentum, volume, and event-reaction signals.",
+            "runner": run_market_agent,
+        },
+        "fundamental": {
+            "label": "Fundamental Agent",
+            "details": "Reviewing financial metrics, valuation, transcript data, and missing information.",
+            "runner": run_fundamental_agent,
+        },
+    }
+
+    step(15, "Starting all three agents.", "News/Macro, Market Technical, and Fundamental are running in parallel.")
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {executor.submit(job["runner"]): name for name, job in agent_jobs.items()}
+        completed = 0
+        for future in as_completed(futures):
+            name = futures[future]
+            job = agent_jobs[name]
+            completed += 1
+            try:
+                agent_outputs[name] = future.result()
+                step(
+                    15 + completed * 20,
+                    f"{job['label']} finished.",
+                    f"{completed}/3 agents complete. {job['details']}",
+                )
+            except Exception as exc:
+                agent_errors[name] = repr(exc)
+                step(
+                    15 + completed * 20,
+                    f"{job['label']} failed; continuing.",
+                    repr(exc),
+                )
 
     step(82, "Building CIO input packets.", "Standardizing agent outputs into the CIO schema.")
     packets = []
@@ -366,14 +479,15 @@ def run_agents_from_ui(
 
     step(90, "Running CIO synthesis and debate.", "Checking agreement, disagreement, and final stance.")
     if packets:
+        cio_llm_provider = "vertex" if llm_provider == "vertex" and active_vertex_project else "openai"
         workflow = cio_agent.run_cio_workflow(
             packets,
             use_llm_debate=use_llm_debate,
             use_llm_decision=use_llm_decision,
-            llm_provider=llm_provider,
-            debate_model=vertex_model if llm_provider == "vertex" else openai_model,
-            decision_model=vertex_model if llm_provider == "vertex" else openai_model,
-            vertex_project=vertex_project or None,
+            llm_provider=cio_llm_provider,
+            debate_model=vertex_model if cio_llm_provider == "vertex" else openai_model,
+            decision_model=vertex_model if cio_llm_provider == "vertex" else openai_model,
+            vertex_project=active_vertex_project or None,
             vertex_location=vertex_location,
         )
         q4.save_json(cache_root / "cio" / f"{ticker}.json", workflow)
@@ -415,6 +529,7 @@ def row_from_cio_payload(ticker: str, cio_payload: dict[str, Any], company: str 
 
 def main() -> None:
     st.set_page_config(page_title="OpenClam CIO Demo", layout="wide")
+    inject_ui_styles()
     st.title("OpenClam Multi-Agent Investment Advisory")
     st.caption("Cached agent-output viewer and single-ticker runner")
 

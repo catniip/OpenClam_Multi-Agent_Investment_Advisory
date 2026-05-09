@@ -112,6 +112,7 @@ class FundamentalInput(JsonModelMixin):
     financial_metrics: list[FinancialMetric]
     earnings_call_snippets: list[str] = field(default_factory=list)
     guidance_text: str | None = None
+    transcript_status: dict[str, Any] = field(default_factory=dict)
 
 
 @dataclass
@@ -130,6 +131,7 @@ class FundamentalOutput(JsonModelMixin):
     confidence: float
     confidence_reasoning: str
     missing_information: list[str]
+    transcript_status: dict[str, Any] = field(default_factory=dict)
 
     def __post_init__(self) -> None:
         self.confidence = _coerce_confidence(self.confidence)
@@ -151,6 +153,7 @@ class FundamentalOutput(JsonModelMixin):
             confidence=_coerce_confidence(payload.get("confidence", 0.0)),
             confidence_reasoning=str(payload.get("confidence_reasoning", "")),
             missing_information=_coerce_str_list(payload.get("missing_information")),
+            transcript_status=payload.get("transcript_status") if isinstance(payload.get("transcript_status"), dict) else {},
         )
 
     @classmethod
@@ -636,6 +639,17 @@ def get_yfinance_fundamental_input(
 
     earnings_call_snippets: list[str]
     guidance_text: str
+    transcript_status: dict[str, Any] = {
+        "requested": transcript_year is not None and transcript_quarter is not None,
+        "requested_year": transcript_year,
+        "requested_quarter": transcript_quarter,
+        "fmp_key_loaded": bool(os.getenv("FMP_API_KEY")),
+        "loaded": False,
+        "chunks": 0,
+        "guidance_extracted": False,
+        "source": "Financial Modeling Prep",
+        "message": "",
+    }
     if transcript_year is not None and transcript_quarter is not None:
         if os.getenv("FMP_API_KEY"):
             transcript_snippets = get_transcript_from_fmp(
@@ -649,6 +663,14 @@ def get_yfinance_fundamental_input(
         if transcript_snippets:
             earnings_call_snippets = transcript_snippets
             guidance_text = extract_guidance_text(transcript_snippets)
+            transcript_status.update(
+                {
+                    "loaded": True,
+                    "chunks": len(transcript_snippets),
+                    "guidance_extracted": _has_guidance_text(guidance_text),
+                    "message": "FMP transcript snippets loaded.",
+                }
+            )
         elif not os.getenv("FMP_API_KEY"):
             if require_transcript:
                 raise ValueError(
@@ -658,6 +680,7 @@ def get_yfinance_fundamental_input(
                 "FMP_API_KEY is not set, so earnings call transcript retrieval was skipped.",
             ]
             guidance_text = "FMP_API_KEY is not set, so guidance information could not be retrieved."
+            transcript_status["message"] = "FMP_API_KEY is not set."
         else:
             if require_transcript:
                 raise ValueError(
@@ -668,11 +691,16 @@ def get_yfinance_fundamental_input(
                 "No earnings call transcript available from Financial Modeling Prep.",
             ]
             guidance_text = "No guidance information available."
+            transcript_status["message"] = (
+                f"FMP returned no transcript for {normalized_ticker} "
+                f"year={transcript_year}, quarter={transcript_quarter}."
+            )
     else:
         earnings_call_snippets = [
             "Transcript fetch skipped. Provide transcript_year and transcript_quarter to load FMP transcript data.",
         ]
         guidance_text = "No guidance information available."
+        transcript_status["message"] = "Transcript fetch skipped because no transcript period was provided."
 
     return FundamentalInput(
         ticker=normalized_ticker,
@@ -682,6 +710,7 @@ def get_yfinance_fundamental_input(
         financial_metrics=metrics,
         earnings_call_snippets=earnings_call_snippets,
         guidance_text=guidance_text,
+        transcript_status=transcript_status,
     )
 
 
@@ -828,7 +857,9 @@ def analyze_fundamental_input(
         temperature=temperature,
         client=client,
     )
-    return _calibrate_fundamental_confidence(active_agent.run(data), data)
+    output = _calibrate_fundamental_confidence(active_agent.run(data), data)
+    output.transcript_status = data.transcript_status
+    return output
 
 
 def run_fundamental_analysis(

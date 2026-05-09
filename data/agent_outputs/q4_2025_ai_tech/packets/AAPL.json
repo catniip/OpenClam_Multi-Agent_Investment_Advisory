@@ -6,66 +6,74 @@
     "short_term_stance": "Bullish",
     "long_term_stance": "Bearish",
     "confidence": 0.8,
-    "confidence_rationale": "Confidence is high because the analysis is based on direct statements from Apple's CEO on the earnings call regarding both historical demand ('staggering') and forward-looking margin pressure ('memory shortage'). The market's bifurcated reaction to peer earnings (MSFT vs. META) provides a clear playbook for how AI narratives are being priced, strengthening the long-term thesis.",
-    "stance_rationale": "The short-term bullish stance is driven by the sheer magnitude of the Q1 revenue/EPS beat ($143.8B vs $138.4B est), which will likely cause a significant positive initial reaction that outweighs macro concerns. The long-term bearish stance reflects the forward-looking margin pressure from component shortages and the market's growing concern over Apple's perceived lag in the critical AI sector, which could lead to relative underperformance versus AI leaders in the QQQ over the next few quarters.",
+    "confidence_rationale": "Confidence is high because the thesis is based on direct quotes from the CEO in the official earnings call, providing clear evidence for both the massive current demand (bullish short-term) and the future margin pressure (bearish long-term). The memory shortage comment is a specific, actionable, and verifiable supply-chain signal. The primary risk is the market ignoring the forward guidance for longer than expected.",
+    "stance_rationale": "Short-term bullishness is driven by the massive revenue beat ($143.8B vs $138.4B est) and 'staggering demand' quotes, which will likely cause a positive post-earnings drift. Long-term bearishness is based on the CEO's direct guidance for margin pressure in the upcoming quarter from memory shortages and a weak competitive narrative on AI, which contrasts with peers and may lead to relative underperformance as the market prices in these headwinds.",
     "key_signals": [
       {
         "type": "mainstream_stock",
         "ticker": "AAPL",
         "company": "Apple Inc.",
-        "signal": "A consensus long, but the forward-looking cracks (margins, AI lag) make it vulnerable after the initial earnings pop.",
-        "evidence": "Initial pop on headline beat, followed by volatility as analysts digest the forward guidance on margins and the AI narrative."
-      },
-      {
-        "type": "mainstream_stock",
-        "ticker": "MSFT",
-        "company": "Microsoft Corporation",
-        "signal": "A sentiment anchor showing that AI hype alone is not enough; the market wants to see a clear and fast path to monetization.",
-        "evidence": "Negative; the sell-off sets a cautious tone for tech investors evaluating capital-intensive AI strategies."
+        "signal": "Strong results but the forward-looking commentary is a red flag that consensus might be too high for next quarter's margins.",
+        "evidence": "Initial pop on the headline beat, followed by digestion of the margin commentary."
       },
       {
         "type": "mainstream_stock",
         "ticker": "QCOM",
         "company": "Qualcomm Inc.",
-        "signal": "A direct, first-order beneficiary of the strong iPhone cycle.",
-        "evidence": "Positive; the stock should trade up in sympathy with Apple's strong iPhone unit sales."
+        "signal": "A first-order derivative play that will be widely recognized and likely bid up quickly.",
+        "evidence": "Likely strong positive reaction as a direct beneficiary of iPhone strength."
       },
       {
         "type": "mainstream_stock",
         "ticker": "AVGO",
         "company": "Broadcom Inc.",
-        "signal": "A high-quality supplier benefiting directly from the primary news driver.",
-        "evidence": "Positive; seen as a core beneficiary of the iPhone demand strength reported by Apple."
+        "signal": "Consensus long play on iPhone strength, similar to Qualcomm.",
+        "evidence": "Strongly positive, in-line with other key Apple suppliers."
+      },
+      {
+        "type": "mainstream_stock",
+        "ticker": "MSFT",
+        "company": "Microsoft Corporation",
+        "signal": "Highlights market sensitivity to AI capital intensity and ROI, a potential long-term risk for Apple if it needs to ramp up spending.",
+        "evidence": "Sharp sell-off, creating a cautious backdrop for other tech giants' reports."
       },
       {
         "type": "second_order_opportunity",
         "ticker": "MU",
         "company": "Micron Technology, Inc.",
         "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because Apple's CEO explicitly cited a 'memory shortage' as a future margin headwind amid 'staggering' device demand, it signals that memory suppliers like Micron are experiencing a surge in demand that outstrips supply, leading to significant pricing power which will directly boost Micron's revenue and gross margins.",
-        "impact_score": 9
+        "evidence": "Because Apple, the world's largest smartphone maker, is seeing 'staggering' demand and is explicitly warning of 'memory shortages' impacting its margins, this indicates that demand for memory chips (DRAM and NAND) is outstripping supply. This allows memory producers like Micron to raise prices, which directly increases their revenue and gross margins.",
+        "impact_score": 8
       },
       {
         "type": "second_order_opportunity",
         "ticker": "WDC",
         "company": "Western Digital Corporation",
         "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because Apple and the broader electronics industry are facing a memory (NAND flash) shortage, as confirmed by Apple's CEO, key NAND supplier Western Digital will benefit from higher volumes and, more importantly, increased pricing. A related news item noting a surge in Sandisk (a WDC brand) stock on a profit beat serves as direct confirmation of this thesis.",
-        "impact_score": 8
+        "evidence": "Because Apple is a massive consumer of NAND flash for its iPhones, iPads, and Macs, a 'memory shortage' directly signals a tight market for NAND. This supply-demand imbalance allows NAND producers like Western Digital to increase prices, which boosts their profitability, turning Apple's margin headwind into WDC's margin tailwind.",
+        "impact_score": 7
       },
       {
         "type": "second_order_opportunity",
-        "ticker": "BBY",
-        "company": "Best Buy Co., Inc.",
+        "ticker": "HPQ",
+        "company": "HP Inc.",
         "signal": "Short: Cost Squeeze & Victims",
-        "evidence": "Because Apple is in 'supply chase mode' and facing key component shortages (memory), it signals a risk of constrained iPhone and Mac inventory for downstream retailers like Best Buy. Furthermore, rising memory costs will increase the Bill of Materials for all consumer electronics, which will either squeeze Best Buy's margins or force price hikes that dampen consumer demand in a fragile macro environment.",
+        "evidence": "Because a memory shortage is causing component prices to rise (as confirmed by Apple), downstream hardware manufacturers with less pricing power will suffer margin compression. HP, operating in the highly competitive and lower-margin PC market, will struggle to pass these higher memory costs on to customers, causing its gross margins and earnings to decline.",
+        "impact_score": 6
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "TER",
+        "company": "Teradyne, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because strong electronics demand and a memory shortage are causing semiconductor manufacturers to run at full capacity and plan for expansion, the demand for test equipment increases. Teradyne, which provides automated test equipment for semiconductors including memory and complex SoCs like those in iPhones, will see increased orders from fabs and foundries trying to maximize output and qualify new production lines.",
         "impact_score": 5
       }
     ],
     "risks": [
-      "The primary thesis for MU and WDC assumes the 'memory shortage' mentioned by Tim Cook is industry-wide and durable, not a temporary, Apple-specific supply chain hiccup.",
-      "The long-term bearish stance on Apple assumes the market will continue to prioritize AI progress over current hardware sales, and that Apple will not announce a game-changing AI strategy in the next 1-3 quarters.",
-      "The short BBY thesis could be nullified if the component shortages resolve quickly or if consumers prove insensitive to potential price increases on electronics."
+      "The primary assumption is that the 'memory shortage' is broad-based and not specific to a single custom component Apple uses, thus benefiting commodity producers like MU and WDC.",
+      "The long-term bearish stance on AAPL assumes the market will eventually prioritize the Q2 margin pressure and AI narrative weakness over the stellar Q1 results.",
+      "The short HPQ thesis assumes the PC market remains competitive and that HPQ cannot successfully raise prices to offset rising component costs. A surprise surge in enterprise PC demand could negate this."
     ],
     "citations": [
       {
@@ -120,8 +128,145 @@
       }
     ],
     "summary": {
-      "news_summary": "Apple reported a massive Q1 earnings and revenue beat driven by 'staggering' iPhone demand, but CEO Tim Cook warned of a 'memory shortage' that will impact margins in the next quarter.",
-      "core_insight": "While the market focuses on Apple's iPhone strength versus its AI weakness, the CEO's explicit warning about a 'memory shortage' is a direct, actionable signal of pricing power for memory producers who are the key upstream bottleneck."
+      "news_summary": "Apple reported a massive fiscal Q1 revenue and EPS beat driven by 'staggering' iPhone demand, but CEO Tim Cook explicitly warned of future margin pressure in Q2 due to memory shortages.",
+      "core_insight": "While investors focus on Apple's strong iPhone sales versus its future margin headwinds, the explicit mention of a 'memory shortage' by the world's largest electronics buyer is a direct, bullish pricing signal for the memory chip producers who are the source of Apple's cost pressure."
+    }
+  },
+  {
+    "ticker": "AAPL",
+    "company": "Apple",
+    "agent_name": "market_technical",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.65,
+    "confidence_rationale": "Confidence is moderate due to significant conflicting signals. A bullish long-term trend and a positive post-earnings catalyst are at odds with a bearish medium-term trend, weak momentum (RSI < 50), and persistent underperformance relative to the QQQ benchmark.",
+    "stance_rationale": "The most critical technical development is the strong positive abnormal reaction to earnings, which directly challenges the established short-term downtrend. The stock's ability to use this catalyst to reclaim the 50-day moving average will determine if a new bullish leg is beginning or if the corrective trend will resume.",
+    "key_signals": [
+      {
+        "type": "Earnings Reaction",
+        "signal": "Strong Positive Abnormal Reaction",
+        "evidence": "Stock rose 0.46% on the day after earnings while the benchmark QQQ fell 1.20%, resulting in a +1.67% abnormal return on very high volume (1.78x average), indicating strong buyer conviction."
+      },
+      {
+        "type": "Moving Averages",
+        "signal": "Conflicting Trend Structure",
+        "evidence": "The price at $258.04 is above its long-term MA200 ($235.87) supporting a long-term uptrend, but below its medium-term MA50 ($268.20), indicating short-term weakness."
+      },
+      {
+        "type": "MACD",
+        "signal": "Bullish Momentum Crossover",
+        "evidence": "The MACD line (-4.08) has crossed above its signal line (-4.73), with a positive histogram (0.65), signaling a potential bottoming of bearish momentum."
+      },
+      {
+        "type": "RSI",
+        "signal": "Weak Momentum",
+        "evidence": "The RSI is at 46.32, below the neutral 50 level, which indicates that selling pressure has recently been stronger than buying pressure."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Underperformance",
+        "evidence": "The stock has underperformed the QQQ benchmark by -13.07% over the analysis period, indicating it has been a laggard."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "Range-Bound Conditions",
+        "evidence": "The current market regime is classified as 'range_bound', consistent with the price being caught between key moving averages and showing conflicting signals."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "In Correction Territory",
+        "evidence": "The stock is currently 9.75% below its recent peak, indicating it is in a short-term correction within a longer-term uptrend."
+      },
+      {
+        "type": "Returns",
+        "signal": "negative short-term momentum",
+        "evidence": "Mean of recent returns: -0.05%"
+      },
+      {
+        "type": "Volume",
+        "signal": "moderate participation",
+        "evidence": "Volume spike ratio 1.38x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "moderate volatility",
+        "evidence": "Annualized volatility 31.83%, Recent 20.0%"
+      }
+    ],
+    "risks": [
+      "The positive post-earnings momentum could fade if the price fails to break and hold above the 50-day moving average, which is acting as resistance.",
+      "The recent bullish MACD crossover could prove to be a whipsaw if buying pressure does not follow through, leading to a resumption of the short-term downtrend.",
+      "Continued underperformance relative to the QQQ benchmark could make the stock less attractive to momentum-focused investors, even if it trends higher."
+    ],
+    "citations": [],
+    "summary": "Technically, AAPL is in a long-term uptrend but has experienced a short-term correction, placing it in a range-bound state. The price is above its MA200 but below its MA50. A strong, high-volume positive reaction to earnings and a bullish MACD crossover suggest a potential sentiment shift, but this is contrasted by a weak RSI and significant relative underperformance. The technical picture is neutral, pending confirmation of a new directional move.",
+    "raw_packet": {
+      "ticker": "AAPL",
+      "company": "Apple",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "neutral",
+      "long_term_stance": "bullish",
+      "confidence": 0.65,
+      "confidence_rationale": "Confidence is moderate due to significant conflicting signals. A bullish long-term trend and a positive post-earnings catalyst are at odds with a bearish medium-term trend, weak momentum (RSI < 50), and persistent underperformance relative to the QQQ benchmark.",
+      "key_signals": [
+        {
+          "type": "Earnings Reaction",
+          "signal": "Strong Positive Abnormal Reaction",
+          "evidence": "Stock rose 0.46% on the day after earnings while the benchmark QQQ fell 1.20%, resulting in a +1.67% abnormal return on very high volume (1.78x average), indicating strong buyer conviction."
+        },
+        {
+          "type": "Moving Averages",
+          "signal": "Conflicting Trend Structure",
+          "evidence": "The price at $258.04 is above its long-term MA200 ($235.87) supporting a long-term uptrend, but below its medium-term MA50 ($268.20), indicating short-term weakness."
+        },
+        {
+          "type": "MACD",
+          "signal": "Bullish Momentum Crossover",
+          "evidence": "The MACD line (-4.08) has crossed above its signal line (-4.73), with a positive histogram (0.65), signaling a potential bottoming of bearish momentum."
+        },
+        {
+          "type": "RSI",
+          "signal": "Weak Momentum",
+          "evidence": "The RSI is at 46.32, below the neutral 50 level, which indicates that selling pressure has recently been stronger than buying pressure."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Underperformance",
+          "evidence": "The stock has underperformed the QQQ benchmark by -13.07% over the analysis period, indicating it has been a laggard."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "Range-Bound Conditions",
+          "evidence": "The current market regime is classified as 'range_bound', consistent with the price being caught between key moving averages and showing conflicting signals."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "In Correction Territory",
+          "evidence": "The stock is currently 9.75% below its recent peak, indicating it is in a short-term correction within a longer-term uptrend."
+        },
+        {
+          "type": "Returns",
+          "signal": "negative short-term momentum",
+          "evidence": "Mean of recent returns: -0.05%"
+        },
+        {
+          "type": "Volume",
+          "signal": "moderate participation",
+          "evidence": "Volume spike ratio 1.38x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "moderate volatility",
+          "evidence": "Annualized volatility 31.83%, Recent 20.0%"
+        }
+      ],
+      "risks": [
+        "The positive post-earnings momentum could fade if the price fails to break and hold above the 50-day moving average, which is acting as resistance.",
+        "The recent bullish MACD crossover could prove to be a whipsaw if buying pressure does not follow through, leading to a resumption of the short-term downtrend.",
+        "Continued underperformance relative to the QQQ benchmark could make the stock less attractive to momentum-focused investors, even if it trends higher."
+      ],
+      "summary": "Technically, AAPL is in a long-term uptrend but has experienced a short-term correction, placing it in a range-bound state. The price is above its MA200 but below its MA50. A strong, high-volume positive reaction to earnings and a bullish MACD crossover suggest a potential sentiment shift, but this is contrasted by a weak RSI and significant relative underperformance. The technical picture is neutral, pending confirmation of a new directional move.",
+      "core_insight": "The most critical technical development is the strong positive abnormal reaction to earnings, which directly challenges the established short-term downtrend. The stock's ability to use this catalyst to reclaim the 50-day moving average will determine if a new bullish leg is beginning or if the corrective trend will resume."
     }
   },
   {
@@ -129,209 +274,72 @@
     "company": "Apple",
     "agent_name": "fundamental",
     "short_term_stance": "Neutral",
-    "long_term_stance": "Bullish",
-    "confidence": 0.5,
-    "confidence_rationale": "Confidence is moderate because while the reported financial data is exceptionally strong, the analysis is severely limited by the absence of analyst consensus, management guidance, and earnings call commentary. Without this context, it is difficult to fully assess performance relative to expectations and gauge the forward-looking outlook.",
-    "stance_rationale": "The company reported exceptionally strong quarter-over-quarter growth across all key financial metrics, including revenue, profitability, and cash flow. While valuation remains at a premium and key information like guidance and analyst consensus is missing, the reported fundamental performance is unequivocally positive.",
+    "long_term_stance": "Bearish",
+    "confidence": 0.4,
+    "confidence_rationale": "Confidence is extremely low due to a critical lack of information. The analysis is based solely on QoQ data, which is insufficient without YoY comparisons to account for seasonality, analyst estimates to gauge performance against expectations, management commentary to provide context, and valuation metrics to assess risk/reward. Confidence calibrated upward because core financial statement metrics are available.",
+    "stance_rationale": "The company reported a significant quarter-over-quarter decline across all key financial metrics, including revenue, profitability, and cash flow. While still highly profitable in absolute terms, the sharp sequential contraction and complete lack of guidance, analyst estimates, or management commentary make the current performance concerning. The absence of year-over-year data prevents accounting for potential seasonality.",
     "key_signals": [
-      "Significant quarter-over-quarter revenue growth to $143.76B from $102.47B (a 40.3% QoQ increase).",
-      "Substantial QoQ increase in net income to $42.10B from $27.47B (a 53.2% QoQ increase).",
-      "Very strong cash flow generation, with Free Cash Flow increasing 94.6% QoQ to $51.55B.",
-      "High profit margin of 27.15% was achieved during the quarter.",
-      "External data indicates positive revenue growth of 16.6% and earnings growth of 21.8%.",
-      "Revenue QoQ: current=$143,756,000,000.0, previous_quarter=$102,466,000,000.0",
-      "Net Income QoQ: current=$42,097,000,000.0, previous_quarter=$27,466,000,000.0",
-      "Free Cash Flow QoQ: current=$51,552,000,000.0, previous_quarter=$26,486,000,000.0",
-      "Trailing P/E: 33.51",
-      "Profit Margin: 27.15%",
-      "Missing Data: Analyst consensus estimates were 'None'.",
-      "Missing Data: Earnings call transcript was not retrieved.",
-      "Missing Data: Guidance information was not retrieved."
+      "The company remains highly profitable and cash-generative, posting a Net Income of $29.58 billion and Free Cash Flow of $26.73 billion for the quarter.",
+      "Revenue decreased QoQ to $111.18 billion from $143.76 billion.",
+      "Net Income decreased QoQ to $29.58 billion from $42.10 billion.",
+      "Free Cash Flow decreased QoQ to $26.73 billion from $51.55 billion.",
+      "Operating Cash Flow decreased QoQ to $28.70 billion from $53.93 billion.",
+      "Consensus estimates for revenue and earnings were not available.",
+      "No guidance or earnings call transcript was provided."
     ],
     "risks": [
-      "Valuation is high, with a Trailing P/E of 33.5x and Forward P/E of 29.0x, indicating premium market expectations.",
-      "Analyst consensus estimates were not provided, making it impossible to assess performance against market expectations.",
-      "Management guidance and commentary from the earnings call transcript are unavailable, increasing uncertainty about the future outlook.",
-      "Total Debt of $90.51 billion is a notable liability, though currently supported by strong cash flow.",
-      "The analysis lacks year-over-year comparisons for core financials, which are critical for understanding seasonal trends.",
-      "Analyst consensus estimates for revenue and EPS.",
-      "Official company guidance for the upcoming quarter/year.",
-      "Earnings call transcript for management commentary, tone, and Q&A.",
-      "Year-over-year financial comparisons.",
-      "Segment-level performance breakdown (e.g., iPhone, Mac, Services).",
-      "Peer valuation and performance metrics."
+      "Significant quarter-over-quarter declines were reported across all key metrics: Revenue fell 22.7%, Net Income fell 29.7%, and Free Cash Flow fell 48.1%.",
+      "Total Debt of $84.71 billion is greater than Cash And Cash Equivalents of $45.57 billion.",
+      "No year-over-year growth data was provided, making it impossible to distinguish between a seasonal slowdown and fundamental weakening.",
+      "A complete lack of valuation metrics such as Market Cap, Trailing P/E, or Forward P/E prevents any assessment of the stock's valuation.",
+      "Year-over-year (YoY) performance data",
+      "Analyst consensus estimates for revenue and EPS",
+      "Forward-looking guidance from management",
+      "Earnings call transcript for management commentary and tone",
+      "Valuation metrics (Market Cap, P/E ratios)",
+      "Segment-level performance data",
+      "Profit Margin and historical balance sheet data"
     ],
     "citations": [],
-    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The reported quarter shows significant acceleration in revenue, profitability, and free cash flow on a sequential basis, reinforcing the company's strong execution and market position. These strong results bolster a bullish investment thesis.",
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Weakened | thesis_impact_reasoning: The sharp sequential deterioration in all reported financial metrics without any offsetting positive information, management context, or forward-looking guidance raises concerns about the company's near-term performance and weakens the investment thesis pending further clarification.",
     "raw_packet": {
       "ticker": "AAPL",
       "company": "Apple",
       "agent_name": "fundamental",
       "short_term_stance": "Neutral",
-      "long_term_stance": "Bullish",
-      "confidence": 0.5,
-      "confidence_rationale": "Confidence is moderate because while the reported financial data is exceptionally strong, the analysis is severely limited by the absence of analyst consensus, management guidance, and earnings call commentary. Without this context, it is difficult to fully assess performance relative to expectations and gauge the forward-looking outlook.",
-      "stance_rationale": "The company reported exceptionally strong quarter-over-quarter growth across all key financial metrics, including revenue, profitability, and cash flow. While valuation remains at a premium and key information like guidance and analyst consensus is missing, the reported fundamental performance is unequivocally positive.",
+      "long_term_stance": "Bearish",
+      "confidence": 0.4,
+      "confidence_rationale": "Confidence is extremely low due to a critical lack of information. The analysis is based solely on QoQ data, which is insufficient without YoY comparisons to account for seasonality, analyst estimates to gauge performance against expectations, management commentary to provide context, and valuation metrics to assess risk/reward. Confidence calibrated upward because core financial statement metrics are available.",
+      "stance_rationale": "The company reported a significant quarter-over-quarter decline across all key financial metrics, including revenue, profitability, and cash flow. While still highly profitable in absolute terms, the sharp sequential contraction and complete lack of guidance, analyst estimates, or management commentary make the current performance concerning. The absence of year-over-year data prevents accounting for potential seasonality.",
       "key_signals": [
-        "Significant quarter-over-quarter revenue growth to $143.76B from $102.47B (a 40.3% QoQ increase).",
-        "Substantial QoQ increase in net income to $42.10B from $27.47B (a 53.2% QoQ increase).",
-        "Very strong cash flow generation, with Free Cash Flow increasing 94.6% QoQ to $51.55B.",
-        "High profit margin of 27.15% was achieved during the quarter.",
-        "External data indicates positive revenue growth of 16.6% and earnings growth of 21.8%.",
-        "Revenue QoQ: current=$143,756,000,000.0, previous_quarter=$102,466,000,000.0",
-        "Net Income QoQ: current=$42,097,000,000.0, previous_quarter=$27,466,000,000.0",
-        "Free Cash Flow QoQ: current=$51,552,000,000.0, previous_quarter=$26,486,000,000.0",
-        "Trailing P/E: 33.51",
-        "Profit Margin: 27.15%",
-        "Missing Data: Analyst consensus estimates were 'None'.",
-        "Missing Data: Earnings call transcript was not retrieved.",
-        "Missing Data: Guidance information was not retrieved."
+        "The company remains highly profitable and cash-generative, posting a Net Income of $29.58 billion and Free Cash Flow of $26.73 billion for the quarter.",
+        "Revenue decreased QoQ to $111.18 billion from $143.76 billion.",
+        "Net Income decreased QoQ to $29.58 billion from $42.10 billion.",
+        "Free Cash Flow decreased QoQ to $26.73 billion from $51.55 billion.",
+        "Operating Cash Flow decreased QoQ to $28.70 billion from $53.93 billion.",
+        "Consensus estimates for revenue and earnings were not available.",
+        "No guidance or earnings call transcript was provided."
       ],
       "risks": [
-        "Valuation is high, with a Trailing P/E of 33.5x and Forward P/E of 29.0x, indicating premium market expectations.",
-        "Analyst consensus estimates were not provided, making it impossible to assess performance against market expectations.",
-        "Management guidance and commentary from the earnings call transcript are unavailable, increasing uncertainty about the future outlook.",
-        "Total Debt of $90.51 billion is a notable liability, though currently supported by strong cash flow.",
-        "The analysis lacks year-over-year comparisons for core financials, which are critical for understanding seasonal trends.",
-        "Analyst consensus estimates for revenue and EPS.",
-        "Official company guidance for the upcoming quarter/year.",
-        "Earnings call transcript for management commentary, tone, and Q&A.",
-        "Year-over-year financial comparisons.",
-        "Segment-level performance breakdown (e.g., iPhone, Mac, Services).",
-        "Peer valuation and performance metrics."
+        "Significant quarter-over-quarter declines were reported across all key metrics: Revenue fell 22.7%, Net Income fell 29.7%, and Free Cash Flow fell 48.1%.",
+        "Total Debt of $84.71 billion is greater than Cash And Cash Equivalents of $45.57 billion.",
+        "No year-over-year growth data was provided, making it impossible to distinguish between a seasonal slowdown and fundamental weakening.",
+        "A complete lack of valuation metrics such as Market Cap, Trailing P/E, or Forward P/E prevents any assessment of the stock's valuation.",
+        "Year-over-year (YoY) performance data",
+        "Analyst consensus estimates for revenue and EPS",
+        "Forward-looking guidance from management",
+        "Earnings call transcript for management commentary and tone",
+        "Valuation metrics (Market Cap, P/E ratios)",
+        "Segment-level performance data",
+        "Profit Margin and historical balance sheet data"
       ],
       "summary": {
         "beat_or_miss": "Unclear",
         "guidance_change": "Unclear",
         "management_tone": "Unclear",
-        "thesis_impact": "Strengthened",
-        "thesis_impact_reasoning": "The reported quarter shows significant acceleration in revenue, profitability, and free cash flow on a sequential basis, reinforcing the company's strong execution and market position. These strong results bolster a bullish investment thesis."
+        "thesis_impact": "Weakened",
+        "thesis_impact_reasoning": "The sharp sequential deterioration in all reported financial metrics without any offsetting positive information, management context, or forward-looking guidance raises concerns about the company's near-term performance and weakens the investment thesis pending further clarification."
       }
-    }
-  },
-  {
-    "ticker": "AAPL",
-    "company": "Apple",
-    "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
-    "long_term_stance": "Bullish",
-    "confidence": 0.75,
-    "confidence_rationale": "Confidence is high due to the alignment of trend (Price > MA50/MA20) and momentum (RSI > 60, MACD crossover) indicators. However, it is tempered by weak volume participation on recent moves and significant underperformance against the SPY benchmark, which questions the trend's conviction.",
-    "stance_rationale": "The primary insight is the conflict between AAPL's positive absolute trend and its relative weakness. While the stock's own technicals point to continued upward momentum, it is lagging the broader market, and the move is on unconvincing volume, creating a risk of reversal or stagnation if market leadership does not improve.",
-    "key_signals": [
-      {
-        "type": "Moving Averages",
-        "signal": "bullish trend alignment",
-        "evidence": "Price at 276.83 is trading above both its 20-day ($267.26) and 50-day ($261.46) moving averages, indicating a well-defined uptrend."
-      },
-      {
-        "type": "MACD",
-        "signal": "bullish crossover",
-        "evidence": "A recent bullish crossover is in effect, with the MACD line (4.44) above the signal line (3.50) and a positive histogram, confirming upward momentum."
-      },
-      {
-        "type": "RSI",
-        "signal": "strong bullish momentum",
-        "evidence": "RSI at 62.01 is in bullish territory (>50) and is not yet overbought (<70), suggesting momentum has room to continue."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "bullish_trend",
-        "evidence": "The stock is classified in a 'bullish_trend' regime, providing a supportive broader context for the current price action."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "underperforming benchmark",
-        "evidence": "The stock has underperformed the SPY benchmark by -5.82% over the measurement period, indicating it is a market laggard despite its own uptrend."
-      },
-      {
-        "type": "Volume",
-        "signal": "weak participation",
-        "evidence": "The volume spike ratio is 0.97, below 1, indicating that recent price moves are not supported by a significant increase in trading volume, a sign of weak conviction."
-      },
-      {
-        "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 0.15%"
-      },
-      {
-        "type": "Volatility",
-        "signal": "moderate volatility",
-        "evidence": "Annualized volatility 25.51%, Recent 26.73%"
-      },
-      {
-        "type": "Drawdown",
-        "signal": "contained drawdown",
-        "evidence": "Current drawdown -1.18%, Max drawdown -11.24%"
-      }
-    ],
-    "risks": [
-      "Relative underperformance compared to the broader market (SPY) may indicate lagging strength or that capital is flowing to better-performing assets.",
-      "Recent price appreciation is not supported by high volume, suggesting a lack of strong conviction that could make the trend vulnerable to a reversal."
-    ],
-    "citations": [],
-    "summary": "AAPL exhibits a clear short-term bullish posture, with price trading above key moving averages and momentum indicators like RSI and MACD signaling strength. This suggests a likely continuation of the current uptrend. However, this bullishness is tempered by notable risks, including weak volume confirmation and significant underperformance relative to the SPY benchmark, which could limit upside potential or signal fragility in the trend.",
-    "raw_packet": {
-      "ticker": "AAPL",
-      "company": "Apple",
-      "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
-      "long_term_stance": "bullish",
-      "confidence": 0.75,
-      "confidence_rationale": "Confidence is high due to the alignment of trend (Price > MA50/MA20) and momentum (RSI > 60, MACD crossover) indicators. However, it is tempered by weak volume participation on recent moves and significant underperformance against the SPY benchmark, which questions the trend's conviction.",
-      "key_signals": [
-        {
-          "type": "Moving Averages",
-          "signal": "bullish trend alignment",
-          "evidence": "Price at 276.83 is trading above both its 20-day ($267.26) and 50-day ($261.46) moving averages, indicating a well-defined uptrend."
-        },
-        {
-          "type": "MACD",
-          "signal": "bullish crossover",
-          "evidence": "A recent bullish crossover is in effect, with the MACD line (4.44) above the signal line (3.50) and a positive histogram, confirming upward momentum."
-        },
-        {
-          "type": "RSI",
-          "signal": "strong bullish momentum",
-          "evidence": "RSI at 62.01 is in bullish territory (>50) and is not yet overbought (<70), suggesting momentum has room to continue."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "bullish_trend",
-          "evidence": "The stock is classified in a 'bullish_trend' regime, providing a supportive broader context for the current price action."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "underperforming benchmark",
-          "evidence": "The stock has underperformed the SPY benchmark by -5.82% over the measurement period, indicating it is a market laggard despite its own uptrend."
-        },
-        {
-          "type": "Volume",
-          "signal": "weak participation",
-          "evidence": "The volume spike ratio is 0.97, below 1, indicating that recent price moves are not supported by a significant increase in trading volume, a sign of weak conviction."
-        },
-        {
-          "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 0.15%"
-        },
-        {
-          "type": "Volatility",
-          "signal": "moderate volatility",
-          "evidence": "Annualized volatility 25.51%, Recent 26.73%"
-        },
-        {
-          "type": "Drawdown",
-          "signal": "contained drawdown",
-          "evidence": "Current drawdown -1.18%, Max drawdown -11.24%"
-        }
-      ],
-      "risks": [
-        "Relative underperformance compared to the broader market (SPY) may indicate lagging strength or that capital is flowing to better-performing assets.",
-        "Recent price appreciation is not supported by high volume, suggesting a lack of strong conviction that could make the trend vulnerable to a reversal."
-      ],
-      "summary": "AAPL exhibits a clear short-term bullish posture, with price trading above key moving averages and momentum indicators like RSI and MACD signaling strength. This suggests a likely continuation of the current uptrend. However, this bullishness is tempered by notable risks, including weak volume confirmation and significant underperformance relative to the SPY benchmark, which could limit upside potential or signal fragility in the trend.",
-      "core_insight": "The primary insight is the conflict between AAPL's positive absolute trend and its relative weakness. While the stock's own technicals point to continued upward momentum, it is lagging the broader market, and the move is on unconvincing volume, creating a risk of reversal or stagnation if market leadership does not improve."
     }
   }
 ]
