@@ -3,218 +3,118 @@
     "ticker": "MU",
     "company": "Micron Technology",
     "agent_name": "news_macro",
-    "short_term_stance": "Bullish",
+    "short_term_stance": "Bearish",
     "long_term_stance": "Bullish",
-    "confidence": 0.9,
-    "confidence_rationale": "Confidence is high because the analysis is based on direct, quantitative, and fresh data from the main ticker's own earnings report and guidance. The market reaction in extended trading confirms the positive surprise. The causal link between AI demand and Micron's results is explicit in the reporting.",
-    "stance_rationale": "Short-term: A significant beat on revenue and EPS, coupled with 'monster' forward guidance, will force analyst upgrades and attract momentum capital, overwhelming the weak macro backdrop. The stock's initial after-market pop has room to run. Long-term: The report confirms the AI-driven structural shift in memory demand is accelerating, particularly in high-margin HBM. This suggests a prolonged upcycle with higher-than-historical profitability, justifying sustained outperformance over the next 1-3 quarters.",
+    "confidence": 0.6,
+    "confidence_rationale": "Confidence is moderate. The long-term fundamental thesis (memory upcycle driven by AI) is well-supported by the news. However, the short-term stance is a tactical call against extreme momentum, which is inherently uncertain. The parabolic price action could continue, but risk/reward for new longs is poor in the immediate term, while the risk of a sharp reversal is high.",
+    "stance_rationale": "Short-term: The stock is parabolic, up 40% in five days, pricing in immense optimism and creating a high probability of a near-term pullback or consolidation versus the market. The euphoria and extreme overbought conditions suggest a tactical fade is prudent. Long-term: The structural demand for HBM and tight overall memory supply create a powerful tailwind for pricing and margins. Over the next 1-3 quarters, Micron's earnings are likely to dramatically outperform prior expectations, justifying a rerating and further upside once the current froth subsides.",
     "key_signals": [
       {
         "type": "mainstream_stock",
         "ticker": "NVDA",
         "company": "NVIDIA Corporation",
-        "signal": "A positive read-through, but already the center of the AI narrative. The trade is crowded.",
-        "evidence": "Positive. Seen as confirmation of the AI hardware spending supercycle."
+        "signal": "Consensus long. NVDA's performance is the ultimate source of demand, but it's the most crowded trade in the AI space.",
+        "evidence": "Bullish. Mainstream investors will see Micron's success as confirmation of unabated demand for AI accelerators."
       },
       {
         "type": "mainstream_stock",
-        "ticker": "AMZN",
-        "company": "Amazon.com, Inc.",
-        "signal": "Confirms the AWS growth narrative, but MU's report is only a small part of the Amazon investment case.",
-        "evidence": "Positive. Validates the high capex spend and the payoff in AI services demand."
+        "ticker": "WDC",
+        "company": "Western Digital Corporation",
+        "signal": "A clear beneficiary of the same memory upcycle, confirming the sector-wide dynamic. It's a direct, first-order trade.",
+        "evidence": "Bullish. Capital flows into the memory sector will lift all major players as investors chase the theme."
       },
       {
         "type": "mainstream_stock",
-        "ticker": "LRCX",
-        "company": "Lam Research Corporation",
-        "signal": "A direct beneficiary, but well-known by semiconductor investors. May have less upside than more niche suppliers.",
-        "evidence": "Positive. WFE stocks are a classic first-order derivative of semiconductor company strength."
-      },
-      {
-        "type": "mainstream_stock",
-        "ticker": "AMD",
-        "company": "Advanced Micro Devices, Inc.",
-        "signal": "A positive read-through for AMD's MI300 accelerator ramp.",
-        "evidence": "Positive. Suggests the market for AI chips is large enough to support multiple winners."
-      },
-      {
-        "type": "second_order_opportunity",
-        "ticker": "KLAC",
-        "company": "KLA Corporation",
-        "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because Micron's results show booming demand for complex, stacked High Bandwidth Memory (HBM) to serve the AI market, manufacturing yields become paramount. This causes chipmakers to increase spending on KLA's market-leading process control and inspection tools to prevent costly defects in these high-value chips, boosting KLAC's revenue and margins.",
-        "impact_score": 8
+        "ticker": "AMAT",
+        "company": "Applied Materials, Inc.",
+        "signal": "A classic 'pick-and-shovel' play, but very much a mainstream and consensus idea at this stage of the cycle.",
+        "evidence": "Bullish. Investors will anticipate increased capex from memory makers, driving future orders for equipment companies like AMAT."
       },
       {
         "type": "second_order_opportunity",
         "ticker": "ENTG",
         "company": "Entegris, Inc.",
         "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because memory fabs like Micron are ramping production to meet 'monster' AI-driven demand, their consumption of high-purity specialty chemicals, advanced filtration, and wafer handling products increases directly with wafer starts. This causes a surge in recurring revenue for Entegris, which provides these critical, high-margin consumables.",
+        "evidence": "Because memory manufacturers like Micron are ramping production to meet extreme AI-driven demand, their consumption of specialty materials, advanced filtration, and contamination control solutions will increase, which directly drives revenue and earnings growth for Entegris as a key supplier.",
         "impact_score": 7
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "TER",
+        "company": "Teradyne, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because the surge in AI demand is specifically for complex, stacked memory like HBM, the testing intensity and complexity per unit skyrockets. This requires more sophisticated and higher-priced automated test equipment (ATE), directly benefiting Teradyne, a leader in memory test.",
+        "impact_score": 6
       },
       {
         "type": "second_order_opportunity",
         "ticker": "HPQ",
         "company": "HP Inc.",
         "signal": "Short: Cost Squeeze & Victims",
-        "evidence": "Because Micron's results are driven by 'sharply higher memory prices' due to AI data center demand hogging supply, PC manufacturers like HP Inc. face a rapid increase in their Bill of Materials (BOM) cost. This causes margin compression for HPQ, as the competitive PC market limits their ability to immediately pass on these higher component costs to consumers.",
-        "impact_score": 6
-      },
-      {
-        "type": "second_order_opportunity",
-        "ticker": "CAMT",
-        "company": "Camtek Ltd.",
-        "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because the AI-driven memory boom is centered on High Bandwidth Memory (HBM), which involves stacking multiple DRAM dies, demand for advanced packaging inspection tools skyrockets. This causes a surge in orders for Camtek's specialized metrology and inspection systems, which are crucial for ensuring the quality of these complex 2.5D/3D chip packages.",
-        "impact_score": 9
+        "evidence": "Because memory prices (DRAM and NAND) are spiking due to tight supply, the bill of materials (BOM) for PC manufacturers will rise significantly. HP, with its exposure to the competitive, lower-margin consumer and enterprise PC markets, will struggle to pass these costs on, leading to gross margin compression and potential earnings misses.",
+        "impact_score": 8
       }
     ],
     "risks": [
-      "The analysis assumes that Micron's positive results and guidance will translate into increased capex for equipment, which is likely but not explicitly stated in the news summaries.",
-      "The HPQ short thesis assumes the company cannot immediately pass on higher memory costs. A surprise surge in 'AI PC' demand could give them unexpected pricing power, mitigating the margin squeeze.",
-      "Macro risk remains a headwind. While the MU-specific catalyst is strong, a sharp market-wide de-risking event could still pull down all stocks, including MU and the long opportunity ideas."
+      "The primary risk to the MU long-term bull thesis is that we are at 'peak hype' and current stock prices have already priced in the entire upcycle. Any hiccup in AI demand could cause a violent correction.",
+      "The short HPQ thesis assumes that the company cannot fully pass on rising memory costs. A stronger-than-expected 'AI PC' upgrade cycle could grant them unexpected pricing power, mitigating the margin squeeze.",
+      "The analysis is based on news from a hypothetical future date (May 2026). The extreme stock price movements described suggest a highly volatile market environment where technical factors and sentiment can overwhelm fundamentals in the short term."
     ],
     "citations": [
       {
-        "title": "Micron Q1 Preview: Record Quarter Predicted By Analyst — 'We Recommend Owning The Stock'",
+        "title": "Mizuho Raises its Price Target on Micron (MU) to $740",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=4e00b428dd011f85eb1eb01b7e823840e78c3269798cfa200bab0dade44bffe1"
+        "url": "https://finnhub.io/api/news?id=3b6d6c60d75492fc9fb6123fb7119a7ff67f71965cc9478f5aa8206638b6a909"
       },
       {
-        "title": "Micron (MU) Q1 2026 Earnings Call Transcript",
+        "title": "Micron stock sends a strong signal amid chip shortage",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=e2262fb96208546e107af8c0010688cbf41b8b81556e8f06bc75202feddb8fe9"
+        "url": "https://finnhub.io/api/news?id=afa642a5b97239aad51c31aae57cff8bb04fabac12e1bba67ad33c402b7f03ec"
       },
       {
-        "title": "Micron Technology Beats First-Quarter Views as Cloud Memory Revenue Doubles",
+        "title": "Micron Rockets 12%, SanDisk Leaps 10% as Tight Memory Supply Fuels Parabolic AI Trade",
+        "source": "24/7 Wall St. / direct-company",
+        "url": "https://247wallst.com/investing/2026/05/05/micron-rockets-12-sandisk-leaps-10-as-tight-memory-supply-fuels-parabolic-ai-trade/"
+      },
+      {
+        "title": "Micron Jumps 7%: Is the Memory Maker Now a Structural AI Winner?",
+        "source": "24/7 Wall St. / direct-company",
+        "url": "https://247wallst.com/investing/2026/05/04/micron-jumps-7-is-the-memory-maker-now-a-structural-ai-winner/"
+      },
+      {
+        "title": "Melius Research Begins Coverage of Micron Technology (MU) Stock",
+        "source": "Yahoo Entertainment / direct-company",
+        "url": "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_ea5efd9f-8ec6-4ffd-8095-b151dabaed44"
+      },
+      {
+        "title": "Is Micron Technology, Inc. (MU) A Good Stock To Buy Now?",
+        "source": "Yahoo Entertainment / industry-chain",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/micron-technology-inc-mu-good-174936481.html"
+      },
+      {
+        "title": "There Is Optimism Around Micron Technology’s HBM Business, Here Is What You Should Know?",
+        "source": "Yahoo Entertainment / direct-company",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/optimism-around-micron-technology-hbm-085015660.html"
+      },
+      {
+        "title": "Watch Micron Soar on Big Money Buys",
+        "source": "Yahoo Entertainment / direct-company",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/watch-micron-soar-big-money-115237605.html"
+      },
+      {
+        "title": "Micron Stock Keeps Soaring, as Investors Make Unusually Heavy MU Option Trades",
+        "source": "Barchart.com / direct-company",
+        "url": "https://www.barchart.com/story/news/1540841/micron-stock-keeps-soaring-as-investors-make-unusually-heavy-mu-option-trades"
+      },
+      {
+        "title": "Micron Stock Is Up 700% Over the Past Year. Its Shares Still Look Relatively Cheap.",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=915866ed098200dc289d311c8b34775e08a559ee937c7a09b03f5caec43bf910"
-      },
-      {
-        "title": "Micron Post Earnings: Just How Good Could Things Get?",
-        "source": "SeekingAlpha",
-        "url": "https://finnhub.io/api/news?id=214d113d46274272f15c205dffcbc5578ac9955ab5b82d3bbc123cc7db812a2c"
-      },
-      {
-        "title": "Micron earnings, Fed commentary: What to Watch",
-        "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=383b068d637816f41d5a7bad825c8d1ae4c1556e9070991604a30d3ae4ed6446"
-      },
-      {
-        "title": "Micron Technology, Inc. (MU) Q1 2026 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://finnhub.io/api/news?id=d818241b4325e5e436f9e0d52e7f6be6b9ff531017b838254e27835ccf84f3c4"
-      },
-      {
-        "title": "Not All AI Stocks Are Falling These Days. Micron Is Rising on Strong Earnings",
-        "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=2e827f4281f48444ef0c4ea193c3e4d3dc31e122d611084654b83db9fd57bb86"
-      },
-      {
-        "title": "Micron Crushes Earnings. The Stock Is Rising.",
-        "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=2183ee0974abd2c10d05fce2c6811f8b40dbd30a78c7bb84f0973b80f4df02f9"
-      },
-      {
-        "title": "Micron outlook's 'monster numbers' are the real earnings story",
-        "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=7d29e295489302ef760581b2bc0226995ff4a65c964c10bbea9ead7edb350fbf"
-      },
-      {
-        "title": "Micron shares surge amid sharply higher revenue forecasts on AI-led memory demand",
-        "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=d8edcfee0e21ef744f2489b89621cb8897230402b73fd0b7d52f97bc574c6ec6"
+        "url": "https://finnhub.io/api/news?id=e81e2af9f323ac37c97f75adc8d9942e69ca6219f2c243f87fa905fb3356ae79"
       }
     ],
     "summary": {
-      "news_summary": "Micron Technology (MU) reported fiscal Q1 2026 earnings and revenue that significantly beat Wall Street estimates, and provided sharply higher guidance driven by surging demand for AI-related memory.",
-      "core_insight": "While the market focuses on Micron's direct AI exposure, the explosive demand and pricing power for advanced memory (like HBM) create an underappreciated boom for the highly specialized equipment and materials suppliers essential for its complex manufacturing, representing a more durable, less cyclical 'pick-and-shovel' play."
-    }
-  },
-  {
-    "ticker": "MU",
-    "company": "Micron Technology",
-    "agent_name": "fundamental",
-    "short_term_stance": "Neutral",
-    "long_term_stance": "Bullish",
-    "confidence": 0.6,
-    "confidence_rationale": "Confidence is medium because while the reported financial data is exceptionally strong and clear, the analysis is severely limited by the lack of critical context, including management guidance, commentary from the earnings call, and analyst consensus estimates. These missing pieces are crucial for understanding forward-looking trends and market expectations in a cyclical industry.",
-    "stance_rationale": "Micron reported a quarter of explosive growth, with revenue and net income surging 74.9% and 163.1% sequentially, respectively. Profitability and cash flow are exceptionally strong, and the company maintains a net cash position. While the very low forward P/E of 5.68 is attractive, it may also imply market skepticism about the sustainability of these peak-cycle earnings. The lack of management guidance and consensus estimates introduces uncertainty, but the reported results are outstanding.",
-    "key_signals": [
-      "Massive sequential growth with revenue up 74.9% and net income up 163.1% QoQ.",
-      "Extremely strong profitability with a 41.5% profit margin and over 160% QoQ growth in operating income.",
-      "Strong balance sheet with a net cash position, as cash and equivalents of $13.91B exceed total debt of $10.80B.",
-      "Significant free cash flow generation, which grew 82.7% QoQ to $5.52 billion.",
-      "Very low forward P/E of 5.68 suggests high anticipated earnings growth or potential undervaluation relative to near-term earnings.",
-      "Exceptional reported year-over-year growth, with revenue growth of 96.3% and earnings growth of 656% provided by yfinance.",
-      "Revenue: $23.86B (current) vs. $13.64B (previous quarter)",
-      "Net Income: $13.79B (current) vs. $5.24B (previous quarter)",
-      "Forward P/E: 5.68",
-      "Trailing P/E: 27.19",
-      "Net Cash Position: Cash of $13.91B vs. Total Debt of $10.80B",
-      "Free Cash Flow: $5.52B",
-      "Profit Margin: 41.5%",
-      "yfinance Revenue Growth: 1.963 (interpreted as +96.3%)",
-      "yfinance Earnings Growth: 7.56 (interpreted as +656%)"
-    ],
-    "risks": [
-      "The extremely low Forward P/E of 5.68 could indicate market concern that current results represent a cyclical peak for the memory industry and are not sustainable.",
-      "The memory industry is historically highly cyclical, posing a significant risk to future earnings consistency and growth.",
-      "Absence of analyst consensus estimates prevents a comparison against market expectations for the quarter.",
-      "No guidance or management commentary was provided, creating uncertainty about the company's own forward-looking perspective and business trends.",
-      "Analyst consensus estimates for revenue, profit, and EPS.",
-      "Official company guidance for the upcoming quarter and full year.",
-      "Earnings call transcript for management's qualitative assessment and outlook.",
-      "Peer valuation and operational metrics for comparative analysis.",
-      "Segment-level performance data (e.g., DRAM vs. NAND)."
-    ],
-    "citations": [],
-    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The reported results dramatically exceed typical growth rates, showing explosive expansion in revenue, profitability, and cash flow. This strongly supports a bullish thesis based on a memory market up-cycle and Micron's ability to capitalize on it.",
-    "raw_packet": {
-      "ticker": "MU",
-      "company": "Micron Technology",
-      "agent_name": "fundamental",
-      "short_term_stance": "Neutral",
-      "long_term_stance": "Bullish",
-      "confidence": 0.6,
-      "confidence_rationale": "Confidence is medium because while the reported financial data is exceptionally strong and clear, the analysis is severely limited by the lack of critical context, including management guidance, commentary from the earnings call, and analyst consensus estimates. These missing pieces are crucial for understanding forward-looking trends and market expectations in a cyclical industry.",
-      "stance_rationale": "Micron reported a quarter of explosive growth, with revenue and net income surging 74.9% and 163.1% sequentially, respectively. Profitability and cash flow are exceptionally strong, and the company maintains a net cash position. While the very low forward P/E of 5.68 is attractive, it may also imply market skepticism about the sustainability of these peak-cycle earnings. The lack of management guidance and consensus estimates introduces uncertainty, but the reported results are outstanding.",
-      "key_signals": [
-        "Massive sequential growth with revenue up 74.9% and net income up 163.1% QoQ.",
-        "Extremely strong profitability with a 41.5% profit margin and over 160% QoQ growth in operating income.",
-        "Strong balance sheet with a net cash position, as cash and equivalents of $13.91B exceed total debt of $10.80B.",
-        "Significant free cash flow generation, which grew 82.7% QoQ to $5.52 billion.",
-        "Very low forward P/E of 5.68 suggests high anticipated earnings growth or potential undervaluation relative to near-term earnings.",
-        "Exceptional reported year-over-year growth, with revenue growth of 96.3% and earnings growth of 656% provided by yfinance.",
-        "Revenue: $23.86B (current) vs. $13.64B (previous quarter)",
-        "Net Income: $13.79B (current) vs. $5.24B (previous quarter)",
-        "Forward P/E: 5.68",
-        "Trailing P/E: 27.19",
-        "Net Cash Position: Cash of $13.91B vs. Total Debt of $10.80B",
-        "Free Cash Flow: $5.52B",
-        "Profit Margin: 41.5%",
-        "yfinance Revenue Growth: 1.963 (interpreted as +96.3%)",
-        "yfinance Earnings Growth: 7.56 (interpreted as +656%)"
-      ],
-      "risks": [
-        "The extremely low Forward P/E of 5.68 could indicate market concern that current results represent a cyclical peak for the memory industry and are not sustainable.",
-        "The memory industry is historically highly cyclical, posing a significant risk to future earnings consistency and growth.",
-        "Absence of analyst consensus estimates prevents a comparison against market expectations for the quarter.",
-        "No guidance or management commentary was provided, creating uncertainty about the company's own forward-looking perspective and business trends.",
-        "Analyst consensus estimates for revenue, profit, and EPS.",
-        "Official company guidance for the upcoming quarter and full year.",
-        "Earnings call transcript for management's qualitative assessment and outlook.",
-        "Peer valuation and operational metrics for comparative analysis.",
-        "Segment-level performance data (e.g., DRAM vs. NAND)."
-      ],
-      "summary": {
-        "beat_or_miss": "Unclear",
-        "guidance_change": "Unclear",
-        "management_tone": "Unclear",
-        "thesis_impact": "Strengthened",
-        "thesis_impact_reasoning": "The reported results dramatically exceed typical growth rates, showing explosive expansion in revenue, profitability, and cash flow. This strongly supports a bullish thesis based on a memory market up-cycle and Micron's ability to capitalize on it."
-      }
+      "news_summary": "Micron's stock has experienced a parabolic surge (+40% in 5 sessions) driven by analyst upgrades and a powerful narrative of tight memory supply, particularly for high-bandwidth memory (HBM) essential for the AI boom.",
+      "core_insight": "While the market is bidding up memory producers on the AI-driven supply shortage, the second-order effect is a severe and likely underestimated gross margin squeeze for downstream hardware original equipment manufacturers (OEMs) who use memory as a primary input."
     }
   },
   {
@@ -223,125 +123,206 @@
     "agent_name": "market_technical",
     "short_term_stance": "Bullish",
     "long_term_stance": "Bullish",
-    "confidence": 0.8,
-    "confidence_rationale": "Multiple indicators confirm a powerful, high-momentum uptrend with strong relative strength and volume confirmation. Confidence is not higher due to significant overbought conditions (RSI > 70) and price extension from moving averages, which increase the risk of a short-term pullback.",
-    "stance_rationale": "The dominant factor is the powerful upward momentum confirmed across multiple indicators. However, the extreme overbought condition suggests that while the trend is strong, the immediate risk-reward for new long positions has become less favorable due to the high probability of a near-term price correction.",
+    "confidence": 0.9,
+    "confidence_rationale": "Confidence is high due to the strong alignment across multiple, independent technical signals. The price is in a clear uptrend above all key moving averages, momentum is strongly positive (MACD, RSI), the recent breakout was confirmed by a significant volume spike, and the stock is showing massive relative strength. The only major counter-signal is the overbought RSI, which is a common feature in powerful trends.",
+    "stance_rationale": "The stock is in a state of extreme bullish momentum confirmed by price, volume, and relative strength, but its overbought and extended nature suggests a high probability of a corrective phase or consolidation in the near future.",
     "key_signals": [
       {
-        "type": "Returns",
-        "signal": "Strong Positive Momentum",
-        "evidence": "Recent 10-day price surge from 449.38 to 576.45, with a mean daily return of 2.61%."
-      },
-      {
-        "type": "RSI",
-        "signal": "Overbought Condition",
-        "evidence": "RSI is at 76.59, indicating very strong buying pressure but also a potential for a short-term pullback."
-      },
-      {
         "type": "Moving Averages",
-        "signal": "Strong Bullish Trend",
-        "evidence": "Price (576.45) is significantly above its MA20 (471.70) by 22.2% and MA50 (428.54) by 34.5%."
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "The price at $746.81 is significantly above its 20-day ($525.39), 50-day ($448.89), and 200-day ($290.45) moving averages, indicating a powerful, established uptrend across all timeframes."
+      },
+      {
+        "type": "Returns",
+        "signal": "Explosive Upward Momentum",
+        "evidence": "The stock surged +15.49% on the latest trading day, demonstrating intense buying pressure."
+      },
+      {
+        "type": "Volume",
+        "signal": "High-Conviction Breakout",
+        "evidence": "The latest trading session's volume was 1.51 times the recent average, confirming strong institutional participation in the upward move."
       },
       {
         "type": "MACD",
         "signal": "Accelerating Bullish Momentum",
-        "evidence": "A bullish MACD crossover is confirmed, with a large positive histogram (9.50) indicating momentum is strengthening."
-      },
-      {
-        "type": "Volume",
-        "signal": "Supportive Participation",
-        "evidence": "Latest volume is 1.14x the recent average, confirming conviction on the strong upward price move."
+        "evidence": "A strong bullish crossover is in effect with the MACD line (67.03) well above the signal line (45.07), and a large, positive histogram (21.96) indicating momentum is accelerating."
       },
       {
         "type": "Relative Strength",
-        "signal": "Market Leadership",
-        "evidence": "MU has outperformed the SPY benchmark by 44.37%, indicating strong relative strength."
+        "signal": "Significant Market Outperformance",
+        "evidence": "The stock has massively outperformed the QQQ benchmark, posting a relative return of over 725% in the measured period, highlighting it as a market leader."
       },
       {
-        "type": "Drawdown",
-        "signal": "Trading at Peak",
-        "evidence": "Current drawdown is 0.0%, signifying the stock is at its recent high."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "High Volatility Bullish",
-        "evidence": "The current market environment is characterized as a high-volatility uptrend, suggesting large price swings are likely."
+        "type": "RSI",
+        "signal": "Extreme Overbought Condition",
+        "evidence": "The RSI of 83.78 is deep into overbought territory (>70), signaling the recent price advance has been exceptionally rapid and may be over-extended."
       },
       {
         "type": "Volatility",
-        "signal": "high volatility",
-        "evidence": "Annualized volatility 69.07%, Recent 59.75%"
+        "signal": "High-Risk Environment",
+        "evidence": "Recent volatility has surged to 81.26%, indicating large price swings and heightened risk."
+      },
+      {
+        "type": "Drawdown",
+        "signal": "contained drawdown",
+        "evidence": "Current drawdown 0.0%, Max drawdown -30.28%"
+      },
+      {
+        "type": "Market Regime",
+        "signal": "high_volatility_bullish",
+        "evidence": "Regime classification: high_volatility_bullish"
       }
     ],
     "risks": [
-      "The stock is in a technically overbought condition (RSI > 76), increasing vulnerability to profit-taking and a price correction.",
-      "Price is significantly extended, trading 22.2% above its 20-day moving average, which raises the probability of a mean-reversion event.",
-      "High annualized volatility (69.1%) indicates that any pullback or reversal could be sharp and rapid."
+      "Extreme overbought conditions (RSI > 80) suggest the stock is vulnerable to a sharp, short-term pullback or consolidation.",
+      "The price is significantly extended from its moving averages (e.g., over 42% above the 20-day MA), increasing the risk of mean reversion.",
+      "High and rising volatility (81.26%) implies large price swings, which increases downside risk even within an uptrend."
     ],
     "citations": [],
-    "summary": "MU is exhibiting a powerful, high-volatility bullish trend. The analysis shows strong momentum confirmed by a bullish MACD, significant outperformance, and supportive volume. The price is well above key moving averages, confirming a robust uptrend. However, the rally has pushed the stock into a deeply overbought state (RSI 76.6) and far from its short-term MAs, signaling a heightened risk of a near-term pullback or consolidation.",
+    "summary": "As of 2026/05/09, Micron Technology (MU) is in a powerful, high-volatility uptrend. The technical picture is overwhelmingly bullish, characterized by an explosive price surge on high volume, a strong bullish trend structure across all key moving averages, and accelerating momentum. The stock is a clear market leader, massively outperforming its benchmark. However, this strength has pushed the stock into a deeply overbought and extended state, indicating a high risk of a near-term pullback or consolidation.",
     "raw_packet": {
       "ticker": "MU",
       "company": "Micron Technology",
       "agent_name": "Market & Technical Analysis Agent",
       "short_term_stance": "bullish",
       "long_term_stance": "bullish",
-      "confidence": 0.8,
-      "confidence_rationale": "Multiple indicators confirm a powerful, high-momentum uptrend with strong relative strength and volume confirmation. Confidence is not higher due to significant overbought conditions (RSI > 70) and price extension from moving averages, which increase the risk of a short-term pullback.",
+      "confidence": 0.9,
+      "confidence_rationale": "Confidence is high due to the strong alignment across multiple, independent technical signals. The price is in a clear uptrend above all key moving averages, momentum is strongly positive (MACD, RSI), the recent breakout was confirmed by a significant volume spike, and the stock is showing massive relative strength. The only major counter-signal is the overbought RSI, which is a common feature in powerful trends.",
       "key_signals": [
         {
-          "type": "Returns",
-          "signal": "Strong Positive Momentum",
-          "evidence": "Recent 10-day price surge from 449.38 to 576.45, with a mean daily return of 2.61%."
-        },
-        {
-          "type": "RSI",
-          "signal": "Overbought Condition",
-          "evidence": "RSI is at 76.59, indicating very strong buying pressure but also a potential for a short-term pullback."
-        },
-        {
           "type": "Moving Averages",
-          "signal": "Strong Bullish Trend",
-          "evidence": "Price (576.45) is significantly above its MA20 (471.70) by 22.2% and MA50 (428.54) by 34.5%."
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "The price at $746.81 is significantly above its 20-day ($525.39), 50-day ($448.89), and 200-day ($290.45) moving averages, indicating a powerful, established uptrend across all timeframes."
+        },
+        {
+          "type": "Returns",
+          "signal": "Explosive Upward Momentum",
+          "evidence": "The stock surged +15.49% on the latest trading day, demonstrating intense buying pressure."
+        },
+        {
+          "type": "Volume",
+          "signal": "High-Conviction Breakout",
+          "evidence": "The latest trading session's volume was 1.51 times the recent average, confirming strong institutional participation in the upward move."
         },
         {
           "type": "MACD",
           "signal": "Accelerating Bullish Momentum",
-          "evidence": "A bullish MACD crossover is confirmed, with a large positive histogram (9.50) indicating momentum is strengthening."
-        },
-        {
-          "type": "Volume",
-          "signal": "Supportive Participation",
-          "evidence": "Latest volume is 1.14x the recent average, confirming conviction on the strong upward price move."
+          "evidence": "A strong bullish crossover is in effect with the MACD line (67.03) well above the signal line (45.07), and a large, positive histogram (21.96) indicating momentum is accelerating."
         },
         {
           "type": "Relative Strength",
-          "signal": "Market Leadership",
-          "evidence": "MU has outperformed the SPY benchmark by 44.37%, indicating strong relative strength."
+          "signal": "Significant Market Outperformance",
+          "evidence": "The stock has massively outperformed the QQQ benchmark, posting a relative return of over 725% in the measured period, highlighting it as a market leader."
         },
         {
-          "type": "Drawdown",
-          "signal": "Trading at Peak",
-          "evidence": "Current drawdown is 0.0%, signifying the stock is at its recent high."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "High Volatility Bullish",
-          "evidence": "The current market environment is characterized as a high-volatility uptrend, suggesting large price swings are likely."
+          "type": "RSI",
+          "signal": "Extreme Overbought Condition",
+          "evidence": "The RSI of 83.78 is deep into overbought territory (>70), signaling the recent price advance has been exceptionally rapid and may be over-extended."
         },
         {
           "type": "Volatility",
-          "signal": "high volatility",
-          "evidence": "Annualized volatility 69.07%, Recent 59.75%"
+          "signal": "High-Risk Environment",
+          "evidence": "Recent volatility has surged to 81.26%, indicating large price swings and heightened risk."
+        },
+        {
+          "type": "Drawdown",
+          "signal": "contained drawdown",
+          "evidence": "Current drawdown 0.0%, Max drawdown -30.28%"
+        },
+        {
+          "type": "Market Regime",
+          "signal": "high_volatility_bullish",
+          "evidence": "Regime classification: high_volatility_bullish"
         }
       ],
       "risks": [
-        "The stock is in a technically overbought condition (RSI > 76), increasing vulnerability to profit-taking and a price correction.",
-        "Price is significantly extended, trading 22.2% above its 20-day moving average, which raises the probability of a mean-reversion event.",
-        "High annualized volatility (69.1%) indicates that any pullback or reversal could be sharp and rapid."
+        "Extreme overbought conditions (RSI > 80) suggest the stock is vulnerable to a sharp, short-term pullback or consolidation.",
+        "The price is significantly extended from its moving averages (e.g., over 42% above the 20-day MA), increasing the risk of mean reversion.",
+        "High and rising volatility (81.26%) implies large price swings, which increases downside risk even within an uptrend."
       ],
-      "summary": "MU is exhibiting a powerful, high-volatility bullish trend. The analysis shows strong momentum confirmed by a bullish MACD, significant outperformance, and supportive volume. The price is well above key moving averages, confirming a robust uptrend. However, the rally has pushed the stock into a deeply overbought state (RSI 76.6) and far from its short-term MAs, signaling a heightened risk of a near-term pullback or consolidation.",
-      "core_insight": "The dominant factor is the powerful upward momentum confirmed across multiple indicators. However, the extreme overbought condition suggests that while the trend is strong, the immediate risk-reward for new long positions has become less favorable due to the high probability of a near-term price correction."
+      "summary": "As of 2026/05/09, Micron Technology (MU) is in a powerful, high-volatility uptrend. The technical picture is overwhelmingly bullish, characterized by an explosive price surge on high volume, a strong bullish trend structure across all key moving averages, and accelerating momentum. The stock is a clear market leader, massively outperforming its benchmark. However, this strength has pushed the stock into a deeply overbought and extended state, indicating a high risk of a near-term pullback or consolidation.",
+      "core_insight": "The stock is in a state of extreme bullish momentum confirmed by price, volume, and relative strength, but its overbought and extended nature suggests a high probability of a corrective phase or consolidation in the near future."
+    }
+  },
+  {
+    "ticker": "MU",
+    "company": "Micron Technology",
+    "agent_name": "fundamental",
+    "short_term_stance": "Neutral",
+    "long_term_stance": "Bullish",
+    "confidence": 0.4,
+    "confidence_rationale": "Confidence is low. While the reported quarterly performance is exceptionally strong, the complete absence of analyst consensus, management guidance, earnings call commentary, and valuation metrics makes it impossible to form a high-conviction investment view. The analysis is based solely on historical QoQ data. Confidence calibrated upward because core financial statement metrics are available.",
+    "stance_rationale": "The company demonstrated exceptionally strong quarter-over-quarter fundamental improvement, with significant revenue growth, substantial margin expansion across all profit levels, and robust free cash flow generation. The balance sheet is healthy with a net cash position. However, the lack of valuation data and forward guidance introduces significant uncertainty.",
+    "key_signals": [
+      "Revenue grew by a substantial 74.9% QoQ from $13.64B to $23.86B.",
+      "Net Income surged 163.1% QoQ from $5.24B to $13.79B, indicating significant operating leverage.",
+      "Gross margin expanded significantly QoQ, from approximately 56.1% to 74.4%.",
+      "Free Cash Flow increased by 82.5% QoQ to $5.52B, showcasing strong cash generation.",
+      "The company holds a net cash position with $13.91B in cash and equivalents versus $10.80B in total debt.",
+      "Revenue QoQ: current=$23,860,000,000.0, previous_quarter=$13,643,000,000.0",
+      "Net Income QoQ: current=$13,785,000,000.0, previous_quarter=$5,240,000,000.0",
+      "Gross Profit QoQ: current=$17,755,000,000.0, previous_quarter=$7,646,000,000.0",
+      "Free Cash Flow QoQ: current=$5,516,000,000.0, previous_quarter=$3,022,000,000.0",
+      "Cash And Cash Equivalents: current=$13,908,000,000.0",
+      "Total Debt: current=$10,798,000,000.0"
+    ],
+    "risks": [
+      "Crucial valuation metrics such as Market Cap, Trailing P/E, and Forward P/E are missing, making it impossible to assess valuation.",
+      "The absence of consensus estimates prevents determination of whether the strong results beat market expectations.",
+      "No management guidance was provided, creating uncertainty about the sustainability of this powerful growth trend.",
+      "Year-over-year growth metrics are absent, limiting the analysis to a QoQ perspective only.",
+      "Lack of an earnings call transcript obscures management's tone and qualitative outlook.",
+      "Analyst consensus estimates for revenue and EPS.",
+      "Management guidance for the upcoming quarter and full year.",
+      "Earnings call transcript for management tone and qualitative business drivers.",
+      "Valuation metrics (Market Cap, P/E ratios, EV/Sales, etc.).",
+      "Year-over-year financial comparisons.",
+      "Peer comparison data."
+    ],
+    "citations": [],
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The reported quarter shows a massive acceleration in revenue, profitability, and cash flow compared to the prior quarter. This fundamental performance strongly reinforces any pre-existing bullish thesis, despite the lack of forward guidance and valuation context.",
+    "raw_packet": {
+      "ticker": "MU",
+      "company": "Micron Technology",
+      "agent_name": "fundamental",
+      "short_term_stance": "Neutral",
+      "long_term_stance": "Bullish",
+      "confidence": 0.4,
+      "confidence_rationale": "Confidence is low. While the reported quarterly performance is exceptionally strong, the complete absence of analyst consensus, management guidance, earnings call commentary, and valuation metrics makes it impossible to form a high-conviction investment view. The analysis is based solely on historical QoQ data. Confidence calibrated upward because core financial statement metrics are available.",
+      "stance_rationale": "The company demonstrated exceptionally strong quarter-over-quarter fundamental improvement, with significant revenue growth, substantial margin expansion across all profit levels, and robust free cash flow generation. The balance sheet is healthy with a net cash position. However, the lack of valuation data and forward guidance introduces significant uncertainty.",
+      "key_signals": [
+        "Revenue grew by a substantial 74.9% QoQ from $13.64B to $23.86B.",
+        "Net Income surged 163.1% QoQ from $5.24B to $13.79B, indicating significant operating leverage.",
+        "Gross margin expanded significantly QoQ, from approximately 56.1% to 74.4%.",
+        "Free Cash Flow increased by 82.5% QoQ to $5.52B, showcasing strong cash generation.",
+        "The company holds a net cash position with $13.91B in cash and equivalents versus $10.80B in total debt.",
+        "Revenue QoQ: current=$23,860,000,000.0, previous_quarter=$13,643,000,000.0",
+        "Net Income QoQ: current=$13,785,000,000.0, previous_quarter=$5,240,000,000.0",
+        "Gross Profit QoQ: current=$17,755,000,000.0, previous_quarter=$7,646,000,000.0",
+        "Free Cash Flow QoQ: current=$5,516,000,000.0, previous_quarter=$3,022,000,000.0",
+        "Cash And Cash Equivalents: current=$13,908,000,000.0",
+        "Total Debt: current=$10,798,000,000.0"
+      ],
+      "risks": [
+        "Crucial valuation metrics such as Market Cap, Trailing P/E, and Forward P/E are missing, making it impossible to assess valuation.",
+        "The absence of consensus estimates prevents determination of whether the strong results beat market expectations.",
+        "No management guidance was provided, creating uncertainty about the sustainability of this powerful growth trend.",
+        "Year-over-year growth metrics are absent, limiting the analysis to a QoQ perspective only.",
+        "Lack of an earnings call transcript obscures management's tone and qualitative outlook.",
+        "Analyst consensus estimates for revenue and EPS.",
+        "Management guidance for the upcoming quarter and full year.",
+        "Earnings call transcript for management tone and qualitative business drivers.",
+        "Valuation metrics (Market Cap, P/E ratios, EV/Sales, etc.).",
+        "Year-over-year financial comparisons.",
+        "Peer comparison data."
+      ],
+      "summary": {
+        "beat_or_miss": "Unclear",
+        "guidance_change": "Unclear",
+        "management_tone": "Unclear",
+        "thesis_impact": "Strengthened",
+        "thesis_impact_reasoning": "The reported quarter shows a massive acceleration in revenue, profitability, and cash flow compared to the prior quarter. This fundamental performance strongly reinforces any pre-existing bullish thesis, despite the lack of forward guidance and valuation context."
+      }
     }
   }
 ]
