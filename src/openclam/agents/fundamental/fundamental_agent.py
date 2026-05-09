@@ -435,6 +435,68 @@ def extract_guidance_text(transcript_snippets: Sequence[str] | None) -> str:
     return "\n".join(selected[:6])
 
 
+def _has_real_transcript(snippets: Sequence[str] | None) -> bool:
+    if not snippets:
+        return False
+    placeholder_prefixes = (
+        "fmp_api_key is not set",
+        "no earnings call transcript available",
+        "transcript fetch skipped",
+    )
+    for snippet in snippets:
+        text = str(snippet or "").strip().lower()
+        if text and not text.startswith(placeholder_prefixes):
+            return True
+    return False
+
+
+def _has_guidance_text(guidance_text: str | None) -> bool:
+    text = str(guidance_text or "").strip().lower()
+    if not text:
+        return False
+    unavailable_markers = (
+        "no guidance information available",
+        "fmp_api_key is not set",
+        "transcript available, but no explicit guidance",
+    )
+    return not text.startswith(unavailable_markers)
+
+
+def _calibrate_fundamental_confidence(output: FundamentalOutput, data: FundamentalInput) -> FundamentalOutput:
+    """Lightly calibrate model confidence to the actual evidence packet quality."""
+    available_core_metrics = sum(
+        1 for metric in data.financial_metrics[:8] if metric.current_value is not None
+    )
+    has_transcript = _has_real_transcript(data.earnings_call_snippets)
+    has_guidance = _has_guidance_text(data.guidance_text)
+    has_consensus = any(metric.consensus_estimate is not None for metric in data.financial_metrics)
+
+    evidence_floor = 0.0
+    evidence_notes: list[str] = []
+    if available_core_metrics >= 5:
+        evidence_floor = max(evidence_floor, 0.4)
+        evidence_notes.append("core financial statement metrics are available")
+    if has_transcript:
+        evidence_floor = max(evidence_floor, 0.55)
+        evidence_notes.append("FMP earnings-call transcript snippets are available")
+    if has_guidance:
+        evidence_floor = max(evidence_floor, 0.6)
+        evidence_notes.append("forward-looking guidance text was extracted")
+    if has_consensus:
+        evidence_floor = max(evidence_floor, 0.7)
+        evidence_notes.append("consensus estimates are available")
+
+    if evidence_floor > output.confidence:
+        output.confidence = round(evidence_floor, 2)
+        calibration_note = "Confidence calibrated upward because " + ", ".join(evidence_notes) + "."
+        output.confidence_reasoning = (
+            f"{output.confidence_reasoning} {calibration_note}".strip()
+            if output.confidence_reasoning
+            else calibration_note
+        )
+    return output
+
+
 def get_yfinance_fundamental_input(
     ticker: str,
     transcript_year: int | None = None,
@@ -766,7 +828,7 @@ def analyze_fundamental_input(
         temperature=temperature,
         client=client,
     )
-    return active_agent.run(data)
+    return _calibrate_fundamental_confidence(active_agent.run(data), data)
 
 
 def run_fundamental_analysis(

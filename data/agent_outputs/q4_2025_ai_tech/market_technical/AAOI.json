@@ -1,0 +1,63 @@
+{
+  "ticker": "AAOI",
+  "company": "AAOI",
+  "agent_name": "Market & Technical Analysis Agent",
+  "short_term_stance": "bearish",
+  "long_term_stance": "bullish",
+  "confidence": 0.75,
+  "confidence_rationale": "Short-term signals (price below MA20, bearish MACD, high-volume selling) are coherently bearish. Long-term signals (price well above MA50/MA200, massive relative strength) are strongly bullish. Confidence is high in this dual-state assessment, but not higher due to the stock's extreme volatility which introduces unpredictability.",
+  "key_signals": [
+    {
+      "type": "Moving Averages",
+      "signal": "short-term breakdown within long-term uptrend",
+      "evidence": "Price at $148.94 is below its MA20 ($157.23) but significantly above its MA50 ($125.36) and MA200 ($54.85)."
+    },
+    {
+      "type": "MACD",
+      "signal": "bearish momentum shift",
+      "evidence": "The MACD line (12.71) has crossed below the signal line (14.81), with a negative histogram (-2.10), indicating waning upward momentum."
+    },
+    {
+      "type": "Volume",
+      "signal": "high-conviction selling",
+      "evidence": "The most recent trading day saw a volume spike of 1.97x the average, coinciding with a significant price drop of -5.46%, confirming selling pressure."
+    },
+    {
+      "type": "Relative Strength",
+      "signal": "long-term market leadership",
+      "evidence": "Despite the recent pullback, the stock has outperformed the QQQ by 868.81% over the analysis period, indicating strong underlying demand."
+    },
+    {
+      "type": "Drawdown",
+      "signal": "significant ongoing pullback",
+      "evidence": "The stock is currently 18.84% below its recent peak, indicating it is in a corrective phase."
+    },
+    {
+      "type": "RSI",
+      "signal": "neutral momentum",
+      "evidence": "RSI is 50.85, which is neutral and has not yet reached oversold levels, suggesting the pullback could continue."
+    },
+    {
+      "type": "Volatility",
+      "signal": "extreme risk environment",
+      "evidence": "Annualized volatility is exceptionally high at 135.01%, implying large price swings are normal for this stock."
+    },
+    {
+      "type": "Returns",
+      "signal": "negative short-term momentum",
+      "evidence": "Mean of recent returns: -0.51%"
+    },
+    {
+      "type": "Market Regime",
+      "signal": "range_bound",
+      "evidence": "Regime classification: range_bound"
+    }
+  ],
+  "risks": [
+    "Extreme volatility (135% annualized) creates a wide range of potential outcomes and a high risk of sharp price declines.",
+    "The high-volume selling pressure could intensify, pushing the price towards the next major support level, likely the 50-day moving average.",
+    "The 'range_bound' market regime classification suggests the prior uptrend has stalled, potentially leading to a period of volatile sideways consolidation rather than a quick resumption of the trend."
+  ],
+  "summary": "As of this date, AAOI displays a classic divergence between its short-term and long-term technical picture. The long-term trend is unequivocally bullish, supported by price position relative to the MA50/MA200 and massive market outperformance. However, short-term momentum has turned bearish, with the price in a high-volume pullback below its MA20 and a bearish MACD crossover. The stock is in a corrective phase within a powerful, albeit highly volatile, uptrend.",
+  "core_insight": "The stock is undergoing a high-conviction pullback after a period of massive outperformance. While the long-term bullish thesis remains intact, the immediate technical evidence points to further downside or consolidation. The key test will be whether the price can find support at longer-term moving averages like the MA50."
+}

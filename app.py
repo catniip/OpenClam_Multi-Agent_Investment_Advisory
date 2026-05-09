@@ -49,15 +49,16 @@ def format_pct(value: Any) -> str:
 
 
 def stance_badge(label: Any) -> str:
-    text = str(label or "Neutral")
+    text = str(label or "Neutral").strip()
+    normalized = text.title()
     color = {
         "Bullish": "#0b8f4d",
         "Bearish": "#b42318",
         "Neutral": "#596579",
-    }.get(text, "#596579")
+    }.get(normalized, "#596579")
     return (
         f"<span style='background:{color}; color:white; padding:0.20rem 0.55rem; "
-        f"border-radius:999px; font-size:0.84rem; font-weight:700'>{text}</span>"
+        f"border-radius:999px; font-size:0.84rem; font-weight:700'>{normalized}</span>"
     )
 
 
@@ -110,17 +111,13 @@ def render_citations(payload: dict[str, Any]) -> None:
     citations = payload.get("citations") or []
     if not citations:
         return
-    rows = []
-    for item in citations:
-        rows.append(
-            {
-                "title": item.get("title"),
-                "source": item.get("source"),
-                "url": item.get("url"),
-            }
-        )
     st.write("**Referenced news sources:**")
-    st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
+    for item in citations:
+        title = str(item.get("title") or "Untitled source")
+        source = str(item.get("source") or "Unknown source")
+        url = str(item.get("url") or "").strip()
+        linked_title = f"[{title}]({url})" if url else title
+        st.markdown(f"- {linked_title}  \n  <span style='color:#596579'>{source}</span>", unsafe_allow_html=True)
 
 
 def render_debate(cio_payload: dict[str, Any]) -> None:
@@ -211,6 +208,9 @@ def render_agent_output(title: str, payload: Any) -> None:
         if payload.get("stance_rationale"):
             st.write("**Stance rationale:**")
             st.write(payload.get("stance_rationale"))
+        if payload.get("confidence_reasoning") or payload.get("confidence_rationale"):
+            st.write("**Confidence reasoning:**")
+            st.write(payload.get("confidence_reasoning") or payload.get("confidence_rationale"))
         if payload.get("thesis_impact_reasoning"):
             st.write("**Thesis impact reasoning:**")
             st.write(payload.get("thesis_impact_reasoning"))
