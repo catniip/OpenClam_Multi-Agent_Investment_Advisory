@@ -60,8 +60,17 @@ data/agent_outputs/q4_2025_ai_tech/
 
 docs/                  # design and evaluation notes
 reports/               # figures and case studies
-tests/                 # future tests
+tests/                 # deterministic unit and integration-style tests
 ```
+
+## Documentation Map
+
+- [System design](docs/system_design.md): architecture, agent responsibilities, cache layout, and error handling.
+- [Evaluation plan](docs/evaluation_plan.md): post-earnings task definition, leakage rules, metrics, baselines, and reproducibility.
+- [News/Macro Agent](docs/news_macro_agent.md): implementation notes for the news agent.
+- [Proposal summary](docs/proposal_summary.md): feature checklist, findings, limitations, and future work.
+- [Troubleshooting guide](docs/troubleshooting.md): common setup, API, cache, and evaluation issues.
+- [Rubric checklist](docs/rubric_checklist.md): grading-criteria map to repository files.
 
 ## Quick Start
 
@@ -86,6 +95,16 @@ pip install -e .
 ```
 
 The package requires Python 3.10+.
+
+### 1b. Run Tests
+
+The test suite is designed to run without live API calls:
+
+```bash
+pytest
+```
+
+Current tests cover deterministic evaluation scoring, stance normalization, CIO conflict detection, weight-profile behavior, and no-debate aggregation baselines.
 
 ### 2. Configure Environment Variables
 
