@@ -2,6 +2,43 @@
 
 OpenClam is a lightweight multi-agent LLM system for event-driven US equity research. It is designed as a structured research assistant for investment analysis and evaluation, not as an automated trading engine.
 
+## UI Demo
+
+OpenClam includes a Streamlit demo UI for exploring cached agent outputs and running a new single-ticker analysis.
+
+![OpenClam CIO Demo](reports/figures/ui_cio_decision.png)
+
+Additional UI screenshots:
+
+- [News/Macro Agent](reports/figures/ui_news_macro.png)
+- [Market/Technical Agent](reports/figures/ui_market_technical.png)
+- [CIO Debate](reports/figures/ui_debate.png)
+
+```bash
+streamlit run app.py
+```
+
+or:
+
+```bash
+make ui
+```
+
+The UI supports two workflows:
+
+1. **Review a saved case**: choose a cached ticker such as `TSLA`, `NVDA`, or `AAPL` and inspect:
+   - CIO final decision
+   - News/Macro Agent output and cited news sources
+   - Market/Technical Agent signals
+   - Fundamental Agent judgment, positive/negative signals, and missing information
+   - CIO debate diagnostics
+
+2. **Analyze a new case**: enter a ticker or company name, select the earnings/event date, and click **Run analysis**. The app runs the three agents, sends their outputs to the CIO, shows progress for each stage, and saves the result into the cache.
+
+For cached tickers, the app auto-fills the known company and earnings date. For new tickers, enter the ticker and manually choose the event date.
+
+Optional API keys can be configured in `.env`; cached demo viewing does not require live API calls.
+
 The current system combines:
 
 - **News & Macro Agent**: fetches company/news/macro context and reasons about first-order and second-order equity opportunities.
@@ -61,7 +98,7 @@ data/agent_outputs/q4_2025_ai_tech/
 docs/                  # design and evaluation notes
 reports/               # figures and case studies
 tests/                 # deterministic unit and integration-style tests
-app.py                 # lightweight Streamlit cache viewer
+app.py                 # Streamlit demo UI and single-ticker runner
 ```
 
 ## Documentation Map
@@ -109,7 +146,7 @@ Current tests cover deterministic evaluation scoring, stance normalization, CIO 
 
 ### 1c. Launch Demo UI
 
-The UI reads cached Q4 2025 outputs and does not call external APIs or LLMs:
+The default UI view reads cached Q4 2025 outputs and does not call external APIs or LLMs:
 
 ```bash
 streamlit run app.py
@@ -121,7 +158,9 @@ or:
 make ui
 ```
 
-Use it to inspect a ticker's agent inputs, debate diagnostics, CIO decision, and evaluation result.
+Use it to inspect each agent's output, debate diagnostics, and CIO decision.
+
+The sidebar also includes **Run New / Refresh Ticker**. Enter a ticker and earnings/event date to run the three agents and CIO workflow directly from the UI. Company name is optional; cached tickers auto-fill their known company and earnings date, while new tickers use the ticker as a fallback company label. Results are saved back into the same cache.
 
 ### 2. Configure Environment Variables
 

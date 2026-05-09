@@ -5,132 +5,269 @@
     "agent_name": "news_macro",
     "short_term_stance": "Bearish",
     "long_term_stance": "Bullish",
-    "confidence": 0.8,
-    "confidence_rationale": "Confidence is high because the evidence is direct from AMD's earnings release and management commentary. The negative after-hours stock reaction is a strong, real-time signal of disappointed investor expectations, validating the short-term stance. The underlying metrics (39% data center growth, share gains) are strong, supporting the long-term fundamental thesis.",
-    "stance_rationale": "Short-term: The stock is dropping on a beat-and-raise, a classic sign of extremely high expectations not being met. The sequential decline in the Q1 guide, even if it beats consensus, provides fuel for momentum sellers and profit-takers. Long-term: The company is executing well, taking share from Intel, and has established itself as the clear #2 in data center AI. Once the short-term valuation reset is over, the strong fundamental growth in the data center and AI business should drive outperformance.",
+    "confidence": 0.75,
+    "confidence_rationale": "Confidence is relatively high due to multiple direct, negative data points for the short-term stance (downgrade, major fund selling, relative price weakness). The long-term stance is based on a strong, well-documented macro trend. Confidence is not higher because the actual earnings number and forward guidance are unknown and could cause a significant upside surprise, invalidating the short-term bearish thesis.",
+    "stance_rationale": "Short-term: The stock has had a major run-up, expectations are very high, and negative catalysts (HSBC downgrade, ARK sale) are appearing right before the earnings print. This creates a high risk of a 'sell the news' reaction, even with a decent report, leading to near-term underperformance versus the QQQ. Long-term: AMD is one of only two credible suppliers of high-end AI accelerators and continues to take CPU market share. The secular AI buildout provides a powerful tailwind that should drive revenue and earnings growth over the next several quarters, justifying a higher valuation once near-term volatility subsides.",
     "key_signals": [
       {
         "type": "mainstream_stock",
         "ticker": "NVDA",
         "company": "NVIDIA Corporation",
-        "signal": "Strengthens the case for NVDA's moat. Any sign of weakness from the #2 player is a de facto positive for the #1.",
-        "evidence": "Positive initial reaction. AMD's constrained outlook reinforces NVDA's market dominance and supply chain superiority."
+        "signal": "Consensus long. AMD's results are more likely to reinforce NVDA's dominance than to suggest a major share shift in the near term.",
+        "evidence": "If AMD's AI chip sales are strong, it could suggest the market is big enough for two, but if they disappoint, capital will likely flow back to the perceived safety and dominance of NVDA."
       },
       {
         "type": "mainstream_stock",
         "ticker": "INTC",
         "company": "Intel Corporation",
-        "signal": "Confirms the long-running bearish thesis on Intel's competitive positioning versus AMD in the data center.",
-        "evidence": "Negative. Reaffirms Intel's ongoing struggles and loss of share in its core, high-margin data center business."
+        "signal": "Consensus is cautious on Intel's turnaround; strong AMD results would reinforce this caution.",
+        "evidence": "Strong AMD data center CPU results would be a negative signal for INTC, confirming the ongoing loss of market share."
       },
       {
         "type": "mainstream_stock",
         "ticker": "TSM",
-        "company": "Taiwan Semiconductor Manufacturing Company",
-        "signal": "Confirms TSM's indispensable role and pricing power in the AI supply chain. A must-own for exposure to the theme.",
-        "evidence": "Mixed but likely positive. Strong demand from AMD is good, but supply constraints suggest TSM has immense pricing power."
+        "company": "Taiwan Semiconductor Manufacturing Co.",
+        "signal": "A key enabler of the entire AI ecosystem; its outlook is tied to the aggregate demand from all its fabless customers like AMD, NVDA, and Apple.",
+        "evidence": "Strong AMD guidance would be a positive signal for TSM's high-performance computing (HPC) revenue stream."
       },
       {
         "type": "mainstream_stock",
         "ticker": "SMCI",
         "company": "Super Micro Computer, Inc.",
-        "signal": "Vulnerable to a sentiment shift. The valuation assumes a flawless, steep acceleration in AI server demand.",
-        "evidence": "Negative in the short-term. The stock has had a parabolic run and any hint of a slowdown in the AI buildout (like AMD's sequential guide) is an excuse for profit-taking."
-      },
-      {
-        "type": "second_order_opportunity",
-        "ticker": "TER",
-        "company": "Teradyne, Inc.",
-        "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because both AMD and NVIDIA are ramping up production of complex, multi-die AI accelerators with HBM (e.g., MI300), the difficulty and cost of testing these chips are soaring. This directly increases demand for Teradyne's high-end SoC testers, which are critical for ensuring quality and yield in advanced packaging, a key bottleneck highlighted by AMD's guidance.",
-        "impact_score": 7
-      },
-      {
-        "type": "second_order_opportunity",
-        "ticker": "MU",
-        "company": "Micron Technology, Inc.",
-        "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because demand for AI accelerators like AMD's MI300 is confirmed to be very strong, demand for its non-substitutable companion component, High-Bandwidth Memory (HBM), is also very strong. Micron is one of only three major HBM suppliers. This is shifting Micron's revenue mix towards a higher-margin, sold-out product line, driving significant margin and EPS upside.",
-        "impact_score": 8
+        "signal": "Highly volatile stock, but its fate is tied to the overall demand for AI servers, making it a key bellwether.",
+        "evidence": "Positive AMD AI accelerator news would be seen as a positive for SMCI's product breadth and ability to offer alternatives to Nvidia-only systems."
       },
       {
         "type": "second_order_opportunity",
         "ticker": "ANET",
         "company": "Arista Networks, Inc.",
         "signal": "Long: Pick-and-Shovel",
-        "evidence": "Because AMD is positioning itself as a more open alternative to NVIDIA's closed InfiniBand ecosystem, AMD's data center success is disproportionately beneficial for high-speed Ethernet providers. Arista is the leader in data center Ethernet switching for AI workloads. As AMD gains traction, Arista will win the networking deals for those AI pods, driving revenue for their high-performance switches.",
-        "impact_score": 6
+        "evidence": "Because the buildout of AI data centers (using chips from AMD and NVDA) requires ultra-high-speed networking to connect thousands of GPUs, demand for Arista's 400G/800G Ethernet switches and data center networking solutions increases, causing an acceleration in revenue and backlog.",
+        "impact_score": 8
       },
       {
         "type": "second_order_opportunity",
-        "ticker": "SMCI",
-        "company": "Super Micro Computer, Inc.",
-        "signal": "Short: Cost Squeeze & Victims",
-        "evidence": "Because AMD's guidance, while strong, introduced the first crack in the 'AI growth is infinite and exponential' narrative with a sequential decline, stocks priced for that perfection are most at risk. Super Micro's valuation has run to extreme levels, assuming flawless execution and limitless demand. A slight narrative shift provides a catalyst for a significant valuation correction as early investors take profits.",
+        "ticker": "MU",
+        "company": "Micron Technology, Inc.",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because every AI accelerator from AMD (MI300) and Nvidia (H100/B100) is co-packaged with High Bandwidth Memory (HBM), and supply is tight, surging accelerator demand directly translates into higher volume and, more importantly, higher pricing for Micron's HBM3/HBM3E products, causing a dramatic improvement in blended DRAM margins and overall profitability.",
         "impact_score": 9
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "VRT",
+        "company": "Vertiv Holdings Co",
+        "signal": "Long: Pick-and-Shovel",
+        "evidence": "Because AI chips consume multiples more power and generate more heat than traditional CPUs, data center operators are forced to upgrade their power distribution and liquid cooling infrastructure, which directly drives a surge in orders for Vertiv's specialized solutions, leading to significant revenue growth and margin expansion.",
+        "impact_score": 8
+      },
+      {
+        "type": "second_order_opportunity",
+        "ticker": "NTAP",
+        "company": "NetApp, Inc.",
+        "signal": "Short: Cost Squeeze & Victims",
+        "evidence": "Because enterprise and cloud IT budgets are finite and are being aggressively reallocated towards multi-billion dollar AI accelerator purchases, spending on traditional IT infrastructure like NetApp's core on-premise storage arrays is likely to be deferred or reduced, causing pressure on revenue growth and guidance in coming quarters.",
+        "impact_score": 6
       }
     ],
     "risks": [
-      "The core thesis assumes that the AI accelerator market remains a duopoly (NVDA/AMD) and that demand remains robust, with supply being the only constraint. A significant slowdown in cloud capex would invalidate this.",
-      "The short SMCI thesis is high-risk. The stock has powerful momentum and a strong fundamental story. A short squeeze is a major risk if the next piece of news (e.g., from NVDA) is wildly positive.",
-      "The benefit to test (TER) and memory (MU) companies depends on their ability to ramp production themselves. Any execution missteps could cause them to miss the opportunity.",
-      "The analysis of the AMD stock reaction is based on after-hours trading. The reaction during the next regular trading session could differ."
+      "The primary risk to the short-term Bearish stance on AMD is an exceptionally strong earnings report and guidance that defies the negative sentiment and forces a short squeeze.",
+      "The long-term Bullish stance on AMD assumes it can successfully ramp production and adoption of its MI300 series and defend its CPU market share against a recovering Intel.",
+      "The second-order theses assume that the overall AI infrastructure spending trend remains robust. Any macro-driven pullback in cloud capex would negatively impact all 'Pick-and-Shovel' plays.",
+      "The NetApp short thesis assumes budget reallocation is a zero-sum game in the near term; it's possible that overall IT budgets expand to accommodate AI, mitigating the pressure on legacy spending."
     ],
     "citations": [
       {
-        "title": "AMD is taking advantage of Intel's weakness: Analyst on earnings",
+        "title": "AMD Stock Is Downgraded Before Earnings. Why This Analyst Soured on the Shares.",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=89d59751880bae0c1e786ef6e8996249d1633de8357894c0f348d7a992cafba8"
+        "url": "https://finnhub.io/api/news?id=05e06e51e9c0f6d84279ba946be25a9c5daf27447f0685373c51204da51c886a"
       },
       {
-        "title": "AMD Forecast Disappoints as Investors Seek Bigger AI Payoff",
+        "title": "AMD Shares Sink After HSBC Downgrade Ahead of Earnings",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=c91d8b2e9c44775a349bc594bd5ea8ad70094d1d1adbdc71b935f9255fe0473d"
+        "url": "https://finnhub.io/api/news?id=6171ac9990dbc00eb8f994fcf01d84673d84c13bfa6dd2b2fddd9b84f6acb654"
       },
       {
-        "title": "AMD (AMD) Q4 2025 Earnings Call Transcript",
+        "title": "AMD and Pfizer earnings, job openings, Fedspeak: What to Watch",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=5adad4a5feb9c94ebd96479c9571116ecb2a6c76903f9143bec93774fc3dace2"
+        "url": "https://finnhub.io/api/news?id=f1280969ebaff710d25bd26776b3e46459ac05b7cac60f3eb4bc7b16f7885b50"
       },
       {
-        "title": "AMD stock falls despite topping Q4 earnings, guidance estimates",
+        "title": "Can Strong Data Center Revenues Boost AMD's Topline in Q1 Earnings?",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=342e6b3609ee158c4486e7170334201aff80030e5e29f1aafccdcee9e2c426e8"
+        "url": "https://finnhub.io/api/news?id=1062ff5a812397df3c418205225fd1843aa901ea3562ff9cd070c1651e2dd49e"
       },
       {
-        "title": "AMD forecasts sequential revenue decline, shares fall",
+        "title": "How Much Is AMD Stock Expected to Move After Earnings?",
+        "source": "Investopedia / direct-company",
+        "url": "https://www.investopedia.com/how-much-is-amd-stock-expected-to-move-after-earnings-q1-fy2026-11962852"
+      },
+      {
+        "title": "Advanced Micro Devices (AMD): Among the Best Fundamental Stocks to Invest In According to Billionaires",
+        "source": "Yahoo Entertainment / industry-chain",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-amd-among-202001995.html"
+      },
+      {
+        "title": "Jim Cramer Says He Would “Buy Some AMD Ahead of the Quarter”",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=c2fc4e324fac3bc81c330716155785b1865e665ec679b6b0cbdb651490395027"
+        "url": "https://finnhub.io/api/news?id=6cdc66a0d6beb83f42812b42ee678784d65e7ffa38d21df03feb37538e3cc6d6"
       },
       {
-        "title": "AMD: Record Quarter, But Stock Plummets - A Strong Buy Opportunity?",
-        "source": "SeekingAlpha",
-        "url": "https://finnhub.io/api/news?id=a9e7ec857ba8457266bb59456aadbd60730ec32235de40bbe9b642bb2f7beb40"
+        "title": "Advanced Micro (AMD) Climbs 25% as Analyst Goes Bullish, Hikes PT by 70%",
+        "source": "Yahoo Entertainment / direct-company",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-amd-climbs-25-104058407.html"
       },
       {
-        "title": "AMD: Strong Growth -- Shares Slump?",
-        "source": "SeekingAlpha",
-        "url": "https://finnhub.io/api/news?id=5a9eae7a12b4a518625048d5160e51f9deb1b41b1d49de8bbd8a42a90058abf8"
-      },
-      {
-        "title": "Advanced Micro Devices (AMD) Beats Q4 Earnings and Revenue Estimates",
+        "title": "AMD Sinks 6% Despite a Holding Pattern in Intel and NVIDIA: The Selective AI Chip Trade Is Here",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=128e9a97fef9e68120cfd142ac6a8f318543f9721ae9e91951493a80518a46af"
+        "url": "https://finnhub.io/api/news?id=c9c2434b29d868fba4331f993deff1a496cd8641653b5f2451a9f4e7726fec7e"
       },
       {
-        "title": "Advanced Micro Devices, Inc. (AMD) Q4 2025 Earnings Call Transcript",
-        "source": "SeekingAlpha",
-        "url": "https://finnhub.io/api/news?id=be12fa1bc8d1680ecfd756fdc6f215f19f4f860c708046783476a9c244b9b585"
-      },
-      {
-        "title": "GIGABYTE Partnership Expansion Across AI PCs and Displays Could Be A Game Changer For Advanced Micro Devices (AMD)",
+        "title": "Cathie Wood Dumps $72 Million of AMD, Doubles Down on Alphabet and Meta",
         "source": "Yahoo",
-        "url": "https://finnhub.io/api/news?id=3474a4817741cef624f3007419d69b4b1371e23a2f57b4bb2c745eb876bdb937"
+        "url": "https://finnhub.io/api/news?id=c3a8f3c0f24d55628789f651b932236933d916fc221970ca6914ec4853c2ead6"
       }
     ],
     "summary": {
-      "news_summary": "AMD reported a Q4 beat and raised Q1 guidance above consensus, but the stock fell on a sequential revenue decline and concerns that the AI growth trajectory is not as steep as hoped by hyper-optimistic investors.",
-      "core_insight": "The market is fixated on the AMD vs. NVDA GPU horse race, overlooking the fact that AMD's 'good-not-great' AI guidance confirms the entire industry is bottlenecked by the advanced packaging and high-bandwidth memory (HBM) supply chain, creating opportunities in the critical equipment and component suppliers enabling the ramp."
+      "news_summary": "On the eve of its Q1 earnings report, Advanced Micro Devices (AMD) faces mounting pressure as its stock fell 6% following a downgrade from HSBC and a significant share sale by Cathie Wood's ARK Invest, creating a cautious sentiment despite high expectations for its AI-driven data center business.",
+      "core_insight": "While the market is fixated on the AMD vs. Nvidia GPU battle, the immense power, cooling, and networking requirements for the broader AI data center buildout create overlooked pick-and-shovel opportunities in companies whose success is not contingent on which specific chipmaker wins each deal."
+    }
+  },
+  {
+    "ticker": "AMD",
+    "company": "Advanced Micro Devices",
+    "agent_name": "market_technical",
+    "short_term_stance": "Bullish",
+    "long_term_stance": "Bullish",
+    "confidence": 0.9,
+    "confidence_rationale": "Very high confidence due to the strong alignment of trend, momentum, relative strength, and a decisive, volume-confirmed positive reaction to earnings. The evidence across multiple indicators is consistently bullish.",
+    "stance_rationale": "The overwhelmingly positive and high-volume market reaction to the latest earnings report serves as a powerful catalyst, validating the existing strong uptrend. This event suggests that despite high volatility and near-overbought conditions, the path of least resistance remains upward for the short-to-medium term.",
+    "key_signals": [
+      {
+        "type": "Earnings Reaction",
+        "signal": "Bullish Post-Earnings Confirmation",
+        "evidence": "The stock reacted to earnings with a 4.02% gain on the following day (2026-05-05), outperforming QQQ by 2.72% on 1.3x the average volume, indicating strong positive market reception."
+      },
+      {
+        "type": "Moving Averages",
+        "signal": "Strong Bullish Trend Structure",
+        "evidence": "Price at $341.54 is significantly above its key moving averages: MA20 ($290.96), MA50 ($238.20), and MA200 ($212.29), indicating a well-established uptrend across all timeframes."
+      },
+      {
+        "type": "MACD",
+        "signal": "Accelerating Bullish Momentum",
+        "evidence": "A bullish MACD crossover is active, with the MACD line (34.16) above the signal line (29.19) and a positive histogram (4.98), confirming upward momentum."
+      },
+      {
+        "type": "Relative Strength",
+        "signal": "Significant Market Outperformance",
+        "evidence": "The stock has demonstrated strong leadership, outperforming its benchmark (QQQ) with a relative return of 200.39% over the measured period."
+      },
+      {
+        "type": "RSI",
+        "signal": "Strong Momentum Nearing Overbought",
+        "evidence": "RSI is at 69.88, indicating very strong buying pressure, though it is approaching the overbought threshold of 70."
+      },
+      {
+        "type": "Market Regime",
+        "signal": "High-Volatility Bullish Environment",
+        "evidence": "The current market regime is classified as 'high_volatility_bullish', with annualized volatility at 60.55%, contextualizing the strong uptrend within a high-risk environment."
+      },
+      {
+        "type": "Returns",
+        "signal": "positive short-term momentum",
+        "evidence": "Mean of recent returns: 2.34%"
+      },
+      {
+        "type": "Volume",
+        "signal": "weak participation",
+        "evidence": "Volume spike ratio 1.04x"
+      },
+      {
+        "type": "Volatility",
+        "signal": "high volatility",
+        "evidence": "Annualized volatility 60.55%, Recent 69.12%"
+      },
+      {
+        "type": "Drawdown",
+        "signal": "contained drawdown",
+        "evidence": "Current drawdown -5.27%, Max drawdown -27.76%"
+      }
+    ],
+    "risks": [
+      "The RSI at 69.88 is approaching the overbought level, which could signal a potential for a short-term consolidation or pullback.",
+      "High annualized volatility (60.55%) suggests that sharp price swings are characteristic of this stock, increasing downside risk even within a bullish trend.",
+      "The price is significantly extended from its 20-day (+17.4%) and 50-day (+43.4%) moving averages, raising the possibility of a mean-reversion pullback."
+    ],
+    "citations": [],
+    "summary": "As of 2026-05-04, AMD exhibits a powerful, high-volatility uptrend supported by a full alignment of bullish signals. The price is firmly above all key moving averages, momentum is strong with a bullish MACD and high RSI, and the stock is significantly outperforming its benchmark. The analysis is anchored by a decisive positive reaction to the latest earnings report, which saw a 4.02% gain on high volume, confirming market conviction in the stock's trajectory.",
+    "raw_packet": {
+      "ticker": "AMD",
+      "company": "Advanced Micro Devices",
+      "agent_name": "Market & Technical Analysis Agent",
+      "short_term_stance": "bullish",
+      "long_term_stance": "bullish",
+      "confidence": 0.9,
+      "confidence_rationale": "Very high confidence due to the strong alignment of trend, momentum, relative strength, and a decisive, volume-confirmed positive reaction to earnings. The evidence across multiple indicators is consistently bullish.",
+      "key_signals": [
+        {
+          "type": "Earnings Reaction",
+          "signal": "Bullish Post-Earnings Confirmation",
+          "evidence": "The stock reacted to earnings with a 4.02% gain on the following day (2026-05-05), outperforming QQQ by 2.72% on 1.3x the average volume, indicating strong positive market reception."
+        },
+        {
+          "type": "Moving Averages",
+          "signal": "Strong Bullish Trend Structure",
+          "evidence": "Price at $341.54 is significantly above its key moving averages: MA20 ($290.96), MA50 ($238.20), and MA200 ($212.29), indicating a well-established uptrend across all timeframes."
+        },
+        {
+          "type": "MACD",
+          "signal": "Accelerating Bullish Momentum",
+          "evidence": "A bullish MACD crossover is active, with the MACD line (34.16) above the signal line (29.19) and a positive histogram (4.98), confirming upward momentum."
+        },
+        {
+          "type": "Relative Strength",
+          "signal": "Significant Market Outperformance",
+          "evidence": "The stock has demonstrated strong leadership, outperforming its benchmark (QQQ) with a relative return of 200.39% over the measured period."
+        },
+        {
+          "type": "RSI",
+          "signal": "Strong Momentum Nearing Overbought",
+          "evidence": "RSI is at 69.88, indicating very strong buying pressure, though it is approaching the overbought threshold of 70."
+        },
+        {
+          "type": "Market Regime",
+          "signal": "High-Volatility Bullish Environment",
+          "evidence": "The current market regime is classified as 'high_volatility_bullish', with annualized volatility at 60.55%, contextualizing the strong uptrend within a high-risk environment."
+        },
+        {
+          "type": "Returns",
+          "signal": "positive short-term momentum",
+          "evidence": "Mean of recent returns: 2.34%"
+        },
+        {
+          "type": "Volume",
+          "signal": "weak participation",
+          "evidence": "Volume spike ratio 1.04x"
+        },
+        {
+          "type": "Volatility",
+          "signal": "high volatility",
+          "evidence": "Annualized volatility 60.55%, Recent 69.12%"
+        },
+        {
+          "type": "Drawdown",
+          "signal": "contained drawdown",
+          "evidence": "Current drawdown -5.27%, Max drawdown -27.76%"
+        }
+      ],
+      "risks": [
+        "The RSI at 69.88 is approaching the overbought level, which could signal a potential for a short-term consolidation or pullback.",
+        "High annualized volatility (60.55%) suggests that sharp price swings are characteristic of this stock, increasing downside risk even within a bullish trend.",
+        "The price is significantly extended from its 20-day (+17.4%) and 50-day (+43.4%) moving averages, raising the possibility of a mean-reversion pullback."
+      ],
+      "summary": "As of 2026-05-04, AMD exhibits a powerful, high-volatility uptrend supported by a full alignment of bullish signals. The price is firmly above all key moving averages, momentum is strong with a bullish MACD and high RSI, and the stock is significantly outperforming its benchmark. The analysis is anchored by a decisive positive reaction to the latest earnings report, which saw a 4.02% gain on high volume, confirming market conviction in the stock's trajectory.",
+      "core_insight": "The overwhelmingly positive and high-volume market reaction to the latest earnings report serves as a powerful catalyst, validating the existing strong uptrend. This event suggests that despite high volatility and near-overbought conditions, the path of least resistance remains upward for the short-to-medium term."
     }
   },
   {
@@ -140,36 +277,32 @@
     "short_term_stance": "Neutral",
     "long_term_stance": "Bullish",
     "confidence": 0.5,
-    "confidence_rationale": "Confidence is medium. While the provided financial data is strong and clearly indicates fundamental improvement, the lack of analyst consensus estimates, management guidance, and earnings call commentary prevents a complete analysis of market expectations and forward-looking risks.",
-    "stance_rationale": "AMD reported a quarter of strong sequential growth across revenue, profitability, and cash flow, accompanied by expanding margins. The balance sheet is healthy with a net cash position. While the trailing valuation is high, strong forward growth expectations, reflected in a much lower Forward P/E, support a positive outlook pending further information.",
+    "confidence_rationale": "Confidence is moderate because the analysis is based solely on quantitative data for a single quarter. Critical missing elements include management commentary from the earnings call, official forward-looking guidance, and performance relative to analyst consensus estimates.",
+    "stance_rationale": "AMD demonstrated exceptional quarter-over-quarter performance with double-digit growth in revenue, profit, and cash flow, coupled with significant margin expansion. The balance sheet remains strong with a net cash position. While the high valuation presents a risk, the strong execution supports a bullish stance, pending future guidance.",
     "key_signals": [
-      "Strong sequential revenue growth of 11.1% from $9.25B to $10.27B.",
-      "Significant QoQ expansion in profitability: Operating Income grew 38.0% and Net Income grew 21.6%.",
-      "Gross and operating margins expanded quarter-over-quarter.",
-      "Robust cash flow generation, with Free Cash Flow increasing 25.1% QoQ to $2.38 billion.",
-      "Healthy balance sheet with a net cash position, as cash and equivalents ($5.54B) exceed total debt ($3.85B).",
-      "Forward P/E of 30.4 is substantially lower than the Trailing P/E of 131.4, indicating strong market expectations for future earnings growth.",
-      "Revenue QoQ: $10.27B vs $9.25B in the prior quarter.",
-      "Operating Income QoQ: $1.75B vs $1.27B in the prior quarter.",
-      "Free Cash Flow QoQ: $2.38B vs $1.90B in the prior quarter.",
-      "Trailing P/E: 131.36",
-      "Forward P/E: 30.44",
-      "Cash And Cash Equivalents: $5.54B",
-      "Total Debt: $3.85B",
-      "All consensus estimates for key metrics were unavailable."
+      "Strong quarter-over-quarter growth: Revenue (+11.1%), Operating Income (+38.0%), and Free Cash Flow (+25.1%).",
+      "Significant margin expansion QoQ across Gross (51.7% to 54.3%) and Operating (13.7% to 17.1%) levels.",
+      "Strong balance sheet with $5.54B in cash versus $3.85B in debt, resulting in a net cash position.",
+      "High reported annual growth rates from yfinance for revenue (37.8%) and earnings (91.2%).",
+      "Revenue increased to $10.27B from $9.246B in the prior quarter.",
+      "Operating Income grew to $1.752B from $1.27B in the prior quarter.",
+      "Free Cash Flow increased to $2.378B from $1.901B in the prior quarter.",
+      "Trailing P/E is 151.73, while Forward P/E is 35.28.",
+      "Company holds a net cash position of approximately $1.69B."
     ],
     "risks": [
-      "High valuation on a historical basis, with a Trailing P/E ratio of 131.4, suggesting the stock is priced for high growth which introduces risk if expectations are not met.",
-      "Crucial information is missing, including analyst consensus estimates, management's forward guidance, and commentary from the earnings call.",
-      "Without peer comparison data, it is difficult to assess if the premium valuation is justified relative to competitors.",
-      "Analyst consensus estimates for revenue and EPS to determine if the results were a beat or miss.",
-      "Official company guidance for the next quarter and full year.",
-      "Earnings call transcript to understand management's qualitative assessment of the business, segment performance, and outlook.",
-      "Peer valuation and growth metrics for comparative analysis.",
-      "Breakdown of performance by business segment (e.g., Data Center, Client, Gaming, Embedded)."
+      "Very high Trailing P/E ratio of 151.73 suggests a premium valuation that prices in significant future growth, creating risk if expectations are not met.",
+      "Lack of official guidance from the company creates uncertainty about the sustainability of the current growth trajectory.",
+      "No consensus estimates provided, making it impossible to determine if the results beat or missed market expectations.",
+      "Absence of earnings call transcript prevents assessment of management's qualitative view on business trends and outlook.",
+      "Analyst consensus estimates for revenue and EPS.",
+      "Management guidance for the upcoming quarters.",
+      "Earnings call transcript to assess management tone and strategic commentary.",
+      "Revenue breakdown by business segment (e.g., Data Center, Client, Gaming).",
+      "Peer company valuation data for context."
     ],
     "citations": [],
-    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The strong sequential performance in revenue, profit, and free cash flow fundamentally strengthens a growth-oriented investment thesis. The expanding margins and healthy balance sheet demonstrate solid operational execution.",
+    "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Strengthened | thesis_impact_reasoning: The strong across-the-board financial performance, including significant QoQ growth and margin expansion, strongly supports a bullish thesis centered on the company's execution and ability to capitalize on market opportunities.",
     "raw_packet": {
       "ticker": "AMD",
       "company": "Advanced Micro Devices",
@@ -177,166 +310,37 @@
       "short_term_stance": "Neutral",
       "long_term_stance": "Bullish",
       "confidence": 0.5,
-      "confidence_rationale": "Confidence is medium. While the provided financial data is strong and clearly indicates fundamental improvement, the lack of analyst consensus estimates, management guidance, and earnings call commentary prevents a complete analysis of market expectations and forward-looking risks.",
-      "stance_rationale": "AMD reported a quarter of strong sequential growth across revenue, profitability, and cash flow, accompanied by expanding margins. The balance sheet is healthy with a net cash position. While the trailing valuation is high, strong forward growth expectations, reflected in a much lower Forward P/E, support a positive outlook pending further information.",
+      "confidence_rationale": "Confidence is moderate because the analysis is based solely on quantitative data for a single quarter. Critical missing elements include management commentary from the earnings call, official forward-looking guidance, and performance relative to analyst consensus estimates.",
+      "stance_rationale": "AMD demonstrated exceptional quarter-over-quarter performance with double-digit growth in revenue, profit, and cash flow, coupled with significant margin expansion. The balance sheet remains strong with a net cash position. While the high valuation presents a risk, the strong execution supports a bullish stance, pending future guidance.",
       "key_signals": [
-        "Strong sequential revenue growth of 11.1% from $9.25B to $10.27B.",
-        "Significant QoQ expansion in profitability: Operating Income grew 38.0% and Net Income grew 21.6%.",
-        "Gross and operating margins expanded quarter-over-quarter.",
-        "Robust cash flow generation, with Free Cash Flow increasing 25.1% QoQ to $2.38 billion.",
-        "Healthy balance sheet with a net cash position, as cash and equivalents ($5.54B) exceed total debt ($3.85B).",
-        "Forward P/E of 30.4 is substantially lower than the Trailing P/E of 131.4, indicating strong market expectations for future earnings growth.",
-        "Revenue QoQ: $10.27B vs $9.25B in the prior quarter.",
-        "Operating Income QoQ: $1.75B vs $1.27B in the prior quarter.",
-        "Free Cash Flow QoQ: $2.38B vs $1.90B in the prior quarter.",
-        "Trailing P/E: 131.36",
-        "Forward P/E: 30.44",
-        "Cash And Cash Equivalents: $5.54B",
-        "Total Debt: $3.85B",
-        "All consensus estimates for key metrics were unavailable."
+        "Strong quarter-over-quarter growth: Revenue (+11.1%), Operating Income (+38.0%), and Free Cash Flow (+25.1%).",
+        "Significant margin expansion QoQ across Gross (51.7% to 54.3%) and Operating (13.7% to 17.1%) levels.",
+        "Strong balance sheet with $5.54B in cash versus $3.85B in debt, resulting in a net cash position.",
+        "High reported annual growth rates from yfinance for revenue (37.8%) and earnings (91.2%).",
+        "Revenue increased to $10.27B from $9.246B in the prior quarter.",
+        "Operating Income grew to $1.752B from $1.27B in the prior quarter.",
+        "Free Cash Flow increased to $2.378B from $1.901B in the prior quarter.",
+        "Trailing P/E is 151.73, while Forward P/E is 35.28.",
+        "Company holds a net cash position of approximately $1.69B."
       ],
       "risks": [
-        "High valuation on a historical basis, with a Trailing P/E ratio of 131.4, suggesting the stock is priced for high growth which introduces risk if expectations are not met.",
-        "Crucial information is missing, including analyst consensus estimates, management's forward guidance, and commentary from the earnings call.",
-        "Without peer comparison data, it is difficult to assess if the premium valuation is justified relative to competitors.",
-        "Analyst consensus estimates for revenue and EPS to determine if the results were a beat or miss.",
-        "Official company guidance for the next quarter and full year.",
-        "Earnings call transcript to understand management's qualitative assessment of the business, segment performance, and outlook.",
-        "Peer valuation and growth metrics for comparative analysis.",
-        "Breakdown of performance by business segment (e.g., Data Center, Client, Gaming, Embedded)."
+        "Very high Trailing P/E ratio of 151.73 suggests a premium valuation that prices in significant future growth, creating risk if expectations are not met.",
+        "Lack of official guidance from the company creates uncertainty about the sustainability of the current growth trajectory.",
+        "No consensus estimates provided, making it impossible to determine if the results beat or missed market expectations.",
+        "Absence of earnings call transcript prevents assessment of management's qualitative view on business trends and outlook.",
+        "Analyst consensus estimates for revenue and EPS.",
+        "Management guidance for the upcoming quarters.",
+        "Earnings call transcript to assess management tone and strategic commentary.",
+        "Revenue breakdown by business segment (e.g., Data Center, Client, Gaming).",
+        "Peer company valuation data for context."
       ],
       "summary": {
         "beat_or_miss": "Unclear",
         "guidance_change": "Unclear",
         "management_tone": "Unclear",
         "thesis_impact": "Strengthened",
-        "thesis_impact_reasoning": "The strong sequential performance in revenue, profit, and free cash flow fundamentally strengthens a growth-oriented investment thesis. The expanding margins and healthy balance sheet demonstrate solid operational execution."
+        "thesis_impact_reasoning": "The strong across-the-board financial performance, including significant QoQ growth and margin expansion, strongly supports a bullish thesis centered on the company's execution and ability to capitalize on market opportunities."
       }
-    }
-  },
-  {
-    "ticker": "AMD",
-    "company": "Advanced Micro Devices",
-    "agent_name": "market_technical",
-    "short_term_stance": "Bullish",
-    "long_term_stance": "Bullish",
-    "confidence": 0.8,
-    "confidence_rationale": "Confidence is high due to the strong alignment of trend (Price > MA20/MA50), momentum (bullish MACD), and relative strength. It is not higher because the overbought RSI (70.71) and high volatility introduce risk of a near-term pullback or consolidation.",
-    "stance_rationale": "The stock is experiencing a textbook high-momentum uptrend. The recent pullback on low conviction appears to be a continuation pattern, as the primary trend, momentum, and relative strength signals remain strongly bullish.",
-    "key_signals": [
-      {
-        "type": "Moving Averages",
-        "signal": "Strong Bullish Trend Structure",
-        "evidence": "Price at $341.54 is significantly above its key short-term moving averages: 17.4% above the 20-day MA and 43.4% above the 50-day MA."
-      },
-      {
-        "type": "MACD",
-        "signal": "Bullish Momentum Confirmation",
-        "evidence": "A bullish crossover is active with the MACD line (34.52) above the signal line (29.71) and a positive, expanding histogram (4.81)."
-      },
-      {
-        "type": "Relative Strength",
-        "signal": "Significant Market Outperformance",
-        "evidence": "AMD has outperformed the SPY benchmark by 71.17% over the analysis period, indicating strong market leadership."
-      },
-      {
-        "type": "RSI",
-        "signal": "Overbought Momentum",
-        "evidence": "RSI is at 70.71, which is in overbought territory. This reflects very strong momentum but also suggests a risk of short-term exhaustion."
-      },
-      {
-        "type": "Volume",
-        "signal": "Unconvincing Pullback",
-        "evidence": "The most recent daily drop of -5.27% occurred on average volume (volume spike ratio of 1.03x), suggesting a lack of strong conviction in the sell-off."
-      },
-      {
-        "type": "Market Regime",
-        "signal": "High Volatility Bullish Trend",
-        "evidence": "The market regime is classified as 'high_volatility_bullish', contextualizing the strong uptrend as being accompanied by large price swings."
-      },
-      {
-        "type": "Drawdown",
-        "signal": "Minor Pullback from Peak",
-        "evidence": "The stock is currently in a 5.27% drawdown from its recent high, which is a relatively shallow correction in the context of the recent uptrend."
-      },
-      {
-        "type": "Returns",
-        "signal": "positive short-term momentum",
-        "evidence": "Mean of recent returns: 2.34%"
-      },
-      {
-        "type": "Volatility",
-        "signal": "high volatility",
-        "evidence": "Annualized volatility 61.76%, Recent 69.12%"
-      }
-    ],
-    "risks": [
-      "The overbought RSI at 70.71 signals a heightened risk of a short-term price correction or a period of sideways consolidation.",
-      "Extremely high recent volatility (69.12% annualized) means that while the trend is up, sharp and sudden price drops are likely and should be expected."
-    ],
-    "citations": [],
-    "summary": "AMD is in a powerful, high-volatility bullish trend, characterized by strong momentum and significant market outperformance. The price is extended well above its 20-day and 50-day moving averages. While the overbought RSI and a recent pullback suggest potential for near-term consolidation, the lack of high volume on the decline indicates it is likely a pause within the ongoing uptrend rather than a reversal.",
-    "raw_packet": {
-      "ticker": "AMD",
-      "company": "Advanced Micro Devices",
-      "agent_name": "Market & Technical Analysis Agent",
-      "short_term_stance": "bullish",
-      "long_term_stance": "bullish",
-      "confidence": 0.8,
-      "confidence_rationale": "Confidence is high due to the strong alignment of trend (Price > MA20/MA50), momentum (bullish MACD), and relative strength. It is not higher because the overbought RSI (70.71) and high volatility introduce risk of a near-term pullback or consolidation.",
-      "key_signals": [
-        {
-          "type": "Moving Averages",
-          "signal": "Strong Bullish Trend Structure",
-          "evidence": "Price at $341.54 is significantly above its key short-term moving averages: 17.4% above the 20-day MA and 43.4% above the 50-day MA."
-        },
-        {
-          "type": "MACD",
-          "signal": "Bullish Momentum Confirmation",
-          "evidence": "A bullish crossover is active with the MACD line (34.52) above the signal line (29.71) and a positive, expanding histogram (4.81)."
-        },
-        {
-          "type": "Relative Strength",
-          "signal": "Significant Market Outperformance",
-          "evidence": "AMD has outperformed the SPY benchmark by 71.17% over the analysis period, indicating strong market leadership."
-        },
-        {
-          "type": "RSI",
-          "signal": "Overbought Momentum",
-          "evidence": "RSI is at 70.71, which is in overbought territory. This reflects very strong momentum but also suggests a risk of short-term exhaustion."
-        },
-        {
-          "type": "Volume",
-          "signal": "Unconvincing Pullback",
-          "evidence": "The most recent daily drop of -5.27% occurred on average volume (volume spike ratio of 1.03x), suggesting a lack of strong conviction in the sell-off."
-        },
-        {
-          "type": "Market Regime",
-          "signal": "High Volatility Bullish Trend",
-          "evidence": "The market regime is classified as 'high_volatility_bullish', contextualizing the strong uptrend as being accompanied by large price swings."
-        },
-        {
-          "type": "Drawdown",
-          "signal": "Minor Pullback from Peak",
-          "evidence": "The stock is currently in a 5.27% drawdown from its recent high, which is a relatively shallow correction in the context of the recent uptrend."
-        },
-        {
-          "type": "Returns",
-          "signal": "positive short-term momentum",
-          "evidence": "Mean of recent returns: 2.34%"
-        },
-        {
-          "type": "Volatility",
-          "signal": "high volatility",
-          "evidence": "Annualized volatility 61.76%, Recent 69.12%"
-        }
-      ],
-      "risks": [
-        "The overbought RSI at 70.71 signals a heightened risk of a short-term price correction or a period of sideways consolidation.",
-        "Extremely high recent volatility (69.12% annualized) means that while the trend is up, sharp and sudden price drops are likely and should be expected."
-      ],
-      "summary": "AMD is in a powerful, high-volatility bullish trend, characterized by strong momentum and significant market outperformance. The price is extended well above its 20-day and 50-day moving averages. While the overbought RSI and a recent pullback suggest potential for near-term consolidation, the lack of high volume on the decline indicates it is likely a pause within the ongoing uptrend rather than a reversal.",
-      "core_insight": "The stock is experiencing a textbook high-momentum uptrend. The recent pullback on low conviction appears to be a continuation pattern, as the primary trend, momentum, and relative strength signals remain strongly bullish."
     }
   }
 ]

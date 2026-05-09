@@ -4,43 +4,38 @@
   "agent_name": "Market & Technical Analysis Agent",
   "short_term_stance": "bullish",
   "long_term_stance": "bullish",
-  "confidence": 0.8,
-  "confidence_rationale": "Confidence is high due to the strong alignment of trend (Price > MA20/MA50), momentum (bullish MACD), and relative strength. It is not higher because the overbought RSI (70.71) and high volatility introduce risk of a near-term pullback or consolidation.",
+  "confidence": 0.9,
+  "confidence_rationale": "Very high confidence due to the strong alignment of trend, momentum, relative strength, and a decisive, volume-confirmed positive reaction to earnings. The evidence across multiple indicators is consistently bullish.",
   "key_signals": [
+    {
+      "type": "Earnings Reaction",
+      "signal": "Bullish Post-Earnings Confirmation",
+      "evidence": "The stock reacted to earnings with a 4.02% gain on the following day (2026-05-05), outperforming QQQ by 2.72% on 1.3x the average volume, indicating strong positive market reception."
+    },
     {
       "type": "Moving Averages",
       "signal": "Strong Bullish Trend Structure",
-      "evidence": "Price at $341.54 is significantly above its key short-term moving averages: 17.4% above the 20-day MA and 43.4% above the 50-day MA."
+      "evidence": "Price at $341.54 is significantly above its key moving averages: MA20 ($290.96), MA50 ($238.20), and MA200 ($212.29), indicating a well-established uptrend across all timeframes."
     },
     {
       "type": "MACD",
-      "signal": "Bullish Momentum Confirmation",
-      "evidence": "A bullish crossover is active with the MACD line (34.52) above the signal line (29.71) and a positive, expanding histogram (4.81)."
+      "signal": "Accelerating Bullish Momentum",
+      "evidence": "A bullish MACD crossover is active, with the MACD line (34.16) above the signal line (29.19) and a positive histogram (4.98), confirming upward momentum."
     },
     {
       "type": "Relative Strength",
       "signal": "Significant Market Outperformance",
-      "evidence": "AMD has outperformed the SPY benchmark by 71.17% over the analysis period, indicating strong market leadership."
+      "evidence": "The stock has demonstrated strong leadership, outperforming its benchmark (QQQ) with a relative return of 200.39% over the measured period."
     },
     {
       "type": "RSI",
-      "signal": "Overbought Momentum",
-      "evidence": "RSI is at 70.71, which is in overbought territory. This reflects very strong momentum but also suggests a risk of short-term exhaustion."
-    },
-    {
-      "type": "Volume",
-      "signal": "Unconvincing Pullback",
-      "evidence": "The most recent daily drop of -5.27% occurred on average volume (volume spike ratio of 1.03x), suggesting a lack of strong conviction in the sell-off."
+      "signal": "Strong Momentum Nearing Overbought",
+      "evidence": "RSI is at 69.88, indicating very strong buying pressure, though it is approaching the overbought threshold of 70."
     },
     {
       "type": "Market Regime",
-      "signal": "High Volatility Bullish Trend",
-      "evidence": "The market regime is classified as 'high_volatility_bullish', contextualizing the strong uptrend as being accompanied by large price swings."
-    },
-    {
-      "type": "Drawdown",
-      "signal": "Minor Pullback from Peak",
-      "evidence": "The stock is currently in a 5.27% drawdown from its recent high, which is a relatively shallow correction in the context of the recent uptrend."
+      "signal": "High-Volatility Bullish Environment",
+      "evidence": "The current market regime is classified as 'high_volatility_bullish', with annualized volatility at 60.55%, contextualizing the strong uptrend within a high-risk environment."
     },
     {
       "type": "Returns",
@@ -48,15 +43,26 @@
       "evidence": "Mean of recent returns: 2.34%"
     },
     {
+      "type": "Volume",
+      "signal": "weak participation",
+      "evidence": "Volume spike ratio 1.04x"
+    },
+    {
       "type": "Volatility",
       "signal": "high volatility",
-      "evidence": "Annualized volatility 61.76%, Recent 69.12%"
+      "evidence": "Annualized volatility 60.55%, Recent 69.12%"
+    },
+    {
+      "type": "Drawdown",
+      "signal": "contained drawdown",
+      "evidence": "Current drawdown -5.27%, Max drawdown -27.76%"
     }
   ],
   "risks": [
-    "The overbought RSI at 70.71 signals a heightened risk of a short-term price correction or a period of sideways consolidation.",
-    "Extremely high recent volatility (69.12% annualized) means that while the trend is up, sharp and sudden price drops are likely and should be expected."
+    "The RSI at 69.88 is approaching the overbought level, which could signal a potential for a short-term consolidation or pullback.",
+    "High annualized volatility (60.55%) suggests that sharp price swings are characteristic of this stock, increasing downside risk even within a bullish trend.",
+    "The price is significantly extended from its 20-day (+17.4%) and 50-day (+43.4%) moving averages, raising the possibility of a mean-reversion pullback."
   ],
-  "summary": "AMD is in a powerful, high-volatility bullish trend, characterized by strong momentum and significant market outperformance. The price is extended well above its 20-day and 50-day moving averages. While the overbought RSI and a recent pullback suggest potential for near-term consolidation, the lack of high volume on the decline indicates it is likely a pause within the ongoing uptrend rather than a reversal.",
-  "core_insight": "The stock is experiencing a textbook high-momentum uptrend. The recent pullback on low conviction appears to be a continuation pattern, as the primary trend, momentum, and relative strength signals remain strongly bullish."
+  "summary": "As of 2026-05-04, AMD exhibits a powerful, high-volatility uptrend supported by a full alignment of bullish signals. The price is firmly above all key moving averages, momentum is strong with a bullish MACD and high RSI, and the stock is significantly outperforming its benchmark. The analysis is anchored by a decisive positive reaction to the latest earnings report, which saw a 4.02% gain on high volume, confirming market conviction in the stock's trajectory.",
+  "core_insight": "The overwhelmingly positive and high-volume market reaction to the latest earnings report serves as a powerful catalyst, validating the existing strong uptrend. This event suggests that despite high volatility and near-overbought conditions, the path of least resistance remains upward for the short-to-medium term."
 }

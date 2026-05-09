@@ -1,0 +1,1637 @@
+{
+  "synthesis": {
+    "ticker": "SIVE",
+    "company": "SIVE",
+    "agent_view_summary": [
+      {
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+      },
+      {
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag."
+      }
+    ],
+    "areas_of_agreement": [
+      "2 agents lean neutral on the short-term horizon.",
+      "2 agents lean neutral on the long-term horizon."
+    ],
+    "areas_of_disagreement": [],
+    "missing_information": [],
+    "short_stance_counts": {
+      "Bullish": 1,
+      "Neutral": 2,
+      "Bearish": 0
+    },
+    "long_stance_counts": {
+      "Bullish": 1,
+      "Neutral": 2,
+      "Bearish": 0
+    },
+    "agent_packets": [
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+        "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+        "key_signals": [
+          {
+            "type": "mainstream_stock",
+            "ticker": "QCOM",
+            "company": "Qualcomm Inc.",
+            "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+            "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "VZ",
+            "company": "Verizon Communications Inc.",
+            "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+            "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "AMT",
+            "company": "American Tower Corporation",
+            "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+            "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "KEYS",
+            "company": "Keysight Technologies, Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+            "impact_score": 4
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "GFS",
+            "company": "GlobalFoundries Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+            "impact_score": 6
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "CMBM",
+            "company": "Cambium Networks Corporation",
+            "signal": "Short: Cost Squeeze & Victims",
+            "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+            "impact_score": 5
+          }
+        ],
+        "risks": [
+          "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+          "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+          "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+        ],
+        "citations": [
+          {
+            "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+            "source": "PRNewswire / industry-chain",
+            "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+          }
+        ],
+        "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+          "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "QCOM",
+              "company": "Qualcomm Inc.",
+              "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+              "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "VZ",
+              "company": "Verizon Communications Inc.",
+              "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+              "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMT",
+              "company": "American Tower Corporation",
+              "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+              "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "KEYS",
+              "company": "Keysight Technologies, Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+              "impact_score": 4
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "GFS",
+              "company": "GlobalFoundries Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+              "impact_score": 6
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "CMBM",
+              "company": "Cambium Networks Corporation",
+              "signal": "Short: Cost Squeeze & Victims",
+              "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+              "impact_score": 5
+            }
+          ],
+          "risks": [
+            "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+            "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+            "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+          ],
+          "citations": [
+            {
+              "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+              "source": "PRNewswire / industry-chain",
+              "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+            }
+          ],
+          "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+            "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "QCOM",
+                "company": "Qualcomm Inc.",
+                "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+                "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "VZ",
+                "company": "Verizon Communications Inc.",
+                "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+                "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMT",
+                "company": "American Tower Corporation",
+                "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+                "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "KEYS",
+                "company": "Keysight Technologies, Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+                "impact_score": 4
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "GFS",
+                "company": "GlobalFoundries Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+                "impact_score": 6
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "CMBM",
+                "company": "Cambium Networks Corporation",
+                "signal": "Short: Cost Squeeze & Victims",
+                "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+                "impact_score": 5
+              }
+            ],
+            "risks": [
+              "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+              "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+              "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+            ],
+            "citations": [
+              {
+                "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+                "source": "PRNewswire / industry-chain",
+                "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+              }
+            ],
+            "summary": {
+              "news_summary": "Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market.",
+              "core_insight": "A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+        "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+        "key_signals": [
+          {
+            "type": "Data Integrity",
+            "signal": "Insufficient Data for Analysis",
+            "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+          }
+        ],
+        "risks": [
+          "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+          "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+        ],
+        "citations": [],
+        "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+          "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+          "key_signals": [
+            {
+              "type": "Data Integrity",
+              "signal": "Insufficient Data for Analysis",
+              "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+            }
+          ],
+          "risks": [
+            "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+            "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+          ],
+          "citations": [],
+          "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+            "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+            "key_signals": [
+              {
+                "type": "Data Integrity",
+                "signal": "Insufficient Data for Analysis",
+                "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+              }
+            ],
+            "risks": [
+              "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+              "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+            ],
+            "citations": [],
+            "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "neutral",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+              "key_signals": [
+                {
+                  "type": "Data Integrity",
+                  "signal": "Insufficient Data for Analysis",
+                  "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+                }
+              ],
+              "risks": [
+                "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+                "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+              ],
+              "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+              "core_insight": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+        "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+        "key_signals": [
+          "All provided financial metric fields for the current and previous quarters are 'None'.",
+          "The input states 'No guidance information available'.",
+          "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+        ],
+        "risks": [
+          "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+          "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+          "Lack of management guidance and commentary from an earnings call transcript.",
+          "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+          "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+          "All valuation metrics (Market Cap, P/E ratios).",
+          "Balance sheet data (Total Debt, Cash).",
+          "Company guidance for future periods.",
+          "Management commentary from an earnings call.",
+          "Analyst consensus estimates.",
+          "The specific financial quarter being reported."
+        ],
+        "citations": [],
+        "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+          "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+          "key_signals": [
+            "All provided financial metric fields for the current and previous quarters are 'None'.",
+            "The input states 'No guidance information available'.",
+            "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+          ],
+          "risks": [
+            "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+            "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+            "Lack of management guidance and commentary from an earnings call transcript.",
+            "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+            "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+            "All valuation metrics (Market Cap, P/E ratios).",
+            "Balance sheet data (Total Debt, Cash).",
+            "Company guidance for future periods.",
+            "Management commentary from an earnings call.",
+            "Analyst consensus estimates.",
+            "The specific financial quarter being reported."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+            "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+            "key_signals": [
+              "All provided financial metric fields for the current and previous quarters are 'None'.",
+              "The input states 'No guidance information available'.",
+              "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+            ],
+            "risks": [
+              "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+              "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+              "Lack of management guidance and commentary from an earnings call transcript.",
+              "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+              "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+              "All valuation metrics (Market Cap, P/E ratios).",
+              "Balance sheet data (Total Debt, Cash).",
+              "Company guidance for future periods.",
+              "Management commentary from an earnings call.",
+              "Analyst consensus estimates.",
+              "The specific financial quarter being reported."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Watch",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+              "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+              "key_signals": [
+                "All provided financial metric fields for the current and previous quarters are 'None'.",
+                "The input states 'No guidance information available'.",
+                "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+              ],
+              "risks": [
+                "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+                "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+                "Lack of management guidance and commentary from an earnings call transcript.",
+                "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+                "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+                "All valuation metrics (Market Cap, P/E ratios).",
+                "Balance sheet data (Total Debt, Cash).",
+                "Company guidance for future periods.",
+                "Management commentary from an earnings call.",
+                "Analyst consensus estimates.",
+                "The specific financial quarter being reported."
+              ],
+              "summary": {
+                "beat_or_miss": "Unclear",
+                "guidance_change": "Unclear",
+                "management_tone": "Unclear",
+                "thesis_impact": "Unclear",
+                "thesis_impact_reasoning": "There is no new information to assess the impact on any investment thesis as all data points are missing."
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "debate": {
+    "triggered": false,
+    "trigger": {
+      "debate_required": false,
+      "conflict_level": "low",
+      "debate_reason": [
+        "No material cross-agent disagreement."
+      ]
+    },
+    "synthesis": {
+      "ticker": "SIVE",
+      "company": "SIVE",
+      "agent_view_summary": [
+        {
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.7,
+          "rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market."
+        },
+        {
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+        },
+        {
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag."
+        }
+      ],
+      "areas_of_agreement": [
+        "2 agents lean neutral on the short-term horizon.",
+        "2 agents lean neutral on the long-term horizon."
+      ],
+      "areas_of_disagreement": [],
+      "missing_information": [],
+      "short_stance_counts": {
+        "Bullish": 1,
+        "Neutral": 2,
+        "Bearish": 0
+      },
+      "long_stance_counts": {
+        "Bullish": 1,
+        "Neutral": 2,
+        "Bearish": 0
+      },
+      "agent_packets": [
+        {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+          "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "QCOM",
+              "company": "Qualcomm Inc.",
+              "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+              "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "VZ",
+              "company": "Verizon Communications Inc.",
+              "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+              "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMT",
+              "company": "American Tower Corporation",
+              "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+              "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "KEYS",
+              "company": "Keysight Technologies, Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+              "impact_score": 4
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "GFS",
+              "company": "GlobalFoundries Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+              "impact_score": 6
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "CMBM",
+              "company": "Cambium Networks Corporation",
+              "signal": "Short: Cost Squeeze & Victims",
+              "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+              "impact_score": 5
+            }
+          ],
+          "risks": [
+            "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+            "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+            "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+          ],
+          "citations": [
+            {
+              "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+              "source": "PRNewswire / industry-chain",
+              "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+            }
+          ],
+          "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+            "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "QCOM",
+                "company": "Qualcomm Inc.",
+                "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+                "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "VZ",
+                "company": "Verizon Communications Inc.",
+                "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+                "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMT",
+                "company": "American Tower Corporation",
+                "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+                "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "KEYS",
+                "company": "Keysight Technologies, Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+                "impact_score": 4
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "GFS",
+                "company": "GlobalFoundries Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+                "impact_score": 6
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "CMBM",
+                "company": "Cambium Networks Corporation",
+                "signal": "Short: Cost Squeeze & Victims",
+                "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+                "impact_score": 5
+              }
+            ],
+            "risks": [
+              "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+              "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+              "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+            ],
+            "citations": [
+              {
+                "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+                "source": "PRNewswire / industry-chain",
+                "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+              }
+            ],
+            "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "news_macro",
+              "short_term_stance": "Bullish",
+              "long_term_stance": "Bullish",
+              "confidence": 0.7,
+              "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+              "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+              "key_signals": [
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "QCOM",
+                  "company": "Qualcomm Inc.",
+                  "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+                  "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+                },
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "VZ",
+                  "company": "Verizon Communications Inc.",
+                  "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+                  "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+                },
+                {
+                  "type": "mainstream_stock",
+                  "ticker": "AMT",
+                  "company": "American Tower Corporation",
+                  "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+                  "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "KEYS",
+                  "company": "Keysight Technologies, Inc.",
+                  "signal": "Long: Pick-and-Shovel",
+                  "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+                  "impact_score": 4
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "GFS",
+                  "company": "GlobalFoundries Inc.",
+                  "signal": "Long: Pick-and-Shovel",
+                  "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+                  "impact_score": 6
+                },
+                {
+                  "type": "second_order_opportunity",
+                  "ticker": "CMBM",
+                  "company": "Cambium Networks Corporation",
+                  "signal": "Short: Cost Squeeze & Victims",
+                  "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+                  "impact_score": 5
+                }
+              ],
+              "risks": [
+                "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+                "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+                "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+              ],
+              "citations": [
+                {
+                  "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+                  "source": "PRNewswire / industry-chain",
+                  "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+                }
+              ],
+              "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+              "raw_packet": {
+                "ticker": "SIVE",
+                "company": "SIVE",
+                "agent_name": "news_macro",
+                "short_term_stance": "Bullish",
+                "long_term_stance": "Bullish",
+                "confidence": 0.7,
+                "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+                "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+                "key_signals": [
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "QCOM",
+                    "company": "Qualcomm Inc.",
+                    "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+                    "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+                  },
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "VZ",
+                    "company": "Verizon Communications Inc.",
+                    "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+                    "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+                  },
+                  {
+                    "type": "mainstream_stock",
+                    "ticker": "AMT",
+                    "company": "American Tower Corporation",
+                    "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+                    "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "KEYS",
+                    "company": "Keysight Technologies, Inc.",
+                    "signal": "Long: Pick-and-Shovel",
+                    "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+                    "impact_score": 4
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "GFS",
+                    "company": "GlobalFoundries Inc.",
+                    "signal": "Long: Pick-and-Shovel",
+                    "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+                    "impact_score": 6
+                  },
+                  {
+                    "type": "second_order_opportunity",
+                    "ticker": "CMBM",
+                    "company": "Cambium Networks Corporation",
+                    "signal": "Short: Cost Squeeze & Victims",
+                    "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+                    "impact_score": 5
+                  }
+                ],
+                "risks": [
+                  "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+                  "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+                  "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+                ],
+                "citations": [
+                  {
+                    "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+                    "source": "PRNewswire / industry-chain",
+                    "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+                  }
+                ],
+                "summary": {
+                  "news_summary": "Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market.",
+                  "core_insight": "A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development."
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+          "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+          "key_signals": [
+            {
+              "type": "Data Integrity",
+              "signal": "Insufficient Data for Analysis",
+              "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+            }
+          ],
+          "risks": [
+            "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+            "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+          ],
+          "citations": [],
+          "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+            "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+            "key_signals": [
+              {
+                "type": "Data Integrity",
+                "signal": "Insufficient Data for Analysis",
+                "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+              }
+            ],
+            "risks": [
+              "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+              "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+            ],
+            "citations": [],
+            "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "market_technical",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Neutral",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+              "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+              "key_signals": [
+                {
+                  "type": "Data Integrity",
+                  "signal": "Insufficient Data for Analysis",
+                  "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+                }
+              ],
+              "risks": [
+                "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+                "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+              ],
+              "citations": [],
+              "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+              "raw_packet": {
+                "ticker": "SIVE",
+                "company": "SIVE",
+                "agent_name": "market_technical",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Neutral",
+                "confidence": 0.0,
+                "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+                "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+                "key_signals": [
+                  {
+                    "type": "Data Integrity",
+                    "signal": "Insufficient Data for Analysis",
+                    "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+                  }
+                ],
+                "risks": [
+                  "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+                  "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+                ],
+                "citations": [],
+                "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+                "raw_packet": {
+                  "ticker": "SIVE",
+                  "company": "SIVE",
+                  "agent_name": "Market & Technical Analysis Agent",
+                  "short_term_stance": "neutral",
+                  "long_term_stance": "neutral",
+                  "confidence": 0.0,
+                  "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+                  "key_signals": [
+                    {
+                      "type": "Data Integrity",
+                      "signal": "Insufficient Data for Analysis",
+                      "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+                    }
+                  ],
+                  "risks": [
+                    "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+                    "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+                  ],
+                  "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+                  "core_insight": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+                }
+              }
+            }
+          }
+        },
+        {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+          "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+          "key_signals": [
+            "All provided financial metric fields for the current and previous quarters are 'None'.",
+            "The input states 'No guidance information available'.",
+            "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+          ],
+          "risks": [
+            "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+            "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+            "Lack of management guidance and commentary from an earnings call transcript.",
+            "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+            "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+            "All valuation metrics (Market Cap, P/E ratios).",
+            "Balance sheet data (Total Debt, Cash).",
+            "Company guidance for future periods.",
+            "Management commentary from an earnings call.",
+            "Analyst consensus estimates.",
+            "The specific financial quarter being reported."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+            "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+            "key_signals": [
+              "All provided financial metric fields for the current and previous quarters are 'None'.",
+              "The input states 'No guidance information available'.",
+              "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+            ],
+            "risks": [
+              "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+              "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+              "Lack of management guidance and commentary from an earnings call transcript.",
+              "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+              "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+              "All valuation metrics (Market Cap, P/E ratios).",
+              "Balance sheet data (Total Debt, Cash).",
+              "Company guidance for future periods.",
+              "Management commentary from an earnings call.",
+              "Analyst consensus estimates.",
+              "The specific financial quarter being reported."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Neutral",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+              "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+              "key_signals": [
+                "All provided financial metric fields for the current and previous quarters are 'None'.",
+                "The input states 'No guidance information available'.",
+                "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+              ],
+              "risks": [
+                "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+                "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+                "Lack of management guidance and commentary from an earnings call transcript.",
+                "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+                "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+                "All valuation metrics (Market Cap, P/E ratios).",
+                "Balance sheet data (Total Debt, Cash).",
+                "Company guidance for future periods.",
+                "Management commentary from an earnings call.",
+                "Analyst consensus estimates.",
+                "The specific financial quarter being reported."
+              ],
+              "citations": [],
+              "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+              "raw_packet": {
+                "ticker": "SIVE",
+                "company": "SIVE",
+                "agent_name": "fundamental",
+                "short_term_stance": "Neutral",
+                "long_term_stance": "Neutral",
+                "confidence": 0.0,
+                "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+                "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+                "key_signals": [
+                  "All provided financial metric fields for the current and previous quarters are 'None'.",
+                  "The input states 'No guidance information available'.",
+                  "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+                ],
+                "risks": [
+                  "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+                  "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+                  "Lack of management guidance and commentary from an earnings call transcript.",
+                  "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+                  "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+                  "All valuation metrics (Market Cap, P/E ratios).",
+                  "Balance sheet data (Total Debt, Cash).",
+                  "Company guidance for future periods.",
+                  "Management commentary from an earnings call.",
+                  "Analyst consensus estimates.",
+                  "The specific financial quarter being reported."
+                ],
+                "citations": [],
+                "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+                "raw_packet": {
+                  "ticker": "SIVE",
+                  "company": "SIVE",
+                  "agent_name": "fundamental",
+                  "short_term_stance": "Neutral",
+                  "long_term_stance": "Watch",
+                  "confidence": 0.0,
+                  "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+                  "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+                  "key_signals": [
+                    "All provided financial metric fields for the current and previous quarters are 'None'.",
+                    "The input states 'No guidance information available'.",
+                    "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+                  ],
+                  "risks": [
+                    "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+                    "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+                    "Lack of management guidance and commentary from an earnings call transcript.",
+                    "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+                    "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+                    "All valuation metrics (Market Cap, P/E ratios).",
+                    "Balance sheet data (Total Debt, Cash).",
+                    "Company guidance for future periods.",
+                    "Management commentary from an earnings call.",
+                    "Analyst consensus estimates.",
+                    "The specific financial quarter being reported."
+                  ],
+                  "summary": {
+                    "beat_or_miss": "Unclear",
+                    "guidance_change": "Unclear",
+                    "management_tone": "Unclear",
+                    "thesis_impact": "Unclear",
+                    "thesis_impact_reasoning": "There is no new information to assess the impact on any investment thesis as all data points are missing."
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "debate_responses": [],
+    "revised_packets": [
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+        "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+        "key_signals": [
+          {
+            "type": "mainstream_stock",
+            "ticker": "QCOM",
+            "company": "Qualcomm Inc.",
+            "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+            "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "VZ",
+            "company": "Verizon Communications Inc.",
+            "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+            "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+          },
+          {
+            "type": "mainstream_stock",
+            "ticker": "AMT",
+            "company": "American Tower Corporation",
+            "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+            "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "KEYS",
+            "company": "Keysight Technologies, Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+            "impact_score": 4
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "GFS",
+            "company": "GlobalFoundries Inc.",
+            "signal": "Long: Pick-and-Shovel",
+            "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+            "impact_score": 6
+          },
+          {
+            "type": "second_order_opportunity",
+            "ticker": "CMBM",
+            "company": "Cambium Networks Corporation",
+            "signal": "Short: Cost Squeeze & Victims",
+            "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+            "impact_score": 5
+          }
+        ],
+        "risks": [
+          "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+          "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+          "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+        ],
+        "citations": [
+          {
+            "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+            "source": "PRNewswire / industry-chain",
+            "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+          }
+        ],
+        "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "news_macro",
+          "short_term_stance": "Bullish",
+          "long_term_stance": "Bullish",
+          "confidence": 0.7,
+          "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+          "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+          "key_signals": [
+            {
+              "type": "mainstream_stock",
+              "ticker": "QCOM",
+              "company": "Qualcomm Inc.",
+              "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+              "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "VZ",
+              "company": "Verizon Communications Inc.",
+              "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+              "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+            },
+            {
+              "type": "mainstream_stock",
+              "ticker": "AMT",
+              "company": "American Tower Corporation",
+              "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+              "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "KEYS",
+              "company": "Keysight Technologies, Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+              "impact_score": 4
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "GFS",
+              "company": "GlobalFoundries Inc.",
+              "signal": "Long: Pick-and-Shovel",
+              "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+              "impact_score": 6
+            },
+            {
+              "type": "second_order_opportunity",
+              "ticker": "CMBM",
+              "company": "Cambium Networks Corporation",
+              "signal": "Short: Cost Squeeze & Victims",
+              "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+              "impact_score": 5
+            }
+          ],
+          "risks": [
+            "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+            "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+            "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+          ],
+          "citations": [
+            {
+              "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+              "source": "PRNewswire / industry-chain",
+              "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+            }
+          ],
+          "summary": "news_summary: Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market. | core_insight: A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "news_macro",
+            "short_term_stance": "Bullish",
+            "long_term_stance": "Bullish",
+            "confidence": 0.7,
+            "confidence_rationale": "Confidence is relatively high because the news is a direct, positive announcement from the company about a specific contract win. This validates their technology and market position. Confidence is not higher because the immediate financial impact ($1.5M) is small, and the ultimate long-term value depends on the successful deployment and market adoption of the end customer's product, which is not guaranteed.",
+            "stance_rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market.",
+            "key_signals": [
+              {
+                "type": "mainstream_stock",
+                "ticker": "QCOM",
+                "company": "Qualcomm Inc.",
+                "signal": "This news reinforces the growth trend in FWA, which is a net positive for Qualcomm, but also highlights that smaller, specialized players can and do win designs, preventing a complete monopoly.",
+                "evidence": "Minimal to none, as Sivers is a very small competitor. Mainstream capital might view this as noise, but also as a sign of a healthy, competitive ecosystem."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "VZ",
+                "company": "Verizon Communications Inc.",
+                "signal": "A positive long-term indicator for the FWA growth story that Verizon depends on. A healthy supplier ecosystem is critical for driving down CPE costs and improving performance.",
+                "evidence": "None directly, but analysts covering Verizon will note any sign that the FWA equipment ecosystem is becoming more competitive and innovative, potentially leading to better, cheaper customer equipment down the line."
+              },
+              {
+                "type": "mainstream_stock",
+                "ticker": "AMT",
+                "company": "American Tower Corporation",
+                "signal": "This is a faint, but positive, long-term signal. More FWA deployments, enabled by components from companies like Sivers, ultimately require more sites for transmission, benefiting tower companies.",
+                "evidence": "None. This news is too far down the supply chain to move a large infrastructure stock."
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "KEYS",
+                "company": "Keysight Technologies, Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because companies like Sivers and Tachyon are actively developing new, complex millimeter-wave (28/60GHz) hardware, demand for high-frequency electronic test & measurement equipment is necessary for R&D, validation, and eventually manufacturing test, which causes increased orders for Keysight's specialized communication test solutions.",
+                "impact_score": 4
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "GFS",
+                "company": "GlobalFoundries Inc.",
+                "signal": "Long: Pick-and-Shovel",
+                "evidence": "Because fabless semiconductor companies like Sivers are winning designs for high-performance mmWave RF chips, they require manufacturing partners with specialized process technologies like RF-SOI or SiGe. This causes increased wafer demand at foundries like GlobalFoundries, a leader in these specific technologies crucial for 5G applications.",
+                "impact_score": 6
+              },
+              {
+                "type": "second_order_opportunity",
+                "ticker": "CMBM",
+                "company": "Cambium Networks Corporation",
+                "signal": "Short: Cost Squeeze & Victims",
+                "evidence": "Because new entrants like Tachyon Networks are partnering with chip designers like Sivers to create novel, potentially more integrated FWA solutions, competitive intensity increases for incumbents like Cambium. This will likely cause either market share loss or a need for accelerated R&D and pricing pressure, squeezing margins and future earnings.",
+                "impact_score": 5
+              }
+            ],
+            "risks": [
+              "The primary thesis assumes the Sivers-Tachyon partnership leads to a successful product with market traction; the failure of Tachyon's product would neutralize the long-term benefit for Sivers and the read-through for the ecosystem.",
+              "The GlobalFoundries (GFS) thesis assumes GFS is, or is representative of, the type of foundry Sivers uses. If Sivers uses a different foundry (e.g., a private one or TSMC), the direct link to GFS is weaker, though the thematic point remains.",
+              "The short thesis on Cambium Networks (CMBM) assumes Tachyon Networks will emerge as a meaningful competitor. They may be a small, niche player that poses no real threat to established incumbents."
+            ],
+            "citations": [
+              {
+                "title": "Tachyon Networks Expands FWA Portfolio With $1.5M Development Partnership With Sivers Semiconductors",
+                "source": "PRNewswire / industry-chain",
+                "url": "https://www.prnewswire.com/news-releases/tachyon-networks-expands-fwa-portfolio-with-1-5m-development-partnership-with-sivers-semiconductors-302763763.html"
+              }
+            ],
+            "summary": {
+              "news_summary": "Sivers Semiconductors (SIVE) announced a $1.5M development partnership with Tachyon Networks to create unified 28GHz and 60GHz transceivers, signaling a design win and deeper entry into the Fixed Wireless Access (FWA) market.",
+              "core_insight": "A small-cap design win in millimeter-wave (mmWave) FWA technology signals continued R&D investment and supply chain diversification in the 5G ecosystem, creating overlooked opportunities in specialized test equipment and semiconductor foundries that underpin this complex technology development."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+        "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+        "key_signals": [
+          {
+            "type": "Data Integrity",
+            "signal": "Insufficient Data for Analysis",
+            "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+          }
+        ],
+        "risks": [
+          "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+          "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+        ],
+        "citations": [],
+        "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "market_technical",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+          "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+          "key_signals": [
+            {
+              "type": "Data Integrity",
+              "signal": "Insufficient Data for Analysis",
+              "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+            }
+          ],
+          "risks": [
+            "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+            "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+          ],
+          "citations": [],
+          "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "market_technical",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+            "stance_rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence.",
+            "key_signals": [
+              {
+                "type": "Data Integrity",
+                "signal": "Insufficient Data for Analysis",
+                "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+              }
+            ],
+            "risks": [
+              "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+              "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+            ],
+            "citations": [],
+            "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "Market & Technical Analysis Agent",
+              "short_term_stance": "neutral",
+              "long_term_stance": "neutral",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as all provided technical indicator data points are null or empty. A neutral stance is adopted due to the complete absence of information to support any directional bias.",
+              "key_signals": [
+                {
+                  "type": "Data Integrity",
+                  "signal": "Insufficient Data for Analysis",
+                  "evidence": "All provided indicator fields (Returns, RSI, Moving Averages, MACD, Volume, Volatility, etc.) are null or empty, which prevents any form of technical analysis."
+                }
+              ],
+              "risks": [
+                "Complete lack of technical data prevents any assessment of price trends, momentum, or specific risks.",
+                "The absence of data may imply the stock is delisted, has extremely low liquidity, or is not tracked, representing a significant unquantifiable risk."
+              ],
+              "summary": "No technical analysis can be performed for SIVE as of 2026/05/09 due to a complete lack of indicator data. The stance is necessarily neutral as there are no signals to evaluate trend, momentum, volatility, or risk.",
+              "core_insight": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+            }
+          }
+        }
+      },
+      {
+        "ticker": "SIVE",
+        "company": "SIVE",
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+        "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+        "key_signals": [
+          "All provided financial metric fields for the current and previous quarters are 'None'.",
+          "The input states 'No guidance information available'.",
+          "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+        ],
+        "risks": [
+          "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+          "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+          "Lack of management guidance and commentary from an earnings call transcript.",
+          "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+          "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+          "All valuation metrics (Market Cap, P/E ratios).",
+          "Balance sheet data (Total Debt, Cash).",
+          "Company guidance for future periods.",
+          "Management commentary from an earnings call.",
+          "Analyst consensus estimates.",
+          "The specific financial quarter being reported."
+        ],
+        "citations": [],
+        "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+        "raw_packet": {
+          "ticker": "SIVE",
+          "company": "SIVE",
+          "agent_name": "fundamental",
+          "short_term_stance": "Neutral",
+          "long_term_stance": "Neutral",
+          "confidence": 0.0,
+          "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+          "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+          "key_signals": [
+            "All provided financial metric fields for the current and previous quarters are 'None'.",
+            "The input states 'No guidance information available'.",
+            "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+          ],
+          "risks": [
+            "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+            "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+            "Lack of management guidance and commentary from an earnings call transcript.",
+            "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+            "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+            "All valuation metrics (Market Cap, P/E ratios).",
+            "Balance sheet data (Total Debt, Cash).",
+            "Company guidance for future periods.",
+            "Management commentary from an earnings call.",
+            "Analyst consensus estimates.",
+            "The specific financial quarter being reported."
+          ],
+          "citations": [],
+          "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+          "raw_packet": {
+            "ticker": "SIVE",
+            "company": "SIVE",
+            "agent_name": "fundamental",
+            "short_term_stance": "Neutral",
+            "long_term_stance": "Neutral",
+            "confidence": 0.0,
+            "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+            "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+            "key_signals": [
+              "All provided financial metric fields for the current and previous quarters are 'None'.",
+              "The input states 'No guidance information available'.",
+              "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+            ],
+            "risks": [
+              "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+              "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+              "Lack of management guidance and commentary from an earnings call transcript.",
+              "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+              "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+              "All valuation metrics (Market Cap, P/E ratios).",
+              "Balance sheet data (Total Debt, Cash).",
+              "Company guidance for future periods.",
+              "Management commentary from an earnings call.",
+              "Analyst consensus estimates.",
+              "The specific financial quarter being reported."
+            ],
+            "citations": [],
+            "summary": "beat_or_miss: Unclear | guidance_change: Unclear | management_tone: Unclear | thesis_impact: Unclear | thesis_impact_reasoning: There is no new information to assess the impact on any investment thesis as all data points are missing.",
+            "raw_packet": {
+              "ticker": "SIVE",
+              "company": "SIVE",
+              "agent_name": "fundamental",
+              "short_term_stance": "Neutral",
+              "long_term_stance": "Watch",
+              "confidence": 0.0,
+              "confidence_rationale": "Confidence is zero as the analysis is based on a complete lack of data, not on the interpretation of financial performance or company fundamentals.",
+              "stance_rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag.",
+              "key_signals": [
+                "All provided financial metric fields for the current and previous quarters are 'None'.",
+                "The input states 'No guidance information available'.",
+                "The input states 'No earnings call transcript available from Financial Modeling Prep'."
+              ],
+              "risks": [
+                "Complete absence of all fundamental financial data, including revenue, profitability, cash flow, and balance sheet items.",
+                "No valuation metrics such as Market Cap, Trailing P/E, or Forward P/E are available.",
+                "Lack of management guidance and commentary from an earnings call transcript.",
+                "The specific quarter for the financial data is unknown, preventing any time-based analysis.",
+                "All fundamental financial data (Revenue, Profitability, Cash Flow).",
+                "All valuation metrics (Market Cap, P/E ratios).",
+                "Balance sheet data (Total Debt, Cash).",
+                "Company guidance for future periods.",
+                "Management commentary from an earnings call.",
+                "Analyst consensus estimates.",
+                "The specific financial quarter being reported."
+              ],
+              "summary": {
+                "beat_or_miss": "Unclear",
+                "guidance_change": "Unclear",
+                "management_tone": "Unclear",
+                "thesis_impact": "Unclear",
+                "thesis_impact_reasoning": "There is no new information to assess the impact on any investment thesis as all data points are missing."
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "final_decision": {
+    "ticker": "SIVE",
+    "company": "SIVE",
+    "final_short_term_stance": "Neutral",
+    "final_long_term_stance": "Neutral",
+    "investment_action": "Do Not Invest",
+    "position_size_hint": "None",
+    "confidence": 0.9,
+    "core_thesis": "While a positive, technology-validating news catalyst exists, the complete and simultaneous absence of fundamental financial and technical market data makes the security unanalyzable and uninvestable. The positive signal from the design win cannot be contextualized against the company's financial health, valuation, or market liquidity, making any investment an exercise in pure speculation.",
+    "why_now": "A positive news event has brought the company into focus. However, the due diligence process revealed a critical lack of basic information from our standard data providers, which is a significant red flag. The correct action is to halt immediately and not proceed based on a single, uncontextualized news story.",
+    "key_supporting_evidence": [
+      "Positive Catalyst: Sivers Semiconductors announced a $1.5M development partnership with Tachyon Networks, a tangible design win that validates its mmWave technology in the growing Fixed Wireless Access (FWA) market.",
+      "Overriding Red Flag 1 (Fundamentals): The fundamental agent reported a complete absence of all financial data, including revenue, profitability, cash flow, balance sheet items, and valuation metrics.",
+      "Overriding Red Flag 2 (Technicals): The market technical agent reported a complete absence of all analyzable data, including price history, volume, and standard indicators, suggesting extreme illiquidity or that the stock is not tracked by standard systems.",
+      "Conclusion: The inability to perform basic financial or technical due diligence makes it impossible to assess the materiality of the news or the risk profile of the investment."
+    ],
+    "key_risks": [
+      "Informational Risk: The primary risk is the complete lack of data. Investing without financial statements or market data is blind speculation. The reasons for the data void (e.g., foreign listing, delisting, extreme illiquidity) are themselves unquantified risks.",
+      "Execution Risk: The entire bullish thesis from the news agent rests on the successful execution of the partnership with Tachyon Networks and Tachyon's own success in the market, which is a significant, unquantifiable dependency.",
+      "Materiality Risk: Without knowing Sivers' revenue or market cap, it is impossible to determine if a $1.5M development deal is a significant event or rounding error.",
+      "Liquidity Risk: The lack of technical data strongly implies the stock may be extremely illiquid, posing a risk of being unable to enter or exit a position at a fair price."
+    ],
+    "agent_view_summary": [
+      {
+        "agent_name": "news_macro",
+        "short_term_stance": "Bullish",
+        "long_term_stance": "Bullish",
+        "confidence": 0.7,
+        "rationale": "The short-term stance is Bullish because the $1.5M development partnership is a tangible design win that validates Sivers' technology in the high-growth FWA market, which should be well-received by investors in a risk-on environment. The long-term stance is Bullish because this win serves as a crucial building block for future, high-volume production revenue, increasing the probability of Sivers capturing a meaningful share of the mmWave component market."
+      },
+      {
+        "agent_name": "market_technical",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "rationale": "The defining characteristic for SIVE is the absolute absence of any analyzable data, making a directional investment thesis impossible to form. The only possible stance is neutral with zero confidence."
+      },
+      {
+        "agent_name": "fundamental",
+        "short_term_stance": "Neutral",
+        "long_term_stance": "Neutral",
+        "confidence": 0.0,
+        "rationale": "An investment decision is impossible due to a complete absence of financial data, guidance, and management commentary. The lack of available information is a significant red flag."
+      }
+    ],
+    "debate_summary": {
+      "debate_triggered": false,
+      "conflict_level": "low",
+      "debate_reason": [
+        "No material cross-agent disagreement."
+      ],
+      "debate_responses": []
+    },
+    "routing_profile": {
+      "bucket": "default",
+      "short": {
+        "market_technical": 0.55,
+        "news_macro": 0.35,
+        "fundamental": 0.1
+      },
+      "long": {
+        "fundamental": 0.45,
+        "news_macro": 0.35,
+        "market_technical": 0.2
+      },
+      "rationale": "Default CIO weights are used because no bucket-specific routing rule matched."
+    },
+    "reason_for_final_decision": "I am overriding the deterministic guardrail's 'Bullish' recommendation. The guardrail's logic was mechanically correct but contextually flawed, as it interpreted zero confidence from the fundamental and technical agents as neutral inputs rather than as the critical red flag they represent. The *reason* for the zero confidence—a complete void of data—is the single most important finding. Investing without the ability to conduct basic due diligence is a violation of our core principles. Therefore, the only responsible decision is to not invest and to flag the security as unanalyzable at this time.",
+    "agent_votes": {
+      "short": [
+        {
+          "agent_name": "news_macro",
+          "stance": "Bullish",
+          "confidence": 0.7,
+          "weight": 0.35,
+          "contribution": 0.245
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.0,
+          "weight": 0.55,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.0,
+          "weight": 0.1,
+          "contribution": 0.0
+        }
+      ],
+      "long": [
+        {
+          "agent_name": "news_macro",
+          "stance": "Bullish",
+          "confidence": 0.7,
+          "weight": 0.35,
+          "contribution": 0.245
+        },
+        {
+          "agent_name": "market_technical",
+          "stance": "Neutral",
+          "confidence": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        {
+          "agent_name": "fundamental",
+          "stance": "Neutral",
+          "confidence": 0.0,
+          "weight": 0.45,
+          "contribution": 0.0
+        }
+      ]
+    },
+    "scores": {
+      "short": 1.0,
+      "long": 1.0
+    },
+    "llm_decision_used": true
+  }
+}
