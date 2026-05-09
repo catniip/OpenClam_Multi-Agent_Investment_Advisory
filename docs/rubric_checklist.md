@@ -16,7 +16,7 @@
 | Analysis scripts and notebooks | five notebooks under `notebooks/` |
 | Clear installation instructions | `README.md` Quick Start |
 | Environment setup guide | `.env.example`, `environment.yml`, `requirements.txt`, README setup section |
-| Usage examples and demonstrations | notebooks `01` through `05` |
+| Usage examples and demonstrations | notebooks `01` through `05`, plus `app.py` Streamlit UI |
 | Troubleshooting guide | `docs/troubleshooting.md` |
 
 ## Verification

@@ -61,6 +61,7 @@ data/agent_outputs/q4_2025_ai_tech/
 docs/                  # design and evaluation notes
 reports/               # figures and case studies
 tests/                 # deterministic unit and integration-style tests
+app.py                 # lightweight Streamlit cache viewer
 ```
 
 ## Documentation Map
@@ -105,6 +106,22 @@ pytest
 ```
 
 Current tests cover deterministic evaluation scoring, stance normalization, CIO conflict detection, weight-profile behavior, and no-debate aggregation baselines.
+
+### 1c. Launch Demo UI
+
+The UI reads cached Q4 2025 outputs and does not call external APIs or LLMs:
+
+```bash
+streamlit run app.py
+```
+
+or:
+
+```bash
+make ui
+```
+
+Use it to inspect a ticker's agent inputs, debate diagnostics, CIO decision, and evaluation result.
 
 ### 2. Configure Environment Variables
 
