@@ -260,6 +260,7 @@ def build_price_tables(
     pre_trading_days: int = 7,
     post_trading_days: int = 7,
     long_post_trading_days: int = 30,
+    force_refresh: bool = True,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     """Build and cache price/eval tables for the selected universe."""
     from openclam.agents.news_macro import news_macro_agent
@@ -283,6 +284,52 @@ def build_price_tables(
     summary_df.to_csv(root / "tables" / "price_summary.csv", index=False)
     paths_df.to_csv(root / "tables" / "price_paths.csv", index=False)
     return summary_df, paths_df
+
+
+def load_cached_price_tables(
+    earnings_df: pd.DataFrame | None = None,
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+) -> tuple[pd.DataFrame | None, pd.DataFrame | None]:
+    """Load cached price/eval tables if they exist and cover the requested universe."""
+    root = Path(cache_root)
+    summary_path = root / "tables" / "price_summary.csv"
+    paths_path = root / "tables" / "price_paths.csv"
+    if not summary_path.exists() or not paths_path.exists():
+        return None, None
+
+    summary_df = pd.read_csv(summary_path)
+    paths_df = pd.read_csv(paths_path)
+    if earnings_df is not None:
+        expected = set(earnings_df["ticker"].astype(str).str.upper())
+        cached = set(summary_df["ticker"].astype(str).str.upper()) if "ticker" in summary_df else set()
+        if not expected.issubset(cached):
+            return None, None
+        summary_df = summary_df[summary_df["ticker"].astype(str).str.upper().isin(expected)].copy()
+        if "ticker" in paths_df:
+            paths_df = paths_df[paths_df["ticker"].astype(str).str.upper().isin(expected)].copy()
+    return summary_df.reset_index(drop=True), paths_df.reset_index(drop=True)
+
+
+def get_or_build_price_tables(
+    earnings_df: pd.DataFrame | None = None,
+    cache_root: str | Path = DEFAULT_CACHE_ROOT,
+    pre_trading_days: int = 7,
+    post_trading_days: int = 7,
+    long_post_trading_days: int = 30,
+    force_refresh: bool = False,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Load cached price tables when possible; otherwise build and cache them."""
+    if not force_refresh:
+        cached_summary, cached_paths = load_cached_price_tables(earnings_df=earnings_df, cache_root=cache_root)
+        if cached_summary is not None and cached_paths is not None:
+            return cached_summary, cached_paths
+    return build_price_tables(
+        earnings_df=earnings_df,
+        cache_root=cache_root,
+        pre_trading_days=pre_trading_days,
+        post_trading_days=post_trading_days,
+        long_post_trading_days=long_post_trading_days,
+    )
 
 
 def _openai_temperature(model_name: str, preferred: float) -> float:
@@ -1008,6 +1055,101 @@ def add_single_agent_baselines(
     return out
 
 
+def add_raw_aggregation_baseline(
+    cio_eval: pd.DataFrame,
+    packets_by_ticker: dict[str, list[dict[str, Any]]],
+    long_post_trading_days: int = 30,
+    neutral_band: float = 0.02,
+    prefix: str = "raw_aggregation",
+    weight_mode: str = "bucket",
+    short_weights: dict[str, float] | None = None,
+    long_weights: dict[str, float] | None = None,
+) -> pd.DataFrame:
+    """Add direct no-debate/no-fallback weighted multi-agent aggregation as a baseline."""
+    from openclam.agents.cio import cio_agent
+
+    uniform_weights = {
+        "news_macro": 1.0 / 3.0,
+        "market_technical": 1.0 / 3.0,
+        "fundamental": 1.0 / 3.0,
+    }
+    fundamental_heavy_weights = {
+        "fundamental": 0.50,
+        "market_technical": 0.25,
+        "news_macro": 0.25,
+    }
+
+    def _weights_for(row: pd.Series) -> tuple[dict[str, float], dict[str, float], dict[str, Any]]:
+        profile = cio_agent.resolve_weight_profile(row.get("bucket"))
+        if weight_mode == "uniform":
+            return (
+                short_weights or uniform_weights,
+                long_weights or uniform_weights,
+                {
+                    "bucket": str(row.get("bucket") or "default"),
+                    "rationale": "Uniform raw aggregation uses equal direct agent weights.",
+                },
+            )
+        if weight_mode == "fundamental_heavy":
+            return (
+                short_weights or fundamental_heavy_weights,
+                long_weights or fundamental_heavy_weights,
+                {
+                    "bucket": str(row.get("bucket") or "default"),
+                    "rationale": "Fundamental-heavy raw aggregation uses fundamental 0.50, market technical 0.25, and news macro 0.25.",
+                },
+            )
+        return (
+            short_weights or profile["short"],
+            long_weights or profile["long"],
+            profile,
+        )
+
+    raw_rows: list[dict[str, Any]] = []
+    for _, row in cio_eval.iterrows():
+        ticker = str(row.get("ticker", "")).upper()
+        packets = [
+            cio_agent.normalize_agent_packet(packet)
+            for packet in packets_by_ticker.get(ticker, []) or []
+        ]
+        short_weight_map, long_weight_map, profile = _weights_for(row)
+        short_score = cio_agent._weighted_stance_score(packets, "short", short_weight_map)
+        long_score = cio_agent._weighted_stance_score(packets, "long", long_weight_map)
+        raw_rows.append(
+            {
+                "ticker": ticker,
+                f"{prefix}_short_stance": short_score["stance"],
+                f"{prefix}_long_stance": long_score["stance"],
+                f"{prefix}_short_score": short_score["score"],
+                f"{prefix}_long_score": long_score["score"],
+                f"{prefix}_short_votes": short_score["votes"],
+                f"{prefix}_long_votes": long_score["votes"],
+                f"{prefix}_confidence": round(
+                    (abs(float(short_score["score"])) + abs(float(long_score["score"]))) / 2,
+                    3,
+                ),
+                f"{prefix}_reason": (
+                    f"Direct raw aggregation with {weight_mode} weights; "
+                    "no CIO debate, no deterministic fallback debate, and no LLM final override."
+                ),
+                f"{prefix}_routing_bucket": profile.get("bucket"),
+                f"{prefix}_routing_rationale": profile.get("rationale"),
+            }
+        )
+
+    raw_eval = pd.DataFrame(raw_rows)
+    out = cio_eval.merge(raw_eval, on="ticker", how="left")
+    out = score_stance_columns(
+        out,
+        short_stance_col=f"{prefix}_short_stance",
+        long_stance_col=f"{prefix}_long_stance",
+        prefix=prefix,
+        long_post_trading_days=long_post_trading_days,
+        neutral_band=neutral_band,
+    )
+    return out
+
+
 def add_deepresearch_baseline(
     cio_eval: pd.DataFrame,
     deepresearch_df: pd.DataFrame,
@@ -1069,6 +1211,9 @@ def compare_with_external_baselines(
     long_post_trading_days: int = 30,
     neutral_band: float = 0.02,
     external_baselines: dict[str, str | Path] | None = None,
+    include_raw_aggregation: bool = True,
+    include_uniform_raw: bool = True,
+    include_fundamental_heavy_raw: bool = True,
 ) -> dict[str, Any]:
     """Compare CIO, single agents, and optional external LLM baseline CSVs."""
     root = ensure_cache_dirs(cache_root)
@@ -1079,6 +1224,42 @@ def compare_with_external_baselines(
         neutral_band=neutral_band,
     )
     strategy_prefixes = ["cio", "news_macro", "market_technical", "fundamental"]
+    if include_raw_aggregation:
+        comparison_eval = add_raw_aggregation_baseline(
+            comparison_eval,
+            packets_by_ticker,
+            long_post_trading_days=long_post_trading_days,
+            neutral_band=neutral_band,
+            prefix="raw_aggregation",
+            weight_mode="bucket",
+        )
+        strategy_prefixes.insert(1, "raw_aggregation")
+    if include_uniform_raw:
+        comparison_eval = add_raw_aggregation_baseline(
+            comparison_eval,
+            packets_by_ticker,
+            long_post_trading_days=long_post_trading_days,
+            neutral_band=neutral_band,
+            prefix="uniform_raw",
+            weight_mode="uniform",
+        )
+        strategy_prefixes.insert(2 if include_raw_aggregation else 1, "uniform_raw")
+    if include_fundamental_heavy_raw:
+        comparison_eval = add_raw_aggregation_baseline(
+            comparison_eval,
+            packets_by_ticker,
+            long_post_trading_days=long_post_trading_days,
+            neutral_band=neutral_band,
+            prefix="fundamental_heavy_raw",
+            weight_mode="fundamental_heavy",
+        )
+        insert_at = 1
+        if include_raw_aggregation:
+            insert_at += 1
+        if include_uniform_raw:
+            insert_at += 1
+        strategy_prefixes.insert(insert_at, "fundamental_heavy_raw")
+
     external_baselines = external_baselines or {
         "gpt_baseline": root / "tables" / "baseline_gpt.csv",
         "gemini_baseline": root / "tables" / "baseline_gemini.csv",
