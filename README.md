@@ -110,6 +110,18 @@ app.py                 # Streamlit demo UI and single-ticker runner
 - [Troubleshooting guide](docs/troubleshooting.md): common setup, API, cache, and evaluation issues.
 - [Rubric checklist](docs/rubric_checklist.md): grading-criteria map to repository files.
 
+## Notebook Guide
+
+The notebooks are organized from individual-agent demos to full multi-agent evaluation.
+
+| Notebook | Purpose |
+| --- | --- |
+| [`01_news_macro_agent_demo.ipynb`](notebooks/01_news_macro_agent_demo.ipynb) | Demonstrates the News & Macro Agent. It loads API keys, fetches event-window news from Finnhub/NewsAPI/Yahoo Finance, adds macro context, generates a structured news-driven stance, and shows how cached news contexts can be reused. |
+| [`02_market_technical_agent_demo.ipynb`](notebooks/02_market_technical_agent_demo.ipynb) | Demonstrates the Market & Technical Agent. It pulls price data, computes event-window returns, momentum, volume, trend, volatility, relative strength, and earnings-reaction signals, then converts the output into CIO-ready format. |
+| [`03_fundamental_agent.ipynb`](notebooks/03_fundamental_agent.ipynb) | Demonstrates the Fundamental Agent. It builds financial-statement inputs from yfinance, optionally retrieves FMP earnings-call transcript snippets, extracts guidance and management tone, evaluates thesis impact, and produces a standardized fundamental packet. |
+| [`04_single_ticker_cio_demo.ipynb`](notebooks/04_single_ticker_cio_demo.ipynb) | End-to-end single-ticker workflow. It runs or loads the three specialist agents for one company, standardizes their outputs, sends them into the CIO Agent, optionally triggers debate, and displays the final CIO decision. |
+| [`05_q4_2025_expanded_eval.ipynb`](notebooks/05_q4_2025_expanded_eval.ipynb) | Full evaluation notebook. It uses the 55-stock Q4 2025 AI/Tech earnings universe, cached agent outputs, CIO synthesis, external LLM baselines, abnormal returns versus QQQ, bucket-level analysis, and final result tables for presentation. |
+
 ## Quick Start
 
 ### 1. Create Environment
