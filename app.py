@@ -205,6 +205,37 @@ def infer_ticker_company_date(query: str, cio_df: pd.DataFrame) -> tuple[str, st
     return upper, text, date.today()
 
 
+@st.cache_data(show_spinner=False)
+def lookup_company_name(ticker: str) -> str:
+    normalized = str(ticker or "").strip().upper()
+    if not normalized:
+        return ""
+    try:
+        import yfinance as yf
+
+        info = yf.Ticker(normalized).info or {}
+        return str(info.get("longName") or info.get("shortName") or normalized)
+    except Exception:
+        return normalized
+
+
+def infer_ticker_case(ticker: str, cio_df: pd.DataFrame) -> tuple[str, str, date]:
+    normalized = str(ticker or "").strip().upper()
+    if not normalized:
+        return "", "", date.today()
+    if "ticker" in cio_df:
+        matches = cio_df[cio_df["ticker"].astype(str).str.upper() == normalized]
+        if not matches.empty:
+            row = matches.iloc[0]
+            parsed = pd.to_datetime(row.get("earnings_date"), errors="coerce")
+            return (
+                normalized,
+                str(row.get("company") or normalized),
+                parsed.date() if not pd.isna(parsed) else date.today(),
+            )
+    return normalized, lookup_company_name(normalized), date.today()
+
+
 def infer_fmp_transcript_period(event_date: str) -> tuple[int, int]:
     """Approximate the fiscal quarter whose call is reported around an event date."""
     parsed = pd.to_datetime(event_date, errors="coerce")
@@ -550,25 +581,30 @@ def main() -> None:
 
         st.divider()
         st.subheader("Analyze a New Case")
-        run_query = st.text_input("Ticker or company name", value=str(ticker or "TSLA"))
-        run_ticker, inferred_company, inferred_date = infer_ticker_company_date(run_query, cio_df)
+        run_query = st.text_input("Ticker", value=str(ticker or "TSLA")).strip().upper()
+        run_ticker, inferred_company, inferred_date = infer_ticker_case(run_query, cio_df)
         run_date = st.date_input("Earnings or event date", value=inferred_date)
-        st.caption(
-            f"Resolved as {run_ticker or 'N/A'} / {inferred_company or 'N/A'}. "
-            "Cached names auto-fill their date; for new names, enter a ticker and choose the event date."
-        )
+        st.caption(f"Company: {inferred_company or 'N/A'}")
         force = st.checkbox("Refresh existing saved result", value=False)
-        use_llm_debate = st.checkbox("Let agents debate", value=True)
-        use_llm_decision = st.checkbox("Let CIO write final decision", value=True)
-        llm_provider = st.selectbox("Model provider", ["vertex", "openai", "auto"], index=0)
-        vertex_project = st.text_input("Google Cloud project", value=os.getenv("VERTEX_PROJECT", ""))
-        vertex_location = st.text_input("Vertex location", value=os.getenv("VERTEX_LOCATION", "us-central1"))
-        vertex_model = st.text_input("Vertex/Gemini model", value=os.getenv("VERTEX_MODEL", "gemini-2.5-flash"))
-        openai_model = st.text_input("OpenAI model", value=os.getenv("OPENAI_MODEL", "gpt-5-nano"))
+        llm_provider = st.selectbox("Model provider", ["vertex", "openai"], index=0)
+        vertex_model = st.selectbox(
+            "Vertex/Gemini model",
+            ["gemini-2.5-flash", "gemini-2.5-pro"],
+            index=0,
+        )
+        openai_model = st.selectbox(
+            "OpenAI fallback model",
+            ["gpt-5-nano", "gpt-5.4-nano", "gpt-4.1-mini"],
+            index=0,
+        )
+        vertex_project = os.getenv("VERTEX_PROJECT", "")
+        vertex_location = os.getenv("VERTEX_LOCATION", "us-central1")
+        use_llm_debate = True
+        use_llm_decision = True
 
         if st.button("Run analysis", type="primary"):
             if not run_ticker:
-                st.error("Ticker or company is required.")
+                st.error("Ticker is required.")
             else:
                 with st.spinner(f"Running agents for {run_ticker}..."):
                     try:
